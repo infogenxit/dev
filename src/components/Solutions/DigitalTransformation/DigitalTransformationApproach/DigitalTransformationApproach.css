@@ -1,0 +1,118 @@
+/* Force Arial on everything */
+.approach-section * {
+    font-family: Arial, sans-serif;
+}
+
+.approach-section {
+    position: relative;
+    background: linear-gradient(180deg, #121824, #0e1420);
+    padding: 80px 0;
+    overflow: hidden;
+}
+.approach-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- HEADER ---------- */
+.approach-header {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+.app-section-label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f99530, #ff5521);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+}
+.approach-header h2 {
+    font-size: 42px;
+    margin-top: 0;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 120%;
+}
+
+/* ---------- CONTENT ---------- */
+.approach-content {
+    max-width: 860px;
+}
+.approach-lead {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+    color: #cbd2e1;
+    margin-bottom: 24px;
+}
+.approach-body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 170%;
+    color: #8a96aa;
+    margin: 0;
+}
+
+/* ---------- ACCENT ---------- */
+.app-corner-accent {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 230px;
+}
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1199px) {
+    .approach-section {
+        padding: 70px 0;
+    }
+    .approach-header {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+    .approach-header h2 {
+        font-size: 36px;
+    }
+    .approach-lead {
+        font-size: 17px;
+    }
+    .approach-body {
+        font-size: 15px;
+    }
+    .app-corner-accent {
+        width: 180px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 767px) {
+    .approach-section {
+        padding: 50px 0 60px;
+    }
+    .approach-container {
+        padding: 0 20px;
+    }
+    .app-section-label {
+        font-size: 14px;
+    }
+    .approach-header h2 {
+        font-size: 26px;
+        line-height: 130%;
+    }
+    .approach-lead {
+        font-size: 15px;
+        line-height: 160%;
+        margin-bottom: 16px;
+    }
+    .approach-body {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .app-corner-accent {
+        width: 120px;
+        opacity: 0.6;
+    }
+}

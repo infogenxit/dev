@@ -1,0 +1,1196 @@
+body {
+    background-color: #FFF6F0 !important;
+}
+:root {
+    --field-border-color: #081256;  
+    --field-focus-accent: #F36B2A;   
+}
+
+.get-in-touch-page{
+    padding: 0 20px;
+}
+
+
+/*.contact-form-container {
+    max-width: 650px;
+    margin: 0 auto;
+}*/
+
+.form-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+    width: 100% !important;
+}
+.form-row select[name="businessObjective"] {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
+
+
+/*.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 18px;
+    border: 1.5px solid var(--field-border-color);
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fff;
+
+}*/
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100% !important;
+    height: 58px !important;
+    padding: 16px 18px !important;
+    border: 2px solid transparent !important;
+    border-radius: 6px !important;
+    box-sizing: border-box !important;
+    font-size: 15px !important;
+    font-family: inherit !important;
+    color: #000 !important;
+    
+    /* The !important here forces the gradient border to show up */
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(110deg, #081256 0%, #081256 55%, #F36B2A 100%) border-box !important;
+}
+
+@media (max-width: 480px) {
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        height: 52px !important;
+        padding: 12px 14px !important;
+        font-size: 14px !important;
+    }
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 180px !important;
+}
+
+@media (max-width: 768px) {
+    .contact-form textarea {
+        height: 140px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form textarea {
+        height: 120px !important;
+    }
+}
+
+.submit-btn {
+    width: 100% !important;
+    max-width: 350px !important; 
+    height: 56px !important;
+    margin: 30px auto 10px !important;
+    border-radius: 50px !important;
+    border: none;
+    font-weight: 800;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(
+        90deg,
+        #071E3D 0%,
+        #0A1F44 35%,
+        #F36B2A 100%
+    );
+    box-shadow: 0 8px 20px rgba(243, 107, 42, 0.25);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        max-width: 100%;
+        height: 50px !important;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .submit-btn {
+        max-width: 100%;
+        height: 48px !important;
+        font-size: 13px;
+        margin: 20px auto 10px !important;
+    }
+}
+
+.thank-you-message {
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.2s ease;
+}
+
+.thank-you-message h3 {
+    font-weight: 700;
+    background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 70.61%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.thank-you-message p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #555;
+    font-weight: 500;
+}
+
+.thank-you-message button {
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    /* background: linear-gradient(45.6deg, #081256 0%, #03133a 50%, #eb632a 70%, #f36b2a 100%); */
+    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.submit-btn:hover {
+ background: linear-gradient(
+        90deg,
+        #05162C 0%,
+        #081933 35%,
+        #d95a22 100%
+    );
+
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(243, 107, 42, 0.35);
+}
+.tech-stack-container {
+    margin: 0;
+    text-align: center;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-stack-container label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 12px;
+    color: #081256;
+}
+
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important; 
+    gap: 30px 10px !important; 
+    width: 100%;
+    justify-items: start !important; 
+}
+
+@media (max-width: 768px) {
+    .checkbox-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkbox-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start !important; 
+    gap: 26px !important; 
+    font-size: 13px;
+    white-space: nowrap; 
+    cursor: pointer;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*.contact-form select {
+    width: 100%;
+    padding: 16px 45px 16px 18px;
+   border: 1.5px solid var(--field-border-color);
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fff;
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+
+.contact-form select:focus {
+    outline: none;
+    border: 2px solid var(--field-focus-accent);
+}*/
+
+
+.tech-layout-wrapper {
+    flex:1;
+    height: 100%;
+    display: block;
+    padding: 16px 18px;
+    border-radius: 6px;
+    
+    
+    border: 2px solid transparent;
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(110deg, #081256 0%, #081256 55%, #F36B2A 100%) border-box;
+}
+.primary-platform {
+    flex: 0.8; 
+    border-right: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.nda-note {
+    justify-content: center; 
+    font-size: 13px;
+    color: #666;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+.contact-title {
+   text-align: left;
+    font-size: 24px; 
+    font-weight: 800;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    white-space: nowrap;
+    overflow: visible;
+    width: max-content; 
+    margin-left: 0;
+    margin-right: 0;
+    
+    /* 2. The smooth text gradient from Navy to Orange */
+    background: linear-gradient(90deg, #071E3D 0%, #0A1F44 45%, #F36B2A 100%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important; /* Forces solid color out of the way */
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 20px;
+        white-space: normal;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 18px;
+    }
+}
+
+.quote-main-layout {
+    display: grid;
+    grid-template-columns: 3fr 340px;   
+    gap: 60px;
+    align-items: start;
+    max-width: 1400px;  
+    margin: 0 auto;      
+    padding: 0 40px;     
+}
+
+.leaders-card, .fact-card, .did-you-know-card {
+    padding: 35px; 
+}
+
+.side-content.right-facts {
+    margin-left: 30px;
+}
+.contact-form-container {
+    max-width: 950px;
+   margin: -30px 0 0 130px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+.sub-headline {
+    color: #F36B2A;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.confidential-shield {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #081256;
+}
+
+.confidential-shield p {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.highlight-text {
+    font-weight: 700;
+    color: #081256;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #F36B2A;
+}
+
+.fact-card, 
+.did-you-know-card {
+    background: #ffffff;       
+   padding: 40px 30px;        
+    border-radius: 12px;        
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+    margin-bottom: 25px;        
+    border: 1px solid #eee;    
+    color: #000000;  
+}
+
+@media (max-width: 768px) {
+    .fact-card, 
+    .did-you-know-card {
+        padding: 25px 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fact-card, 
+    .did-you-know-card {
+        padding: 15px 15px;
+        margin-bottom: 12px;
+    }
+}
+
+.fact-card h4, .did-you-know-card h4 {
+    color: #081256;            
+    font-size: 16px !important;
+    margin-bottom: 8px;
+    border-left: 4px solid #F36B2A;
+    padding-left: 12px;
+}
+.fact-card h4 {
+    margin-top: 0;      
+    margin-bottom: 12px;
+}
+.intro-subtext {
+    font-size: 18px;
+    font-weight: 650;
+    line-height: 1.6;
+    color: #081256 !important;
+    margin: 20px 0 0 0 !important;
+    
+    /* 1. Increases width to actually reach the end of your title */
+    width: 100% !important; 
+    max-width: 1150px !important; 
+    
+    /* 2. Remove justify so spacing looks natural and aligns cleanly */
+    text-align: left !important; 
+    
+    /* 3. The CSS-only Line Break Trick: 
+       If you press "Enter" before "Tailored" in your CMS/Editor, this forces the break visually */
+    white-space: pre-line !important; 
+    
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .intro-subtext {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-subtext {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 15px 0 0 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-subtext {
+        font-size: 13px;
+        line-height: 1.4;
+        margin: 10px 0 0 0 !important;
+    }
+}
+.page-intro-header h1.main-headline {
+    font-size: 32px !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #F36B2A 0%, #081256 100%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+}
+
+@media (max-width: 1024px) {
+    .page-intro-header h1.main-headline {
+        font-size: 20px !important;
+        white-space: normal !important; /* Allows it to wrap on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .page-intro-header h1.main-headline {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-intro-header h1.main-headline {
+        font-size: 16px !important;
+        line-height: 1.3 !important;
+    }
+}
+.side-content {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: start;  
+}
+
+.leaders-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.nda-shield-box {
+    background: #ffffff; 
+    padding: 8px 20px !important;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 12px 0 0 0 !important;
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .nda-shield-box {
+        padding: 12px 15px !important;
+        gap: 10px;
+        transform: translateY(0);
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .nda-shield-box {
+        padding: 10px 12px !important;
+        gap: 8px;
+    }
+}
+.nda-shield-box p {
+    margin: 0 !important; 
+    color: #000000 !important; 
+    font-weight: 500;          
+    opacity: 1;                
+}
+.leaders-card h4 {
+    color: #081256; 
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    border-left: 4px solid #F36B2A; 
+    padding-left: 12px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+.leaders-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #081256;
+    white-space: nowrap; 
+}
+.fact-card ul {
+    padding-left: 0;          
+    margin: 0;
+    list-style: none;        
+}
+.fact-card li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    line-height: 1.3 !important;
+    font-size: 15px;
+    color: #000000;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.fact-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #081256;          
+    font-weight: bold;
+}
+
+.fact-card strong {
+    display: block;           
+    margin-bottom: 4px;
+    color: #081256;
+}
+
+.mini-heading {
+    font-size: 15px;
+    font-weight: 700;
+    color: #081256;
+    margin: 0;
+}
+.fact-card {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+.mini-heading {
+    font-size: 15px;
+    font-weight: 700;
+    color: #081256;
+    margin: 0 0 12px 0;
+}
+.did-you-know-card {
+    padding: 15px 20px;
+    line-height: 1.5;
+}
+.did-you-know-card h4 {
+    margin-top: 0;      
+    margin-bottom: 10px;
+}
+.did-you-know-card p {
+    color: #000000;
+}
+.half-width {
+    width: 100%;
+}
+/*.column-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}*/
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media (max-width: 1200px) {
+    .quote-main-layout { grid-template-columns: 1fr; }
+    .side-content { order: 2; }
+    .contact-form-container { order: 1; }
+}
+.fact-card li,
+.did-you-know-card p,
+.nda-shield-box p {
+    color: #000000;
+}
+.tech-split-section {
+    display: grid;
+ grid-template-columns: 1fr 1fr !important;
+    gap: 30px;
+    align-items: stretch;
+    margin-bottom: 24px;
+}
+
+.objective-budget-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-top: 30px; 
+}
+
+.objective-budget-wrapper select {
+    flex: none; 
+    height: 58px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tech-split-section {
+        grid-template-columns: 1fr;
+    }
+}
+.fact-card li {
+    color: #000000 !important;  
+    font-weight: 500;            
+}
+.highlight-text {
+    font-weight: 700;
+    color: #081256 !important;  
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #F36B2A;
+}
+
+.did-you-know-card p, 
+.nda-shield-box p {
+    color: #000000 !important; 
+    font-weight: 500;          
+    opacity: 1;                
+}
+.phone-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 58px; 
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(110deg, #081256 0%, #081256 55%, #F36B2A 100%) border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .phone-input-wrapper {
+        padding: 0 8px;
+    }
+}
+
+.flag-icon {
+    width: 32px;
+    height: auto;
+    margin-right: 12px;
+    flex-shrink: 0; 
+}
+
+@media (max-width: 480px) {
+    .flag-icon {
+        width: 24px;
+        margin-right: 8px;
+    }
+}
+
+.phone-input-wrapper input {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    font-size: 15px;
+    font-family: inherit;
+    color: #000;
+}
+
+.global-delivery-section {
+    position: relative;
+    width: 100%;
+    background-color: #081256;
+    color: #ffffff;
+    padding: 100px 40px; 
+    margin-top: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    min-height: 600px; 
+}
+
+@media (max-width: 1024px) {
+    .global-delivery-section {
+        padding: 80px 30px;
+        min-height: 550px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .global-delivery-section {
+        padding: 60px 20px;
+        min-height: 400px;
+        justify-content: center;
+    }
+}
+.global-map-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto;
+    object-fit: contain;
+    opacity: 0.2;
+    z-index: 1;
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(70%);
+}
+
+.map-connection-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none; 
+}
+
+.global-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right;     
+}
+
+@media (max-width: 1024px) {
+    .global-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.global-title {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #D95A22;
+}
+
+@media (max-width: 1024px) {
+    .global-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .global-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+.global-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 60px;
+    color: #cbd5e1;
+}
+
+@media (max-width: 1024px) {
+    .global-subtitle {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .global-subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.insight-box {
+    background: rgba(8, 18, 86, 0.6); 
+    border: 1px solid rgba(243, 107, 42, 0.3); 
+    border-left: 4px solid #F36B2A; 
+    padding: 5px 35px 20px 35px !important;
+    border-radius: 12px;
+    max-width: 450px; 
+    position: relative;
+    backdrop-filter: blur(5px);
+    text-align: center; 
+    align-self: center; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: translate(-450px, 60px);
+}
+
+@media (max-width: 1024px) {
+    .insight-box {
+        padding: 20px 28px 20px 28px !important;
+        max-width: 420px;
+        transform: translate(-200px, 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .insight-box {
+        padding: 15px 20px 15px 20px !important;
+        max-width: 100%;
+        transform: translate(0, 20px);
+    }
+}
+
+.insight-box h5 {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 5px !important;
+    text-align: left;
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+    .insight-box h5 {
+        font-size: 17px;
+        margin-bottom: 15px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    .insight-box h5 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+.insight-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin: 0;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .insight-box p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 768px) {
+    .insight-box p {
+        font-size: 14px;
+    }
+}
+
+.quote-icon-left, 
+.quote-icon-right {
+  
+    font-size: 85px;          
+    height: 35px;            
+    width: 50px;             
+  
+    position: absolute;
+    display: flex;
+    align-items: center;     
+    justify-content: center;        
+    z-index: 10;              
+    line-height: 35px;          
+    transform: translateY(-2px); 
+    
+    overflow: visible;
+    
+    color: #F36B2A;
+    background: #081256;
+    font-family: "Manrope", Arial, sans-serif; 
+    font-weight: 900;
+}
+
+
+.quote-icon-left {
+    top: -17.5px;              
+    left: 30px;             
+}
+
+.quote-icon-right {
+    bottom: -17.5px;            
+    right: 30px;            
+}
+
+@media (max-width: 1024px) {
+    .quote-icon-left, 
+    .quote-icon-right {
+        font-size: 70px;
+        width: 45px;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    .quote-icon-left {
+        left: 20px;
+        top: -15px;
+    }
+    
+    .quote-icon-right {
+        right: 20px;
+        bottom: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .global-delivery-section {
+        justify-content: center;
+        text-align: center;
+    }
+    .global-content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .quote-icon-left,
+    .quote-icon-right {
+        font-size: 60px;
+        width: 40px;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .quote-icon-left {
+        left: 15px;
+        top: -12px;
+    }
+    
+    .quote-icon-right {
+        right: 15px;
+        bottom: -12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-headline {
+        white-space: normal;
+    }
+}
+
+.contact-form input[type="checkbox"] {
+    width: 16px !important;    
+    height: 16px !important;   
+    margin: 0 12px 0 0 !important;
+    padding: 0 !important;
+    appearance: auto;
+    flex-shrink: 0; 
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    transform: translateY(1.5px) !important;
+}
+
+
+@media (max-width: 768px) {
+    .tech-split-section {
+        grid-template-columns: 1fr !important;
+    }
+}
+.contact-form select {
+    letter-spacing: -0.5px !important; 
+    padding-right: 30px !important; 
+}
+div.page-intro-header.container {
+    padding-top: 100px !important; /* Pushes content down past the fixed navbar */
+    padding-bottom: 20px !important;
+    padding-left: 130px !important;
+    padding-right: 40px !important;
+}
+
+/* Tablet adjustment */
+@media (max-width: 1024px) {
+    div.page-intro-header.container {
+        padding-top: 100px !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+}
+
+/* Mobile screen adjustment */
+@media (max-width: 768px) {
+    div.page-intro-header.container {
+        padding-top: 80px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+body div.page-intro-header p.intro-subtext {
+    /* 1. JUSTIFY forces the text to stretch and touch the right edge exactly */
+    text-align: justify !important;
+    text-align-last: left !important; /* Keeps the very last line looking natural */
+    
+    margin: 20px 0 0 0 !important;
+    font-size: 18px !important;
+    font-weight: 650 !important;
+    line-height: 1.6 !important;
+    color: #081256 !important;
+    
+    /* 2. INCREASE THE WIDTH to match the title's physical width. */
+    /* Since 1060px was too short to reach the end, we bump this up. */
+    /* Tweak this number (e.g., 1120px, 1140px, 1160px) until it perfectly aligns with the 'S' in ECOSYSTEMS */
+    max-width: 1120px !important; 
+    
+    width: 100% !important;
+    display: block !important;
+    white-space: normal !important; 
+}
+.side-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-self: start !important; /* Prevents the column from stretching to the bottom */
+    gap: 40px !important; /* Sets a fixed, predictable gap between the boxes */
+    margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .side-content {
+        gap: 20px !important;
+        margin-left: 0 !important;
+    }
+}
+/* =========================================
+   FORCE OVERRIDES FOR FORM & ALIGNMENT
+   ========================================= */
+
+/* 1. Force the textarea to expand */
+body .contact-form-container .contact-form textarea {
+    height: 140px !important;
+    min-height: 180px !important;
+    max-height: 300px !important;
+}
+
+/* 2. Fix the grid alignment to match the header's 130px padding */
+body .quote-main-layout {
+    padding-left: 130px !important; 
+}
+
+@media (max-width: 1024px) {
+    body .quote-main-layout {
+        padding-left: 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body .quote-main-layout {
+        padding: 0 20px !important;
+    }
+}
+
+/* 3. Reset the form container's margin so it sits flush in the newly aligned grid */
+body .contact-form-container {
+    margin: -30px 0 0 0 !important; 
+}
+
+@media (max-width: 768px) {
+    body .contact-form-container {
+        margin: 0 !important;
+    }
+}
+body .contact-title {
+    margin-top: 30px !important; 
+    margin-bottom: 20px !important; /* Keeps a nice gap between the title and the input fields */
+}
+/* 4. Ensure mobile devices don't keep the massive 130px gap */
+@media (max-width: 1024px) {
+    body .quote-main-layout {
+        padding-left: 40px !important; 
+    }
+}
+/* =========================================
+   PULL FORM UP & LOCK TEXTAREA HEIGHT
+   ========================================= */
+
+/* 1. Mildly pull the input fields UP towards the title without moving the title itself */
+body .contact-title {
+    margin-bottom: 10px !important; /* Shrinks the gap under the title */
+}
+
+body .contact-form {
+    margin-top: -15px !important; /* Acts like a magnet, pulling the form fields up */
+}
+
+/* 2. FORCE the textarea to reduce in size by locking all height constraints */
+body .contact-form-container .contact-form textarea {
+    height: 120px !important; 
+    min-height: 120px !important;
+    max-height: 120px !important; /* Locking max-height prevents anything else from stretching it */
+}

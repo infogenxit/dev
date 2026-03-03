@@ -1,0 +1,10 @@
+/* ONLY if needed */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff5ef;
+  /* font-family: "manrope", sans-serif; */
+}
