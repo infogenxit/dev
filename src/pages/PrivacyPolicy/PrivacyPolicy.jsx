@@ -2,6 +2,7 @@ import "./PrivacyPolicy.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+
 const PrivacyPolicy = () => {
   return (
     <>
@@ -16,142 +17,212 @@ const PrivacyPolicy = () => {
           content="Infogenx privacy policy, data protection, user privacy, information security policy"
         />
       </Helmet>
+
       <Header />
       <section className="privacy-policy-section">
         <div className="privacy-container">
           <h1 className="privacy-title">Privacy Policy</h1>
 
           <div className="privacy-block">
-            <h2>Who we are</h2>
             <p>
-              Our website address is:{" "}
-              <a href="https://infogenx.com" rel="noreferrer">
-                https://infogenx.com
-              </a>
+              At Infogenx, your privacy and the protection of your personal data
+              are paramount. This Privacy Policy explains how we collect, use,
+              disclose, and safeguard your information when you visit our website
+              and interact with our services. By using our website or services,
+              you agree to the terms of this Privacy Policy.
             </p>
           </div>
 
           <div className="privacy-block">
-            <h2>Comments</h2>
+            <h2>1. Information We Collect</h2>
             <p>
-              When visitors leave comments on the site we collect the data shown
-              in the comments form, and also the visitor’s IP address and
-              browser user agent string to help spam detection.
+              We collect information to provide you with the best experience
+              possible. This includes:
             </p>
             <p>
-              An anonymized string created from your email address (also called
-              a hash) may be provided to the Gravatar service to see if you are
-              using it. The Gravatar service privacy policy is available at{" "}
-              <a
-                href="https://automattic.com/privacy/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://automattic.com/privacy/
-              </a>
-              . After approval of your comment, your profile picture is visible
-              to the public in the context of your comment.
+              <strong>Personal Information:</strong> This may include details
+              such as your name, email address, phone number, and other personal
+              identifiers that you provide directly through our contact forms,
+              registration forms, or interactions with our customer support.
             </p>
-          </div>
-
-          <div className="privacy-block">
-            <h2>Media</h2>
             <p>
-              If you upload images to the website, you should avoid uploading
-              images with embedded location data (EXIF GPS) included. Visitors
-              to the website can download and extract any location data from
-              images on the website.
+              <strong>Usage Data:</strong> We collect information about how you
+              use our website and services, including IP address, device type,
+              browser type, and your interactions with our website.
+            </p>
+            <p>
+              <strong>Cookies and Tracking Technologies:</strong> We use cookies
+              to enhance user experience. Cookies are small text files stored on
+              your device that allow us to recognise you and remember your
+              preferences. You can control cookie settings via your browser
+              preferences.
             </p>
           </div>
 
           <div className="privacy-block">
-            <h2>Cookies</h2>
+            <h2>2. How We Use Your Information</h2>
             <p>
-              If you leave a comment on our site you may opt-in to saving your
-              name, email address and website in cookies. These are for your
-              convenience so that you do not have to fill in your details again
-              when you leave another comment. These cookies will last for one
-              year.
+              We use the information we collect for a variety of purposes,
+              including:
             </p>
             <p>
-              If you visit our login page, we will set a temporary cookie to
-              determine if your browser accepts cookies. This cookie contains no
-              personal data and is discarded when you close your browser.
+              <strong>Providing Services:</strong> To offer and improve our
+              services, including tailored recommendations, customer support, and
+              the functionality of our website.
             </p>
             <p>
-              When you log in, we will also set up several cookies to save your
-              login information and your screen display choices. Login cookies
-              last for two days, and screen options cookies last for a year. If
-              you select “Remember Me”, your login will persist for two weeks.
-              If you log out of your account, the login cookies will be removed.
+              <strong>Communication:</strong> To respond to inquiries, provide
+              updates, and send promotional content or newsletters (if you have
+              opted in).
             </p>
             <p>
-              If you edit or publish an article, an additional cookie will be
-              saved in your browser. This cookie includes no personal data and
-              simply indicates the post ID of the article you just edited. It
-              expires after 1 day.
-            </p>
-          </div>
-
-          <div className="privacy-block">
-            <h2>Embedded content from other websites</h2>
-            <p>
-              Articles on this site may include embedded content (e.g. videos,
-              images, articles, etc.). Embedded content from other websites
-              behaves in the exact same way as if the visitor has visited the
-              other website.
+              <strong>Security and Compliance:</strong> To ensure the security of
+              our website and services, prevent fraud, and comply with applicable
+              legal requirements.
             </p>
             <p>
-              These websites may collect data about you, use cookies, embed
-              additional third-party tracking, and monitor your interaction with
-              that embedded content, including tracking your interaction with
-              the embedded content if you have an account and are logged in to
-              that website.
+              <strong>Personalisation:</strong> To personalise your experience by
+              customising the content you see based on your preferences and
+              behaviour.
             </p>
           </div>
 
           <div className="privacy-block">
-            <h2>Who we share your data with</h2>
+            <h2>3. Data Security</h2>
             <p>
-              If you request a password reset, your IP address will be included
-              in the reset email.
+              We take data security seriously. We implement industry-standard
+              security measures to protect your personal information from
+              unauthorised access, disclosure, or modification. However, no data
+              transmission over the internet is completely secure, so while we
+              strive to protect your personal information, we cannot guarantee
+              its absolute security.
             </p>
           </div>
 
           <div className="privacy-block">
-            <h2>How long we retain your data</h2>
+            <h2>4. Sharing Your Information</h2>
             <p>
-              If you leave a comment, the comment and its metadata are retained
-              indefinitely. This is so we can recognize and approve any
-              follow-up comments automatically instead of holding them in a
-              moderation queue.
+              We do not sell or rent your personal information to third parties.
+              However, we may share your information with trusted third-party
+              service providers who assist in the operation of our business, such
+              as:
             </p>
             <p>
-              For users that register on our website (if any), we also store the
-              personal information they provide in their user profile. All users
-              can see, edit, or delete their personal information at any time
-              (except they cannot change their username). Website administrators
-              can also see and edit that information.
+              <strong>Service Providers:</strong> We share data with trusted
+              partners for analytics, customer service, marketing, and website
+              hosting services. These third parties are obligated to maintain the
+              confidentiality of your information.
             </p>
-          </div>
-
-          <div className="privacy-block">
-            <h2>What rights you have over your data</h2>
             <p>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us. You
-              can also request that we erase any personal data we hold about
-              you. This does not include any data we are obliged to keep for
-              administrative, legal, or security purposes.
+              <strong>Legal Obligations:</strong> We may disclose your
+              information if required by law, to comply with a legal process, or
+              to protect the rights, property, and safety of Infogenx, our
+              customers, or the public.
             </p>
           </div>
 
           <div className="privacy-block">
-            <h2>Where your data is sent</h2>
+            <h2>5. Data Retention</h2>
             <p>
-              Visitor comments may be checked through an automated spam
-              detection service.
+              We retain your personal data for as long as necessary to fulfill
+              the purposes outlined in this Privacy Policy, unless a longer
+              retention period is required by law. Once we no longer need the
+              data for the purposes it was collected, we will securely delete or
+              anonymize it.
+            </p>
+          </div>
+
+          <div className="privacy-block">
+            <h2>6. Your Rights and Choices</h2>
+            <p>You have the right to:</p>
+            <p>
+              <strong>Access Your Data:</strong> You may request access to the
+              personal data we hold about you.
+            </p>
+            <p>
+              <strong>Correct Your Data:</strong> If you believe the information
+              we hold is incorrect, you can request to have it updated.
+            </p>
+            <p>
+              <strong>Delete Your Data:</strong> You may request the deletion of
+              your personal data, subject to certain exceptions (e.g., if we need
+              to retain it for legal reasons).
+            </p>
+            <p>
+              <strong>Opt-Out of Marketing Communications:</strong> If you no
+              longer wish to receive promotional emails or newsletters, you can
+              unsubscribe at any time using the unsubscribe link in our emails.
+            </p>
+          </div>
+
+          <div className="privacy-block">
+            <h2>7. Cookies and Tracking Technologies</h2>
+            <p>
+              We use cookies to improve the functionality of our website and
+              enhance your user experience. Cookies allow us to:
+            </p>
+            <p>Remember your preferences and settings.</p>
+            <p>
+              Analyze how our website is used to improve performance.
+            </p>
+            <p>
+              Provide personalized content based on your interests.
+            </p>
+            <p>
+              You can manage cookie preferences through your browser settings.
+              However, disabling cookies may impact your experience on our
+              website.
+            </p>
+          </div>
+
+          <div className="privacy-block">
+            <h2>8. Third-Party Links</h2>
+            <p>
+              Our website may contain links to third-party websites or services.
+              These websites are not operated by us, and we are not responsible
+              for their privacy practices. We encourage you to review their
+              privacy policies before providing any personal information.
+            </p>
+          </div>
+
+          <div className="privacy-block">
+            <h2>9. Children's Privacy</h2>
+            <p>
+              Our website and services are not intended for children under the
+              age of 13. We do not knowingly collect personal information from
+              children. If you believe that we have inadvertently collected
+              information from a child, please contact us immediately, and we
+              will take appropriate steps to delete the information.
+            </p>
+          </div>
+
+          <div className="privacy-block">
+            <h2>10. Updates to This Privacy Policy</h2>
+            <p>
+              We may update this Privacy Policy periodically to reflect changes
+              in our practices or legal requirements. Any changes will be posted
+              on this page, with the "Effective Date" updated accordingly. We
+              encourage you to review this Privacy Policy regularly to stay
+              informed about how we are protecting your information.
+            </p>
+          </div>
+
+          <div className="privacy-block">
+            <h2>11. Contact Us</h2>
+            <p>
+              If you have any questions, concerns, or requests regarding this
+              Privacy Policy or your personal data, please feel free to contact
+              us:
+            </p>
+            <p>
+              <strong>Email:</strong>{" "}
+              <a href="mailto:reachus@infogenx.com">reachus@infogenx.com</a>
+            </p>
+            <p>
+              <strong>Phone:</strong> [Your Phone Number]
+            </p>
+            <p>
+              <strong>Address:</strong> [Your Physical Address]
             </p>
           </div>
         </div>
