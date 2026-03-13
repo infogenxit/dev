@@ -6,9 +6,9 @@ const CtaBanner = () => {
     <section className="cta-section">
       <div className="cta-container">
         <p className="cta-subtitle">
-          Ready to Modernise the Way Your Business Runs? 
+          Ready to Modernise the Way Your Business Runs?
         </p>
-        <p className="cta-description">If you're serious about reducing manual work, improving visibility, and building systems that scale, Infogenx is ready.
+        <p className="cta-description">If you’re serious about reducing manual work, improving visibility, and building systems that scale, Infogenx is ready.
         </p>
        
 
@@ -19,14 +19,14 @@ const CtaBanner = () => {
             className="cta-primary"
             onClick={() => navigate("/contact-us")}
           >
-            Start Your Transformation (Primary)
+            Start Your Transformation  
           </button>
 
           <button
             className="cta-secondary"
             onClick={() => navigate("/contact-us")}
           >
-            Talk to an Expert (Secondary)
+            Talk to an Expert  
           </button>
         </div>
       </div>

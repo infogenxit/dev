@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="footer-brand">
             <img src={Footerlogo} alt="Infogenx" />
             <p>
-              AI-enabled applications, intelligent automation, and analytics solutions built to help Australian businesses simplify operations, 
+              AI-enabled applications, intelligent automation, and analytics
+              solutions built to help Australian businesses simplify operations,
               connect systems, and scale with confidence.
-
             </p>
           </div>
 
@@ -51,24 +51,25 @@ const Footer = () => {
             <h4>COMPANY</h4>
             <ul>
               <li>
-                {" "}
                 <Link to="/about">About Us</Link>
               </li>
               <li>
-                {" "}
-                <Link to="/products">Products</Link>
+                <Link to="/services">Services</Link>
               </li>
               <li>
-                {" "}
+                <Link to="/industries">Industries</Link>
+              </li>
+              <li>
                 <Link to="/careers">Careers</Link>
               </li>
               <li>
-                {" "}
+                <Link to="/contact-us">Contact Us</Link>
+              </li>
+              <li>
                 <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                {" "}
-                <Link to="/terms-conditions">Terms and Conditions</Link>
+                <Link to="/terms-conditions">Terms & Conditions</Link>
               </li>
             </ul>
           </div>
@@ -77,34 +78,29 @@ const Footer = () => {
             <h4>SERVICES</h4>
             <ul>
               <li>
-                {" "}
                 <Link to="/services/implementation-integration">
-                  Implementation & <br />
-                  Integration
+                  Implementation & Integration
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link to="/services/managed-services">Managed Services</Link>
               </li>
               <li>
-                {" "}
                 <Link to="/services/consulting-advisory">
                   Consulting & Advisory
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link to="/services/support-optimization">
-                  Support & Optimization
+                  Support & Optimisation
                 </Link>
               </li>
-              {/* <li>
-                {" "}
-                <Link to="/services/it-partner">
-                  Offshore Software Development
-                </Link>
-              </li> */}
+              <li>
+                <Link to="/services/app-deve">Application Development</Link>
+              </li>
+              <li>
+                <Link to="/services/process-automation">Process Automation</Link>
+              </li>
             </ul>
           </div>
 
@@ -112,26 +108,21 @@ const Footer = () => {
             <h4>SOLUTIONS</h4>
             <ul>
               <li>
-                {" "}
                 <Link to="/solutions/digital-transformation">
                   Digital Transformation
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link to="/solutions/intelligent-automation">
                   Intelligent Automation
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link to="/solutions/modern-applications">
                   Modern Applications
                 </Link>
               </li>
-
               <li>
-                {" "}
                 <Link to="/solutions/data-analytics-ai">
                   Data Analytics & AI
                 </Link>
@@ -141,6 +132,9 @@ const Footer = () => {
                   Integration & API Enablement
                 </Link>
               </li>
+              <li>
+                <Link to="/solutions/worlflow">Workflow Optimisation</Link>
+              </li>
             </ul>
           </div>
 
@@ -148,16 +142,22 @@ const Footer = () => {
             <h4>PLATFORMS</h4>
             <ul>
               <li>
-                {" "}
                 <Link to="/platforms/microsoft">Microsoft Solutions</Link>
               </li>
               <li>
-                {" "}
                 <Link to="/platforms/zoho">Zoho Solutions</Link>
               </li>
               <li>
-                {" "}
                 <Link to="/platforms/odoo">Odoo Solutions</Link>
+              </li>
+              <li>
+                <Link to="/platforms/power">Power Platform</Link>
+              </li>
+              <li>
+                <Link to="/platforms/zoho">Zoho Creator</Link>
+              </li>
+              <li>
+                <Link to="/platforms/Azure">Azure AI</Link>
               </li>
             </ul>
           </div>
@@ -166,32 +166,30 @@ const Footer = () => {
             <h4>INDUSTRIES</h4>
             <ul>
               <li>
-                {" "}
                 <Link to="/industries/healthcare-solutions">Healthcare</Link>
               </li>
               <li>
-                {" "}
                 <Link to="/industries/retail-solutions">Retail</Link>
               </li>
               <li>
-                {" "}
                 <Link to="/industries/manufacturing-solutions">
                   Manufacturing
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link to="/industries/transport-logistics">
-                  Transport and Logistics
+                  Transport & Logistics
                 </Link>
               </li>
               <li>
-                {" "}
-                <Link to="/industries/e-commerce-solutions">E-Commerce</Link>
+                <Link to="/industries/e-commerce-solutions">
+                  Professional Services
+                </Link>
               </li>
               <li>
-                {" "}
-                <Link to="/industries/finance-solutions">Finance</Link>
+                <Link to="/industries/finance-solutions">
+                  Financial Services
+                </Link>
               </li>
             </ul>
           </div>
@@ -199,7 +197,8 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="footer-bottom">
-          Copyright © 2026 All rights reserved. Infogenx Pvt Ltd.
+          © 2026 Infogenx. All rights reserved. Built for smarter operations,
+          stronger governance, and scalable digital transformation.
         </div>
       </div>
     </footer>
