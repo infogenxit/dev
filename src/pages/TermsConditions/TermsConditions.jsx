@@ -139,7 +139,7 @@ const TermsConditions = () => {
               convenience. We are not responsible for the content, privacy
               practices, or activities of these third-party sites. When you click
               on these links, you leave our website and access third-party content
-              at your own risk.
+              at your own risk.   
             </p>
           </div>
 
