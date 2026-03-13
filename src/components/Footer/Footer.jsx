@@ -197,8 +197,8 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="footer-bottom">
-          © 2026 Infogenx. All rights reserved. Built for smarter operations,
-          stronger governance, and scalable digital transformation.
+            <p>© 2026 Infogenx. All rights reserved.</p>
+            <p>Built for smarter operations, stronger governance, and scalable digital transformation.</p>
         </div>
       </div>
     </footer>
