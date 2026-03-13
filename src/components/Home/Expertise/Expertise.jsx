@@ -58,7 +58,7 @@ const Expertise = () => {
       <div className="expertise-container">
         <div className="expertise-content">
           <h2 className="expertise-heading">
-            Apps, Automation & Analytics <br />
+            Apps, Automation & Analytics - <br />
             Experts Driving Digital <br />
             Transformation
           </h2>

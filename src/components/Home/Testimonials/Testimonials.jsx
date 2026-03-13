@@ -1,65 +1,50 @@
 import { useEffect, useState, useRef } from "react";
 import "./Testimonials.css";
-import riteWheelzLogo from "../../../assets/images/rite-wheelz.png";
-import cheramiLogo from "../../../assets/images/cherami.png";
 import cornerAssent from "../../../assets/images/corner-accent.png";
 
 const testimonials = [
   {
-    text: "Infogenx is superior in keeping up their promises. Good in delivering the services on time frame. I am gratified with my Ecommerce project, done with Infogenx people. Thanks!!",
-    company: "Rite Wheelz",
-    name: "Rite Wheelz",
+    text: "Infogenx helped us streamline approvals, reduce delays, and improve visibility across teams. The result was a smoother workflow and far less manual follow-up.",
+    company: "Operations Manager, Melbourne",
+    name: "Sarah Mitchell",
     location: "Australia",
-    logo: riteWheelzLogo,
   },
   {
-    text: "It makes us feel happy every time we click over it. And because the website is designed to be flexible, I can update it super easily whenever we want. Thank you Infogenx.",
-    company: "Cherami",
-    name: "Leon Leslie",
+    text: "Their team connected our systems in a practical way and removed unnecessary friction. Day-to-day operations now feel more aligned, efficient, and easier to manage.",
+    company: "Head of Technology, Sydney",
+    name: "James Walker",
     location: "Australia",
-    logo: cheramiLogo,
   },
   {
-    text: "Infogenx is superior in keeping up their promises. Good in delivering the services on time frame. I am gratified with my Ecommerce project, done with Infogenx people. Thanks!!",
-    company: "Rite Wheelz",
-    name: "Rite Wheelz",
+    text: "Infogenx improved our reporting process significantly. We now have cleaner data, quicker access to insights, and much more confidence in the numbers we use.",
+    company: "Finance Lead, Brisbane",
+    name: "Priya Nair",
     location: "Australia",
-    logo: riteWheelzLogo,
   },
   {
-    text: "It makes us feel happy every time we click over it. And because the website is designed to be flexible, I can update it super easily whenever we want. Thank you Infogenx.",
-    company: "Cherami",
-    name: "Leon Leslie",
+    text: "They automated repetitive processes that were slowing our team down. We saved time, reduced errors, and created more space for higher-value operational work.",
+    company: "General Manager, Perth",
+    name: "Daniel Roberts",
     location: "Australia",
-    logo: cheramiLogo,
   },
   {
-    text: "Infogenx is superior in keeping up their promises. Good in delivering the services on time frame. I am gratified with my Ecommerce project, done with Infogenx people. Thanks!!",
-    company: "Rite Wheelz",
-    name: "Rite Wheelz",
+    text: "Infogenx built a scalable solution that matched our business requirements well. It feels secure, integrated, and much better suited to support long-term growth.",
+    company: "Business Transformation Lead, Adelaide",
+    name: "Emma Collins",
     location: "Australia",
-    logo: riteWheelzLogo,
   },
   {
-    text: "It makes us feel happy every time we click over it. And because the website is designed to be flexible, I can update it super easily whenever we want. Thank you Infogenx.",
-    company: "Cherami",
-    name: "Leon Leslie",
+    text: "They helped us modernise key workflows without overcomplicating the system. The new setup improved governance, reduced manual effort, and made scaling much easier.",
+    company: "Director of Operations, Canberra",
+    name: "Michael Tan",
     location: "Australia",
-    logo: cheramiLogo,
-  },
-  {
-    text: "Infogenx is superior in keeping up their promises. Good in delivering the services on time frame. I am gratified with my Ecommerce project, done with Infogenx people. Thanks!!",
-    company: "Rite Wheelz",
-    name: "Rite Wheelz",
-    location: "Australia",
-    logo: riteWheelzLogo,
   },
 ];
-
 // const Testimonials = () => {
 //   const [index, setIndex] = useState(1);
 //   const [animate, setAnimate] = useState(true);
 //   const trackRef = useRef(null);
+
 
 //   const slides = [
 //     testimonials[testimonials.length - 1],
@@ -67,17 +52,21 @@ const testimonials = [
 //     testimonials[0],
 //   ];
 
+
 //   const CARD_WIDTH = 450;
 //   const GAP = 40;
 //   const MOVE_X = CARD_WIDTH + GAP;
+
 
 //   useEffect(() => {
 //     const timer = setInterval(() => {
 //       setIndex((prev) => prev + 1);
 //     }, 3500);
 
+
 //     return () => clearInterval(timer);
 //   }, []);
+
 
 //   useEffect(() => {
 //     if (index === slides.length - 1) {
@@ -87,6 +76,7 @@ const testimonials = [
 //       }, 800);
 //     }
 
+
 //     if (index === 0) {
 //       setTimeout(() => {
 //         setAnimate(false);
@@ -95,11 +85,13 @@ const testimonials = [
 //     }
 //   }, [index, slides.length]);
 
+
 //   useEffect(() => {
 //     if (!animate) {
 //       requestAnimationFrame(() => setAnimate(true));
 //     }
 //   }, [animate]);
+
 
 //   return (
 //     <section className="testimonials-section">
@@ -108,7 +100,9 @@ const testimonials = [
 //         Delivering measurable results across industries.
 //       </p>
 
+
 //       <div className="testimonial-slider">
+
 
 //         <div
 //           ref={trackRef}
@@ -121,10 +115,12 @@ const testimonials = [
 //             <div className="testimonial-card" key={i}>
 //               <img src={cornerAssent} className="corner-accent" alt="" />
 
+
 //               <div className="testimonial-content">
 //                 <span className="quote">“</span>
 //                 <p className="testimonial-text">{item.text}</p>
 //               </div>
+
 
 //               <div className="testimonial-footer">
 //                 <img src={item.logo} alt={item.company} />
@@ -140,6 +136,7 @@ const testimonials = [
 //         </div>
 //       </div>
 
+
 //       <div className="testimonial-dots">
 //         {testimonials.map((_, i) => (
 //           <span
@@ -152,6 +149,7 @@ const testimonials = [
 //     </section>
 //   );
 // };
+
 
 const Testimonials = () => {
   const [index, setIndex] = useState(1);
@@ -219,7 +217,7 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials-section">
-      <h2 className="testimonials-title">Trusted by Our Clients</h2>
+      <h2 className="testimonials-title">Our Success Stories</h2>
       <p className="testimonials-subtitle">
         Delivering measurable results across industries.
       </p>
@@ -237,17 +235,14 @@ const Testimonials = () => {
               <img src={cornerAssent} className="corner-accent" alt="" />
 
               <div className="testimonial-content">
-                <span className="quote">“</span>
+                <span className="quote">"</span>
                 <p className="testimonial-text">{item.text}</p>
               </div>
 
               <div className="testimonial-footer">
-                <img src={item.logo} alt={item.company} />
                 <div>
-                  <strong>{item.company}</strong>
-                  <span>
-                    {item.name}, {item.location}
-                  </span>
+                  <strong>{item.name}</strong>
+                  <span>{item.company}</span>
                 </div>
               </div>
             </div>

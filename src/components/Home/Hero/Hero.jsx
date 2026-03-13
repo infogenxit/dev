@@ -31,8 +31,7 @@ const Hero = () => {
 
         <h2 className="hero-subheading">
           AI-enabled applications, automation, and analytics for{" "}
-          <span>Microsoft, Zoho, and Odoo—engineered</span> for growth,
-          governance, and impact.
+          <span>Microsoft, Zoho, and Odoo—engineered</span> for growth, governance, and real business impact.
         </h2>
 
         {/* <p className="hero-description">
