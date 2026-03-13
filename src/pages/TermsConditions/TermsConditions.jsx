@@ -2,6 +2,7 @@ import "./TermsConditions.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+
 const TermsConditions = () => {
   return (
     <>
@@ -21,147 +22,172 @@ const TermsConditions = () => {
       <section className="terms-section">
         <div className="terms-container">
           <h1 className="terms-title">Terms & Conditions</h1>
-          <div className="terms-block">   
+
+          <div className="terms-block">
             <p>
-              Welcome to Infogenx! By accessing and using our website,
-              you agree to comply with and be bound by the following Terms and Conditions.
-              These terms govern your use of our website and services. If you do not agree with these terms, please refrain from using our site.
+              Welcome to Infogenx! By accessing and using our website, you agree
+              to comply with and be bound by the following Terms and Conditions.
+              These terms govern your use of our website and services. If you do
+              not agree with these terms, please refrain from using our site.
             </p>
           </div>
+
           <div className="terms-block">
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing or using our website, services, and products, 
-              you agree to comply with and be bound by these Terms and Conditions,
-               including any updates or changes made from time to time. We reserve 
-               the right to modify, update, or change these terms at any time, and such changes will be effective immediately upon posting.
+              By accessing or using our website, services, and products, you
+              agree to comply with and be bound by these Terms and Conditions,
+              including any updates or changes made from time to time. We reserve
+              the right to modify, update, or change these terms at any time, and
+              such changes will be effective immediately upon posting.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Company Information</h2>
+            <h2>2. User Responsibilities</h2>
             <p>
-              Infogenx is an IT and IT-enabled services company providing
-              software solutions, application development, digital marketing,
-              data services, and analytics solutions.
-            </p>
-            <p>
-              Website:{" "}
-              <a href="https://infogenx.com" rel="noreferrer">
-                https://infogenx.com
-              </a>
+              You agree to use our website and services for lawful purposes only.
+              You are prohibited from using our website for any activity that
+              could damage, disable, or impair the site's functionality or the
+              servers connected to it. You may not attempt to gain unauthorized
+              access to any portion of the website, systems, or networks.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Use of Website</h2>
+            <h2>3. Privacy and Data Protection</h2>
             <p>
-              You agree to use this website only for lawful purposes and in a
-              way that does not infringe the rights of others or restrict their
-              use and enjoyment of the website.
-            </p>
-            <p>
-              Unauthorized use of this website may give rise to a claim for
-              damages and/or be a criminal offense.
+              Your privacy is important to us. By using our website and services,
+              you consent to the collection, use, and sharing of your information
+              as outlined in our Privacy Policy. This includes providing accurate
+              and complete information when registering and agreeing to receive
+              marketing communications, unless you opt out.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Intellectual Property</h2>
+            <h2>4. User-Generated Content</h2>
             <p>
-              All content on this website, including text, graphics, logos,
-              images, software, and design, is the property of Infogenx and is
-              protected by applicable copyright and intellectual property laws.
-            </p>
-            <p>
-              You may not reproduce, distribute, modify, or republish any
-              content without prior written consent from Infogenx.
-            </p>
-          </div>
-
-          <div className="terms-block">
-            <h2>Services & Pricing</h2>
-            <p>
-              All services provided by Infogenx are subject to availability and
-              may be modified or discontinued at any time without prior notice.
-            </p>
-            <p>
-              Pricing, quotations, and service descriptions provided on the
-              website are indicative and may vary based on project requirements.
+              By submitting or posting any content on our website, you grant
+              Infogenx the right to use, modify, display, and distribute such
+              content in connection with the website's operations. You are solely
+              responsible for any content you post, and it must comply with our
+              community guidelines. We reserve the right to remove any content
+              that violates these terms.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>User Accounts</h2>
+            <h2>5. Intellectual Property</h2>
             <p>
-              If you create an account on our website, you are responsible for
-              maintaining the confidentiality of your account credentials and
-              for all activities that occur under your account.
-            </p>
-            <p>
-              Infogenx reserves the right to suspend or terminate accounts found
-              to be in violation of these Terms.
+              All content, trademarks, logos, graphics, and materials on our
+              website are owned by Infogenx or our licensors. You may not copy,
+              reproduce, or distribute any of our intellectual property without
+              explicit permission. You agree to respect the intellectual property
+              rights of Infogenx and others.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Limitation of Liability</h2>
+            <h2>6. Product and Service Availability</h2>
             <p>
-              Infogenx shall not be liable for any direct, indirect, incidental,
-              consequential, or special damages arising out of or in connection
-              with the use of our website or services.
-            </p>
-            <p>
-              We do not guarantee that the website will be uninterrupted,
-              error-free, or free of viruses or other harmful components.
+              We make every effort to ensure that the products and services on
+              our website are accurately described and available. However, we do
+              not guarantee the availability of any products or services at all
+              times. We reserve the right to modify or discontinue any product or
+              service at our discretion, without prior notice.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Third-Party Links</h2>
+            <h2>7. Payment and Billing</h2>
             <p>
-              Our website may contain links to third-party websites. These links
-              are provided for your convenience and do not signify endorsement.
-            </p>
-            <p>
-              Infogenx has no control over the content or practices of
-              third-party websites and accepts no responsibility for them.
-            </p>
-          </div>
-
-          <div className="terms-block">
-            <h2>Termination</h2>
-            <p>
-              Infogenx may terminate or suspend access to our website and
-              services immediately, without prior notice, if you breach these
-              Terms and Conditions.
+              For services or products that require payment, you agree to provide
+              accurate and complete payment information. You authorize us to
+              charge the agreed-upon amounts for the services rendered or products
+              purchased. All payments are processed securely through third-party
+              payment providers, and you agree to comply with their terms as well.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Governing Law</h2>
+            <h2>8. Limitation of Liability</h2>
             <p>
-              These Terms and Conditions shall be governed and interpreted in
-              accordance with the laws applicable in India, without regard to
-              its conflict of law provisions.
+              Infogenx is not liable for any direct, indirect, incidental, or
+              consequential damages resulting from your use of our website or
+              services. This includes, but is not limited to, any errors, bugs,
+              interruptions, or delays in service that may occur. Our liability
+              is limited to the maximum extent allowed by law.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Changes to Terms</h2>
+            <h2>9. Indemnification</h2>
             <p>
-              Infogenx reserves the right to update or modify these Terms and
-              Conditions at any time. Changes will be effective immediately upon
-              posting on this page.
+              You agree to indemnify and hold harmless Infogenx, its affiliates,
+              employees, and partners from any claims, damages, losses, or
+              expenses (including legal fees) arising from your use of the
+              website, violation of these terms, or infringement of any
+              intellectual property rights.
             </p>
           </div>
 
           <div className="terms-block">
-            <h2>Contact Us</h2>
+            <h2>10. Third-Party Links</h2>
             <p>
-              If you have any questions about these Terms and Conditions, please
-              contact us at{" "}
+              Our website may contain links to third-party websites for your
+              convenience. We are not responsible for the content, privacy
+              practices, or activities of these third-party sites. When you click
+              on these links, you leave our website and access third-party content
+              at your own risk.
+            </p>
+          </div>
+
+          <div className="terms-block">
+            <h2>11. Governing Law</h2>
+            <p>
+              These Terms and Conditions are governed by the laws of the
+              jurisdiction in which Infogenx operates. Any disputes arising out
+              of or related to these terms shall be resolved in accordance with
+              the laws of that jurisdiction.
+            </p>
+          </div>
+
+          <div className="terms-block">
+            <h2>12. Termination of Service</h2>
+            <p>
+              We reserve the right to suspend or terminate your access to our
+              website or services at our discretion, including if you violate
+              these terms. Upon termination, you must immediately stop using our
+              website and services.
+            </p>
+          </div>
+
+          <div className="terms-block">
+            <h2>13. Dispute Resolution</h2>
+            <p>
+              Any disputes or claims arising out of or related to these Terms and
+              Conditions shall be subject to mediation. If a resolution cannot be
+              reached, the matter will be referred to binding arbitration under
+              the applicable laws.
+            </p>
+          </div>
+
+          <div className="terms-block">
+            <h2>14. Contact Us</h2>
+            <p>
+              If you have any questions, concerns, or need clarification regarding
+              these Terms and Conditions, please feel free to contact us at{" "}
               <a href="mailto:reachus@infogenx.com">reachus@infogenx.com</a>.
+            </p>
+          </div>
+
+          <div className="terms-block">
+            <h2>15. Agreement</h2>
+            <p>
+              By using our website or services, you acknowledge that you have
+              read and understood these Terms and Conditions and agree to be
+              bound by them.
             </p>
           </div>
         </div>
