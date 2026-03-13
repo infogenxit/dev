@@ -13,7 +13,7 @@ const Home = () => {
       <Helmet>
         <title>
           AI Automation & Application Development Company in Australia |
-          Infogenx
+          Infogenx  
         </title>
         <meta
           name="description"
@@ -22,7 +22,7 @@ const Home = () => {
         <meta
           name="keywords"
           content="AI application development Australia, AI-enabled business applications, intelligent automation Australia, application modernisation services"
-        />
+        />   
       </Helmet>
       <Header />
       <Hero />
