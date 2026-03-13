@@ -21,14 +21,20 @@ const TermsConditions = () => {
       <section className="terms-section">
         <div className="terms-container">
           <h1 className="terms-title">Terms & Conditions</h1>
-
-          <div className="terms-block">
-            <h2>Introduction</h2>
+          <div className="terms-block">   
             <p>
-              These Terms and Conditions govern your use of the Infogenx website
-              and services. By accessing or using our website, you agree to be
-              bound by these Terms. If you do not agree with any part of the
-              Terms, you must not use our website.
+              Welcome to Infogenx! By accessing and using our website,
+              you agree to comply with and be bound by the following Terms and Conditions.
+              These terms govern your use of our website and services. If you do not agree with these terms, please refrain from using our site.
+            </p>
+          </div>
+          <div className="terms-block">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+              By accessing or using our website, services, and products, 
+              you agree to comply with and be bound by these Terms and Conditions,
+               including any updates or changes made from time to time. We reserve 
+               the right to modify, update, or change these terms at any time, and such changes will be effective immediately upon posting.
             </p>
           </div>
 
