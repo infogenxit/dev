@@ -26,8 +26,8 @@ const AppDevHero = () => {
           <h1>Build Applications That Scale</h1>
 
           <p>
-            Secure, AI-enabled applications designed to improve performance, streamline workflows, 
-            and support long-term digital growth.
+            Secure, AI-enabled applications designed to improve performance,
+            streamline workflows, and support long-term digital growth.
           </p>
 
           <div className="appdev-buttons">
@@ -35,14 +35,14 @@ const AppDevHero = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-             Primary CTA: Start Application Engineering{" "}
+              Start Application Engineering{" "}
             </button>
 
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert <span>↗</span>
+              Talk to an Expert <span>↗</span>
             </button>
           </div>
         </div>

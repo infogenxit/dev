@@ -53,12 +53,12 @@ const Footer = () => {
               <li>
                 <Link to="/about">About Us</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services">Services</Link>
               </li>
               <li>
                 <Link to="/industries">Industries</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/careers">Careers</Link>
               </li>
@@ -96,11 +96,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services/app-deve">Application Development</Link>
+                <Link to="/services/digital-marketing">Digital Marketing</Link>
               </li>
-              <li>
-                <Link to="/services/process-automation">Process Automation</Link>
-              </li>
+              {/* <li>
+                <Link to="/services/process-automation">
+                  Process Automation
+                </Link>
+              </li> */}
             </ul>
           </div>
 
@@ -132,9 +134,9 @@ const Footer = () => {
                   Integration & API Enablement
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/solutions/worlflow">Workflow Optimisation</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -150,7 +152,7 @@ const Footer = () => {
               <li>
                 <Link to="/platforms/odoo">Odoo Solutions</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/platforms/power">Power Platform</Link>
               </li>
               <li>
@@ -158,7 +160,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/platforms/Azure">Azure AI</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -197,8 +199,11 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="footer-bottom">
-            <p>© 2026 Infogenx. All rights reserved.</p>
-            <p>Built for smarter operations, stronger governance, and scalable digital transformation.</p>
+          <p>© 2026 Infogenx. All rights reserved.</p>
+          <p>
+            Built for smarter operations, stronger governance, and scalable
+            digital transformation.
+          </p>
         </div>
       </div>
     </footer>
