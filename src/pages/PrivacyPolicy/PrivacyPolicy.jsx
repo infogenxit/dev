@@ -219,10 +219,10 @@ const PrivacyPolicy = () => {
               <a href="mailto:reachus@infogenx.com">reachus@infogenx.com</a>
             </p>
             <p>
-              <strong>Phone:</strong> [Your Phone Number]
+              <strong>Phone:</strong>  +61403339424 
             </p>
             <p>
-              <strong>Address:</strong> [Your Physical Address]
+              <strong>Address:</strong>  207/17 View Street, Mount Gravatt East, QLD-4122
             </p>
           </div>
         </div>
