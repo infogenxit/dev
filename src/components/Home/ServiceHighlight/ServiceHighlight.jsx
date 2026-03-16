@@ -1,9 +1,10 @@
 import "./ServiceHighlight.css";
 import { useEffect, useRef, useState } from "react";
-import serviceVideo1 from "../../../assets/videos/Digital_Data_Processing.mp4";
-import serviceVideo2 from "../../../assets/videos/Digital_Data_Processing.mp4";
-import serviceVideo3 from "../../../assets/videos/Digital_Data_Processing.mp4";
-import serviceVideo4 from "../../../assets/videos/Digital_Data_Processing.mp4"; // your video
+import serviceVideo1 from "../../../assets/videos/homestackvideo/Digital_Data_Processing.mp4";
+import serviceVideo2 from "../../../assets/videos/homestackvideo/AI-Powered Business Insights.mp4";
+import serviceVideo3 from "../../../assets/videos/homestackvideo/Intelligent Automation for Repetitive Work.mp4";
+import serviceVideo4 from "../../../assets/videos/homestackvideo/AI-Enabled Application Development.mp4"; // your video
+import serviceVideo5 from "../../../assets/videos/homestackvideo/System Integration Solutions.mp4"; // your video
 import { useNavigate } from "react-router-dom";
 const ServiceHighlight = () => {
   const navigate = useNavigate();
@@ -45,7 +46,7 @@ const ServiceHighlight = () => {
       title: "Scalable Business Optimisation",
       description:
         "Technology solutions designed to improve performance, strengthen governance, and support long-term business growth.",
-      video: serviceVideo4,
+      video: serviceVideo5,
       background: "#CBFFC9",
     },
   ];

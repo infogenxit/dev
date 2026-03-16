@@ -26,8 +26,9 @@ const AppDevHero = () => {
           <h1>Zoho Mastery Achieved</h1>
 
           <p>
-            Zoho CRM implementation, workflow automation,
-            and analytics engineering customised for growing Australian businesses needing agility and integration.
+            Zoho CRM implementation, workflow automation, and analytics
+            engineering customised for growing Australian businesses needing
+            agility and integration.
           </p>
 
           <div className="appdev-buttons">
@@ -35,14 +36,14 @@ const AppDevHero = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Primary CTA: Explore Zoho Solutions
+              Explore Zoho Solutions
             </button>
 
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert<span>↗</span>
+              Talk to an Expert<span>↗</span>
             </button>
           </div>
         </div>

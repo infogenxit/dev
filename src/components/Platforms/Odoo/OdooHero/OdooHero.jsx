@@ -35,14 +35,14 @@ const AppDevHero = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Primary CTA: Explore Odoo Solutions{" "}
+              Explore Odoo Solutions{" "}
             </button>
 
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert <span>↗</span>
+              Talk to an Expert <span>↗</span>
             </button>
           </div>
         </div>

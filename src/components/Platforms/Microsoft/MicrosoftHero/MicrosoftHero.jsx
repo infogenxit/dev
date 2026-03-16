@@ -26,8 +26,9 @@ const AppDevHero = () => {
           <h1>Microsoft Excellence Delivered</h1>
 
           <p>
-            Microsoft Power Platform automation, Azure AI solutions, 
-            and Dynamics implementation tailored for Australian enterprises focused on governance and growth.
+            Microsoft Power Platform automation, Azure AI solutions, and
+            Dynamics implementation tailored for Australian enterprises focused
+            on governance and growth.
           </p>
 
           <div className="appdev-buttons">
@@ -35,14 +36,14 @@ const AppDevHero = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Primary CTA: Explore Microsoft Solutions{" "}
+              Explore Microsoft Solutions{" "}
             </button>
 
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert<span>↗</span>
+              Talk to an Expert<span>↗</span>
             </button>
           </div>
         </div>

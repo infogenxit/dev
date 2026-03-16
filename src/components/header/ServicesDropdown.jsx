@@ -56,18 +56,16 @@ const ServicesDropdown = ({ closeMenu }) => {
             <p>Extend development capacity with reliable offshore teams.</p>
           </div>
         </Link>
-        {/* 
-        <Link to="/services/cloud-ai" onClick={closeMenu}>
+
+        <Link to="/services/digital-marketing" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox3} alt="Service-img" />
           </div>
           <div className="service-info">
-            <h4>AI-Powered Cloud Solutions</h4>
-            <p>
-              Design secure, scalable cloud systems enhanced with intelligence.
-            </p>
+            <h4>Digital Marketing</h4>
+            <p>Extend development capacity with reliable offshore teams.</p>
           </div>
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

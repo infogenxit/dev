@@ -6,12 +6,13 @@ import About from "./pages/About/About";
 import Products from "./pages/Products/Products";
 import Contact from "./pages/Contact/Contact";
 /*import GetinTouch from "./pages/Contact/GetinTouch/GetinTouch";*/
-import GetinTouch from './pages/Contact/GetinTouchNew/GetinTouchNew';
+import GetinTouch from "./pages/Contact/GetinTouchNew/GetinTouchNew";
 import GlobalLocations from "./pages/Contact/GlobalLocations/GlobalLocations";
 import ImplementationIntegration from "./pages/Services/ImplementationIntegration/ImplementationIntegration";
 import ConsultingAdvisory from "./pages/Services/Consulting&Advisory/Consulting&Advisory";
 import SupportOptimization from "./pages/Services/SupportOptimization/support-optimization";
 import ManagedServices from "./pages/Services/ManagedServices/managed-services";
+import DigitalMarketing from "./pages/Services/DigitalMarketing/DigitalMarketing";
 import WebDevelopment from "./pages/Technologies/WebDev/Webdev";
 import MobileAppDevelopment from "./pages/Technologies/MobileApp/MobileApp";
 import ArtificialIntelligence from "./pages/Technologies/AI/AI";
@@ -95,6 +96,10 @@ function App() {
           <Route
             path="/services/support-optimization"
             element={<SupportOptimization />}
+          />
+          <Route
+            path="/services/digital-marketing"
+            element={<DigitalMarketing />}
           />
           {/* <Route path="/services/cloud-ai" element={<CloudAI />} /> */}
           <Route path="/platforms/microsoft" element={<MicrosoftSolution />} />

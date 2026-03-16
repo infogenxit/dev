@@ -29,8 +29,8 @@ const AppDevHero = () => {
           </h1>
 
           <p>
-            Turn connected data into clear insight, predictive intelligence,
-            and faster business decisions that move performance forward.
+            Turn connected data into clear insight, predictive intelligence, and
+            faster business decisions that move performance forward.
           </p>
 
           <div className="appdev-buttons">
@@ -38,14 +38,14 @@ const AppDevHero = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Primary CTA: Unlock Analytics & AI{" "}
+              Unlock Analytics & AI{" "}
             </button>
 
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert <span>↗</span>
+              Talk to an Expert <span>↗</span>
             </button>
           </div>
         </div>

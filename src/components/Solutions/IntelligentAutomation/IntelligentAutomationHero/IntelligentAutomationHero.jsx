@@ -26,8 +26,8 @@ const AppDevHero = () => {
           <h1>Automate Intelligently</h1>
 
           <p>
-            Replace repetitive work with AI-driven orchestration that improves accuracy, reduces delays,
-            and keeps operations moving faster.
+            Replace repetitive work with AI-driven orchestration that improves
+            accuracy, reduces delays, and keeps operations moving faster.
           </p>
 
           <div className="appdev-buttons">
@@ -35,14 +35,14 @@ const AppDevHero = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Primary CTA: Unlock Intelligent Automation
+              Unlock Intelligent Automation
             </button>
 
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert <span>↗</span>
+              Talk to an Expert <span>↗</span>
             </button>
           </div>
         </div>
