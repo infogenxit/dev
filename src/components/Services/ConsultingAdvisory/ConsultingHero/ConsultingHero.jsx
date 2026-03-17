@@ -23,12 +23,11 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Strategy That Works</h1>
+          <h1>Strategic Digital Transformation</h1>
 
           <p>
-            Australian digital transformation consulting and platform strategy
-            advisory helping organisations choose and roadmap Microsoft, Zoho,
-            or Odoo solutions.
+            Expert consulting and roadmap advisory to implement Microsoft, Zoho,
+            and Odoo for Australian businesses.
           </p>
 
           <div className="appdev-buttons">

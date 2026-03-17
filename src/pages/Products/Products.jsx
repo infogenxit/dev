@@ -19,8 +19,8 @@ const Products = () => {
     {
       number: "1",
       icon: <AiOutlineStock />,
-      title: "Stock Management System",
-      desc: "We have a powerful Stock and Inventory management system that is easy to use. We Centralize the inventory management activities from one single system that helps you run your business efficiently.",
+      title: "Inventory & ERP Solutions",
+      desc: "Stock, ERP, and Odoo systems that improve control, automate workflows, and support scalable business operations.",
       btn1: "./products/stock-management-system",
       demo: {
         loginUrl: "https://stockmgmt.infogenx.com/login.php",
@@ -97,13 +97,13 @@ const Products = () => {
         ></img>
         <div className="product-WebDev-hero-container">
           <h1 className="product-products-hero-heading">
-            Products That Perform
+            Business Software Built for Real Operations
           </h1>
 
           <p className="product-WebDev-hero-description">
-            Ready-to-deploy intelligent software products including ERP, CRM,
-            and industry-specific systems customisable for Australian
-            businesses.
+            Ready-to-deploy business applications for Australian organisations
+            looking to automate workflows, improve visibility, and scale with
+            confidence.
           </p>
 
           <div className="WebDev-hero-buttons">
@@ -111,7 +111,7 @@ const Products = () => {
               className="product-WebDev-primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Transform your product
+              Explore Our Products
             </button>
             <button
               className="product-WebDev-secondary-btn"
@@ -135,7 +135,7 @@ const Products = () => {
           {/* Header */}
           <div className="approach-header">
             <span className="app-section-label">Readymade Softwares</span>
-            <h2>Solutions for Startup to Enterprise</h2>
+            <h2>Solutions Built for Real Operations</h2>
           </div>
 
           {/* Cards */}

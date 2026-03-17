@@ -138,22 +138,19 @@ const CustomerRelation = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>ENRICHED CUSTOMER EXPERIENCE WITH STURDY CRM SOLUTION</h1>
+            <h1>CRM Relationships Strengthened</h1>
 
             <p>
-              Customer relationship management (CRM) is the combination of
-              practices, strategies and technologies that companies use to
-              manage and analyze customer interactions and data throughout the
-              customer lifecycle, with the goal of improving customer service
-              relationships and assisting in customer retention and driving
-              sales growthin.
+              Customer relationship management system for Australian sales teams
+              — lead tracking, pipeline automation, customer analytics, and
+              segmentation built to grow revenue and improve sales execution.
             </p>
 
             <button
               className="igx-hero-btn"
               onClick={() => window.open("https://crm.infogenx.com/")}
             >
-              Try It Free For 30 Days
+              Request CRM Demo
             </button>
           </div>
 

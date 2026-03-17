@@ -23,11 +23,11 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Optimise Continuously</h1>
+          <h1>Unlock Continuous Optimisation</h1>
 
           <p>
-            Platform optimisation, issue resolution, and performance enhancement
-            services for Microsoft, Zoho, and Odoo users across Australia.
+            Drive peak performance, resolve issues quickly, and enhance your
+            Microsoft, Zoho, and Odoo platforms across Australia.
           </p>
 
           <div className="appdev-buttons">

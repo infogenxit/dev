@@ -3,23 +3,23 @@ import AppcornerAssent from "../../../../assets/images/corner-accent.png";
 const steps = [
   {
     number: "1",
-    title: "Discovery & Strategy",
-    desc: "We understand business goals, users, and market context to shape the right solution.",
+    title: "Health Checks and Performance Audits",
+    desc: "We conduct thorough checks to identify potential issues and ensure your platform runs at its best.",
   },
   {
     number: "2",
-    title: "User-Centric Design",
-    desc: "We prioritize intuitive experiences that drive adoption and value.",
+    title: "Targeted Enhancements and Automation Upgrades",
+    desc: "Implement tailored improvements and automation features to enhance performance and reduce manual work.",
   },
   {
     number: "3",
-    title: "Agile Engineering",
-    desc: "Iterative development ensures quick delivery, constant feedback, and continuous improvement.",
+    title: "Fast-Track Issue Resolution and Knowledge Transfer",
+    desc: "We resolve issues swiftly and empower your team with the knowledge to handle future challenges.",
   },
   {
     number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing ensures security, performance, and reliability.",
+    title: "Scalable Optimisation for Long-Term Growth",
+    desc: "We ensure your platform is scalable and continuously improve to meet your evolving business needs.",
   },
 ];
 
@@ -35,14 +35,14 @@ const AppDevApproach = () => {
         {/* Header */}
         <div className="approach-header">
           <span className="app-section-label">How We Deliver</span>
-          <h2>Our Development Approach</h2>
+          <h2>A Smarter Approach to Platform Support</h2>
         </div>
 
         {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
-              <span className="step-number">{step.number}</span>
+              {/* <span className="step-number">{step.number}</span> */}
               <h4>{step.title}</h4>
               <p>{step.desc}</p>
             </div>
@@ -59,19 +59,31 @@ const AppDevApproach = () => {
           <div className="outcome-container">
             <div className="business-outcome-item">
               <h3>Increase Efficiency</h3>
-              <p>Eliminate manual tasks and accelerate cycle times.</p>
+              <p>
+                Eliminate manual processes and speed up operational cycle times,
+                boosting overall efficiency.
+              </p>
             </div>
             <div className="business-outcome-item border-left">
               <h3>Boost Accuracy</h3>
-              <p>Reduce human errors and improve consistency.</p>
+              <p>
+                Minimise human errors and improve consistency with automated
+                processes and proactive optimisation.
+              </p>
             </div>
             <div className="business-outcome-item border-left">
               <h3>Enhance Productivity</h3>
-              <p>Free up talent for higher-value activities.</p>
+              <p>
+                Empower teams to focus on high-value tasks by automating
+                repetitive workflows.
+              </p>
             </div>
             <div className="business-outcome-item border-left">
               <h3>Drive Growth</h3>
-              <p>Reallocate resources toward strategic initiatives.</p>
+              <p>
+                Free up resources to redirect them toward key business growth
+                initiatives.
+              </p>
             </div>
           </div>
         </div>

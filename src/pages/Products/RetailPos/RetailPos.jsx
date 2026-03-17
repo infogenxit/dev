@@ -136,21 +136,19 @@ const RetailPos = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Efficient pos Software for Restaurants</h1>
+            <h1>Retail POS Transformed</h1>
 
             <p>
-              A constructive and holistic pos software to strategically handle
-              and manage inventories. As your business volume grows multifold,
-              it becomes inevitable to have your own Stock Management Software
-              to discard discrepancies and bring forth orderliness in
-              functioning.
+              Retail POS management system for Australian stores — fast
+              transactions, real‑time inventory sync, loyalty features, and
+              analytics tailored for modern retail operations.
             </p>
 
             <button
               className="igx-hero-btn"
               onClick={() => window.open("https://pos.infogenx.com/")}
             >
-              Try It Free For 30 Days
+              Request POS Demo
             </button>
           </div>
 

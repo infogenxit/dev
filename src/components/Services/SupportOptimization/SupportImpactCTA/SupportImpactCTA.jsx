@@ -8,13 +8,11 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         {/* LEFT */}
         <div className="impact-cta-left">
-          <h2>
-            Transform Your Ideas into <span>Impact</span>
-          </h2>
+          <h2>Ready to Optimise Your Platform?</h2>
 
           <p>
-            Whether you’re building a new application, modernizing legacy
-            systems, or scaling digital operations, we’re here to help.
+            Boost performance and get seamless support with Infogenx’s expert
+            platform optimisation services.
           </p>
 
           <div className="impact-buttons">
@@ -22,7 +20,7 @@ const AppDevImpactCTA = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Get Your FREE Consultation
+              Request Optimisation Review
             </button>
             <button
               className="secondary-btn"

@@ -8,13 +8,11 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         {/* LEFT */}
         <div className="impact-cta-left">
-          <h2>
-            Transform Your Ideas into <span>Impact</span>
-          </h2>
+          <h2>Ready to Accelerate Your Growth?</h2>
 
           <p>
-            Whether you’re building a new application, modernizing legacy
-            systems, or scaling digital operations, we’re here to help.
+            Let us help you build a powerful online presence and turn your
+            audience into loyal customers.
           </p>
 
           <div className="impact-buttons">
@@ -22,7 +20,7 @@ const AppDevImpactCTA = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Get Your FREE Consultation
+              Start Digital Marketing
             </button>
             <button
               className="secondary-btn"
@@ -38,13 +36,13 @@ const AppDevImpactCTA = () => {
           <div className="impact-cta-content">
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Enterprise-ready solutions
+                <img src={Correct} alt="correct" /> Increased Online Visibility
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Technology you can trust
+                <img src={Correct} alt="correct" /> High-Quality Lead Generation
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Outcomes you can measure
+                <img src={Correct} alt="correct" /> Sustainable Business Growth
               </li>
             </ul>
 

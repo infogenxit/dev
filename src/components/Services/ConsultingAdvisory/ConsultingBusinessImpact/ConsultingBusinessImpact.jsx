@@ -20,10 +20,10 @@ const AppDevBusinessImpact = () => {
               <img src={Business1} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Outcome-Driven Solutions</h4>
+              <h4>Australian-led Consulting</h4>
               <p>
-                We focus on delivering measurable results – faster
-                time-to-market, reduced costs, and scalable systems.
+                Focused on local business needs with nationwide delivery and
+                expertise.
               </p>
             </div>
           </div>
@@ -33,10 +33,10 @@ const AppDevBusinessImpact = () => {
               <img src={Business2} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Low-Code & Enterprise Expertise</h4>
+              <h4>Vendor-Agnostic Advice</h4>
               <p>
-                We combine bleeding-edge platforms with engineering experience
-                to meet real business needs.
+                Our impartial approach ensures we prioritize your business
+                goals, not specific platforms.
               </p>
             </div>
           </div>
@@ -46,10 +46,10 @@ const AppDevBusinessImpact = () => {
               <img src={Business3} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Secure, Scalable, and Compliant</h4>
+              <h4>Proven Outcomes</h4>
               <p>
-                Solutions designed to meet industry standards and handle
-                enterprise-grade scale.
+                Faster, more effective decision-making with clearer direction
+                and sustainable results.
               </p>
             </div>
           </div>
@@ -59,10 +59,10 @@ const AppDevBusinessImpact = () => {
               <img src={Business4} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Cross-Industry Experience</h4>
+              <h4>Tailored Solutions for Every Business</h4>
               <p>
-                We serve diverse sectors, including finance, logistics,
-                healthcare, and retail.
+                We craft solutions that align with your unique business
+                requirements, ensuring optimal fit and value.
               </p>
             </div>
           </div>

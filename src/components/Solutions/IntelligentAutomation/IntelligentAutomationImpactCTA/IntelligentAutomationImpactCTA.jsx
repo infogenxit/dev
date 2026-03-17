@@ -9,12 +9,13 @@ const AppDevImpactCTA = () => {
         {/* LEFT */}
         <div className="impact-cta-left">
           <h2>
-           Ready to Unlock Intelligent <span>Automation?</span>
+            Ready to Unlock Intelligent <span>Automation?</span>
           </h2>
 
           <p>
-            If manual work, process delays, or disconnected workflows are slowing your business down, 
-            Infogenx can help you automate with clarity.
+            If manual work, process delays, or disconnected workflows are
+            slowing your business down, Infogenx can help you automate with
+            clarity.
           </p>
 
           <div className="impact-buttons">
@@ -22,13 +23,13 @@ const AppDevImpactCTA = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Primary CTA: Unlock Intelligent Automation
+              Unlock Intelligent Automation
             </button>
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert <span>↗</span>
+              Talk to an Expert <span>↗</span>
             </button>
           </div>
         </div>
@@ -38,13 +39,16 @@ const AppDevImpactCTA = () => {
           <div className="impact-cta-content">
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Smarter workflows, less manual effort
+                <img src={Correct} alt="correct" /> Smarter workflows, less
+                manual effort
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Connected systems with greater control
+                <img src={Correct} alt="correct" /> Connected systems with
+                greater control
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Faster operations, measurable impact
+                <img src={Correct} alt="correct" /> Faster operations,
+                measurable impact
               </li>
             </ul>
 

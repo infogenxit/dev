@@ -26,9 +26,9 @@ const AppDevHero = () => {
           <h1>Deploy With Confidence</h1>
 
           <p>
-            End-to-end platform implementation and API integration services
-            delivering Microsoft, Zoho, or Odoo solutions for Australian
-            enterprises.
+            Infogenx ensures your digital platforms are implemented with
+            precision and connected seamlessly to your business ecosystem.
+            Whether you're deploying Microsoft, Zoho, or Odoo solutions.
           </p>
 
           <div className="appdev-buttons">

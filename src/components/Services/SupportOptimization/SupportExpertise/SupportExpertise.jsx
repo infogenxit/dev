@@ -11,7 +11,8 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Support & Optimisation</span>
           <h2>
-            Continuous improvement and rapid support for Australian platforms.
+            Continuous Support and Optimisation for Peak Performance and
+            Seamless Operations
           </h2>
         </div>
 
@@ -20,40 +21,40 @@ const AppDevExpertise = () => {
           <div className="expertise-item">
             {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            <h4>24/7 Monitoring and Support</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              We offer round-the-clock support, monitoring, and rapid issue
+              resolution to keep your platforms running smoothly.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            <h4>Tailored Performance Enhancements</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              We implement custom improvements and upgrades that drive better
+              performance and align with business goals.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            <h4>Fast-Track Issue Resolution</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              With a dedicated team, we resolve platform issues quickly to
+              minimise downtime and disruptions.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            <h4>Proactive Knowledge Transfer and Training</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              We empower your team with the knowledge and tools needed to handle
+              future platform challenges.
             </p>
           </div>
         </div>

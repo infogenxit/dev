@@ -12,7 +12,8 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Managed Services</span>
           <h2>
-            Ongoing platform support and proactive maintenance for Australia.
+            Proactive Support, Seamless Operations, and Scalable Managed
+            Services for Your Business
           </h2>
         </div>
 
@@ -21,50 +22,50 @@ const AppDevExpertise = () => {
           <div className="expertise-item">
             {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            <h4>24/7 Monitoring and Response</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              Constant monitoring to detect and resolve issues before they
+              impact your business.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            <h4>Timely Updates and Tuning</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Regular updates and optimisations ensure your platforms perform at
+              peak efficiency.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            <h4>SLA-backed Service Guarantee</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              Clear service level agreements ensure reliable uptime and
+              predictable service delivery.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            <h4>Customised Maintenance Plans</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              Tailored maintenance to fit your platform needs, ensuring smooth
+              and uninterrupted operations.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Scalability, & Compliance</h4>
+            <h4>Comprehensive Security and Compliance</h4>
             <p>
-              Ensure applications meet industry standards while performing under
-              real-world load.
+              We ensure your data is secure and compliant with Australian
+              standards, mitigating risks.
             </p>
           </div>
         </div>

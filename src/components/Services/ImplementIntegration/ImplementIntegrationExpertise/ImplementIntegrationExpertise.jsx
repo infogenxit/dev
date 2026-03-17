@@ -20,30 +20,30 @@ const AppDevExpertise = () => {
           <div className="expertise-item">
             {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            <h4>Seamless System Integration</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              We connect all your systems to work in harmony, ensuring smooth
+              data flow across your business.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            <h4>Tailored Implementation for Your Needs</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Our solutions are customised to your specific business
+              requirements, ensuring that every step aligns with your goals.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            <h4>Post-Launch Support and Optimisation</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              We offer continuous support and optimisation services to guarantee
+              long-term performance and success.
             </p>
           </div>
         </div>

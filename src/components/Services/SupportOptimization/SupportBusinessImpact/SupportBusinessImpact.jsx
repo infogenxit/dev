@@ -10,7 +10,7 @@ const AppDevBusinessImpact = () => {
         {/* Header */}
         <div className="business-impact-header">
           <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Business Impact</h2>
+          <h2>Built for Performance and Efficiency</h2>
         </div>
 
         {/* Grid */}
@@ -20,10 +20,13 @@ const AppDevBusinessImpact = () => {
               <img src={Business1} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Outcome-Driven Solutions</h4>
+              <h4>
+                Australian-Led Consulting with Local Accountability and
+                Nationwide Delivery
+              </h4>
               <p>
-                We focus on delivering measurable results – faster
-                time-to-market, reduced costs, and scalable systems.
+                Local expertise ensures your platforms are supported and
+                optimised for Australian business needs.
               </p>
             </div>
           </div>
@@ -33,10 +36,10 @@ const AppDevBusinessImpact = () => {
               <img src={Business2} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Low-Code & Enterprise Expertise</h4>
+              <h4>Data-Driven Optimisation for Maximum ROI</h4>
               <p>
-                We combine bleeding-edge platforms with engineering experience
-                to meet real business needs.
+                We leverage data to continually refine your system to achieve
+                optimal performance and return on investment.
               </p>
             </div>
           </div>
@@ -46,10 +49,10 @@ const AppDevBusinessImpact = () => {
               <img src={Business3} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Secure, Scalable, and Compliant</h4>
+              <h4>Proven Outcomes: Higher Efficiency and Lower Costs</h4>
               <p>
-                Solutions designed to meet industry standards and handle
-                enterprise-grade scale.
+                Our solutions reduce downtime and improve overall system
+                performance, thereby lowering operational costs.
               </p>
             </div>
           </div>
@@ -59,10 +62,10 @@ const AppDevBusinessImpact = () => {
               <img src={Business4} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Cross-Industry Experience</h4>
+              <h4>Security-First Approach Aligned to Australian Standards</h4>
               <p>
-                We serve diverse sectors, including finance, logistics,
-                healthcare, and retail.
+                Ensuring your systems remain secure and compliant with
+                Australian standards, every step of the way.
               </p>
             </div>
           </div>

@@ -169,11 +169,12 @@ const Portfolio = () => {
           {/* LEFT CONTENT */}
 
           <div className="appdev-left">
-            <h1>Explore our portfolio of crafted websites and applications.</h1>
+            <h1>Explore Our Portfolio of High-Impact Digital Work</h1>
 
             <p>
-              Showcasing Digital Excellence — Real Projects, Proven Impact, and
-              Innovation in Action
+              Websites, applications, and digital solutions built to combine
+              design clarity, functional strength, and measurable business
+              value.
             </p>
 
             <div className="appdev-buttons">
@@ -181,7 +182,7 @@ const Portfolio = () => {
                 className="primary-btn"
                 onClick={() => navigate("/contact-us")}
               >
-                Get Your FREE Consultation
+                View Our Work
               </button>
 
               <button
@@ -213,15 +214,12 @@ const Portfolio = () => {
       <section className="portfolio-section">
         <div className="portfolio-container">
           {/* HEADER */}
-          <h2 className="portfolio-title">
-            Drive Growth with Strategic Application Development
-          </h2>
+          <h2 className="portfolio-title">Built to Perform</h2>
 
           <p className="portfolio-subtitle">
-            The digital age demands constant innovation. A strong mobile and web
-            presence is no longer enough. At Infogenx, we go beyond creating
-            simple apps; we craft bespoke application solutions strategically
-            aligned with your digital transformation goals.
+            Our portfolio highlights digital experiences crafted to improve
+            usability, strengthen operations, and support long-term growth
+            across industries.
           </p>
 
           {/* FILTER BUTTONS */}

@@ -10,9 +10,10 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Managed Services</span>
+          <span className="section-label">Digital Marketing</span>
           <h2>
-            Ongoing platform support and proactive maintenance for Australia.
+            Strategic Campaigns, Measurable Results, and Scalable Growth for
+            Your Business
           </h2>
         </div>
 
@@ -21,50 +22,50 @@ const AppDevExpertise = () => {
           <div className="expertise-item">
             {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            <h4>Search Engine Optimization (SEO)</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              Improve your website’s visibility on search engines and attract
+              organic traffic that converts into customers.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            <h4>Pay-Per-Click Advertising (PPC)</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Target the right audience with high-performing paid campaigns that
+              maximize ROI and generate instant results.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            <h4>Social Media Marketing</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              Build your brand presence and engage with your audience across
+              platforms like Facebook, Instagram, and LinkedIn.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            <h4>Content Marketing Strategy</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              Create valuable, relevant content that educates, engages, and
+              drives long-term customer relationships.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Scalability, & Compliance</h4>
+            <h4>Email Marketing & Automation</h4>
             <p>
-              Ensure applications meet industry standards while performing under
-              real-world load.
+              Nurture leads and retain customers with personalized email
+              campaigns and automated workflows.
             </p>
           </div>
         </div>

@@ -136,21 +136,19 @@ const OdooErp = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Efficient ERP Software for Restaurants</h1>
+            <h1>Odoo ERP Mastered</h1>
 
             <p>
-              A constructive and holistic ERP software to strategically handle
-              and manage inventories. As your business volume grows multifold,
-              it becomes inevitable to have your own Stock Management Software
-              to discard discrepancies and bring forth orderliness in
-              functioning.
+              Odoo ERP management system for Australian businesses — integrated
+              enterprise capabilities, custom modules, workflow automation, and
+              operational control designed for scalable growth.
             </p>
 
             <button
               className="igx-hero-btn"
               onClick={() => window.open("https://erp.infogenx.com/")}
             >
-              Try It Free For 30 Days
+              Request Odoo Demo
             </button>
           </div>
 

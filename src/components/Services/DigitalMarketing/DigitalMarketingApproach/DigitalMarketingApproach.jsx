@@ -3,28 +3,28 @@ import AppcornerAssent from "../../../../assets/images/appcorner.png";
 const steps = [
   {
     number: "1",
-    title: "Discovery & Strategy",
-    desc: "We understand business goals, users, and market context to shape the right solution.",
+    title: "Data-Driven Strategy Planning",
+    desc: "We analyze your market, audience, and competitors to build a results-focused marketing strategy.",
   },
   {
     number: "2",
-    title: "User-Centric Design",
-    desc: "We prioritize intuitive experiences that drive adoption and value.",
+    title: "Targeted Campaign Execution",
+    desc: "Our campaigns are tailored to reach the right audience at the right time for maximum impact.",
   },
   {
     number: "3",
-    title: "Agile Engineering",
-    desc: "Iterative development ensures quick delivery, constant feedback, and continuous improvement.",
+    title: "Continuous Optimization",
+    desc: "We monitor and optimize campaigns regularly to improve performance and reduce costs.",
   },
   {
     number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing ensures security, performance, and reliability.",
+    title: "Performance Tracking & Reporting",
+    desc: "Transparent reporting with actionable insights helps you track ROI and business growth.",
   },
   {
     number: "5",
-    title: "Deployment & Support",
-    desc: "We launch with confidence and provide ongoing support to keep your systems running smoothly.",
+    title: "Dedicated Marketing Experts",
+    desc: "Our experienced team works closely with you to refine strategies and achieve your business goals.",
   },
 ];
 
@@ -35,14 +35,14 @@ const AppDevApproach = () => {
         {/* Header */}
         <div className="approach-header">
           <span className="app-section-label">How We Deliver</span>
-          <h2>Our Development Approach</h2>
+          <h2>Our Marketing Approach</h2>
         </div>
 
         {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
-              <span className="step-number">{step.number}</span>
+              {/* <span className="step-number">{step.number}</span> */}
               <h4>{step.title}</h4>
               <p>{step.desc}</p>
             </div>

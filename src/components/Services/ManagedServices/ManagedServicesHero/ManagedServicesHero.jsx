@@ -23,11 +23,12 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Support That Scales</h1>
+          <h1>Scalable Support, Unmatched Reliability</h1>
 
           <p>
-            Proactive managed services and monitoring for Microsoft, Zoho, and
-            Odoo platforms keeping Australian businesses running smoothly.
+            Seamless managed services and 24/7 monitoring for Microsoft, Zoho,
+            and Odoo, empowering Australian businesses with uninterrupted
+            performance.
           </p>
 
           <div className="appdev-buttons">

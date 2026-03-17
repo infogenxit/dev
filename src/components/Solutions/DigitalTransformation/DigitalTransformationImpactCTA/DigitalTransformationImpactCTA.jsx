@@ -13,8 +13,9 @@ const AppDevImpactCTA = () => {
           </h2>
 
           <p>
-            If legacy systems, manual processes, or disconnected platforms are slowing your business, 
-            Infogenx can help you move forward with clarity.
+            If legacy systems, manual processes, or disconnected platforms are
+            slowing your business, Infogenx can help you move forward with
+            clarity.
           </p>
 
           <div className="impact-buttons">
@@ -22,13 +23,13 @@ const AppDevImpactCTA = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Primary CTA: Start Your Transformation
+              Start Your Transformation
             </button>
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Secondary CTA: Talk to an Expert <span>↗</span>
+              Talk to an Expert <span>↗</span>
             </button>
           </div>
         </div>
@@ -38,18 +39,21 @@ const AppDevImpactCTA = () => {
           <div className="impact-cta-content">
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Connected solutions built to scale
+                <img src={Correct} alt="correct" /> Connected solutions built to
+                scale
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Technology aligned with business goals
+                <img src={Correct} alt="correct" /> Technology aligned with
+                business goals
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Outcomes designed for real impact
+                <img src={Correct} alt="correct" /> Outcomes designed for real
+                impact
               </li>
             </ul>
 
             <p className="impact-note">
-               Let’s modernise with purpose.
+              Let’s modernise with purpose.
               <br />
               <strong>Contact us today.</strong>
             </p>

@@ -23,11 +23,12 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Support That Scales</h1>
+          <h1>Grow Faster, Reach Further</h1>
 
           <p>
-            Proactive managed services and monitoring for Microsoft, Zoho, and
-            Odoo platforms keeping Australian businesses running smoothly.
+            Data-driven digital marketing strategies designed to boost your
+            online presence, generate quality leads, and drive measurable growth
+            for Australian businesses.
           </p>
 
           <div className="appdev-buttons">
@@ -35,7 +36,7 @@ const AppDevHero = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Explore Managed Services{" "}
+              Explore Digital Marketing{" "}
             </button>
 
             <button

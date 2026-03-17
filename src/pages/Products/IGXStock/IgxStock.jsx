@@ -35,33 +35,33 @@ import { Helmet } from "react-helmet-async";
 const descItems = [
   {
     icon: <IoCloudDownloadOutline />,
-    title: "Real-Time Inventory Management",
-    text: "seamlessly keep track of available stocks and make smart stock consumption decisions, as the Stock Management Software devastates possibilities of erroneous readings, and ensures harmony between physically available stock versus stocks in data. This methodical system allows recipe standardization and enables curbing cost of food production.",
+    title: "Real-Time Multi-Warehouse Visibility",
+    text: "Track inventory levels live across all warehouses, stores, and locations in real time, ensuring you have an up-to-date view of stock availability and reducing stockouts or overstock situations.",
   },
   {
     icon: <IoMdCheckmarkCircleOutline />,
-    title: "Intuitive User Interface",
-    text: "Highly self-descriptive and intuitive software system that is easily accessible across the hierarchy of employees. The software allows multiple user account generation with ‘specific’ page roles and login credentials so that each user base is destined with a specific module to keep track of.",
+    title: "Demand-Driven Reordering Engine",
+    text: "Automate reorder points based on actual usage, sales velocity, and forecast data. This ensures stock is always replenished in time, reducing manual effort and optimizing inventory levels.",
   },
   {
     icon: <HiOutlineTrophy />,
-    title: "Stock Taking",
-    text: "Utmost ease of product procurement with Stock Taking facility. Conveniently choose from the list of Suppliers and Product lists. In just a few clicks, your Suppliers receive Product Request mail which is then tracked in real-time on the Stock Management Software.",
+    title: "Detailed Stock Reporting & Analytics",
+    text: "Gain actionable insights into stock trends, movements, and performance across all locations, helping you make data-driven decisions for stock management and optimizing inventory control.",
   },
   {
     icon: <VscRemoteExplorer />,
-    title: "Remote Management",
-    text: "one-stop solution to manage and maintain stocks across chain of restaurants where you can create Purchase Orders, track Stock Consumption and access Stock Requirement at one point and cater to the needs across the entire chain of restaurants with utmost ease",
+    title: "Integrated Workflow Sync",
+    text: "Synchronize stock with sales orders, purchase orders, returns, and fulfillment workflows to streamline the entire process. This ensures a seamless and efficient flow of inventory management.",
   },
   {
     icon: <HiOutlineTrophy />,
-    title: "Raw Material Management",
-    text: "Get automatic alerts/reminders when your stocks go down. The Stock Management Software comes with ‘Threshold Switch’ to aid you with automatic re-ordering to ensure that your business is always up and running.",
+    title: "Audit & Compliance-Ready History",
+    text: "Keep track of stock histories, movements, and audit trails with precision, ensuring full visibility and compliance for audits while maintaining accurate records of all transactions.",
   },
   {
     icon: <RiShieldCheckLine />,
-    title: "Report And Analytics Generation",
-    text: "Stock Management Software dashboard produces concise data analytics on the total available stocks, total used, and revenue generation reports. Plus, the graphical weekly progress report gives you the bird’s eye view of stock usage, allowing clear acquaintance of the over-demanding stocks.",
+    title: "Customizable Stock Alerts & Notifications",
+    text: "Set personalized alerts for low stock, overstock, or pending orders to ensure that you never run out of critical items or overstock unnecessarily, optimizing inventory management at every stage.",
   },
 ];
 const features = [
@@ -174,18 +174,14 @@ const IgxStock = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>
-              Efficient Stock -<br />
-              Management Software <br />
-              For Restaurants
-            </h1>
+            <h1>Inventory Controlled Perfectly</h1>
 
             <p>
-              A constructive and holistic stock management software to
-              strategically handle and manage inventories. As your business
-              volume grows multifold, it becomes inevitable to have your own
-              Stock Management Software to discard discrepancies and bring forth
-              orderliness in functioning.
+              Inventory inefficiencies slow operations, reduce fulfilment speed,
+              and inflate carrying costs. Our Stock Management System gives you
+              a real‑time view of stock levels, triggers intelligent reorder
+              actions, and connects inventory data across your systems so your
+              teams always know what’s in hand - and what’s needed next.
             </p>
 
             <button
@@ -194,7 +190,7 @@ const IgxStock = () => {
                 window.open("https://stockmgmt.infogenx.com/login.php")
               }
             >
-              Try It Free For 30 Days
+              Request Stock Demo
             </button>
           </div>
 
@@ -205,7 +201,7 @@ const IgxStock = () => {
       </section>
 
       <section className="igx-description-section">
-        <h2>Description</h2>
+        <h2>Key Capabilities</h2>
 
         <div className="igx-description-grid" id="description">
           {descItems.map((item, i) => (

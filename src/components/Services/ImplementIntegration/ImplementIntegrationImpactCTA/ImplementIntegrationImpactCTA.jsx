@@ -8,13 +8,12 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         {/* LEFT */}
         <div className="impact-cta-left">
-          <h2>
-            Transform Your Ideas into <span>Impact</span>
-          </h2>
+          <h2>Ready to Deploy with Confidence?</h2>
 
           <p>
-            Whether you’re building a new application, modernizing legacy
-            systems, or scaling digital operations, we’re here to help.
+            Whether you're deploying Microsoft, Zoho, or Odoo, Infogenx ensures
+            a smooth, scalable integration and successful go-live for your
+            business.
           </p>
 
           <div className="impact-buttons">
@@ -22,7 +21,7 @@ const AppDevImpactCTA = () => {
               className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
-              Get Your FREE Consultation
+              Start Implementation
             </button>
             <button
               className="secondary-btn"
@@ -38,18 +37,19 @@ const AppDevImpactCTA = () => {
           <div className="impact-cta-content">
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Enterprise-ready solutions
+                <img src={Correct} alt="correct" />
+                Enterprise-Ready Solutions
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Technology you can trust
+                <img src={Correct} alt="correct" /> Cutting-Edge Technology
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Outcomes you can measure
+                <img src={Correct} alt="correct" /> Outcomes You Can Measure
               </li>
             </ul>
 
             <p className="impact-note">
-              Let’s build the future together.
+              Let’s build the future insights.
               <br />
               <strong>Contact us today.</strong>
             </p>

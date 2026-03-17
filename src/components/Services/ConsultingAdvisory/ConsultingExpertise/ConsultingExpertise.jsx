@@ -12,7 +12,8 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Consulting & Advisory</span>
           <h2>
-            Strategic guidance and roadmap planning for Australian businesses.
+            Unlock Your Business Potential with Strategic Consulting & Advisory
+            Services
           </h2>
         </div>
 
@@ -21,50 +22,50 @@ const AppDevExpertise = () => {
           <div className="expertise-item">
             {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            <h4>Comprehensive Digital Strategy Development</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              We analyse your business goals and develop a roadmap to drive
+              growth using the most suitable platforms.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            <h4>Tailored Platform Selection and Integration</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Choose the best platforms like Microsoft, Zoho, or Odoo to align
+              with your unique business needs and optimise efficiency.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            <h4>Expert Roadmap Planning and Execution</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              We provide clear, actionable roadmaps that guide the entire
+              implementation process, ensuring you meet your goals seamlessly.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            <h4>Informed Decision-Making through Data-Driven Insights</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              Our advisory services offer real-time data analysis and actionable
+              insights to support your decisions and accelerate success.
             </p>
           </div>
 
           <div className="expertise-item">
             {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Scalability, & Compliance</h4>
+            <h4>Continuous Support for Sustained Growth</h4>
             <p>
-              Ensure applications meet industry standards while performing under
-              real-world load.
+              We don’t just advise; we ensure continuous support and
+              optimisation to help your business scale and evolve.
             </p>
           </div>
         </div>
