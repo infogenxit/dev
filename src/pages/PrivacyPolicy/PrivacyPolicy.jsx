@@ -83,7 +83,7 @@ const PrivacyPolicy = () => {
             <p>
               <strong>Personalisation:</strong> To personalise your experience by
               customising the content you see based on your preferences and
-              behaviour.
+              behaviour.              
             </p>
           </div>
 
