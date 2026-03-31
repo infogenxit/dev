@@ -27,7 +27,7 @@ const Hero = () => {
           {/* <span>Apps</span>, <span>Automation</span>, <span>Analytics</span>,
           <span>And AI</span> */}
           <span>Build Smarter. Automate Faster. Decide Better.</span>
-        </h1>
+        </h1>   
 
         <h2 className="hero-subheading">
           AI-enabled applications, automation, and analytics for{" "}

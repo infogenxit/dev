@@ -109,6 +109,7 @@ const TermsConditions = () => {
               payment providers, and you agree to comply with their terms as well.
             </p>
           </div>
+          
 
           <div className="terms-block">
             <h2>8. Limitation of Liability</h2>
