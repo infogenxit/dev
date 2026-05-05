@@ -117,10 +117,10 @@ const GetinTouch = () => {
       form.acceptCharset = "UTF-8";
 
       const fields = {
-        xnQsjsdp: "af3cd41b6fd1aa90e4cec5492096c20a4411ab7cf9ab23d4f6ae4a8643797cd9",
-        xmIwtLD: "1b4554fa9405e9208d337cd1c20b7f3adfb42ead74dc2ee63873bdc69ba330e92386b33d783c8612d3e84405828f035f",
+        xnQsjsdp: process.env.REACT_APP_ZOHO_CRM_XNQSJSDP_CONTACT,
+        xmIwtLD: process.env.REACT_APP_ZOHO_CRM_XMIWTLD_CONTACT,
         actionType: "TGVhZHM=",
-        returnURL: "https://infogenx.com/contact-us",
+        returnURL: process.env.REACT_APP_CONTACT_RETURN_URL,
 
         // ✅ Only default Zoho fields
         "Last Name": formData.lastName,
@@ -187,6 +187,13 @@ const GetinTouch = () => {
           name="keywords"
           content="contact AI & Automation Australia company, IT strategy call Australia"
         />
+        <link rel="canonical" href="https://infogenx.com.au/contact-us" />
+        <meta name="robots" content="INDEX, FOLLOW" />
+        <meta property="og:url" content="https://infogenx.com.au/contact-us" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Infogenx | Book an AI & Automation Call" />
+        <meta property="og:description" content="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation." />
+        <meta property="og:image" content="https://infogenx.com.au/infogenx-og-image.png" />
       </Helmet>
       <Header />
       <div className="page-intro-header container">

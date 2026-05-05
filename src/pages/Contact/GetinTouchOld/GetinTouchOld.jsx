@@ -104,12 +104,10 @@ const GetinTouch = () => {
 
       const fields = {
         // 🔐 Zoho mandatory hidden fields
-        xnQsjsdp:
-          "591fa633814d0b0318cf3c93f44d6a40597e80f70db8a1fa0f9163cc34c13a8b",
-        xmIwtLD:
-          "b9a374b54b129c128646ab1e2e5ea1a15e7129f4b683e8e9a535878ec8d254ae83291483e3fc9ef35f51400408262393",
+        xnQsjsdp: process.env.REACT_APP_ZOHO_CRM_XNQSJSDP_QUOTE,
+        xmIwtLD: process.env.REACT_APP_ZOHO_CRM_XMIWTLD_QUOTE,
         actionType: "TGVhZHM=",
-        returnURL: "https://newsite.infogenx.com",
+        returnURL: process.env.REACT_APP_QUOTE_RETURN_URL,
 
         // 🧑 User form fields → Zoho Lead fields
         "Last Name": formData.name,

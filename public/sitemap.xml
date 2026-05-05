@@ -6,10 +6,21 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>https://infogenx.com/</loc>
-  <lastmod>2026-03-09T20:01:25+00:00</lastmod>
+  <loc>https://infogenx.com.au/</loc>
+  <lastmod>2026-05-05T10:30:00+00:00</lastmod>
+</url>
+<url>
+  <loc>https://infogenx.com.au/about</loc>
+  <lastmod>2026-05-05T10:30:00+00:00</lastmod>
+</url>
+<url>
+  <loc>https://infogenx.com.au/products</loc>
+  <lastmod>2026-05-05T10:30:00+00:00</lastmod>
+</url>
+<url>
+  <loc>https://infogenx.com.au/contact-us</loc>
+  <lastmod>2026-05-05T10:30:00+00:00</lastmod>
 </url>
 
 

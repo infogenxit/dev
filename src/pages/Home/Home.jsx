@@ -13,7 +13,7 @@ const Home = () => {
       <Helmet>
         <title>
           AI Automation & Application Development Company in Australia |
-          Infogenx  
+          Infogenx
         </title>
         <meta
           name="description"
@@ -22,7 +22,14 @@ const Home = () => {
         <meta
           name="keywords"
           content="AI application development Australia, AI-enabled business applications, intelligent automation Australia, application modernisation services"
-        />   
+        />
+        <link rel="canonical" href="https://infogenx.com.au" />
+        <meta name="robots" content="INDEX, FOLLOW" />
+        <meta property="og:url" content="https://infogenx.com.au" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="AI Automation & Application Development Company in Australia | Infogenx" />
+        <meta property="og:description" content="Infogenx is an Australian AI automation and application development company delivering intelligent apps, workflow automation, and analytics." />
+        <meta property="og:image" content="https://infogenx.com.au/infogenx-og-image.png" />
       </Helmet>
       <Header />
       <Hero />

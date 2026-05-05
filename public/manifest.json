@@ -1,7 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+  "short_name": "Infogenx",
+  "name": "Infogenx Australia",
+  "_unused_icons_backup": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
@@ -16,6 +16,13 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    }
+  ],
+  "icons": [
+    {
+      "src": "infogenx-title-icon.png",
+      "sizes": "32x32",
+      "type": "image/png"
     }
   ],
   "start_url": ".",

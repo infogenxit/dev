@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollTop/ScrollToTop";
 
@@ -45,6 +46,22 @@ import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import "./App.css";
 function App() {
+  useEffect(() => {
+    const widgetCode = process.env.REACT_APP_ZOHO_SALESIQ_WIDGET_CODE;
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    if (widgetCode && !isLocalhost && !document.getElementById("zsiqscript")) {
+      window.$zoho = window.$zoho || {};
+      window.$zoho.salesiq = window.$zoho.salesiq || { ready: function () {} };
+      
+      const script = document.createElement("script");
+      script.id = "zsiqscript";
+      script.src = `https://salesiq.zohopublic.com/widget?wc=${widgetCode}`;
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>
