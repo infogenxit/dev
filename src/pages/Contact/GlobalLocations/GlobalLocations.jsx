@@ -85,7 +85,7 @@ const GlobalLocations = () => {
                     <br />
                     Queensland - 4122 Australia
                   </p>
-                  <span>+61 403339424</span>
+                  <span><a href="tel:+61403339424">+61 403 339 424</a></span>
                 </div>
 
                 <div className="location-block">
@@ -97,7 +97,7 @@ const GlobalLocations = () => {
                     <br />
                     Coimbatore - 641045
                   </p>
-                  <span>+91 9787806366</span>
+                  <span><a href="tel:+919787806366">+91 97878 06366</a></span>
                 </div>
 
                 {/* <div className="location-block">
@@ -123,7 +123,7 @@ const GlobalLocations = () => {
                     <br />
                     Chennai - 600032
                   </p>
-                  <span>+91 9787806366</span>
+                  <span><a href="tel:+919787806366">+91 97878 06366</a></span>
                 </div>
               </div>
             </div>

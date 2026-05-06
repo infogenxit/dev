@@ -23,7 +23,8 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Deploy With Confidence</h1>
+          {/* <h1>Deploy With Confidence</h1> */}
+          <h1>System Implementation & Integration Australia | Deploy With Confidence</h1>
 
           <p>
             Infogenx ensures your digital platforms are implemented with

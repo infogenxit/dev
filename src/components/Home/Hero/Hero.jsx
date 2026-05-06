@@ -26,12 +26,14 @@ const Hero = () => {
           {/* <span>Innovate</span>, <span>Automate</span>, and <span>Scale</span> */}
           {/* <span>Apps</span>, <span>Automation</span>, <span>Analytics</span>,
           <span>And AI</span> */}
-          <span>Build Smarter. Automate Faster. Decide Better.</span>
+          {/* <span>AI Automation & App Development Company in Australia</span> */}
+          <span>Build Smarter. Automate Faster. Decide Better. | AI Automation Australia</span>
         </h1>   
 
         <h2 className="hero-subheading">
-          AI-enabled applications, automation, and analytics for{" "}
-          <span>Microsoft, Zoho, and Odoo—engineered</span> for growth, governance, and real business impact.
+          {/* AI-enabled applications, automation, and analytics for{" "}
+          <span>Microsoft, Zoho, and Odoo—engineered</span> for growth, governance, and real business impact. */}
+          Engineered for growth: AI-enabled applications, intelligent automation, and data analytics for <span>Microsoft, Zoho, and Odoo</span> ecosystem.
         </h2>
 
         {/* <p className="hero-description">
@@ -61,11 +63,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero-brands">
-          <img src={MicrosoftImg} alt="Microsoft" />
-          <img src={ZohoImg} alt="Zoho" />
+          <img src={MicrosoftImg} alt="Microsoft Solutions Partner Australia" />
+          <img src={ZohoImg} alt="Zoho Authorized Partner Australia" />
           <img
             src={OdooImg}
-            alt="Odoo"
+            alt="Odoo Implementation Partner Australia"
             // style={{ height: "100px", margin: "0" }}
           />
         </div>
@@ -75,27 +77,27 @@ const Hero = () => {
         {/* Top-down animation */}
         <img
           src={aiIcon}
-          alt="AI"
+          alt="AI Application Development"
           className="float-icon1 float-vertical icon-1"
         />
 
         {/* Left-right animation */}
         <img
           src={automationIcon}
-          alt="Automation"
+          alt="Intelligent Business Automation"
           className="float-icon2 float-vertical icon-2"
         />
 
         {/* Another top-down */}
         <img
           src={analyticsIcon}
-          alt="Analytics"
+          alt="Data Analytics Solutions"
           className="float-icon3 float-horizontal icon-3"
         />
         {/*another Left-right */}
         <img
           src={AiSetting}
-          alt="Automation"
+          alt="AI Strategy and Governance"
           className="float-icon4 float-horizontal icon-4"
         />
       </div>

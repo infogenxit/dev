@@ -222,14 +222,17 @@ const PrivacyPolicy = () => {
             </p>
             <p>
               <strong>Email:</strong>{" "}
-              <a href="mailto:reachus@infogenx.com">reachus@infogenx.com</a>
+              <a href={`mailto:${process.env.REACT_APP_CONTACT_EMAIL || 'reachus@infogenx.com'}`}>
+                {process.env.REACT_APP_CONTACT_EMAIL || 'reachus@infogenx.com'}
+              </a>
             </p>
             <p>
-              <strong>Phone:</strong>  +61403339424 
+              <strong>Phone:</strong> {process.env.REACT_APP_CONTACT_PHONE || '+61 403 331 910'}
             </p>
             <p>
-              <strong>Address:</strong>  207/17 View Street, Mount Gravatt East, QLD-4122
+              <strong>Address:</strong> {process.env.REACT_APP_CONTACT_ADDRESS || '207/17 View Street, Mount Gravatt East, QLD-4122'}
             </p>
+
           </div>
         </div>
       </section>

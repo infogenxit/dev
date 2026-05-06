@@ -12,9 +12,9 @@ const DataAnalyticsAI = () => {
   return (
     <>
       <SEO
-        title="Data, Analytics & AI Consulting Services | Infogenx Australia"
-        description="Turn data into confident decisions with Infogenx’s analytics engineering and AI solutions designed for insight, performance, and business impact."
-        keywords="data analytics consulting Australia, AI consulting, analytics engineering"
+        title="Data Analytics & AI Solutions Australia | Intelligent Business Insights | Infogenx"
+        description="Transform your business data into actionable insights with Infogenx's Data Analytics & AI solutions in Australia. We build intelligent models for Microsoft, Zoho, and Odoo systems."
+        keywords="data analytics Australia, AI business insights, predictive intelligence Brisbane"
       />
       {/* <Helmet>
         <title>

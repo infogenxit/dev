@@ -23,10 +23,8 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>
-            {/* AI-enabled Application Development */}
-            Decide with Confidence
-          </h1>
+          {/* <h1>Decide with Confidence</h1> */}
+          <h1>Data Analytics & AI Solutions Australia | Intelligent Business Insights</h1>
 
           <p>
             Turn connected data into clear insight, predictive intelligence, and

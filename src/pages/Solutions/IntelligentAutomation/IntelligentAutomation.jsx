@@ -12,9 +12,9 @@ const IntelligentAutomation = () => {
   return (
     <>
       <SEO
-        title="Intelligent Automation & Workflow Solutions | Infogenx Australia"
-        description="Reduce manual work and improve efficiency with Infogenx’s AI-driven intelligent automation and workflow solutions for modern Australian enterprises."
-        keywords="intelligent automation Australia, workflow automation, AI-driven automation"
+        title="Intelligent Automation & AI Workflows Australia | Infogenx"
+        description="Streamline your business with AI-driven intelligent automation in Australia. Infogenx builds scalable workflow solutions for Microsoft, Zoho, and Odoo to reduce manual complexity."
+        keywords="intelligent automation Australia, AI workflow orchestration, business process automation"
       />
       {/* <Helmet>
         <title>

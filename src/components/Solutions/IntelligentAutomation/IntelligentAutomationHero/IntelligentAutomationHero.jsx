@@ -23,7 +23,8 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Automate Intelligently</h1>
+          {/* <h1>Automate Intelligently</h1> */}
+          <h1>Intelligent Automation Australia | AI-Driven Workflow Orchestration</h1>
 
           <p>
             Replace repetitive work with AI-driven orchestration that improves

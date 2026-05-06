@@ -36,7 +36,8 @@ const AboutWhoWeAre = () => {
 
         {/* Image */}
         <div className="about-who-image">
-          <img src={teamImage} alt="Infogenx Team" />
+          {/* <img src={teamImage} alt="Infogenx Team" /> */}
+          <img src={teamImage} alt="Infogenx Team - AI Automation & App Development Experts in Australia" />
         </div>
 
         {/* Bottom content */}

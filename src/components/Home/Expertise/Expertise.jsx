@@ -78,7 +78,7 @@ const Expertise = () => {
               and support sustainable business growth.
 
             </p>
-            <img src={card1} alt="" />
+            <img src={card1} alt="Scalable Digital Solutions for Australian Businesses" />
           </div>
 
           <div className="expertise-card center-card">
@@ -88,7 +88,7 @@ const Expertise = () => {
               and keep operations running more accurately.
 
             </p>
-            <img src={card2} alt="" />
+            <img src={card2} alt="Intelligent Workflow Automation and AI Solutions" />
           </div>
 
           <div className="expertise-card last-card">
@@ -97,7 +97,7 @@ const Expertise = () => {
               We turn fragmented business data into actionable intelligence that supports faster,
               more confident decision-making.
             </p>
-            <img src={card3} alt="" />
+            <img src={card3} alt="Actionable Business Intelligence and Data Analytics" />
           </div>
         </div>
       </div>

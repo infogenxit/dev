@@ -11,10 +11,11 @@ import SEO from "../../components/SEO/SEO";
 const Home = () => {
   return (
     <>
+      {/* Original title: AI Automation & App Development Company Sydney | Infogenx */}
       <SEO
-        title="AI Automation & Application Development Company in Australia | Infogenx"
-        description="Infogenx is an Australian AI automation and application development company delivering intelligent apps, workflow automation, and analytics using Microsoft, Zoho, and Odoo."
-        keywords="AI application development Australia, AI-enabled business applications, intelligent automation Australia, application modernisation services"
+        title="AI Automation & App Development Company in Australia | Infogenx"
+        description="Infogenx is a leading AI automation and application development company in Australia. We deliver intelligent apps, workflow automation, and data analytics for Microsoft, Zoho, and Odoo."
+        keywords="AI application development Australia, AI automation company Brisbane, intelligent business automation, app development services Melbourne"
       />
       {/* <Helmet>
         <title>

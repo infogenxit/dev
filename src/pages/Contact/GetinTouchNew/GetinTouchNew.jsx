@@ -16,7 +16,7 @@ const GetinTouchNew = () => {
     techStack: [],             
     transformationBudget: "", 
     message: "",               
-    phone: "+61 ",               
+    phone: process.env.REACT_APP_PHONE_PREFIX || "+61 ",               
   });
   const [showThankYou, setShowThankYou] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,6 +38,8 @@ const GetinTouchNew = () => {
       setFormData((prev) => ({
         ...prev,
         [name]: value,
+        // If the name is 'phone' and the value is empty, reset to the prefix
+        ...(name === 'phone' && value === '' ? { phone: process.env.REACT_APP_PHONE_PREFIX || '+61 ' } : {})
       }));
     }
   };
@@ -166,7 +168,7 @@ const GetinTouchNew = () => {
         techStack: [],            
         transformationBudget: "",
         message: "",
-        phone: "",
+        phone: process.env.REACT_APP_PHONE_PREFIX || "+61 ",
       });
     } catch (error) {
       console.error("Error:", error);
@@ -180,18 +182,18 @@ const GetinTouchNew = () => {
     <>
       <SEO
         title="Contact Infogenx | Book an AI & Automation Call"
-        description="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
-        keywords="contact AI & Automation Australia company, IT strategy call Australia"
+        description="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an expert strategy consultation."
+        keywords="contact AI & Automation company, IT strategy call"
       />
       {/* <Helmet>
         <title>Contact Infogenx | Book an AI & Automation Call</title>
         <meta
           name="description"
-          content="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
+          content="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an expert strategy consultation."
         />
         <meta
           name="keywords"
-          content="contact AI & Automation Australia company, IT strategy call Australia"
+          content="contact AI & Automation company, IT strategy call"
         />
       </Helmet> */}
       <Header />
@@ -209,10 +211,10 @@ const GetinTouchNew = () => {
     `}
   </style>
    <h1 className="main-headline">
-  ORCHESTRATE GROWTH:STRATEGIC AI INTEGRATION FOR MODERN ECOSYSTEMS
+  ORCHESTRATE GROWTH: STRATEGIC AI INTEGRATION FOR MODERN ECOSYSTEMS
 </h1>
     <p className="intro-subtext">Partner with Infogenx to architect high-yield, AI-integrated 
-      roadmaps across Microsoft, Zoho, and Global SaaS ecosystems. Tailored for leaders in Australia and India looking to optimize capital, eliminate operational silos, and capture dominant market share</p>
+      roadmaps across Microsoft, Zoho, and Global SaaS ecosystems. Tailored for leaders looking to optimize capital, eliminate operational silos, and capture dominant market share.</p>
   </div>
       <div className="quote-main-layout"> 
         <div className="contact-form-container">
@@ -235,8 +237,8 @@ const GetinTouchNew = () => {
   />
 <div className="phone-input-wrapper">
     <img 
-      src="https://flagcdn.com/w40/au.png" 
-      alt="Australia Flag" 
+      src={process.env.REACT_APP_FLAG_ICON || "https://flagcdn.com/w40/au.png"} 
+      alt="Flag" 
       className="flag-icon" 
     />
     <input
@@ -248,6 +250,7 @@ const GetinTouchNew = () => {
       required
     />
   </div>
+
   <input
     type="text"
     name="companyName"
