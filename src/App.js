@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollTop/ScrollToTop";
+import RouteSeo from "./components/SEO/RouteSeo";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -65,6 +66,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <RouteSeo />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
