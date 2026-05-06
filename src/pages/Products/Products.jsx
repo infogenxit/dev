@@ -14,6 +14,8 @@ import { useState } from "react";
 import DemoPopup from "./DemoPopup";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../components/SEO/SEO";
+import AboutCornerAccent from "../../assets/images/about-corner-accent.png";
+
 const Products = () => {
   const navigate = useNavigate();
   const steps = [
