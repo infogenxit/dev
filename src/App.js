@@ -180,6 +180,16 @@ function App() {
             path="/industries/transport-logistics"
             element={<Transport />}
           />
+          {/* Specific redirects for legacy URLs */}
+          <Route path="/platforms/microsoft-solutions" element={<MicrosoftSolution />} />
+          <Route path="/platforms/zoho-solutions" element={<ZohoSolution />} />
+          <Route path="/platforms/odoo-solutions" element={<OdooSolution />} />
+          <Route path="/industries/healthcare" element={<Healthcare />} />
+          <Route path="/industries/retail" element={<Retail />} />
+          <Route path="/industries/manufacturing" element={<Manufacturing />} />
+          <Route path="/industries/e-commerce" element={<ECommerce />} />
+          <Route path="/industries/finance" element={<Finance />} />
+          
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
