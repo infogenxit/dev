@@ -180,6 +180,7 @@ function App() {
             path="/industries/transport-logistics"
             element={<Transport />}
           />
+          <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>
