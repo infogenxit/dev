@@ -99,7 +99,7 @@ const Products = () => {
         <img
           alt="corner accent"
           className="about-corner-accent"
-          src="/static/media/about-corner-accent.69f6c2ba49b10849fff3.png"
+          src={AppcornerAssent}
         ></img>
         <div className="product-WebDev-hero-container">
           <h1 className="product-products-hero-heading">

@@ -1,12 +1,13 @@
 import "./AIHero.css";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
 const WebDevHero = () => {
   return (
     <section className="WebDev-hero">
       <img
         alt="corner accent"
-        class="about-corner-accent"
-        src="/static/media/about-corner-accent.69f6c2ba49b10849fff3.png"
-      ></img>
+        className="about-corner-accent"
+        src={AboutCornerAccent}
+      />
       <div className="WebDev-hero-container">
         <h1 className="WebDev-hero-heading">
           Artificial Intelligence Solutions That Power Smarter Business Outcomes
