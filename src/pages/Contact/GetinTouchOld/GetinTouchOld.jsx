@@ -5,7 +5,8 @@ import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const GetinTouch = () => {
+import SEO from "../../../components/SEO/SEO";
+const GetinTouchOld = () => {
   const [formData, setFormData] = useState({
     name: "",
     contactNumber: "",
@@ -148,7 +149,12 @@ const GetinTouch = () => {
 
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Contact Infogenx | Book an AI & Automation Call"
+        description="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
+        keywords="contact AI & Automation Australia company, IT strategy call Australia"
+      />
+      {/* <Helmet>
         <title>Contact Infogenx | Book an AI & Automation Call</title>
         <meta
           name="description"
@@ -158,7 +164,7 @@ const GetinTouch = () => {
           name="keywords"
           content="contact AI & Automation Australia company, IT strategy call Australia"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <section className="appdev-hero">
         <img
@@ -355,4 +361,4 @@ const GetinTouch = () => {
   );
 };
 
-export default GetinTouch;
+export default GetinTouchOld;

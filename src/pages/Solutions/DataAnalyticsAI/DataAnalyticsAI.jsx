@@ -7,10 +7,16 @@ import AppDevBusinessImpact from "../../../components/Solutions/DataAnalytics/Da
 import AppDevImpactCTA from "../../../components/Solutions/DataAnalytics/DataAnalyticsImpactCTA/DataAnalyticsImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const DataAnalyticsAI = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Data, Analytics & AI Consulting Services | Infogenx Australia"
+        description="Turn data into confident decisions with Infogenx’s analytics engineering and AI solutions designed for insight, performance, and business impact."
+        keywords="data analytics consulting Australia, AI consulting, analytics engineering"
+      />
+      {/* <Helmet>
         <title>
           Data, Analytics & AI Consulting Services | Infogenx Australia
         </title>
@@ -22,7 +28,7 @@ const DataAnalyticsAI = () => {
           name="keywords"
           content="data analytics consulting Australia, AI consulting, analytics engineering"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

@@ -6,12 +6,17 @@ import AppDevBusinessImpact from "../../../components/Industries/Retail/RetailBu
 import AppDevImpactCTA from "../../../components/Industries/Retail/RetailImpactCTA/RetailImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const ApplicationDev = () => {
+import SEO from "../../../components/SEO/SEO";
+const Retail = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="AI automation retail Australia | AI Solutions by InfogenX Australia"
+        description="best AI solutions for retail Australia, Transform retail with InfogenX's AI-enabled solutions in Australia: inventory automation, customer analytics & personalised experiences. Local expertise for scalable growth."
+        keywords="AI consulting retail, intelligent automation retail solutions, digital transformation retail Australia, AI-enabled inventory management, customer analytics automation Australia, platform-focused retail AI"
+      />
+      {/* <Helmet>
         <title>
-          {" "}
           AI automation retail Australia | AI Solutions by InfogenX Australia
         </title>
         <meta
@@ -22,7 +27,7 @@ const ApplicationDev = () => {
           name="keywords"
           content="AI consulting retail, intelligent automation retail solutions, digital transformation retail Australia, AI-enabled inventory management, customer analytics automation Australia, platform-focused retail AI"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />
@@ -34,4 +39,4 @@ const ApplicationDev = () => {
   );
 };
 
-export default ApplicationDev;
+export default Retail;

@@ -7,10 +7,16 @@ import AppDevBusinessImpact from "../../../components/Solutions/DigitalTransform
 import AppDevImpactCTA from "../../../components/Solutions/DigitalTransformation/DigitalTransformationImpactCTA/DigitalTransformationImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const DigitalTransformation = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Digital Transformation for Australian Businesses | Infogenx"
+        description="Infogenx helps Australian organizations modernize systems, optimize operations, and scale securely through outcome-driven digital transformation consulting."
+        keywords="digital transformation consulting Australia, business process transformation, enterprise modernization"
+      />
+      {/* <Helmet>
         <title>
           Digital Transformation for Australian Businesses | Infogenx
         </title>
@@ -22,7 +28,7 @@ const DigitalTransformation = () => {
           name="keywords"
           content="digital transformation consulting Australia, business process transformation, enterprise modernization"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

@@ -7,10 +7,16 @@ import AppDevBusinessImpact from "../../../components/Platforms/Zoho/ZohoBusines
 // import AppDevImpactCTA from "../../../components/Platforms/Zoho/ZohoImpactCTA/ZohoImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const ZohoSolution = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Zoho Consulting, Automation & Analytics | Infogenx Australia"
+        description="Infogenx helps businesses implement, customize, and optimize Zoho solutions for CRM, automation, analytics, and operational efficiency."
+        keywords="Zoho consulting Australia, Zoho CRM automation, Zoho Analytics"
+      />
+      {/* <Helmet>
         <title>
           Zoho Consulting, Automation & Analytics | Infogenx Australia
         </title>
@@ -22,7 +28,7 @@ const ZohoSolution = () => {
           name="keywords"
           content="Zoho consulting Australia, Zoho CRM automation, Zoho Analytics"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

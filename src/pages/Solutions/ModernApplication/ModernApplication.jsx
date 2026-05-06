@@ -7,10 +7,16 @@ import AppDevBusinessImpact from "../../../components/Solutions/ModernApplicatio
 import AppDevImpactCTA from "../../../components/Solutions/ModernApplication/ModernApplicationImpactCTA/ModernApplicationImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const ModernApplication = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Modern Application Development & Engineering | Infogenx"
+        description="Infogenx designs and builds secure, scalable, cloud-native applications that support business growth and long-term digital scalability."
+        keywords="application development Australia, cloud-native applications, custom software engineering"
+      />
+      {/* <Helmet>
         <title>Modern Application Development & Engineering | Infogenx</title>
         <meta
           name="description"
@@ -20,7 +26,7 @@ const ModernApplication = () => {
           name="keywords"
           content="application development Australia, cloud-native applications, custom software engineering"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

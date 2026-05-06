@@ -27,6 +27,7 @@ import { HiOutlineTrophy } from "react-icons/hi2";
 import { VscRemoteExplorer } from "react-icons/vsc";
 import { RiShieldCheckLine } from "react-icons/ri";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 
 const descItems = [
   {
@@ -91,7 +92,12 @@ const RetailPos = () => {
   }, [maxIndex]);
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Retail POS in Brisbane, Australia | Infogenx"
+        description="Modern Retail POS System for Brisbane stores. Fast transactions, inventory sync, customer loyalty & analytics – custom-built by InfogenX Australia. Transform your retail operations – demo available."
+        keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
+      />
+      {/* <Helmet>
         <title>Retail POS in Brisbane, Australia|Infogenx</title>
         <meta
           name="description"
@@ -101,7 +107,7 @@ const RetailPos = () => {
           name="keywords"
           content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
         />
-      </Helmet>
+      </Helmet> */}
       {/* NAVBAR */}
       <header className="igx-navbar">
         <div className="igx-nav-container">

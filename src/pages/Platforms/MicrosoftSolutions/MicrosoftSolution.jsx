@@ -7,22 +7,26 @@ import AppDevBusinessImpact from "../../../components/Platforms/Microsoft/Micros
 // import AppDevImpactCTA from "../../../components/Platforms/Microsoft/MicrosoftImpactCTA/MicrosoftImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const MicrosoftSolution = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          Microsoft Consulting & Power Platform Solutions | Infogenx
-        </title>
+      <SEO
+        title="Microsoft Consulting & Power Platform Solutions | Infogenx"
+        description="Unlock the full value of Microsoft 365, Power Platform, Azure Data & AI, and Dynamics with Infogenx’s consulting and implementation services."
+        keywords="Microsoft consulting Australia, Power Platform automation, Azure data AI"
+      />
+      {/* <Helmet>
+        <title>Microsoft Consulting & Power Platform Solutions | Infogenx</title>
         <meta
           name="description"
-          content="Unlock the full value of Microsoft 365, Power Platform, Azure Data & AI, and Dynamics with Infogenx’s consulting and implementation services. "
+          content="Unlock the full value of Microsoft 365, Power Platform, Azure Data & AI, and Dynamics with Infogenx’s consulting and implementation services."
         />
         <meta
           name="keywords"
           content="Microsoft consulting Australia, Power Platform automation, Azure data AI"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

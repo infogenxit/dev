@@ -7,10 +7,16 @@ import Testimonials from "../../components/Home/Testimonials/Testimonials";
 import CtaBanner from "../../components/Home/CtaBanner/CtaBanner";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 const Home = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="AI Automation & Application Development Company in Australia | Infogenx"
+        description="Infogenx is an Australian AI automation and application development company delivering intelligent apps, workflow automation, and analytics using Microsoft, Zoho, and Odoo."
+        keywords="AI application development Australia, AI-enabled business applications, intelligent automation Australia, application modernisation services"
+      />
+      {/* <Helmet>
         <title>
           AI Automation & Application Development Company in Australia |
           Infogenx
@@ -23,14 +29,7 @@ const Home = () => {
           name="keywords"
           content="AI application development Australia, AI-enabled business applications, intelligent automation Australia, application modernisation services"
         />
-        <link rel="canonical" href="https://infogenx.com.au" />
-        <meta name="robots" content="INDEX, FOLLOW" />
-        <meta property="og:url" content="https://infogenx.com.au" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="AI Automation & Application Development Company in Australia | Infogenx" />
-        <meta property="og:description" content="Infogenx is an Australian AI automation and application development company delivering intelligent apps, workflow automation, and analytics." />
-        <meta property="og:image" content="https://infogenx.com.au/infogenx-og-image.png" />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <Hero />
       <Expertise />

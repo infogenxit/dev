@@ -31,6 +31,7 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { GrUpdate } from "react-icons/gr";
 import { RxAvatar } from "react-icons/rx";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 
 const descItems = [
   {
@@ -127,7 +128,12 @@ const IgxStock = () => {
   }, [maxIndex]);
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Stock Management System in Brisbane, Australia | Infogenx"
+        description="Streamline inventory with InfogenX's custom Stock Management System in Brisbane. Real-time tracking, automated reordering, and seamless integration for Australian businesses. Request a free demo"
+        keywords="automation software, custom software development, ERP software, ODOO ERP, stock management system, inventory management software, business automation solutions, software products Australia, Brisbane software development"
+      />
+      {/* <Helmet>
         <title>Stock Management System in Brisbane, Australia|Infogenx</title>
         <meta
           name="description"
@@ -135,9 +141,9 @@ const IgxStock = () => {
         />
         <meta
           name="keywords"
-          content="automation software, custom software development, ERP software, ODOO ERP, stock management system, inventory management software,  business automation solutions, software products Australia, Brisbane software development"
+          content="automation software, custom software development, ERP software, ODOO ERP, stock management system, inventory management software, business automation solutions, software products Australia, Brisbane software development"
         />
-      </Helmet>
+      </Helmet> */}
       {/* NAVBAR */}
       <header className="igx-navbar">
         <div className="igx-nav-container">

@@ -4,25 +4,29 @@ import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const GetinTouch = () => {
+import SEO from "../../../components/SEO/SEO";
+const GlobalLocations = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Get in Touch for AI Automation Solutions - Infogenx IT Services | Australia | India"
+        description="Get in touch with Infogenx to discuss how build customised AI-enabled applications, intelligent automation, and analytics solutions for Australian businesses across Microsoft, Zoho, Shopify, and Odoo platforms."
+        keywords="Get in touch AI Automation,Platform specialists,Business enablement,Decision intelligence, AI & Automation Consulting, Digital Transformation Partner,Business Systems & AI Solutions, AI-Enabled Business Solutions,Automation & Analytics Consultin Platform-Focused Digital Solutions,AI consulting services,intelligent automation solutions, analytics consulting, what is intelligent automation, AI in business"
+      />
+      {/* <Helmet>
         <title>
-          Get in Touch for AI Automation Solutions -Infogenx IT Services |
-          Australia |India
+          Get in Touch for AI Automation Solutions - Infogenx IT Services |
+          Australia | India
         </title>
         <meta
           name="description"
-          content="Get in touch with Infogenx to discuss how  build customised AI-enabled applications, intelligent automation, and analytics solutions for Australian businesses across Microsoft, Zoho, Shopify, and Odoo platforms."
+          content="Get in touch with Infogenx to discuss how build customised AI-enabled applications, intelligent automation, and analytics solutions for Australian businesses across Microsoft, Zoho, Shopify, and Odoo platforms."
         />
         <meta
           name="keywords"
-          content="Get in touch AI Automation,Platform specialists,Business enablement,Decision intelligence
-AI & Automation Consulting, Digital Transformation Partner,Business Systems & AI Solutions, AI-Enabled Business Solutions,Automation & Analytics Consultin Platform-Focused Digital Solutions,AI consulting services,intelligent automation solutions, analytics consulting
-what is intelligent automation, AI in business"
+          content="Get in touch AI Automation,Platform specialists,Business enablement,Decision intelligence, AI & Automation Consulting, Digital Transformation Partner,Business Systems & AI Solutions, AI-Enabled Business Solutions,Automation & Analytics Consultin Platform-Focused Digital Solutions,AI consulting services,intelligent automation solutions, analytics consulting, what is intelligent automation, AI in business"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <section className="appdev-hero">
         <img
@@ -131,4 +135,4 @@ what is intelligent automation, AI in business"
   );
 };
 
-export default GetinTouch;
+export default GlobalLocations;

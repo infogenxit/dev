@@ -26,6 +26,7 @@ import LogoImg3 from "../../assets/images/infogenx-logos-images-3.png";
 import LogoImg4 from "../../assets/images/infogenx-logos-images-4.png";
 import LogoImg5 from "../../assets/images/infogenx-logos-images-5.png";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 import { useNavigate } from "react-router-dom";
 const projects = [
   {
@@ -146,7 +147,12 @@ const Portfolio = () => {
       : projects.filter((project) => project.category === activeFilter);
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Our Portfolio | Infogenx Projects"
+        description="Discover Infogenx portfolio showcasing our web development, UI/UX design, and software projects delivered to clients across various industries."
+        keywords="Infogenx portfolio, web development projects, full-stack projects, software development work, UI UX portfolio"
+      />
+      {/* <Helmet>
         <title>Our Portfolio | Infogenx Projects</title>
         <meta
           name="description"
@@ -156,7 +162,7 @@ const Portfolio = () => {
           name="keywords"
           content="Infogenx portfolio, web development projects, full-stack projects, software development work, UI UX portfolio"
         />
-      </Helmet>
+      </Helmet> */}
 
       <Header />
       <section className="appdev-hero">

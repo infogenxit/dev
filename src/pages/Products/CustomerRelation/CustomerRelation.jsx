@@ -27,6 +27,7 @@ import { HiOutlineTrophy } from "react-icons/hi2";
 import { VscRemoteExplorer } from "react-icons/vsc";
 import { RiShieldCheckLine } from "react-icons/ri";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 
 const descItems = [
   {
@@ -91,7 +92,12 @@ const CustomerRelation = () => {
   }, [maxIndex]);
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Customer Relationship Management in Brisbane, Australia | Infogenx"
+        description="Custom Customer Relationship Management (CRM) software in Brisbane. Lead tracking, sales pipeline, automation & reporting by InfogenX for Australian enterprises. Start improving relationships today."
+        keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
+      />
+      {/* <Helmet>
         <title>
           Customer Relationship Management in Brisbane, Australia|Infogenx
         </title>
@@ -103,7 +109,7 @@ const CustomerRelation = () => {
           name="keywords"
           content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
         />
-      </Helmet>
+      </Helmet> */}
       {/* NAVBAR */}
       <header className="igx-navbar">
         <div className="igx-nav-container">

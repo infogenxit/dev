@@ -3,7 +3,8 @@ import "./GetinTouchNew.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const GetinTouch = () => {
+import SEO from "../../../components/SEO/SEO";
+const GetinTouchNew = () => {
  const [formData, setFormData] = useState({
     lastName: "",              
     businessEmail: "",        
@@ -177,7 +178,12 @@ const GetinTouch = () => {
 
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Contact Infogenx | Book an AI & Automation Call"
+        description="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
+        keywords="contact AI & Automation Australia company, IT strategy call Australia"
+      />
+      {/* <Helmet>
         <title>Contact Infogenx | Book an AI & Automation Call</title>
         <meta
           name="description"
@@ -187,14 +193,7 @@ const GetinTouch = () => {
           name="keywords"
           content="contact AI & Automation Australia company, IT strategy call Australia"
         />
-        <link rel="canonical" href="https://infogenx.com.au/contact-us" />
-        <meta name="robots" content="INDEX, FOLLOW" />
-        <meta property="og:url" content="https://infogenx.com.au/contact-us" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact Infogenx | Book an AI & Automation Call" />
-        <meta property="og:description" content="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation." />
-        <meta property="og:image" content="https://infogenx.com.au/infogenx-og-image.png" />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <div className="page-intro-header container">
        <style>
@@ -482,4 +481,4 @@ const GetinTouch = () => {
     </>
   );
 };
-export default GetinTouch;
+export default GetinTouchNew;

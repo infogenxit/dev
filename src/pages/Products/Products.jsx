@@ -13,6 +13,7 @@ import CtaBanner from "../../components/Home/CtaBanner/CtaBanner";
 import { useState } from "react";
 import DemoPopup from "./DemoPopup";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 const Products = () => {
   const navigate = useNavigate();
   const steps = [
@@ -73,7 +74,12 @@ const Products = () => {
 
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Automation Software Products & Custom Solutions for Startups & Enterprises in Brisbane, Australia | Infogenx"
+        description="Explore Infogenx’s innovative IT products designed to streamline operations, enhance efficiency, and drive business growth across Australia."
+        keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
+      />
+      {/* <Helmet>
         <title>
           Automation Software Products & Custom Solutions for Startups &
           Enterprises in Brisbane, Australia | Infogenx
@@ -86,14 +92,7 @@ const Products = () => {
           name="keywords"
           content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
         />
-        <link rel="canonical" href="https://infogenx.com.au/products" />
-        <meta name="robots" content="INDEX, FOLLOW" />
-        <meta property="og:url" content="https://infogenx.com.au/products" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Automation Software Products & Custom Solutions for Startups & Enterprises in Brisbane, Australia | Infogenx" />
-        <meta property="og:description" content="Explore Infogenx’s innovative IT products designed to streamline operations, enhance efficiency, and drive business growth." />
-        <meta property="og:image" content="https://infogenx.com.au/infogenx-og-image.png" />
-      </Helmet>
+      </Helmet> */}
 
       <Header />
       <section className="product-WebDev-hero">

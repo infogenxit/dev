@@ -5,7 +5,7 @@ import WebDevExpertise from "../../../components/Technologies/WebDev/WebDevExper
 import WebDevOutcomes from "../../../components/Technologies/WebDev/WebDevOutcomes/WebDevOutcomes";
 import WebDevImpactCTA from "../../../components/Technologies/WebDev/WebDevImpactCTA/WebDevImpactCTA";
 import Footer from "../../../components/Footer/Footer";
-const WebDevelopment = () => {
+const Webdev = () => {
   return (
     <>
       <Header />
@@ -19,4 +19,4 @@ const WebDevelopment = () => {
   );
 };
 
-export default WebDevelopment;
+export default Webdev;

@@ -6,10 +6,16 @@ import AppDevBusinessImpact from "../../../components/Services/ConsultingAdvisor
 // import AppDevImpactCTA from "../../../components/Analytics/AppDevImpactCTA/AppDevImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const ApplicationDev = () => {
+import SEO from "../../../components/SEO/SEO";
+const ConsultingAdvisory = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="IT Consulting & Technology Advisory Services | Infogenx Australia"
+        description="Make confident AI-Enabled Business Solutions decisions with Infogenx’s consulting and advisory services focused on strategy, planning, and business alignment."
+        keywords="AI & Automation Consulting Australia, technology advisory, digital strategy consulting"
+      />
+      {/* <Helmet>
         <title>
           IT Consulting & Technology Advisory Services | Infogenx Australia
         </title>
@@ -21,7 +27,7 @@ const ApplicationDev = () => {
           name="keywords"
           content="AI & Automation Consulting Australia, technology advisory, digital strategy consulting"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />
@@ -33,4 +39,4 @@ const ApplicationDev = () => {
   );
 };
 
-export default ApplicationDev;
+export default ConsultingAdvisory;

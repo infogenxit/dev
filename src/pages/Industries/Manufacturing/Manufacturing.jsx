@@ -6,20 +6,26 @@ import AppDevBusinessImpact from "../../../components/Industries/Manufacturing/M
 import AppDevImpactCTA from "../../../components/Industries/Manufacturing/ManufacturingImpactCTA/ManufacturingImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const ApplicationDev = () => {
+import SEO from "../../../components/SEO/SEO";
+const Manufacturing = () => {
   return (
     <>
-      <Helmet>
-        <title>AI in Manufacturing Australia|InfogenX Australia</title>
+      <SEO
+        title="AI in Manufacturing Australia | InfogenX Australia"
+        description="Intelligent automation for Australian manufacturers by InfogenX: predictive maintenance, supply chain AI & analytics consulting for efficiency gains."
+        keywords="intelligent automation manufacturing, digital transformation manufacturing Australia, AI-enabled production solutions, predictive maintenance automation Australia, supply chain AI consulting"
+      />
+      {/* <Helmet>
+        <title>AI in Manufacturing Australia | InfogenX Australia</title>
         <meta
           name="description"
-          content="what is intelligent automation in manufacturing,  Intelligent automation for Australian manufacturers by InfogenX: predictive maintenance, supply chain AI & analytics consulting for efficiency gains."
+          content="Intelligent automation for Australian manufacturers by InfogenX: predictive maintenance, supply chain AI & analytics consulting for efficiency gains."
         />
         <meta
           name="keywords"
           content="intelligent automation manufacturing, digital transformation manufacturing Australia, AI-enabled production solutions, predictive maintenance automation Australia, supply chain AI consulting"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />
@@ -31,4 +37,4 @@ const ApplicationDev = () => {
   );
 };
 
-export default ApplicationDev;
+export default Manufacturing;

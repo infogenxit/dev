@@ -6,20 +6,26 @@ import AppDevBusinessImpact from "../../../components/Industries/Healthcare/Heal
 import AppDevImpactCTA from "../../../components/Industries/Healthcare/HealthcareImpactCTA/HealthcareImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const ApplicationDev = () => {
+import SEO from "../../../components/SEO/SEO";
+const Healthcare = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="AI Automation & AI Consulting for Healthcare Australia"
+        description="Infogenx delivers intelligent automation & AI consulting for Australian healthcare providers – streamline patient care, compliance & analytics. Brisbane-based digital transformation experts."
+        keywords="intelligent automation healthcare, digital transformation healthcare Australia, AI-enabled healthcare solutions, automation analytics healthcare, AI in healthcare Australia, patient management automation Australia"
+      />
+      {/* <Helmet>
         <title>AI Automation & AI Consulting for Healthcare Australia</title>
         <meta
           name="description"
-          content="what is intelligent automation in healthcare Australia, Infogenx delivers intelligent automation & AI consulting for Australian healthcare providers – streamline patient care, compliance & analytics. Brisbane-based digital transformation experts."
+          content="Infogenx delivers intelligent automation & AI consulting for Australian healthcare providers – streamline patient care, compliance & analytics. Brisbane-based digital transformation experts."
         />
         <meta
           name="keywords"
           content="intelligent automation healthcare, digital transformation healthcare Australia, AI-enabled healthcare solutions, automation analytics healthcare, AI in healthcare Australia, patient management automation Australia"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />
@@ -31,4 +37,4 @@ const ApplicationDev = () => {
   );
 };
 
-export default ApplicationDev;
+export default Healthcare;

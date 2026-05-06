@@ -2,11 +2,17 @@ import "./PrivacyPolicy.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Privacy Policy | Infogenx"
+        description="Read Infogenx Privacy Policy to understand how we collect, use, and protect your personal information while using our website and services."
+        keywords="Infogenx privacy policy, data protection, user privacy, information security policy"
+      />
+      {/* <Helmet>
         <title>Privacy Policy | Infogenx</title>
         <meta
           name="description"
@@ -16,7 +22,7 @@ const PrivacyPolicy = () => {
           name="keywords"
           content="Infogenx privacy policy, data protection, user privacy, information security policy"
         />
-      </Helmet>
+      </Helmet> */}
 
       <Header />
       <section className="privacy-policy-section">

@@ -6,10 +6,17 @@ import AppDevBusinessImpact from "../../../components/Services/DigitalMarketing/
 import AppDevImpactCTA from "../../../components/Services/DigitalMarketing/DigitalMarketingImpactCTA/DigitalMarketingImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
+
 const DigitalMarketing = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Digital Marketing Services | Infogenx Australia"
+        description="Boost your online presence and drive growth with our comprehensive digital marketing solutions tailored for the Australian market."
+        keywords="digital marketing Australia, online marketing services"
+      />
+      {/* <Helmet>
         <title>Digital Marketing Services | Infogenx Australia</title>
         <meta
           name="description"
@@ -19,7 +26,7 @@ const DigitalMarketing = () => {
           name="keywords"
           content="digital marketing Australia, online marketing services"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

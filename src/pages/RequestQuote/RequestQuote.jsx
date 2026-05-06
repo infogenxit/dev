@@ -3,6 +3,7 @@ import "./RequestQuote.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 const RequestQuote = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -80,7 +81,12 @@ const RequestQuote = () => {
 
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Contact Infogenx | Book an AI & Automation Call"
+        description="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
+        keywords="contact AI & Automation Australia company, IT strategy call Australia"
+      />
+      {/* <Helmet>
         <title>Contact Infogenx | Book an AI & Automation Call</title>
         <meta
           name="description"
@@ -90,7 +96,7 @@ const RequestQuote = () => {
           name="keywords"
           content="contact AI & Automation Australia company, IT strategy call Australia"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <div className="request-quote-page">
         <div className="contact-form-container">

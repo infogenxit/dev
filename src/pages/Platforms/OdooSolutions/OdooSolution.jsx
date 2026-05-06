@@ -7,20 +7,26 @@ import AppDevBusinessImpact from "../../../components/Platforms/Odoo/OdooBusines
 // import AppDevImpactCTA from "../../../components/Platforms/Odoo/OdooImpactCTA/OdooImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const OdooSolution = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Odoo ERP Implementation & Customisation | Infogenx"
+        description="Infogenx delivers Odoo ERP implementation, custom modules, and workflow automation to streamline operations and improve business visibility."
+        keywords="Odoo ERP Australia, Odoo implementation, ERP automation"
+      />
+      {/* <Helmet>
         <title>Odoo ERP Implementation & Customisation | Infogenx</title>
         <meta
           name="description"
-          content="Infogenx delivers Odoo ERP implementation, custom modules, and workflow automation to streamline operations and improve business visibility. "
+          content="Infogenx delivers Odoo ERP implementation, custom modules, and workflow automation to streamline operations and improve business visibility."
         />
         <meta
           name="keywords"
           content="Odoo ERP Australia, Odoo implementation, ERP automation"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

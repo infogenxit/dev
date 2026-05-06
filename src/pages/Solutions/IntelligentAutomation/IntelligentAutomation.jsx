@@ -7,10 +7,16 @@ import AppDevBusinessImpact from "../../../components/Solutions/IntelligentAutom
 import AppDevImpactCTA from "../../../components/Solutions/IntelligentAutomation/IntelligentAutomationImpactCTA/IntelligentAutomationImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const IntelligentAutomation = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="Intelligent Automation & Workflow Solutions | Infogenx Australia"
+        description="Reduce manual work and improve efficiency with Infogenx’s AI-driven intelligent automation and workflow solutions for modern Australian enterprises."
+        keywords="intelligent automation Australia, workflow automation, AI-driven automation"
+      />
+      {/* <Helmet>
         <title>
           Intelligent Automation & Workflow Solutions | Infogenx Australia
         </title>
@@ -22,7 +28,7 @@ const IntelligentAutomation = () => {
           name="keywords"
           content="intelligent automation Australia, workflow automation, AI-driven automation"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />

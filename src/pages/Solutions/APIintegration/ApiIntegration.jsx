@@ -6,10 +6,16 @@ import AppDevBusinessImpact from "../../../components/Solutions/ApiIntegration/A
 import AppDevImpactCTA from "../../../components/Solutions/ApiIntegration/ApiIntegrationImpactCTA/ApiIntegrationImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO/SEO";
 const ApiIntegration = () => {
   return (
     <>
-      <Helmet>
+      <SEO
+        title="System Integration & API Enablement Services | Infogenx"
+        description="Infogenx delivers seamless system integration and API-first solutions that connect platforms, automate data flow, and improve operational efficiency."
+        keywords="system integration services, API integration Australia, enterprise integration"
+      />
+      {/* <Helmet>
         <title>System Integration & API Enablement Services | Infogenx</title>
         <meta
           name="description"
@@ -19,7 +25,7 @@ const ApiIntegration = () => {
           name="keywords"
           content="system integration services, API integration Australia, enterprise integration"
         />
-      </Helmet>
+      </Helmet> */}
       <Header />
       <AppDevHero />
       <AppDevExpertise />
