@@ -203,8 +203,7 @@ const GetinTouch = () => {
       });
       setShowThankYou(true);
     } catch (error) {
-      console.error(error);
-      alert("Submission failed");
+      console.error("Submission error:", error);
     } finally {
       setIsSubmitting(false);
     }
