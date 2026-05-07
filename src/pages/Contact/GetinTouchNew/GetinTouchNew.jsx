@@ -107,7 +107,7 @@ const GetinTouch = () => {
       };
 
       addField("zf_referrer_name", typeof document !== "undefined" ? document.referrer || "" : "");
-      addField("zf_redirect_url", "https://infogenx.com/contact-us");
+      addField("zf_redirect_url", `${process.env.REACT_APP_SITE_URL || "https://dev.infogenx.com"}/contact-us`);
       addField("zc_gad", "");
 
       const fullName = formData.lastName.trim();
