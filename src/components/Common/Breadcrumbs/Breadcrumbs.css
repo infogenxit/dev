@@ -1,36 +1,40 @@
 .breadcrumbs-nav {
   padding: 15px 0;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eee;
-  font-family: 'Outfit', sans-serif;
+  margin-top: 10px;
 }
 
-.breadcrumbs-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  font-size: 0.9rem;
+.breadcrumbs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
   color: #666;
 }
 
-.breadcrumbs-container a {
-  color: #007bff;
+.breadcrumbs-list li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-list a {
   text-decoration: none;
-  transition: color 0.3s ease;
+  color: #00123c;
+  transition: color 0.3s;
 }
 
-.breadcrumbs-container a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+.breadcrumbs-list a:hover {
+  color: #f36b2a;
 }
 
-.breadcrumb-current {
-  color: #333;
-  font-weight: 500;
+.breadcrumbs-list .separator {
+  margin: 0 8px;
+  color: #999;
 }
 
-@media (max-width: 768px) {
-  .breadcrumbs-container {
-    font-size: 0.85rem;
-  }
+.breadcrumbs-list .current {
+  color: #f36b2a;
+  font-weight: 600;
 }
