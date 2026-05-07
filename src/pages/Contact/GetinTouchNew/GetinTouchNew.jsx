@@ -86,6 +86,56 @@ const GetinTouch = () => {
 
 
 
+  /* 
+  // ==========================================
+  // LEGACY ZOHO SUBMISSION (LeadCapture Form)
+  // Restored as comments for reference - Do not remove
+  // ==========================================
+  const handleSubmitLegacy = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = "https://forms.zohopublic.in/infogenx1/form/LeadCapture/formperma/XMx0IxKOfb-jzTS5sYys24DSyw1QMOeIwm-4IXybPtI/htmlRecords/submit";
+
+      const addField = (name, value) => {
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = name;
+        input.value = value || "";
+        form.appendChild(input);
+      };
+
+      const fullName = formData.lastName.trim();
+      let firstName = "User";
+      let lastName = "User";
+      if (fullName) {
+        const parts = fullName.split(/\s+/);
+        firstName = parts[0];
+        lastName = parts.length > 1 ? parts.slice(1).join(" ") : parts[0];
+      }
+
+      addField("Name_First", firstName);
+      addField("Name_Last", lastName);
+      addField("SingleLine", formData.companyName);
+      addField("Email", formData.businessEmail);
+      addField("MultiLine", formData.message);
+      addField("PhoneNumber_countrycode", formData.phone);
+      addField("zf_redirect_url", "https://dev.infogenx.com/");
+
+      document.body.appendChild(form);
+      form.submit();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  // ==========================================
+  */
+
   // Zoho ContactUs — same fields as the embedded form; UI stays React/CSS.
   const handleSubmit = (e) => {
     e.preventDefault();
