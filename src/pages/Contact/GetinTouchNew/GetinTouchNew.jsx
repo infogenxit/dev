@@ -32,7 +32,7 @@ const GetinTouch = () => {
     techStack: [],
     transformationBudget: "",
     message: "",
-    phone: "+61 ",
+    phone: process.env.REACT_APP_PHONE_PREFIX || "+61 ",
   });
   const [showThankYou, setShowThankYou] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -78,6 +78,8 @@ const GetinTouch = () => {
       setFormData((prev) => ({
         ...prev,
         [name]: value,
+        // If the name is 'phone' and the value is empty, reset to the prefix
+        ...(name === 'phone' && value === '' ? { phone: process.env.REACT_APP_PHONE_PREFIX || '+61 ' } : {})
       }));
     }
   };
@@ -147,7 +149,7 @@ const GetinTouch = () => {
         techStack: [],
         transformationBudget: "",
         message: "",
-        phone: "+61 ",
+        phone: process.env.REACT_APP_PHONE_PREFIX || "+61 ",
       });
       setShowThankYou(true);
     } catch (error) {
@@ -218,8 +220,8 @@ const GetinTouch = () => {
                   />
                   <div className="phone-input-wrapper">
                     <img
-                      src="https://flagcdn.com/w40/au.png"
-                      alt="Australia Flag"
+                      src={process.env.REACT_APP_FLAG_ICON || "https://flagcdn.com/w40/au.png"}
+                      alt="Flag"
                       className="flag-icon"
                     />
                     <input
