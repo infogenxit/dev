@@ -30,7 +30,7 @@ import ECommerce from "./pages/Industries/ECommerce/ECommerce";
 import Manufacturing from "./pages/Industries/Manufacturing/Manufacturing";
 import Transport from "./pages/Industries/Transport/Transport";
 import Portfolio from "./pages/Portfolio/Portfolio";
-import ApiIntegration from "./pages/Solutions/APIintegration/ApiIntegration";
+import ApiIntegration from "./pages/Solutions/ApiIntegration/ApiIntegration";
 import DataAnalyticsAI from "./pages/Solutions/DataAnalyticsAI/DataAnalyticsAI";
 import DigitalTransformation from "./pages/Solutions/DigitalTransformation/DigitalTransformation";
 import IntelligentAutomation from "./pages/Solutions/IntelligentAutomation/IntelligentAutomation";
