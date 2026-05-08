@@ -51,6 +51,9 @@ const ManagedServices = () => {
       answer: "We offer tiered SLA response times based on the severity of the issue, with critical alerts being addressed immediately by our dedicated support team."
     }
   ];
+  const breadcrumbItems = [
+    { name: "Services", path: "/services/managed-services" }
+  ];
   return (
     <>
       <SEO
@@ -72,7 +75,7 @@ const ManagedServices = () => {
         />
       </Helmet> */}
       <Header />
-      <Breadcrumbs />
+      <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

@@ -1,12 +1,12 @@
 import "./Hero.css";
-import aiIcon from "../../../assets/images/aiIcon.png";
-import automationIcon from "../../../assets/images/automationIcon.png";
-import analyticsIcon from "../../../assets/images/analyticalIcon.png";
-import AiSetting from "../../../assets/images/ICONinfogenx1.png";
+import aiIcon from "../../../assets/images/aiIcon.webp";
+import automationIcon from "../../../assets/images/automationIcon.webp";
+import analyticsIcon from "../../../assets/images/analyticalIcon.webp";
+import AiSetting from "../../../assets/images/ICONinfogenx1.webp";
 import heroVideo from "../../../assets/videos/herovideobg.mp4";
-import MicrosoftImg from "../../../assets/images/microsoft (2).png";
-import ZohoImg from "../../../assets/images/zoho (2).png";
-import OdooImg from "../../../assets/images/odoo (2).png";
+import MicrosoftImg from "../../../assets/images/microsoft (2).webp";
+import ZohoImg from "../../../assets/images/zoho (2).webp";
+import OdooImg from "../../../assets/images/odoo (2).webp";
 import { useNavigate } from "react-router-dom";
 const Hero = () => {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
 import "./AboutWhoWeAre.css";
-import teamImage from "../../../assets/images/about-team.png";
+import teamImage from "../../../assets/images/about-team.webp";
 
 const AboutWhoWeAre = () => {
   return (
@@ -20,16 +20,14 @@ const AboutWhoWeAre = () => {
           {/* Right */}
           <div className="about-who-right">
             <h4>
-             We connect workflows, data, and platforms to reduce friction, 
-              improve visibility, and support confident growth.
-
+              At Infogenx, we believe that technology should be an invisible engine for growth, not a source of operational friction. We connect workflows, data, and platforms to provide the visibility and efficiency needed for Australian organizations to scale with total confidence.
             </h4>
 
             <p>
-              We specialise in AI-enabled applications, intelligent automation,
-              and data-led solutions across platforms such as Microsoft, Zoho, and Odoo.
-              Our focus is on solving real business problems with secure, scalable, and growth-built technology.
-
+              Since our inception, we have focused on a single mission: empowering enterprises with outcome-driven digital engineering. We specialize in AI-enabled applications, intelligent automation, and decision-grade data analytics across the Microsoft, Zoho, and Odoo ecosystems. Our approach is rooted in technical excellence and a deep understanding of the unique challenges facing the Australian business landscape.
+            </p>
+            <p>
+              By bridging the gap between complex business requirements and elegant technical execution, we transform fragmented processes into cohesive, automated environments that support long-term sustainability and innovation.
             </p>
           </div>
         </div>
@@ -53,15 +51,13 @@ const AboutWhoWeAre = () => {
           {/* Right */}
           <div className="about-who-points">
             <ul>
-              <li>- Understand current workflows, gaps, and operational friction points </li>
-              <li>- Design practical solutions aligned with real business needs</li>
-              <li>- Deliver connected systems that improve visibility and efficiency</li>
+              <li><strong>Deep Operational Discovery:</strong> We begin by auditing your current workflows, identifying technical debt, and uncovering hidden friction points that are holding you back.</li>
+              <li><strong>Pragmatic Strategy & Design:</strong> We design custom digital roadmaps that prioritize high-impact solutions, ensuring every investment is aligned with your ROI targets.</li>
+              <li><strong>Scalable Technical Execution:</strong> Our engineers build connected systems that improve data visibility and operational velocity, using the best-fit technology for your industry.</li>
             </ul>
 
             <p>
-              Every project is approached with clarity, structure, and 
-              a strong focus on outcomes that matter in day-to-day operations.
-
+              Our methodology is built on transparency, structure, and a relentless focus on delivering outcomes that matter. We don't just build software; we build the technical foundations that allow your business to achieve its most ambitious goals.
             </p>
           </div>
         </div>

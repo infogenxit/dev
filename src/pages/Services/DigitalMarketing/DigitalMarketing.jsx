@@ -52,6 +52,10 @@ const DigitalMarketing = () => {
       link: "/services/managed-services"
     }
   ];
+  const breadcrumbItems = [
+    { name: "Services", path: "/services/managed-services" },
+    { name: "Digital Marketing", path: "/services/digital-marketing" }
+  ];
   return (
     <>
       <SEO
@@ -71,7 +75,7 @@ const DigitalMarketing = () => {
         />
       </Helmet> */}
       <Header />
-      <Breadcrumbs />
+      <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

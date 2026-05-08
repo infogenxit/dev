@@ -52,6 +52,10 @@ const SupportOptimization = () => {
       link: "/solutions/digital-transformation"
     }
   ];
+  const breadcrumbItems = [
+    { name: "Services", path: "/services/managed-services" },
+    { name: "Support & Optimization", path: "/services/support-optimization" }
+  ];
   return (
     <>
       <SEO
@@ -71,7 +75,7 @@ const SupportOptimization = () => {
         />
       </Helmet> */}
       <Header />
-      <Breadcrumbs />
+      <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

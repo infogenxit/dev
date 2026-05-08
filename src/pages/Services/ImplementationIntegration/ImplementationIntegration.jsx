@@ -52,6 +52,10 @@ const ImplementationIntegration = () => {
       link: "/solutions/intelligent-automation"
     }
   ];
+  const breadcrumbItems = [
+    { name: "Services", path: "/services/managed-services" },
+    { name: "Implementation & Integration", path: "/services/implementation-integration" }
+  ];
   return (
     <>
       <SEO
@@ -71,7 +75,7 @@ const ImplementationIntegration = () => {
         />
       </Helmet> */}
       <Header />
-      <Breadcrumbs />
+      <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

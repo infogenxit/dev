@@ -52,6 +52,10 @@ const ConsultingAdvisory = () => {
       link: "/solutions/data-analytics-ai"
     }
   ];
+  const breadcrumbItems = [
+    { name: "Services", path: "/services/managed-services" },
+    { name: "Consulting & Advisory", path: "/services/consulting-advisory" }
+  ];
   return (
     <>
       <SEO
@@ -59,21 +63,8 @@ const ConsultingAdvisory = () => {
         description="Make confident AI-Enabled Business Solutions decisions with Infogenx’s consulting and advisory services focused on strategy, planning, and business alignment."
         keywords="AI & Automation Consulting Australia, technology advisory, digital strategy consulting"
       />
-      {/* <Helmet>
-        <title>
-          IT Consulting & Technology Advisory Services | Infogenx Australia
-        </title>
-        <meta
-          name="description"
-          content="Make confident AI-Enabled Business Solutions decisions with Infogenx’s consulting and advisory services focused on strategy, planning, and business alignment."
-        />
-        <meta
-          name="keywords"
-          content="AI & Automation Consulting Australia, technology advisory, digital strategy consulting"
-        />
-      </Helmet> */}
       <Header />
-      <Breadcrumbs />
+      <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

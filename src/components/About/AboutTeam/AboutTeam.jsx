@@ -5,21 +5,27 @@ import { RiLinkedinBoxLine } from "react-icons/ri";
 const AboutTeam = () => {
   const teamMembers = [
     {
-      name: "Leadership Team",
-      role: "Strategic Direction & Operations",
-      bio: "Our leadership team focuses on driving digital transformation excellence across the Australian business landscape.",
+      name: "Strategic Leadership",
+      role: "Digital Strategy & Enterprise Transformation",
+      bio: "Our leadership brings decades of experience in navigating the intersection of business strategy and emerging technology. They specialize in defining the 'North Star' for Australian enterprises, ensuring every digital initiative aligns with long-term growth and operational excellence.",
       linkedin: "https://www.linkedin.com/company/infogenx-pvt-ltd/"
     },
     {
-      name: "AI & Automation Experts",
-      role: "Solutions Engineering",
-      bio: "Specialists in Microsoft, Zoho, and Odoo ecosystems, delivering intelligent automation and AI-enabled apps.",
+      name: "Solutions Architecture",
+      role: "Platform Engineering & AI Integration",
+      bio: "Comprised of certified experts in Microsoft Power Platform, Zoho Creator, and Odoo, our architecture team designs the secure, scalable foundations that power our intelligent automation and custom application solutions.",
       linkedin: "https://www.linkedin.com/company/infogenx-pvt-ltd/"
     },
     {
-      name: "Data Analytics Team",
-      role: "Intelligence & Insights",
-      bio: "Experts in turning complex business data into actionable insights and decision-support systems.",
+      name: "Data Science Group",
+      role: "Predictive Analytics & Machine Learning",
+      bio: "Our data specialists focus on transforming raw business datasets into actionable, decision-grade intelligence. They build the AI models and visualization tools that allow our clients to predict market shifts and optimize performance in real-time.",
+      linkedin: "https://www.linkedin.com/company/infogenx-pvt-ltd/"
+    },
+    {
+      name: "Delivery Management",
+      role: "Project Governance & Customer Success",
+      bio: "Our delivery leads ensure that every project is executed with transparency, structure, and a relentless focus on outcomes. They act as the bridge between our technical teams and your business objectives, ensuring seamless transition and high user adoption.",
       linkedin: "https://www.linkedin.com/company/infogenx-pvt-ltd/"
     }
   ];
