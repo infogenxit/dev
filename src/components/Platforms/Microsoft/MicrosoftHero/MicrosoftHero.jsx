@@ -23,12 +23,14 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Microsoft Excellence Delivered</h1>
+          {/* <h1>Microsoft Excellence Delivered</h1> */}
+          <h1>Trusted Microsoft Partner in Brisbane</h1>
 
           <p>
-            Microsoft Power Platform automation, Azure AI solutions, and
+            {/* Microsoft Power Platform automation, Azure AI solutions, and
             Dynamics implementation tailored for Australian enterprises focused
-            on governance and growth.
+            on governance and growth. */}
+            Certified Microsoft partner in Brisbane specializing in Dynamics 365, Power BI, and Microsoft Cloud solutions for scalable growth.
           </p>
 
           <div className="appdev-buttons">

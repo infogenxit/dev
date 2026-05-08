@@ -11,33 +11,41 @@ const ServiceHighlight = () => {
   const services = [
     {
       index: " ",
-      title: "AI-Enabled Application Development",
+      /* title: "AI-Enabled Application Development",
       description:
-        "Purpose-built applications and platform extensions that fit your business - secure, integrated, and ready to scale.",
+        "Purpose-built applications and platform extensions that fit your business - secure, integrated, and ready to scale.", */
+      title: "Modern Application Development",
+      description: "We build scalable, high-performance applications tailored to your business. From customer-facing apps to internal management systems, we develop solutions that grow with you.",
       video: serviceVideo1,
       background: "#ffd6bf",
     },
     {
       index: "",
-      title: "Intelligent Automation for Repetitive Work",
+      /* title: "Intelligent Automation for Repetitive Work",
       description:
-        "Workflow orchestration that removes bottlenecks, cuts manual steps, and keeps teams moving with fewer errors.",
+        "Workflow orchestration that removes bottlenecks, cuts manual steps, and keeps teams moving with fewer errors.", */
+      title: "AI & Automation",
+      description: "Unlock the power of efficiency. We implement custom AI and automation solutions that eliminate repetitive tasks, reduce human error, and allow your team to focus on high-value activities.",
       video: serviceVideo2,
       background: "#E9C9FF",
     },
     {
       index: "",
-      title: "AI-Powered Business Insights",
+      /* title: "AI-Powered Business Insights",
       description:
-        "Embedded analytics that turns raw data into clarity - so you can spot patterns early and make decisions with confidence.",
+        "Embedded analytics that turns raw data into clarity - so you can spot patterns early and make decisions with confidence.", */
+      title: "Business Intelligence",
+      description: "Turn data into a competitive advantage. Our business intelligence solutions provide real-time insights, helping you make informed, data-backed decisions that drive profitability and efficiency.",
       video: serviceVideo3,
       background: "#C9D5FF",
     },
     {
       index: "",
-      title: "System Integration Solutions",
+      /* title: "System Integration Solutions",
       description:
-        "Connected platforms and clean data flows that eliminate silos and help your business work as one.",
+        "Connected platforms and clean data flows that eliminate silos and help your business work as one.", */
+      title: "Digital Transformation & IT Consulting",
+      description: "We help you navigate the complexities of digital transformation. Whether you're modernising legacy systems or building a digital-first roadmap, our IT consulting in Brisbane ensures your technology aligns with your long-term business strategy.",
       video: serviceVideo4,
       background: "#C9F9FF",
     },

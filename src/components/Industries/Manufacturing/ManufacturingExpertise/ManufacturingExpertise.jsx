@@ -10,61 +10,62 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Industry-Specific Expertise</span>
+          <span className="section-label">Manufacturing IT Expertise</span>
+          {/* <h2>Platform solutions addressing unique Australian industry challenges.</h2> */}
           <h2>
-            Platform solutions addressing unique Australian industry challenges.
+            The Right Technology Stops Costing You and Starts Working For You
           </h2>
         </div>
 
         {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
-            {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            {/* <h4>AI-Powered Codeless Development</h4>
+            <p>Rapidly prototype and launch business apps without traditional coding constraints.</p> */}
+            <h4>Inventory Accuracy & Management</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              End inaccurate stock counts with real-time inventory tracking that prevents costly production delays and write-offs.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            {/* <h4>Custom Application Development</h4>
+            <p>Deliberately crafted web and mobile solutions aligned with your strategic goals.</p> */}
+            <h4>Automated Reporting</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Replace time-consuming manual reports with automated dashboards that give management instant operational clarity.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            {/* <h4>Cloud-Native Application Engineering</h4>
+            <p>Build resilient, scalable applications optimized for AWS, Azure, GCP, and hybrid architectures.</p> */}
+            <h4>Equipment Maintenance Tracking</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              Prevent unexpected downtime with maintenance scheduling and asset tracking that keeps critical equipment running.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            {/* <h4>Application Modernization & Optimization</h4>
+            <p>Upgrade legacy systems with performance, usability, and future-ready capabilities.</p> */}
+            <h4>Production Floor Visibility</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              Real-time visibility into your production lines, helping you identify bottlenecks and optimise throughput.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Scalability, & Compliance</h4>
+            {/* <h4>Security, Scalability, & Compliance</h4>
+            <p>Ensure applications meet industry standards while performing under real-world load.</p> */}
+            <h4>Supply Chain Optimisation</h4>
             <p>
-              Ensure applications meet industry standards while performing under
-              real-world load.
+              Smarter procurement and supplier management tools that reduce costs and ensure materials arrive exactly when needed.
             </p>
           </div>
         </div>

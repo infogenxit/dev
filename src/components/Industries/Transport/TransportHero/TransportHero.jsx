@@ -23,12 +23,14 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Logistics Optimised Fast</h1>
+          {/* <h1>Logistics Optimised Fast</h1> */}
+          <h1>Transport & Logistics IT Solutions: Efficiency in Motion</h1>
 
           <p>
-            Route optimisation and fleet automation for transport logistics
+            {/* Route optimisation and fleet automation for transport logistics
             Australia – real-time tracking and workflow intelligence on
-            preferred platforms.
+            preferred platforms. */}
+            Optimizing supply chains, fleet management, and logistics operations with real-time tracking and intelligent automation solutions.
           </p>
 
           <div className="appdev-buttons">

@@ -10,61 +10,62 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Industry-Specific Expertise</span>
+          <span className="section-label">Retail IT Expertise</span>
+          {/* <h2>Platform solutions addressing unique Australian industry challenges.</h2> */}
           <h2>
-            Platform solutions addressing unique Australian industry challenges.
+            Your Retail Operations Deserve Better Technology
           </h2>
         </div>
 
         {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
-            {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            {/* <h4>AI-Powered Codeless Development</h4>
+            <p>Rapidly prototype and launch business apps without traditional coding constraints.</p> */}
+            <h4>Inventory Management Systems</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              Real-time stock visibility across all locations, reducing write-offs and ensuring you always know exactly what's on hand.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            {/* <h4>Custom Application Development</h4>
+            <p>Deliberately crafted web and mobile solutions aligned with your strategic goals.</p> */}
+            <h4>Point of Sale Integration</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Seamlessly connect your POS to your back-office, accounts, and e-commerce store — no more manual reconciliation.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            {/* <h4>Cloud-Native Application Engineering</h4>
+            <p>Build resilient, scalable applications optimized for AWS, Azure, GCP, and hybrid architectures.</p> */}
+            <h4>Supply Chain Automation</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              Automated supplier ordering, delivery tracking, and warehouse management to keep your operations running smoothly.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            {/* <h4>Application Modernization & Optimization</h4>
+            <p>Upgrade legacy systems with performance, usability, and future-ready capabilities.</p> */}
+            <h4>Customer Analytics & Loyalty</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              Understand your best customers, buying patterns, and campaign performance with integrated retail analytics.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Scalability, & Compliance</h4>
+            {/* <h4>Security, Scalability, & Compliance</h4>
+            <p>Ensure applications meet industry standards while performing under real-world load.</p> */}
+            <h4>Omnichannel Commerce</h4>
             <p>
-              Ensure applications meet industry standards while performing under
-              real-world load.
+              Unify your in-store and online operations with integrated platforms that give customers a seamless shopping experience.
             </p>
           </div>
         </div>

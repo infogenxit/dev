@@ -23,12 +23,14 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Healthcare Transformation Now</h1>
+          {/* <h1>Healthcare Transformation Now</h1> */}
+          <h1>Healthcare IT Solutions: Secure, Compliant, and Efficient</h1>
 
           <p>
-            Intelligent automation for healthcare Australia – patient workflow
+            {/* Intelligent automation for healthcare Australia – patient workflow
             orchestration, compliance automation, and analytics on Microsoft or
-            Zoho platforms.
+            Zoho platforms. */}
+            Focusing on reducing administrative burden, patient record security, and building compliant systems that allow medical practices to focus on care.
           </p>
 
           <div className="appdev-buttons">

@@ -23,12 +23,14 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>E-Commerce Scaled Smartly</h1>
+          {/* <h1>E-Commerce Scaled Smartly</h1> */}
+          <h1>Shopify Agency Brisbane — Built for Scalable eCommerce</h1>
 
           <p>
-            Conversion optimisation and personalisation automation for
+            {/* Conversion optimisation and personalisation automation for
             e-commerce Australia – seamless Zoho or Microsoft integration for
-            growth.
+            growth. */}
+            Helping brands scale through high-converting storefronts, custom apps, and seamless integrations. We build eCommerce systems that grow with you.
           </p>
 
           <div className="appdev-buttons">

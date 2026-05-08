@@ -23,11 +23,13 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Odoo ERP That Performs</h1>
+          {/* <h1>Odoo ERP That Performs</h1> */}
+          <h1>Odoo in Brisbane for Scalable ERP, Automation and Business Systems</h1>
 
           <p>
-            Unify operations, streamline workflows, and gain greater control
-            with Odoo solutions built for scalable Australian businesses.
+            {/* Unify operations, streamline workflows, and gain greater control
+            with Odoo solutions built for scalable Australian businesses. */}
+            Expert Odoo consulting, migration, and custom development in Brisbane. We help you eliminate app fatigue and fragmented data with a unified business platform.
           </p>
 
           <div className="appdev-buttons">

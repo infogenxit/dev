@@ -10,10 +10,18 @@ import SEO from "../../../components/SEO/SEO";
 const Retail = () => {
   return (
     <>
+      {/* 
+        PREVIOUS SEO (COMMENTED OUT):
+        <SEO
+          title="AI automation retail Australia | AI Solutions by InfogenX Australia"
+          description="best AI solutions for retail Australia, Transform retail with InfogenX's AI-enabled solutions in Australia: inventory automation, customer analytics & personalised experiences. Local expertise for scalable growth."
+          keywords="AI consulting retail, intelligent automation retail solutions, digital transformation retail Australia, AI-enabled inventory management, customer analytics automation Australia, platform-focused retail AI"
+        />
+      */}
       <SEO
-        title="AI automation retail Australia | AI Solutions by InfogenX Australia"
-        description="best AI solutions for retail Australia, Transform retail with InfogenX's AI-enabled solutions in Australia: inventory automation, customer analytics & personalised experiences. Local expertise for scalable growth."
-        keywords="AI consulting retail, intelligent automation retail solutions, digital transformation retail Australia, AI-enabled inventory management, customer analytics automation Australia, platform-focused retail AI"
+        title="Retail IT Solutions Brisbane | Infogenx"
+        description="Bridging the gap between physical and digital storefronts with scalable retail IT solutions in Brisbane. We help businesses unify inventory and automate operations."
+        keywords="retail IT solutions Brisbane, inventory automation, e-commerce integration, retail technology Australia, Infogenx"
       />
       {/* <Helmet>
         <title>

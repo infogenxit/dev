@@ -23,12 +23,14 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Zoho Mastery Achieved</h1>
+          {/* <h1>Zoho Mastery Achieved</h1> */}
+          <h1>Your Trusted Zoho Consultant in Brisbane</h1>
 
           <p>
-            Zoho CRM implementation, workflow automation, and analytics
+            {/* Zoho CRM implementation, workflow automation, and analytics
             engineering customised for growing Australian businesses needing
-            agility and integration.
+            agility and integration. */}
+            Built Around How Your Business Actually Works. Move beyond the "out-of-the-box" setup to create a system that truly reflects your business operations.
           </p>
 
           <div className="appdev-buttons">

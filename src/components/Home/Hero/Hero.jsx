@@ -27,13 +27,15 @@ const Hero = () => {
           {/* <span>Apps</span>, <span>Automation</span>, <span>Analytics</span>,
           <span>And AI</span> */}
           {/* <span>AI Automation & App Development Company in Australia</span> */}
-          <span>Build Smarter. Automate Faster. Decide Better. | AI Automation Australia</span>
+          {/* <span>Build Smarter. Automate Faster. Decide Better. | AI Automation Australia</span> */}
+          <span>IT Consulting in Brisbane: Future-Driven Technology Solutions by Infogenx</span>
         </h1>   
 
         <h2 className="hero-subheading">
           {/* AI-enabled applications, automation, and analytics for{" "}
           <span>Microsoft, Zoho, and Odoo—engineered</span> for growth, governance, and real business impact. */}
-          Engineered for growth: AI-enabled applications, intelligent automation, and data analytics for <span>Microsoft, Zoho, and Odoo</span> ecosystem.
+          {/* Engineered for growth: AI-enabled applications, intelligent automation, and data analytics for <span>Microsoft, Zoho, and Odoo</span> ecosystem. */}
+          We partner with local, mid-market, and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology.
         </h2>
 
         {/* <p className="hero-description">

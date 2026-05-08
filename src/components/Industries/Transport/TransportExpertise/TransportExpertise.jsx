@@ -10,61 +10,62 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Industry-Specific Expertise</span>
+          <span className="section-label">Transport & Logistics IT Expertise</span>
+          {/* <h2>Platform solutions addressing unique Australian industry challenges.</h2> */}
           <h2>
-            Platform solutions addressing unique Australian industry challenges.
+            Streamlining Logistics Operations from Dispatch to Delivery
           </h2>
         </div>
 
         {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
-            {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            {/* <h4>AI-Powered Codeless Development</h4>
+            <p>Rapidly prototype and launch business apps without traditional coding constraints.</p> */}
+            <h4>Fleet Management & Tracking</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              Real-time fleet tracking and vehicle management systems that improve utilisation and reduce operational costs.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            {/* <h4>Custom Application Development</h4>
+            <p>Deliberately crafted web and mobile solutions aligned with your strategic goals.</p> */}
+            <h4>Route Optimisation</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Intelligent route planning tools that reduce fuel costs, improve delivery times, and minimise driver fatigue.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            {/* <h4>Cloud-Native Application Engineering</h4>
+            <p>Build resilient, scalable applications optimized for AWS, Azure, GCP, and hybrid architectures.</p> */}
+            <h4>Supply Chain Visibility</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              End-to-end supply chain tracking giving you and your customers real-time visibility into shipment status and ETAs.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            {/* <h4>Application Modernization & Optimization</h4>
+            <p>Upgrade legacy systems with performance, usability, and future-ready capabilities.</p> */}
+            <h4>Dispatch & Scheduling Automation</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              Automated dispatch systems that reduce manual coordination, improve response times, and eliminate scheduling conflicts.
             </p>
           </div>
 
           <div className="expertise-item">
-            {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Scalability, & Compliance</h4>
+            {/* <h4>Security, Scalability, & Compliance</h4>
+            <p>Ensure applications meet industry standards while performing under real-world load.</p> */}
+            <h4>Compliance & Reporting</h4>
             <p>
-              Ensure applications meet industry standards while performing under
-              real-world load.
+              Automated compliance reporting for Australian transport regulations, keeping your operations audit-ready at all times.
             </p>
           </div>
         </div>

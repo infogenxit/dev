@@ -10,10 +10,18 @@ import SEO from "../../../components/SEO/SEO";
 const Healthcare = () => {
   return (
     <>
+      {/* 
+        PREVIOUS SEO (COMMENTED OUT):
+        <SEO
+          title="AI Automation & AI Consulting for Healthcare Australia"
+          description="Infogenx delivers intelligent automation & AI consulting for Australian healthcare providers – streamline patient care, compliance & analytics. Brisbane-based digital transformation experts."
+          keywords="intelligent automation healthcare, digital transformation healthcare Australia, AI-enabled healthcare solutions, automation analytics healthcare, AI in healthcare Australia, patient management automation Australia"
+        />
+      */}
       <SEO
-        title="AI Automation & AI Consulting for Healthcare Australia"
-        description="Infogenx delivers intelligent automation & AI consulting for Australian healthcare providers – streamline patient care, compliance & analytics. Brisbane-based digital transformation experts."
-        keywords="intelligent automation healthcare, digital transformation healthcare Australia, AI-enabled healthcare solutions, automation analytics healthcare, AI in healthcare Australia, patient management automation Australia"
+        title="Healthcare IT Solutions Brisbane | Infogenx"
+        description="Secure and compliant healthcare IT solutions in Brisbane. We help medical practices reduce administrative burden and protect patient records through smart technology."
+        keywords="healthcare IT solutions Brisbane, medical practice software, healthcare compliance, patient data security, Infogenx"
       />
       {/* <Helmet>
         <title>AI Automation & AI Consulting for Healthcare Australia</title>

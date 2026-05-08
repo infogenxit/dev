@@ -11,10 +11,18 @@ import SEO from "../../../components/SEO/SEO";
 const OdooSolution = () => {
   return (
     <>
+      {/* 
+        PREVIOUS SEO (COMMENTED OUT):
+        <SEO
+          title="Odoo ERP Implementation & Customisation | Infogenx"
+          description="Infogenx delivers Odoo ERP implementation, custom modules, and workflow automation to streamline operations and improve business visibility."
+          keywords="Odoo ERP Australia, Odoo implementation, ERP automation"
+        />
+      */}
       <SEO
-        title="Odoo ERP Implementation & Customisation | Infogenx"
-        description="Infogenx delivers Odoo ERP implementation, custom modules, and workflow automation to streamline operations and improve business visibility."
-        keywords="Odoo ERP Australia, Odoo implementation, ERP automation"
+        title="Odoo in Brisbane for Scalable ERP, Automation and Business Systems"
+        description="Expert Odoo consulting, migration, and custom development in Brisbane. We help you eliminate app fatigue and fragmented data with a unified business platform."
+        keywords="Odoo Brisbane, Odoo ERP implementation, Odoo consulting, ERP automation Brisbane, Infogenx"
       />
       {/* <Helmet>
         <title>Odoo ERP Implementation & Customisation | Infogenx</title>

@@ -23,12 +23,14 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Retail Growth Accelerated</h1>
+          {/* <h1>Retail Growth Accelerated</h1> */}
+          <h1>Retail IT Solutions: Bridging Physical and Digital Storefronts</h1>
 
           <p>
-            AI-enabled inventory and customer analytics for retail Australia –
+            {/* AI-enabled inventory and customer analytics for retail Australia –
             omnichannel automation and personalisation using Zoho or Microsoft
-            solutions.
+            solutions. */}
+            Bridging the gap between physical and digital storefronts with scalable technology and unified inventory systems.
           </p>
 
           <div className="appdev-buttons">
