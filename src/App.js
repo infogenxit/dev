@@ -4,7 +4,7 @@ import ScrollToTop from "./components/ScrollTop/ScrollToTop";
 import GtmPageViewTracker from "./components/analytics/GtmPageViewTracker";
 import RouteSeo from "./components/SEO/RouteSeo";
 import { Link } from "react-router-dom";
-import "./StickyContact.css";
+import StickyContact from "./components/StickyContact/StickyContact";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -50,16 +50,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import "./App.css";
 
-const StickyContact = () => {
-  return (
-    <div className="sticky-mobile-contact">
-      <Link to="/contact-us">Contact Us</Link>
-      <a href={`tel:${(process.env.REACT_APP_CONTACT_PHONE || '+61 403 331 910').replace(/\s+/g, '')}`}>
-        Call Now
-      </a>
-    </div>
-  );
-};
+
 
 
 function App() {
