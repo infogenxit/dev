@@ -1,10 +1,8 @@
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Industries/Transport/TransportHero/TransportHero";
 import AppDevExpertise from "../../../sections/Industries/Transport/TransportExpertise/TransportExpertise";
 import AppDevApproach from "../../../sections/Industries/Transport/TransportApproach/TransportApproach";
 import AppDevBusinessImpact from "../../../sections/Industries/Transport/TransportBusinessImpact/TransportBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Transport/TransportImpactCTA/TransportImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Transport = () => {
@@ -34,13 +32,11 @@ const Transport = () => {
           content="AI consulting transport logistics, intelligent automation logistics solutions, digital transformation logistics Australia, fleet management AI Australia, route optimisation automation Brisbane"
         />
       </Helmet> */}
-      <Header />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
-      <Footer />
     </>
   );
 };

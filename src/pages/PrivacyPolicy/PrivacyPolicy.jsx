@@ -1,6 +1,4 @@
 import "./PrivacyPolicy.css";
-import Header from "../../sections/header/Header";
-import Footer from "../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../components/SEO/SEO";
 
@@ -24,7 +22,6 @@ const PrivacyPolicy = () => {
         />
       </Helmet> */}
 
-      <Header />
       <section className="privacy-policy-section">
         <div className="privacy-container">
           <h1 className="privacy-title">Privacy Policy</h1>
@@ -236,7 +233,6 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

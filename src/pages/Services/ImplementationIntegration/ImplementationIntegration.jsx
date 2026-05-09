@@ -1,10 +1,8 @@
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Services/ImplementIntegration/ImplementIntegrationHero/ImplementIntegrationHero";
 import AppDevExpertise from "../../../sections/Services/ImplementIntegration/ImplementIntegrationExpertise/ImplementIntegrationExpertise";
 import AppDevApproach from "../../../sections/Services/ImplementIntegration/ImplementIntegrationApproach/ImplementIntegrationApproach";
 import AppDevBusinessImpact from "../../../sections/Services/ImplementIntegration/ImplementIntegrationBusinessImpact/ImplementIntegrationBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Services/ImplementIntegration/ImplementIntegrationImpactCTA/ImplementIntegrationImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
@@ -74,7 +72,6 @@ const ImplementationIntegration = () => {
           content="system implementation services, platform integration Australia"
         />
       </Helmet> */}
-      <Header />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
@@ -83,7 +80,6 @@ const ImplementationIntegration = () => {
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqs} />
       <RelatedServices items={relatedItems} />
-      <Footer />
     </>
   );
 };

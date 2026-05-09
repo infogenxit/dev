@@ -1,6 +1,5 @@
 import React from "react";
 import "./Products.css";
-import Header from "../../sections/header/Header";
 import AppcornerAssent from "../../assets/images/appcorner.png";
 import { AiOutlineStock } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +7,6 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaChartBar } from "react-icons/fa";
 import { FaUserGear } from "react-icons/fa6";
 
-import Footer from "../../sections/Footer/Footer";
 import CtaBanner from "../../sections/Home/CtaBanner/CtaBanner";
 import { useState } from "react";
 import DemoPopup from "./DemoPopup";
@@ -96,7 +94,6 @@ const Products = () => {
         />
       </Helmet> */}
 
-      <Header />
       <section className="product-WebDev-hero">
         <img
           alt="corner accent"
@@ -190,7 +187,6 @@ const Products = () => {
         />
       </section>
       <CtaBanner />
-      <Footer />
       {activeDemo && (
         <DemoPopup data={activeDemo} onClose={() => setActiveDemo(null)} />
       )}

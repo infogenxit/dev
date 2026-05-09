@@ -48,7 +48,7 @@ import CustomerRelation from "./pages/Products/CustomerRelation/CustomerRelation
 import Careers from "./pages/Careers/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
-import "./App.css";
+import "./styles/App.css";
 
 
 

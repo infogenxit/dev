@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Platforms/Odoo/OdooHero/OdooHero";
 import AppDevExpertise from "../../../sections/Platforms/Odoo/OdooExpertise/OdooExpertise";
 import AppDevApproach from "../../../sections/Platforms/Odoo/OdooApproach/OdooApproach";
 import AppDevBusinessImpact from "../../../sections/Platforms/Odoo/OdooBusinessImpact/OdooBusinessImpact";
 // import AppDevImpactCTA from "../../../sections/Platforms/Odoo/OdooImpactCTA/OdooImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const OdooSolution = () => {
@@ -35,13 +33,11 @@ const OdooSolution = () => {
           content="Odoo ERP Australia, Odoo implementation, ERP automation"
         />
       </Helmet> */}
-      <Header />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />
       <AppDevBusinessImpact />
       {/* <AppDevImpactCTA /> */}
-      <Footer />
     </>
   );
 };

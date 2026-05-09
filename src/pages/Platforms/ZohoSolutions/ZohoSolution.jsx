@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Platforms/Zoho/ZohoHero/ZohoHero";
 import AppDevExpertise from "../../../sections/Platforms/Zoho/ZohoExpertise/ZohoExpertise";
 import AppDevApproach from "../../../sections/Platforms/Zoho/ZohoApproach/ZohoApproach";
 import AppDevBusinessImpact from "../../../sections/Platforms/Zoho/ZohoBusinessImpact/ZohoBusinessImpact";
 // import AppDevImpactCTA from "../../../sections/Platforms/Zoho/ZohoImpactCTA/ZohoImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const ZohoSolution = () => {
@@ -37,13 +35,11 @@ const ZohoSolution = () => {
           content="Zoho consulting Australia, Zoho CRM automation, Zoho Analytics"
         />
       </Helmet> */}
-      <Header />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />
       <AppDevBusinessImpact />
       {/* <AppDevImpactCTA /> */}
-      <Footer />
     </>
   );
 };

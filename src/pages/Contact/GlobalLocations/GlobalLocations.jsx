@@ -1,8 +1,6 @@
 import '../GetinTouchNew/GetinTouchNew.css';
 import CustomerSupport from "../../../assets/videos/customer-support.mp4";
 import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
-import Header from "../../../sections/header/Header";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const GlobalLocations = () => {
@@ -27,7 +25,6 @@ const GlobalLocations = () => {
           content="Get in touch AI Automation,Platform specialists,Business enablement,Decision intelligence, AI & Automation Consulting, Digital Transformation Partner,Business Systems & AI Solutions, AI-Enabled Business Solutions,Automation & Analytics Consultin Platform-Focused Digital Solutions,AI consulting services,intelligent automation solutions, analytics consulting, what is intelligent automation, AI in business"
         />
       </Helmet> */}
-      <Header />
       <section className="appdev-hero">
         <img
           alt="corner accent"
@@ -130,7 +127,6 @@ const GlobalLocations = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

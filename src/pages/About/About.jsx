@@ -1,10 +1,8 @@
-import Header from "../../sections/header/Header";
 import AboutHero from "../../sections/About/AboutHero/AboutHero";
 import AboutWhoWeAre from "../../sections/About/AboutWhoWeAre/AboutWhoWeAre";
 import AboutWhyChoose from "../../sections/About/AboutWhyChoose/AboutWhyChoose";
 import AboutMissionVision from "../../sections/About/AboutMissionVision/AboutMissionVision";
 import AboutTeam from "../../sections/About/AboutTeam/AboutTeam";
-import Footer from "../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../components/SEO/SEO";
 const About = () => {
@@ -26,13 +24,11 @@ const About = () => {
           content="about Infogenx, Australian IT consulting company, digital engineering firm"
         />
       </Helmet> */}
-      <Header />
       <AboutHero />
       <AboutWhoWeAre />
       <AboutWhyChoose />
       <AboutMissionVision />
       <AboutTeam />
-      <Footer />
     </>
   );
 };

@@ -2,8 +2,6 @@ import { useState } from "react";
 import "./GetinTouch.css";
 import CustomerSupport from "../../../assets/videos/customer-support.mp4";
 import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
-import Header from "../../../sections/header/Header";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const GetinTouchOld = () => {
@@ -165,7 +163,6 @@ const GetinTouchOld = () => {
           content="contact AI & Automation Australia company, IT strategy call Australia"
         />
       </Helmet> */}
-      <Header />
       <section className="appdev-hero">
         <img
           alt="corner accent"
@@ -356,7 +353,6 @@ const GetinTouchOld = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

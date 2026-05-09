@@ -1,7 +1,5 @@
 import PortfolioVideo from "../../assets/videos/portfolio.mp4";
 import AboutCornerAccent from "../../assets/images/about-corner-accent.webp";
-import Header from "../../sections/header/Header";
-import Footer from "../../sections/Footer/Footer";
 import { useState } from "react";
 import "./Portfolio.css";
 import AppImg1 from "../../assets/images/infogenx-application-images-1.webp";
@@ -164,7 +162,6 @@ const Portfolio = () => {
         />
       </Helmet> */}
 
-      <Header />
       <section className="appdev-hero">
         <img
           alt="corner accent"
@@ -254,7 +251,6 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

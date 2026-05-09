@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./RequestQuote.css";
-import Header from "../../sections/header/Header";
-import Footer from "../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../components/SEO/SEO";
 const RequestQuote = () => {
@@ -97,7 +95,6 @@ const RequestQuote = () => {
           content="contact AI & Automation Australia company, IT strategy call Australia"
         />
       </Helmet> */}
-      <Header />
       <div className="request-quote-page">
         <div className="contact-form-container">
           <h2 className="contact-title">Get In Touch</h2>
@@ -186,7 +183,6 @@ const RequestQuote = () => {
           )}
         </div>
       </div>
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../../../sections/header/Header';
-import Footer from '../../../sections/Footer/Footer';
 import SEO from '../../../components/SEO/SEO';
 import './CaseStudies.css';
 
@@ -11,7 +9,6 @@ const CaseStudies = () => {
         title="Case Studies | Real-World Digital Transformation | Infogenx"
         description="Explore how Infogenx has helped Australian businesses scale with intelligent automation, custom applications, and AI-driven solutions."
       />
-      <Header />
       <section className="coming-soon-section">
         <div className="container text-center">
           <span className="section-label">Success Stories</span>
@@ -36,7 +33,6 @@ const CaseStudies = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

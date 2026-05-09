@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Solutions/IntelligentAutomation/IntelligentAutomationHero/IntelligentAutomationHero";
 import AppDevExpertise from "../../../sections/Solutions/IntelligentAutomation/IntelligentAutomationExpertise/IntelligentAutomationExpertise";
 import AppDevApproach from "../../../sections/Solutions/IntelligentAutomation/IntelligentAutomationApproach/IntelligentAutomationApproach";
 import AppDevBusinessImpact from "../../../sections/Solutions/IntelligentAutomation/IntelligentAutomationBusinessImpact/IntelligentAutomationBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Solutions/IntelligentAutomation/IntelligentAutomationImpactCTA/IntelligentAutomationImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
@@ -84,7 +82,6 @@ const IntelligentAutomation = () => {
         description="Transform your business efficiency with AI-driven intelligent automation. We orchestrate complex workflows across Microsoft, Zoho, and Odoo ecosystems."
         keywords="intelligent automation Australia, AI workflow automation, business process automation Sydney"
       />
-      <Header />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
@@ -98,7 +95,6 @@ const IntelligentAutomation = () => {
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqData} />
       <RelatedServices currentService="/solutions/intelligent-automation" />
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,4 @@
 import "./TermsConditions.css";
-import Header from "../../sections/header/Header";
-import Footer from "../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../components/SEO/SEO";
 
@@ -24,7 +22,6 @@ const TermsConditions = () => {
         />
       </Helmet> */}
 
-      <Header />
       <section className="terms-section">
         <div className="terms-container">
           <h1 className="terms-title">Terms & Conditions</h1>
@@ -199,7 +196,6 @@ const TermsConditions = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

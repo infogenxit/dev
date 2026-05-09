@@ -1,10 +1,8 @@
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Services/ConsultingAdvisory/ConsultingHero/ConsultingHero";
 import AppDevExpertise from "../../../sections/Services/ConsultingAdvisory/ConsultingExpertise/ConsultingExpertise";
 import AppDevApproach from "../../../sections/Services/ConsultingAdvisory/ConsultingAppDev/ConsultingAppDev";
 import AppDevBusinessImpact from "../../../sections/Services/ConsultingAdvisory/ConsultingBusinessImpact/ConsultingBusinessImpact";
 // import AppDevImpactCTA from "../../../components/Analytics/AppDevImpactCTA/AppDevImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
@@ -63,7 +61,6 @@ const ConsultingAdvisory = () => {
         description="Make confident AI-Enabled Business Solutions decisions with Infogenx’s consulting and advisory services focused on strategy, planning, and business alignment."
         keywords="AI & Automation Consulting Australia, technology advisory, digital strategy consulting"
       />
-      <Header />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
@@ -72,7 +69,6 @@ const ConsultingAdvisory = () => {
       <ServiceFaq faqs={faqs} />
       <RelatedServices items={relatedItems} />
       {/* <AppDevImpactCTA /> */}
-      <Footer />
     </>
   );
 };

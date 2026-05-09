@@ -1,10 +1,8 @@
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Services/SupportOptimization/SupportHero/SupportHero";
 import AppDevExpertise from "../../../sections/Services/SupportOptimization/SupportExpertise/SupportExpertise";
 import AppDevApproach from "../../../sections/Services/SupportOptimization/SupportApproach/SupportApproach";
 import AppDevBusinessImpact from "../../../sections/Services/SupportOptimization/SupportBusinessImpact/SupportBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Services/SupportOptimization/SupportImpactCTA/SupportImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
@@ -74,7 +72,6 @@ const SupportOptimization = () => {
           content="IT support Australia, system optimisation, performance monitoring"
         />
       </Helmet> */}
-      <Header />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
@@ -83,7 +80,6 @@ const SupportOptimization = () => {
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqs} />
       <RelatedServices items={relatedItems} />
-      <Footer />
     </>
   );
 };

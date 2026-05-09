@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationHero/DigitalTransformationHero";
 import AppDevExpertise from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationExpertise/DigitalTransformationExpertise";
 import AppDevApproach from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationApproach/DigitalTransformationApproach";
 import AppDevBusinessImpact from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationBusinessImpact/DigitalTransformationBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationImpactCTA/DigitalTransformationImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
@@ -103,7 +101,6 @@ const DigitalTransformation = () => {
         description="Infogenx helps Australian organizations modernize systems, optimize operations, and scale securely through outcome-driven digital transformation consulting."
         keywords="digital transformation consulting Australia, business process transformation, enterprise modernization"
       />
-      <Header />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
@@ -117,7 +114,6 @@ const DigitalTransformation = () => {
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqs} />
       <RelatedServices items={relatedItems} />
-      <Footer />
     </>
   );
 };

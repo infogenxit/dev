@@ -1,10 +1,8 @@
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Industries/Healthcare/HealthcareHero/HealthcareHero";
 import AppDevExpertise from "../../../sections/Industries/Healthcare/HealthcareExpertise/HealthcareExpertise";
 import AppDevApproach from "../../../sections/Industries/Healthcare/HealthcareApproach/HealthcareApproach";
 import AppDevBusinessImpact from "../../../sections/Industries/Healthcare/HealthcareBusinessImpact/HealthcareBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Healthcare/HealthcareImpactCTA/HealthcareImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Healthcare = () => {
@@ -34,13 +32,11 @@ const Healthcare = () => {
           content="intelligent automation healthcare, digital transformation healthcare Australia, AI-enabled healthcare solutions, automation analytics healthcare, AI in healthcare Australia, patient management automation Australia"
         />
       </Helmet> */}
-      <Header />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
-      <Footer />
     </>
   );
 };

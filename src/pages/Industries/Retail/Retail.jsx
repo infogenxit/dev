@@ -1,10 +1,8 @@
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Industries/Retail/RetailHero/RetailHero";
 import AppDevExpertise from "../../../sections/Industries/Retail/RetailExpertise/RetailExpertise";
 import AppDevApproach from "../../../sections/Industries/Retail/RetailApproach/RetailApproach";
 import AppDevBusinessImpact from "../../../sections/Industries/Retail/RetailBusinessImpact/RetailBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Retail/RetailImpactCTA/RetailImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Retail = () => {
@@ -36,13 +34,11 @@ const Retail = () => {
           content="AI consulting retail, intelligent automation retail solutions, digital transformation retail Australia, AI-enabled inventory management, customer analytics automation Australia, platform-focused retail AI"
         />
       </Helmet> */}
-      <Header />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
-      <Footer />
     </>
   );
 };

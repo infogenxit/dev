@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Solutions/ApiIntegration/ApiIntegrationHero/ApiIntegrationHero";
 import AppDevExpertise from "../../../sections/Solutions/ApiIntegration/ApiIntegrationExpertise/ApiIntegrationExpertise";
 import AppDevApproach from "../../../sections/Solutions/ApiIntegration/ApiIntegrationApproach/ApiIntegrationApproach";
 import AppDevBusinessImpact from "../../../sections/Solutions/ApiIntegration/ApiIntegrationBusinessImpact/ApiIntegrationBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Solutions/ApiIntegration/ApiIntegrationImpactCTA/ApiIntegrationImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
@@ -100,7 +98,6 @@ const ApiIntegration = () => {
         description="Connect your business ecosystem with secure, high-performance API integration. Expert engineering for Microsoft, Zoho, Odoo, and custom platforms."
         keywords="API integration services Australia, custom software connectors, enterprise system connectivity"
       />
-      <Header />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
@@ -114,7 +111,6 @@ const ApiIntegration = () => {
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqs} />
       <RelatedServices items={relatedItems} />
-      <Footer />
     </>
   );
 };

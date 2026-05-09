@@ -1,10 +1,8 @@
-import Header from "../../../sections/header/Header";
 import AppDevHero from "../../../sections/Industries/Finance/FinanceHero/FinanceHero";
 import AppDevExpertise from "../../../sections/Industries/Finance/FinanceExpertise/FinanceExpertise";
 import AppDevApproach from "../../../sections/Industries/Finance/FinanceApproach/FinanceApproach";
 import AppDevBusinessImpact from "../../../sections/Industries/Finance/FinanceBusinessImpact/FinanceBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Finance/FinanceImpactCTA/FinanceImpactCTA";
-import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Finance = () => {
@@ -34,13 +32,11 @@ const Finance = () => {
           content="intelligent automation finance, digital transformation finance Australia, AI-enabled risk analytics, fraud detection automation Australia, financial analytics consulting Brisbane"
         />
       </Helmet> */}
-      <Header />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
-      <Footer />
     </>
   );
 };
