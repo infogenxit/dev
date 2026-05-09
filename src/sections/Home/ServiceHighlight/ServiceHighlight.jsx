@@ -67,64 +67,33 @@ const ServiceHighlight = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   });
-  const service = services[activeIndex];
   return (
     <section
       className="service-section"
       ref={sectionRef}
-      style={{ height: `${services.length * 100}vh` }}
+      style={{ height: `${services.length * 85}vh` }}
     >
       <div className="service-sticky">
-        {/* <div
-          key={activeIndex}
-          className="service-card active card-animate"
-          style={{ background: service.background }}
-        >
-          <div className="service-content">
-            <h2 className="service-title">
-              {service.title.split("\n").map((line, i) => (
-                <span key={i}>
-                  {line}
-                  <br />
-                </span>
-              ))}
-            </h2>
-            <p className="service-description">{service.description}</p>
-            <button className="service-btn">
-              Talk to our Experts <span className="arrow">→</span>
-            </button>
-          </div>
-          <div className="service-media-container">
-            <div style={{ padding: "0 20px" }}>
-              <span className="service-index">{service.index}</span>
-            </div>
-            <div className="service-media">
-              <video
-                key={service.video} // 🔥 re-mount video on change
-                src={service.video}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="service-video"
-              />
-            </div>
-          </div>
-        </div> */}
         <div className="service-stack">
-          {services.slice(0, activeIndex + 1).map((item, i) => {
+          {services.map((item, i) => {
             const isActive = i === activeIndex;
+            const isPast = i < activeIndex;
+            const isFuture = i > activeIndex;
             const stackOffset = activeIndex - i;
             return (
               <div
                 key={i}
-                className={`service-card ${isActive ? "active" : "stacked"}`}
+                className={`service-card ${isActive ? "active" : isPast ? "stacked" : "future"}`}
                 style={{
                   background: item.background,
-                  transform: `
-            translateY(-${stackOffset * 35}px)
-          `,
-                  zIndex: 100 - stackOffset,
+                  transform: isActive 
+                    ? "translateY(0)" 
+                    : isPast 
+                      ? `translateY(-${stackOffset * 35}px)` 
+                      : "translateY(0px)",
+                  opacity: isFuture ? 0 : 1,
+                  zIndex: 100 - i,
+                  visibility: isFuture ? "hidden" : "visible",
                 }}
               >
                 <div className="service-content">
