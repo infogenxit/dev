@@ -3,37 +3,16 @@ import AppDevExpertise from "../../../sections/Industries/Retail/RetailExpertise
 import AppDevApproach from "../../../sections/Industries/Retail/RetailApproach/RetailApproach";
 import AppDevBusinessImpact from "../../../sections/Industries/Retail/RetailBusinessImpact/RetailBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Retail/RetailImpactCTA/RetailImpactCTA";
-import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
+
 const Retail = () => {
   return (
     <>
-      {/* 
-        PREVIOUS SEO (COMMENTED OUT):
-        <SEO
-          title="AI automation retail Australia | AI Solutions by InfogenX Australia"
-          description="best AI solutions for retail Australia, Transform retail with InfogenX's AI-enabled solutions in Australia: inventory automation, customer analytics & personalised experiences. Local expertise for scalable growth."
-          keywords="AI consulting retail, intelligent automation retail solutions, digital transformation retail Australia, AI-enabled inventory management, customer analytics automation Australia, platform-focused retail AI"
-        />
-      */}
       <SEO
-        title="Retail IT Solutions Brisbane | Infogenx"
-        description="Bridging the gap between physical and digital storefronts with scalable retail IT solutions in Brisbane. We help businesses unify inventory and automate operations."
-        keywords="retail IT solutions Brisbane, inventory automation, e-commerce integration, retail technology Australia, Infogenx"
+        title="Retail IT Solutions Brisbane | Inventory & POS Experts"
+        description="Streamline your retail business with our Brisbane IT solutions. We specialize in inventory automation, POS integration, and omnichannel customer experiences."
+        keywords="retail IT solutions Brisbane, inventory management software, POS system integration, retail technology Australia, Infogenx"
       />
-      {/* <Helmet>
-        <title>
-          AI automation retail Australia | AI Solutions by InfogenX Australia
-        </title>
-        <meta
-          name="description"
-          content="best AI solutions for retail Australia, Transform retail with InfogenX's AI-enabled solutions in Australia: inventory automation, customer analytics & personalised experiences. Local expertise for scalable growth."
-        />
-        <meta
-          name="keywords"
-          content="AI consulting retail, intelligent automation retail solutions, digital transformation retail Australia, AI-enabled inventory management, customer analytics automation Australia, platform-focused retail AI"
-        />
-      </Helmet> */}
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

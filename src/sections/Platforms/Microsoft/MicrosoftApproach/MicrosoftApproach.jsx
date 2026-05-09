@@ -1,44 +1,40 @@
 import "./MicrosoftApproach.css";
-import AppcornerAssent from "../../../../assets/images/appcorner.png";
+import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
-    title: "Assess the Opportunity",
-    desc: "We evaluate your Microsoft landscape to uncover the highest-value opportunities for automation, analytics, and AI.",
+    title: "Discovery",
+    desc: "We start by understanding your business and current systems to ensure we design the right solution.",
   },
   {
     number: "2",
-    title: "Design for Fit and Scale",
-    desc: "We shape solutions around your workflows, security needs, and long-term business priorities.",
+    title: "Solution Design",
+    desc: "We create a clear plan that fits your workflows, avoiding unnecessary features or complexity.",
   },
   {
     number: "3",
-    title: "Implement with Precision",
-    desc: "We deploy Microsoft solutions that improve execution, visibility, and operational efficiency.",
+    title: "Build & Configure",
+    desc: "Our team builds and configures your Microsoft environment properly from the ground up.",
   },
   {
     number: "4",
-    title: "Govern with Confidence",
-    desc: "We apply strong security, compliance, and control so your Microsoft environment stays reliable and scalable.",
+    title: "Integrate & Migrate",
+    desc: "We connect your systems and migrate your data carefully, ensuring data integrity throughout.",
   },
   {
     number: "5",
-    title: "Optimise for Ongoing Value",
-    desc: "We improve adoption, refine performance, and help your Microsoft investment deliver more over time.",
+    title: "Train & Support",
+    desc: "We train your team and stay on to provide ongoing support as your business evolves.",
   },
 ];
-
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
       <div className="approach-container">
-        {/* Header */}
         <div className="approach-header">
-          <span className="app-section-label">How We Deliver</span>
-          <h2>From Microsoft Capability to Business Impact</h2>
+          <span className="app-section-label">Our Process</span>
+          <h2>A Proven Approach to Microsoft Solutions</h2>
         </div>
-
-        {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
@@ -49,9 +45,6 @@ const AppDevApproach = () => {
           ))}
         </div>
       </div>
-
-      {/* Corner Accent */}
-      {/* <div className="approach-accent" /> */}
       <img
         src={AppcornerAssent}
         alt="corner accent"
@@ -60,5 +53,5 @@ const AppDevApproach = () => {
     </section>
   );
 };
-
 export default AppDevApproach;
+

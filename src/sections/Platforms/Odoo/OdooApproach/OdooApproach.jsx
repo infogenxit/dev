@@ -1,44 +1,40 @@
 import "./OdooApproach.css";
-import AppcornerAssent from "../../../../assets/images/appcorner.png";
+import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
-    title: " Operational Fit Assessment",
-    desc: "We assess your workflows, priorities, and system gaps to identify the right Odoo modules and rollout approach.",
+    title: "Understand Your Business First",
+    desc: "We begin by knowing how your business really works, not necessarily what you have in a process document.",
   },
   {
     number: "2",
-    title: "Solution Design and Configuration",
-    desc: "We configure Odoo around your operations, reporting needs, and business controls for a stronger fit from day one.",
+    title: "Business-Driven Development",
+    desc: "We treat ERP projects as business decisions rather than IT initiatives and develop the system based on that fact.",
   },
   {
     number: "3",
-    title: "Implementation and Integration",
-    desc: "We deploy Odoo, connect key systems, and streamline workflows to improve efficiency across the business.",
+    title: "Clean Installation",
+    desc: "We maintain the installation simple and clean—no extravagance, just a system that actually works in practice.",
   },
   {
     number: "4",
-    title: "Automation and Control",
-    desc: "We build structured processes, stronger visibility, and better operational control through tailored automation.",
+    title: "Data and Workflow Automation",
+    desc: "We combine automation, integration, and data into one working system tailored to your operations.",
   },
   {
     number: "5",
-    title: "Optimisation and Ongoing Support",
-    desc: "We refine performance, support adoption, and help your Odoo environment deliver long-term value as you grow.",
+    title: "Post-Go-Live Optimisation",
+    desc: "We remain involved post-go-live, as that is when improvements occur most and your business scales.",
   },
 ];
-
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
       <div className="approach-container">
-        {/* Header */}
         <div className="approach-header">
-          <span className="app-section-label">How We Deliver</span>
-          <h2>A Smarter Path to Odoo Success</h2>
+          <span className="app-section-label">A Business-First Approach</span>
+          <h2>A Smarter Path to Odoo Success in Brisbane</h2>
         </div>
-
-        {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
@@ -49,9 +45,6 @@ const AppDevApproach = () => {
           ))}
         </div>
       </div>
-
-      {/* Corner Accent */}
-      {/* <div className="approach-accent" /> */}
       <img
         src={AppcornerAssent}
         alt="corner accent"
@@ -60,5 +53,5 @@ const AppDevApproach = () => {
     </section>
   );
 };
-
 export default AppDevApproach;
+

@@ -1,5 +1,5 @@
 import "./TermsConditions.css";
-import { Helmet } from "react-helmet-async";
+
 import SEO from "../../components/SEO/SEO";
 
 const TermsConditions = () => {
@@ -10,17 +10,7 @@ const TermsConditions = () => {
         description="Review the terms and conditions governing the use of Infogenx website and services, including user responsibilities and service limitations."
         keywords="Infogenx terms and conditions, website terms, service agreement, legal terms"
       />
-      {/* <Helmet>
-        <title>Terms & Conditions | Infogenx</title>
-        <meta
-          name="description"
-          content="Review the terms and conditions governing the use of Infogenx website and services, including user responsibilities and service limitations."
-        />
-        <meta
-          name="keywords"
-          content="Infogenx terms and conditions, website terms, service agreement, legal terms"
-        />
-      </Helmet> */}
+
 
       <section className="terms-section">
         <div className="terms-container">

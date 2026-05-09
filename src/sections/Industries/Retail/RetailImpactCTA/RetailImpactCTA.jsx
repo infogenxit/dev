@@ -1,22 +1,18 @@
 import "./RetailImpactCTA.css";
 import { useNavigate } from "react-router-dom";
-import Correct from "../../../../assets/images/correct.png";
+import Correct from "../../../../assets/images/correct.webp";
 const AppDevImpactCTA = () => {
   const navigate = useNavigate();
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
-        {/* LEFT */}
         <div className="impact-cta-left">
           <h2>
-            Transform Your Ideas into <span>Impact</span>
+            Get a Free <span>Consultation</span> Today
           </h2>
-
           <p>
-            Whether you’re building a new application, modernizing legacy
-            systems, or scaling digital operations, we’re here to help.
+            If your retail technology is costing you more than it's saving you, let's fix that. Get a straight, no-pressure assessment of what your retail IT solutions actually need.
           </p>
-
           <div className="impact-buttons">
             <button
               className="primary-btn"
@@ -32,26 +28,23 @@ const AppDevImpactCTA = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT */}
         <div className="impact-cta-right">
           <div className="impact-cta-content">
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Enterprise-ready solutions
+                <img src={Correct} alt="correct" /> Connect online and in-store smoothly
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Technology you can trust
+                <img src={Correct} alt="correct" /> Eliminate manual inventory guesswork
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Outcomes you can measure
+                <img src={Correct} alt="correct" /> Secure your customer payment data
               </li>
             </ul>
-
             <p className="impact-note">
               Let’s build the future together.
               <br />
-              <strong>Contact us today.</strong>
+              <strong>Call us now on +61 403339424.</strong>
             </p>
           </div>
         </div>
@@ -59,5 +52,5 @@ const AppDevImpactCTA = () => {
     </section>
   );
 };
-
 export default AppDevImpactCTA;
+

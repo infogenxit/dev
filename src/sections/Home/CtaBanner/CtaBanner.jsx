@@ -15,13 +15,10 @@ const CtaBanner = () => {
           <br /><br />
           <strong>Call us now on +61 403339424.</strong>
         </p>
-       
-
         <h2 className="cta-title">
           {/* Contact Us Today! */}
           Contact Us Today!
         </h2>
-
         <div className="cta-buttons">
           <button
             className="cta-primary"
@@ -29,7 +26,6 @@ const CtaBanner = () => {
           >
             Start Your Transformation  
           </button>
-
           <button
             className="cta-secondary"
             onClick={() => navigate("/contact-us")}
@@ -41,5 +37,5 @@ const CtaBanner = () => {
     </section>
   );
 };
-
 export default CtaBanner;
+

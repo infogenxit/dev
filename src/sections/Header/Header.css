@@ -51,6 +51,8 @@
     font-weight: 500;
     color: #00123C;
     text-decoration: none;
+    padding: 12px 0; /* Ensures 48px tap target */
+    display: block; /* Required for vertical padding to take full effect */
 }
 .nav-link:hover{
     color: #d33e00;
@@ -144,10 +146,11 @@
             display: none;
         }
     
-        /* Hamburger */
+        /* Hamburger Tap Target Optimization */
         .hamburger {
-            width: 28px;
-            height: 18px;
+            width: 48px;
+            height: 48px;
+            padding: 15px 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -217,10 +220,11 @@
         display: none;
     }
 
-    /* Hamburger */
+    /* Hamburger Tap Target Optimization */
     .hamburger {
-        width: 28px;
-        height: 18px;
+        width: 48px;
+        height: 48px;
+        padding: 15px 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

@@ -1,12 +1,11 @@
 import "./ImplementIntegrationExpertise.css";
-import IconA from "../../../../assets/images/icon1.png";
-import IconB from "../../../../assets/images/icon2.png";
-import IconC from "../../../../assets/images/icon3.png";
+import IconA from "../../../../assets/images/icon1.webp";
+import IconB from "../../../../assets/images/icon2.webp";
+import IconC from "../../../../assets/images/icon3.webp";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
-        {/* Heading */}
         <div className="appdev-expertise-header">
           <span className="section-label">Implementation & Integration</span>
           <h2>
@@ -14,11 +13,8 @@ const AppDevExpertise = () => {
             organisations.
           </h2>
         </div>
-
-        {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
-            {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
             <h4>Seamless System Integration</h4>
             <p>
@@ -26,9 +22,7 @@ const AppDevExpertise = () => {
               data flow across your business.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
             <h4>Tailored Implementation for Your Needs</h4>
             <p>
@@ -36,9 +30,7 @@ const AppDevExpertise = () => {
               requirements, ensuring that every step aligns with your goals.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
             <h4>Post-Launch Support and Optimisation</h4>
             <p>
@@ -51,5 +43,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
-
 export default AppDevExpertise;
+

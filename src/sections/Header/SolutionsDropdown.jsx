@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-import CodeBox1 from "../../assets/images/Digital Transformation.png";
-import CodeBox2 from "../../assets/images/Intelligent Automation.png";
-import CodeBox3 from "../../assets/images/Modern Applications.png";
-import CodeBox4 from "../../assets/images/Data Analytics & AI.png";
-import CodeBox5 from "../../assets/images/Integration & API Enablement.png";
+import CodeBox1 from "../../assets/images/Digital Transformation.webp";
+import CodeBox2 from "../../assets/images/Intelligent Automation.webp";
+import CodeBox3 from "../../assets/images/Modern Applications.webp";
+import CodeBox4 from "../../assets/images/Data Analytics & AI.webp";
+import CodeBox5 from "../../assets/images/Integration & API Enablement.webp";
 const SolutionsDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
@@ -21,7 +21,6 @@ const SolutionsDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/solutions/intelligent-automation" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox2} alt="Service-img" />
@@ -34,7 +33,6 @@ const SolutionsDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/solutions/modern-applications" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox3} alt="Service-img" />
@@ -47,7 +45,6 @@ const SolutionsDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/solutions/data-analytics-ai" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox4} alt="Service-img" />
@@ -57,7 +54,6 @@ const SolutionsDropdown = ({ closeMenu }) => {
             <p>Extend development capacity with reliable offshore teams.</p>
           </div>
         </Link>
-
         <Link to="/solutions/api-integration" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox5} alt="Service-img" />
@@ -73,5 +69,5 @@ const SolutionsDropdown = ({ closeMenu }) => {
     </div>
   );
 };
-
 export default SolutionsDropdown;
+

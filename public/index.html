@@ -34,7 +34,7 @@
     <link rel="alternate" hreflang="x-default" href="https://infogenx.com/" />
 
     <!-- GLOBAL / TECHNICAL: Canonical Tag -->
-    <link rel="canonical" href="https://dev.infogenx.com/" />
+    <link rel="canonical" href="https://dev.infogenx.com/" data-rh="true" />
 
     <!-- GLOBAL / TECHNICAL: Social SEO (Open Graph) -->
     <meta property="og:title" content="Infogenx Dev | AI Automation & App Development Environment" />
@@ -49,16 +49,12 @@
     <meta name="twitter:description" content="Testing environment for upcoming intelligent automation features." />
     <meta name="twitter:image" content="https://infogenx.com.au/logo192.png" />
 
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager Configuration -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-5JDQ7KJK');
-      
-      // CURRENT SYNC CODE: Alternative GTM IDs (Commented)
-      // GTM-PFR4MLSL
-      // G-DWVS8YJVRM
     </script>
     <!-- End Google Tag Manager -->
 
@@ -123,11 +119,11 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-    <!-- RESTORED CODE: Manual SalesIQ Widget (ACTIVE) -->
-    <!-- <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
-    <script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq74d378f7fb8618919f5437e09bd5fa8ea3ca88761d393ab064499823c7b633f1d4fd7fed6d33759d5a1102e297a588ed" defer></script> -->
-
-    <!-- CURRENT SYNC CODE: App.js Dynamic Loading (Commented) -->
-    <!-- SalesIQ is now handled via REACT_APP_ZOHO_SALESIQ_WIDGET_CODE in .env and App.js -->
+    <!-- 
+      ZOHO SALESIQ INTEGRATION:
+      The SalesIQ chat widget is loaded dynamically within App.js to ensure 
+      interaction-first lazy loading for performance optimization.
+      The widget code is managed via environment variables (REACT_APP_ZOHO_SALESIQ_WIDGET_CODE).
+    -->
   </body>
 </html>

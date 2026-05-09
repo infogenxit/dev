@@ -2,11 +2,10 @@ import "./ECommerceHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import appDevVideo from "../../../../assets/videos/E-commerce.mp4";
-import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.7; // slow speed
@@ -20,19 +19,11 @@ const AppDevHero = () => {
         src={AboutCornerAccent}
       ></img>
       <div className="appdev-container">
-        {/* LEFT CONTENT */}
-
         <div className="appdev-left">
-          {/* <h1>E-Commerce Scaled Smartly</h1> */}
-          <h1>Shopify Agency Brisbane — Built for Scalable eCommerce</h1>
-
+          <h1>Expert Shopify Agency Brisbane in Brisbane to Scale your business</h1>
           <p>
-            {/* Conversion optimisation and personalisation automation for
-            e-commerce Australia – seamless Zoho or Microsoft integration for
-            growth. */}
-            Helping brands scale through high-converting storefronts, custom apps, and seamless integrations. We build eCommerce systems that grow with you.
+            Shopify Store Development - Shopify App Development - E-commerce Strategy. Every business needs to reach more customers and drive more sales. Fragmented data, complex checkouts, and ineffective marketing often lead to missed opportunities. Infogenx is your partner for Shopify in Brisbane, delivering customized eCommerce solutions that generate results.
           </p>
-
           <div className="appdev-buttons">
             <button
               className="primary-btn"
@@ -40,7 +31,6 @@ const AppDevHero = () => {
             >
               Get Your FREE Consultation
             </button>
-
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -49,8 +39,6 @@ const AppDevHero = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT VIDEO */}
         <div className="appdev-right">
           <div className="appdev-video-wrapper">
             <div className="bg"></div>
@@ -69,5 +57,5 @@ const AppDevHero = () => {
     </section>
   );
 };
-
 export default AppDevHero;
+

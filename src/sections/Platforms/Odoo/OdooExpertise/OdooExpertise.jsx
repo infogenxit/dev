@@ -1,65 +1,53 @@
 import "./OdooExpertise.css";
-import IconA from "../../../../assets/images/icon1.png";
-import IconB from "../../../../assets/images/icon2.png";
-import IconC from "../../../../assets/images/icon3.png";
-import IconD from "../../../../assets/images/icon4.png";
-import IconE from "../../../../assets/images/icon5.png";
+import IconA from "../../../../assets/images/icon1.webp";
+import IconB from "../../../../assets/images/icon2.webp";
+import IconC from "../../../../assets/images/icon3.webp";
+import IconD from "../../../../assets/images/icon4.webp";
+import IconE from "../../../../assets/images/icon5.webp";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
-        {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Odoo ERP Partners</span>
+          <span className="section-label">Our Role as an Odoo Consultant</span>
           <h2>
-            End-to-end Odoo solutions built for control, agility, and business growth
+            Beyond Setup, Focused on Results. We don’t treat Odoo as a product, but a component of a bigger system.
           </h2>
         </div>
-
-        {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
-            {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>Odoo Module Selection</h4>
+            <h4>Odoo Application in Brisbane</h4>
             <p>
-              Choose the right Odoo modules to match your workflows, priorities, and operational requirements.
+              We design your Odoo ERP system around actual workflows—sales, operations, finance—to provide your team with frictionless use.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>ERP Implementation and Configuration</h4>
+            <h4>Odoo Customisation</h4>
             <p>
-              Deploy Odoo with the structure, setup, and controls needed for smoother day-to-day operations.
+              Being an Odoo developer in Brisbane, we customize modules, logic and reporting where necessary. We do it well.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Module Development</h4>
+            <h4>Odoo Integration</h4>
             <p>
-              Extend Odoo with tailored functionality that fits your business model and process requirements.
+              We integrate Odoo with your current accounting software, CRMs, or bespoke systems and have data flow without causing waste.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Workflow Automation and Integration</h4>
+            <h4>Odoo Automation in Brisbane</h4>
             <p>
-              Connect teams, systems, and processes to reduce manual effort and improve operational flow.
+              We eliminate manual repetitive work with the functionality of Odoo and third-party integrations, allowing your team to work in reality.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Post-Go-Live Optimisation and Support</h4>
+            <h4>Post-Go-Live Optimisation</h4>
             <p>
-              Refine performance, support adoption, and keep your Odoo environment aligned with business growth.
+              We remain post-go-live, as that is when improvements occur most, maintaining the installation simple and clean.
             </p>
           </div>
         </div>
@@ -67,5 +55,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
-
 export default AppDevExpertise;
+

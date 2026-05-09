@@ -1,20 +1,17 @@
 import "./SupportImpactCTA.css";
 import { useNavigate } from "react-router-dom";
-import Correct from "../../../../assets/images/correct.png";
+import Correct from "../../../../assets/images/correct.webp";
 const AppDevImpactCTA = () => {
   const navigate = useNavigate();
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
-        {/* LEFT */}
         <div className="impact-cta-left">
           <h2>Ready to Optimise Your Platform?</h2>
-
           <p>
             Boost performance and get seamless support with Infogenx’s expert
             platform optimisation services.
           </p>
-
           <div className="impact-buttons">
             <button
               className="primary-btn"
@@ -30,8 +27,6 @@ const AppDevImpactCTA = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT */}
         <div className="impact-cta-right">
           <div className="impact-cta-content">
             <ul>
@@ -45,7 +40,6 @@ const AppDevImpactCTA = () => {
                 <img src={Correct} alt="correct" /> Outcomes you can measure
               </li>
             </ul>
-
             <p className="impact-note">
               Let’s build the future together.
               <br />
@@ -57,5 +51,5 @@ const AppDevImpactCTA = () => {
     </section>
   );
 };
-
 export default AppDevImpactCTA;
+

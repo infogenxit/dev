@@ -3,35 +3,16 @@ import AppDevExpertise from "../../../sections/Industries/Healthcare/HealthcareE
 import AppDevApproach from "../../../sections/Industries/Healthcare/HealthcareApproach/HealthcareApproach";
 import AppDevBusinessImpact from "../../../sections/Industries/Healthcare/HealthcareBusinessImpact/HealthcareBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Healthcare/HealthcareImpactCTA/HealthcareImpactCTA";
-import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
+
 const Healthcare = () => {
   return (
     <>
-      {/* 
-        PREVIOUS SEO (COMMENTED OUT):
-        <SEO
-          title="AI Automation & AI Consulting for Healthcare Australia"
-          description="Infogenx delivers intelligent automation & AI consulting for Australian healthcare providers – streamline patient care, compliance & analytics. Brisbane-based digital transformation experts."
-          keywords="intelligent automation healthcare, digital transformation healthcare Australia, AI-enabled healthcare solutions, automation analytics healthcare, AI in healthcare Australia, patient management automation Australia"
-        />
-      */}
       <SEO
-        title="Healthcare IT Solutions Brisbane | Infogenx"
-        description="Secure and compliant healthcare IT solutions in Brisbane. We help medical practices reduce administrative burden and protect patient records through smart technology."
-        keywords="healthcare IT solutions Brisbane, medical practice software, healthcare compliance, patient data security, Infogenx"
+        title="Healthcare IT Solutions Brisbane | Patient Management Experts"
+        description="Optimize your clinic's operations with our Brisbane healthcare IT solutions. We specialize in patient management systems, compliance, and secure data analytics."
+        keywords="healthcare IT solutions Brisbane, patient management software, medical practice automation, healthcare compliance IT, Infogenx"
       />
-      {/* <Helmet>
-        <title>AI Automation & AI Consulting for Healthcare Australia</title>
-        <meta
-          name="description"
-          content="Infogenx delivers intelligent automation & AI consulting for Australian healthcare providers – streamline patient care, compliance & analytics. Brisbane-based digital transformation experts."
-        />
-        <meta
-          name="keywords"
-          content="intelligent automation healthcare, digital transformation healthcare Australia, AI-enabled healthcare solutions, automation analytics healthcare, AI in healthcare Australia, patient management automation Australia"
-        />
-      </Helmet> */}
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

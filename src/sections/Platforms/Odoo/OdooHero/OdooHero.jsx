@@ -2,11 +2,10 @@ import "./OdooHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import appDevVideo from "../../../../assets/videos/odoo.mp4";
-import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.7; // slow speed
@@ -20,18 +19,11 @@ const AppDevHero = () => {
         src={AboutCornerAccent}
       ></img>
       <div className="appdev-container">
-        {/* LEFT CONTENT */}
-
         <div className="appdev-left">
-          {/* <h1>Odoo ERP That Performs</h1> */}
-          <h1>Odoo in Brisbane for Scalable ERP, Automation and Business Systems</h1>
-
+          <h1>Expert Odoo Consultant Brisbane in Brisbane to Scale your business</h1>
           <p>
-            {/* Unify operations, streamline workflows, and gain greater control
-            with Odoo solutions built for scalable Australian businesses. */}
-            Expert Odoo consulting, migration, and custom development in Brisbane. We help you eliminate app fatigue and fragmented data with a unified business platform.
+            Odoo Implementation - Customization - Support. Your Unified Business Platform. Fragmented data, "app fatigue," and disconnected workflows are common hurdles for growing businesses. Odoo is a single solution to manage everything from CRM and accounts to manufacturing and HR. At Infogenx, we are your expert Odoo consultants in Brisbane.
           </p>
-
           <div className="appdev-buttons">
             <button
               className="primary-btn"
@@ -39,7 +31,6 @@ const AppDevHero = () => {
             >
               Explore Odoo Solutions{" "}
             </button>
-
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -48,8 +39,6 @@ const AppDevHero = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT VIDEO */}
         <div className="appdev-right">
           <div className="appdev-video-wrapper">
             <div className="bg"></div>
@@ -68,5 +57,5 @@ const AppDevHero = () => {
     </section>
   );
 };
-
 export default AppDevHero;
+

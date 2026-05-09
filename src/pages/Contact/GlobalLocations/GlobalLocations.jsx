@@ -1,6 +1,6 @@
 import '../GetinTouchNew/GetinTouchNew.css';
 import CustomerSupport from "../../../assets/videos/customer-support.mp4";
-import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../assets/images/about-corner-accent.webp";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const GlobalLocations = () => {

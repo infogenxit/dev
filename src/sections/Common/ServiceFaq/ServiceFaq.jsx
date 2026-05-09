@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import './ServiceFaq.css';
-
 const ServiceFaq = ({ faqs }) => {
   const [activeIndex, setActiveIndex] = useState(null);
-
   const toggleFaq = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
   // FAQPage Schema
   const schema = {
     "@context": "https://schema.org",
@@ -21,7 +18,6 @@ const ServiceFaq = ({ faqs }) => {
       }
     }))
   };
-
   return (
     <section className="service-faq-section container">
       <script type="application/ld+json">
@@ -50,5 +46,5 @@ const ServiceFaq = ({ faqs }) => {
     </section>
   );
 };
-
 export default ServiceFaq;
+

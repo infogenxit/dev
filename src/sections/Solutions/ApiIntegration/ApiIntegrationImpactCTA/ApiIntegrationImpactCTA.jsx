@@ -1,22 +1,19 @@
 import "./ApiIntegrationImpactCTA.css";
 import { useNavigate } from "react-router-dom";
-import Correct from "../../../../assets/images/correct.png";
+import Correct from "../../../../assets/images/correct.webp";
 const AppDevImpactCTA = () => {
   const navigate = useNavigate();
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
-        {/* LEFT */}
         <div className="impact-cta-left">
           <h2>
            Ready to Connect <span>What Matters?</span>
           </h2>
-
           <p>
             Whether you are integrating platforms, automating data flow, or eliminating system silos,
             Infogenx helps you build connected operations that scale.
           </p>
-
           <div className="impact-buttons">
             <button
               className="primary-btn"
@@ -32,8 +29,6 @@ const AppDevImpactCTA = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT */}
         <div className="impact-cta-right">
           <div className="impact-cta-content">
             <ul>
@@ -47,7 +42,6 @@ const AppDevImpactCTA = () => {
                 <img src={Correct} alt="correct" /> Outcomes built for measurable impact
               </li>
             </ul>
-
             <p className="impact-note">
               Let’s turn connection into performance
               <br />
@@ -59,5 +53,5 @@ const AppDevImpactCTA = () => {
     </section>
   );
 };
-
 export default AppDevImpactCTA;
+

@@ -1,5 +1,5 @@
 import "./ConsultingAppDev.css";
-import AppcornerAssent from "../../../../assets/images/appcorner.png";
+import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
@@ -27,18 +27,14 @@ const steps = [
     desc: "We offer support and training to empower your team for long-term success.",
   },
 ];
-
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
       <div className="approach-container">
-        {/* Header */}
         <div className="approach-header">
           <span className="app-section-label">How We Deliver</span>
           <h2>Our Approach to Deliver</h2>
         </div>
-
-        {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
@@ -49,9 +45,6 @@ const AppDevApproach = () => {
           ))}
         </div>
       </div>
-
-      {/* Corner Accent */}
-      {/* <div className="approach-accent" /> */}
       <img
         src={AppcornerAssent}
         alt="corner accent"
@@ -60,5 +53,5 @@ const AppDevApproach = () => {
     </section>
   );
 };
-
 export default AppDevApproach;
+

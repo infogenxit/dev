@@ -2,11 +2,10 @@ import "./RetailHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import appDevVideo from "../../../../assets/videos/Retaily Unlocked.mp4";
-import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.7; // slow speed
@@ -20,19 +19,14 @@ const AppDevHero = () => {
         src={AboutCornerAccent}
       ></img>
       <div className="appdev-container">
-        {/* LEFT CONTENT */}
-
         <div className="appdev-left">
-          {/* <h1>Retail Growth Accelerated</h1> */}
-          <h1>Retail IT Solutions: Bridging Physical and Digital Storefronts</h1>
-
+          <h1>Expert Brisbane Retail It Solutions</h1>
           <p>
             {/* AI-enabled inventory and customer analytics for retail Australia –
             omnichannel automation and personalisation using Zoho or Microsoft
             solutions. */}
             Bridging the gap between physical and digital storefronts with scalable technology and unified inventory systems.
           </p>
-
           <div className="appdev-buttons">
             <button
               className="primary-btn"
@@ -40,7 +34,6 @@ const AppDevHero = () => {
             >
               Get Your FREE Consultation
             </button>
-
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -49,8 +42,6 @@ const AppDevHero = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT VIDEO */}
         <div className="appdev-right">
           <div className="appdev-video-wrapper">
             <div className="bg"></div>
@@ -69,5 +60,5 @@ const AppDevHero = () => {
     </section>
   );
 };
-
 export default AppDevHero;
+

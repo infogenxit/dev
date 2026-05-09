@@ -1,6 +1,6 @@
 import "./RetailPos.css";
-import logo from "../../../assets/images/products/pos-logo.png";
-import laptopImg from "../../../assets/images/products/pos-laptop.png";
+import logo from "../../../assets/images/products/pos-logo.webp";
+import laptopImg from "../../../assets/images/products/pos-laptop.webp";
 import { useEffect, useState } from "react";
 import {
   FaPhoneAlt,
@@ -9,17 +9,17 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import img1 from "../../../assets/images/products/pos1.png";
-import img2 from "../../../assets/images/products/pos2.png";
-import img3 from "../../../assets/images/products/pos3.png";
-import img4 from "../../../assets/images/products/pos4.png";
-import img5 from "../../../assets/images/products/pos5.png";
-import img6 from "../../../assets/images/products/pos6.png";
-import img7 from "../../../assets/images/products/pos7.png";
-import img8 from "../../../assets/images/products/pos8.png";
-import img9 from "../../../assets/images/products/pos9.png";
-import img10 from "../../../assets/images/products/pos10.png";
-import img11 from "../../../assets/images/products/pos11.png";
+import img1 from "../../../assets/images/products/pos1.webp";
+import img2 from "../../../assets/images/products/pos2.webp";
+import img3 from "../../../assets/images/products/pos3.webp";
+import img4 from "../../../assets/images/products/pos4.webp";
+import img5 from "../../../assets/images/products/pos5.webp";
+import img6 from "../../../assets/images/products/pos6.webp";
+import img7 from "../../../assets/images/products/pos7.webp";
+import img8 from "../../../assets/images/products/pos8.webp";
+import img9 from "../../../assets/images/products/pos9.webp";
+import img10 from "../../../assets/images/products/pos10.webp";
+import img11 from "../../../assets/images/products/pos11.webp";
 import { Link } from "react-router-dom";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";

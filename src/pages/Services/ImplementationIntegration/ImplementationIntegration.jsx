@@ -3,7 +3,7 @@ import AppDevExpertise from "../../../sections/Services/ImplementIntegration/Imp
 import AppDevApproach from "../../../sections/Services/ImplementIntegration/ImplementIntegrationApproach/ImplementIntegrationApproach";
 import AppDevBusinessImpact from "../../../sections/Services/ImplementIntegration/ImplementIntegrationBusinessImpact/ImplementIntegrationBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Services/ImplementIntegration/ImplementIntegrationImpactCTA/ImplementIntegrationImpactCTA";
-import { Helmet } from "react-helmet-async";
+
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
@@ -61,17 +61,7 @@ const ImplementationIntegration = () => {
         description="Streamline your operations with Infogenx's expert system implementation and platform integration services in Australia. We specialize in Microsoft, Zoho, and Odoo connectivity for scalable growth."
         keywords="system implementation services Australia, platform integration Brisbane, technical ecosystem connectivity"
       />
-      {/* <Helmet>
-        <title>Technology Implementation & System Integration | Infogenx</title>
-        <meta
-          name="description"
-          content="Infogenx provides end-to-end technology implementation and integration services to ensure reliable deployment and seamless platform connectivity."
-        />
-        <meta
-          name="keywords"
-          content="system implementation services, platform integration Australia"
-        />
-      </Helmet> */}
+
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />

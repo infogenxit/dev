@@ -2,11 +2,10 @@ import "./SupportHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import appDevVideo from "../../../../assets/videos/Optimise Continuously.mp4";
-import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.7; // slow speed
@@ -20,16 +19,12 @@ const AppDevHero = () => {
         src={AboutCornerAccent}
       ></img>
       <div className="appdev-container">
-        {/* LEFT CONTENT */}
-
         <div className="appdev-left">
           <h1>Unlock Continuous Optimisation</h1>
-
           <p>
             Drive peak performance, resolve issues quickly, and enhance your
             Microsoft, Zoho, and Odoo platforms across Australia.
           </p>
-
           <div className="appdev-buttons">
             <button
               className="primary-btn"
@@ -37,7 +32,6 @@ const AppDevHero = () => {
             >
               Request Optimisation Review{" "}
             </button>
-
             <button
               className="secondary-btn automation-secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -46,8 +40,6 @@ const AppDevHero = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT VIDEO */}
         <div className="appdev-right">
           <div className="appdev-video-wrapper">
             <div className="bg"></div>
@@ -66,5 +58,5 @@ const AppDevHero = () => {
     </section>
   );
 };
-
 export default AppDevHero;
+

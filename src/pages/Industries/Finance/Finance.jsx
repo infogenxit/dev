@@ -3,35 +3,15 @@ import AppDevExpertise from "../../../sections/Industries/Finance/FinanceExperti
 import AppDevApproach from "../../../sections/Industries/Finance/FinanceApproach/FinanceApproach";
 import AppDevBusinessImpact from "../../../sections/Industries/Finance/FinanceBusinessImpact/FinanceBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Finance/FinanceImpactCTA/FinanceImpactCTA";
-import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Finance = () => {
   return (
     <>
-      {/* 
-        PREVIOUS SEO (COMMENTED OUT):
-        <SEO
-          title="AI Consulting for Finance Australia | Infogenx"
-          description="Secure AI-enabled business solutions for the Australian finance sector by InfogenX: risk analytics, automation & digital transformation tailored for compliance & growth."
-          keywords="intelligent automation finance, digital transformation finance Australia, AI-enabled risk analytics, fraud detection automation Australia, financial analytics consulting Brisbane"
-        />
-      */}
       <SEO
-        title="Finance IT Solutions Brisbane | Infogenx"
-        description="Secure and compliant finance IT solutions in Brisbane. We help financial institutions automate workflows and enhance data security through intelligent technology."
-        keywords="finance IT solutions Brisbane, financial automation, fintech solutions Australia, data security finance, Infogenx"
+        title="Finance IT Solutions Brisbane | Fintech & Compliance Expert"
+        description="Streamline your financial operations with our Brisbane IT solutions. We focus on security, ASIC compliance, and process automation for finance businesses."
+        keywords="finance IT solutions Brisbane, fintech development, financial process automation, ASIC compliance IT, Infogenx"
       />
-      {/* <Helmet>
-        <title>AI Consulting for Finance Australia | Infogenx</title>
-        <meta
-          name="description"
-          content="Secure AI-enabled business solutions for the Australian finance sector by InfogenX: risk analytics, automation & digital transformation tailored for compliance & growth."
-        />
-        <meta
-          name="keywords"
-          content="intelligent automation finance, digital transformation finance Australia, AI-enabled risk analytics, fraud detection automation Australia, financial analytics consulting Brisbane"
-        />
-      </Helmet> */}
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

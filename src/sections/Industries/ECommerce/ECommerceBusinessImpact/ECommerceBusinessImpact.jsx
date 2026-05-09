@@ -1,68 +1,58 @@
 import "./ECommerceBusinessImpact.css";
-import Business1 from "../../../../assets/images/businessimg1.png";
-import Business2 from "../../../../assets/images/businessimg2.png";
-import Business3 from "../../../../assets/images/businessimg3.png";
-import Business4 from "../../../../assets/images/businessimg4.png";
+import Business1 from "../../../../assets/images/businessimg1.webp";
+import Business2 from "../../../../assets/images/businessimg2.webp";
+import Business3 from "../../../../assets/images/businessimg3.webp";
+import Business4 from "../../../../assets/images/businessimg4.webp";
 const AppDevBusinessImpact = () => {
   return (
     <section className="business-impact-section">
       <div className="business-impact-container">
-        {/* Header */}
         <div className="business-impact-header">
           <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Business Impact</h2>
+          <h2>Built for Real-World Sales Impact</h2>
         </div>
-
-        {/* Grid */}
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business1} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Outcome-Driven Solutions</h4>
+              <h4>Conversion-First Design</h4>
               <p>
-                We focus on delivering measurable results – faster
-                time-to-market, reduced costs, and scalable systems.
+                We design for sales first, ensuring every pixel supports the user journey and drives your customers toward checkout.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business2} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Low-Code & Enterprise Expertise</h4>
+              <h4>Australian Market Experts</h4>
               <p>
-                We combine bleeding-edge platforms with engineering experience
-                to meet real business needs.
+                We understand local payment preferences, shipping expectations, and consumer behaviour in Brisbane and beyond.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business3} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Secure, Scalable, and Compliant</h4>
+              <h4>Data-Driven Decisions</h4>
               <p>
-                Solutions designed to meet industry standards and handle
-                enterprise-grade scale.
+                We set up advanced analytics so you can track abandoned carts, conversion rates, and performance based on real numbers.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business4} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Cross-Industry Experience</h4>
+              <h4>Long-Term Support</h4>
               <p>
-                We serve diverse sectors, including finance, logistics,
-                healthcare, and retail.
+                We stay involved after launch, providing ongoing maintenance so your store remains secure and optimized as you grow.
               </p>
             </div>
           </div>
@@ -71,5 +61,5 @@ const AppDevBusinessImpact = () => {
     </section>
   );
 };
-
 export default AppDevBusinessImpact;
+

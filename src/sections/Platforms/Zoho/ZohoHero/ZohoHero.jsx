@@ -2,11 +2,10 @@ import "./ZohoHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import appDevVideo from "../../../../assets/videos/zoho.mp4";
-import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 1; // slow speed
@@ -20,19 +19,11 @@ const AppDevHero = () => {
         src={AboutCornerAccent}
       ></img>
       <div className="appdev-container">
-        {/* LEFT CONTENT */}
-
         <div className="appdev-left">
-          {/* <h1>Zoho Mastery Achieved</h1> */}
-          <h1>Your Trusted Zoho Consultant in Brisbane</h1>
-
+          <h1>Expert Zoho Consultant Brisbane in Brisbane to Scale your business</h1>
           <p>
-            {/* Zoho CRM implementation, workflow automation, and analytics
-            engineering customised for growing Australian businesses needing
-            agility and integration. */}
-            Built Around How Your Business Actually Works. Move beyond the "out-of-the-box" setup to create a system that truly reflects your business operations.
+            Certified Zoho Partner in Brisbane – Strategy, Accomplishments, Automation & Support. Every business needs to manage sales, operations, reporting, and customer data across multiple systems. At Infogenx, we are your Zoho consultants in Brisbane, providing structured solutions that deliver tangible results.
           </p>
-
           <div className="appdev-buttons">
             <button
               className="primary-btn"
@@ -40,7 +31,6 @@ const AppDevHero = () => {
             >
               Explore Zoho Solutions
             </button>
-
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -49,8 +39,6 @@ const AppDevHero = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT VIDEO */}
         <div className="appdev-right">
           <div className="appdev-video-wrapper">
             <div className="bg"></div>
@@ -69,5 +57,5 @@ const AppDevHero = () => {
     </section>
   );
 };
-
 export default AppDevHero;
+

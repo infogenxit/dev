@@ -1,44 +1,40 @@
 import "./ManufacturingApproach.css";
-import AppcornerAssent from "../../../../assets/images/appcorner.png";
+import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
-    title: "Discovery & Strategy",
-    desc: "We understand business goals, users, and market context to shape the right solution.",
+    title: "Free Consultation",
+    desc: "We get into how your operation actually runs before we suggest anything.",
   },
   {
     number: "2",
-    title: "User-Centric Design",
-    desc: "We prioritize intuitive experiences that drive adoption and value.",
+    title: "Solution Design",
+    desc: "A clear plan — what we're building, what we're connecting, and what the timeline looks like.",
   },
   {
     number: "3",
-    title: "Agile Engineering",
-    desc: "Iterative development ensures quick delivery, constant feedback, and continuous improvement.",
+    title: "Build and Integrate",
+    desc: "We connect to your existing systems. Nothing gets ripped out unless it genuinely needs to go.",
   },
   {
     number: "4",
     title: "Quality Assurance",
-    desc: "Rigorous testing ensures security, performance, and reliability.",
+    desc: "Rigorous testing ensures security, performance, and reliability before the final rollout.",
   },
   {
     number: "5",
-    title: "Deployment & Support",
-    desc: "We launch with confidence and provide ongoing support to keep your systems running smoothly.",
+    title: "Support After Go-Live",
+    desc: "We don't hand over and disappear. Ongoing support, fixes, and scaling come with every engagement.",
   },
 ];
-
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
       <div className="approach-container">
-        {/* Header */}
         <div className="approach-header">
-          <span className="app-section-label">How We Deliver</span>
-          <h2>Our Development Approach</h2>
+          <span className="app-section-label">Our Approach</span>
+          <h2>How We Deliver Practical Systems</h2>
         </div>
-
-        {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
@@ -49,9 +45,6 @@ const AppDevApproach = () => {
           ))}
         </div>
       </div>
-
-      {/* Corner Accent */}
-      {/* <div className="approach-accent" /> */}
       <img
         src={AppcornerAssent}
         alt="corner accent"
@@ -60,5 +53,5 @@ const AppDevApproach = () => {
     </section>
   );
 };
-
 export default AppDevApproach;
+

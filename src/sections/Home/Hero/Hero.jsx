@@ -28,16 +28,11 @@ const Hero = () => {
           <span>And AI</span> */}
           {/* <span>AI Automation & App Development Company in Australia</span> */}
           {/* <span>Build Smarter. Automate Faster. Decide Better. | AI Automation Australia</span> */}
-          <span>IT Consulting in Brisbane: Future-Driven Technology Solutions by Infogenx</span>
+          <span>Expert IT Consulting Brisbane in Brisbane to Scale your business</span>
         </h1>   
-
         <h2 className="hero-subheading">
-          {/* AI-enabled applications, automation, and analytics for{" "}
-          <span>Microsoft, Zoho, and Odoo—engineered</span> for growth, governance, and real business impact. */}
-          {/* Engineered for growth: AI-enabled applications, intelligent automation, and data analytics for <span>Microsoft, Zoho, and Odoo</span> ecosystem. */}
-          We partner with local, mid-market, and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology.
+          At Infogenx, we focus on results. As a provider of IT consulting in Brisbane, we partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology.
         </h2>
-
         {/* <p className="hero-description">
           From strategy to scalable delivery. Built for growth, governance, and
           impact.
@@ -52,7 +47,6 @@ const Hero = () => {
             >
               Start Your Transformation
             </button>
-
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -74,7 +68,6 @@ const Hero = () => {
           />
         </div>
       </div>
-
       <div className="hero-floating-icons">
         {/* Top-down animation */}
         <img
@@ -82,14 +75,12 @@ const Hero = () => {
           alt="AI Application Development"
           className="float-icon1 float-vertical icon-1"
         />
-
         {/* Left-right animation */}
         <img
           src={automationIcon}
           alt="Intelligent Business Automation"
           className="float-icon2 float-vertical icon-2"
         />
-
         {/* Another top-down */}
         <img
           src={analyticsIcon}
@@ -106,5 +97,5 @@ const Hero = () => {
     </section>
   );
 };
-
 export default Hero;
+

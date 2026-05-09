@@ -1,7 +1,6 @@
 import React from 'react';
 import './AboutTeam.css';
 import { RiLinkedinBoxLine } from "react-icons/ri";
-
 const AboutTeam = () => {
   const teamMembers = [
     {
@@ -29,13 +28,11 @@ const AboutTeam = () => {
       linkedin: "https://www.linkedin.com/company/infogenx-pvt-ltd/"
     }
   ];
-
   return (
     <section className="about-team-section">
       <div className="team-container">
         <span className="section-label">Our People</span>
         <h2 className="team-title">Experts Driving Your <span>Digital Success</span></h2>
-        
         <div className="team-grid">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-card">
@@ -54,5 +51,5 @@ const AboutTeam = () => {
     </section>
   );
 };
-
 export default AboutTeam;
+

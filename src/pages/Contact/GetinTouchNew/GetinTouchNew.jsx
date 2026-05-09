@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./GetinTouchNew.css";
 import { Helmet } from "react-helmet-async";
-import indiaFlag from "../../../assets/images/india-flag.png";
-import australiaFlag from "../../../assets/images/australia-flags.png";
+import indiaFlag from "../../../assets/images/india-flag.webp";
+import australiaFlag from "../../../assets/images/australia-flags.webp";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa6";
@@ -238,7 +238,7 @@ const GetinTouch = () => {
     `}
         </style>
         <h1 className="main-headline">
-          ORCHESTRATE GROWTH:STRATEGIC AI INTEGRATION FOR MODERN ECOSYSTEMS
+          Contact Infogenx Brisbane – Expert IT Consulting & AI Solutions
         </h1>
         <p className="intro-subtext">
           Partner with Infogenx to architect high-yield, AI-integrated roadmaps

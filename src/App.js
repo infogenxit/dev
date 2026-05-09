@@ -34,20 +34,17 @@ import ModernApplication from "./pages/Solutions/ModernApplication/ModernApplica
 import MicrosoftSolution from "./pages/Platforms/MicrosoftSolutions/MicrosoftSolution";
 import ZohoSolution from "./pages/Platforms/ZohoSolutions/ZohoSolution";
 import OdooSolution from "./pages/Platforms/OdooSolutions/OdooSolution";
+import ShopifySolution from "./pages/Platforms/Shopify/Shopify";
 
 import CaseStudies from "./pages/Insights/CaseStudies/CaseStudies";
 import IgxStock from "./pages/Products/IGXStock/IgxStock";
 import OdooErp from "./pages/Products/OdooErp/OdooErp";
 import RetailPos from "./pages/Products/RetailPos/RetailPos";
 import CustomerRelation from "./pages/Products/CustomerRelation/CustomerRelation";
-// import Career from "./pages/Careers/Careers";
 import Careers from "./pages/Careers/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import "./styles/App.css";
-
-
-
 
 function App() {
   useEffect(() => {
@@ -56,17 +53,7 @@ function App() {
     
     if (!widgetCode || isLocalhost) return;
 
-    /* PREVIOUS (eager load — caused Googlebot XHR block in Search Console):
-    if (widgetCode && !isLocalhost && !document.getElementById("zsiqscript")) {
-      window.$zoho = window.$zoho || {};
-      window.$zoho.salesiq = window.$zoho.salesiq || { ready: function () {} };
-      const script = document.createElement("script");
-      script.id = "zsiqscript";
-      script.src = `https://salesiq.zohopublic.com/widget?wc=${widgetCode}`;
-      script.defer = true;
-      document.body.appendChild(script);
-    }
-    */
+
 
     // Interaction-first lazy load: Googlebot never interacts → widget never loads for bots
     const loadSalesIQ = () => {
@@ -100,10 +87,7 @@ function App() {
     <BrowserRouter>
       <MainLayout>
         <Routes>
-          {/* <Route
-            path="/contact-us/get-in-touch"
-            element={<Navigate to="/contact-us" replace />}
-          /> */}
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
@@ -155,10 +139,11 @@ function App() {
             path="/services/digital-marketing"
             element={<DigitalMarketing />}
           />
-          {/* <Route path="/services/cloud-ai" element={<CloudAI />} /> */}
+
           <Route path="/platforms/microsoft" element={<MicrosoftSolution />} />
           <Route path="/platforms/zoho" element={<ZohoSolution />} />
           <Route path="/platforms/odoo" element={<OdooSolution />} />
+          <Route path="/platforms/shopify" element={<ShopifySolution />} />
           <Route
             path="/solutions/api-integration"
             element={<ApiIntegration />}
@@ -221,13 +206,14 @@ function App() {
           <Route path="/platforms/microsoft-solutions" element={<MicrosoftSolution />} />
           <Route path="/platforms/zoho-solutions" element={<ZohoSolution />} />
           <Route path="/platforms/odoo-solutions" element={<OdooSolution />} />
+          <Route path="/platforms/shopify-solutions" element={<ShopifySolution />} />
           <Route path="/industries/healthcare" element={<Healthcare />} />
           <Route path="/industries/retail" element={<Retail />} />
           <Route path="/industries/manufacturing" element={<Manufacturing />} />
           <Route path="/industries/e-commerce" element={<ECommerce />} />
           <Route path="/industries/finance" element={<Finance />} />
           
-          {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+
           <Route path="*" element={<Home />} />
         </Routes>
       </MainLayout>

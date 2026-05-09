@@ -1,16 +1,13 @@
 import "./DigitalTransformationApproach.css";
-import AppcornerAssent from "../../../../assets/images/appcorner.png";
-
+import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
       <div className="approach-container">
-        {/* Header */}
         <div className="approach-header">
           <span className="app-section-label">Digital Transformation</span>
           <h2>Transform Legacy Systems Into a Scalable Business Advantage</h2>
         </div>
-
         {/* Content */}
         <div className="approach-content">
           <p className="approach-lead">
@@ -24,8 +21,6 @@ const AppDevApproach = () => {
           </p>
         </div>
       </div>
-
-      {/* Corner Accent */}
       <img
         src={AppcornerAssent}
         alt="corner accent"
@@ -34,5 +29,5 @@ const AppDevApproach = () => {
     </section>
   );
 };
-
 export default AppDevApproach;
+

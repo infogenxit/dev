@@ -1,7 +1,7 @@
 import "./AboutHero.css";
 import { useNavigate } from "react-router-dom";
-import aboutHeroBg from "../../../assets/images/about-hero-bg.jpg";
-import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
+import aboutHeroBg from "../../../assets/images/about-hero-bg.webp";
+import AboutCornerAccent from "../../../assets/images/about-corner-accent.webp";
 const AboutHero = () => {
   const navigate = useNavigate();
   return (
@@ -14,17 +14,16 @@ const AboutHero = () => {
         alt="Infogenx Australia - AI Automation & App Development Corner Graphic"
         className="about-corner-accent"
         src={AboutCornerAccent}
+        fetchPriority="high"
+        loading="eager"
       ></img>
       <div className="about-hero-overlay" />
-
       <div className="about-hero-container">
-        {/* Left content */}
         <div className="about-hero-left">
           <h1>
             {/* About InfogenX */}
             About InfogenX | AI Automation & App Development Australia
           </h1>
-
           <div className="about-hero-buttons">
             <button
               className="about-primary-btn"
@@ -32,7 +31,6 @@ const AboutHero = () => {
             >
               Meet Our Team{" "}
             </button>
-
             <button
               className="about-secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -41,8 +39,6 @@ const AboutHero = () => {
             </button>
           </div>
         </div>
-
-        {/* Right content */}
         <div className="about-hero-right">
           <p>
             Infogenx helps small Australian Small Business Enterprise operations with AI-enabled 
@@ -54,5 +50,5 @@ const AboutHero = () => {
     </section>
   );
 };
-
 export default AboutHero;
+

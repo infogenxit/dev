@@ -1,6 +1,5 @@
 import React from 'react';
 import './ServiceDetailedContent.css';
-
 const ServiceDetailedContent = ({ title, subtitle, sections }) => {
   return (
     <section className="service-detailed-content container">
@@ -8,7 +7,6 @@ const ServiceDetailedContent = ({ title, subtitle, sections }) => {
         {subtitle && <span className="section-label">{subtitle}</span>}
         <h2 className="main-title">{title}</h2>
       </div>
-      
       <div className="detailed-grid">
         {sections.map((section, index) => (
           <div key={index} className="content-section">
@@ -31,5 +29,5 @@ const ServiceDetailedContent = ({ title, subtitle, sections }) => {
     </section>
   );
 };
-
 export default ServiceDetailedContent;
+

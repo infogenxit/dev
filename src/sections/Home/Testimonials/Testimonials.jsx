@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import "./Testimonials.css";
-import cornerAssent from "../../../assets/images/corner-accent.png";
-
+import cornerAssent from "../../../assets/images/corner-accent.webp";
 const testimonials = [
   {
     text: "Infogenx helped us streamline approvals, reduce delays, and improve visibility across teams. The result was a smoother workflow and far less manual follow-up.",
@@ -44,30 +43,20 @@ const testimonials = [
 //   const [index, setIndex] = useState(1);
 //   const [animate, setAnimate] = useState(true);
 //   const trackRef = useRef(null);
-
-
 //   const slides = [
 //     testimonials[testimonials.length - 1],
 //     ...testimonials,
 //     testimonials[0],
 //   ];
-
-
 //   const CARD_WIDTH = 450;
 //   const GAP = 40;
 //   const MOVE_X = CARD_WIDTH + GAP;
-
-
 //   useEffect(() => {
 //     const timer = setInterval(() => {
 //       setIndex((prev) => prev + 1);
 //     }, 3500);
-
-
 //     return () => clearInterval(timer);
 //   }, []);
-
-
 //   useEffect(() => {
 //     if (index === slides.length - 1) {
 //       setTimeout(() => {
@@ -75,8 +64,6 @@ const testimonials = [
 //         setIndex(1);
 //       }, 800);
 //     }
-
-
 //     if (index === 0) {
 //       setTimeout(() => {
 //         setAnimate(false);
@@ -84,26 +71,18 @@ const testimonials = [
 //       }, 800);
 //     }
 //   }, [index, slides.length]);
-
-
 //   useEffect(() => {
 //     if (!animate) {
 //       requestAnimationFrame(() => setAnimate(true));
 //     }
 //   }, [animate]);
-
-
 //   return (
 //     <section className="testimonials-section">
 //       <h2 className="testimonials-title">Trusted by Our Clients</h2>
 //       <p className="testimonials-subtitle">
 //         Delivering measurable results across industries.
 //       </p>
-
-
 //       <div className="testimonial-slider">
-
-
 //         <div
 //           ref={trackRef}
 //           className={`testimonial-track ${animate ? "animate" : ""}`}
@@ -114,14 +93,10 @@ const testimonials = [
 //           {slides.map((item, i) => (
 //             <div className="testimonial-card" key={i}>
 //               <img src={cornerAssent} className="corner-accent" alt="Decorative corner accent" />
-
-
 //               <div className="testimonial-content">
 //                 <span className="quote">“</span>
 //                 <p className="testimonial-text">{item.text}</p>
 //               </div>
-
-
 //               <div className="testimonial-footer">
 //                 <img src={item.logo} alt={item.company} />
 //                 <div>
@@ -135,8 +110,6 @@ const testimonials = [
 //           ))}
 //         </div>
 //       </div>
-
-
 //       <div className="testimonial-dots">
 //         {testimonials.map((_, i) => (
 //           <span
@@ -149,48 +122,36 @@ const testimonials = [
 //     </section>
 //   );
 // };
-
-
 const Testimonials = () => {
   const [index, setIndex] = useState(1);
   const [animate, setAnimate] = useState(true);
   const [moveX, setMoveX] = useState(0);
-
   const trackRef = useRef(null);
-
   const slides = [
     testimonials[testimonials.length - 1],
     ...testimonials,
     testimonials[0],
   ];
-
   /* 👉 CALCULATE CARD WIDTH DYNAMICALLY */
   useEffect(() => {
     const updateMoveX = () => {
       if (!trackRef.current) return;
-
       const card = trackRef.current.querySelector(".testimonial-card");
       if (!card) return;
-
       const gap = window.innerWidth <= 768 ? 20 : 40;
       setMoveX(card.offsetWidth + gap);
     };
-
     updateMoveX();
     window.addEventListener("resize", updateMoveX);
-
     return () => window.removeEventListener("resize", updateMoveX);
   }, []);
-
   /* AUTO SLIDE */
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => prev + 1);
     }, 3500);
-
     return () => clearInterval(timer);
   }, []);
-
   /* INFINITE LOOP FIX */
   useEffect(() => {
     if (index === slides.length - 1) {
@@ -199,7 +160,6 @@ const Testimonials = () => {
         setIndex(1);
       }, 800);
     }
-
     if (index === 0) {
       setTimeout(() => {
         setAnimate(false);
@@ -207,21 +167,18 @@ const Testimonials = () => {
       }, 800);
     }
   }, [index, slides.length]);
-
   /* RE-ENABLE ANIMATION */
   useEffect(() => {
     if (!animate) {
       requestAnimationFrame(() => setAnimate(true));
     }
   }, [animate]);
-
   return (
     <section className="testimonials-section">
       <h2 className="testimonials-title">Our Success Stories</h2>
       <p className="testimonials-subtitle">
         Delivering measurable results across industries.
       </p>
-
       <div className="testimonial-slider">
         <div
           ref={trackRef}
@@ -237,12 +194,10 @@ const Testimonials = () => {
                 className="corner-accent"
                 alt="Decorative corner accent"
               />
-
               <div className="testimonial-content">
                 <span className="quote">"</span>
                 <p className="testimonial-text">{item.text}</p>
               </div>
-
               <div className="testimonial-footer">
                 <div>
                   <strong>{item.name}</strong>
@@ -253,7 +208,6 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-
       {/* DOTS */}
       <div className="testimonial-dots">
         {testimonials.map((_, i) => (
@@ -267,5 +221,5 @@ const Testimonials = () => {
     </section>
   );
 };
-
 export default Testimonials;
+

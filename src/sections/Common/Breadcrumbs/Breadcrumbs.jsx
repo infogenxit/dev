@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Breadcrumbs.css';
-
 const Breadcrumbs = ({ items = [] }) => {
   // BreadcrumbList Schema
   const schema = {
@@ -14,7 +13,6 @@ const Breadcrumbs = ({ items = [] }) => {
       "item": item.path ? `${process.env.REACT_APP_SITE_URL || 'https://infogenx.com.au'}${item.path}` : undefined
     }))
   };
-
   return (
     <nav className="breadcrumbs-nav container" aria-label="Breadcrumb">
       <script type="application/ld+json">
@@ -38,5 +36,5 @@ const Breadcrumbs = ({ items = [] }) => {
     </nav>
   );
 };
-
 export default Breadcrumbs;
+

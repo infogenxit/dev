@@ -48,16 +48,13 @@ const ServiceHighlight = () => {
   ];
   const sectionRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-
   useEffect(() => {
     const section = sectionRef.current;
     const totalCards = services.length;
-
     const onScroll = () => {
       const rect = section.getBoundingClientRect();
       const scrollInside = -rect.top;
       const totalScroll = section.offsetHeight - window.innerHeight;
-
       if (scrollInside >= 0 && scrollInside <= totalScroll) {
         const progress = scrollInside / totalScroll;
         const index = Math.min(
@@ -67,13 +64,10 @@ const ServiceHighlight = () => {
         setActiveIndex(index);
       }
     };
-
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   });
-
   const service = services[activeIndex];
-
   return (
     <section
       className="service-section"
@@ -86,7 +80,6 @@ const ServiceHighlight = () => {
           className="service-card active card-animate"
           style={{ background: service.background }}
         >
-          
           <div className="service-content">
             <h2 className="service-title">
               {service.title.split("\n").map((line, i) => (
@@ -96,20 +89,15 @@ const ServiceHighlight = () => {
                 </span>
               ))}
             </h2>
-
             <p className="service-description">{service.description}</p>
-
             <button className="service-btn">
               Talk to our Experts <span className="arrow">→</span>
             </button>
           </div>
-
-          
           <div className="service-media-container">
             <div style={{ padding: "0 20px" }}>
               <span className="service-index">{service.index}</span>
             </div>
-
             <div className="service-media">
               <video
                 key={service.video} // 🔥 re-mount video on change
@@ -127,7 +115,6 @@ const ServiceHighlight = () => {
           {services.slice(0, activeIndex + 1).map((item, i) => {
             const isActive = i === activeIndex;
             const stackOffset = activeIndex - i;
-
             return (
               <div
                 key={i}
@@ -136,12 +123,10 @@ const ServiceHighlight = () => {
                   background: item.background,
                   transform: `
             translateY(-${stackOffset * 35}px)
-            
           `,
                   zIndex: 100 - stackOffset,
                 }}
               >
-                {/* Left */}
                 <div className="service-content">
                   <h2 className="service-title">
                     {item.title.split("\n").map((line, idx) => (
@@ -151,9 +136,7 @@ const ServiceHighlight = () => {
                       </span>
                     ))}
                   </h2>
-
                   <p className="service-description">{item.description}</p>
-
                   {isActive && (
                     <button
                       className="service-btn"
@@ -163,8 +146,6 @@ const ServiceHighlight = () => {
                     </button>
                   )}
                 </div>
-
-                {/* Right */}
                 <div className="service-media-container">
                   {/* <span className="service-index">{item.index}</span> */}
                   <div style={{ padding: "0 20px" }}>
@@ -192,5 +173,5 @@ const ServiceHighlight = () => {
     </section>
   );
 };
-
 export default ServiceHighlight;
+

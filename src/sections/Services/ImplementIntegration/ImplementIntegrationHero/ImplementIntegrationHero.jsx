@@ -2,11 +2,10 @@ import "./ImplementIntegrationHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import appDevVideo from "../../../../assets/videos/implementation-intgration.mp4";
-import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.7; // slow speed
@@ -20,18 +19,13 @@ const AppDevHero = () => {
         src={AboutCornerAccent}
       ></img>
       <div className="appdev-container">
-        {/* LEFT CONTENT */}
-
         <div className="appdev-left">
-          {/* <h1>Deploy With Confidence</h1> */}
           <h1>System Implementation & Integration Australia | Deploy With Confidence</h1>
-
           <p>
             Infogenx ensures your digital platforms are implemented with
             precision and connected seamlessly to your business ecosystem.
             Whether you're deploying Microsoft, Zoho, or Odoo solutions.
           </p>
-
           <div className="appdev-buttons">
             <button
               className="primary-btn"
@@ -39,7 +33,6 @@ const AppDevHero = () => {
             >
               Start Implementation
             </button>
-
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -48,8 +41,6 @@ const AppDevHero = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT VIDEO */}
         <div className="appdev-right">
           <div className="appdev-video-wrapper">
             <div className="bg"></div>
@@ -68,5 +59,5 @@ const AppDevHero = () => {
     </section>
   );
 };
-
 export default AppDevHero;
+

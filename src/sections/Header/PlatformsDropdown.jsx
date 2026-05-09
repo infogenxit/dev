@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-import CodeBox1 from "../../assets/images/Microsoft Solutions.png";
-import CodeBox2 from "../../assets/images/Zoho Solutions.png";
-import CodeBox3 from "../../assets/images/Odoo Solutions.png";
+import CodeBox1 from "../../assets/images/Microsoft Solutions.webp";
+import CodeBox2 from "../../assets/images/Zoho Solutions.webp";
+import CodeBox3 from "../../assets/images/Odoo Solutions.webp";
 const PlatformsDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
@@ -19,7 +19,6 @@ const PlatformsDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/platforms/zoho" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox2} alt="Service-img" />
@@ -32,7 +31,6 @@ const PlatformsDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/platforms/odoo" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox3} alt="Service-img" />
@@ -45,9 +43,20 @@ const PlatformsDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
+        <Link to="/platforms/shopify" onClick={closeMenu}>
+          <div className="service-img">
+            <img src={CodeBox1} alt="Service-img" />
+          </div>
+          <div className="service-info">
+            <h4>Shopify Solutions</h4>
+            <p>
+              Scale your e-commerce business with custom Shopify stores and apps.
+            </p>
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
-
 export default PlatformsDropdown;
+

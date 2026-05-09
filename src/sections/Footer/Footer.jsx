@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Footerlogo from "../../assets/images/logo.png";
+import Footerlogo from "../../assets/images/logo.webp";
 import { Link } from "react-router-dom";
 import {
   RiInstagramLine,
@@ -7,12 +7,10 @@ import {
   RiLinkedinBoxLine,
 } from "react-icons/ri";
 import { RiTwitterXLine } from "react-icons/ri";
-
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Top row */}
         <div className="footer-top">
           <div className="footer-brand">
             <img src={Footerlogo} alt="Infogenx" />
@@ -22,7 +20,6 @@ const Footer = () => {
               connect systems, and scale with confidence.
             </p>
           </div>
-
           <div className="footer-social">
             <Link
               to="https://www.instagram.com/infogenx_pvt_ltd/"
@@ -44,8 +41,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-
-        {/* Links */}
         <div className="footer-links">
           <div>
             <h4>COMPANY</h4>
@@ -53,12 +48,6 @@ const Footer = () => {
               <li>
                 <Link to="/about">About Us</Link>
               </li>
-              {/* <li>
-                <Link to="/services">Services</Link>
-              </li>
-              <li>
-                <Link to="/industries">Industries</Link>
-              </li> */}
               <li>
                 <Link to="/careers">Careers</Link>
               </li>
@@ -73,7 +62,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div>
             <h4>SERVICES</h4>
             <ul>
@@ -98,14 +86,8 @@ const Footer = () => {
               <li>
                 <Link to="/services/digital-marketing">Digital Marketing</Link>
               </li>
-              {/* <li>
-                <Link to="/services/process-automation">
-                  Process Automation
-                </Link>
-              </li> */}
             </ul>
           </div>
-
           <div>
             <h4>SOLUTIONS</h4>
             <ul>
@@ -134,12 +116,8 @@ const Footer = () => {
                   Integration & API Enablement
                 </Link>
               </li>
-              {/* <li>
-                <Link to="/solutions/worlflow">Workflow Optimisation</Link>
-              </li> */}
             </ul>
           </div>
-
           <div>
             <h4>PLATFORMS</h4>
             <ul>
@@ -152,18 +130,11 @@ const Footer = () => {
               <li>
                 <Link to="/platforms/odoo">Odoo Solutions</Link>
               </li>
-              {/* <li>
-                <Link to="/platforms/power">Power Platform</Link>
-              </li>
               <li>
-                <Link to="/platforms/zoho">Zoho Creator</Link>
+                <Link to="/platforms/shopify">Shopify Solutions</Link>
               </li>
-              <li>
-                <Link to="/platforms/Azure">Azure AI</Link>
-              </li> */}
             </ul>
           </div>
-
           <div>
             <h4>INDUSTRIES</h4>
             <ul>
@@ -184,8 +155,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/industries/e-commerce-solutions">
-                  Professional Services
+                <Link to="/industries/e-commerce">
+                  E-Commerce
                 </Link>
               </li>
               <li>
@@ -196,8 +167,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        {/* Bottom */}
         <div className="footer-bottom">
           <p>© 2026 Infogenx. All rights reserved.</p>
           <p>
@@ -209,5 +178,5 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
+

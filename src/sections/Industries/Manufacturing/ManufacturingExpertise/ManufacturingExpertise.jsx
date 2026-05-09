@@ -1,71 +1,53 @@
 import "./ManufacturingExpertise.css";
-import IconA from "../../../../assets/images/icon1.png";
-import IconB from "../../../../assets/images/icon2.png";
-import IconC from "../../../../assets/images/icon3.png";
-import IconD from "../../../../assets/images/icon4.png";
-import IconE from "../../../../assets/images/icon5.png";
+import IconA from "../../../../assets/images/icon1.webp";
+import IconB from "../../../../assets/images/icon2.webp";
+import IconC from "../../../../assets/images/icon3.webp";
+import IconD from "../../../../assets/images/icon4.webp";
+import IconE from "../../../../assets/images/icon5.webp";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
-        {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Manufacturing IT Expertise</span>
-          {/* <h2>Platform solutions addressing unique Australian industry challenges.</h2> */}
+          <span className="section-label">Brisbane Manufacturing IT Solutions</span>
           <h2>
             The Right Technology Stops Costing You and Starts Working For You
           </h2>
         </div>
-
-        {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>AI-Powered Codeless Development</h4>
-            <p>Rapidly prototype and launch business apps without traditional coding constraints.</p> */}
-            <h4>Inventory Accuracy & Management</h4>
+            <h4>Enterprise Mobility Solutions</h4>
             <p>
-              End inaccurate stock counts with real-time inventory tracking that prevents costly production delays and write-offs.
+              Staff on the floor need information as much as managers. We build mobility tools that keep everyone connected — job updates, production data, and task management.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Custom Application Development</h4>
-            <p>Deliberately crafted web and mobile solutions aligned with your strategic goals.</p> */}
-            <h4>Automated Reporting</h4>
+            <h4>ERP Systems Integration</h4>
             <p>
-              Replace time-consuming manual reports with automated dashboards that give management instant operational clarity.
+              Finance, inventory, procurement, and production — all in one place. Everyone works off the same system, so things move faster and with fewer mistakes.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Cloud-Native Application Engineering</h4>
-            <p>Build resilient, scalable applications optimized for AWS, Azure, GCP, and hybrid architectures.</p> */}
-            <h4>Equipment Maintenance Tracking</h4>
+            <h4>Robotic Process Automation</h4>
             <p>
-              Prevent unexpected downtime with maintenance scheduling and asset tracking that keeps critical equipment running.
+              Automate repetitive work like invoices, reports, and data entry. Your team gets time back, errors drop, and work gets done quicker without extra effort.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Application Modernization & Optimization</h4>
-            <p>Upgrade legacy systems with performance, usability, and future-ready capabilities.</p> */}
-            <h4>Production Floor Visibility</h4>
+            <h4>AI Visual Quality Inspection</h4>
             <p>
-              Real-time visibility into your production lines, helping you identify bottlenecks and optimise throughput.
+              Pick up issues early on the production line so you’re not dealing with rework later. Less waste, better output, and more consistency across every batch.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Security, Scalability, & Compliance</h4>
-            <p>Ensure applications meet industry standards while performing under real-world load.</p> */}
-            <h4>Supply Chain Optimisation</h4>
+            <h4>IoT & Smart Factory Tools</h4>
             <p>
-              Smarter procurement and supplier management tools that reduce costs and ensure materials arrive exactly when needed.
+              Connect your machines so you can see what’s happening in real time — output, performance, and downtime — all in one unified operational view.
             </p>
           </div>
         </div>
@@ -73,5 +55,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
-
 export default AppDevExpertise;
+

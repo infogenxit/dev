@@ -1,20 +1,17 @@
 import "./DataEngineeringTech.css";
-import AppcornerAssent from "../../../../assets/images/corner-accent.png";
+import AppcornerAssent from "../../../../assets/images/corner-accent.webp";
 const WebDevTech = () => {
   return (
     <section className="tech-web-section">
       <div className="tech-web-container">
-        {/* WHAT WE OFFER */}
         <div className="tech-web-header">
           <span className="app-section-label">What We Offer</span>
           <h2>What Web Development Means</h2>
-
           <p className="tech-web-desc">
             Web development isn’t just about code – it’s about creating digital
             platforms that engage users, support business goals, and adapt to
             your future needs.
           </p>
-
           <p className="tech-web-desc">
             We combine proven technologies, UX-centric design, and
             performance-focused engineering to deliver websites and web
@@ -22,11 +19,8 @@ const WebDevTech = () => {
             devices.
           </p>
         </div>
-
-        {/* CORE TECHNOLOGY STACK */}
         <div className="tech-stack">
           <h3>Core Technology Stack</h3>
-
           <div className="tech-stack-grid">
             <div className="tech-stack-card">
               <h4>Front-End Development</h4>
@@ -41,7 +35,6 @@ const WebDevTech = () => {
                 React, Angular, Vue
               </p>
             </div>
-
             <div className="tech-stack-card">
               <h4>API & Microservices</h4>
               <p>
@@ -55,7 +48,6 @@ const WebDevTech = () => {
                 Microservices architecture
               </p>
             </div>
-
             <div className="tech-stack-card">
               <h4>Back-End Development</h4>
               <p>
@@ -71,7 +63,6 @@ const WebDevTech = () => {
                 PHP (Laravel, CodeIgniter)
               </p>
             </div>
-
             <div className="tech-stack-card">
               <h4>Database & Storage</h4>
               <p>Data-driven web apps with secure, optimized data handling.</p>
@@ -85,11 +76,9 @@ const WebDevTech = () => {
           </div>
         </div>
         <hr />
-        {/* APPROACH */}
         <div className="tech-approach">
           <span className="app-section-label">Approach</span>
           <h3>Our Web Development Approach</h3>
-
           <div className="tech-approach-grid">
             <div>
               <h5>Plan & Architect</h5>
@@ -98,7 +87,6 @@ const WebDevTech = () => {
                 clear web architecture and roadmap.
               </p>
             </div>
-
             <div>
               <h5>Design & Prototype</h5>
               <p>
@@ -106,7 +94,6 @@ const WebDevTech = () => {
                 mind, backed by UX principles and responsive design.
               </p>
             </div>
-
             <div>
               <h5>Build & Integrate</h5>
               <p>
@@ -114,7 +101,6 @@ const WebDevTech = () => {
                 feedback and quality.
               </p>
             </div>
-
             <div>
               <h5>Test & Optimize</h5>
               <p>
@@ -122,7 +108,6 @@ const WebDevTech = () => {
                 reliable experience.
               </p>
             </div>
-
             <div>
               <h5>Launch & Support</h5>
               <p>
@@ -132,8 +117,6 @@ const WebDevTech = () => {
           </div>
         </div>
       </div>
-
-      {/* CORNER ACCENT */}
       <img
         src={AppcornerAssent}
         alt="corner accent"
@@ -142,5 +125,5 @@ const WebDevTech = () => {
     </section>
   );
 };
-
 export default WebDevTech;
+

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Products.css";
-import AppcornerAssent from "../../assets/images/appcorner.png";
+import AppcornerAssent from "../../assets/images/appcorner.webp";
 import { AiOutlineStock } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
@@ -10,9 +10,9 @@ import { FaUserGear } from "react-icons/fa6";
 import CtaBanner from "../../sections/Home/CtaBanner/CtaBanner";
 import { useState } from "react";
 import DemoPopup from "./DemoPopup";
-import { Helmet } from "react-helmet-async";
+
 import SEO from "../../components/SEO/SEO";
-import AboutCornerAccent from "../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../assets/images/about-corner-accent.webp";
 
 const Products = () => {
   const navigate = useNavigate();
@@ -79,20 +79,7 @@ const Products = () => {
         description="Explore Infogenx’s innovative IT products designed to streamline operations, enhance efficiency, and drive business growth across Australia."
         keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
       />
-      {/* <Helmet>
-        <title>
-          Automation Software Products & Custom Solutions for Startups &
-          Enterprises in Brisbane, Australia | Infogenx
-        </title>
-        <meta
-          name="description"
-          content="Explore Infogenx’s innovative IT products designed to streamline operations, enhance efficiency, and drive business growth across Australia."
-        />
-        <meta
-          name="keywords"
-          content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
-        />
-      </Helmet> */}
+
 
       <section className="product-WebDev-hero">
         <img
@@ -125,25 +112,21 @@ const Products = () => {
               Talk to an Expert
             </button>
           </div>
-          {/* <p className="product-WebDev-hero-description-bottom">
-            At Infogenx, our products are designed to empower businesses across
-            industries with intelligent, scalable, and ready-to-deploy digital
-            solutions.
-          </p> */}
+
         </div>
       </section>
 
-      {/*section -*/}
+
 
       <section className="product-approach-section">
         <div className="approach-container">
-          {/* Header */}
+
           <div className="approach-header">
             <span className="app-section-label">Readymade Softwares</span>
             <h2>Solutions Built for Real Operations</h2>
           </div>
 
-          {/* Cards */}
+
           <div className="approach-grid">
             {steps.map((step, index) => (
               <div className="product-approach-card" key={index}>
@@ -160,12 +143,7 @@ const Products = () => {
                   >
                     Try for free
                   </button>
-                  {/* <button
-                    onClick={() => window.open(step.btn2, "_blank")}
-                    className="demo-btn"
-                  >
-                    Show Demo
-                  </button> */}
+
                   <button
                     className="demo-btn"
                     onClick={() => setActiveDemo(step)}
@@ -178,8 +156,7 @@ const Products = () => {
           </div>
         </div>
 
-        {/* Corner Accent */}
-        {/* <div className="approach-accent" /> */}
+
         <img
           src={AppcornerAssent}
           alt="corner accent"

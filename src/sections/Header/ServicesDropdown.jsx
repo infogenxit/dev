@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-import CodeBox1 from "../../assets/images/Implementation & Integration.png";
-import CodeBox2 from "../../assets/images/Managed Services.png";
-import CodeBox3 from "../../assets/images/Consulting & Advisory.png";
-import CodeBox4 from "../../assets/images/Support & Optimization.png";
+import CodeBox1 from "../../assets/images/Implementation & Integration.webp";
+import CodeBox2 from "../../assets/images/Managed Services.webp";
+import CodeBox3 from "../../assets/images/Consulting & Advisory.webp";
+import CodeBox4 from "../../assets/images/Support & Optimization.webp";
 const ServicesDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
@@ -20,7 +20,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/services/managed-services" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox2} alt="Service-img" />
@@ -33,7 +32,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/services/consulting-advisory" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox3} alt="Service-img" />
@@ -46,7 +44,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/services/support-optimization" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox4} alt="Service-img" />
@@ -56,7 +53,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             <p>Extend development capacity with reliable offshore teams.</p>
           </div>
         </Link>
-
         <Link to="/services/digital-marketing" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox3} alt="Service-img" />
@@ -70,5 +66,5 @@ const ServicesDropdown = ({ closeMenu }) => {
     </div>
   );
 };
-
 export default ServicesDropdown;
+

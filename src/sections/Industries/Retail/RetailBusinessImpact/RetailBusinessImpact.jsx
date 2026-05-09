@@ -1,68 +1,58 @@
 import "./RetailBusinessImpact.css";
-import Business1 from "../../../../assets/images/businessimg1.png";
-import Business2 from "../../../../assets/images/businessimg2.png";
-import Business3 from "../../../../assets/images/businessimg3.png";
-import Business4 from "../../../../assets/images/businessimg4.png";
+import Business1 from "../../../../assets/images/businessimg1.webp";
+import Business2 from "../../../../assets/images/businessimg2.webp";
+import Business3 from "../../../../assets/images/businessimg3.webp";
+import Business4 from "../../../../assets/images/businessimg4.webp";
 const AppDevBusinessImpact = () => {
   return (
     <section className="business-impact-section">
       <div className="business-impact-container">
-        {/* Header */}
         <div className="business-impact-header">
           <span className="section-label">Why Choose Infogenx</span>
           <h2>Built for Business Impact</h2>
         </div>
-
-        {/* Grid */}
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business1} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Outcome-Driven Solutions</h4>
+              <h4>Local Expertise</h4>
               <p>
-                We focus on delivering measurable results – faster
-                time-to-market, reduced costs, and scalable systems.
+                Local Brisbane team that understands the Queensland retail market and its unique operational challenges.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business2} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Low-Code & Enterprise Expertise</h4>
+              <h4>Scalable Solutions</h4>
               <p>
-                We combine bleeding-edge platforms with engineering experience
-                to meet real business needs.
+                Solutions built specifically to handle both single boutique stores and growing multi-location chains.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business3} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Secure, Scalable, and Compliant</h4>
+              <h4>Security-First Mindset</h4>
               <p>
-                Solutions designed to meet industry standards and handle
-                enterprise-grade scale.
+                Every solution is built compliance-ready and cybersecurity-first to protect customer payment data.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business4} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Cross-Industry Experience</h4>
+              <h4>Proven Track Record</h4>
               <p>
-                We serve diverse sectors, including finance, logistics,
-                healthcare, and retail.
+                Award-winning IT company with extensive experience transforming retail operations across Australia and beyond.
               </p>
             </div>
           </div>
@@ -71,5 +61,5 @@ const AppDevBusinessImpact = () => {
     </section>
   );
 };
-
 export default AppDevBusinessImpact;
+

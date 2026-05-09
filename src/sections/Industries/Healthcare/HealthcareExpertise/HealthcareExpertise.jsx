@@ -1,71 +1,53 @@
 import "./HealthcareExpertise.css";
-import IconA from "../../../../assets/images/icon1.png";
-import IconB from "../../../../assets/images/icon2.png";
-import IconC from "../../../../assets/images/icon3.png";
-import IconD from "../../../../assets/images/icon4.png";
-import IconE from "../../../../assets/images/icon5.png";
+import IconA from "../../../../assets/images/icon1.webp";
+import IconB from "../../../../assets/images/icon2.webp";
+import IconC from "../../../../assets/images/icon3.webp";
+import IconD from "../../../../assets/images/icon4.webp";
+import IconE from "../../../../assets/images/icon5.webp";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
-        {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Healthcare IT Expertise</span>
-          {/* <h2>Platform solutions addressing unique Australian industry challenges.</h2> */}
+          <span className="section-label">Brisbane Healthcare IT Solutions</span>
           <h2>
-            We Help Healthcare Providers Run Better — So They Can Care Better
+            We Help Healthcare Providers Stop Drowning in Admin
           </h2>
         </div>
-
-        {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>AI-Powered Codeless Development</h4>
-            <p>Rapidly prototype and launch business apps without traditional coding constraints.</p> */}
-            <h4>Patient Record Management</h4>
+            <h4>Electronic Health Records</h4>
             <p>
-              Secure, centralised digital record systems that reduce paperwork and give clinicians instant access to the information they need.
+              Keep everything in one place — medical history, past visits, and medication alerts — so information is easy to access when it’s needed.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Custom Application Development</h4>
-            <p>Deliberately crafted web and mobile solutions aligned with your strategic goals.</p> */}
-            <h4>Compliance & Regulatory Automation</h4>
+            <h4>Hospital Management System</h4>
             <p>
-              Automated compliance tracking for Australian healthcare regulations — reducing audit risk and keeping your practice protected.
+              Tie all hospital departments together so your staff isn't re-entering the same data five times across five different systems.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Cloud-Native Application Engineering</h4>
-            <p>Build resilient, scalable applications optimized for AWS, Azure, GCP, and hybrid architectures.</p> */}
-            <h4>Staff Productivity Tools</h4>
+            <h4>Clinic Management System</h4>
             <p>
-              Systems that streamline scheduling, communication, and task management so your team spends more time on patients, less on admin.
+              Straightforward software for smaller clinics that handles the billing process automatically and doesn't require a full-time IT person.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Application Modernization & Optimization</h4>
-            <p>Upgrade legacy systems with performance, usability, and future-ready capabilities.</p> */}
-            <h4>Healthcare Cost Management</h4>
+            <h4>Healthcare Analytics</h4>
             <p>
-              Better data visibility and automated reporting to help practice managers control costs and forecast with confidence.
+              Set up analytics tools that actually surface patterns worth acting on: early warning signs, treatment trends, and operational bottlenecks.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Security, Scalability, & Compliance</h4>
-            <p>Ensure applications meet industry standards while performing under real-world load.</p> */}
-            <h4>Data Security & Patient Privacy</h4>
+            <h4>Cloud & IoT Solutions</h4>
             <p>
-              Healthcare-grade security for patient data, built to meet Australian privacy standards and protect your practice from data breaches.
+              Connect diagnostic equipment for live monitoring and move to the cloud so your team can access what they need from anywhere securely.
             </p>
           </div>
         </div>
@@ -73,5 +55,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
-
 export default AppDevExpertise;
+

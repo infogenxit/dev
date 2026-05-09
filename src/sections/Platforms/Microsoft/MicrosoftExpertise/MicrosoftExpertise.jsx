@@ -1,65 +1,53 @@
 import "./MicrosoftExpertise.css";
-import IconA from "../../../../assets/images/icon1.png";
-import IconB from "../../../../assets/images/icon2.png";
-import IconC from "../../../../assets/images/icon3.png";
-import IconD from "../../../../assets/images/icon4.png";
-import IconE from "../../../../assets/images/icon5.png";
+import IconA from "../../../../assets/images/icon1.webp";
+import IconB from "../../../../assets/images/icon2.webp";
+import IconC from "../../../../assets/images/icon3.webp";
+import IconD from "../../../../assets/images/icon4.webp";
+import IconE from "../../../../assets/images/icon5.webp";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
-        {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Microsoft Platform Expertise</span>
+          <span className="section-label">Trusted Microsoft Partner in Brisbane</span>
           <h2>
-            Smarter Microsoft Solutions for Automation, Insight, and Scalable Growth
+            Dynamics 365 - Power BI - Microsoft Solutions
           </h2>
         </div>
-
-        {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
-            {/* <FaRobot className="expertise-icon" /> */}
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>Power Platform Automation</h4>
+            <h4>Microsoft Dynamics 365</h4>
             <p>
-              Automate workflows, reduce manual effort, and improve execution with Power Apps, Power Automate, and Power BI.
+              Integrate sales, service, and operations into a single platform. We ensure your setup aligns with your actual workflows to reduce administrative clutter.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaCode className="expertise-icon" /> */}
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Azure AI Solutions</h4>
+            <h4>Power BI & Reporting</h4>
             <p>
-              Apply AI services that improve insight, strengthen decision-making, and support more intelligent business operations.
+              Create easy-to-use dashboards that show you the numbers without slogging through reports. Get real-time insights to support quicker decisions.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaCloud className="expertise-icon" /> */}
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Dynamics Implementation</h4>
+            <h4>Power Platform Solutions</h4>
             <p>
-              Deploy Dynamics solutions that connect teams, streamline processes, and improve visibility across core business functions.
+              Build custom Power Apps and use Power Automate to minimise manual tasks and achieve consistent operational outcomes across your business.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaTools className="expertise-icon" /> */}
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Microsoft Integration and Optimisation</h4>
+            <h4>Microsoft Azure & Integrations</h4>
             <p>
-              Connect Microsoft tools with your wider ecosystem to improve data flow, performance, and operational alignment.
+              Secure and scale your systems with Azure. We use Azure Logic Apps to ensure data flows correctly between all your different tools.
             </p>
           </div>
-
           <div className="expertise-item">
-            {/* <FaShieldAlt className="expertise-icon" /> */}
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Governance, and Compliance</h4>
+            <h4>Microsoft 365 & Copilot</h4>
             <p>
-              Build Microsoft environments that are secure, scalable, and aligned with Australian business and compliance expectations.
+              Maximise productivity with Microsoft 365 and leverage Microsoft Copilot for AI-powered support, helping your team work smarter every day.
             </p>
           </div>
         </div>
@@ -67,5 +55,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
-
 export default AppDevExpertise;
+

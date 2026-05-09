@@ -2,11 +2,10 @@ import "./MicrosoftHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import appDevVideo from "../../../../assets/videos/Microsoft Excellence Delivered.mp4";
-import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
+import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.7; // slow speed
@@ -20,19 +19,11 @@ const AppDevHero = () => {
         src={AboutCornerAccent}
       ></img>
       <div className="appdev-container">
-        {/* LEFT CONTENT */}
-
         <div className="appdev-left">
-          {/* <h1>Microsoft Excellence Delivered</h1> */}
-          <h1>Trusted Microsoft Partner in Brisbane</h1>
-
+          <h1>Expert Microsoft Dynamics 365 Brisbane in Brisbane to Scale your business</h1>
           <p>
-            {/* Microsoft Power Platform automation, Azure AI solutions, and
-            Dynamics implementation tailored for Australian enterprises focused
-            on governance and growth. */}
-            Certified Microsoft partner in Brisbane specializing in Dynamics 365, Power BI, and Microsoft Cloud solutions for scalable growth.
+            Microsoft Dynamics 365 - Power BI - Microsoft Solutions. In today's business world, multiple systems often function with scattered data and ineffective processes. Infogenx is an active Microsoft partner in Brisbane, helping businesses leverage the full power of the Microsoft ecosystem.
           </p>
-
           <div className="appdev-buttons">
             <button
               className="primary-btn"
@@ -40,7 +31,6 @@ const AppDevHero = () => {
             >
               Explore Microsoft Solutions{" "}
             </button>
-
             <button
               className="secondary-btn"
               onClick={() => navigate("/contact-us")}
@@ -49,8 +39,6 @@ const AppDevHero = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT VIDEO */}
         <div className="appdev-right">
           <div className="appdev-video-wrapper">
             <div className="bg"></div>
@@ -69,5 +57,5 @@ const AppDevHero = () => {
     </section>
   );
 };
-
 export default AppDevHero;
+

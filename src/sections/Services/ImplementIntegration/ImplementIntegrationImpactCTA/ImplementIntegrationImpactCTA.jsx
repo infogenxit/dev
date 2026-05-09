@@ -1,21 +1,18 @@
 import "./ImplementIntegrationImpactCTA.css";
 import { useNavigate } from "react-router-dom";
-import Correct from "../../../../assets/images/correct.png";
+import Correct from "../../../../assets/images/correct.webp";
 const AppDevImpactCTA = () => {
   const navigate = useNavigate();
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
-        {/* LEFT */}
         <div className="impact-cta-left">
           <h2>Ready to Deploy with Confidence?</h2>
-
           <p>
             Whether you're deploying Microsoft, Zoho, or Odoo, Infogenx ensures
             a smooth, scalable integration and successful go-live for your
             business.
           </p>
-
           <div className="impact-buttons">
             <button
               className="primary-btn"
@@ -31,8 +28,6 @@ const AppDevImpactCTA = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT */}
         <div className="impact-cta-right">
           <div className="impact-cta-content">
             <ul>
@@ -47,7 +42,6 @@ const AppDevImpactCTA = () => {
                 <img src={Correct} alt="correct" /> Outcomes You Can Measure
               </li>
             </ul>
-
             <p className="impact-note">
               Let’s build the future insights.
               <br />
@@ -59,5 +53,5 @@ const AppDevImpactCTA = () => {
     </section>
   );
 };
-
 export default AppDevImpactCTA;
+

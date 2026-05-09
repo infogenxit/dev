@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./RequestQuote.css";
-import { Helmet } from "react-helmet-async";
+
 import SEO from "../../components/SEO/SEO";
 const RequestQuote = () => {
   const [formData, setFormData] = useState({
@@ -34,13 +34,13 @@ const RequestQuote = () => {
       form.acceptCharset = "UTF-8";
 
       const fields = {
-        // 🔐 Zoho mandatory hidden fields
+        // Zoho mandatory hidden fields
         xnQsjsdp: process.env.REACT_APP_ZOHO_CRM_XNQSJSDP_QUOTE,
         xmIwtLD: process.env.REACT_APP_ZOHO_CRM_XMIWTLD_QUOTE,
         actionType: "TGVhZHM=",
         returnURL: process.env.REACT_APP_QUOTE_RETURN_URL,
 
-        // 🧑 User form fields → Zoho Lead fields
+        // User form fields → Zoho Lead fields
         "Last Name": formData.name,
         Phone: formData.contactNumber,
         Email: formData.email,
@@ -57,8 +57,14 @@ const RequestQuote = () => {
         form.appendChild(input);
       });
 
+      form.target = "zohoQuoteSubmitFrame"; // Prevents full page redirect
       document.body.appendChild(form);
       form.submit();
+      
+      // Cleanup form element after submission
+      setTimeout(() => {
+        if (form.parentNode) form.parentNode.removeChild(form);
+      }, 2000);
 
       setShowThankYou(true);
       setFormData({
@@ -79,22 +85,17 @@ const RequestQuote = () => {
 
   return (
     <>
+      <iframe
+        title="Zoho quote form submit"
+        name="zohoQuoteSubmitFrame"
+        style={{ display: "none" }}
+      />
       <SEO
         title="Contact Infogenx | Book an AI & Automation Call"
         description="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
         keywords="contact AI & Automation Australia company, IT strategy call Australia"
       />
-      {/* <Helmet>
-        <title>Contact Infogenx | Book an AI & Automation Call</title>
-        <meta
-          name="description"
-          content="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
-        />
-        <meta
-          name="keywords"
-          content="contact AI & Automation Australia company, IT strategy call Australia"
-        />
-      </Helmet> */}
+
       <div className="request-quote-page">
         <div className="contact-form-container">
           <h2 className="contact-title">Get In Touch</h2>

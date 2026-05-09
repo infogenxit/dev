@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./InsightDropdown.css";
-// import CodeBox from "../../assets/images/codebox.png";
+// import CodeBox from "../../assets/images/codebox.webp";
 const PlatformsDropdown = ({ closeMenu }) => {
   return (
     <div className="insight-dropdown">
@@ -10,7 +10,6 @@ const PlatformsDropdown = ({ closeMenu }) => {
             <h4>Blog</h4>
           </div>
         </Link>
-
         <Link to="/insights/case-studies" onClick={closeMenu}>
           <div className="service-info">
             <h4>Case Studies</h4>
@@ -20,5 +19,5 @@ const PlatformsDropdown = ({ closeMenu }) => {
     </div>
   );
 };
-
 export default PlatformsDropdown;
+

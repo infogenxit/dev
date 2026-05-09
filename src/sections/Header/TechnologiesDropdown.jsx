@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-import CodeBox from "../../assets/images/codebox.png";
+import CodeBox from "../../assets/images/codebox.webp";
 const ServicesDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
@@ -17,7 +17,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/technologies/mobile-app-development" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -30,7 +29,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/technologies/artificial-intelligence" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -43,7 +41,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/technologies/cloud-computing" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -57,5 +54,5 @@ const ServicesDropdown = ({ closeMenu }) => {
     </div>
   );
 };
-
 export default ServicesDropdown;
+

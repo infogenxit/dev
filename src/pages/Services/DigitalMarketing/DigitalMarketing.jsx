@@ -3,7 +3,6 @@ import AppDevExpertise from "../../../sections/Services/DigitalMarketing/Digital
 import AppDevApproach from "../../../sections/Services/DigitalMarketing/DigitalMarketingApproach/DigitalMarketingApproach";
 import AppDevBusinessImpact from "../../../sections/Services/DigitalMarketing/DigitalMarketingBusinessImpact/DigitalMarketingBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Services/DigitalMarketing/DigitalMarketingImpactCTA/DigitalMarketingImpactCTA";
-import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
@@ -61,17 +60,7 @@ const DigitalMarketing = () => {
         description="Boost your online presence and drive growth with our comprehensive digital marketing solutions tailored for the Australian market."
         keywords="digital marketing Australia, online marketing services"
       />
-      {/* <Helmet>
-        <title>Digital Marketing Services | Infogenx Australia</title>
-        <meta
-          name="description"
-          content="Boost your online presence and drive growth with our comprehensive digital marketing solutions tailored for the Australian market."
-        />
-        <meta
-          name="keywords"
-          content="digital marketing Australia, online marketing services"
-        />
-      </Helmet> */}
+
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />

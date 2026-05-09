@@ -1,23 +1,20 @@
 import "./IntelligentAutomationImpactCTA.css";
 import { useNavigate } from "react-router-dom";
-import Correct from "../../../../assets/images/correct.png";
+import Correct from "../../../../assets/images/correct.webp";
 const AppDevImpactCTA = () => {
   const navigate = useNavigate();
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
-        {/* LEFT */}
         <div className="impact-cta-left">
           <h2>
             Ready to Unlock Intelligent <span>Automation?</span>
           </h2>
-
           <p>
             If manual work, process delays, or disconnected workflows are
             slowing your business down, Infogenx can help you automate with
             clarity.
           </p>
-
           <div className="impact-buttons">
             <button
               className="primary-btn"
@@ -33,8 +30,6 @@ const AppDevImpactCTA = () => {
             </button>
           </div>
         </div>
-
-        {/* RIGHT */}
         <div className="impact-cta-right">
           <div className="impact-cta-content">
             <ul>
@@ -51,7 +46,6 @@ const AppDevImpactCTA = () => {
                 measurable impact
               </li>
             </ul>
-
             <p className="impact-note">
               Let’s build the future together.
               <br />
@@ -63,5 +57,5 @@ const AppDevImpactCTA = () => {
     </section>
   );
 };
-
 export default AppDevImpactCTA;
+

@@ -1,5 +1,5 @@
 import "./ImplementIntegrationApproach.css";
-import cornerAssent from "../../../../assets/images/corner-accent.png";
+import cornerAssent from "../../../../assets/images/corner-accent.webp";
 const steps = [
   {
     number: "1",
@@ -17,7 +17,6 @@ const steps = [
     desc: "We ensure all systems are rigorously tested, user-trained, and delivered with full operational handover to your teams.",
   },
 ];
-
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
@@ -27,13 +26,10 @@ const AppDevApproach = () => {
         className="automation-corner-accent"
       />
       <div className="approach-container">
-        {/* Header */}
         <div className="approach-header">
           <span className="app-section-label">How We Deliver</span>
           <h2>A Smarter Path to Successful Implementation</h2>
         </div>
-
-        {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
@@ -87,5 +83,5 @@ const AppDevApproach = () => {
     </section>
   );
 };
-
 export default AppDevApproach;
+

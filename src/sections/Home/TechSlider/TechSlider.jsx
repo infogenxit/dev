@@ -1,21 +1,20 @@
 import "./TechSlider.css";
-import aws from "../../../assets/images/aws.png";
-import laravel from "../../../assets/images/laravel.png";
-import codeigniter from "../../../assets/images/codeigniter.png";
-import tableau from "../../../assets/images/tableau.png";
-import python from "../../../assets/images/python.png";
-import node from "../../../assets/images/node.png";
-import angular from "../../../assets/images/angular.png";
-import react from "../../../assets/images/react.png";
-import powerbi from "../../../assets/images/powerbi.png";
-import ml from "../../../assets/images/ml.png";
-import flutter from "../../../assets/images/flutter.png";
-import sql from "../../../assets/images/sql.png";
-import wordpress from "../../../assets/images/wordpress.png";
-import shopify from "../../../assets/images/shopify.png";
-import spark from "../../../assets/images/spark.png";
-import php from "../../../assets/images/php.png";
-
+import aws from "../../../assets/images/aws.webp";
+import laravel from "../../../assets/images/laravel.webp";
+import codeigniter from "../../../assets/images/codeigniter.webp";
+import tableau from "../../../assets/images/tableau.webp";
+import python from "../../../assets/images/python.webp";
+import node from "../../../assets/images/node.webp";
+import angular from "../../../assets/images/angular.webp";
+import react from "../../../assets/images/react.webp";
+import powerbi from "../../../assets/images/powerbi.webp";
+import ml from "../../../assets/images/ml.webp";
+import flutter from "../../../assets/images/flutter.webp";
+import sql from "../../../assets/images/sql.webp";
+import wordpress from "../../../assets/images/wordpress.webp";
+import shopify from "../../../assets/images/shopify.webp";
+import spark from "../../../assets/images/spark.webp";
+import php from "../../../assets/images/php.webp";
 const techLogos = [
   { src: aws, name: "AWS Cloud" },
   { src: laravel, name: "Laravel Framework" },
@@ -34,7 +33,6 @@ const techLogos = [
   { src: codeigniter, name: "CodeIgniter" },
   { src: tableau, name: "Tableau Visualization" },
 ];
-
 const TechSlider = () => {
   return (
     <section className="tech-slider-section">
@@ -50,5 +48,5 @@ const TechSlider = () => {
     </section>
   );
 };
-
 export default TechSlider;
+

@@ -1,6 +1,6 @@
 import "./CustomerRelation.css";
-import logo from "../../../assets/images/products/crm-logo.png";
-import laptopImg from "../../../assets/images/products/crm-laptop.png";
+import logo from "../../../assets/images/products/crm-logo.webp";
+import laptopImg from "../../../assets/images/products/crm-laptop.webp";
 import { useEffect, useState } from "react";
 import {
   FaPhoneAlt,
@@ -9,17 +9,17 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import img1 from "../../../assets/images/products/crm1.png";
-import img2 from "../../../assets/images/products/crm2.png";
-import img3 from "../../../assets/images/products/crm3.png";
-import img4 from "../../../assets/images/products/crm4.png";
-import img5 from "../../../assets/images/products/crm5.png";
-import img6 from "../../../assets/images/products/crm6.png";
-import img7 from "../../../assets/images/products/crm7.png";
-import img8 from "../../../assets/images/products/crm8.png";
-import img9 from "../../../assets/images/products/crm9.png";
-import img10 from "../../../assets/images/products/crm10.png";
-import img11 from "../../../assets/images/products/crm11.png";
+import img1 from "../../../assets/images/products/crm1.webp";
+import img2 from "../../../assets/images/products/crm2.webp";
+import img3 from "../../../assets/images/products/crm3.webp";
+import img4 from "../../../assets/images/products/crm4.webp";
+import img5 from "../../../assets/images/products/crm5.webp";
+import img6 from "../../../assets/images/products/crm6.webp";
+import img7 from "../../../assets/images/products/crm7.webp";
+import img8 from "../../../assets/images/products/crm8.webp";
+import img9 from "../../../assets/images/products/crm9.webp";
+import img10 from "../../../assets/images/products/crm10.webp";
+import img11 from "../../../assets/images/products/crm11.webp";
 import { Link } from "react-router-dom";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";

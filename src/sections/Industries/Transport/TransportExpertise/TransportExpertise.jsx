@@ -1,71 +1,53 @@
 import "./TransportExpertise.css";
-import IconA from "../../../../assets/images/icon1.png";
-import IconB from "../../../../assets/images/icon2.png";
-import IconC from "../../../../assets/images/icon3.png";
-import IconD from "../../../../assets/images/icon4.png";
-import IconE from "../../../../assets/images/icon5.png";
+import IconA from "../../../../assets/images/icon1.webp";
+import IconB from "../../../../assets/images/icon2.webp";
+import IconC from "../../../../assets/images/icon3.webp";
+import IconD from "../../../../assets/images/icon4.webp";
+import IconE from "../../../../assets/images/icon5.webp";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
-        {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Transport & Logistics IT Expertise</span>
-          {/* <h2>Platform solutions addressing unique Australian industry challenges.</h2> */}
+          <span className="section-label">Brisbane Logistics IT Solutions</span>
           <h2>
-            Streamlining Logistics Operations from Dispatch to Delivery
+            Visibility Gaps Are Costing Your Logistics Business
           </h2>
         </div>
-
-        {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>AI-Powered Codeless Development</h4>
-            <p>Rapidly prototype and launch business apps without traditional coding constraints.</p> */}
-            <h4>Fleet Management & Tracking</h4>
+            <h4>Transportation Management System</h4>
             <p>
-              Real-time fleet tracking and vehicle management systems that improve utilisation and reduce operational costs.
+              Billing, invoicing, load management, shipment tracking, and reporting all in one platform. No more juggling five systems for one straight answer.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Custom Application Development</h4>
-            <p>Deliberately crafted web and mobile solutions aligned with your strategic goals.</p> */}
-            <h4>Route Optimisation</h4>
+            <h4>Supply Chain Management</h4>
             <p>
-              Intelligent route planning tools that reduce fuel costs, improve delivery times, and minimise driver fatigue.
+              See what’s actually happening right now — what’s moving, what’s slowing down, and what needs attention — so you run based on real demand.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Cloud-Native Application Engineering</h4>
-            <p>Build resilient, scalable applications optimized for AWS, Azure, GCP, and hybrid architectures.</p> */}
-            <h4>Supply Chain Visibility</h4>
+            <h4>Route Optimisation & GPS</h4>
             <p>
-              End-to-end supply chain tracking giving you and your customers real-time visibility into shipment status and ETAs.
+              Plan routes automatically based on traffic, delivery windows, and load. Deliveries go out on time, fuel costs stay under control, and things run smoother.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Application Modernization & Optimization</h4>
-            <p>Upgrade legacy systems with performance, usability, and future-ready capabilities.</p> */}
-            <h4>Dispatch & Scheduling Automation</h4>
+            <h4>E-Commerce Logistics Integration</h4>
             <p>
-              Automated dispatch systems that reduce manual coordination, improve response times, and eliminate scheduling conflicts.
+              Connect tracking, inventory, and last-mile delivery properly so customers get updates and your team isn’t dealing with constant complaints.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Security, Scalability, & Compliance</h4>
-            <p>Ensure applications meet industry standards while performing under real-world load.</p> */}
-            <h4>Compliance & Reporting</h4>
+            <h4>Cloud Communication Tools</h4>
             <p>
-              Automated compliance reporting for Australian transport regulations, keeping your operations audit-ready at all times.
+              Everyone involved — warehouse staff, drivers, customers, and partners — can see the same live information. No more calling around for basic updates.
             </p>
           </div>
         </div>
@@ -73,5 +55,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
-
 export default AppDevExpertise;
+

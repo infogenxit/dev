@@ -1,71 +1,54 @@
 import "./RetailExpertise.css";
-import IconA from "../../../../assets/images/icon1.png";
-import IconB from "../../../../assets/images/icon2.png";
-import IconC from "../../../../assets/images/icon3.png";
-import IconD from "../../../../assets/images/icon4.png";
-import IconE from "../../../../assets/images/icon5.png";
+import IconA from "../../../../assets/images/icon1.webp";
+import IconB from "../../../../assets/images/icon2.webp";
+import IconC from "../../../../assets/images/icon3.webp";
+import IconD from "../../../../assets/images/icon4.webp";
+import IconE from "../../../../assets/images/icon5.webp";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
-        {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">Retail IT Expertise</span>
+          <span className="section-label">Brisbane Retail IT Solutions</span>
           {/* <h2>Platform solutions addressing unique Australian industry challenges.</h2> */}
           <h2>
             Your Retail Operations Deserve Better Technology
           </h2>
         </div>
-
-        {/* Expertise grid */}
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>AI-Powered Codeless Development</h4>
-            <p>Rapidly prototype and launch business apps without traditional coding constraints.</p> */}
-            <h4>Inventory Management Systems</h4>
+            <h4>Omnichannel & E-Commerce Integration</h4>
             <p>
-              Real-time stock visibility across all locations, reducing write-offs and ensuring you always know exactly what's on hand.
+              Your customers move between online and in-store. We make sure everything stays connected — browse anywhere, buy anywhere, no gaps.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Custom Application Development</h4>
-            <p>Deliberately crafted web and mobile solutions aligned with your strategic goals.</p> */}
-            <h4>Point of Sale Integration</h4>
+            <h4>Inventory Management System</h4>
             <p>
-              Seamlessly connect your POS to your back-office, accounts, and e-commerce store — no more manual reconciliation.
+              Real-time stock tracking with barcode and RFID integration. Less guesswork, fewer stock issues, and better operational control.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Cloud-Native Application Engineering</h4>
-            <p>Build resilient, scalable applications optimized for AWS, Azure, GCP, and hybrid architectures.</p> */}
-            <h4>Supply Chain Automation</h4>
+            <h4>Retail Analytics</h4>
             <p>
-              Automated supplier ordering, delivery tracking, and warehouse management to keep your operations running smoothly.
+              Clear insights on sales, customers, and product performance — so decisions are based on real numbers, not instinct.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Application Modernization & Optimization</h4>
-            <p>Upgrade legacy systems with performance, usability, and future-ready capabilities.</p> */}
-            <h4>Customer Analytics & Loyalty</h4>
+            <h4>AI & Smart Retail Technology</h4>
             <p>
-              Understand your best customers, buying patterns, and campaign performance with integrated retail analytics.
+              Practical tools like smart reordering, product suggestions, and automated chat support to make daily work easier and increase sales.
             </p>
           </div>
-
           <div className="expertise-item">
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            {/* <h4>Security, Scalability, & Compliance</h4>
-            <p>Ensure applications meet industry standards while performing under real-world load.</p> */}
-            <h4>Omnichannel Commerce</h4>
+            <h4>Cybersecurity for Retail</h4>
             <p>
-              Unify your in-store and online operations with integrated platforms that give customers a seamless shopping experience.
+              Customer payment data and purchase histories need serious protection. We use AI-driven threat detection across both online and in-store environments.
             </p>
           </div>
         </div>
@@ -73,5 +56,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
-
 export default AppDevExpertise;
+

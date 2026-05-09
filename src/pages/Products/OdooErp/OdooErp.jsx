@@ -1,6 +1,6 @@
 import "./OdooErp.css";
-import logo from "../../../assets/images/products/erplogo.png";
-import laptopImg from "../../../assets/images/products/erp-laptop.png";
+import logo from "../../../assets/images/products/erplogo.webp";
+import laptopImg from "../../../assets/images/products/erp-laptop.webp";
 import { useEffect, useState } from "react";
 import {
   FaPhoneAlt,
@@ -9,17 +9,17 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import img1 from "../../../assets/images/products/erp1.png";
-import img2 from "../../../assets/images/products/erp2.png";
-import img3 from "../../../assets/images/products/erp3.png";
-import img4 from "../../../assets/images/products/erp4.png";
-import img5 from "../../../assets/images/products/erp5.png";
-import img6 from "../../../assets/images/products/erp6.png";
-import img7 from "../../../assets/images/products/erp7.png";
-import img8 from "../../../assets/images/products/erp8.png";
-import img9 from "../../../assets/images/products/erp9.png";
-import img10 from "../../../assets/images/products/erp10.png";
-import img11 from "../../../assets/images/products/erp11.png";
+import img1 from "../../../assets/images/products/erp1.webp";
+import img2 from "../../../assets/images/products/erp2.webp";
+import img3 from "../../../assets/images/products/erp3.webp";
+import img4 from "../../../assets/images/products/erp4.webp";
+import img5 from "../../../assets/images/products/erp5.webp";
+import img6 from "../../../assets/images/products/erp6.webp";
+import img7 from "../../../assets/images/products/erp7.webp";
+import img8 from "../../../assets/images/products/erp8.webp";
+import img9 from "../../../assets/images/products/erp9.webp";
+import img10 from "../../../assets/images/products/erp10.webp";
+import img11 from "../../../assets/images/products/erp11.webp";
 import { Link } from "react-router-dom";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";

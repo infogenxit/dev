@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './RelatedServices.css';
-
 const RelatedServices = ({ currentService, items }) => {
   const allServices = [
     { name: "Intelligent Automation", path: "/solutions/intelligent-automation" },
@@ -10,11 +9,9 @@ const RelatedServices = ({ currentService, items }) => {
     { name: "Data & Analytics", path: "/solutions/data-analytics-ai" },
     { name: "Digital Transformation", path: "/solutions/digital-transformation" }
   ];
-
   const filteredServices = items || allServices
     .filter(service => service.path !== currentService)
     .slice(0, 3);
-
   return (
     <section className="related-services-section container">
       <h2 className="related-title">Explore Related Solutions</h2>
@@ -30,5 +27,5 @@ const RelatedServices = ({ currentService, items }) => {
     </section>
   );
 };
-
 export default RelatedServices;
+

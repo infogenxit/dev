@@ -1,64 +1,58 @@
 import "./MicrosoftBusinessImpact.css";
-import Business1 from "../../../../assets/images/businessimg1.png";
-import Business2 from "../../../../assets/images/businessimg2.png";
-import Business3 from "../../../../assets/images/businessimg3.png";
-import Business4 from "../../../../assets/images/businessimg4.png";
+import Business1 from "../../../../assets/images/businessimg1.webp";
+import Business2 from "../../../../assets/images/businessimg2.webp";
+import Business3 from "../../../../assets/images/businessimg3.webp";
+import Business4 from "../../../../assets/images/businessimg4.webp";
 const AppDevBusinessImpact = () => {
   return (
     <section className="business-impact-section">
       <div className="business-impact-container">
-        {/* Header */}
         <div className="business-impact-header">
           <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Microsoft That Performs</h2>
+          <h2>Built for Real-World Microsoft Impact</h2>
         </div>
-
-        {/* Grid */}
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business1} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Australian-Led, Locally Accountable</h4>
+              <h4>Active Microsoft Partner</h4>
               <p>
-                Consulting and delivery backed by local accountability and nationwide support.
+                An active Brisbane-based Microsoft partner dedicated to helping you integrate and optimise your business systems.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business2} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Microsoft-Certified Expertise</h4>
+              <h4>30+ Years Experience</h4>
               <p>
-                Strong capability across Microsoft platforms with measurable business outcomes in focus.
+                Our team brings over three decades of collective experience in Dynamics 365, Power BI, and the broader Microsoft ecosystem.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business3} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Proven Operational Results</h4>
+              <h4>Outcome-Driven Setup</h4>
               <p>
-                Faster deployment, reduced costs, and stronger governance across Microsoft environments.
+                We look for real solutions, not just workarounds, ensuring technology complements your processes rather than getting in the way.
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business4} alt="" />
             </div>
             <div className="impact-content">
-              <h4>Security-First by Design</h4>
+              <h4>Long-Term Support</h4>
               <p>
-                Solutions aligned with Australian security expectations, compliance needs, and enterprise standards.
+                We continue to support you beyond the initial setup, providing improvements and adjustments as your business needs evolve.
               </p>
             </div>
           </div>
@@ -67,5 +61,5 @@ const AppDevBusinessImpact = () => {
     </section>
   );
 };
-
 export default AppDevBusinessImpact;
+

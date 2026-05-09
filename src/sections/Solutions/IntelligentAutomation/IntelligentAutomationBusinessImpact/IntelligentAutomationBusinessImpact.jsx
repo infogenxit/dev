@@ -1,19 +1,16 @@
 import "./IntelligentAutomationBusinessImpact.css";
-import Business1 from "../../../../assets/images/businessimg1.png";
-import Business2 from "../../../../assets/images/businessimg2.png";
-import Business3 from "../../../../assets/images/businessimg3.png";
-import Business4 from "../../../../assets/images/businessimg4.png";
+import Business1 from "../../../../assets/images/businessimg1.webp";
+import Business2 from "../../../../assets/images/businessimg2.webp";
+import Business3 from "../../../../assets/images/businessimg3.webp";
+import Business4 from "../../../../assets/images/businessimg4.webp";
 const AppDevBusinessImpact = () => {
   return (
     <section className="business-impact-section">
       <div className="business-impact-container">
-        {/* Header */}
         <div className="business-impact-header">
           <span className="section-label">Why Choose Infogenx</span>
           <h2>Built for Automation That Performs</h2>
         </div>
-
-        {/* Grid */}
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
@@ -26,7 +23,6 @@ const AppDevBusinessImpact = () => {
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business2} alt="" />
@@ -38,7 +34,6 @@ const AppDevBusinessImpact = () => {
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business3} alt="" />
@@ -50,7 +45,6 @@ const AppDevBusinessImpact = () => {
               </p>
             </div>
           </div>
-
           <div className="impact-card">
             <div className="impact-image">
               <img src={Business4} alt="" />
@@ -67,5 +61,5 @@ const AppDevBusinessImpact = () => {
     </section>
   );
 };
-
 export default AppDevBusinessImpact;
+

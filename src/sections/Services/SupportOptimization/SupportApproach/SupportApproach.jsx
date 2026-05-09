@@ -1,5 +1,5 @@
 import "./SupportApproach.css";
-import AppcornerAssent from "../../../../assets/images/corner-accent.png";
+import AppcornerAssent from "../../../../assets/images/corner-accent.webp";
 const steps = [
   {
     number: "1",
@@ -22,7 +22,6 @@ const steps = [
     desc: "We ensure your platform is scalable and continuously improve to meet your evolving business needs.",
   },
 ];
-
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
@@ -32,13 +31,10 @@ const AppDevApproach = () => {
         className="automation-corner-accent"
       />
       <div className="approach-container">
-        {/* Header */}
         <div className="approach-header">
           <span className="app-section-label">How We Deliver</span>
           <h2>A Smarter Approach to Platform Support</h2>
         </div>
-
-        {/* Cards */}
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
@@ -91,5 +87,5 @@ const AppDevApproach = () => {
     </section>
   );
 };
-
 export default AppDevApproach;
+

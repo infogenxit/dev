@@ -1,48 +1,40 @@
 import "./MicrosoftImpactCTA.css";
-
-import Correct from "../../../../assets/images/correct.png";
+import Correct from "../../../../assets/images/correct.webp";
 const AppDevImpactCTA = () => {
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
-        {/* LEFT */}
         <div className="impact-cta-left">
           <h2>
-            Transform Your Ideas into <span>Impact</span>
+            Get a Free <span>Strategy Session</span>
           </h2>
-
           <p>
-            Whether you’re building a new application, modernizing legacy
-            systems, or scaling digital operations, we’re here to help.
+            Ready to get more from Microsoft? We take the time to understand your business first, then build systems that genuinely support it.
           </p>
-
           <div className="impact-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">Book a free strategy session</button>
             <button className="secondary-btn">
-              Talk to an Expert <span>↗</span>
+              +61 403339424 <span>↗</span>
             </button>
           </div>
         </div>
-
-        {/* RIGHT */}
         <div className="impact-cta-right">
           <div className="impact-cta-content">
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Enterprise-ready solutions
+                <img src={Correct} alt="correct" /> Dynamics 365 & Power BI
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Technology you can trust
+                <img src={Correct} alt="correct" /> Azure, Power Apps & Automate
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Outcomes you can measure
+                <img src={Correct} alt="correct" /> Expert setup & data migration
               </li>
             </ul>
-
             <p className="impact-note">
               Let’s build the future together.
               <br />
-              <strong>Contact us today.</strong>
+              <strong>Call us now on +61 403339424.</strong>
             </p>
           </div>
         </div>
@@ -50,5 +42,5 @@ const AppDevImpactCTA = () => {
     </section>
   );
 };
-
 export default AppDevImpactCTA;
+

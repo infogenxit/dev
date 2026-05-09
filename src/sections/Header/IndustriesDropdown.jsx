@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-import CodeBox from "../../assets/images/codebox.png";
+import CodeBox from "../../assets/images/codebox.webp";
 const ServicesDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
@@ -17,7 +17,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/industries/retail-solutions" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -30,7 +29,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/industries/manufacturing-solutions" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -43,7 +41,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             </p>
           </div>
         </Link>
-
         <Link to="/industries/transport-logistics" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -53,7 +50,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             <p>Extend development capacity with reliable offshore teams.</p>
           </div>
         </Link>
-
         <Link to="/industries/e-commerce-solutions" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -63,7 +59,6 @@ const ServicesDropdown = ({ closeMenu }) => {
             <p>Extend development capacity with reliable offshore teams.</p>
           </div>
         </Link>
-
         <Link to="/industries/finance-solutions" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -77,5 +72,5 @@ const ServicesDropdown = ({ closeMenu }) => {
     </div>
   );
 };
-
 export default ServicesDropdown;
+
