@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import ScrollToTop from "./components/ScrollTop/ScrollToTop";
-import GtmPageViewTracker from "./components/analytics/GtmPageViewTracker";
-import RouteSeo from "./components/SEO/RouteSeo";
-import { Link } from "react-router-dom";
-import StickyContact from "./components/StickyContact/StickyContact";
+import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -101,12 +97,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <GtmPageViewTracker />
-        <RouteSeo />
-        <StickyContact />
-        <ScrollToTop />
+    <BrowserRouter>
+      <MainLayout>
         <Routes>
           {/* <Route
             path="/contact-us/get-in-touch"
@@ -238,8 +230,8 @@ function App() {
           {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
           <Route path="*" element={<Home />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </MainLayout>
+    </BrowserRouter>
   );
 }
 
