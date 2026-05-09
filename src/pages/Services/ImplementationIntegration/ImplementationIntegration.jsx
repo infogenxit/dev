@@ -1,15 +1,15 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Services/ImplementIntegration/ImplementIntegrationHero/ImplementIntegrationHero";
-import AppDevExpertise from "../../../components/Services/ImplementIntegration/ImplementIntegrationExpertise/ImplementIntegrationExpertise";
-import AppDevApproach from "../../../components/Services/ImplementIntegration/ImplementIntegrationApproach/ImplementIntegrationApproach";
-import AppDevBusinessImpact from "../../../components/Services/ImplementIntegration/ImplementIntegrationBusinessImpact/ImplementIntegrationBusinessImpact";
-import AppDevImpactCTA from "../../../components/Services/ImplementIntegration/ImplementIntegrationImpactCTA/ImplementIntegrationImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Services/ImplementIntegration/ImplementIntegrationHero/ImplementIntegrationHero";
+import AppDevExpertise from "../../../sections/Services/ImplementIntegration/ImplementIntegrationExpertise/ImplementIntegrationExpertise";
+import AppDevApproach from "../../../sections/Services/ImplementIntegration/ImplementIntegrationApproach/ImplementIntegrationApproach";
+import AppDevBusinessImpact from "../../../sections/Services/ImplementIntegration/ImplementIntegrationBusinessImpact/ImplementIntegrationBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Services/ImplementIntegration/ImplementIntegrationImpactCTA/ImplementIntegrationImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 
 const ImplementationIntegration = () => {
   const faqs = [

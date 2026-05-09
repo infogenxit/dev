@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Solutions/DataAnalyticsAI/DataAnalyticsHero/DataAnalyticsHero";
-import AppDevExpertise from "../../../components/Solutions/DataAnalyticsAI/DataAnalyticsExpertise/DataAnalyticsExpertise";
-import AppDevApproach from "../../../components/Solutions/DataAnalyticsAI/DataAnalyticsApproach/DataAnalyticsApproach";
-import AppDevBusinessImpact from "../../../components/Solutions/DataAnalyticsAI/DataAnalyticsBusinessImpact/DataAnalyticsBusinessImpact";
-import AppDevImpactCTA from "../../../components/Solutions/DataAnalyticsAI/DataAnalyticsImpactCTA/DataAnalyticsImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsHero/DataAnalyticsHero";
+import AppDevExpertise from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsExpertise/DataAnalyticsExpertise";
+import AppDevApproach from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsApproach/DataAnalyticsApproach";
+import AppDevBusinessImpact from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsBusinessImpact/DataAnalyticsBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsImpactCTA/DataAnalyticsImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
-import ServiceDetailedContent from "../../../components/Common/ServiceDetailedContent/ServiceDetailedContent";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
+import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
 
 const DataAnalyticsAI = () => {
   const analyticsContent = [

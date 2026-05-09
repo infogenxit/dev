@@ -1,6 +1,6 @@
 import React from "react";
 import "./Products.css";
-import Header from "../../components/header/Header";
+import Header from "../../sections/header/Header";
 import AppcornerAssent from "../../assets/images/appcorner.png";
 import { AiOutlineStock } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -8,8 +8,8 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaChartBar } from "react-icons/fa";
 import { FaUserGear } from "react-icons/fa6";
 
-import Footer from "../../components/Footer/Footer";
-import CtaBanner from "../../components/Home/CtaBanner/CtaBanner";
+import Footer from "../../sections/Footer/Footer";
+import CtaBanner from "../../sections/Home/CtaBanner/CtaBanner";
 import { useState } from "react";
 import DemoPopup from "./DemoPopup";
 import { Helmet } from "react-helmet-async";

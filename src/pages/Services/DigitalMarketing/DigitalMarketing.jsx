@@ -1,15 +1,15 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Services/DigitalMarketing/DigitalMarketingHero/DigitalMarketingHero";
-import AppDevExpertise from "../../../components/Services/DigitalMarketing/DigitalMarketingExpertise/DigitalMarketingExpertise";
-import AppDevApproach from "../../../components/Services/DigitalMarketing/DigitalMarketingApproach/DigitalMarketingApproach";
-import AppDevBusinessImpact from "../../../components/Services/DigitalMarketing/DigitalMarketingBusinessImpact/DigitalMarketingBusinessImpact";
-import AppDevImpactCTA from "../../../components/Services/DigitalMarketing/DigitalMarketingImpactCTA/DigitalMarketingImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Services/DigitalMarketing/DigitalMarketingHero/DigitalMarketingHero";
+import AppDevExpertise from "../../../sections/Services/DigitalMarketing/DigitalMarketingExpertise/DigitalMarketingExpertise";
+import AppDevApproach from "../../../sections/Services/DigitalMarketing/DigitalMarketingApproach/DigitalMarketingApproach";
+import AppDevBusinessImpact from "../../../sections/Services/DigitalMarketing/DigitalMarketingBusinessImpact/DigitalMarketingBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Services/DigitalMarketing/DigitalMarketingImpactCTA/DigitalMarketingImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 
 const DigitalMarketing = () => {
   const faqs = [

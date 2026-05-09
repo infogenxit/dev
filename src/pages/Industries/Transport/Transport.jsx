@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Industries/Transport/TransportHero/TransportHero";
-import AppDevExpertise from "../../../components/Industries/Transport/TransportExpertise/TransportExpertise";
-import AppDevApproach from "../../../components/Industries/Transport/TransportApproach/TransportApproach";
-import AppDevBusinessImpact from "../../../components/Industries/Transport/TransportBusinessImpact/TransportBusinessImpact";
-import AppDevImpactCTA from "../../../components/Industries/Transport/TransportImpactCTA/TransportImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Industries/Transport/TransportHero/TransportHero";
+import AppDevExpertise from "../../../sections/Industries/Transport/TransportExpertise/TransportExpertise";
+import AppDevApproach from "../../../sections/Industries/Transport/TransportApproach/TransportApproach";
+import AppDevBusinessImpact from "../../../sections/Industries/Transport/TransportBusinessImpact/TransportBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Industries/Transport/TransportImpactCTA/TransportImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Transport = () => {

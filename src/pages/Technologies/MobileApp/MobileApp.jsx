@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import WebDevHero from "../../../components/Technologies/MobileApp/MobileAppHero/MobileAppHero";
-import WebDevTech from "../../../components/Technologies/MobileApp/MobileAppTech/MobileAppTech";
-import WebDevExpertise from "../../../components/Technologies/MobileApp/MobileAppExperties/MobileAppExpertise";
-import WebDevOutcomes from "../../../components/Technologies/MobileApp/MobileAppOutcomes/MobileAppOutcomes";
-import WebDevImpactCTA from "../../../components/Technologies/MobileApp/MobileAppImpactCTA/MobileAppImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import WebDevHero from "../../../sections/Technologies/MobileApp/MobileAppHero/MobileAppHero";
+import WebDevTech from "../../../sections/Technologies/MobileApp/MobileAppTech/MobileAppTech";
+import WebDevExpertise from "../../../sections/Technologies/MobileApp/MobileAppExperties/MobileAppExpertise";
+import WebDevOutcomes from "../../../sections/Technologies/MobileApp/MobileAppOutcomes/MobileAppOutcomes";
+import WebDevImpactCTA from "../../../sections/Technologies/MobileApp/MobileAppImpactCTA/MobileAppImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 const MobileApp = () => {
   return (
     <>

@@ -1,15 +1,15 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Services/ManagedServices/ManagedServicesHero/ManagedServicesHero";
-import AppDevExpertise from "../../../components/Services/ManagedServices/ManagedServicesExpertise/ManagedServicesExpertise";
-import AppDevApproach from "../../../components/Services/ManagedServices/ManagedServicesApproach/ManagedServicesApproach";
-import AppDevBusinessImpact from "../../../components/Services/ManagedServices/ManagedServicesBusinessImpact/ManagedServicesBusinessImpact";
-import AppDevImpactCTA from "../../../components/Services/ManagedServices/ManagedServicesImpactCTA/ManagedServicesImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Services/ManagedServices/ManagedServicesHero/ManagedServicesHero";
+import AppDevExpertise from "../../../sections/Services/ManagedServices/ManagedServicesExpertise/ManagedServicesExpertise";
+import AppDevApproach from "../../../sections/Services/ManagedServices/ManagedServicesApproach/ManagedServicesApproach";
+import AppDevBusinessImpact from "../../../sections/Services/ManagedServices/ManagedServicesBusinessImpact/ManagedServicesBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Services/ManagedServices/ManagedServicesImpactCTA/ManagedServicesImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 
 const ManagedServices = () => {
   const relatedItems = [

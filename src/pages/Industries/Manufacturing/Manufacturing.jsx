@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Industries/Manufacturing/ManufacturingHero/ManufacturingHero";
-import AppDevExpertise from "../../../components/Industries/Manufacturing/ManufacturingExpertise/ManufacturingExpertise";
-import AppDevApproach from "../../../components/Industries/Manufacturing/ManufacturingApproach/ManufacturingApproach";
-import AppDevBusinessImpact from "../../../components/Industries/Manufacturing/ManufacturingBusinessImpact/ManufacturingBusinessImpact";
-import AppDevImpactCTA from "../../../components/Industries/Manufacturing/ManufacturingImpactCTA/ManufacturingImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Industries/Manufacturing/ManufacturingHero/ManufacturingHero";
+import AppDevExpertise from "../../../sections/Industries/Manufacturing/ManufacturingExpertise/ManufacturingExpertise";
+import AppDevApproach from "../../../sections/Industries/Manufacturing/ManufacturingApproach/ManufacturingApproach";
+import AppDevBusinessImpact from "../../../sections/Industries/Manufacturing/ManufacturingBusinessImpact/ManufacturingBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Industries/Manufacturing/ManufacturingImpactCTA/ManufacturingImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Manufacturing = () => {

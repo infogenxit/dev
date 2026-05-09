@@ -1,15 +1,15 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Services/SupportOptimization/SupportHero/SupportHero";
-import AppDevExpertise from "../../../components/Services/SupportOptimization/SupportExpertise/SupportExpertise";
-import AppDevApproach from "../../../components/Services/SupportOptimization/SupportApproach/SupportApproach";
-import AppDevBusinessImpact from "../../../components/Services/SupportOptimization/SupportBusinessImpact/SupportBusinessImpact";
-import AppDevImpactCTA from "../../../components/Services/SupportOptimization/SupportImpactCTA/SupportImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Services/SupportOptimization/SupportHero/SupportHero";
+import AppDevExpertise from "../../../sections/Services/SupportOptimization/SupportExpertise/SupportExpertise";
+import AppDevApproach from "../../../sections/Services/SupportOptimization/SupportApproach/SupportApproach";
+import AppDevBusinessImpact from "../../../sections/Services/SupportOptimization/SupportBusinessImpact/SupportBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Services/SupportOptimization/SupportImpactCTA/SupportImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 
 const SupportOptimization = () => {
   const faqs = [

@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Platforms/Odoo/OdooHero/OdooHero";
-import AppDevExpertise from "../../../components/Platforms/Odoo/OdooExpertise/OdooExpertise";
-import AppDevApproach from "../../../components/Platforms/Odoo/OdooApproach/OdooApproach";
-import AppDevBusinessImpact from "../../../components/Platforms/Odoo/OdooBusinessImpact/OdooBusinessImpact";
-// import AppDevImpactCTA from "../../../components/Platforms/Odoo/OdooImpactCTA/OdooImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Platforms/Odoo/OdooHero/OdooHero";
+import AppDevExpertise from "../../../sections/Platforms/Odoo/OdooExpertise/OdooExpertise";
+import AppDevApproach from "../../../sections/Platforms/Odoo/OdooApproach/OdooApproach";
+import AppDevBusinessImpact from "../../../sections/Platforms/Odoo/OdooBusinessImpact/OdooBusinessImpact";
+// import AppDevImpactCTA from "../../../sections/Platforms/Odoo/OdooImpactCTA/OdooImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const OdooSolution = () => {

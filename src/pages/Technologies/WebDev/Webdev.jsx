@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import WebDevHero from "../../../components/Technologies/WebDev/WebDevHero/WebDevHero";
-import WebDevTech from "../../../components/Technologies/WebDev/WebDevTech/WebDevTech";
-import WebDevExpertise from "../../../components/Technologies/WebDev/WebDevExperties/WebDevExpertise";
-import WebDevOutcomes from "../../../components/Technologies/WebDev/WebDevOutcomes/WebDevOutcomes";
-import WebDevImpactCTA from "../../../components/Technologies/WebDev/WebDevImpactCTA/WebDevImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import WebDevHero from "../../../sections/Technologies/WebDev/WebDevHero/WebDevHero";
+import WebDevTech from "../../../sections/Technologies/WebDev/WebDevTech/WebDevTech";
+import WebDevExpertise from "../../../sections/Technologies/WebDev/WebDevExperties/WebDevExpertise";
+import WebDevOutcomes from "../../../sections/Technologies/WebDev/WebDevOutcomes/WebDevOutcomes";
+import WebDevImpactCTA from "../../../sections/Technologies/WebDev/WebDevImpactCTA/WebDevImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 const Webdev = () => {
   return (
     <>

@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Industries/Healthcare/HealthcareHero/HealthcareHero";
-import AppDevExpertise from "../../../components/Industries/Healthcare/HealthcareExpertise/HealthcareExpertise";
-import AppDevApproach from "../../../components/Industries/Healthcare/HealthcareApproach/HealthcareApproach";
-import AppDevBusinessImpact from "../../../components/Industries/Healthcare/HealthcareBusinessImpact/HealthcareBusinessImpact";
-import AppDevImpactCTA from "../../../components/Industries/Healthcare/HealthcareImpactCTA/HealthcareImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Industries/Healthcare/HealthcareHero/HealthcareHero";
+import AppDevExpertise from "../../../sections/Industries/Healthcare/HealthcareExpertise/HealthcareExpertise";
+import AppDevApproach from "../../../sections/Industries/Healthcare/HealthcareApproach/HealthcareApproach";
+import AppDevBusinessImpact from "../../../sections/Industries/Healthcare/HealthcareBusinessImpact/HealthcareBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Industries/Healthcare/HealthcareImpactCTA/HealthcareImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Healthcare = () => {

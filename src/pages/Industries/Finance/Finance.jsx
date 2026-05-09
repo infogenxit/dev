@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Industries/Finance/FinanceHero/FinanceHero";
-import AppDevExpertise from "../../../components/Industries/Finance/FinanceExpertise/FinanceExpertise";
-import AppDevApproach from "../../../components/Industries/Finance/FinanceApproach/FinanceApproach";
-import AppDevBusinessImpact from "../../../components/Industries/Finance/FinanceBusinessImpact/FinanceBusinessImpact";
-import AppDevImpactCTA from "../../../components/Industries/Finance/FinanceImpactCTA/FinanceImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Industries/Finance/FinanceHero/FinanceHero";
+import AppDevExpertise from "../../../sections/Industries/Finance/FinanceExpertise/FinanceExpertise";
+import AppDevApproach from "../../../sections/Industries/Finance/FinanceApproach/FinanceApproach";
+import AppDevBusinessImpact from "../../../sections/Industries/Finance/FinanceBusinessImpact/FinanceBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Industries/Finance/FinanceImpactCTA/FinanceImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Finance = () => {

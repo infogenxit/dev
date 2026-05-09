@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Platforms/Zoho/ZohoHero/ZohoHero";
-import AppDevExpertise from "../../../components/Platforms/Zoho/ZohoExpertise/ZohoExpertise";
-import AppDevApproach from "../../../components/Platforms/Zoho/ZohoApproach/ZohoApproach";
-import AppDevBusinessImpact from "../../../components/Platforms/Zoho/ZohoBusinessImpact/ZohoBusinessImpact";
-// import AppDevImpactCTA from "../../../components/Platforms/Zoho/ZohoImpactCTA/ZohoImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Platforms/Zoho/ZohoHero/ZohoHero";
+import AppDevExpertise from "../../../sections/Platforms/Zoho/ZohoExpertise/ZohoExpertise";
+import AppDevApproach from "../../../sections/Platforms/Zoho/ZohoApproach/ZohoApproach";
+import AppDevBusinessImpact from "../../../sections/Platforms/Zoho/ZohoBusinessImpact/ZohoBusinessImpact";
+// import AppDevImpactCTA from "../../../sections/Platforms/Zoho/ZohoImpactCTA/ZohoImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const ZohoSolution = () => {

@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Solutions/ModernApplication/ModernApplicationHero/ModernApplicationHero";
-import AppDevExpertise from "../../../components/Solutions/ModernApplication/ModernApplicationExpertise/ModernApplicationExpertise";
-import AppDevApproach from "../../../components/Solutions/ModernApplication/ModernApplicationApproach/ModernApplicationApproach";
-import AppDevBusinessImpact from "../../../components/Solutions/ModernApplication/ModernApplicationBusinessImpact/ModernApplicationBusinessImpact";
-import AppDevImpactCTA from "../../../components/Solutions/ModernApplication/ModernApplicationImpactCTA/ModernApplicationImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Solutions/ModernApplication/ModernApplicationHero/ModernApplicationHero";
+import AppDevExpertise from "../../../sections/Solutions/ModernApplication/ModernApplicationExpertise/ModernApplicationExpertise";
+import AppDevApproach from "../../../sections/Solutions/ModernApplication/ModernApplicationApproach/ModernApplicationApproach";
+import AppDevBusinessImpact from "../../../sections/Solutions/ModernApplication/ModernApplicationBusinessImpact/ModernApplicationBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Solutions/ModernApplication/ModernApplicationImpactCTA/ModernApplicationImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
-import ServiceDetailedContent from "../../../components/Common/ServiceDetailedContent/ServiceDetailedContent";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
+import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
 
 const ModernApplication = () => {
   const modernAppContent = [

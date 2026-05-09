@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Industries/ECommerce/ECommerceHero/ECommerceHero";
-import AppDevExpertise from "../../../components/Industries/ECommerce/ECommerceExpertise/ECommerceExpertise";
-import AppDevApproach from "../../../components/Industries/ECommerce/ECommerceApproach/ECommerceApproach";
-import AppDevBusinessImpact from "../../../components/Industries/ECommerce/ECommerceBusinessImpact/ECommerceBusinessImpact";
-import AppDevImpactCTA from "../../../components/Industries/ECommerce/ECommerceImpactCTA/ECommerceImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Industries/ECommerce/ECommerceHero/ECommerceHero";
+import AppDevExpertise from "../../../sections/Industries/ECommerce/ECommerceExpertise/ECommerceExpertise";
+import AppDevApproach from "../../../sections/Industries/ECommerce/ECommerceApproach/ECommerceApproach";
+import AppDevBusinessImpact from "../../../sections/Industries/ECommerce/ECommerceBusinessImpact/ECommerceBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Industries/ECommerce/ECommerceImpactCTA/ECommerceImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const ECommerce = () => {

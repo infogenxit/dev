@@ -1,10 +1,10 @@
-// import Header from "../../../components/header/Header";
+// import Header from "../../../sections/header/Header";
 // import AppDevHero from "../../../components/Automation/AppDevHero/AppDevHero";
 // import AppDevExpertise from "../../../components/Automation/AppDevExpertise/AppDevExpertise";
 // import AppDevApproach from "../../../components/Automation/AppDevApproach/AppDevApproach";
 // import AppDevBusinessImpact from "../../../components/Automation/AppDevBusinessImpact/AppDevBusinessImpact";
 // import AppDevImpactCTA from "../../../components/Automation/AppDevImpactCTA/AppDevImpactCTA";
-// import Footer from "../../../components/Footer/Footer";
+// import Footer from "../../../sections/Footer/Footer";
 // import { Helmet } from "react-helmet-async";
 // const ApplicationDev = () => {
 //   return (

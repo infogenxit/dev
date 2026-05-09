@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Platforms/Microsoft/MicrosoftHero/MicrosoftHero";
-import AppDevExpertise from "../../../components/Platforms/Microsoft/MicrosoftExpertise/MicrosoftExpertise";
-import AppDevApproach from "../../../components/Platforms/Microsoft/MicrosoftApproach/MicrosoftApproach";
-import AppDevBusinessImpact from "../../../components/Platforms/Microsoft/MicrosoftBusinessImpact/MicrosoftBusinessImpact";
-// import AppDevImpactCTA from "../../../components/Platforms/Microsoft/MicrosoftImpactCTA/MicrosoftImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Platforms/Microsoft/MicrosoftHero/MicrosoftHero";
+import AppDevExpertise from "../../../sections/Platforms/Microsoft/MicrosoftExpertise/MicrosoftExpertise";
+import AppDevApproach from "../../../sections/Platforms/Microsoft/MicrosoftApproach/MicrosoftApproach";
+import AppDevBusinessImpact from "../../../sections/Platforms/Microsoft/MicrosoftBusinessImpact/MicrosoftBusinessImpact";
+// import AppDevImpactCTA from "../../../sections/Platforms/Microsoft/MicrosoftImpactCTA/MicrosoftImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const MicrosoftSolution = () => {

@@ -1,15 +1,15 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Services/ConsultingAdvisory/ConsultingHero/ConsultingHero";
-import AppDevExpertise from "../../../components/Services/ConsultingAdvisory/ConsultingExpertise/ConsultingExpertise";
-import AppDevApproach from "../../../components/Services/ConsultingAdvisory/ConsultingAppDev/ConsultingAppDev";
-import AppDevBusinessImpact from "../../../components/Services/ConsultingAdvisory/ConsultingBusinessImpact/ConsultingBusinessImpact";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Services/ConsultingAdvisory/ConsultingHero/ConsultingHero";
+import AppDevExpertise from "../../../sections/Services/ConsultingAdvisory/ConsultingExpertise/ConsultingExpertise";
+import AppDevApproach from "../../../sections/Services/ConsultingAdvisory/ConsultingAppDev/ConsultingAppDev";
+import AppDevBusinessImpact from "../../../sections/Services/ConsultingAdvisory/ConsultingBusinessImpact/ConsultingBusinessImpact";
 // import AppDevImpactCTA from "../../../components/Analytics/AppDevImpactCTA/AppDevImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 
 const ConsultingAdvisory = () => {
   const faqs = [

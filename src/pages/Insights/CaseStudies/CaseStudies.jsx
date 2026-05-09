@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../../components/header/Header';
-import Footer from '../../../components/Footer/Footer';
+import Header from '../../../sections/header/Header';
+import Footer from '../../../sections/Footer/Footer';
 import SEO from '../../../components/SEO/SEO';
 import './CaseStudies.css';
 

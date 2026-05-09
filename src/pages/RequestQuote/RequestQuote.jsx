@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./RequestQuote.css";
-import Header from "../../components/header/Header";
-import Footer from "../../components/Footer/Footer";
+import Header from "../../sections/header/Header";
+import Footer from "../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../components/SEO/SEO";
 const RequestQuote = () => {

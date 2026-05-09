@@ -1,17 +1,17 @@
 import React from "react";
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Solutions/DigitalTransformation/DigitalTransformationHero/DigitalTransformationHero";
-import AppDevExpertise from "../../../components/Solutions/DigitalTransformation/DigitalTransformationExpertise/DigitalTransformationExpertise";
-import AppDevApproach from "../../../components/Solutions/DigitalTransformation/DigitalTransformationApproach/DigitalTransformationApproach";
-import AppDevBusinessImpact from "../../../components/Solutions/DigitalTransformation/DigitalTransformationBusinessImpact/DigitalTransformationBusinessImpact";
-import AppDevImpactCTA from "../../../components/Solutions/DigitalTransformation/DigitalTransformationImpactCTA/DigitalTransformationImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationHero/DigitalTransformationHero";
+import AppDevExpertise from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationExpertise/DigitalTransformationExpertise";
+import AppDevApproach from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationApproach/DigitalTransformationApproach";
+import AppDevBusinessImpact from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationBusinessImpact/DigitalTransformationBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Solutions/DigitalTransformation/DigitalTransformationImpactCTA/DigitalTransformationImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
-import Breadcrumbs from "../../../components/Common/Breadcrumbs/Breadcrumbs";
-import ServiceFaq from "../../../components/Common/ServiceFaq/ServiceFaq";
-import RelatedServices from "../../../components/Common/RelatedServices/RelatedServices";
-import ServiceDetailedContent from "../../../components/Common/ServiceDetailedContent/ServiceDetailedContent";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
+import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
 
 const DigitalTransformation = () => {
   const transformationContent = [

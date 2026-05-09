@@ -1,7 +1,7 @@
 import PortfolioVideo from "../../assets/videos/portfolio.mp4";
 import AboutCornerAccent from "../../assets/images/about-corner-accent.webp";
-import Header from "../../components/header/Header";
-import Footer from "../../components/Footer/Footer";
+import Header from "../../sections/header/Header";
+import Footer from "../../sections/Footer/Footer";
 import { useState } from "react";
 import "./Portfolio.css";
 import AppImg1 from "../../assets/images/infogenx-application-images-1.webp";

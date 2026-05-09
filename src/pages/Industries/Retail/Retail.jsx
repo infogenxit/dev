@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Industries/Retail/RetailHero/RetailHero";
-import AppDevExpertise from "../../../components/Industries/Retail/RetailExpertise/RetailExpertise";
-import AppDevApproach from "../../../components/Industries/Retail/RetailApproach/RetailApproach";
-import AppDevBusinessImpact from "../../../components/Industries/Retail/RetailBusinessImpact/RetailBusinessImpact";
-import AppDevImpactCTA from "../../../components/Industries/Retail/RetailImpactCTA/RetailImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import AppDevHero from "../../../sections/Industries/Retail/RetailHero/RetailHero";
+import AppDevExpertise from "../../../sections/Industries/Retail/RetailExpertise/RetailExpertise";
+import AppDevApproach from "../../../sections/Industries/Retail/RetailApproach/RetailApproach";
+import AppDevBusinessImpact from "../../../sections/Industries/Retail/RetailBusinessImpact/RetailBusinessImpact";
+import AppDevImpactCTA from "../../../sections/Industries/Retail/RetailImpactCTA/RetailImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const Retail = () => {

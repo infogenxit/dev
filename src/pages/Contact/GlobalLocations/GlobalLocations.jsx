@@ -1,8 +1,8 @@
 import '../GetinTouchNew/GetinTouchNew.css';
 import CustomerSupport from "../../../assets/videos/customer-support.mp4";
 import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
-import Header from "../../../components/header/Header";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import Footer from "../../../sections/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 const GlobalLocations = () => {

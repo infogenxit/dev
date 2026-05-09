@@ -1,10 +1,10 @@
-import Header from "../../../components/header/Header";
-import WebDevHero from "../../../components/Technologies/AI/AIHero/AIHero";
-import WebDevTech from "../../../components/Technologies/AI/AITech/AITech";
-import WebDevExpertise from "../../../components/Technologies/AI/AIExperties/AIExpertise";
-import WebDevOutcomes from "../../../components/Technologies/AI/AIOutcomes/AIOutcomes";
-import WebDevImpactCTA from "../../../components/Technologies/AI/AIImpactCTA/AIImpactCTA";
-import Footer from "../../../components/Footer/Footer";
+import Header from "../../../sections/header/Header";
+import WebDevHero from "../../../sections/Technologies/AI/AIHero/AIHero";
+import WebDevTech from "../../../sections/Technologies/AI/AITech/AITech";
+import WebDevExpertise from "../../../sections/Technologies/AI/AIExperties/AIExpertise";
+import WebDevOutcomes from "../../../sections/Technologies/AI/AIOutcomes/AIOutcomes";
+import WebDevImpactCTA from "../../../sections/Technologies/AI/AIImpactCTA/AIImpactCTA";
+import Footer from "../../../sections/Footer/Footer";
 const AI = () => {
   return (
     <>
