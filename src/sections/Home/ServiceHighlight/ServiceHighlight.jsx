@@ -6,6 +6,7 @@ import serviceVideo3 from "../../../assets/videos/homestackvideo/Intelligent Aut
 import serviceVideo4 from "../../../assets/videos/homestackvideo/AI-Enabled Application Development.mp4"; // your video
 import serviceVideo5 from "../../../assets/videos/homestackvideo/System Integration Solutions.mp4"; // your video
 import { useNavigate } from "react-router-dom";
+
 const ServiceHighlight = () => {
   const navigate = useNavigate();
   const services = [
@@ -46,98 +47,49 @@ const ServiceHighlight = () => {
       background: "#CBFFC9",
     },
   ];
-  const sectionRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  useEffect(() => {
-    const section = sectionRef.current;
-    const totalCards = services.length;
-    const onScroll = () => {
-      const rect = section.getBoundingClientRect();
-      const scrollInside = -rect.top;
-      const totalScroll = section.offsetHeight - window.innerHeight;
-      if (scrollInside >= 0 && scrollInside <= totalScroll) {
-        const progress = scrollInside / totalScroll;
-        const index = Math.min(
-          totalCards - 1,
-          Math.floor(progress * totalCards),
-        );
-        setActiveIndex(index);
-      }
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  });
   return (
-    <section
-      className="service-section"
-      ref={sectionRef}
-      style={{ height: `${services.length * 85}vh` }}
-    >
-      <div className="service-sticky">
-        <div className="service-stack">
-          {services.map((item, i) => {
-            const isActive = i === activeIndex;
-            const isPast = i < activeIndex;
-            const isFuture = i > activeIndex;
-            const stackOffset = activeIndex - i;
-            return (
-              <div
-                key={i}
-                className={`service-card ${isActive ? "active" : isPast ? "stacked" : "future"}`}
-                style={{
-                  background: item.background,
-                  transform: isActive 
-                    ? "translateY(0)" 
-                    : isPast 
-                      ? `translateY(-${stackOffset * 35}px)` 
-                      : "translateY(0px)",
-                  opacity: isFuture ? 0 : 1,
-                  zIndex: 100 - i,
-                  visibility: isFuture ? "hidden" : "visible",
-                }}
+    <section className="service-section">
+      <div className="service-stack">
+        {services.map((item, i) => (
+          <div
+            key={i}
+            className="service-card"
+            style={{ background: item.background }}
+          >
+            <div className="service-content">
+              <h2 className="service-title">
+                {item.title.split("\n").map((line, idx) => (
+                  <span key={idx}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+              </h2>
+              <p className="service-description">{item.description}</p>
+              <button
+                className="service-btn"
+                onClick={() => navigate("/contact-us")}
               >
-                <div className="service-content">
-                  <h2 className="service-title">
-                    {item.title.split("\n").map((line, idx) => (
-                      <span key={idx}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </h2>
-                  <p className="service-description">{item.description}</p>
-                  {isActive && (
-                    <button
-                      className="service-btn"
-                      onClick={() => navigate("/contact-us")}
-                    >
-                      Talk to our Experts <span className="arrow">→</span>
-                    </button>
-                  )}
-                </div>
-                <div className="service-media-container">
-                  {/* <span className="service-index">{item.index}</span> */}
-                  <div style={{ padding: "0 20px" }}>
-                    <span className="service-index">{item.index}</span>
-                  </div>
-                  {isActive && (
-                    <div className="service-media">
-                      <video
-                        key={item.video}
-                        src={item.video}
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="service-video"
-                      />
-                    </div>
-                  )}
-                </div>
+                Talk to our Experts <span className="arrow">→</span>
+              </button>
+            </div>
+            <div className="service-media-container">
+              <div style={{ padding: "0 20px" }}>
+                <span className="service-index">{item.index}</span>
               </div>
-            );
-          })}
-        </div>
+              <div className="service-media">
+                <video
+                  src={item.video}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="service-video"
+                />
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

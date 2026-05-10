@@ -1,49 +1,7 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Products from "./pages/Products/Products";
-import Contact from "./pages/Contact/Contact";
-import GetinTouchNew from "./pages/Contact/GetinTouchNew/GetinTouchNew";
-import GlobalLocations from "./pages/Contact/GlobalLocations/GlobalLocations";
-import ImplementationIntegration from "./pages/Services/ImplementationIntegration/ImplementationIntegration";
-import ConsultingAdvisory from "./pages/Services/Consulting&Advisory/Consulting&Advisory";
-import SupportOptimization from "./pages/Services/SupportOptimization/support-optimization";
-import ManagedServices from "./pages/Services/ManagedServices/managed-services";
-import DigitalMarketing from "./pages/Services/DigitalMarketing/DigitalMarketing";
-import Webdev from "./pages/Technologies/WebDev/Webdev";
-import MobileAppDevelopment from "./pages/Technologies/MobileApp/MobileApp";
-import ArtificialIntelligence from "./pages/Technologies/AI/AI";
-import DataEngineering from "./pages/Technologies/DataEngineering/DataEngineering";
-import CloudComputing from "./pages/Technologies/CloudComputing/CloudComputing";
-import Healthcare from "./pages/Industries/Healthcare/Healthcare";
-import Finance from "./pages/Industries/Finance/Finance";
-import Retail from "./pages/Industries/Retail/Retail";
-import RequestQuote from "./pages/RequestQuote/RequestQuote";
-import ECommerce from "./pages/Industries/ECommerce/ECommerce";
-import Manufacturing from "./pages/Industries/Manufacturing/Manufacturing";
-import Transport from "./pages/Industries/Transport/Transport";
-import Portfolio from "./pages/Portfolio/Portfolio";
-import ApiIntegration from "./pages/Solutions/ApiIntegration/ApiIntegration";
-import DataAnalyticsAI from "./pages/Solutions/DataAnalyticsAI/DataAnalyticsAI";
-import DigitalTransformation from "./pages/Solutions/DigitalTransformation/DigitalTransformation";
-import IntelligentAutomation from "./pages/Solutions/IntelligentAutomation/IntelligentAutomation";
-import ModernApplication from "./pages/Solutions/ModernApplication/ModernApplication";
-import MicrosoftSolution from "./pages/Platforms/MicrosoftSolutions/MicrosoftSolution";
-import ZohoSolution from "./pages/Platforms/ZohoSolutions/ZohoSolution";
-import OdooSolution from "./pages/Platforms/OdooSolutions/OdooSolution";
-import ShopifySolution from "./pages/Platforms/Shopify/Shopify";
-
-import CaseStudies from "./pages/Insights/CaseStudies/CaseStudies";
-import IgxStock from "./pages/Products/IGXStock/IgxStock";
-import OdooErp from "./pages/Products/OdooErp/OdooErp";
-import RetailPos from "./pages/Products/RetailPos/RetailPos";
-import CustomerRelation from "./pages/Products/CustomerRelation/CustomerRelation";
-import Careers from "./pages/Careers/Careers";
-import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
-import TermsConditions from "./pages/TermsConditions/TermsConditions";
+import Router from "./route";
 import "./styles/App.css";
 
 function App() {
@@ -52,8 +10,6 @@ function App() {
     const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     
     if (!widgetCode || isLocalhost) return;
-
-
 
     // Interaction-first lazy load: Googlebot never interacts → widget never loads for bots
     const loadSalesIQ = () => {
@@ -86,136 +42,7 @@ function App() {
   return (
     <BrowserRouter>
       <MainLayout>
-        <Routes>
-
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/request-quote" element={<RequestQuote />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-conditions" element={<TermsConditions />} />
-          <Route path="/contact-us" element={<Contact />} />
-          <Route
-            path="/products/stock-management-system"
-            element={<IgxStock />}
-          />
-          <Route
-            path="/products/odoo-erp-management-system"
-            element={<OdooErp />}
-          />
-          <Route
-            path="/products/retail-pos-management-system"
-            element={<RetailPos />}
-          />
-          <Route
-            path="/products/customer-relationship-management-system"
-            element={<CustomerRelation />}
-          />
-          <Route path="/insights/case-studies" element={<CaseStudies />} />
-          <Route path="/contact-us/get-in-touch" element={<GetinTouchNew />} />
-          <Route
-            path="/contact-us/global-locations"
-            element={<GlobalLocations />}
-          />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route
-            path="/services/implementation-integration"
-            element={<ImplementationIntegration />}
-          />
-          <Route
-            path="/services/managed-services"
-            element={<ManagedServices />}
-          />
-          <Route
-            path="/services/consulting-advisory"
-            element={<ConsultingAdvisory />}
-          />
-          <Route
-            path="/services/support-optimization"
-            element={<SupportOptimization />}
-          />
-          <Route
-            path="/services/digital-marketing"
-            element={<DigitalMarketing />}
-          />
-
-          <Route path="/platforms/microsoft" element={<MicrosoftSolution />} />
-          <Route path="/platforms/zoho" element={<ZohoSolution />} />
-          <Route path="/platforms/odoo" element={<OdooSolution />} />
-          <Route path="/platforms/shopify" element={<ShopifySolution />} />
-          <Route
-            path="/solutions/api-integration"
-            element={<ApiIntegration />}
-          />
-          <Route
-            path="/solutions/data-analytics-ai"
-            element={<DataAnalyticsAI />}
-          />
-          <Route
-            path="/solutions/digital-transformation"
-            element={<DigitalTransformation />}
-          />
-          <Route
-            path="/solutions/intelligent-automation"
-            element={<IntelligentAutomation />}
-          />
-          <Route
-            path="/solutions/modern-applications"
-            element={<ModernApplication />}
-          />
-          <Route
-            path="/technologies/web-development"
-            element={<Webdev />}
-          />
-          <Route
-            path="/technologies/mobile-app-development"
-            element={<MobileAppDevelopment />}
-          />
-          <Route
-            path="/technologies/artificial-intelligence"
-            element={<ArtificialIntelligence />}
-          />
-          <Route
-            path="/technologies/cloud-computing"
-            element={<CloudComputing />}
-          />
-          <Route
-            path="/technologies/data-engineering"
-            element={<DataEngineering />}
-          />
-          <Route
-            path="/industries/healthcare-solutions"
-            element={<Healthcare />}
-          />
-          <Route path="/industries/finance-solutions" element={<Finance />} />
-          <Route path="/industries/retail-solutions" element={<Retail />} />
-          <Route
-            path="/industries/e-commerce-solutions"
-            element={<ECommerce />}
-          />
-          <Route
-            path="/industries/manufacturing-solutions"
-            element={<Manufacturing />}
-          />
-          <Route
-            path="/industries/transport-logistics"
-            element={<Transport />}
-          />
-          {/* Specific redirects for legacy URLs */}
-          <Route path="/platforms/microsoft-solutions" element={<MicrosoftSolution />} />
-          <Route path="/platforms/zoho-solutions" element={<ZohoSolution />} />
-          <Route path="/platforms/odoo-solutions" element={<OdooSolution />} />
-          <Route path="/platforms/shopify-solutions" element={<ShopifySolution />} />
-          <Route path="/industries/healthcare" element={<Healthcare />} />
-          <Route path="/industries/retail" element={<Retail />} />
-          <Route path="/industries/manufacturing" element={<Manufacturing />} />
-          <Route path="/industries/e-commerce" element={<ECommerce />} />
-          <Route path="/industries/finance" element={<Finance />} />
-          
-
-          <Route path="*" element={<Home />} />
-        </Routes>
+        <Router />
       </MainLayout>
     </BrowserRouter>
   );

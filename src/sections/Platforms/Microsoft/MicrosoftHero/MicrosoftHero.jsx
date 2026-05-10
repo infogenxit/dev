@@ -20,9 +20,9 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Microsoft Dynamics 365 Brisbane in Brisbane to Scale your business</h1>
+          <h1>Expert Microsoft Solutions Partner Brisbane in Brisbane to Scale Your Business</h1>
           <p>
-            Microsoft Dynamics 365 - Power BI - Microsoft Solutions. In today's business world, multiple systems often function with scattered data and ineffective processes. Infogenx is an active Microsoft partner in Brisbane, helping businesses leverage the full power of the Microsoft ecosystem.
+            Microsoft Dynamics 365 — Power BI — Microsoft Solutions. In today's business world, multiple systems often function with scattered data and ineffective processes. Infogenx is an active Microsoft partner in Brisbane, helping businesses leverage the full power of the Microsoft ecosystem to build integrated, secure, and high-performance technical ecosystems.
           </p>
           <div className="appdev-buttons">
             <button

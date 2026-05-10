@@ -10,30 +10,25 @@ import ServiceFaq from "../../sections/Common/ServiceFaq/ServiceFaq";
 const Home = () => {
   const faqs = [
     {
-      question: "What does an IT consultant actually do?",
-      answer: "An IT consultant helps you align your technology with your business goals. At Infogenx, we look at your current systems, find bottlenecks, and recommend or build solutions—like automation or custom software—to help you scale."
+      question: "What does an IT consulting engagement with Infogenx look like?",
+      answer: "We work on a case-by-case basis. In our IT consulting in Brisbane, we begin with a discovery meeting to assess your IT systems, problems and objectives. We then scope out the work - be it consultancy, software programming or a digital transformation project - without restrictive contracts."
     },
     {
-      question: "Why should I choose a Brisbane-based IT consulting firm?",
-      answer: "Local expertise matters. We understand the Brisbane business landscape, and being local means we can offer more personalised, face-to-face support when needed."
+      question: "Will AI automation work for the size of my business?",
+      answer: "Yes. AI automation is not just for big companies. We deliver business automation solutions which enable businesses to eliminate manual tasks, support accuracy and provide return on investment within 6-12 months."
     },
     {
-      question: "Do you only work with large companies?",
-      answer: "No. We work with businesses of all sizes, from local emerging brands to mid-market enterprises. Our focus is on the impact our solutions have, not just the size of the client."
-    },
-    {
-      question: "How long does a digital transformation project take?",
-      answer: "It varies. Small automation projects can take a few weeks, while complete digital transformations can take months. We give you a clear timeline after our initial discovery phase."
-    },
-    {
-      question: "Will your solutions work with my existing software?",
-      answer: "Yes. We specialise in integrations and building extensions for platforms like Zoho, Microsoft, and Odoo, ensuring everything works together seamlessly."
+      question: "How is business intelligence different to data analytics?",
+      answer: "Business intelligence is about reporting and dashboards (what happened), while data analytics is about insights and predictions (why and what will happen). Both are important for most businesses, depending on their level of data maturity."
     }
   ];
 
   return (
     <>
-
+      <SEO 
+        title="IT Consulting Brisbane | Custom Software, AI & Cloud Experts"
+        description="Brisbane IT consulting services for custom software, AI solutions, and cloud computing."
+      />
       <Hero />
       <Expertise />
       <ServiceHighlight />

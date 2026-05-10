@@ -9,9 +9,9 @@ const MicrosoftSolution = () => {
   return (
     <>
       <SEO
-        title="Microsoft Solutions Brisbane | Dynamics 365 & Power BI Partner"
-        description="Empower your business with Microsoft solutions in Brisbane. We are experts in Dynamics 365, Power BI, Azure, and Power Platform integrations."
-        keywords="Microsoft solutions Brisbane, Dynamics 365 partner, Power BI consultant Brisbane, Azure integrations, Microsoft partner Australia"
+        title="Microsoft Solutions Partner Brisbane | Trusted Experts & Agency"
+        description="Are you looking for professional Microsoft Solutions Partner Brisbane? Unlock business growth with expert Microsoft consulting services in Brisbane."
+        keywords="Microsoft solutions partner Brisbane, Microsoft Dynamics 365 Brisbane, Power BI consultant Brisbane, Microsoft Azure Brisbane, Microsoft 365 expert"
       />
       <AppDevHero />
       <AppDevExpertise />

@@ -23,20 +23,11 @@ const Hero = () => {
       {/* <NetworkBackground /> */}
       <div className="hero-container">
         <h1 className="hero-heading">
-          {/* <span>Innovate</span>, <span>Automate</span>, and <span>Scale</span> */}
-          {/* <span>Apps</span>, <span>Automation</span>, <span>Analytics</span>,
-          <span>And AI</span> */}
-          {/* <span>AI Automation & App Development Company in Australia</span> */}
-          {/* <span>Build Smarter. Automate Faster. Decide Better. | AI Automation Australia</span> */}
-          <span>Expert IT Consulting Brisbane in Brisbane to Scale your business</span>
+          <span>Brisbane's Trusted IT Consulting Partner — From Strategy to Scale</span>
         </h1>   
         <h2 className="hero-subheading">
-          At Infogenx, we focus on results. As a provider of IT consulting in Brisbane, we partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology.
+          At Infogenx, we don't just focus on technology; we focus on results. We partner with local, mid-market, and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology. From IT consulting in Brisbane to enterprise-level software, we help you scale with impact.
         </h2>
-        {/* <p className="hero-description">
-          From strategy to scalable delivery. Built for growth, governance, and
-          impact.
-        </p> */}
         <div
           style={{ textAlign: "center", fontWeight: "500", color: "#403f3f" }}
         >
@@ -59,38 +50,33 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero-brands">
-          <img src={MicrosoftImg} alt="Microsoft Solutions Partner Australia" />
-          <img src={ZohoImg} alt="Zoho Authorized Partner Australia" />
+          <img src={MicrosoftImg} alt="Microsoft Solutions Partner Brisbane Australia" />
+          <img src={ZohoImg} alt="Zoho Authorized Partner Brisbane Australia" />
           <img
             src={OdooImg}
-            alt="Odoo Implementation Partner Australia"
-            // style={{ height: "100px", margin: "0" }}
+            alt="Odoo Implementation Partner Brisbane Australia"
           />
         </div>
       </div>
       <div className="hero-floating-icons">
-        {/* Top-down animation */}
         <img
           src={aiIcon}
-          alt="AI Application Development"
+          alt="AI Application Development Brisbane"
           className="float-icon1 float-vertical icon-1"
         />
-        {/* Left-right animation */}
         <img
           src={automationIcon}
-          alt="Intelligent Business Automation"
+          alt="Business Process Automation Brisbane"
           className="float-icon2 float-vertical icon-2"
         />
-        {/* Another top-down */}
         <img
           src={analyticsIcon}
-          alt="Data Analytics Solutions"
+          alt="Data Analytics and BI Solutions Brisbane"
           className="float-icon3 float-horizontal icon-3"
         />
-        {/*another Left-right */}
         <img
           src={AiSetting}
-          alt="AI Strategy and Governance"
+          alt="IT Strategy and Digital Transformation Brisbane"
           className="float-icon4 float-horizontal icon-4"
         />
       </div>

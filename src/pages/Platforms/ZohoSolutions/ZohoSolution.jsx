@@ -8,10 +8,10 @@ import SEO from "../../../components/SEO/SEO";
 const ZohoSolution = () => {
   return (
     <>
-      <SEO
-        title="Zoho Partner Brisbane | CRM Implementation & Automation"
-        description="Optimise your business with our Brisbane Zoho consulting services. We specialize in Zoho CRM, Books, Projects, and custom automation for Australian businesses."
-        keywords="Zoho partner Brisbane, Zoho CRM implementation, Zoho automation expert, Zoho consultant Australia, Zoho analytics"
+      <SEO 
+        title="Zoho Consultant Brisbane | Trusted Experts & Agency"
+        description="Are you looking for professional Zoho Consultant Brisbane? Unlock business growth with expert Zoho consulting services in Brisbane."
+        keywords="Zoho consultant Brisbane, Zoho partner Brisbane, Zoho CRM implementation, Zoho automation, Zoho consulting Australia"
       />
       <AppDevHero />
       <AppDevExpertise />

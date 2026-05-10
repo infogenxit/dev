@@ -20,9 +20,9 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Shopify Agency Brisbane – Scale Your Online Store</h1>
+          <h1>Expert Shopify Developer Brisbane in Brisbane to Scale Your Business</h1>
           <p>
-            Building and scaling a Shopify store requires more than just a template. We focus on organized, integrated Shopify environments that drive real conversions. From custom app development to complex system integrations, our Brisbane team ensures your eCommerce operation is built for long-term growth.
+            Building and scaling a Shopify store requires more than just a template. As leading Shopify developers in Brisbane, we focus on organized, integrated Shopify environments that drive real conversions and operational efficiency. From custom theme development to complex system integrations, our Brisbane team ensures your e-commerce operation is built for high-performance and long-term growth.
           </p>
           <div className="appdev-buttons">
             <button
