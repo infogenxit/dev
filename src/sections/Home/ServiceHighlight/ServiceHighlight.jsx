@@ -147,6 +147,13 @@ const ServiceHighlight = () => {
       onMouseLeave={() => (isHovered.current = false)}
     >
       <div className="service-sticky">
+        <div className="service-header-container">
+          <span className="section-label">Focused On Your Business Goals</span>
+          <h2 className="section-title">What We Do</h2>
+          <p className="section-subtitle">
+            Our services portfolio has evolved to meet the current and emerging needs of businesses, not what someone once wrote about, but what actually works and delivers results across the technology life cycle.
+          </p>
+        </div>
         <div className="service-stack">
           {services.map((item, i) => {
             const isActive = i === activeIndex;
