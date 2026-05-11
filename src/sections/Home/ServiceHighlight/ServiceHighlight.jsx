@@ -12,39 +12,52 @@ const ServiceHighlight = () => {
   const services = [
     {
       index: "01",
-      title: "Modern Application Development",
-      description: "We build scalable, high-performance applications tailored to your business. From customer-facing apps to internal management systems, we develop solutions that grow with you.",
+      title: "Application Development",
+      description: "Our approach to application development Brisbane is about more than just code. We build robust, scalable web and mobile applications that are designed to solve real business challenges.",
       video: serviceVideo1,
       background: "#ffd6bf",
     },
     {
       index: "02",
-      title: "AI & Automation",
-      description: "Unlock the power of efficiency. We implement custom AI and automation solutions that eliminate repetitive tasks, reduce human error, and allow your team to focus on high-value activities.",
+      title: "AI Automation",
+      description: "We deliver ai automation brisbane solutions that streamline workflows, reduce manual errors, and free up your team to focus on higher-value tasks.",
       video: serviceVideo3,
       background: "#E9C9FF",
     },
     {
       index: "03",
       title: "Business Intelligence",
-      description: "Turn data into a competitive advantage. Our business intelligence solutions provide real-time insights, helping you make informed, data-backed decisions that drive profitability and efficiency.",
+      description: "Our service for business intelligence in Brisbane converts data into information via dashboards, reporting and analytics to support better, quicker decisions.",
       video: serviceVideo2,
       background: "#C9D5FF",
     },
     {
       index: "04",
-      title: "Digital Transformation & IT Consulting",
-      description: "We help you navigate the complexities of digital transformation. Whether you're modernising legacy systems or building a digital-first roadmap, our IT consulting in Brisbane ensures your technology aligns with your long-term business strategy.",
+      title: "Digital Transformation",
+      description: "We work with organisations to modernise their business systems and processes with a strategic business transformation plan aligned to business outcomes.",
       video: serviceVideo4,
       background: "#C9F9FF",
     },
     {
       index: "05",
-      title: "Scalable Business Optimisation",
-      description:
-        "Technology solutions designed to improve performance, strengthen governance, and support long-term business growth.",
+      title: "Cloud Solutions",
+      description: "We help businesses navigate the complexities of cloud solutions brisbane, from initial strategy and migration to ongoing optimization and management.",
       video: serviceVideo5,
       background: "#CBFFC9",
+    },
+    {
+      index: "06",
+      title: "Enterprise Automation",
+      description: "We automate business processes across enterprise systems such as ERP and CRM to increase efficiency and eliminate bottlenecks.",
+      video: serviceVideo1, // Reusing video or adding new if available
+      background: "#FFC9D5",
+    },
+    {
+      index: "07",
+      title: "Enterprise Integration",
+      description: "Our enterprise integration services integrate your systems, apps and data sources - allowing information to move between systems, avoiding duplication, improving data integrity and removing the need for manual data reconciliation.",
+      video: serviceVideo3, // Reusing video
+      background: "#D5FFC9",
     },
   ];
 

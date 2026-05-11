@@ -49,14 +49,10 @@ const Expertise = () => {
       <div className="expertise-container">
         <div className="expertise-content">
           <h2 className="expertise-heading">
-            {/* Apps, Automation & Analytics - <br />
-            Experts Driving Digital <br />
-            Transformation */}
             Who We Are – Experienced Leaders in IT Consulting in Brisbane
           </h2>
           <p className="expertise-description">
-            {/* At Infogenx, we don't just focus on technology; we focus on results. We build systems that act as a catalyst for growth, whether it is solving a specific technical bottleneck or architecting a complete digital transformation. */}
-            Infogenx was founded by IT professionals with more than 30 years of experience. We provide Brisbane-based businesses with high-end, practical IT consulting and software solutions that are tailored to their unique needs. We bridge the gap between complex technology and real-world business results.
+            Infogenx was founded by IT professionals with more than 30 years of collective IT experience, who have been in enterprise technology environments, have managed enterprise integration and legacy system challenges, and have delivered the projects that others claim are unachievable. We are not a generalist agency. We are a Brisbane-based IT consulting, application development, business intelligence, data analytics, intelligent automation and enterprise cloud solution provider with an appreciation of the needs of Australian businesses.
           </p>
         </div>
         <div className="expertise-cards">
