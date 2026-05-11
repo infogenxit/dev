@@ -7,13 +7,13 @@
 }
 
 .header-container {
-    background-color: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
+    background-color: #ffffff;
+    backdrop-filter: none;
     margin: 0 30px;
     border-radius: 50px;
     /* border: 3px solid #e0e0e0; */
     border: 2px solid transparent;
-        background-image: linear-gradient(rgba(255, 245, 239, 0.98), rgba(255, 245, 239, 0.98)), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+        background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
         background-origin: border-box;
         background-clip: padding-box, border-box;
     padding: 10px 24px;

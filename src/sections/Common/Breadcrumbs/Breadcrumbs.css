@@ -1,11 +1,12 @@
 .breadcrumbs-wrapper {
-  padding-top: 115px; /* Offset for floating fixed header */
+  padding-top: 140px; /* Increased offset to clear the floating header with more breathing room */
+  padding-bottom: 15px;
   background: #ffffff;
   border-bottom: 1px solid #f1f5f9;
 }
 
 .breadcrumbs-nav {
-  padding: 10px 0;
+  padding: 5px 0;
   background: transparent;
   position: relative;
   z-index: 10;
@@ -114,7 +115,7 @@
 
 @media (max-width: 768px) {
   .breadcrumbs-wrapper {
-    padding-top: 90px;
+    padding-top: 110px;
   }
   .breadcrumbs-nav.container {
     margin: 0 36px; /* Matching Header mobile margin (12px) + padding (24px) */
