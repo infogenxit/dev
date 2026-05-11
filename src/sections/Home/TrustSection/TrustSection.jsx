@@ -4,20 +4,28 @@ import "./TrustSection.css";
 const TrustSection = () => {
   const trustItems = [
     {
-      title: "We Speak Business First",
-      description: "Technology is a business tool. We don't speak in jargon; we speak in outcomes. Our focus is on how technology can improve your bottom line, not just how it works."
+      title: "30+ Years Experience",
+      description: "Our leadership team brings over 30 years of deep IT industry experience, having navigated complex enterprise environments and legacy challenges."
     },
     {
-      title: "Hands-on Experience",
-      description: "Our team has real-world, enterprise-level experience. We've seen the systems that fail and we know how to build the ones that don't. We bring that knowledge to every Brisbane business we work with."
+      title: "All-in-One Expertise",
+      description: "AI, cloud, automation, data, and custom software development expertise in Brisbane, all in one place. No need for multiple vendors."
     },
     {
-      title: "Future-Driven",
-      description: "We don't just build for today. We design systems that are scalable and flexible, so your technology doesn't become obsolete as your business grows."
+      title: "Cross-Industry Success",
+      description: "Successfully delivered projects for health, retail, manufacturing, financial, and professional services across Australia."
     },
     {
-      title: "No Contract Lock-ins",
-      description: "We believe in the quality of our work. We work on a project or case-by-case basis. If we aren't delivering value, you aren't stuck with us. That's how we ensure we're always doing our best work."
+      title: "Truly Agile Process",
+      description: "A streamlined, agile delivery process without heavy project management and administration getting in the way of your results."
+    },
+    {
+      title: "Local Accountability",
+      description: "A great team with local responsibility and direct access to senior consultants who understand the Brisbane business landscape."
+    },
+    {
+      title: "Honest Conversation",
+      description: "No charge for the first consultation, with no obligation or sales pitch—just an upfront, honest conversation about your needs."
     }
   ];
 
@@ -25,8 +33,11 @@ const TrustSection = () => {
     <section className="trust-section">
       <div className="trust-container">
         <div className="trust-header">
-          <span className="section-label">Why Choose Infogenx</span>
-          <h2>Why Do Organisations Trust Infogenx for IT Consulting in Brisbane?</h2>
+          <span className="section-label">The Infogenx Difference</span>
+          <h2>Why Do Organisations Trust Infogenx for IT Consulting and Technology Delivery?</h2>
+          <p style={{ maxWidth: '800px', margin: '20px auto 0', color: '#666', lineHeight: '1.6' }}>
+            There are lots of IT companies. What sets us apart is simple: we are practitioners, not just consultants. We have the experience of delivery to back up our recommendations, and we stick around until the job is done.
+          </p>
         </div>
         <div className="trust-grid">
           {trustItems.map((item, index) => (

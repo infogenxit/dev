@@ -12,51 +12,58 @@ const ServiceHighlight = () => {
   const services = [
     {
       index: "01",
-      title: "Application Development",
-      description: "Our approach to application development in Brisbane is about more than just code. We build robust, scalable web and mobile applications that are designed to solve real business challenges—from legacy system modernisations to complex data environments.",
+      title: "IT Consulting",
+      description: "It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.",
       video: serviceVideo1,
-      background: "#ffd6bf",
+      background: "#f0f4ff",
     },
     {
       index: "02",
-      title: "AI Automation",
-      description: "If your team is wasting hours on manual data entry, repetitive reporting or disconnected workflows, you don't need more staff. You need automation. We deliver AI automation in Brisbane that allows businesses to eliminate manual tasks, improve accuracy and give you a return on investment within 6-12 months.",
-      video: serviceVideo3,
-      background: "#E9C9FF",
+      title: "Application Development",
+      description: "We develop custom web, mobile and enterprise applications designed to meet your processes. Our application development services are quick, without compromising on scalability or quality.",
+      video: serviceVideo4,
+      background: "#ffd6bf",
     },
     {
       index: "03",
-      title: "Business Intelligence",
-      description: "Data is only valuable when it is actionable. Our service for business intelligence in Brisbane converts data into information via dashboards, reporting and analytics to support better, quicker decisions for business growth.",
-      video: serviceVideo2,
-      background: "#C9D5FF",
-    },
-    {
-      index: "04",
-      title: "Digital Transformation",
-      description: "Digital transformation is not about adopting a new tool; it's about evolving your organization to function in a digital-first world. We work with organisations to modernise their business systems and processes with a strategic business transformation plan aligned to business outcomes.",
-      video: serviceVideo4,
-      background: "#C9F9FF",
-    },
-    {
-      index: "05",
       title: "Cloud Solutions",
-      description: "The cloud is not just a place to store files; it's a foundation for growth. We help businesses navigate the complexities of cloud solutions in Brisbane, from initial strategy and migration to ongoing optimization and management.",
+      description: "Our cloud solutions in Brisbane include strategy, migration and management for Amazon Web Services (AWS), Microsoft Azure and Google Cloud to optimise scalability and cost.",
       video: serviceVideo5,
       background: "#CBFFC9",
     },
     {
+      index: "04",
+      title: "AI Automation in Brisbane",
+      description: "We deploy smart business automation to automate tasks, improve accuracy and boost productivity with artificial intelligence (AI), robotic process automation (RPA) and process automation.",
+      video: serviceVideo3,
+      background: "#E9C9FF",
+    },
+    {
+      index: "05",
+      title: "Business Intelligence",
+      description: "Our service for business intelligence in Brisbane converts data into information via dashboards, reporting and analytics to support better, quicker decisions.",
+      video: serviceVideo2,
+      background: "#C9D5FF",
+    },
+    {
       index: "06",
-      title: "Enterprise Automation",
-      description: "Enterprise automation is about connecting the big systems that run your business. We automate business processes across enterprise systems such as ERP and CRM to increase efficiency and eliminate bottlenecks.",
-      video: serviceVideo1, // Reusing video or adding new if available
-      background: "#FFC9D5",
+      title: "Digital Transformation",
+      description: "We work with organisations to modernise their business systems and processes with a strategic business transformation plan aligned to business outcomes.",
+      video: serviceVideo4,
+      background: "#C9F9FF",
     },
     {
       index: "07",
+      title: "Enterprise Automation",
+      description: "We automate business processes across enterprise systems such as ERP and CRM to increase efficiency and eliminate bottlenecks.",
+      video: serviceVideo1,
+      background: "#FFC9D5",
+    },
+    {
+      index: "08",
       title: "Enterprise Integration",
-      description: "Our enterprise integration services integrate your systems, apps and data sources—allowing information to move between systems, avoiding duplication, improving data integrity and removing the need for manual data reconciliation.",
-      video: serviceVideo3, // Reusing video
+      description: "Our enterprise integration services integrate your systems, apps and data sources - allowing information to move between systems, avoiding duplication, improving data integrity and removing the need for manual data reconciliation.",
+      video: serviceVideo3,
       background: "#D5FFC9",
     },
   ];
@@ -139,6 +146,13 @@ const ServiceHighlight = () => {
       onMouseEnter={() => (isHovered.current = true)}
       onMouseLeave={() => (isHovered.current = false)}
     >
+      <div className="service-header-static" style={{ maxWidth: '1200px', margin: '0 auto', padding: '100px 20px 40px', textAlign: 'center' }}>
+        <span className="section-label" style={{ display: 'inline-block', padding: '8px 16px', background: 'rgba(0,18,60,0.05)', color: '#00123c', borderRadius: '30px', fontSize: '0.85rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>Our Services Portfolio</span>
+        <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.8rem)', color: '#00123c', lineHeight: '1.2', marginBottom: '20px' }}>What We Do: Focused On Your Business Goals</h2>
+        <p style={{ maxWidth: '800px', margin: '0 auto', color: '#666', fontSize: '1.1rem', lineHeight: '1.6' }}>
+          Our services portfolio has evolved to meet the current and emerging needs of businesses, not what someone once wrote about, but what actually works and delivers results across the technology life cycle.
+        </p>
+      </div>
       <div className="service-sticky">
         <div className="service-stack">
           {services.map((item, i) => {
