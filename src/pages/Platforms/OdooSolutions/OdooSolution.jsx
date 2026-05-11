@@ -5,14 +5,22 @@ import AppDevApproach from "../../../sections/Platforms/Odoo/OdooApproach/OdooAp
 import AppDevBusinessImpact from "../../../sections/Platforms/Odoo/OdooBusinessImpact/OdooBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Platforms/Odoo/OdooImpactCTA/OdooImpactCTA";
 import SEO from "../../../components/SEO/SEO";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import { PATHS } from "../../../route/paths";
+
 const OdooSolution = () => {
+  const breadcrumbItems = [
+    { name: "Platforms", path: PATHS.home },
+    { name: "Odoo Solutions", path: PATHS.odooSolutions }
+  ];
   return (
     <>
       <SEO
-        title="Odoo ERP Brisbane | Implementation & Customisation Expert"
-        description="Streamline your operations with Odoo ERP in Brisbane. We are experts in Odoo implementation, custom module development, and business automation."
-        keywords="Odoo ERP Brisbane, Odoo consultant Brisbane, Odoo developer Australia, ERP automation Brisbane, Odoo implementation"
+        title="Odoo ERP Solutions | Implementation & Customization Experts | Infogenx"
+        description="Streamline your operations with Odoo ERP. Infogenx specializes in Odoo implementation, custom module development, and business automation for global enterprises."
+        keywords="Odoo ERP, Odoo consultant, Odoo developer, ERP automation, Odoo implementation, Infogenx"
       />
+      <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

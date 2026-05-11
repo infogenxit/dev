@@ -10,14 +10,15 @@ import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
+import { PATHS } from "../../../route/paths";
 
 const DigitalTransformation = () => {
   const transformationContent = [
     {
-      heading: "Navigating the Modern Digital Frontier in Australia",
+      heading: "Navigating the Modern Digital Frontier",
       content: [
-        "In today’s rapidly evolving economic landscape, digital transformation is no longer a luxury for Australian enterprises—it is a foundational requirement for survival and growth. At Infogenx, we view digital transformation not merely as the adoption of new software, but as a comprehensive strategic overhaul that aligns your technological infrastructure with your core business objectives.",
-        "From Brisbane to Perth, businesses are facing increasing pressure to modernize their operations, improve customer engagement, and maintain security in an interconnected world. Our mission is to guide Australian organizations through this complexity, turning technical debt into competitive advantage and fragmented processes into streamlined, data-driven ecosystems."
+        "In today’s rapidly evolving economic landscape, digital transformation is no longer a luxury—it is a foundational requirement for survival and growth. At Infogenx, we view digital transformation not merely as the adoption of new software, but as a comprehensive strategic overhaul that aligns your technological infrastructure with your core business objectives.",
+        "Businesses are facing increasing pressure to modernize their operations, improve customer engagement, and maintain security in an interconnected world. Our mission is to guide organizations through this complexity, turning technical debt into competitive advantage and fragmented processes into streamlined, data-driven ecosystems."
       ]
     },
     {
@@ -42,16 +43,17 @@ const DigitalTransformation = () => {
       ]
     },
     {
-      heading: "Why Australian Businesses Partner with Infogenx",
+      heading: "Why Businesses Partner with Infogenx",
       content: [
-        "What sets Infogenx apart is our deep understanding of the local Australian market combined with global technical expertise. We don't just build software; we build partnerships. We understand the regulatory requirements, the labor market challenges, and the specific consumer behaviors that define business in Australia.",
+        "What sets Infogenx apart is our deep understanding of the global market combined with technical excellence. We don't just build software; we build partnerships. We understand the regulatory requirements, the labor market challenges, and the specific consumer behaviors that define your business sector.",
         "Our team of consultants and engineers act as an extension of your own, providing the technical muscle and strategic oversight needed to navigate complex transformations without the overhead of a massive internal IT department."
       ]
     }
   ];
 
   const breadcrumbItems = [
-    { name: "Solutions", path: "/solutions/digital-transformation" }
+    { name: "Solutions", path: PATHS.home },
+    { name: "Digital Transformation", path: PATHS.digitalTransformation }
   ];
 
   const faqs = [
@@ -81,25 +83,25 @@ const DigitalTransformation = () => {
     {
       title: "Intelligent Automation",
       description: "Streamline workflows and reduce operational friction with AI-driven automation.",
-      link: "/solutions/intelligent-automation"
+      link: PATHS.intelligentAutomation
     },
     {
       title: "Modern Applications",
       description: "Build scalable, cloud-native applications tailored to your business objectives.",
-      link: "/solutions/modern-applications"
+      link: PATHS.modernApplications
     },
     {
       title: "API Integration",
       description: "Connect your business ecosystem with seamless API-first solutions.",
-      link: "/solutions/api-integration"
+      link: PATHS.apiIntegration
     }
   ];
   return (
     <>
       <SEO
-        title="Digital Transformation for Australian Businesses | Infogenx"
-        description="Infogenx helps Australian organizations modernize systems, optimize operations, and scale securely through outcome-driven digital transformation consulting."
-        keywords="digital transformation consulting Australia, business process transformation, enterprise modernization"
+        title="Digital Transformation Consulting | Strategic Enterprise Modernization"
+        description="Infogenx helps organizations modernize systems, optimize operations, and scale securely through outcome-driven digital transformation consulting."
+        keywords="digital transformation consulting, business process transformation, enterprise modernization, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

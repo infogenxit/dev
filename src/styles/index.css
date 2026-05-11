@@ -16,11 +16,10 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 #root {
-  overflow-x: hidden;
+  /* overflow removed to fix sticky positioning */
 }
 
 body {

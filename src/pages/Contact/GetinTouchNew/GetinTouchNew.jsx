@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./GetinTouchNew.css";
-import { Helmet } from "react-helmet-async";
+
 import indiaFlag from "../../../assets/images/india-flag.webp";
 import australiaFlag from "../../../assets/images/australia-flags.webp";
 import { FaLocationDot } from "react-icons/fa6";
@@ -213,17 +213,7 @@ const GetinTouch = () => {
         name={ZOHO_SUBMIT_IFRAME_NAME}
         className="zoho-submit-hidden-frame"
       />
-      <Helmet>
-        <title>Contact Infogenx | Get AI & IT Solutions Today</title>
-        <meta
-          name="description"
-          content="Contact Infogenx to discuss your project and discover how AI, automation, and software solutions can help your business grow."
-        />
-        <meta
-          name="keywords"
-          content="contact Infogenx, IT consultation, software services inquiry, AI solutions contact"
-        />
-      </Helmet>
+
       <div className="page-intro-header container">
         <style>
           {`

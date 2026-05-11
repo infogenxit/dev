@@ -1,6 +1,7 @@
 import "./TermsConditions.css";
-
 import SEO from "../../components/SEO/SEO";
+import Breadcrumbs from "../../sections/Common/Breadcrumbs/Breadcrumbs";
+import { PATHS } from "../../route/paths";
 
 const TermsConditions = () => {
   return (
@@ -10,7 +11,7 @@ const TermsConditions = () => {
         description="Review the terms and conditions governing the use of Infogenx website and services, including user responsibilities and service limitations."
         keywords="Infogenx terms and conditions, website terms, service agreement, legal terms"
       />
-
+      <Breadcrumbs items={[{ name: "Terms & Conditions", path: PATHS.termsConditions }]} />
 
       <section className="terms-section">
         <div className="terms-container">

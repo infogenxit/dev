@@ -46,7 +46,13 @@ export default function Router() {
     { path: PATHS.manufacturing, element: <Elements.Manufacturing /> },
     { path: PATHS.transport, element: <Elements.Transport /> },
     // Redirects/Legacy
-    { path: PATHS.implementationIntegration + "/", element: <Navigate to={PATHS.implementationIntegration} replace /> },
+    { path: PATHS.implementationLegacy, element: <Navigate to={PATHS.implementationIntegration} replace /> },
+    { path: PATHS.managedLegacy, element: <Navigate to={PATHS.managedServices} replace /> },
+    { path: PATHS.consultingLegacy, element: <Navigate to={PATHS.consultingAdvisory} replace /> },
+    { path: PATHS.supportLegacy, element: <Navigate to={PATHS.supportOptimization} replace /> },
+    { path: PATHS.digitalMarketingLegacy, element: <Navigate to={PATHS.digitalMarketing} replace /> },
+    { path: PATHS.aboutUsLegacy, element: <Navigate to={PATHS.about} replace /> },
+    
     { path: PATHS.microsoftLegacy, element: <Elements.MicrosoftSolution /> },
     { path: PATHS.zohoLegacy, element: <Elements.ZohoSolution /> },
     { path: PATHS.odooLegacy, element: <Elements.OdooSolution /> },

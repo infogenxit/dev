@@ -4,15 +4,22 @@ import AppDevApproach from "../../../sections/Industries/Healthcare/HealthcareAp
 import AppDevBusinessImpact from "../../../sections/Industries/Healthcare/HealthcareBusinessImpact/HealthcareBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Industries/Healthcare/HealthcareImpactCTA/HealthcareImpactCTA";
 import SEO from "../../../components/SEO/SEO";
+import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import { PATHS } from "../../../route/paths";
 
 const Healthcare = () => {
+  const breadcrumbItems = [
+    { name: "Industries", path: PATHS.home },
+    { name: "Healthcare", path: PATHS.healthcare }
+  ];
   return (
     <>
       <SEO
-        title="Healthcare IT Solutions Brisbane | Patient Management Experts"
-        description="Optimize your clinic's operations with our Brisbane healthcare IT solutions. We specialize in patient management systems, compliance, and secure data analytics."
-        keywords="healthcare IT solutions Brisbane, patient management software, medical practice automation, healthcare compliance IT, Infogenx"
+        title="Healthcare IT Solutions & Patient Management Experts | Infogenx"
+        description="Optimize your medical facility's operations with our comprehensive healthcare IT solutions. We specialize in patient management systems, compliance, and secure data analytics."
+        keywords="healthcare IT solutions, patient management software, medical practice automation, healthcare compliance IT, Infogenx"
       />
+      <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <AppDevApproach />

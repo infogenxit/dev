@@ -47,52 +47,158 @@ const ServiceHighlight = () => {
       background: "#CBFFC9",
     },
   ];
+
+  const sectionRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const isHovered = useRef(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const handleScroll = () => {
+      const rect = section.getBoundingClientRect();
+      const scrollInside = -rect.top;
+      const windowHeight = window.innerHeight;
+      const totalScrollable = section.offsetHeight - windowHeight;
+
+      if (scrollInside <= 0) {
+        setActiveIndex(0);
+      } else if (scrollInside >= totalScrollable) {
+        setActiveIndex(services.length - 1);
+      } else {
+        const progress = scrollInside / totalScrollable;
+        const index = Math.floor(progress * services.length);
+        setActiveIndex(Math.min(services.length - 1, Math.max(0, index)));
+      }
+    };
+
+    const handleWheel = (e) => {
+      if (isHovered.current) {
+        const rect = section.getBoundingClientRect();
+        // Only intercept if the section is currently in view/sticky
+        if (rect.top <= 5 && rect.bottom >= window.innerHeight - 5) {
+          const totalCards = services.length;
+          const windowHeight = window.innerHeight;
+          const totalScrollable = section.offsetHeight - windowHeight;
+          const segmentHeight = totalScrollable / totalCards;
+
+          if (e.deltaY > 0 && activeIndex < totalCards - 1) {
+            e.preventDefault();
+            const nextIndex = activeIndex + 1;
+            const targetScroll = section.offsetTop + (nextIndex * segmentHeight) + (segmentHeight / 2);
+            window.scrollTo({ top: targetScroll, behavior: "smooth" });
+          } else if (e.deltaY < 0 && activeIndex > 0) {
+            e.preventDefault();
+            const prevIndex = activeIndex - 1;
+            const targetScroll = section.offsetTop + (prevIndex * segmentHeight) + (segmentHeight / 2);
+            window.scrollTo({ top: targetScroll, behavior: "smooth" });
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("wheel", handleWheel);
+    };
+  }, [services.length, activeIndex]);
+
   return (
-    <section className="service-section">
-      <div className="service-stack">
-        {services.map((item, i) => (
-          <div
-            key={i}
-            className="service-card"
-            style={{ background: item.background }}
-          >
-            <div className="service-content">
-              <h2 className="service-title">
-                {item.title.split("\n").map((line, idx) => (
-                  <span key={idx}>
-                    {line}
-                    <br />
-                  </span>
-                ))}
-              </h2>
-              <p className="service-description">{item.description}</p>
-              <button
-                className="service-btn"
-                onClick={() => navigate("/contact-us")}
+    <section
+      className="service-section"
+      ref={sectionRef}
+      style={{ height: `${services.length * 100}vh` }}
+      onMouseEnter={() => (isHovered.current = true)}
+      onMouseLeave={() => (isHovered.current = false)}
+    >
+      <div className="service-sticky">
+        <div className="service-stack">
+          {services.map((item, i) => {
+            const isActive = i === activeIndex;
+            const isStacked = i < activeIndex;
+            const isFuture = i > activeIndex;
+            const stackOffset = activeIndex - i;
+
+            return (
+              <div
+                key={i}
+                className={`service-card ${isActive ? "active" : isStacked ? "stacked" : "future"}`}
+                style={{
+                  background: item.background,
+                  transform: isActive 
+                    ? "translateY(0) scale(1)" 
+                    : isStacked 
+                      ? `translateY(-${stackOffset * 40}px) scale(${1 - stackOffset * 0.05})` 
+                      : "translateY(100vh)",
+                  opacity: isFuture ? 0 : 1,
+                  zIndex: i + 10,
+                  transition: "transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), opacity 0.5s ease",
+                  pointerEvents: isActive ? "all" : "none",
+                }}
               >
-                Talk to our Experts <span className="arrow">→</span>
-              </button>
-            </div>
-            <div className="service-media-container">
-              <div style={{ padding: "0 20px" }}>
-                <span className="service-index">{item.index}</span>
+                {/* Left */}
+                <div className="service-content">
+                  <h2 className="service-title">
+                    {item.title.split("\n").map((line, idx) => (
+                      <span key={idx}>
+                        {line}
+                        <br />
+                      </span>
+                    ))}
+                  </h2>
+
+                  <p className="service-description">{item.description}</p>
+
+                  <button
+                    className="service-btn"
+                    style={{ 
+                      opacity: isActive ? 1 : 0, 
+                      visibility: isActive ? "visible" : "hidden",
+                      transition: "opacity 0.3s ease"
+                    }}
+                    onClick={() => navigate("/contact-us")}
+                  >
+                    Talk to our Experts <span className="arrow">→</span>
+                  </button>
+                </div>
+
+                {/* Right */}
+                <div className="service-media-container">
+                  <div style={{ padding: "0 20px" }}>
+                    <span className="service-index">{item.index}</span>
+                  </div>
+                  <div className="service-media" style={{ opacity: isActive ? 1 : 0.4 }}>
+                    <video
+                      key={item.video}
+                      src={item.video}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="service-video"
+                    />
+                  </div>
+                </div>
               </div>
-              <div className="service-media">
-                <video
-                  src={item.video}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="service-video"
-                />
-              </div>
-            </div>
-          </div>
-        ))}
+            );
+          })}
+        </div>
       </div>
     </section>
   );
 };
+
+
+
+
+
 export default ServiceHighlight;
+
 

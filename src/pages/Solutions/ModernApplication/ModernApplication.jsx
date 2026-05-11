@@ -4,18 +4,20 @@ import AppDevExpertise from "../../../sections/Solutions/ModernApplication/Moder
 import AppDevApproach from "../../../sections/Solutions/ModernApplication/ModernApplicationApproach/ModernApplicationApproach";
 import AppDevBusinessImpact from "../../../sections/Solutions/ModernApplication/ModernApplicationBusinessImpact/ModernApplicationBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Solutions/ModernApplication/ModernApplicationImpactCTA/ModernApplicationImpactCTA";
+import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
+import { PATHS } from "../../../route/paths";
 
 const ModernApplication = () => {
   const modernAppContent = [
     {
-      heading: "Engineering Future-Proof Applications for the Australian Market",
+      heading: "Engineering Future-Proof Applications for the Global Market",
       content: [
-        "In a world where software is the primary touchpoint between businesses and their customers, the quality of your applications directly impacts your bottom line. At Infogenx, we don't just write code; we engineer robust, scalable, and secure digital products designed to meet the rigorous demands of the Australian market. Modern application development requires a departure from legacy thinking, embracing agility, user-centric design, and technical excellence.",
+        "In a world where software is the primary touchpoint between businesses and their customers, the quality of your applications directly impacts your bottom line. At Infogenx, we don't just write code; we engineer robust, scalable, and secure digital products designed to meet the rigorous demands of the modern market. Modern application development requires a departure from legacy thinking, embracing agility, user-centric design, and technical excellence.",
         "From consumer-facing mobile apps to complex enterprise resource planning systems, our engineering team focuses on creating software that is not only functional today but adaptable for the innovations of tomorrow. We bridge the gap between complex business requirements and elegant technical execution, ensuring your digital assets drive real value."
       ]
     },
@@ -47,56 +49,56 @@ const ModernApplication = () => {
   ];
 
   const breadcrumbItems = [
-    { name: "Solutions", path: "/solutions/digital-transformation" },
-    { name: "Modern Applications", path: "/solutions/modern-applications" }
+    { name: "Solutions", path: PATHS.home },
+    { name: "Modern Applications", path: PATHS.modernApplications }
   ];
 
   const faqs = [
     {
-      question: "What makes an application 'modern'?",
-      answer: "A modern application is cloud-native, uses microservices architecture, scales automatically, and is developed using agile and DevOps practices."
+      question: "What is a modern application?",
+      answer: "A modern application is an architectural approach that prioritizes cloud-native technologies, microservices, and rapid delivery cycles to ensure software is scalable, resilient, and easy to maintain."
     },
     {
-      question: "Why should we move to a microservices architecture?",
-      answer: "Microservices allow for independent scaling, easier updates, and greater resilience compared to monolithic applications."
+      question: "Why should we modernize our legacy applications?",
+      answer: "Legacy applications often suffer from security vulnerabilities, high maintenance costs, and an inability to scale. Modernization improves performance, reduces costs, and allows for faster integration with new technologies like AI."
     },
     {
-      question: "How do you ensure the security of modern apps?",
-      answer: "We use DevSecOps practices, integrating security at every stage of development, along with robust encryption and authentication protocols."
+      question: "What technologies do you use for application development?",
+      answer: "We specialize in full-stack development using React, Node.js, Python, and cloud platforms like Azure and AWS, ensuring every application is built for performance and security."
     },
     {
-      question: "Can you help modernize our legacy software?",
-      answer: "Yes, we specialize in legacy modernization, either by refactoring existing code or rebuilding core functionality using modern, cloud-native technologies."
+      question: "Do you build mobile applications as well?",
+      answer: "Yes, we build high-performance mobile applications for iOS and Android using cross-platform frameworks like React Native and Flutter, as well as native development."
     },
     {
-      question: "What technologies do you use for app development?",
-      answer: "We use a wide range of modern stacks, including React, Node.js, Python, and cloud services from Azure and AWS, depending on the project requirements."
+      question: "How do you ensure application security?",
+      answer: "We follow DevSecOps practices, integrating security checks throughout the development lifecycle and ensuring all applications comply with industry-standard encryption and authentication protocols."
     }
   ];
 
   const relatedItems = [
     {
-      title: "API Integration",
-      description: "Connect your applications seamlessly with secure, high-performance API solutions.",
-      link: "/solutions/api-integration"
+      title: "Digital Transformation",
+      description: "Modernise your business ecosystem with global digital strategy and engineering.",
+      link: PATHS.digitalTransformation
     },
     {
       title: "Intelligent Automation",
-      description: "Enhance your application's power with AI-driven workflow orchestration.",
-      link: "/solutions/intelligent-automation"
+      description: "Streamline workflows and reduce operational friction with AI-driven automation.",
+      link: PATHS.intelligentAutomation
     },
     {
-      title: "Data Analytics & AI",
-      description: "Unlock actionable insights from your application data with advanced analytics.",
-      link: "/solutions/data-analytics-ai"
+      title: "API Integration",
+      description: "Connect your business ecosystem with seamless API-first solutions.",
+      link: PATHS.apiIntegration
     }
   ];
   return (
     <>
       <SEO
-        title="Modern Application Engineering & Development | Infogenx"
-        description="We build secure, scalable, and cloud-native applications designed for the modern enterprise. Expert engineering for mobile, web, and enterprise platforms."
-        keywords="modern application development Australia, cloud native apps, custom software engineering Brisbane"
+        title="Modern Application Development & Engineering | Scalable Custom Software | Infogenx"
+        description="Infogenx designs and builds secure, scalable, cloud-native applications tailored for performance. We help businesses modernize legacy systems and scale through high-impact engineering."
+        keywords="modern application development, cloud-native applications, custom software engineering, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

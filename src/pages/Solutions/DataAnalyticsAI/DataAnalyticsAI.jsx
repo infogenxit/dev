@@ -4,18 +4,20 @@ import AppDevExpertise from "../../../sections/Solutions/DataAnalyticsAI/DataAna
 import AppDevApproach from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsApproach/DataAnalyticsApproach";
 import AppDevBusinessImpact from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsBusinessImpact/DataAnalyticsBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsImpactCTA/DataAnalyticsImpactCTA";
+import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
+import { PATHS } from "../../../route/paths";
 
 const DataAnalyticsAI = () => {
   const analyticsContent = [
     {
       heading: "Transforming Data into Decision-Grade Intelligence",
       content: [
-        "In the digital economy, data is often referred to as the 'new oil.' However, raw data without refinement is just noise. At Infogenx, we specialize in the refinement process, transforming vast quantities of unstructured information into clear, actionable, decision-grade intelligence. Our Data Analytics & AI solutions are designed to help Australian businesses move beyond looking in the rearview mirror and start predicting the road ahead.",
+        "In the digital economy, data is often referred to as the 'new oil.' However, raw data without refinement is just noise. At Infogenx, we specialize in the refinement process, transforming vast quantities of unstructured information into clear, actionable, decision-grade intelligence. Our Data Analytics & AI solutions are designed to help businesses move beyond looking in the rearview mirror and start predicting the road ahead.",
         "From identifying hidden market trends to automating complex decision-making processes, our data scientists and engineers build the intelligent systems that give your organization a distinct competitive advantage. We help you unlock the true value of your information, ensuring that every data point serves a strategic purpose."
       ]
     },
@@ -47,56 +49,56 @@ const DataAnalyticsAI = () => {
   ];
 
   const breadcrumbItems = [
-    { name: "Solutions", path: "/solutions/digital-transformation" },
-    { name: "Data Analytics & AI", path: "/solutions/data-analytics-ai" }
+    { name: "Solutions", path: PATHS.home },
+    { name: "Data Analytics & AI", path: PATHS.dataAnalyticsAi }
   ];
 
   const faqs = [
     {
-      question: "What is the difference between data analytics and AI?",
-      answer: "Data analytics focuses on analyzing historical data to understand past trends, while AI uses that data to build models that can predict future outcomes or automate decisions."
+      question: "How can AI and analytics benefit my business?",
+      answer: "AI and analytics help you uncover hidden patterns in your data, predict future trends, and automate complex decision-making processes, leading to increased efficiency and competitive advantage."
     },
     {
-      question: "How do you ensure data privacy in AI models?",
-      answer: "We use secure, anonymized datasets for training and implement strict access controls and encryption to protect your information."
+      question: "What platforms do you use for data analytics?",
+      answer: "We primarily use Microsoft Power BI, Zoho Analytics, and custom-built Python/SQL models to create comprehensive dashboards and predictive tools."
     },
     {
-      question: "Can you work with our existing data sources?",
-      answer: "Yes, we build automated pipelines that can ingest data from virtually any source, including CRMs, ERPs, and external APIs."
+      question: "Can you analyze data from multiple sources?",
+      answer: "Yes, we specialize in data engineering to consolidate data from various sources like CRM, ERP, and web analytics into a single source of truth."
     },
     {
-      question: "What is predictive analytics?",
-      answer: "Predictive analytics is the use of statistical algorithms and machine learning to identify the likelihood of future outcomes based on historical data."
+      question: "How do you ensure the accuracy of AI models?",
+      answer: "We follow a rigorous validation process, using historical data to test our models and continuously monitoring their performance to ensure they remain accurate over time."
     },
     {
-      question: "How long does it take to see results from a data project?",
-      answer: "Initial descriptive insights can often be delivered within weeks, while complex predictive models typically take 2-4 months to refine and deploy."
+      question: "Is my business data secure when using your AI solutions?",
+      answer: "Absolutely. We implement strict data governance and security protocols, ensuring all data processing complies with the latest privacy standards."
     }
   ];
 
   const relatedItems = [
     {
       title: "Intelligent Automation",
-      description: "Power your automated workflows with decision-grade AI and analytics.",
-      link: "/solutions/intelligent-automation"
-    },
-    {
-      title: "Digital Transformation",
-      description: "Harness the power of data to drive your organizational transformation.",
-      link: "/solutions/digital-transformation"
+      description: "Streamline workflows and reduce operational friction with AI-driven automation.",
+      link: PATHS.intelligentAutomation
     },
     {
       title: "Modern Applications",
-      description: "Integrate intelligent data capabilities directly into your custom software.",
-      link: "/solutions/modern-applications"
+      description: "Build scalable, cloud-native applications tailored to your business objectives.",
+      link: PATHS.modernApplications
+    },
+    {
+      title: "API Integration",
+      description: "Connect your business ecosystem with seamless API-first solutions.",
+      link: PATHS.apiIntegration
     }
   ];
   return (
     <>
       <SEO
-        title="Data Analytics & AI Solutions Australia | Infogenx"
-        description="Unlock decision-grade intelligence with our data analytics and AI services. We help Australian businesses transform raw data into actionable strategic insights."
-        keywords="data analytics services Australia, AI business solutions, predictive analytics consulting"
+        title="Data Analytics & AI Solutions | Business Intelligence Experts | Infogenx"
+        description="Transform your data into actionable intelligence with Infogenx's expert analytics and AI solutions. We help businesses predict trends and optimize performance through data-driven strategies."
+        keywords="data analytics, business intelligence, AI solutions, predictive analytics, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

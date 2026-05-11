@@ -1,6 +1,7 @@
 import "./PrivacyPolicy.css";
-
 import SEO from "../../components/SEO/SEO";
+import Breadcrumbs from "../../sections/Common/Breadcrumbs/Breadcrumbs";
+import { PATHS } from "../../route/paths";
 
 const PrivacyPolicy = () => {
   return (
@@ -10,7 +11,7 @@ const PrivacyPolicy = () => {
         description="Read Infogenx Privacy Policy to understand how we collect, use, and protect your personal information while using our website and services."
         keywords="Infogenx privacy policy, data protection, user privacy, information security policy"
       />
-
+      <Breadcrumbs items={[{ name: "Privacy Policy", path: PATHS.privacyPolicy }]} />
 
       <section className="privacy-policy-section">
         <div className="privacy-container">

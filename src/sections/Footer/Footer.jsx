@@ -1,12 +1,14 @@
 import "./Footer.css";
 import Footerlogo from "../../assets/images/logo.webp";
 import { Link } from "react-router-dom";
+import { PATHS } from "../../route/paths";
 import {
   RiInstagramLine,
   RiFacebookBoxLine,
   RiLinkedinBoxLine,
 } from "react-icons/ri";
 import { RiTwitterXLine } from "react-icons/ri";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -16,7 +18,7 @@ const Footer = () => {
             <img src={Footerlogo} alt="Infogenx" />
             <p>
               AI-enabled applications, intelligent automation, and analytics
-              solutions built to help Australian businesses simplify operations,
+              solutions built to help businesses simplify operations,
               connect systems, and scale with confidence.
             </p>
           </div>
@@ -45,125 +47,51 @@ const Footer = () => {
           <div>
             <h4>COMPANY</h4>
             <ul>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li>
-                <Link to="/careers">Careers</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">Contact Us</Link>
-              </li>
-              <li>
-                <Link to="/privacy-policy">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link to="/terms-conditions">Terms & Conditions</Link>
-              </li>
+              <li><Link to={PATHS.about}>About Us</Link></li>
+              <li><Link to={PATHS.careers}>Careers</Link></li>
+              <li><Link to={PATHS.contactUs}>Contact Us</Link></li>
+              <li><Link to={PATHS.privacyPolicy}>Privacy Policy</Link></li>
+              <li><Link to={PATHS.termsConditions}>Terms & Conditions</Link></li>
             </ul>
           </div>
           <div>
             <h4>SERVICES</h4>
             <ul>
-              <li>
-                <Link to="/services/implementation-integration">
-                  Implementation & Integration
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/managed-services">Managed Services</Link>
-              </li>
-              <li>
-                <Link to="/services/consulting-advisory">
-                  Consulting & Advisory
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/support-optimization">
-                  Support & Optimisation
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/digital-marketing">Digital Marketing</Link>
-              </li>
+              <li><Link to={PATHS.implementationIntegration}>Implementation & Integration</Link></li>
+              <li><Link to={PATHS.managedServices}>Managed Services</Link></li>
+              <li><Link to={PATHS.consultingAdvisory}>Consulting & Advisory</Link></li>
+              <li><Link to={PATHS.supportOptimization}>Support & Optimisation</Link></li>
+              <li><Link to={PATHS.digitalMarketing}>Digital Marketing</Link></li>
             </ul>
           </div>
           <div>
             <h4>SOLUTIONS</h4>
             <ul>
-              <li>
-                <Link to="/solutions/digital-transformation">
-                  Digital Transformation
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions/intelligent-automation">
-                  Intelligent Automation
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions/modern-applications">
-                  Modern Applications
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions/data-analytics-ai">
-                  Data Analytics & AI
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions/api-integration">
-                  Integration & API Enablement
-                </Link>
-              </li>
+              <li><Link to={PATHS.digitalTransformation}>Digital Transformation</Link></li>
+              <li><Link to={PATHS.intelligentAutomation}>Intelligent Automation</Link></li>
+              <li><Link to={PATHS.modernApplications}>Modern Applications</Link></li>
+              <li><Link to={PATHS.dataAnalyticsAi}>Data Analytics & AI</Link></li>
+              <li><Link to={PATHS.apiIntegration}>Integration & API Enablement</Link></li>
             </ul>
           </div>
           <div>
             <h4>PLATFORMS</h4>
             <ul>
-              <li>
-                <Link to="/platforms/microsoft">Microsoft Solutions</Link>
-              </li>
-              <li>
-                <Link to="/platforms/zoho">Zoho Solutions</Link>
-              </li>
-              <li>
-                <Link to="/platforms/odoo">Odoo Solutions</Link>
-              </li>
-              <li>
-                <Link to="/platforms/shopify">Shopify Solutions</Link>
-              </li>
+              <li><Link to={PATHS.microsoft}>Microsoft Solutions</Link></li>
+              <li><Link to={PATHS.zoho}>Zoho Solutions</Link></li>
+              <li><Link to={PATHS.odoo}>Odoo Solutions</Link></li>
+              <li><Link to={PATHS.shopify}>Shopify Solutions</Link></li>
             </ul>
           </div>
           <div>
             <h4>INDUSTRIES</h4>
             <ul>
-              <li>
-                <Link to="/industries/healthcare-solutions">Healthcare</Link>
-              </li>
-              <li>
-                <Link to="/industries/retail-solutions">Retail</Link>
-              </li>
-              <li>
-                <Link to="/industries/manufacturing-solutions">
-                  Manufacturing
-                </Link>
-              </li>
-              <li>
-                <Link to="/industries/transport-logistics">
-                  Transport & Logistics
-                </Link>
-              </li>
-              <li>
-                <Link to="/industries/e-commerce">
-                  E-Commerce
-                </Link>
-              </li>
-              <li>
-                <Link to="/industries/finance-solutions">
-                  Financial Services
-                </Link>
-              </li>
+              <li><Link to={PATHS.healthcare}>Healthcare</Link></li>
+              <li><Link to={PATHS.retail}>Retail</Link></li>
+              <li><Link to={PATHS.manufacturing}>Manufacturing</Link></li>
+              <li><Link to={PATHS.transport}>Transport & Logistics</Link></li>
+              <li><Link to={PATHS.ecommerce}>E-Commerce</Link></li>
+              <li><Link to={PATHS.finance}>Financial Services</Link></li>
             </ul>
           </div>
         </div>
@@ -179,4 +107,3 @@ const Footer = () => {
   );
 };
 export default Footer;
-

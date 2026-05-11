@@ -9,14 +9,15 @@ import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
+import { PATHS } from "../../../route/paths";
 
 const ApiIntegration = () => {
   const apiContent = [
     {
-      heading: "Systems Integration in Brisbane Without Breaking What Already Works",
+      heading: "Systems Integration Without Breaking What Already Works",
       content: [
         "Every business has a mix of tools — CRM, ERP, finance platforms, cloud apps, and internal systems. The issue isn’t the tools themselves. It’s the gaps between them.",
-        "With our systems integration in Brisbane, we close those gaps properly. We don’t replace your systems unless it’s necessary. We integrate what you already use and make it work together properly."
+        "With our systems integration services, we close those gaps properly. We don’t replace your systems unless it’s necessary. We integrate what you already use and make it work together properly."
       ],
       list: [
         { label: "Real-Time Exchange", text: "Systems exchange data in real time." },
@@ -42,7 +43,7 @@ const ApiIntegration = () => {
       heading: "Automating Data Flow Across Platforms",
       content: [
         "Disconnected systems slow everything down. Teams spend time moving data instead of using it.",
-        "With our API integration in Brisbane, we automate how data moves across your systems. The goal is not just integration — it’s operational clarity. When data flows properly, your business runs cleaner and faster."
+        "With our API integration, we automate how data moves across your systems. The goal is not just integration — it’s operational clarity. When data flows properly, your business runs cleaner and faster."
       ],
       list: [
         { label: "Automatic Updates", text: "Information updates automatically between platforms." },
@@ -66,18 +67,18 @@ const ApiIntegration = () => {
   ];
 
   const breadcrumbItems = [
-    { name: "Solutions", path: "/solutions/digital-transformation" },
-    { name: "API Integration", path: "/solutions/api-integration" }
+    { name: "Solutions", path: PATHS.home },
+    { name: "API Integration", path: PATHS.apiIntegration }
   ];
 
   const faqs = [
     {
-      question: "What does API integration in Brisbane actually solve for businesses?",
+      question: "What does API integration actually solve for businesses?",
       answer: "It connects your systems so they can exchange data automatically, removing manual work and reducing errors caused by disconnected platforms."
     },
     {
       question: "How is systems integration different from API integration?",
-      answer: "API integration focuses on connecting applications using APIs, while systems integration in Brisbane covers the broader process of making all business systems work together as one."
+      answer: "API integration focuses on connecting applications using APIs, while systems integration covers the broader process of making all business systems work together as one."
     },
     {
       question: "Will integration require replacing our current systems?",
@@ -97,25 +98,25 @@ const ApiIntegration = () => {
     {
       title: "Modern Applications",
       description: "Build robust applications designed for seamless integration and performance.",
-      link: "/solutions/modern-applications"
+      link: PATHS.modernApplications
     },
     {
       title: "Intelligent Automation",
       description: "Orchestrate automated workflows across your newly connected platforms.",
-      link: "/solutions/intelligent-automation"
+      link: PATHS.intelligentAutomation
     },
     {
       title: "Digital Transformation",
       description: "Harness the power of a fully integrated business to drive growth.",
-      link: "/solutions/digital-transformation"
+      link: PATHS.digitalTransformation
     }
   ];
   return (
     <>
       <SEO
-        title="API Integration Brisbane | Systems & Software Integration Experts"
-        description="Looking for API integration in Brisbane? We provide seamless systems and software integration services to connect your apps, automate workflows, and improve efficiency."
-        keywords="API integration Brisbane, Systems Integration, Software connectivity"
+        title="API Integration & Systems Connectivity Experts | Infogenx"
+        description="Infogenx provides seamless API integration and systems connectivity solutions to connect your applications, automate workflows, and improve operational efficiency."
+        keywords="API integration, Systems Integration, Software connectivity, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

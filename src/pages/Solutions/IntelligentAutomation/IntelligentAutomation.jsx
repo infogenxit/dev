@@ -9,14 +9,15 @@ import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
+import { PATHS } from "../../../route/paths";
 
 const IntelligentAutomation = () => {
   const automationContent = [
     {
       heading: "Orchestrating Business Success with Intelligent Automation",
       content: [
-        "In the modern Australian business environment, efficiency is the currency of growth. Intelligent Automation (IA) is the catalyst that allows organizations to break free from the constraints of manual, repetitive tasks and focus their human capital on high-value, strategic initiatives. At Infogenx, we specialize in building the 'digital nervous system' for your business, connecting disparate applications and orchestrating complex workflows with AI-driven precision.",
-        "Whether you are a logistics provider in Melbourne or a healthcare organization in Sydney, our automation solutions are designed to reduce operational friction, eliminate human error, and provide the scalability needed to handle increasing volumes without increasing headcount."
+        "In the modern business environment, efficiency is the currency of growth. Intelligent Automation (IA) is the catalyst that allows organizations to break free from the constraints of manual, repetitive tasks and focus their human capital on high-value, strategic initiatives. At Infogenx, we specialize in building the 'digital nervous system' for your business, connecting disparate applications and orchestrating complex workflows with AI-driven precision.",
+        "Whether you are looking to optimize logistics or streamline healthcare operations, our automation solutions are designed to reduce operational friction, eliminate human error, and provide the scalability needed to handle increasing volumes without increasing headcount."
       ]
     },
     {
@@ -71,16 +72,16 @@ const IntelligentAutomation = () => {
   ];
 
   const breadcrumbItems = [
-    { name: "Solutions", path: "/solutions/digital-transformation" },
-    { name: "Intelligent Automation", path: "/solutions/intelligent-automation" }
+    { name: "Solutions", path: PATHS.home },
+    { name: "Intelligent Automation", path: PATHS.intelligentAutomation }
   ];
 
   return (
     <>
       <SEO
-        title="Intelligent Automation & AI Workflows | Infogenx Australia"
-        description="Transform your business efficiency with AI-driven intelligent automation. We orchestrate complex workflows across Microsoft, Zoho, and Odoo ecosystems."
-        keywords="intelligent automation Australia, AI workflow automation, business process automation Sydney"
+        title="Intelligent Automation & AI Workflows | Enterprise Efficiency | Infogenx"
+        description="Transform your business efficiency with AI-driven intelligent automation. We orchestrate complex workflows across Microsoft, Zoho, and Odoo ecosystems for maximum performance."
+        keywords="intelligent automation, AI workflow automation, business process automation, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
@@ -94,7 +95,7 @@ const IntelligentAutomation = () => {
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqData} />
-      <RelatedServices currentService="/solutions/intelligent-automation" />
+      <RelatedServices currentService={PATHS.intelligentAutomation} />
     </>
   );
 };

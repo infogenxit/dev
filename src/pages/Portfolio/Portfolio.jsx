@@ -26,6 +26,8 @@ import LogoImg5 from "../../assets/images/infogenx-logos-images-5.webp";
 
 import SEO from "../../components/SEO/SEO";
 import { useNavigate } from "react-router-dom";
+import Breadcrumbs from "../../sections/Common/Breadcrumbs/Breadcrumbs";
+import { PATHS } from "../../route/paths";
 const projects = [
   {
     id: 1,
@@ -150,9 +152,9 @@ const Portfolio = () => {
         description="Discover Infogenx portfolio showcasing our web development, UI/UX design, and software projects delivered to clients across various industries."
         keywords="Infogenx portfolio, web development projects, full-stack projects, software development work, UI UX portfolio"
       />
-
-
+      <Breadcrumbs items={[{ name: "Portfolio", path: PATHS.portfolio }]} />
       <section className="appdev-hero">
+
         <img
           alt="corner accent"
           className="about-corner-accent"
