@@ -114,7 +114,7 @@ const ServiceHighlight = () => {
     <section
       className="service-section"
       ref={sectionRef}
-      style={{ height: `${services.length * 100}vh` }}
+      style={{ height: `${services.length * 150}vh` }}
       onMouseEnter={() => (isHovered.current = true)}
       onMouseLeave={() => (isHovered.current = false)}
     >
@@ -139,7 +139,7 @@ const ServiceHighlight = () => {
                       : "translateY(100vh)",
                   opacity: isFuture ? 0 : 1,
                   zIndex: i + 10,
-                  transition: "transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), opacity 0.5s ease",
+                  transition: "transform 1.2s cubic-bezier(0.2, 1, 0.3, 1), opacity 0.8s ease",
                   pointerEvents: isActive ? "all" : "none",
                 }}
               >
