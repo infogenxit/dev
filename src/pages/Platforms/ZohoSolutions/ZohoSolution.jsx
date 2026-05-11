@@ -23,15 +23,27 @@ const ZohoSolution = () => {
     {
       question: "Should I choose Zoho CRM or Zoho One?",
       answer: "If you want to start with sales, Zoho CRM is the way to go. If you want to integrate all parts of your business (sales, finance, human resources, operations), Zoho One is a better choice. Let's help, based on your needs, not the size of the title."
+    },
+    {
+      question: "Can Zoho integrate with my existing tools?",
+      answer: "Yes. We can integrate with Xero, MYOB, Google Workspace and more. When required, we develop custom integrations to ensure seamless connections."
+    },
+    {
+      question: "How long does implementation take?",
+      answer: "It depends on the scope. CRM implementations usually take a few weeks. More complex Zoho One deployments can take a few months. We tell you how long it will take - no hidden surprises."
+    },
+    {
+      question: "What happens after the system goes live?",
+      answer: "That’s where the real value starts. We offer support, enhancements and advice to help your system grow with your business."
     }
   ];
 
   return (
     <>
       <SEO 
-        title="Zoho Consultant Brisbane | Trusted Experts & Agency"
-        description="Are you looking for professional Zoho Consultant Brisbane? Our Brisbane services include Zoho CRM setup, customisation, integration, and training. Book an expert!"
-        keywords="zoho consultant brisbane, zoho analytics brisbane, zoho automation brisbane, zoho creator brisbane, zoho crm brisbane, zoho crm consultant brisbane, zoho development brisbane"
+        title="Your Trusted Zoho Consultant Brisbane | Certified Partner Brisbane"
+        description="Certified Zoho Partner in Brisbane providing structured Zoho implementation, workflow automation, and optimisation. With 30+ years experience, we build systems that perform."
+        keywords="zoho consultant brisbane, zoho crm brisbane, zoho one brisbane, zoho analytics brisbane, zoho automation brisbane, zoho flow brisbane, zoho creator brisbane, zoho development brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

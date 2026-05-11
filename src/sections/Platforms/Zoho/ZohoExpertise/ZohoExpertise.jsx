@@ -9,24 +9,32 @@ const AppDevExpertise = () => {
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
         <div className="appdev-expertise-header">
-          <span className="section-label">Integrated Zoho Services to Empower Your Business</span>
+          <span className="section-label">Integrated Zoho Services to Optimise and Grow Your Business</span>
           <h2>
             Why Partnering with a Zoho Consultant in Brisbane Improves Operational Performance?
           </h2>
+          <p style={{ marginTop: "20px", color: "#555", fontSize: "1.05rem", lineHeight: "1.7" }}>
+            Zoho is more than a CRM, an integrated business system for sales, finance, human resources and operations. But it matters the most and has its own value in how well it’s implemented. Out-of-the-box setups rarely match real business workflows.
+            <br /><br />
+            Our experienced Zoho consultant in Brisbane will set it up correctly. They will connect it to your other systems and tailor it to your business. With 30+ years of experience, Infogenx offers structured Zoho implementations that minimise manual tasks, provide greater visibility, and build a scalable system that's future-proofed to perform.
+          </p>
+          <p style={{ marginTop: "20px", fontWeight: "600", color: "#00123c" }}>
+            We cover the full lifecycle—from strategy to support. No gaps, no handovers.
+          </p>
         </div>
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
             <img src={IconA} alt="Zoho CRM Brisbane" className="expertise-icon" />
             <h4>Zoho CRM in Brisbane</h4>
             <p>
-              The foundation of your sales engine. We configure it to reflect your specific sales pipeline, ensuring no lead is missed.
+              CRM shouldn't be an administrative burden. We properly document your sales process, create realistic pipelines and automate follow-up reminders so you can turn leads into sales, not just keep chasing them.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconB} alt="Zoho One Brisbane" className="expertise-icon" />
             <h4>Zoho One</h4>
             <p>
-              The complete operating system for business. We help you manage over 45+ integrated applications from one dashboard.
+              If you're sick of dealing with multiple tools, Zoho One in Brisbane gives you a single platform. We build systems that integrate your sales, finance, HR and operations - so you have a single source of truth.
             </p>
           </div>
           <div className="expertise-item">
@@ -54,14 +62,14 @@ const AppDevExpertise = () => {
             <img src={IconA} alt="Zoho ERP Brisbane" className="expertise-icon" />
             <h4>Zoho ERP, Integration & Implementation</h4>
             <p>
-              Need something more advanced? We integrate Zoho with Xero, MYOB or your existing ecommerce platform so that your inventory, finance and sales are in sync.
+              Need something more advanced? We integrate Zoho with Xero, MYOB or your existing systems and set up a system that provides seamless financial, inventory and workflow support.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconB} alt="Zoho Development Brisbane" className="expertise-icon" />
             <h4>Zoho Development in Brisbane</h4>
             <p>
-              For those who need deep customisation, our developers build bespoke scripts (Deluge) to push Zoho's capabilities to the limit.
+              For complex needs, we go deeper. From custom workflows to API integrations and advanced scripting, we build exactly what your business needs—no shortcuts.
             </p>
           </div>
         </div>

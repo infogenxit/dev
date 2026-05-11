@@ -3,23 +3,33 @@ import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
-    title: "Discovery",
-    desc: "We learn how you work and where the friction is.",
+    title: "Discovery & Strategy",
+    desc: "We get clear on your processes, tools and objectives before we do anything.",
   },
   {
     number: "2",
-    title: "Strategy",
-    desc: "We map your processes to Zoho's capabilities.",
+    title: "Solution Design",
+    desc: "We build the right system for your business - not a one-size-fits-all.",
   },
   {
     number: "3",
-    title: "Implementation",
-    desc: "We configure, develop and integrate.",
+    title: "Build & Configuration",
+    desc: "We configure, test and build your system to ensure it's ready to go.",
   },
   {
     number: "4",
-    title: "Training & Support",
-    desc: "We ensure your team knows how to use it.",
+    title: "Data Migration",
+    desc: "We transfer your data safely and securely.",
+  },
+  {
+    number: "5",
+    title: "Training",
+    desc: "We train your team to use the system, and not just access the system.",
+  },
+  {
+    number: "6",
+    title: "Ongoing Support",
+    desc: "We continue to help you improve, adapt and optimise.",
   },
 ];
 const AppDevApproach = () => {

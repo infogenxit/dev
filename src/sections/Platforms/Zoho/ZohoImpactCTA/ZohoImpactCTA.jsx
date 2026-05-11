@@ -6,10 +6,12 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-            Ready to Make Zoho Actually <span>Work for You?</span>
+            Want to Get the Most Out of Zoho?
           </h2>
           <p>
-            Stop struggling with disjointed systems. Let's build a platform that helps you grow. Book a consultation with a Zoho expert in Brisbane today.
+            If you've invested in Zoho, you might as well get it right. As your Brisbane Zoho consultant, we understand your business - then we build the system.
+            <br /><br />
+            Call us on <strong>+61 403339424</strong> for a free consultation. No pressure. No sales talk. A simple discussion of options.
           </p>
           <div className="impact-buttons">
             <button className="primary-btn">Get Your FREE Consultation</button>
@@ -20,15 +22,16 @@ const AppDevImpactCTA = () => {
         </div>
         <div className="impact-cta-right">
           <div className="impact-cta-content">
+            <h3 style={{ color: "#ffffff", marginBottom: "20px" }}>Ready to Make Zoho Actually Work for You?</h3>
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Enterprise-ready solutions
+                <img src={Correct} alt="correct" /> Certified Zoho Partnerships
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Technology you can trust
+                <img src={Correct} alt="correct" /> 30+ Years Experience
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Outcomes you can measure
+                <img src={Correct} alt="correct" /> Real-World Outcomes
               </li>
             </ul>
             <p className="impact-note">
