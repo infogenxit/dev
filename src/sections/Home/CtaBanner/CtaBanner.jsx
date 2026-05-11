@@ -6,19 +6,15 @@ const CtaBanner = () => {
     <section className="cta-section">
       <div className="cta-container">
         <p className="cta-subtitle">
-          {/* Ready to Modernise the Way Your Business Runs? */}
-          Brisbane's Trusted IT Consulting Partner — From Strategy to Scale
+          Ready to Start? Let's Have an Honest Conversation.
         </p>
         <p className="cta-description">
-          {/* If you’re serious about reducing manual work, improving visibility, and building systems that scale, Infogenx is ready. */}
           We understand the initial meeting with a new IT solution provider can be daunting. That's why we make it easy: we want to know what you want to do, and we will give you an honest - and non-technical - analysis of how we can help - or if we are not the right partner.
+          <br /><br />
+          If you need expert IT consulting in Brisbane, we make it easy. We will ask you what you want to do, and then we will tell you, simply and without buzzwords, how we can help, and if we're the right team. 
           <br /><br />
           <strong>Call us now on +61 403339424.</strong>
         </p>
-        <h2 className="cta-title">
-          {/* Contact Us Today! */}
-          Contact Us Today!
-        </h2>
         <div className="cta-buttons">
           <button
             className="cta-primary"
