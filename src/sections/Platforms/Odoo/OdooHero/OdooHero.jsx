@@ -20,9 +20,9 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Odoo Consultant Brisbane in Brisbane to Scale your business</h1>
+          <h1>Expert Odoo Consultant Brisbane in Brisbane</h1>
           <p>
-            Odoo Implementation - Customization - Support. Your Unified Business Platform. Fragmented data, "app fatigue," and disconnected workflows are common hurdles for growing businesses. Odoo is a single solution to manage everything from CRM and accounts to manufacturing and HR. At Infogenx, we are your expert Odoo consultants in Brisbane.
+            A majority of businesses are unaware that the issue is not the tools, as they already possess an excessive amount of them. The problem is that nothing fits into place. Information is stored in various locations, workarounds are used, and the result is a system that consumes more time than it saves. At Infogenx, we assist companies in Brisbane by using Odoo to convert that mess into a streamlined, automated operation.
           </p>
           <div className="appdev-buttons">
             <button

@@ -9,7 +9,10 @@ const AppDevBusinessImpact = () => {
       <div className="business-impact-container">
         <div className="business-impact-header">
           <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Zoho That Performs</h2>
+          <h2>The Infogenx Difference: Strategy, Execution, and Long-Term Partnership</h2>
+          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+            We don't just 'install' Zoho. We understand your business. Our Brisbane consultants work closely with your team to ensure the system is adopted and adds value from day one. Our focus is on long-term scalability, not just a quick fix.
+          </p>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">

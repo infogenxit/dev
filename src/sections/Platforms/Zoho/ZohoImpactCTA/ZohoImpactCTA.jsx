@@ -6,11 +6,10 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-            Transform Your Ideas into <span>Impact</span>
+            Ready to Make Zoho Actually <span>Work for You?</span>
           </h2>
           <p>
-            Whether you’re building a new application, modernizing legacy
-            systems, or scaling digital operations, we’re here to help.
+            Stop struggling with disjointed systems. Let's build a platform that helps you grow. Book a consultation with a Zoho expert in Brisbane today.
           </p>
           <div className="impact-buttons">
             <button className="primary-btn">Get Your FREE Consultation</button>

@@ -9,10 +9,11 @@ const AppDevExpertise = () => {
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
         <div className="appdev-expertise-header">
-          <span className="section-label">Our Role as an Odoo Consultant</span>
-          <h2>
-            Beyond Setup, Focused on Results. We don’t treat Odoo as a product, but a component of a bigger system.
-          </h2>
+          <span className="section-label">The Real Value of Odoo in Brisbane</span>
+          <h2>Beyond Setup, Focused on Results</h2>
+          <p className="expertise-intro-text" style={{ maxWidth: "900px", margin: "20px auto 0", color: "#666" }}>
+            Odoo provides a single platform to deal with sales, operations, finances and internal operations. Rather than having to alternate between several tools, it all operates on the same dataset. However, the software’s performance is only as good as the configuration that is done. We ensure that our configuration is based on how you conduct business, rather than software programming.
+          </p>
         </div>
         <div className="appdev-expertise-grid">
           <div className="expertise-item">

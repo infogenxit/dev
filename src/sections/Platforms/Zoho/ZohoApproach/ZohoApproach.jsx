@@ -3,28 +3,23 @@ import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
-    title: "Discovery & Business Alignment",
-    desc: "We assess your workflows, goals, and challenges to design a Zoho strategy aligned with measurable outcomes.",
+    title: "Discovery",
+    desc: "We learn how you work and where the friction is.",
   },
   {
     number: "2",
-    title: "Solution Architecture & Planning",
-    desc: "Structured system design ensuring scalability, integration readiness, and long-term operational efficiency.",
+    title: "Strategy",
+    desc: "We map your processes to Zoho's capabilities.",
   },
   {
     number: "3",
-    title: "Implementation & Configuration",
-    desc: "Precise Zoho setup, customisation, and automation built around your teams and processes.",
+    title: "Implementation",
+    desc: "We configure, develop and integrate.",
   },
   {
     number: "4",
-    title: "Testing, Training & Adoption",
-    desc: "Comprehensive system testing and guided user training to drive smooth transition and confident adoption.",
-  },
-  {
-    number: "5",
-    title: "Ongoing Optimisation & Support",
-    desc: "Continuous refinement, performance monitoring, and strategic enhancements as your business evolves.",
+    title: "Training & Support",
+    desc: "We ensure your team knows how to use it.",
   },
 ];
 const AppDevApproach = () => {
@@ -33,7 +28,7 @@ const AppDevApproach = () => {
       <div className="approach-container">
         <div className="approach-header">
           <span className="app-section-label">How We Deliver</span>
-          <h2>Our Development Approach</h2>
+          <h2>How We Work: Our Process</h2>
         </div>
         <div className="approach-grid">
           {steps.map((step, index) => (

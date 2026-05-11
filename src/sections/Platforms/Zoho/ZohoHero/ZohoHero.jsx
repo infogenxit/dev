@@ -20,9 +20,9 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Your Trusted Zoho Consultant in Brisbane — Built Around How Your Business Actually Works</h1>
+          <h1>Expert Zoho Consultant Brisbane in Brisbane to Scale Your Business</h1>
           <p>
-            Certified Zoho Partner in Brisbane – Strategy, Accomplishments, Automation & Support. Every business has the prime need for managing sales, operations, reporting, and customer data across multiple systems. At Infogenx, we are your Zoho consultants in Brisbane, providing structured solutions that deliver tangible results by integrating technology with business processes.
+            Certified Zoho Partner in Brisbane - Strategy, Accomplishments, Automation & Support. Every business has the prime need for managing sales, operations, reporting and customer data across multiple systems. This, anyhow, results in inefficiencies, manual processes and a lack of clarity. At Infogenx, we are your Zoho consultants in Brisbane, and we provide structured solutions that deliver tangible results, integrating technology with business processes.
           </p>
           <div className="appdev-buttons">
             <button

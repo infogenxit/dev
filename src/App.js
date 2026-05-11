@@ -18,7 +18,7 @@ function App() {
       window.$zoho.salesiq = window.$zoho.salesiq || { ready: function () {} };
       const script = document.createElement("script");
       script.id = "zsiqscript";
-      script.src = `https://salesiq.zohopublic.com/widget?wc=${widgetCode}`;
+      script.src = `https://salesiq.zohopublic.in/widget?wc=${widgetCode}`;
       script.defer = true;
       document.body.appendChild(script);
     };
