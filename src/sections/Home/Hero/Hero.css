@@ -296,7 +296,13 @@ margin-top: 0;
 
 @media (max-width: 1024px) {
     .hero {
-        min-height: 110vh;
+        height: auto;
+        min-height: 100vh;
+        padding: 180px 0 100px;
+    }
+
+    .hero-container {
+        padding: 0 40px;
     }
 
     .hero-heading {
@@ -304,7 +310,8 @@ margin-top: 0;
     }
 
     .hero-subheading {
-        font-size: 34px;
+        font-size: 28px;
+        padding: 10px 40px;
     }
 
     .hero-description {
@@ -315,6 +322,11 @@ margin-top: 0;
     .primary-btn,
     .secondary-btn {
         height: 48px;
+    }
+
+    .hero-brands {
+        margin-top: 40px;
+        gap: 30px;
     }
 
     /* Floating icons resize & reposition */
@@ -344,7 +356,7 @@ margin-top: 0;
     .hero {
         height: auto; /* Allow section to grow with content */
         min-height: 100vh;
-        padding: 280px 0 60px; /* Adjusted padding */
+        padding: 420px 0 60px; /* Aggressive padding to clear header */
     }
 
     .hero-container {
