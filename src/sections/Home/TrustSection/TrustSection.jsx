@@ -5,27 +5,27 @@ const TrustSection = () => {
   const trustItems = [
     {
       title: "30+ Years Experience",
-      description: "Our leadership team brings over 30 years of deep IT industry experience, having navigated complex enterprise environments and legacy challenges."
+      description: "Over 30 years of IT industry experience in the leadership team, ensuring your projects are guided by seasoned veterans who have seen it all."
     },
     {
       title: "All-in-One Expertise",
-      description: "AI, cloud, automation, data, and custom software development expertise in Brisbane, all in one place. No need for multiple vendors."
+      description: "AI, cloud, automation, data and custom software development expertise in Brisbane, all in one place. No need for multiple vendors."
     },
     {
       title: "Cross-Industry Success",
-      description: "Successfully delivered projects for health, retail, manufacturing, financial, and professional services across Australia."
+      description: "Delivered projects successfully for health, retail, manufacturing, financial and professional services across Australia."
     },
     {
       title: "Truly Agile Process",
-      description: "A streamlined, agile delivery process without heavy project management and administration getting in the way of your results."
+      description: "We focus on delivery, with no heavy project management or administration getting in the way of your results."
     },
     {
-      title: "Local Accountability",
-      description: "A great team with local responsibility and direct access to senior consultants who understand the Brisbane business landscape."
+      title: "Local Responsibility",
+      description: "Great team with local responsibility and direct access to senior consultants who understand the Brisbane market."
     },
     {
-      title: "Honest Conversation",
-      description: "No charge for the first consultation, with no obligation or sales pitch—just an upfront, honest conversation about your needs."
+      title: "Honest Consultation",
+      description: "No charge for the first consultation. No obligation, no sales pitch—just an upfront, honest conversation about your needs."
     }
   ];
 
@@ -33,9 +33,9 @@ const TrustSection = () => {
     <section className="trust-section">
       <div className="trust-container">
         <div className="trust-header">
-          <span className="section-label">The Infogenx Difference</span>
+          <span className="section-label">What Sets Us Apart</span>
           <h2>Why Do Organisations Trust Infogenx for IT Consulting and Technology Delivery?</h2>
-          <p style={{ maxWidth: '800px', margin: '20px auto 0', color: '#666', lineHeight: '1.6' }}>
+          <p style={{ marginTop: "20px", color: "#666", maxWidth: "800px", margin: "20px auto 0" }}>
             There are lots of IT companies. What sets us apart is simple: we are practitioners, not just consultants. We have the experience of delivery to back up our recommendations, and we stick around until the job is done.
           </p>
         </div>
