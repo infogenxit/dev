@@ -3,6 +3,7 @@ import Expertise from "../../sections/Home/Expertise/Expertise";
 import ServiceHighlight from "../../sections/Home/ServiceHighlight/ServiceHighlight";
 import TechSlider from "../../sections/Home/TechSlider/TechSlider";
 import Testimonials from "../../sections/Home/Testimonials/Testimonials";
+import TrustSection from "../../sections/Home/TrustSection/TrustSection";
 import CtaBanner from "../../sections/Home/CtaBanner/CtaBanner";
 import SEO from "../../components/SEO/SEO";
 import ServiceFaq from "../../sections/Common/ServiceFaq/ServiceFaq";
@@ -35,6 +36,7 @@ const Home = () => {
       <ServiceHighlight />
       <TechSlider />
       <Testimonials />
+      <TrustSection />
       <CtaBanner />
       <ServiceFaq faqs={faqs} />
     </>
