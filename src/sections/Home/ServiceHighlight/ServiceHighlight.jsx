@@ -13,7 +13,7 @@ const ServiceHighlight = () => {
     {
       index: "01",
       title: "IT Consulting",
-      description: "It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business.",
+      description: "It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.",
       video: serviceVideo5, // Using a suitable video
       background: "#f0f4ff",
     },

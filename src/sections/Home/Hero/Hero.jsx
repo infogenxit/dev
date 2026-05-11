@@ -25,9 +25,9 @@ const Hero = () => {
         <h1 className="hero-heading">
           <span>IT Consulting in Brisbane: Future-Driven Technology Solutions by Infogenx</span>
         </h1>   
-        <h2 className="hero-subheading">
-          At Infogenx, we don’t just focus on technology; we focus on results. As a provider of IT consulting in Brisbane, we partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology. Whether it is a bespoke application, a cloud migration strategy or real-world AI-based automation or a data strategy that provides your management team with actionable insight, our team of seasoned engineers, architects and consultants has the experience to deliver it right, first time.
-        </h2>
+        <p className="hero-description">
+          It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach. At Infogenx, we don’t just focus on technology; we focus on results. We partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology. Whether it is a bespoke application, a cloud migration strategy or real-world AI-based automation or a data strategy that provides your management team with actionable insight, our team of seasoned engineers, architects and consultants has the experience to deliver it right, first time.
+        </p>
         <div
           style={{ textAlign: "center", fontWeight: "500", color: "#403f3f" }}
         >
