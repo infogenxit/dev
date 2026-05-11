@@ -51,6 +51,8 @@ const ServiceHighlight = () => {
   const sectionRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const isHovered = useRef(false);
+  const lastScrollTime = useRef(0);
+
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -75,6 +77,9 @@ const ServiceHighlight = () => {
 
     const handleWheel = (e) => {
       if (isHovered.current) {
+        const now = Date.now();
+        if (now - lastScrollTime.current < 1000) return; // Increased throttle to 1s for deliberate control
+
         const rect = section.getBoundingClientRect();
         // Only intercept if the section is currently in view/sticky
         if (rect.top <= 5 && rect.bottom >= window.innerHeight - 5) {
@@ -85,11 +90,13 @@ const ServiceHighlight = () => {
 
           if (e.deltaY > 0 && activeIndex < totalCards - 1) {
             e.preventDefault();
+            lastScrollTime.current = now;
             const nextIndex = activeIndex + 1;
             const targetScroll = section.offsetTop + (nextIndex * segmentHeight) + (segmentHeight / 2);
             window.scrollTo({ top: targetScroll, behavior: "smooth" });
           } else if (e.deltaY < 0 && activeIndex > 0) {
             e.preventDefault();
+            lastScrollTime.current = now;
             const prevIndex = activeIndex - 1;
             const targetScroll = section.offsetTop + (prevIndex * segmentHeight) + (segmentHeight / 2);
             window.scrollTo({ top: targetScroll, behavior: "smooth" });
@@ -97,6 +104,7 @@ const ServiceHighlight = () => {
         }
       }
     };
+
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleScroll);
