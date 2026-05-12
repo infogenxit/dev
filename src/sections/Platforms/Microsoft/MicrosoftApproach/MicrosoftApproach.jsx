@@ -3,28 +3,33 @@ import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
-    title: "Discovery",
-    desc: "We start by understanding your business and current systems to ensure we design the right solution.",
+    title: "Understand & Discover",
+    desc: "We start by understanding your business and current systems to ensure the right foundation.",
   },
   {
     number: "2",
-    title: "Solution Design",
-    desc: "We create a clear plan that fits your workflows, avoiding unnecessary features or complexity.",
+    title: "Workflow Design",
+    desc: "We design a solution that fits your specific workflows, avoiding unnecessary complexity.",
   },
   {
     number: "3",
-    title: "Build & Configure",
+    title: "Build & Configuration",
     desc: "Our team builds and configures your Microsoft environment properly from the ground up.",
   },
   {
     number: "4",
     title: "Integrate & Migrate",
-    desc: "We connect your systems and migrate your data carefully, ensuring data integrity throughout.",
+    desc: "We connect your systems and migrate your data carefully, ensuring total data integrity.",
   },
   {
     number: "5",
-    title: "Train & Support",
-    desc: "We train your team and stay on to provide ongoing support as your business evolves.",
+    title: "Team Training",
+    desc: "We train your team so they actually use the system to its full potential.",
+  },
+  {
+    number: "6",
+    title: "Evolving Support",
+    desc: "We stay on to support and improve your system over time as your business grows.",
   },
 ];
 const AppDevApproach = () => {
@@ -33,7 +38,7 @@ const AppDevApproach = () => {
       <div className="approach-container">
         <div className="approach-header">
           <span className="app-section-label">Our Process</span>
-          <h2>A Proven Approach to Microsoft Solutions</h2>
+          <h2>A Proven Approach to Microsoft Implementation and Optimisation</h2>
         </div>
         <div className="approach-grid">
           {steps.map((step, index) => (

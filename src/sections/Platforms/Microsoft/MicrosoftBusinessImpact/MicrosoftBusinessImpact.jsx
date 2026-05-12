@@ -8,51 +8,54 @@ const AppDevBusinessImpact = () => {
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
-          <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Real-World Microsoft Impact</h2>
+          <span className="section-label">Our Philosophy</span>
+          <h2>What Sets Infogenx Apart in Microsoft Consulting?</h2>
+          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+            There’s no shortage of companies offering Microsoft solutions. What brings the difference is how dedicatedly we work.
+          </p>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business1} alt="" />
+              <img src={Business1} alt="Solutions" />
             </div>
             <div className="impact-content">
-              <h4>Active Microsoft Partner</h4>
+              <h4>Real Solutions</h4>
               <p>
-                An active Brisbane-based Microsoft partner dedicated to helping you integrate and optimise your business systems.
+                We look for solutions, not just workarounds. If there's a better way to do it, we'll find it.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business2} alt="" />
+              <img src={Business2} alt="Automation" />
             </div>
             <div className="impact-content">
-              <h4>30+ Years Experience</h4>
+              <h4>Automation First</h4>
               <p>
-                Our team brings over three decades of collective experience in Dynamics 365, Power BI, and the broader Microsoft ecosystem.
+                We find ways to automate and streamline things, reducing manual work and human error.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business3} alt="" />
+              <img src={Business3} alt="Client-centric" />
             </div>
             <div className="impact-content">
-              <h4>Outcome-Driven Setup</h4>
+              <h4>Needs-Driven</h4>
               <p>
-                We look for real solutions, not just workarounds, ensuring technology complements your processes rather than getting in the way.
+                We work to your needs, not force you to work to ours. Your business processes lead the technology.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business4} alt="" />
+              <img src={Business4} alt="Support" />
             </div>
             <div className="impact-content">
-              <h4>Long-Term Support</h4>
+              <h4>Evolving Support</h4>
               <p>
-                We continue to support you beyond the initial setup, providing improvements and adjustments as your business needs evolve.
+                And we continue to support you beyond the initial installation to make improvements and adjustments.
               </p>
             </div>
           </div>

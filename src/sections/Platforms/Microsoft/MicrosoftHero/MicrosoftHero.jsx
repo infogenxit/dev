@@ -20,9 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Microsoft Dynamics 365 Brisbane in Brisbane to Scale Your Business</h1>
+          <h1>Trusted Microsoft Partner in Brisbane</h1>
           <p>
-            Microsoft Dynamics 365 — Power BI — Microsoft Solutions. Whether it is a CRM implementation using Microsoft Dynamics 365, a custom-built Azure Logic App for data migration, or a Power BI dashboard to give your management team real-time visibility, we provide a structured approach to Microsoft technology in Brisbane. As a results-driven Microsoft partner in Brisbane, we help local, mid-market businesses leverage the full power of the Microsoft ecosystem to build integrated, secure and high-performance technical ecosystems.
+            Microsoft Dynamics 365 - Power BI - Microsoft Solutions. In today's business world, multiple systems are functioning with scattered data and ineffective processes. This simply affects the visibility and decision-making skills of a business. Infogenx is an active Microsoft partner in Brisbane, working to integrate systems and optimise processes through structured, outcome-driven solutions.
+            <br /><br />
+            With 30+ years of collective experience, our team implements and boosts Microsoft Dynamics 365, Power BI and other Microsoft solutions. This results in proper alignment of technology to your business processes. We dedicatedly build flexible, integrated systems that help reduce manual work while improving data integrity and enabling business performance.
           </p>
           <div className="appdev-buttons">
             <button
