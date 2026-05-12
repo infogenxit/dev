@@ -183,15 +183,15 @@
 @media (max-width: 768px) {
 
     .header {
-        top: 0;
+        top: 0 !important;
     }
     
-    .hero-container, .appdev-container, .WebDev-hero-container {
-        padding-top: 180px !important;
+    .hero-container, .appdev-container, .WebDev-hero-container, .breadcrumbs-wrapper {
+        padding-top: 220px !important;
     }
     
     .hero-heading, .appdev-left h1, .WebDev-hero-heading {
-        margin-top: 30px !important;
+        margin-top: 40px !important;
     }
     
 
