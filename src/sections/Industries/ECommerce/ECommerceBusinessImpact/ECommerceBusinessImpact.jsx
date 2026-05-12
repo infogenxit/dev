@@ -8,51 +8,51 @@ const AppDevBusinessImpact = () => {
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
-          <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Real-World Sales Impact</h2>
+          <span className="section-label">Our Impact</span>
+          <h2>Why is Infogenx Trusted by Modern Enterprises?</h2>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business1} alt="" />
+              <img src={Business1} alt="Direct Support" />
             </div>
             <div className="impact-content">
-              <h4>Conversion-First Design</h4>
+              <h4>Direct Developer Access</h4>
               <p>
-                We design for sales first, ensuring every pixel supports the user journey and drives your customers toward checkout.
+                Get a direct line to the people actually building your store, not an account manager playing telephone with a dev team.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business2} alt="" />
+              <img src={Business2} alt="Local Experts" />
             </div>
             <div className="impact-content">
               <h4>Australian Market Experts</h4>
               <p>
-                We understand local payment preferences, shipping expectations, and consumer behaviour in Brisbane and beyond.
+                We understand local payment preferences, shipping expectations, and consumer behaviour—which matters for conversions.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business3} alt="" />
+              <img src={Business3} alt="No Shortcuts" />
             </div>
             <div className="impact-content">
-              <h4>Data-Driven Decisions</h4>
+              <h4>No Shortcuts, No Fluff</h4>
               <p>
-                We set up advanced analytics so you can track abandoned carts, conversion rates, and performance based on real numbers.
+                We build online stores around how your customers actually shop, not generic templates that look the same as everyone else.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business4} alt="" />
+              <img src={Business4} alt="Support" />
             </div>
             <div className="impact-content">
-              <h4>Long-Term Support</h4>
+              <h4>We Don't Disappear</h4>
               <p>
-                We stay involved after launch, providing ongoing maintenance so your store remains secure and optimized as you grow.
+                Most agencies vanish after launch. We stay involved, providing the maintenance and monitoring your growth requires.
               </p>
             </div>
           </div>

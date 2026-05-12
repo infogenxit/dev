@@ -8,10 +8,10 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-            Get a Free <span>Consultation</span>
+            Ready to build something worth buying from?
           </h2>
           <p>
-            Ready to build something worth buying from? Get in touch with our Brisbane e-commerce team for a straight answer on what your store needs.
+            Get in touch with the Infogenx Brisbane E-Commerce Development team for a free consultation. Call us now on <strong>+61 403339424</strong> for a straight answer on what your store actually needs.
           </p>
           <div className="impact-buttons">
             <button

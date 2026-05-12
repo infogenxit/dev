@@ -3,28 +3,28 @@ import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
     number: "1",
-    title: "Free Consultation",
-    desc: "We look at your current setup and understand exactly what's not working before suggesting a plan.",
+    title: "Discovery Conversation",
+    desc: "We start with an honest conversation about your business goals and platform needs before giving you a realistic quote.",
   },
   {
     number: "2",
-    title: "Custom Solution Design",
-    desc: "A clear plan — what we're building, which platform we're using, and what the timeline looks like.",
+    title: "Custom Strategy & Design",
+    desc: "No $29 themes. We design for conversions first, ensuring your store looks like your brand and actually sells.",
   },
   {
     number: "3",
-    title: "Build and Integrate",
-    desc: "We build your store and connect it cleanly to your payment gateways, logistics, and internal systems.",
+    title: "Build and Clean Integration",
+    desc: "We build and connect everything—payments, logistics, and SEO—cleanly to your existing business environment.",
   },
   {
     number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing of checkout flows, mobile responsiveness, and site speed before launch.",
+    title: "Mobile & Speed Optimisation",
+    desc: "Since 70% of shopping is mobile, we ensure your store works flawlessly on every screen with baked-in technical SEO.",
   },
   {
     number: "5",
     title: "Launch and Ongoing Support",
-    desc: "We stay on after go-live for maintenance, updates, and performance monitoring as you scale.",
+    desc: "Launch day is just the beginning. We don't disappear; we stay involved with maintenance and performance monitoring.",
   },
 ];
 const AppDevApproach = () => {

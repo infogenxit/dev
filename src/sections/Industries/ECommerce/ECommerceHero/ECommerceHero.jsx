@@ -20,9 +20,9 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Shopify Agency Brisbane in Brisbane to Scale your business</h1>
+          <h1>Brisbane E-Commerce Development: Build Stores That Actually Sell</h1>
           <p>
-            Shopify Store Development - Shopify App Development - E-commerce Strategy. Every business needs to reach more customers and drive more sales. Fragmented data, complex checkouts, and ineffective marketing often lead to missed opportunities. Infogenx is your partner for Shopify in Brisbane, delivering customized eCommerce solutions that generate results.
+            Brisbane’s retail scene has changed fast. Customers expect quick loading, easy checkout, and zero friction. At Infogenx, we build online stores around how your customers actually shop—no generic templates, no shortcuts, just a setup that works properly and converts better.
           </p>
           <div className="appdev-buttons">
             <button
