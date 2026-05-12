@@ -20,10 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane Logistics It Solutions</h1>
+          <h1>Brisbane Logistics IT Solutions | Infogenx</h1>
           <p>
-            
-            Optimizing supply chains, fleet management, and logistics operations with real-time tracking and intelligent automation solutions.
+            <strong>Late Deliveries and Visibility Gaps Are Costing Your Business More Than You Think</strong>
+            <br /><br />
+            A missed delivery window or a shipment nobody can locate are problems that lose clients. At Infogenx, we build Brisbane logistics IT solutions that actually fix what's breaking down behind the scenes.
           </p>
           <div className="appdev-buttons">
             <button

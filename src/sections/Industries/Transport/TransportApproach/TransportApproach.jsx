@@ -9,7 +9,7 @@ const steps = [
   {
     number: "2",
     title: "Custom Solution Design",
-    desc: "We map out a clear plan. What needs to be fixed, how we’ll do it, and how long it’ll take — all agreed before we start.",
+    desc: "We map out a clear plan. What needs to be fixed, how we’ll do it, how long it’ll take — all agreed before we start.",
   },
   {
     number: "3",
@@ -18,13 +18,8 @@ const steps = [
   },
   {
     number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing of tracking, routes, and data flow ensures reliability before the system goes live.",
-  },
-  {
-    number: "5",
     title: "Go-Live and Ongoing Support",
-    desc: "Once live, we stay involved — fixing issues, improving things, and helping you scale as your operations grow.",
+    desc: "Once it’s live, we don’t disappear. We stay involved — fixing issues, improving things, and helping you scale as your operations grow with our Brisbane logistics IT solutions.",
   },
 ];
 const AppDevApproach = () => {

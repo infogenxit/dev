@@ -8,10 +8,10 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-            Get a Free <span>Consultation</span>
+            Talk to Infogenx Team Today
           </h2>
           <p>
-            If your logistics operation is dealing with visibility gaps or delivery delays, let’s sort it out. Get a straight answer on what actually needs fixing.
+            If your logistics operation is dealing with visibility gaps, delivery delays, or systems that don’t talk to each other, let’s sort it out. Contact Infogenx on <strong>+61 403339424</strong> for a free consultation and a straight answer on what actually needs fixing.
           </p>
           <div className="impact-buttons">
             <button
