@@ -8,11 +8,12 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-           Ready to Connect <span>What Matters?</span>
+            Not Sure If You Need API Integration in Brisbane?
           </h2>
           <p>
-            Whether you are integrating platforms, automating data flow, or eliminating system silos,
-            Infogenx helps you build connected operations that scale.
+            We’ll review your current setup and show you where integration can improve performance. Whether you are integrating platforms, automating data flow, or eliminating system silos, Infogenx helps you build connected operations that scale.
+            <br /><br />
+            Call us now on <strong>+61 403339424</strong> for a free consultation.
           </p>
           <div className="impact-buttons">
             <button

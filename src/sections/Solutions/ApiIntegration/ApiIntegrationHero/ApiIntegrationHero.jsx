@@ -20,9 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Api Integration Brisbane</h1>
+          <h1>API Integration in Brisbane That Actually Connects Your Business</h1>
           <p>
-            Connect platforms, streamline data movement, and enable smarter operations through scalable, API-led integration.
+            Most businesses don’t struggle because they lack systems — they struggle because those systems don’t talk to each other properly. Data gets stuck, workflows break, and teams end up doing manual work just to keep things moving.
+            <br /><br />
+            At Infogenx, our approach to API integration in Brisbane is built around making your systems work as one connected environment. We don’t bolt integrations on top. We design them to fit into how your operations already run.
           </p>
           <div className="appdev-buttons">
             <button

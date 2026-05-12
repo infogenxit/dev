@@ -14,10 +14,10 @@ import { PATHS } from "../../../route/paths";
 const ApiIntegration = () => {
   const apiContent = [
     {
-      heading: "Systems Integration Without Breaking What Already Works",
+      heading: "Systems Integration in Brisbane Without Breaking What Already Works",
       content: [
         "Every business has a mix of tools — CRM, ERP, finance platforms, cloud apps, and internal systems. The issue isn’t the tools themselves. It’s the gaps between them.",
-        "With our systems integration services, we close those gaps properly. We don’t replace your systems unless it’s necessary. We integrate what you already use and make it work together properly."
+        "With our systems integration in Brisbane, we close those gaps properly. We don’t replace your systems unless it’s necessary. We integrate what you already use and make it work together properly."
       ],
       list: [
         { label: "Real-Time Exchange", text: "Systems exchange data in real time." },
@@ -43,7 +43,7 @@ const ApiIntegration = () => {
       heading: "Automating Data Flow Across Platforms",
       content: [
         "Disconnected systems slow everything down. Teams spend time moving data instead of using it.",
-        "With our API integration, we automate how data moves across your systems. The goal is not just integration — it’s operational clarity. When data flows properly, your business runs cleaner and faster."
+        "With our API integration in Brisbane, we automate how data moves across your systems. The goal is not just integration — it’s operational clarity. When data flows properly, your business runs cleaner and faster."
       ],
       list: [
         { label: "Automatic Updates", text: "Information updates automatically between platforms." },
@@ -58,27 +58,41 @@ const ApiIntegration = () => {
         "We don’t start with technology. We start with how your business actually operates. This ensures that the integration isn’t just technically correct — it’s practical and usable for your team."
       ],
       list: [
-        { label: "Internal Workflows", text: "Every integration is designed around your internal workflows." },
-        { label: "Day-to-day Use", text: "We look at how your teams use systems day-to-day." },
-        { label: "Inefficiencies", text: "We identify where delays or inefficiencies currently exist." },
-        { label: "Automation Focus", text: "We pinpoint what needs to be automated or connected." }
+        { label: "Internal Workflows", text: "Designed around your actual internal workflows." },
+        { label: "Day-to-day Use", text: "Focused on how your teams use systems day-to-day." },
+        { label: "Efficiency Mapping", text: "Identifying where delays or inefficiencies currently exist." },
+        { label: "Practicality First", text: "Pinpointing exactly what needs to be automated or connected." }
+      ]
+    },
+    {
+      heading: "Supporting Modern, Connected Business Systems",
+      content: [
+        "As part of broader digital transformation, our integration work connects with other capabilities including application development, automation, and data systems.",
+        "Infogenx delivers end-to-end solutions that connect people, processes, and data across the organisation. This means your integration isn’t isolated — it becomes part of a larger, scalable system."
+      ]
+    },
+    {
+      heading: "Reliable Integration Without Complexity",
+      content: [
+        "Many integration projects fail because they become overly complex or disconnected from real business needs. Our approach avoids that by focusing on clear structure and maintainability.",
+        "We keep the architecture clean so your systems remain manageable as your business grows. We focus on stable and reliable performance for the long term."
       ]
     }
   ];
 
   const breadcrumbItems = [
     { name: "Solutions", path: PATHS.home },
-    { name: "API Integration", path: PATHS.apiIntegration }
+    { name: "API Integration Brisbane", path: PATHS.apiIntegration }
   ];
 
   const faqs = [
     {
-      question: "What does API integration actually solve for businesses?",
+      question: "What does API integration in Brisbane actually solve for businesses?",
       answer: "It connects your systems so they can exchange data automatically, removing manual work and reducing errors caused by disconnected platforms."
     },
     {
       question: "How is systems integration different from API integration?",
-      answer: "API integration focuses on connecting applications using APIs, while systems integration covers the broader process of making all business systems work together as one."
+      answer: "API integration focuses on connecting applications using APIs, while systems integration in Brisbane covers the broader process of making all business systems work together as one."
     },
     {
       question: "Will integration require replacing our current systems?",
