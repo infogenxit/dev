@@ -40,9 +40,9 @@ const Finance = () => {
   return (
     <>
       <SEO
-        title="Brisbane Finance IT Solutions | Process Automation | Infogenx"
-        description="Infogenx provides expert Brisbane finance IT solutions, from integrated financial systems and process automation to secure data handling and ASIC compliance reporting."
-        keywords="finance IT solutions Brisbane, fintech automation Australia, secure financial systems Brisbane, ASIC compliance reporting, financial process automation, Infogenx"
+        title="Brisbane Finance It Solutions | Trusted Experts"
+        description="Unlock business growth with expert Brisbane Finance It Solutions in Brisbane. We specialize in Custom Software and innovative digital strategies."
+        keywords="finance IT solutions Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

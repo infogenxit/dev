@@ -93,8 +93,8 @@ const RetailPos = () => {
   return (
     <>
       <SEO
-        title="Retail POS in Brisbane, Australia | Infogenx"
-        description="Modern Retail POS System for Brisbane stores. Fast transactions, inventory sync, customer loyalty & analytics – custom-built by InfogenX Australia. Transform your retail operations – demo available."
+        title="Retail Pos System Brisbane | Trusted Experts"
+        description="Experience the best Retail Pos System Brisbane has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
         keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
       />
       {/* <Helmet>
@@ -142,7 +142,7 @@ const RetailPos = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Retail POS Transformed</h1>
+            <h1>Expert Retail Pos System Brisbane in Brisbane to Scale Your Business</h1>
 
             <p>
               Retail POS management system for Australian stores — fast

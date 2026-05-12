@@ -40,9 +40,9 @@ const Manufacturing = () => {
   return (
     <>
       <SEO
-        title="Brisbane Manufacturing IT Solutions | Factory Automation | Infogenx"
-        description="Infogenx provides expert Brisbane manufacturing IT solutions, from ERP and mobility tools to AI quality inspection and IoT smart factory systems."
-        keywords="manufacturing IT solutions Brisbane, factory automation Brisbane, manufacturing ERP Australia, smart factory IoT, manufacturing mobility tools, Infogenx"
+        title="Brisbane Manufacturing It Solutions | Trusted Experts"
+        description="Experience the best Brisbane Manufacturing It Solutions has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
+        keywords="manufacturing IT solutions Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

@@ -41,8 +41,8 @@ const ZohoSolution = () => {
   return (
     <>
       <SEO 
-        title="Your Trusted Zoho Consultant Brisbane | Certified Partner Brisbane"
-        description="Certified Zoho Partner in Brisbane providing structured Zoho implementation, workflow automation, and optimisation. With 30+ years experience, we build systems that perform."
+        title="Zoho Consultant Brisbane | Trusted Experts & Agency"
+        description="Are you looking for professional Zoho Consultant Brisbane? Our Brisbane specialists provide tailored Zoho Analytics Brisbane solutions to help your business thrive."
         keywords="zoho consultant brisbane, zoho crm brisbane, zoho one brisbane, zoho analytics brisbane, zoho automation brisbane, zoho flow brisbane, zoho creator brisbane, zoho development brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />

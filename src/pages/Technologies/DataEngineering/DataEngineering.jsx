@@ -15,8 +15,8 @@ const DataEngineering = () => {
   return (
     <>
       <SEO
-        title="Data Engineering & Pipeline Solutions | Infogenx"
-        description="Build robust data pipelines and scalable analytics infrastructure. Infogenx specializes in automated data ingestions, cleansing, and consolidation for decision-grade intelligence."
+        title="Data Engineering Brisbane | Trusted Experts"
+        description="Experience the best Data Engineering Brisbane has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
         keywords="data engineering, data pipelines, data warehousing, analytics infrastructure, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

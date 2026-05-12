@@ -40,9 +40,9 @@ const Retail = () => {
   return (
     <>
       <SEO
-        title="Brisbane Retail IT Solutions | Inventory & POS Systems | Infogenx"
-        description="Infogenx provides expert Brisbane retail IT solutions including omnichannel integration, inventory management, and secure POS systems for stores of all sizes."
-        keywords="retail IT solutions Brisbane, retail technology Australia, inventory management Brisbane, POS integration Brisbane, ecommerce retail solutions, Infogenx"
+        title="Brisbane Retail It Solutions | Trusted Experts"
+        description="Scale your company with leading Brisbane Retail It Solutions services in Brisbane. Our team delivers high-quality Custom Software. Get started today!"
+        keywords="retail IT solutions Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

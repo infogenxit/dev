@@ -93,8 +93,8 @@ const OdooErp = () => {
   return (
     <>
       <SEO
-        title="ODOO ERP in Brisbane, Australia | Infogenx"
-        description="Certified ODOO ERP partners in Brisbane – InfogenX delivers tailored implementation, customisation & support for Australian businesses. Boost efficiency with open-source ERP. Request a quote today."
+        title="Odoo Consultant Brisbane | Trusted Experts & Agency"
+        description="Unlock business growth with expert Odoo Consultant Brisbane in Brisbane. We specialize in Odoo Brisbane and innovative digital strategies. Book a consult now."
         keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
       />
       {/* <Helmet>
@@ -142,7 +142,7 @@ const OdooErp = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Odoo ERP Mastered</h1>
+            <h1>Expert Odoo Consultant Brisbane in Brisbane to Scale Your Business</h1>
 
             <p>
               Odoo ERP management system for Australian businesses — integrated

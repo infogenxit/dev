@@ -15,8 +15,8 @@ const CloudComputing = () => {
   return (
     <>
       <SEO
-        title="Cloud Computing & Infrastructure Solutions | Infogenx"
-        description="Scale your business with secure cloud migrations, managed infrastructure, and serverless architectures. Infogenx provides high-performance cloud solutions tailored for scalability."
+        title="Cloud Computing Brisbane | Trusted Experts & Agency"
+        description="Scale your company with leading Cloud Computing Brisbane services in Brisbane. Our team delivers high-quality Brisbane Cloud Computing. Get started today!"
         keywords="cloud computing, cloud migration, AWS, Azure, cloud infrastructure, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Your Trusted Zoho Consultant in Brisbane</h1>
+          <h1>Expert Zoho Consultant Brisbane in Brisbane to Scale Your Business</h1>
           <p>
             Certified Zoho Partner in Brisbane - Strategy, Accomplishments, Automation & Support. Every business has the prime need for managing sales, operations, reporting and customer data across multiple systems. This, anyhow, results in inefficiencies, manual processes and a lack of clarity. At Infogenx, we are your Zoho consultants in Brisbane, and we provide structured solutions that deliver tangible results, integrating technology with business processes. With over 30 years of collective experience, we focus on Zoho implementation, workflow automation, and optimisation to create efficient, scalable and data-driven business processes. We're not just resellers; we are experienced consultants who blend technical and business insight to develop systems that perform in the real world.
           </p>

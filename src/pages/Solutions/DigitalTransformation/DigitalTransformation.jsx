@@ -99,8 +99,8 @@ const DigitalTransformation = () => {
   return (
     <>
       <SEO
-        title="Digital Transformation Consulting | Strategic Enterprise Modernization"
-        description="Infogenx helps organizations modernize systems, optimize operations, and scale securely through outcome-driven digital transformation consulting."
+        title="Digital Transformation Brisbane | Trusted Experts"
+        description="Unlock business growth with expert Digital Transformation Brisbane in Brisbane. We specialize in Custom Software and innovative digital strategies."
         keywords="digital transformation consulting, business process transformation, enterprise modernization, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

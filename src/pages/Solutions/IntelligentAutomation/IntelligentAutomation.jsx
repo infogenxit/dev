@@ -79,8 +79,8 @@ const IntelligentAutomation = () => {
   return (
     <>
       <SEO
-        title="Intelligent Automation & AI Workflows | Enterprise Efficiency | Infogenx"
-        description="Transform your business efficiency with AI-driven intelligent automation. We orchestrate complex workflows across Microsoft, Zoho, and Odoo ecosystems for maximum performance."
+        title="Brisbane Intelligent Process Automation | Experts"
+        description="Experience the best Brisbane Intelligent Process Automation has to offer. Our expert team focuses on Robotic Process Automation Brisbane to drive results. Reach out now!"
         keywords="intelligent automation, AI workflow automation, business process automation, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

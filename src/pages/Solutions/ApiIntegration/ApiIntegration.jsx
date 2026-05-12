@@ -128,8 +128,8 @@ const ApiIntegration = () => {
   return (
     <>
       <SEO
-        title="API Integration & Systems Connectivity Experts | Infogenx"
-        description="Infogenx provides seamless API integration and systems connectivity solutions to connect your applications, automate workflows, and improve operational efficiency."
+        title="Ai Automation Services Brisbane | Trusted Experts"
+        description="Experience the best Ai Automation Services Brisbane has to offer. Our expert team focuses on Business Process Automation Brisbane to drive results. Reach out now!"
         keywords="API integration, Systems Integration, Software connectivity, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

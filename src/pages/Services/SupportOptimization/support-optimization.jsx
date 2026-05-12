@@ -93,8 +93,8 @@ const SupportOptimization = () => {
   return (
     <>
       <SEO
-        title="IT Support & Continuous Optimization Services | Infogenx"
-        description="Infogenx helps businesses resolve issues faster and continuously optimise systems through structured support and performance reporting."
+        title="Support Optimization Brisbane | Trusted Experts"
+        description="Experience the best Support Optimization Brisbane has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
         keywords="IT support, system optimisation, performance monitoring, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

@@ -96,8 +96,8 @@ const ModernApplication = () => {
   return (
     <>
       <SEO
-        title="Modern Application Development & Engineering | Scalable Custom Software | Infogenx"
-        description="Infogenx designs and builds secure, scalable, cloud-native applications tailored for performance. We help businesses modernize legacy systems and scale through high-impact engineering."
+        title="Application Development Brisbane | Trusted Experts"
+        description="Experience the best Application Development Brisbane has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
         keywords="modern application development, cloud-native applications, custom software engineering, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

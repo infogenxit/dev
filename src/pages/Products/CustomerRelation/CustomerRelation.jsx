@@ -93,8 +93,8 @@ const CustomerRelation = () => {
   return (
     <>
       <SEO
-        title="Customer Relationship Management in Brisbane, Australia | Infogenx"
-        description="Custom Customer Relationship Management (CRM) software in Brisbane. Lead tracking, sales pipeline, automation & reporting by InfogenX for Australian enterprises. Start improving relationships today."
+        title="Crm Consultant Brisbane | Trusted Experts & Agency"
+        description="Unlock business growth with expert Crm Consultant Brisbane in Brisbane. We specialize in Crm Brisbane and innovative digital strategies. Book a consult now."
         keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
       />
       {/* <Helmet>
@@ -144,7 +144,7 @@ const CustomerRelation = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>CRM Relationships Strengthened</h1>
+            <h1>Expert Crm Consultant Brisbane in Brisbane to Scale Your Business</h1>
 
             <p>
               Customer relationship management system for Australian sales teams

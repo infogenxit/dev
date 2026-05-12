@@ -15,8 +15,8 @@ const AI = () => {
   return (
     <>
       <SEO
-        title="Artificial Intelligence & Machine Learning Solutions | Infogenx"
-        description="Leverage the power of AI and Machine Learning to transform your business. Infogenx builds intelligent systems that automate decisions and drive outcome-driven growth."
+        title="Ai Consulting Brisbane | Trusted Experts & Agency"
+        description="Scale your company with leading Ai Consulting Brisbane services in Brisbane. Our team delivers high-quality Business Automation Brisbane. Get started today!"
         keywords="artificial intelligence, machine learning, AI solutions, cognitive computing, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

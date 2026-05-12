@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Shopify Agency in Brisbane: Built for Scalable eCommerce</h1>
+          <h1>Expert Shopify Agency Brisbane in Brisbane to Scale Your Business</h1>
           <p>
             Shopify Expert | Shopify Development | Automation & Integration. The most common challenges encountered by most eCommerce businesses are not in the launching, but in scaling operations effectively as the number of orders increases. Detached systems, manual processes, and fragmented data among inventory, fulfilment, and reporting processes tend to hamper performance and visibility.
             <br /><br />

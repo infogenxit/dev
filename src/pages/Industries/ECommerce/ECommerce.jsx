@@ -40,9 +40,9 @@ const ECommerce = () => {
   return (
     <>
       <SEO
-        title="Brisbane E-Commerce Development | Shopify & WooCommerce Experts | Infogenx"
-        description="Build high-converting online stores with Infogenx. We specialize in Brisbane e-commerce development, from Shopify and WooCommerce to custom payment and logistics integrations."
-        keywords="ecommerce development Brisbane, Shopify experts Brisbane, WooCommerce development Australia, online store builder Brisbane, payment gateway integration, Infogenx"
+        title="Brisbane E-Commerce Development | Trusted Experts"
+        description="Experience the best Brisbane E-Commerce Development has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
+        keywords="ecommerce development Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

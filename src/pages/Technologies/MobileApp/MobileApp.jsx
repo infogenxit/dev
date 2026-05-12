@@ -15,8 +15,8 @@ const MobileApp = () => {
   return (
     <>
       <SEO
-        title="Mobile App Development Solutions | iOS & Android Experts | Infogenx"
-        description="Build high-performance, secure mobile applications for iOS and Android. Infogenx specializes in cross-platform and native development tailored for global business scalability."
+        title="Mobile App Development Brisbane | Trusted Experts"
+        description="Unlock business growth with expert Mobile App Development Brisbane in Brisbane. We specialize in Custom Software and innovative digital strategies."
         keywords="mobile app development, iOS apps, Android apps, React Native, Flutter, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

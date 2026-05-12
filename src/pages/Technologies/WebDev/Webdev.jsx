@@ -15,8 +15,8 @@ const Webdev = () => {
   return (
     <>
       <SEO
-        title="Web Development Services | High-Performance Custom Websites | Infogenx"
-        description="Infogenx provides expert web development services to build fast, secure, and scalable websites. We focus on modern technologies and user-centric design for measurable business impact."
+        title="Web Development Brisbane | Trusted Experts & Agency"
+        description="Scale your company with leading Web Development Brisbane services in Brisbane. Our team delivers high-quality Web Development Brisbane. Get started today!"
         keywords="web development, custom websites, React development, full-stack engineering, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

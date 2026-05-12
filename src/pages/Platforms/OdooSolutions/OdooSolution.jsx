@@ -40,8 +40,8 @@ const OdooSolution = () => {
   return (
     <>
       <SEO
-        title="Expert Odoo Consultant Brisbane | Scalable ERP & Automation"
-        description="Leading Odoo consultant in Brisbane helping companies integrate operations into a single scalable system. Specialized in Odoo ERP, automation, and custom business systems."
+        title="Odoo Consultant Brisbane | Trusted Experts & Agency"
+        description="Unlock business growth with expert Odoo Consultant Brisbane in Brisbane. We specialize in Odoo Brisbane and innovative digital strategies. Book a consult now."
         keywords="odoo brisbane, odoo automation brisbane, odoo consultant brisbane, odoo customization brisbane, odoo developer brisbane, odoo erp brisbane, odoo implementation brisbane, odoo integration brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />

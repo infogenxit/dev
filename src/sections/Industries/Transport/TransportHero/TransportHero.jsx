@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Brisbane Logistics IT Solutions | Infogenx</h1>
+          <h1>Expert Brisbane Logistics It Solutions in Brisbane to Scale Your Business</h1>
           <p>
             <strong>Late Deliveries and Visibility Gaps Are Costing Your Business More Than You Think</strong>
             <br /><br />

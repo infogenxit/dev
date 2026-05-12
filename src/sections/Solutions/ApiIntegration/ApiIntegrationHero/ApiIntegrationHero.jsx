@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>API Integration in Brisbane That Actually Connects Your Business</h1>
+          <h1>Expert Ai Automation Services Brisbane in Brisbane to Scale Your Business</h1>
           <p>
             Most businesses don’t struggle because they lack systems — they struggle because those systems don’t talk to each other properly. Data gets stuck, workflows break, and teams end up doing manual work just to keep things moving.
             <br /><br />

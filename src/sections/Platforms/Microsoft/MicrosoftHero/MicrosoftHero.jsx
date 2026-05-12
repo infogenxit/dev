@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Trusted Microsoft Partner in Brisbane</h1>
+          <h1>Expert Microsoft Dynamics 365 Brisbane in Brisbane to Scale Your Business</h1>
           <p>
             Microsoft Dynamics 365 - Power BI - Microsoft Solutions. In today's business world, multiple systems are functioning with scattered data and ineffective processes. This simply affects the visibility and decision-making skills of a business. Infogenx is an active Microsoft partner in Brisbane, working to integrate systems and optimise processes through structured, outcome-driven solutions.
             <br /><br />

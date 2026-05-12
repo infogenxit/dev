@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Build Applications That Scale</h1>
+          <h1>Expert Application Development Brisbane in Brisbane to Scale Your Business</h1>
           <p>
             Secure, AI-enabled applications designed to improve performance,
             streamline workflows, and support long-term digital growth.

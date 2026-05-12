@@ -129,8 +129,8 @@ const IgxStock = () => {
   return (
     <>
       <SEO
-        title="Stock Management System in Brisbane, Australia | Infogenx"
-        description="Streamline inventory with InfogenX's custom Stock Management System in Brisbane. Real-time tracking, automated reordering, and seamless integration for Australian businesses. Request a free demo"
+        title="Stock Management System Brisbane | Trusted Experts"
+        description="Scale your company with leading Stock Management System Brisbane services in Brisbane. Our team delivers high-quality Custom Software. Get started today!"
         keywords="automation software, custom software development, ERP software, ODOO ERP, stock management system, inventory management software, business automation solutions, software products Australia, Brisbane software development"
       />
       {/* <Helmet>
@@ -180,7 +180,7 @@ const IgxStock = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Inventory Controlled Perfectly</h1>
+            <h1>Expert Stock Management System Brisbane in Brisbane to Scale Your Business</h1>
 
             <p>
               Inventory inefficiencies slow operations, reduce fulfilment speed,

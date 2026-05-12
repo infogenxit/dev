@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Brisbane Manufacturing IT Solutions: Infogenx</h1>
+          <h1>Expert Brisbane Manufacturing It Solutions in Brisbane to Scale Your Business</h1>
           <p>
             <strong>The Right Technology Stops Costing You and Starts Working For You</strong>
             <br /><br />

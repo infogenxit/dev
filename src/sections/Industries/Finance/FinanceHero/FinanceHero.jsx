@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Brisbane Finance IT Solutions | Infogenx</h1>
+          <h1>Expert Brisbane Finance It Solutions in Brisbane to Scale Your Business</h1>
           <p>
             <strong>Reliable Technology for Finance Operations</strong>
             <br /><br />

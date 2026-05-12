@@ -92,8 +92,8 @@ const ManagedServices = () => {
   return (
     <>
       <SEO
-        title="Managed IT Services | Proactive Support & Monitoring | Infogenx"
-        description="Maximize uptime and security with Infogenx Managed IT Services. We provide proactive monitoring, SLA-driven support, and system optimization for Microsoft, Zoho, and Odoo ecosystems."
+        title="Api Integration Brisbane | Trusted Experts & Agency"
+        description="Scale your company with leading Api Integration Brisbane services in Brisbane. Our team delivers high-quality Crm Automation Brisbane. Get started today!"
         keywords="managed IT services, proactive IT support, business system monitoring"
       />
       <Breadcrumbs items={breadcrumbItems} />

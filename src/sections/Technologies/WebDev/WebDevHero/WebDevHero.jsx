@@ -10,7 +10,7 @@ const WebDevHero = () => {
       />
       <div className="WebDev-hero-container">
         <h1 className="WebDev-hero-heading">
-          Web Development Technology that Drives Digital Growth
+          Expert Web Development Brisbane in Brisbane to Scale Your Business
         </h1>
         <p className="WebDev-hero-description">
           Build fast, scalable, secure, and future-ready web platforms using

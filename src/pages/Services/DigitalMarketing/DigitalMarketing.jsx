@@ -94,8 +94,8 @@ const DigitalMarketing = () => {
   return (
     <>
       <SEO
-        title="Digital Marketing Services | Infogenx"
-        description="Boost your online presence and drive growth with our comprehensive digital marketing solutions tailored for market excellence."
+        title="Digital Marketing Brisbane | Trusted Experts & Agency"
+        description="Scale your company with leading Digital Marketing Brisbane services in Brisbane. Our team delivers high-quality Digital Marketing Brisbane. Get started today!"
         keywords="digital marketing, online marketing services"
       />
       <Breadcrumbs items={breadcrumbItems} />

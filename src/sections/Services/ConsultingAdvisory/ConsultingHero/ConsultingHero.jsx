@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Strategic Digital Transformation</h1>
+          <h1>Expert It Consulting Brisbane in Brisbane to Scale Your Business</h1>
           <p>
             Expert consulting and roadmap advisory to implement Microsoft, Zoho,
             and Odoo for Australian businesses.

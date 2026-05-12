@@ -42,8 +42,8 @@ const ShopifySolution = () => {
   return (
     <>
       <SEO
-        title="Trusted Shopify Agency Brisbane | Shopify Expert & Developer"
-        description="Hands-on Shopify agency in Brisbane developing scalable eCommerce environments. We specialize in Shopify development, automation, and system integration for growth."
+        title="Shopify Agency Brisbane | Trusted Experts & Agency"
+        description="Experience the best Shopify Agency Brisbane has to offer. Our expert team focuses on Shopify Brisbane to drive results and maximize your ROI. Reach out now!"
         keywords="shopify brisbane, shopify agency brisbane, shopify expert brisbane, shopify development brisbane, shopify app development brisbane, shopify integration brisbane, shopify automation brisbane, shopify analytics brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />

@@ -96,8 +96,8 @@ const DataAnalyticsAI = () => {
   return (
     <>
       <SEO
-        title="Data Analytics & AI Solutions | Business Intelligence Experts | Infogenx"
-        description="Transform your data into actionable intelligence with Infogenx's expert analytics and AI solutions. We help businesses predict trends and optimize performance through data-driven strategies."
+        title="Business Intelligence Brisbane | Trusted Experts"
+        description="Scale your company with leading Business Intelligence Brisbane services in Brisbane. Our team delivers high-quality Data Analytics Brisbane. Get started today!"
         keywords="data analytics, business intelligence, AI solutions, predictive analytics, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
