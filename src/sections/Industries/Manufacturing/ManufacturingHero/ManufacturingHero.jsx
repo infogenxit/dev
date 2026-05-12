@@ -20,11 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Manufacturing IT Solutions: Operational Efficiency & Real-Time Data</h1>
+          <h1>Brisbane Manufacturing IT Solutions: Infogenx</h1>
           <p>
-            {/* Predictive maintenance and supply chain automation for manufacturing
-            Australia – Odoo ERP and AI insights tailored to local operations. */}
-            Focusing on operational efficiency, system integration, and real-time data visibility on the factory floor.
+            <strong>The Right Technology Stops Costing You and Starts Working For You</strong>
+            <br /><br />
+            Most manufacturers aren’t losing money on the factory floor — they’re losing it in the systems behind it. Inaccurate inventory, manual reports, and equipment downtime add up. At Infogenx, we work with manufacturers to fix these gaps with practical systems built for real production environments.
           </p>
           <div className="appdev-buttons">
             <button

@@ -8,51 +8,51 @@ const AppDevBusinessImpact = () => {
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
-          <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Real-World Manufacturing</h2>
+          <span className="section-label">Our Impact</span>
+          <h2>Why Do Manufacturers Work With Infogenx?</h2>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business1} alt="" />
+              <img src={Business1} alt="Local Team" />
             </div>
             <div className="impact-content">
               <h4>Brisbane-Based Team</h4>
               <p>
-                Not a remote vendor; we've seen production floors and understand local operational challenges.
+                We're not a remote vendor who's never seen a production floor. We're right here in Brisbane, ready to visit your facility.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business2} alt="" />
+              <img src={Business2} alt="Mobility" />
             </div>
             <div className="impact-content">
               <h4>Enterprise Mobility Experts</h4>
               <p>
-                Award-winning experience building tools that keep floor staff and managers connected in real-time.
+                As an award-winning IT company, we have real-world experience building enterprise mobility tools that work.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business3} alt="" />
+              <img src={Business3} alt="Scalable" />
             </div>
             <div className="impact-content">
-              <h4>Scalable Infrastructure</h4>
+              <h4>Scalable Solutions</h4>
               <p>
-                Solutions built to handle everything from small facilities to large multi-site manufacturing operations.
+                Our manufacturing systems are built to scale, serving small facilities and large multi-site operations alike.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business4} alt="" />
+              <img src={Business4} alt="Compliance" />
             </div>
             <div className="impact-content">
-              <h4>Compliance-Ready Design</h4>
+              <h4>Built-In Compliance</h4>
               <p>
-                Reporting and data management built to meet industry standards from day one, not as an afterthought.
+                Compliance and reporting are built into our systems from day one—not patched on later as an afterthought.
               </p>
             </div>
           </div>

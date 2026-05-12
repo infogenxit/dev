@@ -9,7 +9,7 @@ const steps = [
   {
     number: "2",
     title: "Solution Design",
-    desc: "A clear plan — what we're building, what we're connecting, and what the timeline looks like.",
+    desc: "A clear plan — what we're building, what we're connecting, and what the timeline looks like. Agreed before anything starts.",
   },
   {
     number: "3",
@@ -18,13 +18,8 @@ const steps = [
   },
   {
     number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing ensures security, performance, and reliability before the final rollout.",
-  },
-  {
-    number: "5",
     title: "Support After Go-Live",
-    desc: "We don't hand over and disappear. Ongoing support, fixes, and scaling come with every engagement.",
+    desc: "We don't hand over a finished product and disappear. Ongoing support, fixes, and scaling come with every engagement.",
   },
 ];
 const AppDevApproach = () => {

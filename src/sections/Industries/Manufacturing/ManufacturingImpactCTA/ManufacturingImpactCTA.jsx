@@ -8,10 +8,12 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-            Get a Free <span>Consultation</span>
+            Get a Free Consultation With Infogenx
           </h2>
           <p>
-            If your systems are costing more than they’re saving, let’s fix that. We’ll review your setup and show you where better IT solutions can improve efficiency.
+            If your systems are costing more than they’re saving, let’s fix that. We’ll review your setup and show you where better Brisbane Manufacturing IT Solutions can improve efficiency—no pressure, just practical advice.
+            <br /><br />
+            Call us now on <strong>+61 403339424</strong> for a straight assessment.
           </p>
           <div className="impact-buttons">
             <button
