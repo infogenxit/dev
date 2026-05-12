@@ -8,51 +8,54 @@ const AppDevBusinessImpact = () => {
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
-          <span className="section-label">The Real Value of Odoo in Brisbane</span>
-          <h2>When It’s Implemented Properly</h2>
+          <span className="section-label">Our Approach</span>
+          <h2>A Business-First Approach to Odoo Implementation and Optimisation</h2>
+          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+            ERP projects fail mainly due to the fact that they are handled as IT initiatives rather than business decisions. We do not act in the same manner.
+          </p>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business1} alt="" />
+              <img src={Business1} alt="Know your business" />
             </div>
             <div className="impact-content">
-              <h4>A Single Platform</h4>
+              <h4>Real Workflow Knowledge</h4>
               <p>
-                Odoo provides a single platform to deal with sales, operations, finances and internal operations with common data.
+                We begin by knowing how your business really works, not necessarily what you have in a process document.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business2} alt="" />
+              <img src={Business2} alt="System development" />
             </div>
             <div className="impact-content">
-              <h4>Flexible Growth</h4>
+              <h4>Reality-Based Development</h4>
               <p>
-                You are free to begin with a small number of modules and grow with your business. A fixed framework does not constrain you.
+                We develop the system based on the reality of your operations, ensuring the tools fit the people, not the other way around.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business3} alt="" />
+              <img src={Business3} alt="Simple and clean" />
             </div>
             <div className="impact-content">
-              <h4>Tailored Configuration</h4>
+              <h4>No Extravagance</h4>
               <p>
-                The configuration must be based on the way your business is conducted- not the way the software is programmed.
+                We maintain the installation simple and clean—no extra features you don't need, just pure efficiency.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business4} alt="" />
+              <img src={Business4} alt="Post-go-live" />
             </div>
             <div className="impact-content">
-              <h4>Unified Working System</h4>
+              <h4>Continuous Improvement</h4>
               <p>
-                 Our strength is our power to combine automation, integration, and data into one working system.
+                 We remain post-go-live, as that is when the real improvements and optimisations occur.
               </p>
             </div>
           </div>

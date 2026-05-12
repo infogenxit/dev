@@ -20,9 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Odoo Consultant Brisbane in Brisbane</h1>
+          <h1>Odoo in Brisbane for Scalable ERP, Automation and Business Systems</h1>
           <p>
-            A majority of businesses are unaware that the issue is not the tools, as they already possess an excessive amount of them. The problem is that nothing fits into place. Information is stored in various locations, workarounds are used, and the result is a system that consumes more time than it saves. At Infogenx, we assist companies in Brisbane by using Odoo to convert that mess into a streamlined, automated operation.
+            A majority of businesses are unaware that the issue is not the tools, as they already possess an excessive amount of them. The problem is that nothing fits into place. Information is stored in various locations, workarounds are used by teams, and basic activities take more time than they are supposed to.
+            <br /><br />
+            At Infogenx, we assist companies in rectifying this with the help of Odoo in Brisbane. In case you are seeking an Odoo consultant, we do not simply implement software but are committed to taking your operations into a single system that actually works in practice. Our experience is in the construction of AI-based applications, automation systems and integrated platforms, not only ERP configurations.
           </p>
           <div className="appdev-buttons">
             <button

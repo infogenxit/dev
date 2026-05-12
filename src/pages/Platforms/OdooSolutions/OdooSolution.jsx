@@ -30,14 +30,18 @@ const OdooSolution = () => {
     },
     {
       question: "Is Odoo compatible with our systems?",
-      answer: "In most cases, yes. We will be able to interlink Odoo to any existing tools and allow data to move between them without handwork."
+      answer: "In most cases, yes. We will be able to interlink Odoo to your existing tools and allow data to move between them without handwork."
+    },
+    {
+      question: "What then happens upon the system going live?",
+      answer: "We stay involved. As your business expands or alters, we aid in modifying the system in such a way that it will still operate effectively in the future."
     }
   ];
   return (
     <>
       <SEO
-        title="Odoo Consultant Brisbane | Trusted Experts & Agency"
-        description="Unlock business growth with expert Odoo Consultant Brisbane in Brisbane. Our expert team of Odoo Consultant Brisbane in Brisbane offers top-notch services."
+        title="Expert Odoo Consultant Brisbane | Scalable ERP & Automation"
+        description="Leading Odoo consultant in Brisbane helping companies integrate operations into a single scalable system. Specialized in Odoo ERP, automation, and custom business systems."
         keywords="odoo brisbane, odoo automation brisbane, odoo consultant brisbane, odoo customization brisbane, odoo developer brisbane, odoo erp brisbane, odoo implementation brisbane, odoo integration brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />
