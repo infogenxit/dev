@@ -8,17 +8,43 @@ import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import { PATHS } from "../../../route/paths";
 
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
+
 const ShopifySolution = () => {
   const breadcrumbItems = [
     { name: "Platforms", path: PATHS.home },
-    { name: "Shopify Solutions", path: PATHS.shopify }
+    { name: "Shopify Agency Brisbane", path: PATHS.shopify }
   ];
+
+  const faqs = [
+    {
+      question: "What does a Shopify agency in Brisbane actually do?",
+      answer: "A Shopify agency helps you build, improve, and manage your store so it runs properly. That includes design, development, integrations, and making sure your operations behind the store are smooth."
+    },
+    {
+      question: "Do I need a Shopify expert or developer?",
+      answer: "Yes, in case you wish for a store that will be functional long-term. A Shopify developer ensures that everything is configured neatly, both in terms of structure and integrations, so that you do not have problems as you expand."
+    },
+    {
+      question: "Can Shopify connect with our existing systems?",
+      answer: "Yes. We can integrate Shopify with your CRM, ERP, accounting systems, or any other system to ensure data flows in an automatic manner rather than manually."
+    },
+    {
+      question: "How does Shopify automation help?",
+      answer: "Shopify automation reduces manual work. Other aspects such as order updates, notifications and data synchronization can be automated, wasting less time and preventing mistakes."
+    },
+    {
+      question: "What happens after the store goes live?",
+      answer: "We stay involved. As your business grows, we help improve performance, fix gaps, and make sure the system keeps working the way it should."
+    }
+  ];
+
   return (
     <>
       <SEO
-        title="Shopify Development & Store Optimization Experts | Infogenx"
-        description="Launch and scale your online store with Infogenx, your expert Shopify development partner. We specialize in custom themes, app development, and seamless integrations."
-        keywords="Shopify developer, Shopify expert, Shopify app development, Shopify store setup, Shopify integration, Infogenx"
+        title="Trusted Shopify Agency Brisbane | Shopify Expert & Developer"
+        description="Hands-on Shopify agency in Brisbane developing scalable eCommerce environments. We specialize in Shopify development, automation, and system integration for growth."
+        keywords="shopify brisbane, shopify agency brisbane, shopify expert brisbane, shopify development brisbane, shopify app development brisbane, shopify integration brisbane, shopify automation brisbane, shopify analytics brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
@@ -26,6 +52,7 @@ const ShopifySolution = () => {
       <AppDevApproach />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
+      <ServiceFaq faqs={faqs} />
     </>
   );
 };

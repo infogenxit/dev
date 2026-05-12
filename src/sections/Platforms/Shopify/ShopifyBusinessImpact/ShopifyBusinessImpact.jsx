@@ -9,51 +9,54 @@ const AppDevBusinessImpact = () => {
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
-          <span className="section-label">Why Choose Infogenx</span>
-          <h2>A Shopify Agency That Delivers Results</h2>
+          <span className="section-label">Our Approach</span>
+          <h2>Built Around Real eCommerce Operations</h2>
+          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+            Most Shopify projects focus only on design or development. That’s not enough. We start by understanding how your business actually runs—orders, fulfilment, customer flow, and backend operations.
+          </p>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business1} alt="" />
+              <img src={Business1} alt="Business operations" />
             </div>
             <div className="impact-content">
-              <h4>Hands-On Agency</h4>
+              <h4>Operations First</h4>
               <p>
-                A local Brisbane team that specializes in building dependable back-end processes that keep your store running smoothly.
+                We begin by knowing how your business really works—fulfilment, customer flow, and backend operations.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business2} alt="" />
+              <img src={Business2} alt="System design" />
             </div>
             <div className="impact-content">
-              <h4>Scalable Infrastructure</h4>
+              <h4>System-Led Design</h4>
               <p>
-                We focus on building systems that support real growth — not just getting you live, but helping you expand predictably.
+                We design the system around your actual business needs, ensuring the technology supports your team, not the other way around.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business3} alt="" />
+              <img src={Business3} alt="Practical setup" />
             </div>
             <div className="impact-content">
-              <h4>Real eCommerce Experience</h4>
+              <h4>Clean & Practical</h4>
               <p>
-                Our strength comes from combining Shopify with automation and data so everything works together in one unified system.
+                We keep the setup clean and practical—no unnecessary complexity that slows down your site or your team.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business4} alt="" />
+              <img src={Business4} alt="Post-launch support" />
             </div>
             <div className="impact-content">
-              <h4>Australian Market Experts</h4>
+              <h4>Scaling Support</h4>
               <p>
-                We understand local payment preferences, shipping expectations, and consumer behaviour in the Australian market.
+                 And we stay involved after launch, helping you improve performance and scale your business without disruption.
               </p>
             </div>
           </div>

@@ -20,9 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Shopify Developer Brisbane in Brisbane to Scale Your Business</h1>
+          <h1>Shopify Agency in Brisbane: Built for Scalable eCommerce</h1>
           <p>
-            Building and scaling a Shopify store requires more than just a template. As leading Shopify developers in Brisbane, we focus on organized, integrated Shopify environments that drive real conversions and operational efficiency. From custom theme development to complex system integrations, our Brisbane team ensures your e-commerce operation is built for high-performance and long-term growth.
+            Shopify Expert | Shopify Development | Automation & Integration. The most common challenges encountered by most eCommerce businesses are not in the launching, but in scaling operations effectively as the number of orders increases. Detached systems, manual processes, and fragmented data among inventory, fulfilment, and reporting processes tend to hamper performance and visibility.
+            <br /><br />
+            Being a hands-on Shopify agency in Brisbane, Infogenx develops and maintains organised, combined Shopify environments that promote scalable development. Having experience in Shopify, automation, and integrating systems, we specialize in creating dependable back-end processes with the storefront, making sure that your whole eCommerce is running smoothly.
           </p>
           <div className="appdev-buttons">
             <button
