@@ -137,7 +137,7 @@
 @media (max-width: 768px) {
     .footer-container {
         text-align: left;
-        padding: 50px 20px 25px;
+        padding: 50px 20px 100px;
     }
 
     .footer-top {
