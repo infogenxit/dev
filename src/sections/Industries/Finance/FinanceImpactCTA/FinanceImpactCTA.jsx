@@ -8,10 +8,10 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-            Get a Free <span>Consultation</span>
+            Get a Free Consultation
           </h2>
           <p>
-            If your current systems are slowing things down or creating extra work, it’s worth taking a closer look. Our solutions make your operations simpler and more efficient.
+            If your current systems are slowing things down, it’s worth taking a closer look. Get in touch with Infogenx on <strong>+61 403339424</strong> for a straightforward discussion about what’s working and what can be improved.
           </p>
           <div className="impact-buttons">
             <button

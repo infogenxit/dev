@@ -9,22 +9,17 @@ const steps = [
   {
     number: "2",
     title: "Solution Design",
-    desc: "We create a clear plan based on your needs — no generic setups or unnecessary features.",
+    desc: "We create a clear plan based on your needs — no generic setups, no unnecessary features.",
   },
   {
     number: "3",
     title: "Implementation",
-    desc: "We build and integrate the solution into your existing environment with minimal disruption to your operations.",
+    desc: "We build and integrate the solution into your existing environment with minimal disruption.",
   },
   {
     number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing of security, data integrity, and compliance before the final deployment.",
-  },
-  {
-    number: "5",
     title: "Ongoing Support",
-    desc: "After launch, we stay involved to make sure everything runs smoothly and improves over time.",
+    desc: "After launch, we stay involved to make sure everything continues to run smoothly and improves over time.",
   },
 ];
 const AppDevApproach = () => {

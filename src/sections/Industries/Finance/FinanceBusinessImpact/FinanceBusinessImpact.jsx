@@ -8,13 +8,13 @@ const AppDevBusinessImpact = () => {
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
-          <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Financial Business Impact</h2>
+          <span className="section-label">Our Impact</span>
+          <h2>Why Businesses Choose Infogenx?</h2>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business1} alt="" />
+              <img src={Business1} alt="Workflow Focus" />
             </div>
             <div className="impact-content">
               <h4>Real Workflow Focus</h4>
@@ -25,7 +25,7 @@ const AppDevBusinessImpact = () => {
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business2} alt="" />
+              <img src={Business2} alt="Compliance" />
             </div>
             <div className="impact-content">
               <h4>Security & Compliance</h4>
@@ -36,7 +36,7 @@ const AppDevBusinessImpact = () => {
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business3} alt="" />
+              <img src={Business3} alt="Efficiency" />
             </div>
             <div className="impact-content">
               <h4>Reduced Manual Work</h4>
@@ -47,12 +47,12 @@ const AppDevBusinessImpact = () => {
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business4} alt="" />
+              <img src={Business4} alt="Support" />
             </div>
             <div className="impact-content">
-              <h4>Scalable Systems</h4>
+              <h4>Ongoing Reliable Support</h4>
               <p>
-                We build reliable, flexible systems that are designed to grow alongside your finance business as you scale.
+                We stay involved after launch. Reliable support is part of how we work—if something needs fixing or improving, we're available.
               </p>
             </div>
           </div>

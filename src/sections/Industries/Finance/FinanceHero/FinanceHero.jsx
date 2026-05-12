@@ -20,10 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane Finance It Solutions</h1>
+          <h1>Brisbane Finance IT Solutions | Infogenx</h1>
           <p>
-            
-            Automating workflows, enhancing data security, and ensuring compliance with intelligent IT solutions tailored for the finance sector.
+            <strong>Reliable Technology for Finance Operations</strong>
+            <br /><br />
+            Accuracy, compliance, and deadlines are daily pressures in finance. When your systems don’t support that properly, manual work piles up and errors happen. We build Brisbane Finance IT Solutions that fix those issues—nothing extra, just what works.
           </p>
           <div className="appdev-buttons">
             <button
