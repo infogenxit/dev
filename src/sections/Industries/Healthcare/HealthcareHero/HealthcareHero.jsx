@@ -20,12 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane Healthcare It Solutions</h1>
+          <h1>Brisbane Healthcare IT Solutions: Infogenx</h1>
           <p>
-            {/* Intelligent automation for healthcare Australia – patient workflow
-            orchestration, compliance automation, and analytics on Microsoft or
-            Zoho platforms. */}
-            Focusing on reducing administrative burden, patient record security, and building compliant systems that allow medical practices to focus on care.
+            <strong>We Help Healthcare Providers Stop Drowning in Admin</strong>
+            <br /><br />
+            Running a medical practice has never been more complicated. Between managing patient records, staying compliant, and keeping staff productive — the operational side of healthcare can quietly eat up time that should go toward patients. That's where our Brisbane healthcare IT solutions step in. We build and implement systems around what your practice actually needs.
           </p>
           <div className="appdev-buttons">
             <button

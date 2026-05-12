@@ -15,9 +15,9 @@ const Healthcare = () => {
   return (
     <>
       <SEO
-        title="Healthcare IT Solutions & Patient Management Experts | Infogenx"
-        description="Optimize your medical facility's operations with our comprehensive healthcare IT solutions. We specialize in patient management systems, compliance, and secure data analytics."
-        keywords="healthcare IT solutions, patient management software, medical practice automation, healthcare compliance IT, Infogenx"
+        title="Brisbane Healthcare IT Solutions | Medical Practice Systems | Infogenx"
+        description="Infogenx provides expert Brisbane healthcare IT solutions, from EHR and hospital management to clinic automation and compliance. We help medical providers focus on care."
+        keywords="healthcare IT solutions Brisbane, medical practice IT Brisbane, EHR systems Brisbane, hospital management software, healthcare compliance Australia, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

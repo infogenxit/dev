@@ -8,10 +8,12 @@ const AppDevImpactCTA = () => {
       <div className="impact-cta-container">
         <div className="impact-cta-left">
           <h2>
-            Get a Free <span>Consultation</span>
+            Get a Free Consultation
           </h2>
           <p>
-            If something in your current setup is slowing your team down or keeping you up at night from a compliance standpoint, let's talk it through. No sales pitch — just a straightforward conversation.
+            If something in your current setup is slowing your team down or keeping you up at night from a compliance standpoint, let's talk it through. No sales pitch — just a straightforward conversation about what’s happening and what could actually fix it with the right Brisbane healthcare IT solutions from Infogenx.
+            <br /><br />
+            Call us now on <strong>+61 403339424</strong> and we'll get you a free project estimate.
           </p>
           <div className="impact-buttons">
             <button
