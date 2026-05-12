@@ -100,7 +100,7 @@ const DigitalTransformation = () => {
     <>
       <SEO
         title="Digital Transformation Brisbane | Trusted Experts"
-        description="Unlock business growth with expert Digital Transformation Brisbane in Brisbane. We specialize in Custom Software and innovative digital strategies."
+        description="Unlock business growth with expert Digital Transformation in Brisbane. We specialize in Custom Software and innovative digital strategies."
         keywords="digital transformation consulting, business process transformation, enterprise modernization, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

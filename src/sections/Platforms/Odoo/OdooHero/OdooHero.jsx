@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Odoo Consultant Brisbane in Brisbane to Scale Your Business</h1>
+          <h1>Expert Odoo Consultant in Brisbane to Scale Your Business</h1>
           <p>
             A majority of businesses are unaware that the issue is not the tools, as they already possess an excessive amount of them. The problem is that nothing fits into place. Information is stored in various locations, workarounds are used by teams, and basic activities take more time than they are supposed to.
             <br /><br />

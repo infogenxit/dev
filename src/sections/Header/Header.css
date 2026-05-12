@@ -186,8 +186,8 @@
         top: 0;
     }
     
-    .hero-container {
-        padding-top: 120px !important;
+    .hero-container, .appdev-container, .WebDev-hero-container {
+        padding-top: 150px !important;
     }
     
 

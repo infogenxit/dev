@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Support Optimization Brisbane in Brisbane to Scale Your Business</h1>
+          <h1>Expert Support Optimization in Brisbane to Scale Your Business</h1>
           <p>
             Drive peak performance, resolve issues quickly, and enhance your
             Microsoft, Zoho, and Odoo platforms across Australia.

@@ -41,7 +41,7 @@ const OdooSolution = () => {
     <>
       <SEO
         title="Odoo Consultant Brisbane | Trusted Experts & Agency"
-        description="Unlock business growth with expert Odoo Consultant Brisbane in Brisbane. We specialize in Odoo Brisbane and innovative digital strategies. Book a consult now."
+        description="Unlock business growth with expert Odoo Consultant in Brisbane. We specialize in Odoo Brisbane and innovative digital strategies. Book a consult now."
         keywords="odoo brisbane, odoo automation brisbane, odoo consultant brisbane, odoo customization brisbane, odoo developer brisbane, odoo erp brisbane, odoo implementation brisbane, odoo integration brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />

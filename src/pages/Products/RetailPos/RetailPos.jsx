@@ -142,7 +142,7 @@ const RetailPos = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Expert Retail Pos System Brisbane in Brisbane to Scale Your Business</h1>
+            <h1>Expert Retail Pos System in Brisbane to Scale Your Business</h1>
 
             <p>
               Retail POS management system for Australian stores — fast

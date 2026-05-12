@@ -180,7 +180,7 @@ const IgxStock = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Expert Stock Management System Brisbane in Brisbane to Scale Your Business</h1>
+            <h1>Expert Stock Management System in Brisbane to Scale Your Business</h1>
 
             <p>
               Inventory inefficiencies slow operations, reduce fulfilment speed,

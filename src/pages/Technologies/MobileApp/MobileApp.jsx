@@ -16,7 +16,7 @@ const MobileApp = () => {
     <>
       <SEO
         title="Mobile App Development Brisbane | Trusted Experts"
-        description="Unlock business growth with expert Mobile App Development Brisbane in Brisbane. We specialize in Custom Software and innovative digital strategies."
+        description="Unlock business growth with expert Mobile App Development in Brisbane. We specialize in Custom Software and innovative digital strategies."
         keywords="mobile app development, iOS apps, Android apps, React Native, Flutter, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
