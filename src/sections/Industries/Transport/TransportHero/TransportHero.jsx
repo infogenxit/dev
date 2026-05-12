@@ -20,11 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane Logistics It Solutions in Brisbane to Scale Your Business</h1>
+          <h1>Brisbane Logistics IT Solutions | Infogenx</h1>
           <p>
-            <strong>Late Deliveries and Visibility Gaps Are Costing Your Business More Than You Think</strong>
+            <strong>Late Deliveries and Visibility Gaps Are Costing Your Logistics Business More Than You Think</strong>
             <br /><br />
-            A missed delivery window or a shipment nobody can locate are problems that lose clients. At Infogenx, we build Brisbane logistics IT solutions that actually fix what's breaking down behind the scenes.
+            A missed delivery window, a shipment nobody can locate, a driver taking the wrong route because the system didn't update in time — these aren't just operational headaches. They're the kind of problems that lose clients. Infogenx builds Brisbane logistics IT solutions for transport and logistics businesses that actually fix what's breaking down behind the scenes.
           </p>
           <div className="appdev-buttons">
             <button

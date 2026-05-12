@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane Healthcare It Solutions in Brisbane to Scale Your Business</h1>
+          <h1>Brisbane Healthcare It Solutions in Brisbane to Scale Your Business</h1>
           <p>
             <strong>We Help Healthcare Providers Stop Drowning in Admin</strong>
             <br /><br />

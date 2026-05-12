@@ -40,8 +40,8 @@ const Manufacturing = () => {
   return (
     <>
       <SEO
-        title="Brisbane Manufacturing It Solutions | Trusted Experts"
-        description="Experience the best Brisbane Manufacturing It Solutions has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
+        title="Brisbane Manufacturing IT Solutions | Infogenx"
+        description="Fix operational gaps with Brisbane Manufacturing IT Solutions at Infogenx. Practical systems built for real production environments to reduce downtime."
         keywords="manufacturing IT solutions Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

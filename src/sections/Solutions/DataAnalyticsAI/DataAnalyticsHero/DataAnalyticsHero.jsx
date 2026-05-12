@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Business Intelligence in Brisbane to Scale Your Business</h1>
+          <h1>Business Intelligence in Brisbane to Scale Your Business</h1>
           <p>
             Turn connected data into clear insight, predictive intelligence, and
             faster business decisions that move performance forward.

@@ -40,8 +40,8 @@ const Transport = () => {
   return (
     <>
       <SEO
-        title="Brisbane Logistics It Solutions | Trusted Experts"
-        description="Experience the best Brisbane Logistics It Solutions has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
+        title="Brisbane Logistics IT Solutions | Infogenx"
+        description="Fix delivery delays and visibility gaps with Brisbane Logistics IT Solutions from Infogenx. Scalable TMS and tracking systems built for growth."
         keywords="logistics IT solutions Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

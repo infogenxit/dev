@@ -40,8 +40,8 @@ const Finance = () => {
   return (
     <>
       <SEO
-        title="Brisbane Finance It Solutions | Trusted Experts"
-        description="Unlock business growth with expert Brisbane Finance It Solutions in Brisbane. We specialize in Custom Software and innovative digital strategies."
+        title="Brisbane Finance IT Solutions | Infogenx"
+        description="Reliable Brisbane Finance IT Solutions for accuracy, compliance, and efficiency. We build systems that fix operational mistakes and save time."
         keywords="finance IT solutions Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

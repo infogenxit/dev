@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Digital Transformation in Brisbane to Scale Your Business</h1>
+          <h1>Digital Transformation in Brisbane to Scale Your Business</h1>
           <p>
             Modernise legacy systems, simplify operations, and align technology with business strategy.
           </p>

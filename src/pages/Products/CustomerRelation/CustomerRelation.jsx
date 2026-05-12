@@ -144,7 +144,7 @@ const CustomerRelation = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Expert Crm Consultant in Brisbane to Scale Your Business</h1>
+            <h1>Crm Consultant in Brisbane to Scale Your Business</h1>
 
             <p>
               Customer relationship management system for Australian sales teams

@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Api Integration in Brisbane to Scale Your Business</h1>
+          <h1>Api Integration in Brisbane to Scale Your Business</h1>
           <p>
             Seamless managed services and 24/7 monitoring for Microsoft, Zoho,
             and Odoo, empowering Australian businesses with uninterrupted

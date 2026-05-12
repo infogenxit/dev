@@ -142,7 +142,7 @@ const OdooErp = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Expert Odoo Consultant in Brisbane to Scale Your Business</h1>
+            <h1>Odoo Consultant in Brisbane to Scale Your Business</h1>
 
             <p>
               Odoo ERP management system for Australian businesses — integrated

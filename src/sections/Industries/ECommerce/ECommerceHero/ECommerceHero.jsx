@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane E-Commerce Development in Brisbane to Scale Your Business</h1>
+          <h1>Brisbane E-Commerce Development: Build Stores That Actually Sell</h1>
           <p>
             Brisbane’s retail scene has changed fast. Customers expect quick loading, easy checkout, and zero friction. At Infogenx, we build online stores around how your customers actually shop—no generic templates, no shortcuts, just a setup that works properly and converts better.
           </p>

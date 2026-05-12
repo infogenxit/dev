@@ -20,11 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane Finance It Solutions in Brisbane to Scale Your Business</h1>
+          <h1>Brisbane Finance IT Solutions | Infogenx</h1>
           <p>
             <strong>Reliable Technology for Finance Operations</strong>
             <br /><br />
-            Accuracy, compliance, and deadlines are daily pressures in finance. When your systems don’t support that properly, manual work piles up and errors happen. We build Brisbane Finance IT Solutions that fix those issues—nothing extra, just what works.
+            Finance businesses in Brisbane deal with pressure every day — accuracy, compliance, deadlines, and handling sensitive data. When your systems don’t support that properly, things start slipping. Reports take longer, manual work piles up, and small errors turn into bigger problems. That’s where our Brisbane Finance IT Solutions at Infogenx come in. We don’t start with technology. We start with how your business actually runs. What’s slowing your team down? Where are mistakes happening? What’s taking more time than it should? Once we understand that, we build systems that fix those issues — nothing extra, nothing unnecessary.
           </p>
           <div className="appdev-buttons">
             <button

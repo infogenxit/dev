@@ -40,8 +40,8 @@ const ECommerce = () => {
   return (
     <>
       <SEO
-        title="Brisbane E-Commerce Development | Trusted Experts"
-        description="Experience the best Brisbane E-Commerce Development has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
+        title="Brisbane E-Commerce Development: Build Stores That Actually Sell"
+        description="Build high-converting online stores with Brisbane E-Commerce Development at Infogenx. Scalable, custom-built solutions for local businesses."
         keywords="ecommerce development Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
