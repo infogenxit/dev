@@ -8,51 +8,51 @@ const AppDevBusinessImpact = () => {
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
-          <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Business Impact</h2>
+          <span className="section-label">Our Impact</span>
+          <h2>Why Retailers Work With Infogenx?</h2>
         </div>
         <div className="business-impact-grid">
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business1} alt="" />
+              <img src={Business1} alt="Local Team" />
             </div>
             <div className="impact-content">
-              <h4>Local Expertise</h4>
+              <h4>Queensland Market Experts</h4>
               <p>
-                Local Brisbane team that understands the Queensland retail market and its unique operational challenges.
+                Local Brisbane team that understands the Queensland retail market and its specific customer preferences.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business2} alt="" />
+              <img src={Business2} alt="Scalable" />
             </div>
             <div className="impact-content">
-              <h4>Scalable Solutions</h4>
+              <h4>Built to Scale</h4>
               <p>
-                Solutions built specifically to handle both single boutique stores and growing multi-location chains.
+                Solutions designed to handle both single independent stores and growing multi-location chains seamlessly.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business3} alt="" />
+              <img src={Business3} alt="Security" />
             </div>
             <div className="impact-content">
-              <h4>Security-First Mindset</h4>
+              <h4>Cybersecurity-First</h4>
               <p>
-                Every solution is built compliance-ready and cybersecurity-first to protect customer payment data.
+                Every solution is built compliance-ready and cybersecurity-first to protect sensitive customer payment data.
               </p>
             </div>
           </div>
           <div className="impact-card">
             <div className="impact-image">
-              <img src={Business4} alt="" />
+              <img src={Business4} alt="Estimates" />
             </div>
             <div className="impact-content">
-              <h4>Proven Track Record</h4>
+              <h4>Zero-Obligation Estimates</h4>
               <p>
-                Award-winning IT company with extensive experience transforming retail operations across Australia and beyond.
+                We provide free project estimates with zero obligation, giving you a straight assessment of your technology needs.
               </p>
             </div>
           </div>

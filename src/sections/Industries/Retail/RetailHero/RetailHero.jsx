@@ -20,12 +20,11 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Expert Brisbane Retail It Solutions</h1>
+          <h1>Brisbane Retail IT Solutions: Infogenx</h1>
           <p>
-            {/* AI-enabled inventory and customer analytics for retail Australia –
-            omnichannel automation and personalisation using Zoho or Microsoft
-            solutions. */}
-            Bridging the gap between physical and digital storefronts with scalable technology and unified inventory systems.
+            <strong>Your Retail Operations Deserve Better Technology</strong>
+            <br /><br />
+            Managing stock on spreadsheets and chasing supplier invoices manually is costing retailers real money. At Infogenx, we work with retail businesses across Brisbane and broader Australia to fix exactly that. Based here since 2012, we help everyone from small independents to larger chains dealing with complex supply chain challenges.
           </p>
           <div className="appdev-buttons">
             <button

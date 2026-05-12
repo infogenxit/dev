@@ -5,6 +5,7 @@ import AppDevBusinessImpact from "../../../sections/Industries/Retail/RetailBusi
 import AppDevImpactCTA from "../../../sections/Industries/Retail/RetailImpactCTA/RetailImpactCTA";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
+import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import { PATHS } from "../../../route/paths";
 
 const Retail = () => {
@@ -12,12 +13,36 @@ const Retail = () => {
     { name: "Industries", path: PATHS.home },
     { name: "Retail", path: PATHS.retail }
   ];
+
+  const faqs = [
+    {
+      question: "Do you work with small independent retailers?",
+      answer: "Yes — our solutions are built to scale, so they work for a single-location store just as well as a growing chain."
+    },
+    {
+      question: "Can you connect with our existing POS or e-commerce platform?",
+      answer: "Absolutely. We integrate with what you already have rather than forcing a full system replacement."
+    },
+    {
+      question: "How long does a retail IT project take to go live?",
+      answer: "Straightforward integrations can be live within weeks. Larger builds follow a clear timeline agreed on before we start."
+    },
+    {
+      question: "Is cybersecurity a separate cost?",
+      answer: "No. Security is built into every solution from day one — it's not an optional extra."
+    },
+    {
+      question: "What kind of support do you offer after launch?",
+      answer: "Ongoing support, system updates, and scaling assistance are all part of working with us long-term."
+    }
+  ];
+
   return (
     <>
       <SEO
-        title="Retail IT Solutions & Inventory Management Experts | Infogenx"
-        description="Streamline your retail business with our expert IT solutions. We specialize in inventory automation, POS integration, and omnichannel customer experiences."
-        keywords="retail IT solutions, inventory management software, POS system integration, retail technology, Infogenx"
+        title="Brisbane Retail IT Solutions | Inventory & POS Systems | Infogenx"
+        description="Infogenx provides expert Brisbane retail IT solutions including omnichannel integration, inventory management, and secure POS systems for stores of all sizes."
+        keywords="retail IT solutions Brisbane, retail technology Australia, inventory management Brisbane, POS integration Brisbane, ecommerce retail solutions, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
@@ -25,6 +50,7 @@ const Retail = () => {
       <AppDevApproach />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
+      <ServiceFaq faqs={faqs} />
     </>
   );
 };

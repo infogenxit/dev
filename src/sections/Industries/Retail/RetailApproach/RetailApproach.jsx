@@ -9,7 +9,7 @@ const steps = [
   {
     number: "2",
     title: "Custom Solution Design",
-    desc: "No one-size-fits-all approach. We design systems based on your store’s needs and budget.",
+    desc: "No one-size-fits-all approach. We design systems based on your store’s needs and budget using our Brisbane retail IT solutions.",
   },
   {
     number: "3",
@@ -18,11 +18,6 @@ const steps = [
   },
   {
     number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing ensures security, performance, and reliability before you go live.",
-  },
-  {
-    number: "5",
     title: "Launch and Ongoing Support",
     desc: "We stay on after go-live for updates, troubleshooting, and scaling as your business grows.",
   },
