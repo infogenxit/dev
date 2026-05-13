@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./InsightDropdown.css";
 // import CodeBox from "../../assets/images/codebox.webp";
-const PlatformsDropdown = ({ closeMenu }) => {
+const InsightDropdown = ({ closeMenu }) => {
   return (
     <div className="insight-dropdown">
       <div className="insight-container">
@@ -19,5 +19,5 @@ const PlatformsDropdown = ({ closeMenu }) => {
     </div>
   );
 };
-export default PlatformsDropdown;
+export default InsightDropdown;
 

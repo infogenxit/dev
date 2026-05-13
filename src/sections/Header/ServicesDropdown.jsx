@@ -12,56 +12,53 @@ const ServicesDropdown = ({ closeMenu }) => {
       <div className="services-grid">
         <Link to={PATHS.implementationIntegration} onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox1} alt="Service-img" />
+            <img src={CodeBox1} alt="Implementation & Integration" />
           </div>
           <div className="service-info">
             <h4>Implementation & Integration</h4>
             <p>
-              Build scalable web and application solutions tailored to your
-              business needs.
+              Seamlessly integrate complex systems and implement scalable enterprise solutions.
             </p>
           </div>
         </Link>
         <Link to={PATHS.managedServices} onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox2} alt="Service-img" />
+            <img src={CodeBox2} alt="Managed Services" />
           </div>
           <div className="service-info">
             <h4>Managed Services</h4>
             <p>
-              Automate workflows to improve efficiency, accuracy, and
-              operational speed.
+              Optimize your operations with proactive management and 24/7 infrastructure monitoring.
             </p>
           </div>
         </Link>
         <Link to={PATHS.consultingAdvisory} onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox3} alt="Service-img" />
+            <img src={CodeBox3} alt="Consulting & Advisory" />
           </div>
           <div className="service-info">
             <h4>Consulting & Advisory</h4>
             <p>
-              Transform raw data into reliable insights for smarter
-              decision-making.
+              Strategic technology roadmaps to align your digital investments with business goals.
             </p>
           </div>
         </Link>
         <Link to={PATHS.supportOptimization} onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox4} alt="Service-img" />
+            <img src={CodeBox4} alt="Support & Optimisation" />
           </div>
           <div className="service-info">
-            <h4>Support & Optimization</h4>
-            <p>Extend development capacity with reliable offshore teams.</p>
+            <h4>Support & Optimisation</h4>
+            <p>Continuous performance tuning and expert support to keep your systems running at peak.</p>
           </div>
         </Link>
         <Link to={PATHS.digitalMarketing} onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox3} alt="Service-img" />
+            <img src={CodeBox3} alt="Digital Marketing" />
           </div>
           <div className="service-info">
             <h4>Digital Marketing</h4>
-            <p>Extend development capacity with reliable offshore teams.</p>
+            <p>Data-driven SEO, performance marketing, and brand strategies to drive measurable growth.</p>
           </div>
         </Link>
       </div>

@@ -9,48 +9,45 @@ const PlatformsDropdown = ({ closeMenu }) => {
       <div className="services-grid">
         <Link to="/platforms/microsoft" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox1} alt="Service-img" />
+            <img src={CodeBox1} alt="Microsoft Solutions" />
           </div>
           <div className="service-info">
             <h4>Microsoft Solutions</h4>
             <p>
-              Build scalable web and application solutions tailored to your
-              business needs.
+              Empower your enterprise with custom Azure, .NET, and Microsoft 365 solutions.
             </p>
           </div>
         </Link>
         <Link to="/platforms/zoho" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox2} alt="Service-img" />
+            <img src={CodeBox2} alt="Zoho Solutions" />
           </div>
           <div className="service-info">
             <h4>Zoho Solutions</h4>
             <p>
-              Automate workflows to improve efficiency, accuracy, and
-              operational speed.
+              Streamline your business with tailored Zoho CRM, Finance, and People implementations.
             </p>
           </div>
         </Link>
         <Link to="/platforms/odoo" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox3} alt="Service-img" />
+            <img src={CodeBox3} alt="Odoo Solutions" />
           </div>
           <div className="service-info">
             <h4>Odoo Solutions</h4>
             <p>
-              Transform raw data into reliable insights for smarter
-              decision-making.
+              Fully integrated ERP solutions to manage every aspect of your business operations.
             </p>
           </div>
         </Link>
         <Link to="/platforms/shopify" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox1} alt="Service-img" />
+            <img src={CodeBox1} alt="Shopify Solutions" />
           </div>
           <div className="service-info">
             <h4>Shopify Solutions</h4>
             <p>
-              Scale your e-commerce business with custom Shopify stores and apps.
+              Custom e-commerce experiences and high-converting storefronts on Shopify.
             </p>
           </div>
         </Link>

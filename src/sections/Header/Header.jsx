@@ -4,14 +4,18 @@ import "./Header.css";
 import logo from "../../assets/images/logo.webp";
 import ServicesDropdown from "./ServicesDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
+import IndustriesDropdown from "./IndustriesDropdown";
 import PlatformsDropdown from "./PlatformsDropdown";
 import InsightDropdown from "./InsightDropdown";
+import ContactDropdown from "./ContactDropdown";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
   const [platformsOpen, setPlatformsOpen] = useState(false);
   const [insightOpen, setInsightOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   return (
     <header className="header">
       <div className="header-container">
@@ -42,6 +46,16 @@ const Header = () => {
           </div>
           <div
             className="nav-item"
+            onMouseEnter={() => setIndustriesOpen(true)}
+            onMouseLeave={() => setIndustriesOpen(false)}
+          >
+            <span className="nav-link">Industries</span>
+            {industriesOpen && (
+              <IndustriesDropdown closeMenu={() => setIndustriesOpen(false)} />
+            )}
+          </div>
+          <div
+            className="nav-item"
             onMouseEnter={() => setPlatformsOpen(true)}
             onMouseLeave={() => setPlatformsOpen(false)}
           >
@@ -64,7 +78,16 @@ const Header = () => {
               <InsightDropdown closeMenu={() => setInsightOpen(false)} />
             )}
           </div>
-          <Link to="/contact-us">Contact Us</Link>
+          <div
+            className="nav-item"
+            onMouseEnter={() => setContactOpen(true)}
+            onMouseLeave={() => setContactOpen(false)}
+          >
+            <Link className="nav-link" to="/contact-us">Contact Us</Link>
+            {contactOpen && (
+              <ContactDropdown closeMenu={() => setContactOpen(false)} />
+            )}
+          </div>
         </nav>
         <div className="quote-wrapper">
           <Link to="/contact-us" className="quote-btn desktop-only">

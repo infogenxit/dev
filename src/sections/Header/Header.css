@@ -43,6 +43,8 @@
     font-size: 17px;
     font-weight: 500;
     color: #00123C;
+    padding: 12px 0;
+    display: inline-block;
 }
 
 .nav a {
