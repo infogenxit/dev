@@ -181,3 +181,34 @@
         background: transparent !important;
     }
 }
+
+/* CRITICAL MOBILE DRAWER OVERRIDE */
+@media (max-width: 1024px) {
+    .services-dropdown, .services-dropdown {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        transform: none !important;
+        padding: 10px 0 !important;
+        background: #fff !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    .services-grid, .services-grid {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .services-grid a, .services-grid a {
+        display: flex !important;
+        padding: 12px 20px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
