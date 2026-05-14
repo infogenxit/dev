@@ -62,9 +62,11 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .services-grid p {
         display: none;
     }
@@ -79,19 +81,24 @@
         height: 50vh;
         overflow-y: scroll;
     }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
+
     .services-grid a {
         align-items: center;
     }
+
     .service-img {
         width: 45px;
         height: 35px;
     }
+
     .services-grid p {
         display: none;
     }
+
     .services-grid h4 {
         font-size: 14px;
     }
