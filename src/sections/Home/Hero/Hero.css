@@ -543,3 +543,12 @@ margin-top: 0;
 }
 
 
+
+.hero-description strong {
+    color: #00123c !important;
+    font-weight: 700 !important;
+}
+.hero-description u {
+    text-decoration-color: #ff6a00 !important;
+    text-underline-offset: 4px !important;
+}
