@@ -145,3 +145,39 @@
         border: none !important;
     }
 }
+
+/* FORCE MOBILE DRAWER VISIBILITY - HIGHEST PRIORITY */
+@media (max-width: 1024px) {
+    .services-dropdown, .services-dropdown {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        transform: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 10px 0 !important;
+        background: transparent !important;
+        border: none !important;
+        z-index: 1 !important;
+    }
+    
+    .services-grid, .services-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding-left: 15px !important;
+        border-left: 2px solid #ff6a00 !important;
+    }
+    
+    .services-grid a, .services-grid a {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 8px 0 !important;
+        background: transparent !important;
+    }
+}
