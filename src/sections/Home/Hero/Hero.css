@@ -562,3 +562,35 @@ margin-top: 0;
     color: #00123c !important;
 }
 
+
+/* MOBILE HERO OVERRIDES */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+        padding: 0 15px !important;
+        margin-bottom: 15px !important;
+    }
+    .hero-heading span {
+        display: inline !important; /* Allow natural wrapping on mobile */
+        background: linear-gradient(90deg, #00123c, #ff6a00, #ee0979) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+    .hero-description {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+        padding: 0 20px !important;
+        margin-bottom: 25px !important;
+        color: #555 !important;
+    }
+    .hero-buttons {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+    .hero-buttons button {
+        width: 100% !important;
+    }
+}
