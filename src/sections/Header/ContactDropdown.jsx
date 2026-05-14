@@ -1,18 +1,28 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-// import CodeBox from "../../assets/images/codebox.webp";
+import Icon1 from "../../assets/images/Intelligent Automation.webp";
+import Icon2 from "../../assets/images/Digital Transformation.webp";
+
 const ContactDropdown = ({ closeMenu }) => {
   return (
-    <div className="contact-dropdown">
-      <div className="contact-drop-container">
-        <Link to="/contact-us/get-in-touch" onClick={closeMenu}>
+    <div className="services-dropdown">
+      <div className="services-grid">
+        <Link to="/contact-us" onClick={closeMenu}>
+          <div className="service-img">
+            <img src={Icon1} alt="Get in Touch" />
+          </div>
           <div className="service-info">
             <h4>Get in Touch</h4>
+            <p>Connect with our experts to discuss your next big idea.</p>
           </div>
         </Link>
-        <Link to="/contact-us/global-locations" onClick={closeMenu}>
+        <Link to="/contact-us" onClick={closeMenu}>
+          <div className="service-img">
+            <img src={Icon2} alt="Global Locations" />
+          </div>
           <div className="service-info">
             <h4>Global Locations</h4>
+            <p>Find our offices and reach out to our local teams worldwide.</p>
           </div>
         </Link>
       </div>
@@ -20,4 +30,3 @@ const ContactDropdown = ({ closeMenu }) => {
   );
 };
 export default ContactDropdown;
-
