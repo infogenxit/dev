@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css?v=202605141743";
 import logo from "../../assets/images/logo.webp";
@@ -17,8 +17,12 @@ const Header = () => {
     setActiveMenu(null);
   };
 
-  const toggleSubMenu = (menuName) => {
-    setActiveMenu(activeMenu === menuName ? null : menuName);
+  const handleNavClick = (item) => {
+    if (window.innerWidth <= 1024 && item.hasDropdown) {
+      setActiveMenu(item.name);
+    } else {
+      closeAll();
+    }
   };
 
   const closeAll = () => {
@@ -45,19 +49,13 @@ const Header = () => {
           <img src={logo} alt="Infogenx Logo" />
         </Link>
 
-        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+        {/* Desktop Navigation */}
+        <nav className="nav-desktop">
           {navItems.map((item) => (
-            <div key={item.name} className={`nav-item ${activeMenu === item.name ? "active" : ""}`}
-                 onMouseEnter={() => window.innerWidth > 1024 && item.hasDropdown && setActiveMenu(item.name)}
-                 onMouseLeave={() => window.innerWidth > 1024 && setActiveMenu(null)}>
-              
-              <div className="nav-link-wrapper">
-                <Link to={item.path} onClick={closeAll}>{item.name}</Link>
-                {item.hasDropdown && (
-                  <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); toggleSubMenu(item.name); }}></span>
-                )}
-              </div>
-
+            <div key={item.name} className="nav-item-desktop"
+                 onMouseEnter={() => item.hasDropdown && setActiveMenu(item.name)}
+                 onMouseLeave={() => setActiveMenu(null)}>
+              <Link to={item.path} className="nav-link">{item.name}</Link>
               {item.hasDropdown && activeMenu === item.name && (
                 <div className="dropdown-container">
                   <item.component closeMenu={closeAll} />
@@ -67,8 +65,59 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="quote-wrapper">
-          <Link to="/contact-us" className="quote-btn desktop-only">Request Strategy Briefing</Link>
+        {/* Mobile Navigation Drawer */}
+        <div className={`mobile-drawer ${menuOpen ? "open" : ""}`}>
+          <div className="drawer-header">
+            {activeMenu ? (
+              <button className="back-btn" onClick={() => setActiveMenu(null)}>
+                <span className="back-icon"></span> Back
+              </button>
+            ) : (
+              <div className="drawer-logo">
+                <img src={logo} alt="Logo" />
+              </div>
+            )}
+            <div className="close-drawer" onClick={closeAll}>&times;</div>
+          </div>
+
+          <div className="drawer-content">
+            <div className={`menu-slider ${activeMenu ? "slide-active" : ""}`}>
+              {/* Main level */}
+              <div className="menu-level main-level">
+                {navItems.map((item) => (
+                  <div key={item.name} className="drawer-item" onClick={() => handleNavClick(item)}>
+                    {item.hasDropdown ? (
+                      <div className="drawer-link-wrapper">
+                        <span>{item.name}</span>
+                        <span className="arrow-icon"></span>
+                      </div>
+                    ) : (
+                      <Link to={item.path} onClick={closeAll}>{item.name}</Link>
+                    )}
+                  </div>
+                ))}
+                <div className="drawer-footer">
+                  <Link to="/contact-us" className="quote-btn mobile-cta" onClick={closeAll}>Request Strategy Briefing</Link>
+                </div>
+              </div>
+
+              {/* Sub-menu level */}
+              <div className="menu-level sub-level">
+                {navItems.filter(i => i.hasDropdown).map((item) => (
+                  activeMenu === item.name && (
+                    <div key={`sub-${item.name}`} className="sub-menu-content">
+                      <h3 className="sub-menu-title">{item.name}</h3>
+                      <item.component closeMenu={closeAll} />
+                    </div>
+                  )
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="quote-wrapper desktop-only">
+          <Link to="/contact-us" className="quote-btn">Request Strategy Briefing</Link>
         </div>
 
         <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleDrawer}>
