@@ -30,3 +30,53 @@
     .menu-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1000; backdrop-filter: blur(3px); }
     .desktop-only { display: none; }
 }
+
+/* FINAL MOBILE DRAWER VISIBILITY FIX */
+@media (max-width: 1024px) {
+    .nav {
+        background: #ffffff !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        overflow-y: scroll !important; /* Force scrollability */
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
+    .nav-item {
+        position: relative !important;
+        overflow: visible !important; /* Ensure children aren't clipped */
+        height: auto !important;
+    }
+
+    /* Force children to render and be visible when open */
+    .services-dropdown, .solutions-dropdown, .industries-dropdown, .platforms-dropdown, .insight-dropdown {
+        display: flex !important; /* Use flex to match container expectations */
+        flex-direction: column !important;
+        position: relative !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 10 !important;
+        height: auto !important;
+        min-height: 50px !important;
+        background: #fdfdfd !important;
+        margin: 5px 0 10px 0 !important;
+        padding-left: 15px !important;
+        border-left: 2px solid #ff6a00 !important;
+    }
+    
+    /* Ensure the grid doesn't break visibility */
+    .services-grid, .solutions-grid, .industries-grid, .platforms-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .services-grid a, .solutions-grid a, .industries-grid a, .platforms-grid a {
+        display: flex !important;
+        padding: 8px 0 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #333 !important;
+    }
+}
