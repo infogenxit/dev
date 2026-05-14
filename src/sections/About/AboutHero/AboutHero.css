@@ -192,3 +192,26 @@
     }
 }
 
+
+/* Mobile Design Refinements for About Hero */
+@media (max-width: 768px) {
+    .about-hero-container {
+        padding: 100px 20px 40px !important;
+        text-align: center !important;
+    }
+    .about-hero-left h1 {
+        font-size: 26px !important;
+        margin-bottom: 30px !important;
+        line-height: 1.3 !important;
+    }
+    .about-hero-right p {
+        display: block !important; /* Restore hidden text but make it fit */
+        font-size: 14px !important;
+        margin-top: 20px !important;
+        color: #ddd !important;
+    }
+    .about-primary-btn, .about-secondary-btn {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+}

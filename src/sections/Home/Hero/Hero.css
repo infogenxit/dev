@@ -440,3 +440,46 @@ margin-top: 0;
 
 
 
+
+/* Mobile Design Refinements for Home Hero */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 28px !important;
+        padding-top: 40px !important;
+        line-height: 1.3 !important;
+    }
+    .hero-container {
+        padding-top: 60px !important;
+        padding-bottom: 20px !important;
+    }
+    .hero-description {
+        font-size: 14px !important;
+        margin: 15px auto !important;
+        line-height: 1.5 !important;
+        padding: 0 15px !important;
+    }
+    .hero-buttons {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 0 20px !important;
+    }
+    .hero-buttons button {
+        width: 100% !important;
+        padding: 12px 0 !important;
+    }
+    .hero-brands {
+        margin-top: 30px !important;
+        gap: 15px !important;
+    }
+    .hero-brands img {
+        height: 25px !important;
+    }
+    .hero-bottom-info {
+        margin: 20px 15px !important;
+        padding: 20px !important;
+    }
+    .hero-secondary-text {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+}
