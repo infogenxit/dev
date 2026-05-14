@@ -378,3 +378,36 @@
         color: #ff6a00 !important;
     }
 }
+
+/* MOBILE PARENT & CHILD LINK FIX */
+@media (max-width: 1024px) {
+    .nav-link-wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+    }
+    .nav-link-wrapper a {
+        flex: 1 !important;
+        padding: 15px 0 !important;
+        border: none !important;
+    }
+    .mobile-toggle {
+        width: 50px !important;
+        height: 50px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+    }
+    .mobile-toggle::after {
+        content: '?' !important;
+        font-size: 24px !important;
+        color: #ff6a00 !important;
+    }
+    
+    /* Remove the arrow from the previous link implementation */
+    .nav-item .nav-link::after {
+        display: none !important;
+    }
+}
