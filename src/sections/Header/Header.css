@@ -300,3 +300,59 @@
         position: relative !important;
     }
 }
+
+/* MOBILE DRAWER DROPDOWN ENHANCEMENTS */
+@media (max-width: 1024px) {
+    .nav {
+        overflow-y: auto !important; /* Ensure scrolling works for long menus */
+    }
+    .nav-item {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .services-dropdown, .solutions-dropdown, .industries-dropdown, .platforms-dropdown, .insight-dropdown {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        background: #f9f9f9 !important;
+        border-radius: 10px !important;
+        margin-top: 5px !important;
+        padding: 10px !important;
+        display: block !important; /* Show them by default in drawer if open */
+        transform: none !important;
+        min-width: auto !important;
+    }
+    
+    /* Clean up the grid inside mobile dropdowns */
+    .services-grid, .solutions-grid, .industries-grid, .platforms-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    
+    .services-grid a, .solutions-grid a, .industries-grid a, .platforms-grid a {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 8px 0 !important;
+        border-bottom: none !important;
+    }
+    
+    .service-img, .solution-img, .industry-img, .platform-img {
+        width: 35px !important;
+        height: 35px !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .service-info h4, .solution-info h4, .industry-info h4, .platform-info h4 {
+        font-size: 14px !important;
+        margin-bottom: 2px !important;
+    }
+    
+    .service-info p, .solution-info p, .industry-info p, .platform-info p {
+        display: none !important; /* Hide descriptions on mobile drawer to save space */
+    }
+}
