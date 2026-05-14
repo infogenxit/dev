@@ -12,14 +12,15 @@
     z-index: 10000;
 }
 
-/* Specific anchoring for items near the screen edges to prevent cutoff */
-/* If item is near left edge, move it right a bit from center */
+/* SMART CENTERING to prevent screen overflow */
+
+/* Left-side items: Move center further to the right */
 .nav-item:nth-child(1) .services-dropdown { left: 450px !important; }
 .nav-item:nth-child(2) .services-dropdown { left: 400px !important; }
 
-/* If item is near right edge, move it left a bit from center */
-.nav-item:nth-last-child(1) .services-dropdown,
-.nav-item:nth-last-child(2) .services-dropdown { left: auto !important; right: -400px !important; transform: none !important; }
+/* Right-side items (Insights, Contact): Move center further to the left */
+.nav-item:nth-last-child(1) .services-dropdown { left: -300px !important; }
+.nav-item:nth-last-child(2) .services-dropdown { left: -250px !important; }
 
 .nav-item {
     position: relative !important;
