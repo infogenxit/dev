@@ -17,7 +17,7 @@
                      },
     "scripts":  {
                     "start":  "react-scripts start",
-                    "build":  "rm -rf build \u0026\u0026 rm -rf node_modules/.cache \u0026\u0026 react-scripts build",
+                    "build":  "react-scripts build",
                     "test":  "react-scripts test",
                     "eject":  "react-scripts eject"
                 },
