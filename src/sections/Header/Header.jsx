@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css?v=202605141708";
 import logo from "../../assets/images/logo.webp";
@@ -34,13 +34,11 @@ const Header = () => {
           <img src={logo} alt="Infogenx Logo" fetchPriority="high" loading="eager" />
         </Link>
 
-        <nav className={
-av \}>
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <Link to="/about" onClick={closeAll}>About us</Link>
 
           {/* Services */}
-          <div className={
-av-item \} 
+          <div className={`nav-item ${servicesOpen ? "active" : ""}`} 
                onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} 
                onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
             <div className="nav-link-wrapper">
@@ -51,8 +49,7 @@ av-item \}
           </div>
 
           {/* Solutions */}
-          <div className={
-av-item \} 
+          <div className={`nav-item ${solutionsOpen ? "active" : ""}`} 
                onMouseEnter={() => window.innerWidth > 1024 && setSolutionsOpen(true)} 
                onMouseLeave={() => window.innerWidth > 1024 && setSolutionsOpen(false)}>
             <div className="nav-link-wrapper">
@@ -63,8 +60,7 @@ av-item \}
           </div>
 
           {/* Industries */}
-          <div className={
-av-item \} 
+          <div className={`nav-item ${industriesOpen ? "active" : ""}`} 
                onMouseEnter={() => window.innerWidth > 1024 && setIndustriesOpen(true)} 
                onMouseLeave={() => window.innerWidth > 1024 && setIndustriesOpen(false)}>
             <div className="nav-link-wrapper">
@@ -75,8 +71,7 @@ av-item \}
           </div>
 
           {/* Platforms */}
-          <div className={
-av-item \} 
+          <div className={`nav-item ${platformsOpen ? "active" : ""}`} 
                onMouseEnter={() => window.innerWidth > 1024 && setPlatformsOpen(true)} 
                onMouseLeave={() => window.innerWidth > 1024 && setPlatformsOpen(false)}>
             <div className="nav-link-wrapper">
@@ -90,8 +85,7 @@ av-item \}
           <Link to="/portfolio" onClick={closeAll}>Portfolio</Link>
 
           {/* Insights */}
-          <div className={
-av-item \} 
+          <div className={`nav-item ${insightOpen ? "active" : ""}`} 
                onMouseEnter={() => window.innerWidth > 1024 && setInsightOpen(true)} 
                onMouseLeave={() => window.innerWidth > 1024 && setInsightOpen(false)}>
             <div className="nav-link-wrapper">
@@ -108,7 +102,7 @@ av-item \}
           <Link to="/contact-us" className="quote-btn desktop-only">Request Strategy Briefing</Link>
         </div>
 
-        <div className={hamburger \} onClick={toggleMenu}>
+        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
