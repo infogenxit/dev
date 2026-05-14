@@ -26,7 +26,7 @@ const Hero = () => {
           <span>Brisbane's IT Partner. Smarter Systems. Stronger Growth.</span>
         </h1>   
         <p className="hero-description">
-          It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach. At Infogenx, we don’t just focus on technology; we focus on results. We partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology. Whether it is a bespoke application, a cloud migration strategy or real-world AI-based automation or a data strategy that provides your management team with actionable insight, our team of seasoned engineers, architects and consultants has the experience to deliver it right, first time.
+          Your Brisbane IT consulting partner for Microsoft, Zoho, and Odoo — helping you automate the right things, transform how you work, and build technology that grows with you.
         </p>
         <div
           style={{ textAlign: "center", fontWeight: "500", color: "#403f3f" }}
@@ -58,7 +58,7 @@ const Hero = () => {
           />
         </div>
         <div className="hero-bottom-info">
-          <p className="hero-secondary-text">It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach. At Infogenx, we don�t just focus on technology; we focus on results. We partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology. Whether it is a bespoke application, a cloud migration strategy or real-world AI-based automation or a data strategy that provides your management team with actionable insight, our team of seasoned engineers, architects and consultants has the experience to deliver it right, first time.</p>
+          <p className="hero-secondary-text">It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach. At Infogenx, we don�t just focus on technology; we focus on results. We partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology. Whether it is a bespoke application, a cloud migration strategy or real-world AI-based automation or a data strategy that provides your management team with actionable insight, our team of seasoned engineers, architects and consultants has the experience to deliver it right, first time.</p>
         </div>
         </div>
         <div className="hero-floating-icons">
@@ -87,6 +87,4 @@ const Hero = () => {
   );
 };
 export default Hero;
-
-
 
