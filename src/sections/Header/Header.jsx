@@ -1,6 +1,6 @@
 ﻿import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Header.css?v=202605141708";
+import "./Header.css?v=202605141743";
 import logo from "../../assets/images/logo.webp";
 import ServicesDropdown from "./ServicesDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
@@ -10,102 +10,69 @@ import InsightDropdown from "./InsightDropdown";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const [solutionsOpen, setSolutionsOpen] = useState(false);
-  const [industriesOpen, setIndustriesOpen] = useState(false);
-  const [platformsOpen, setPlatformsOpen] = useState(false);
-  const [insightOpen, setInsightOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const toggleDrawer = () => {
+    setMenuOpen(!menuOpen);
+    setActiveMenu(null);
+  };
+
+  const toggleSubMenu = (menuName) => {
+    setActiveMenu(activeMenu === menuName ? null : menuName);
+  };
 
   const closeAll = () => {
     setMenuOpen(false);
-    setServicesOpen(false);
-    setSolutionsOpen(false);
-    setIndustriesOpen(false);
-    setPlatformsOpen(false);
-    setInsightOpen(false);
+    setActiveMenu(null);
   };
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const navItems = [
+    { name: "About us", path: "/about" },
+    { name: "Services", path: "/services", hasDropdown: true, component: ServicesDropdown },
+    { name: "Solutions", path: "/solutions", hasDropdown: true, component: SolutionsDropdown },
+    { name: "Industries", path: "/industries", hasDropdown: true, component: IndustriesDropdown },
+    { name: "Platforms", path: "/platforms", hasDropdown: true, component: PlatformsDropdown },
+    { name: "Products", path: "/products" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Insights", path: "/insights", hasDropdown: true, component: InsightDropdown },
+    { name: "Contact Us", path: "/contact-us" }
+  ];
 
   return (
     <header className="header">
       <div className="header-container">
         <Link className="logo" to="/" onClick={closeAll}>
-          <img src={logo} alt="Infogenx Logo" fetchPriority="high" loading="eager" />
+          <img src={logo} alt="Infogenx Logo" />
         </Link>
 
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
-          <Link to="/about" onClick={closeAll}>About us</Link>
+          {navItems.map((item) => (
+            <div key={item.name} className={`nav-item ${activeMenu === item.name ? "active" : ""}`}
+                 onMouseEnter={() => window.innerWidth > 1024 && item.hasDropdown && setActiveMenu(item.name)}
+                 onMouseLeave={() => window.innerWidth > 1024 && setActiveMenu(null)}>
+              
+              <div className="nav-link-wrapper">
+                <Link to={item.path} onClick={closeAll}>{item.name}</Link>
+                {item.hasDropdown && (
+                  <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); toggleSubMenu(item.name); }}></span>
+                )}
+              </div>
 
-          {/* Services */}
-          <div className={`nav-item ${servicesOpen ? "active" : ""}`} 
-               onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} 
-               onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
-            <div className="nav-link-wrapper">
-              <Link to="/services" onClick={closeAll}>Services</Link>
-              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setServicesOpen(!servicesOpen); }}></span>
+              {item.hasDropdown && activeMenu === item.name && (
+                <div className="dropdown-container">
+                  <item.component closeMenu={closeAll} />
+                </div>
+              )}
             </div>
-            {servicesOpen && <ServicesDropdown closeMenu={closeAll} />}
-          </div>
-
-          {/* Solutions */}
-          <div className={`nav-item ${solutionsOpen ? "active" : ""}`} 
-               onMouseEnter={() => window.innerWidth > 1024 && setSolutionsOpen(true)} 
-               onMouseLeave={() => window.innerWidth > 1024 && setSolutionsOpen(false)}>
-            <div className="nav-link-wrapper">
-              <Link to="/solutions" onClick={closeAll}>Solutions</Link>
-              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setSolutionsOpen(!solutionsOpen); }}></span>
-            </div>
-            {solutionsOpen && <SolutionsDropdown closeMenu={closeAll} />}
-          </div>
-
-          {/* Industries */}
-          <div className={`nav-item ${industriesOpen ? "active" : ""}`} 
-               onMouseEnter={() => window.innerWidth > 1024 && setIndustriesOpen(true)} 
-               onMouseLeave={() => window.innerWidth > 1024 && setIndustriesOpen(false)}>
-            <div className="nav-link-wrapper">
-              <Link to="/industries" onClick={closeAll}>Industries</Link>
-              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setIndustriesOpen(!industriesOpen); }}></span>
-            </div>
-            {industriesOpen && <IndustriesDropdown closeMenu={closeAll} />}
-          </div>
-
-          {/* Platforms */}
-          <div className={`nav-item ${platformsOpen ? "active" : ""}`} 
-               onMouseEnter={() => window.innerWidth > 1024 && setPlatformsOpen(true)} 
-               onMouseLeave={() => window.innerWidth > 1024 && setPlatformsOpen(false)}>
-            <div className="nav-link-wrapper">
-              <Link to="/platforms" onClick={closeAll}>Platforms</Link>
-              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setPlatformsOpen(!platformsOpen); }}></span>
-            </div>
-            {platformsOpen && <PlatformsDropdown closeMenu={closeAll} />}
-          </div>
-
-          <Link to="/products" onClick={closeAll}>Products</Link>
-          <Link to="/portfolio" onClick={closeAll}>Portfolio</Link>
-
-          {/* Insights */}
-          <div className={`nav-item ${insightOpen ? "active" : ""}`} 
-               onMouseEnter={() => window.innerWidth > 1024 && setInsightOpen(true)} 
-               onMouseLeave={() => window.innerWidth > 1024 && setInsightOpen(false)}>
-            <div className="nav-link-wrapper">
-              <Link to="/insights" onClick={closeAll}>Insights</Link>
-              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setInsightOpen(!insightOpen); }}></span>
-            </div>
-            {insightOpen && <InsightDropdown closeMenu={closeAll} />}
-          </div>
-
-          <Link to="/contact-us" onClick={closeAll}>Contact Us</Link>
+          ))}
         </nav>
 
         <div className="quote-wrapper">
           <Link to="/contact-us" className="quote-btn desktop-only">Request Strategy Briefing</Link>
         </div>
 
-        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleDrawer}>
+          <span></span><span></span><span></span>
         </div>
       </div>
       {menuOpen && <div className="menu-overlay" onClick={closeAll}></div>}
