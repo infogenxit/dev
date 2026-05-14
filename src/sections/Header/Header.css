@@ -80,3 +80,39 @@
         color: #333 !important;
     }
 }
+
+/* FINAL MOBILE ARROW VISIBILITY & DATA FIX */
+@media (max-width: 1024px) {
+    .nav-link-wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        padding-right: 10px !important;
+    }
+    
+    .mobile-toggle {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 44px !important;
+        height: 44px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #fdfdfd !important;
+        border: 1px solid #eee !important;
+        border-radius: 50% !important;
+        margin-left: 10px !important;
+        z-index: 100 !important;
+    }
+    
+    .mobile-toggle::after {
+        content: '?' !important; /* Standard unicode arrow */
+        display: block !important;
+        color: #ff6a00 !important;
+        font-size: 22px !important;
+        line-height: 1 !important;
+        font-family: Arial, sans-serif !important;
+        visibility: visible !important;
+    }
+}
