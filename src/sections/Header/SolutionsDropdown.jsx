@@ -3,7 +3,7 @@ import "./ServicesDropdown.css";
 import CodeBox1 from "../../assets/images/Digital Transformation.webp";
 import CodeBox2 from "../../assets/images/Intelligent Automation.webp";
 import CodeBox3 from "../../assets/images/Modern Applications.webp";
-import CodeBox4 from "../../assets/images/Data Analytics AI.webp";
+import CodeBox4 from "../../assets/images/Data Analytics & AI.webp";
 import CodeBox5 from "../../assets/images/Integration & API Enablement.webp";
 const SolutionsDropdown = ({ closeMenu }) => {
   return (
