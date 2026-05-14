@@ -411,3 +411,6 @@
         display: none !important;
     }
 }
+
+.mobile-toggle::after { content: '\25BE' !important; font-family: Arial, sans-serif !important; }
+
