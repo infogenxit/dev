@@ -107,3 +107,25 @@
 .services-dropdown.compact .services-grid {
     grid-template-columns: repeat(2, 1fr);
 }
+
+
+/* Further move Contact Us dropdown to the left for better visual balance */
+.nav-item:last-child .services-dropdown {
+    left: -500px !important;
+    transform: none !important;
+}
+
+
+/* Pull Contact Us dropdown significantly to the left for better visual balance */
+.nav-item:last-child .services-dropdown {
+    left: auto !important;
+    right: -20px !important; /* Safety margin from the right edge */
+    transform: none !important;
+}
+
+/* Adjust Insights too for balance */
+.nav-item:nth-last-child(2) .services-dropdown {
+    left: auto !important;
+    right: -100px !important;
+    transform: none !important;
+}
