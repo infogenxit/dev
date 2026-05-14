@@ -1,7 +1,7 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 65%;
     transform: translateX(-50%);
 
     width: 1200px;
