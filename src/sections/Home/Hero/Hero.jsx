@@ -23,10 +23,10 @@ const Hero = () => {
       {/* <NetworkBackground /> */}
       <div className="hero-container">
         <h1 className="hero-heading">
-          <span>Brisbane's IT Partner. Smarter Systems. Stronger Growth.</span>
+          <span>Build Smarter. Automate Faster. Decide Better.</span>
         </h1>   
         <p className="hero-description">
-          Your Brisbane IT consulting partner for Microsoft, Zoho, and Odoo — helping you automate the right things, transform how you work, and build technology that grows with you.
+          AI-enabled application, automation, and analytics for Microsoft, Zoho, and Odoo-engineered for growth, governance, and impact.
         </p>
         <div
           style={{ textAlign: "center", fontWeight: "500", color: "#403f3f" }}
@@ -90,11 +90,3 @@ const Hero = () => {
   );
 };
 export default Hero;
-
-
-
-
-
-
-
-
