@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Header.css?v=202605141648";
+import "./Header.css?v=202605141706";
 import logo from "../../assets/images/logo.webp";
 import ServicesDropdown from "./ServicesDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
 import IndustriesDropdown from "./IndustriesDropdown";
 import PlatformsDropdown from "./PlatformsDropdown";
 import InsightDropdown from "./InsightDropdown";
-import ContactDropdown from "./ContactDropdown";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +15,6 @@ const Header = () => {
   const [industriesOpen, setIndustriesOpen] = useState(false);
   const [platformsOpen, setPlatformsOpen] = useState(false);
   const [insightOpen, setInsightOpen] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
 
   const closeAll = () => {
     setMenuOpen(false);
@@ -25,7 +23,6 @@ const Header = () => {
     setIndustriesOpen(false);
     setPlatformsOpen(false);
     setInsightOpen(false);
-    setContactOpen(false);
   };
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -37,41 +34,54 @@ const Header = () => {
           <img src={logo} alt="Infogenx Logo" fetchPriority="high" loading="eager" />
         </Link>
 
-        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+        <nav className={
+av \}>
           <Link to="/about" onClick={closeAll}>About us</Link>
 
           {/* Services */}
-          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
+          <div className={
+av-item \} 
+               onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} 
+               onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/services" onClick={closeAll}>Services</Link>
-              <span className="mobile-toggle" onClick={() => setServicesOpen(!servicesOpen)}></span>
+              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setServicesOpen(!servicesOpen); }}></span>
             </div>
             {servicesOpen && <ServicesDropdown closeMenu={closeAll} />}
           </div>
 
           {/* Solutions */}
-          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
+          <div className={
+av-item \} 
+               onMouseEnter={() => window.innerWidth > 1024 && setSolutionsOpen(true)} 
+               onMouseLeave={() => window.innerWidth > 1024 && setSolutionsOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/solutions" onClick={closeAll}>Solutions</Link>
-              <span className="mobile-toggle" onClick={() => setSolutionsOpen(!solutionsOpen)}></span>
+              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setSolutionsOpen(!solutionsOpen); }}></span>
             </div>
             {solutionsOpen && <SolutionsDropdown closeMenu={closeAll} />}
           </div>
 
           {/* Industries */}
-          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
+          <div className={
+av-item \} 
+               onMouseEnter={() => window.innerWidth > 1024 && setIndustriesOpen(true)} 
+               onMouseLeave={() => window.innerWidth > 1024 && setIndustriesOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/industries" onClick={closeAll}>Industries</Link>
-              <span className="mobile-toggle" onClick={() => setIndustriesOpen(!industriesOpen)}></span>
+              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setIndustriesOpen(!industriesOpen); }}></span>
             </div>
             {industriesOpen && <IndustriesDropdown closeMenu={closeAll} />}
           </div>
 
           {/* Platforms */}
-          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
+          <div className={
+av-item \} 
+               onMouseEnter={() => window.innerWidth > 1024 && setPlatformsOpen(true)} 
+               onMouseLeave={() => window.innerWidth > 1024 && setPlatformsOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/platforms" onClick={closeAll}>Platforms</Link>
-              <span className="mobile-toggle" onClick={() => setPlatformsOpen(!platformsOpen)}></span>
+              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setPlatformsOpen(!platformsOpen); }}></span>
             </div>
             {platformsOpen && <PlatformsDropdown closeMenu={closeAll} />}
           </div>
@@ -80,10 +90,13 @@ const Header = () => {
           <Link to="/portfolio" onClick={closeAll}>Portfolio</Link>
 
           {/* Insights */}
-          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
+          <div className={
+av-item \} 
+               onMouseEnter={() => window.innerWidth > 1024 && setInsightOpen(true)} 
+               onMouseLeave={() => window.innerWidth > 1024 && setInsightOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/insights" onClick={closeAll}>Insights</Link>
-              <span className="mobile-toggle" onClick={() => setInsightOpen(!insightOpen)}></span>
+              <span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setInsightOpen(!insightOpen); }}></span>
             </div>
             {insightOpen && <InsightDropdown closeMenu={closeAll} />}
           </div>
@@ -95,7 +108,7 @@ const Header = () => {
           <Link to="/contact-us" className="quote-btn desktop-only">Request Strategy Briefing</Link>
         </div>
 
-        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
+        <div className={hamburger \} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
@@ -107,5 +120,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
