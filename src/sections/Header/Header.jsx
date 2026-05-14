@@ -26,40 +26,40 @@ const Header = () => {
           <Link to="/about">About us</Link>
           <div
             className="nav-item"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
+            onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)}
+            onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}
           >
-            <span className="nav-link">Services</span>
+            <span className="nav-link" onClick={() => window.innerWidth <= 1024 && setServicesOpen(!servicesOpen)}>Services</span>
             {servicesOpen && (
               <ServicesDropdown closeMenu={() => setServicesOpen(false)} />
             )}
           </div>
           <div
             className="nav-item"
-            onMouseEnter={() => setSolutionsOpen(true)}
-            onMouseLeave={() => setSolutionsOpen(false)}
+            onMouseEnter={() => window.innerWidth > 1024 && setSolutionsOpen(true)}
+            onMouseLeave={() => window.innerWidth > 1024 && setSolutionsOpen(false)}
           >
-            <span className="nav-link">Solutions</span>
+            <span className="nav-link" onClick={() => window.innerWidth <= 1024 && setSolutionsOpen(!solutionsOpen)}>Solutions</span>
             {solutionsOpen && (
               <SolutionsDropdown closeMenu={() => setSolutionsOpen(false)} />
             )}
           </div>
           <div
             className="nav-item"
-            onMouseEnter={() => setIndustriesOpen(true)}
-            onMouseLeave={() => setIndustriesOpen(false)}
+            onMouseEnter={() => window.innerWidth > 1024 && setIndustriesOpen(true)}
+            onMouseLeave={() => window.innerWidth > 1024 && setIndustriesOpen(false)}
           >
-            <span className="nav-link">Industries</span>
+            <span className="nav-link" onClick={() => window.innerWidth <= 1024 && setIndustriesOpen(!industriesOpen)}>Industries</span>
             {industriesOpen && (
               <IndustriesDropdown closeMenu={() => setIndustriesOpen(false)} />
             )}
           </div>
           <div
             className="nav-item"
-            onMouseEnter={() => setPlatformsOpen(true)}
-            onMouseLeave={() => setPlatformsOpen(false)}
+            onMouseEnter={() => window.innerWidth > 1024 && setPlatformsOpen(true)}
+            onMouseLeave={() => window.innerWidth > 1024 && setPlatformsOpen(false)}
           >
-            <span className="nav-link">Platforms</span>
+            <span className="nav-link" onClick={() => window.innerWidth <= 1024 && setPlatformsOpen(!platformsOpen)}>Platforms</span>
             {platformsOpen && (
               <PlatformsDropdown closeMenu={() => setPlatformsOpen(false)} />
             )}
@@ -70,10 +70,10 @@ const Header = () => {
           <Link to="/portfolio">Portfolio</Link>
           <div
             className="nav-item"
-            onMouseEnter={() => setInsightOpen(true)}
-            onMouseLeave={() => setInsightOpen(false)}
+            onMouseEnter={() => window.innerWidth > 1024 && setInsightOpen(true)}
+            onMouseLeave={() => window.innerWidth > 1024 && setInsightOpen(false)}
           >
-            <span className="nav-link">Insights</span>
+            <span className="nav-link" onClick={() => window.innerWidth <= 1024 && setInsightOpen(!insightOpen)}>Insights</span>
             {insightOpen && (
               <InsightDropdown closeMenu={() => setInsightOpen(false)} />
             )}
@@ -102,5 +102,6 @@ const Header = () => {
   );
 };
 export default Header;
+
 
 

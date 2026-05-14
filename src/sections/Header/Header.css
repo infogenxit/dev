@@ -321,7 +321,7 @@
         border-radius: 10px !important;
         margin-top: 5px !important;
         padding: 10px !important;
-        display: block !important; /* Show them by default in drawer if open */
+        
         transform: none !important;
         min-width: auto !important;
     }
@@ -354,5 +354,27 @@
     
     .service-info p, .solution-info p, .industry-info p, .platform-info p {
         display: none !important; /* Hide descriptions on mobile drawer to save space */
+    }
+}
+
+/* INTERACTIVE MOBILE DROPDOWNS */
+@media (max-width: 1024px) {
+    .services-dropdown, .solutions-dropdown, .industries-dropdown, .platforms-dropdown, .insight-dropdown {
+        display: none !important;
+    }
+    
+    /* Show them only when state is open (handled by React rendering) */
+    .nav-item .nav-link {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    
+    .nav-link::after {
+        content: '?' !important;
+        font-size: 20px !important;
+        margin-left: 10px !important;
+        color: #ff6a00 !important;
     }
 }
