@@ -37,8 +37,7 @@ const Header = () => {
           <img src={logo} alt="Infogenx Logo" fetchPriority="high" loading="eager" />
         </Link>
 
-        <nav className={
-av }>
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <Link to="/about" onClick={closeAll}>About us</Link>
 
           {/* Services */}
@@ -96,7 +95,7 @@ av }>
           <Link to="/contact-us" className="quote-btn desktop-only">Request Strategy Briefing</Link>
         </div>
 
-        <div className={hamburger } onClick={toggleMenu}>
+        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
@@ -108,3 +107,4 @@ av }>
 };
 
 export default Header;
+
