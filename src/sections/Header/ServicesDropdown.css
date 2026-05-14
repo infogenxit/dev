@@ -1,10 +1,10 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
-    /* Default: Anchor exactly to the left edge of the parent link */
-    left: 0 !important;
-    transform: none !important;
-    width: 900px; /* Standardized width */
+    /* CENTER logic: anchor to middle of parent, then shift back half of dropdown width */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
     background: #fff1e8;
     border-radius: 18px;
     padding: 30px;
@@ -12,14 +12,14 @@
     z-index: 10000;
 }
 
-/* For items that are further to the right (like Portfolio, Insights), 
-   we might want to anchor to the right edge instead to avoid overflow. */
-.nav-item:nth-child(n+5) .services-dropdown {
-    left: auto !important;
-    right: 0 !important;
-}
+/* Specific anchoring for items near the screen edges to prevent cutoff */
+/* If item is near left edge, move it right a bit from center */
+.nav-item:nth-child(1) .services-dropdown { left: 450px !important; }
+.nav-item:nth-child(2) .services-dropdown { left: 400px !important; }
 
-/* Specific centering for those in the middle if preferred, but 'left:0' is safest */
+/* If item is near right edge, move it left a bit from center */
+.nav-item:nth-last-child(1) .services-dropdown,
+.nav-item:nth-last-child(2) .services-dropdown { left: auto !important; right: -400px !important; transform: none !important; }
 
 .nav-item {
     position: relative !important;
