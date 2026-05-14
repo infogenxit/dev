@@ -274,3 +274,21 @@
         font-size: 14px;
     }
 }
+
+
+/* Highlighting for the active section */
+.nav-item:hover > a, 
+.nav-item.active > a {
+    color: #ff6a00 !important;
+    font-weight: 700 !important;
+}
+
+.nav-item {
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #ff6a00;
+}
