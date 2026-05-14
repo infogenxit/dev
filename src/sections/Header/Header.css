@@ -6,7 +6,7 @@
     z-index: 10;
 }
 
-.header-container {
+.header-container { overflow: visible !important; 
     background-color: #ffffff;
     backdrop-filter: none;
     margin: 0 30px;
@@ -116,7 +116,7 @@
 /* Responsive Design for tablet */
 
 @media (max-width: 1024px) {
-    .header-container {
+    .header-container { overflow: visible !important; 
         margin: 0 20px;
         padding: 14px 20px;
         border: none;
@@ -197,7 +197,7 @@
     }
     
 
-    .header-container {
+    .header-container { overflow: visible !important; 
         margin: 0 12px;
         border-radius: 18px;
         border: none;
