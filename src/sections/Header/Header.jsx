@@ -29,7 +29,7 @@ const Header = () => {
             onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)}
             onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}
           >
-            <div className="nav-link-wrapper"><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link><span className="mobile-toggle" onClick={(e) => { e.preventDefault(); setServicesOpen(!servicesOpen); }}></span></div>
+            <div className="nav-link-wrapper"><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link><span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setServicesOpen(!servicesOpen); }}></span></div>
             {servicesOpen && (
               <ServicesDropdown closeMenu={() => setServicesOpen(false)} />
             )}
@@ -39,7 +39,7 @@ const Header = () => {
             onMouseEnter={() => window.innerWidth > 1024 && setSolutionsOpen(true)}
             onMouseLeave={() => window.innerWidth > 1024 && setSolutionsOpen(false)}
           >
-            <div className="nav-link-wrapper"><Link to="/solutions" onClick={() => setMenuOpen(false)}>Solutions</Link><span className="mobile-toggle" onClick={(e) => { e.preventDefault(); setSolutionsOpen(!solutionsOpen); }}></span></div>
+            <div className="nav-link-wrapper"><Link to="/solutions" onClick={() => setMenuOpen(false)}>Solutions</Link><span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setSolutionsOpen(!solutionsOpen); }}></span></div>
             {solutionsOpen && (
               <SolutionsDropdown closeMenu={() => setSolutionsOpen(false)} />
             )}
@@ -49,7 +49,7 @@ const Header = () => {
             onMouseEnter={() => window.innerWidth > 1024 && setIndustriesOpen(true)}
             onMouseLeave={() => window.innerWidth > 1024 && setIndustriesOpen(false)}
           >
-            <div className="nav-link-wrapper"><Link to="/industries" onClick={() => setMenuOpen(false)}>Industries</Link><span className="mobile-toggle" onClick={(e) => { e.preventDefault(); setIndustriesOpen(!industriesOpen); }}></span></div>
+            <div className="nav-link-wrapper"><Link to="/industries" onClick={() => setMenuOpen(false)}>Industries</Link><span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setIndustriesOpen(!industriesOpen); }}></span></div>
             {industriesOpen && (
               <IndustriesDropdown closeMenu={() => setIndustriesOpen(false)} />
             )}
@@ -59,7 +59,7 @@ const Header = () => {
             onMouseEnter={() => window.innerWidth > 1024 && setPlatformsOpen(true)}
             onMouseLeave={() => window.innerWidth > 1024 && setPlatformsOpen(false)}
           >
-            <div className="nav-link-wrapper"><Link to="/platforms" onClick={() => setMenuOpen(false)}>Platforms</Link><span className="mobile-toggle" onClick={(e) => { e.preventDefault(); setPlatformsOpen(!platformsOpen); }}></span></div>
+            <div className="nav-link-wrapper"><Link to="/platforms" onClick={() => setMenuOpen(false)}>Platforms</Link><span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setPlatformsOpen(!platformsOpen); }}></span></div>
             {platformsOpen && (
               <PlatformsDropdown closeMenu={() => setPlatformsOpen(false)} />
             )}
@@ -73,7 +73,7 @@ const Header = () => {
             onMouseEnter={() => window.innerWidth > 1024 && setInsightOpen(true)}
             onMouseLeave={() => window.innerWidth > 1024 && setInsightOpen(false)}
           >
-            <div className="nav-link-wrapper"><Link to="/insights" onClick={() => setMenuOpen(false)}>Insights</Link><span className="mobile-toggle" onClick={(e) => { e.preventDefault(); setInsightOpen(!insightOpen); }}></span></div>
+            <div className="nav-link-wrapper"><Link to="/insights" onClick={() => setMenuOpen(false)}>Insights</Link><span className="mobile-toggle" onClick={(e) => { e.stopPropagation(); setInsightOpen(!insightOpen); }}></span></div>
             {insightOpen && (
               <InsightDropdown closeMenu={() => setInsightOpen(false)} />
             )}
@@ -102,6 +102,7 @@ const Header = () => {
   );
 };
 export default Header;
+
 
 
 

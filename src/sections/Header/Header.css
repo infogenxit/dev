@@ -414,3 +414,17 @@
 
 .mobile-toggle::after { content: '\25BE' !important; font-family: Arial, sans-serif !important; }
 
+
+/* ENSURE MOBILE TOGGLE IS ALWAYS ON TOP AND TAPPABLE */
+@media (max-width: 1024px) {
+    .mobile-toggle {
+        background: rgba(0, 0, 0, 0.03) !important; /* Slight background for debugging and visibility */
+        border-radius: 8px !important;
+        position: relative !important;
+        z-index: 10 !important;
+        pointer-events: auto !important;
+    }
+    .nav-link-wrapper {
+        position: relative !important;
+    }
+}
