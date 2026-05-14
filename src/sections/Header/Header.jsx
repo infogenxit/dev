@@ -78,16 +78,7 @@ const Header = () => {
               <InsightDropdown closeMenu={() => setInsightOpen(false)} />
             )}
           </div>
-          <div
-            className="nav-item"
-            onMouseEnter={() => setContactOpen(true)}
-            onMouseLeave={() => setContactOpen(false)}
-          >
-            <Link className="nav-link" to="/contact-us">Contact Us</Link>
-            {contactOpen && (
-              <ContactDropdown closeMenu={() => setContactOpen(false)} />
-            )}
-          </div>
+          <Link to="/contact-us">Contact Us</Link>
         </nav>
         <div className="quote-wrapper">
           <Link to="/contact-us" className="quote-btn desktop-only">
@@ -111,4 +102,5 @@ const Header = () => {
   );
 };
 export default Header;
+
 
