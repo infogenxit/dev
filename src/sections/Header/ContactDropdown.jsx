@@ -5,7 +5,7 @@ import Icon2 from "../../assets/images/Digital Transformation.webp";
 
 const ContactDropdown = ({ closeMenu }) => {
   return (
-    <div className="services-dropdown">
+    <div className="services-dropdown compact">
       <div className="services-grid">
         <Link to="/contact-us" onClick={closeMenu}>
           <div className="service-img">

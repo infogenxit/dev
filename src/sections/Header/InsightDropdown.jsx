@@ -5,7 +5,7 @@ import Icon2 from "../../assets/images/Data Analytics & AI.webp";
 
 const InsightDropdown = ({ closeMenu }) => {
   return (
-    <div className="services-dropdown">
+    <div className="services-dropdown compact">
       <div className="services-grid">
         <Link to="https://blog.infogenx.com/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
           <div className="service-img">

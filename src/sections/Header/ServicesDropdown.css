@@ -97,3 +97,13 @@
         transform: none !important;
     }
 }
+
+
+/* Compact dropdown for 2-item menus (Insights, Contact) */
+.services-dropdown.compact {
+    width: 600px !important;
+}
+
+.services-dropdown.compact .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
