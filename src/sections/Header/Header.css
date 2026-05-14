@@ -20,8 +20,8 @@
 
 /* MOBILE DRAWER SYSTEM */
 @media (max-width: 1024px) {
-    .header { top: 0; }
-    .header-container { margin: 0; border-radius: 0; border: none; padding: 15px 20px; }
+    .header { top: 20px; }
+    .header-container { margin: 0 20px; border-radius: 50px; border: 1px solid #eee; padding: 8px 10px 8px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
     .nav-desktop, .desktop-only { display: none; }
 
     .hamburger { display: flex; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1002; }
