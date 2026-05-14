@@ -553,3 +553,11 @@ margin-top: 0;
     text-underline-offset: 4px !important;
 }
 
+
+.hero-description u {
+    text-decoration: underline !important;
+    text-decoration-color: #00123c !important; /* Blue underline like in the image */
+    text-underline-offset: 3px !important;
+    font-weight: 700 !important;
+    color: #00123c !important;
+}

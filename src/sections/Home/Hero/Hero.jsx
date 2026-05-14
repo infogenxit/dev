@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="hero-container">
         <h1 className="hero-heading"><span>Build Smarter. Automate Faster.</span><span>Decide Better.</span></h1>   
         <p className="hero-description">
-          AI-enabled application, automation, and analytics for <strong><u>Microsoft, Zoho, and Odoo</u></strong>-engineered for growth, governance, and impact.
+          AI-enabled application, automation, and analytics for <u>Microsoft</u>, <u>Zoho</u>, and <u>Odoo</u>-engineered for growth, governance, and impact.
         </p>
         <div
           style={{ textAlign: "center", fontWeight: "500", color: "#403f3f" }}
@@ -88,6 +88,7 @@ const Hero = () => {
   );
 };
 export default Hero;
+
 
 
 
