@@ -1,7 +1,6 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
-    /* CENTER logic: anchor to middle of parent, then shift back half of dropdown width */
     left: 50%;
     transform: translateX(-50%);
     width: 900px;
@@ -10,27 +9,31 @@
     padding: 30px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
     z-index: 10000;
+    
+    /* PREVENT SCREEN OVERFLOW */
+    /* If the dropdown is wider than the screen, shrink it */
+    max-width: calc(100vw - 40px);
 }
 
-/* SMART CENTERING to prevent screen overflow */
+/* SMART ANCHORING */
+/* For items on the left side of the nav, anchor to the left to avoid cutoff */
+.nav-item:nth-child(-n+3) .services-dropdown {
+    left: 0 !important;
+    transform: none !important;
+}
 
-/* Left-side items: Move center further to the right */
-.nav-item:nth-child(1) .services-dropdown { left: 450px !important; }
-.nav-item:nth-child(2) .services-dropdown { left: 400px !important; }
-
-/* Right-side items (Insights, Contact): Move center further to the left */
-.nav-item:nth-last-child(1) .services-dropdown { left: -300px !important; }
-.nav-item:nth-last-child(2) .services-dropdown { left: -250px !important; }
+/* For items on the right side of the nav, anchor to the right to avoid cutoff */
+.nav-item:nth-last-child(-n+3) .services-dropdown {
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
+}
 
 .nav-item {
     position: relative !important;
 }
 
-/* Clear all parent overflows */
-.nav, .header-container, .header {
-    overflow: visible !important;
-}
-
+/* ... rest of the grid styles ... */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -92,6 +95,9 @@
         left: 50% !important;
         transform: translateX(-50%) !important;
     }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -105,5 +111,8 @@
         max-height: 80vh;
         overflow-y: auto;
         transform: none !important;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 }
