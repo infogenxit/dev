@@ -436,3 +436,29 @@ margin-top: 0;
 
 
 
+
+.hero-bottom-info {
+    position: relative;
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.8); /* Add subtle background to clear text */
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 25px 40px;
+    margin: 40px auto -80px; /* Pull it down so it bridges the transition */
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.hero-secondary-text {
+    color: #333 !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .hero-bottom-info {
+        margin: 20px 20px;
+        padding: 20px;
+    }
+}
