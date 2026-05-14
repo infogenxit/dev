@@ -212,7 +212,3 @@
         opacity: 1 !important;
     }
 }
-
-/* FINAL OVERRIDE */
-@media (max-width: 1024px) { .services-dropdown, .services-grid { display: block !important; visibility: visible !important; opacity: 1 !important; } }
-
