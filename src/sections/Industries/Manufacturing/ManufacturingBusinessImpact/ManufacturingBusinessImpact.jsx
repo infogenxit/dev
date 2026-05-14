@@ -1,5 +1,5 @@
 import "./ManufacturingBusinessImpact.css";
-import Business1 from "../../../../assets/images/businessimg1.webp";
+import Business1 from "../../../../assets/images/business_impact_manufacturing.png";
 import Business2 from "../../../../assets/images/businessimg2.webp";
 import Business3 from "../../../../assets/images/businessimg3.webp";
 import Business4 from "../../../../assets/images/businessimg4.webp";

@@ -1,6 +1,6 @@
 import "./MobileAppHero.css";
 import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
-const WebDevHero = () => {
+const MobileAppHero = () => {
   return (
     <section className="WebDev-hero">
       <img
@@ -32,5 +32,4 @@ const WebDevHero = () => {
     </section>
   );
 };
-export default WebDevHero;
-
+export default MobileAppHero;

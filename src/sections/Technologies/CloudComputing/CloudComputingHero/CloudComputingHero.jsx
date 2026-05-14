@@ -1,6 +1,6 @@
 import "./CloudComputingHero.css";
 import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
-const WebDevHero = () => {
+const CloudComputingHero = () => {
   return (
     <section className="WebDev-hero">
       <img
@@ -10,7 +10,7 @@ const WebDevHero = () => {
       />
       <div className="WebDev-hero-container">
         <h1 className="WebDev-hero-heading">
-          Expert Cloud Computing in Brisbane to Scale Your Business
+          Expert Cloud computing in Brisbane to Scale Your Business
         </h1>
         <p className="WebDev-hero-description">
           Build fast, scalable, secure, and future-ready web platforms using
@@ -32,5 +32,4 @@ const WebDevHero = () => {
     </section>
   );
 };
-export default WebDevHero;
-
+export default CloudComputingHero;

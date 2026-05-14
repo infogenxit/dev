@@ -1,7 +1,7 @@
 import "./DigitalMarketingHero.css";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import appDevVideo from "../../../../assets/videos/managed-services.mp4";
+import appDevVideo from "../../../../assets/videos/Digital_Data_Processing.mp4";
 import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
 const AppDevHero = () => {
   const navigate = useNavigate();

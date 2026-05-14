@@ -33,4 +33,3 @@ const WebDevHero = () => {
   );
 };
 export default WebDevHero;
-

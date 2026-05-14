@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-import CodeBox from "../../assets/images/codebox.webp";
-const ServicesDropdown = ({ closeMenu }) => {
+import CodeBox1 from "../../assets/images/Web Development.png";
+import CodeBox2 from "../../assets/images/Mobile App Development.png";
+import CodeBox3 from "../../assets/images/Artificial Intelligence.png";
+import CodeBox4 from "../../assets/images/Cloud Computing.png";
+const TechnologiesDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
       <div className="services-grid">
         <Link to="/technologies/web-development" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox1} alt="Web Development" />
           </div>
           <div className="service-info">
             <h4>Web Development</h4>
@@ -19,7 +22,7 @@ const ServicesDropdown = ({ closeMenu }) => {
         </Link>
         <Link to="/technologies/mobile-app-development" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox2} alt="Mobile App Development" />
           </div>
           <div className="service-info">
             <h4>Mobile App Development</h4>
@@ -31,7 +34,7 @@ const ServicesDropdown = ({ closeMenu }) => {
         </Link>
         <Link to="/technologies/artificial-intelligence" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox3} alt="Artificial Intelligence" />
           </div>
           <div className="service-info">
             <h4>Artificial Intelligence</h4>
@@ -43,7 +46,7 @@ const ServicesDropdown = ({ closeMenu }) => {
         </Link>
         <Link to="/technologies/cloud-computing" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox4} alt="Cloud Computing" />
           </div>
           <div className="service-info">
             <h4>Cloud Computing</h4>
@@ -54,5 +57,5 @@ const ServicesDropdown = ({ closeMenu }) => {
     </div>
   );
 };
-export default ServicesDropdown;
+export default TechnologiesDropdown;
 

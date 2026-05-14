@@ -5,6 +5,7 @@ import CodeBox1 from "../../assets/images/Implementation & Integration.webp";
 import CodeBox2 from "../../assets/images/Managed Services.webp";
 import CodeBox3 from "../../assets/images/Consulting & Advisory.webp";
 import CodeBox4 from "../../assets/images/Support & Optimization.webp";
+import CodeBox5 from "../../assets/images/Digital Marketing.png";
 
 const ServicesDropdown = ({ closeMenu }) => {
   return (
@@ -54,7 +55,7 @@ const ServicesDropdown = ({ closeMenu }) => {
         </Link>
         <Link to={PATHS.digitalMarketing} onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox3} alt="Digital Marketing" />
+            <img src={CodeBox5} alt="Digital Marketing" />
           </div>
           <div className="service-info">
             <h4>Digital Marketing</h4>

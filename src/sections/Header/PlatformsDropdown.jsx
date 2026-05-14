@@ -3,6 +3,7 @@ import "./ServicesDropdown.css";
 import CodeBox1 from "../../assets/images/Microsoft Solutions.webp";
 import CodeBox2 from "../../assets/images/Zoho Solutions.webp";
 import CodeBox3 from "../../assets/images/Odoo Solutions.webp";
+import CodeBox4 from "../../assets/images/Shopify Solutions.png";
 const PlatformsDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
@@ -42,7 +43,7 @@ const PlatformsDropdown = ({ closeMenu }) => {
         </Link>
         <Link to="/platforms/shopify" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox1} alt="Shopify Solutions" />
+            <img src={CodeBox4} alt="Shopify Solutions" />
           </div>
           <div className="service-info">
             <h4>Shopify Solutions</h4>

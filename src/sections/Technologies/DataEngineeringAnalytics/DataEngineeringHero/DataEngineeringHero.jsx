@@ -1,6 +1,6 @@
 import "./DataEngineeringHero.css";
 import AboutCornerAccent from "../../../../assets/images/about-corner-accent.webp";
-const WebDevHero = () => {
+const DataEngineeringHero = () => {
   return (
     <section className="WebDev-hero">
       <img
@@ -32,5 +32,4 @@ const WebDevHero = () => {
     </section>
   );
 };
-export default WebDevHero;
-
+export default DataEngineeringHero;
