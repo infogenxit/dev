@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css?v=202605141743";
 import logo from "../../assets/images/logo.webp";
@@ -58,7 +58,7 @@ const Header = () => {
                 )}
               </div>
 
-              {item.hasDropdown && activeMenu === item.name && (
+              {item.hasDropdown && (
                 <div className="dropdown-container">
                   <item.component closeMenu={closeAll} />
                 </div>
@@ -81,3 +81,4 @@ const Header = () => {
 };
 
 export default Header;
+
