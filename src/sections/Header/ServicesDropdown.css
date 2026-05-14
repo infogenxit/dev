@@ -1,43 +1,30 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
+    /* UNIFORM CENTERING for all sections as per 'Platforms' reference */
     left: 50%;
     transform: translateX(-50%);
+    
     width: 900px;
     background: #fff1e8;
     border-radius: 18px;
-    padding: 30px;
+    padding: 35px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
     z-index: 10000;
-    
-    /* PREVENT SCREEN OVERFLOW */
-    /* If the dropdown is wider than the screen, shrink it */
-    max-width: calc(100vw - 40px);
 }
 
-/* SMART ANCHORING */
-/* For items on the left side of the nav, anchor to the left to avoid cutoff */
-.nav-item:nth-child(-n+3) .services-dropdown {
-    left: 0 !important;
-    transform: none !important;
-}
+/* SMART OFFSETTING FOR SCREEN EDGES */
+/* If the centered dropdown would go off-screen on the left */
+.nav-item:nth-child(1) .services-dropdown { left: 450px !important; }
+.nav-item:nth-child(2) .services-dropdown { left: 400px !important; }
 
-/* For items on the right side of the nav, anchor to the right to avoid cutoff */
-.nav-item:nth-last-child(-n+3) .services-dropdown {
-    left: auto !important;
-    right: 0 !important;
-    transform: none !important;
-}
+/* If the centered dropdown would go off-screen on the right */
+.nav-item:last-child .services-dropdown { left: auto !important; right: -400px !important; transform: none !important; }
 
-.nav-item {
-    position: relative !important;
-}
-
-/* ... rest of the grid styles ... */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .services-grid a {
@@ -76,17 +63,17 @@
 }
 
 .services-grid h4 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
-    margin: 0 0 5px 0;
+    margin: 0 0 6px 0;
     line-height: 1.2;
 }
 
 .services-grid p {
-    font-size: 12px;
+    font-size: 13px;
     color: #555;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 @media (max-width: 1200px) {
@@ -94,9 +81,6 @@
         width: 95vw;
         left: 50% !important;
         transform: translateX(-50%) !important;
-    }
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -111,8 +95,5 @@
         max-height: 80vh;
         overflow-y: auto;
         transform: none !important;
-    }
-    .services-grid {
-        grid-template-columns: 1fr;
     }
 }
