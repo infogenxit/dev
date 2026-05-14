@@ -22,9 +22,7 @@ const Hero = () => {
       />
       {/* <NetworkBackground /> */}
       <div className="hero-container">
-        <h1 className="hero-heading">
-          <span>Build Smarter. Automate Faster. Decide Better.</span>
-        </h1>   
+        <h1 className="hero-heading"><span>Build Smarter. Automate Faster.</span><span>Decide Better.</span></h1>   
         <p className="hero-description">
           AI-enabled application, automation, and analytics for Microsoft, Zoho, and Odoo-engineered for growth, governance, and impact.
         </p>
@@ -90,4 +88,5 @@ const Hero = () => {
   );
 };
 export default Hero;
+
 
