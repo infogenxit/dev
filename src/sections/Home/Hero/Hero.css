@@ -483,3 +483,50 @@ margin-top: 0;
         line-height: 1.6 !important;
     }
 }
+
+/* FINAL MOBILE CORRECTIONS FOR HOME SCREEN */
+@media (max-width: 500px) {
+    .hero-heading {
+        font-size: 24px !important;
+        margin-top: 10px !important;
+        padding-top: 20px !important;
+    }
+    .hero-container {
+        padding-top: 40px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .hero-description {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+        margin-top: 10px !important;
+    }
+    .hero-buttons {
+        margin-top: 20px !important;
+        gap: 10px !important;
+    }
+    .hero-buttons button {
+        font-size: 14px !important;
+        padding: 10px 0 !important;
+    }
+    .hero-brands {
+        margin-top: 20px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .hero-brands img {
+        height: 20px !important;
+        margin: 5px !important;
+    }
+    .hero-bottom-info {
+        margin: 15px 10px !important;
+        padding: 15px !important;
+    }
+    .hero-secondary-text {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+    }
+    .hero-floating-icons {
+        display: none !important; /* Remove clutter on mobile for focus */
+    }
+}
