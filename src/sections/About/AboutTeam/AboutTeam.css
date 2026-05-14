@@ -13,10 +13,11 @@
   margin-bottom: 50px;
   color: #1a1a1a;
   font-family: 'Outfit', sans-serif;
+  text-align: center;
 }
 
 .team-title span {
-  color: #007bff;
+  color: #ff6a00;
 }
 
 .team-grid {
@@ -39,7 +40,7 @@
 .team-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-  border-color: #007bff;
+  border-color: #ff6a00;
 }
 
 .team-info h3 {
@@ -51,7 +52,7 @@
 .team-role {
   display: block;
   font-size: 0.9rem;
-  color: #007bff;
+  color: #ff6a00;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -82,8 +83,8 @@
 
 .section-label {
   display: inline-block;
-  background: rgba(0, 123, 255, 0.1);
-  color: #007bff;
+  background: rgba(255, 106, 0, 0.1);
+  color: #ff6a00;
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 0.85rem;
