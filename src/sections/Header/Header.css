@@ -28,12 +28,7 @@
     height: 30px;
 }
 
-.nav {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
+.nav { display: flex; align-items: center; justify-content: center; gap: 20px; flex: 1; margin: 0 40px; }
 .nav-item { position: relative !important;
     position: relative;
 }
@@ -122,22 +117,7 @@
         border: none;
     }
 
-        .nav {
-            position: absolute;
-            top: 80px;
-            left: 0;
-            right: 0;
-    
-            background: #fff0eb;
-            border-radius: 20px;
-            border: 2px solid #e0e0e0;
-    
-            flex-direction: column;
-            gap: 16px;
-            padding: 20px;
-    
-            display: none;
-        }
+        .nav { display: flex; align-items: center; justify-content: center; gap: 20px; flex: 1; margin: 0 40px; }
     
         .nav.open {
             display: flex;
@@ -204,22 +184,7 @@
     }
 
     /* Hide desktop elements */
-    .nav {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-
-        background: #fff0eb;
-        border-radius: 20px;
-        border: 2px solid #e0e0e0;
-
-        flex-direction: column;
-        gap: 16px;
-        padding: 20px;
-
-        display: none;
-    }
+    .nav { display: flex; align-items: center; justify-content: center; gap: 20px; flex: 1; margin: 0 40px; }
 
     .nav.open {
         display: flex;
@@ -292,3 +257,4 @@
 .nav-item:hover {
     border-bottom: 2px solid #ff6a00;
 }
+
