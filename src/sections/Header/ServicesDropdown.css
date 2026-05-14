@@ -1,10 +1,10 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
-    /* Default centering for standard tabs */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 900px;
+    /* Default: Anchor exactly to the left edge of the parent link */
+    left: 0 !important;
+    transform: none !important;
+    width: 900px; /* Standardized width */
     background: #fff1e8;
     border-radius: 18px;
     padding: 30px;
@@ -12,13 +12,22 @@
     z-index: 10000;
 }
 
-/* Move the first 3 tabs (About, Services, Solutions) to the right to prevent left cutoff */
-.nav-item:nth-child(1) .services-dropdown { left: 200px !important; transform: none !important; }
-.nav-item:nth-child(2) .services-dropdown { left: 150px !important; transform: none !important; }
-.nav-item:nth-child(3) .services-dropdown { left: 100px !important; transform: none !important; }
+/* For items that are further to the right (like Portfolio, Insights), 
+   we might want to anchor to the right edge instead to avoid overflow. */
+.nav-item:nth-child(n+5) .services-dropdown {
+    left: auto !important;
+    right: 0 !important;
+}
+
+/* Specific centering for those in the middle if preferred, but 'left:0' is safest */
 
 .nav-item {
     position: relative !important;
+}
+
+/* Clear all parent overflows */
+.nav, .header-container, .header {
+    overflow: visible !important;
 }
 
 .services-grid {
@@ -42,7 +51,6 @@
     background: #ffe1c7;
 }
 
-/* CRITICAL FIX: Constraint image size for all icons */
 .service-img {
     width: 55px;
     height: 45px;
@@ -51,7 +59,7 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    overflow: hidden; /* Added safety */
+    overflow: hidden;
 }
 
 .service-img img {
