@@ -10,17 +10,7 @@
     {
       "src": "infogenx-title-icon.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "infogenx-title-icon.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    },
-    {
-      "src": "infogenx-title-icon.png",
-      "sizes": "32x32",
-      "type": "image/png"
+      "sizes": "any"
     }
   ],
   "start_url": ".",
