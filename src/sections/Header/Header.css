@@ -34,7 +34,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav-item {
+.nav-item { position: relative !important;
     position: relative;
 }
 
