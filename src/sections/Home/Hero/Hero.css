@@ -590,3 +590,20 @@ margin-top: 0;
         padding: 0 20px !important;
     }
 }
+
+/* FORCE FULL WIDTH ON MOBILE */
+@media (max-width: 768px) {
+    .hero-container, .hero-heading, .hero-description, .hero-buttons, .hero-brands, .hero-bottom-info {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .hero-buttons {
+        flex-direction: column !important;
+    }
+    .hero-buttons button {
+        width: 100% !important;
+    }
+}
