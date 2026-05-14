@@ -594,3 +594,24 @@ margin-top: 0;
         width: 100% !important;
     }
 }
+
+/* FINAL MOBILE SUBHEADLINE LAYOUT FIX */
+@media (max-width: 768px) {
+    .hero-description {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        word-break: normal !important;
+        overflow-wrap: anywhere !important;
+        padding: 0 10px !important;
+        font-size: 15px !important;
+    }
+    .platforms-highlight {
+        display: inline !important; /* Keep it in the text flow */
+        text-decoration: underline !important;
+        text-decoration-color: #00123c !important;
+        font-weight: 700 !important;
+        white-space: nowrap !important; /* Keep platform names together if possible */
+    }
+}
