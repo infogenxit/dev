@@ -428,3 +428,51 @@
         position: relative !important;
     }
 }
+
+/* FORCE DRAWER CHILD MENU LISTS */
+@media (max-width: 1024px) {
+    .nav-item {
+        width: 100% !important;
+        border-bottom: 1px solid #eee !important;
+    }
+    
+    /* When open, ensure they flow naturally inside the drawer scroll */
+    .services-dropdown, .solutions-dropdown, .industries-dropdown, .platforms-dropdown, .insight-dropdown {
+        position: static !important;
+        display: block !important; /* Force them to be part of the flow */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        background: #fbfbfb !important;
+    }
+    
+    /* Use React state classes to expand */
+    /* This assumes the dropdown components are rendered when Open is true */
+    /* We'll just style them to look like lists */
+    .services-dropdown, .solutions-dropdown, .industries-dropdown, .platforms-dropdown, .insight-dropdown {
+        max-height: 1000px !important; /* Allow expansion */
+        padding: 10px 20px !important;
+    }
+    
+    .services-grid, .solutions-grid, .industries-grid, .platforms-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        padding-left: 15px !important;
+        border-left: 2px solid #ff6a00 !important;
+        gap: 12px !important;
+    }
+    
+    .services-grid a, .solutions-grid a, .industries-grid a, .platforms-grid a {
+        padding: 5px 0 !important;
+        font-size: 15px !important;
+        color: #444 !important;
+    }
+    
+    .service-info h4, .solution-info h4 {
+        margin: 0 !important;
+        font-weight: 500 !important;
+    }
+}
