@@ -1,9 +1,10 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
-    left: 0 !important; /* Force to left edge of parent */
-    transform: none !important; /* Remove centering entirely for safety */
-    width: 800px; /* Reduced width to be even safer */
+    /* Start from the left edge of the parent, then move right just a bit */
+    left: -20px !important; 
+    transform: none !important;
+    width: 800px;
     background: #fff1e8;
     border-radius: 18px;
     padding: 30px;
