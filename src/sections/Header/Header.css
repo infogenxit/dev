@@ -476,3 +476,64 @@
         font-weight: 500 !important;
     }
 }
+
+/* FINAL MOBILE DRAWER CHILD LIST FLOW */
+@media (max-width: 1024px) {
+    .nav {
+        background: #ffffff !important;
+        overflow-y: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .nav-item {
+        display: block !important;
+        width: 100% !important;
+        border-bottom: 1px solid #f5f5f5 !important;
+    }
+    
+    .nav-link-wrapper {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0 20px !important;
+    }
+    
+    /* Child dropdown content forced into the drawer flow */
+    .services-dropdown, .solutions-dropdown, .industries-dropdown, .platforms-dropdown, .insight-dropdown {
+        position: static !important;
+        width: 100% !important;
+        background: #fafafa !important;
+        padding: 0 0 10px 30px !important;
+        margin: 0 !important;
+        display: block !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+    
+    /* Style the grid as a simple list */
+    .services-grid, .solutions-grid, .industries-grid, .platforms-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 10px 0 !important;
+    }
+    
+    .services-grid a, .solutions-grid a, .industries-grid a, .platforms-grid a {
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+        border-bottom: none !important;
+        padding: 5px 0 !important;
+    }
+    
+    .service-info p, .solution-info p {
+        display: none !important; /* Hide descriptions to keep drawer clean */
+    }
+    
+    .service-info h4, .solution-info h4 {
+        font-size: 14px !important;
+        margin: 0 !important;
+        color: #555 !important;
+    }
+}
