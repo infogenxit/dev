@@ -51,6 +51,7 @@
     align-items: center;
     justify-content: center;
     background: transparent;
+    overflow: hidden; /* Added safety */
 }
 
 .service-img img {
