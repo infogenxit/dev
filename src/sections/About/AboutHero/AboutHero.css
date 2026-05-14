@@ -68,7 +68,7 @@
     font-size: 17px;
 
     background: #ffffff;
-    color: #00123C;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -114,7 +114,7 @@ border: 2px solid #ff6a00;
     transform: translateY(-1px);
     box-shadow: 0 10px 25px rgba(236, 236, 236, 0.45);
     background: #ffffff;
-        color: #00123C;
+        color: #ffffff;
         border: none;
 }
 
