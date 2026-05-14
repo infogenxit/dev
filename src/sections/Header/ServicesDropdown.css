@@ -1,10 +1,10 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    
 
-    width: 1200px;
+    width: 900px;
     background: #fff1e8;
     border-radius: 18px;
     padding: 30px;
