@@ -131,3 +131,20 @@
         visibility: visible !important;
     }
 }
+
+/* DESKTOP HOVER DROPDOWN POSITIONING */
+@media (min-width: 1025px) {
+    .nav-item {
+        position: relative !important;
+    }
+    .services-dropdown, .solutions-dropdown, .industries-dropdown, .platforms-dropdown, .insight-dropdown {
+        position: absolute !important;
+        top: 100% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        display: block !important;
+        z-index: 2000 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}

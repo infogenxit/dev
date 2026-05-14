@@ -41,7 +41,7 @@ const Header = () => {
           <Link to="/about" onClick={closeAll}>About us</Link>
 
           {/* Services */}
-          <div className="nav-item">
+          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/services" onClick={closeAll}>Services</Link>
               <span className="mobile-toggle" onClick={() => setServicesOpen(!servicesOpen)}></span>
@@ -50,7 +50,7 @@ const Header = () => {
           </div>
 
           {/* Solutions */}
-          <div className="nav-item">
+          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/solutions" onClick={closeAll}>Solutions</Link>
               <span className="mobile-toggle" onClick={() => setSolutionsOpen(!solutionsOpen)}></span>
@@ -59,7 +59,7 @@ const Header = () => {
           </div>
 
           {/* Industries */}
-          <div className="nav-item">
+          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/industries" onClick={closeAll}>Industries</Link>
               <span className="mobile-toggle" onClick={() => setIndustriesOpen(!industriesOpen)}></span>
@@ -68,7 +68,7 @@ const Header = () => {
           </div>
 
           {/* Platforms */}
-          <div className="nav-item">
+          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/platforms" onClick={closeAll}>Platforms</Link>
               <span className="mobile-toggle" onClick={() => setPlatformsOpen(!platformsOpen)}></span>
@@ -80,7 +80,7 @@ const Header = () => {
           <Link to="/portfolio" onClick={closeAll}>Portfolio</Link>
 
           {/* Insights */}
-          <div className="nav-item">
+          <div className="nav-item" onMouseEnter={() => window.innerWidth > 1024 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 1024 && setServicesOpen(false)}>
             <div className="nav-link-wrapper">
               <Link to="/insights" onClick={closeAll}>Insights</Link>
               <span className="mobile-toggle" onClick={() => setInsightOpen(!insightOpen)}></span>
@@ -107,4 +107,5 @@ const Header = () => {
 };
 
 export default Header;
+
 
