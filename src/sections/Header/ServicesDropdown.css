@@ -1,37 +1,42 @@
 .services-dropdown {
     position: absolute;
     top: 100%;
-    /* Anchor to the left edge of the parent with a small safe offset */
-    left: -50px !important;
-    transform: none !important;
-    width: 850px;
+    /* We anchor to the left edge of the parent nav-item, 
+       but move it slightly left (-50px) to give it room. */
+    left: -50px !important; 
+    transform: none !important; /* NO centering, it's too risky */
+    width: 800px; /* Safe width */
     background: #fff1e8;
     border-radius: 18px;
     padding: 30px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
-    z-index: 10000;
+    z-index: 9999;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-/* Ensure parents don't clip */
-.nav, .nav-item {
-    overflow: visible !important;
+.nav-item {
     position: relative !important;
+}
+
+/* Ensure no parent is clipping the dropdown */
+.nav, .header-container, .header {
+    overflow: visible !important;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 10px;
 }
 
 .services-grid a {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     border-radius: 14px;
-    padding: 12px;
+    padding: 10px;
     text-decoration: none;
     color: #00123C;
-    transition: all 0.3s ease;
 }
 
 .services-grid a:hover {
@@ -39,52 +44,38 @@
 }
 
 .service-img {
-    width: 60px;
+    width: 65px;
     height: 45px;
-    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.service-img img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
 .services-grid h4 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
-    margin: 0 0 4px 0;
+    margin: 2px;
 }
 
 .services-grid p {
     font-size: 12px;
-    line-height: 1.4;
-    color: #444;
+    color: #555;
     margin: 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     .services-dropdown {
         width: 90vw;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
+        left: 5% !important;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .services-dropdown {
         position: fixed !important;
         top: 70px !important;
         left: 0 !important;
-        right: 0 !important;
         width: 100% !important;
-        height: auto;
-        max-height: 70vh;
-        transform: none !important;
-        border-radius: 0 0 20px 20px;
-        overflow-y: auto;
+        border-radius: 0;
     }
 }
