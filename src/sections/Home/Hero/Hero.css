@@ -442,3 +442,27 @@ margin-top: 0;
         font-size: 14px;
     }
 }
+
+
+.hero-bottom-info {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-secondary-text {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+    .hero-secondary-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
