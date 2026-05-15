@@ -33,7 +33,7 @@ const AppDevApproach = () => {
         <div className="approach-grid">
           {steps.map((step, index) => (
             <div className="approach-card" key={index}>
-              <span className="step-number">{step.number}</span>
+              {/* <span className="step-number">{step.number}</span> */}
               <h4>{step.title}</h4>
               <p>{step.desc}</p>
             </div>
