@@ -1,5 +1,7 @@
 import PortfolioVideo from "../../assets/videos/portfolio.mp4";
 import AboutCornerAccent from "../../assets/images/about-corner-accent.webp";
+import Header from "../../components/header/Header";
+import Footer from "../../components/Footer/Footer";
 import { useState } from "react";
 import "./Portfolio.css";
 import AppImg1 from "../../assets/images/infogenx-application-images-1.webp";
@@ -140,6 +142,7 @@ const filters = ["All", "Application", "Website", "Logos"];
 const Portfolio = () => {
   const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const filteredProjects =
     activeFilter === "All"
@@ -147,6 +150,7 @@ const Portfolio = () => {
       : projects.filter((project) => project.category === activeFilter);
   return (
     <>
+      <Header />
       <SEO
         title="Our Portfolio | Infogenx Projects"
         description="Discover Infogenx portfolio showcasing our web development, UI/UX design, and software projects delivered to clients across various industries."
@@ -235,14 +239,34 @@ const Portfolio = () => {
 
           <div className="portfolio-grid">
             {filteredProjects.map((project) => (
-              <div className="portfolio-card" key={project.id}>
-                <img src={project.image} alt={project.title} />
-                <div className="portfolio-overlay"></div>
+              <div
+                className="portfolio-card"
+                key={project.id}
+                onClick={() => setSelectedImage(project.image)}
+              >
+                <img src={project.image} alt="portfolio project" />
+                <div className="portfolio-overlay">
+                  <span className="view-text">Click to View</span>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* IMAGE PREVIEW MODAL */}
+      {selectedImage && (
+        <div className="portfolio-modal" onClick={() => setSelectedImage(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedImage(null)}>
+              &times;
+            </button>
+            <img src={selectedImage} alt="Project Preview" />
+          </div>
+        </div>
+      )}
+
+      <Footer />
     </>
   );
 };
