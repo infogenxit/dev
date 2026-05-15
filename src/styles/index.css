@@ -162,30 +162,26 @@ section {
     pointer-events: none;
 }
 
-/* PREMIUM SECTION LABELS (Highlights) */
+/* PREMIUM SECTION LABELS */
 .section-label, .app-section-label, .about-label, .service-label, .solution-label {
     display: inline-flex;
     align-items: center;
     position: relative;
     margin-bottom: 25px;
-    margin-left: 40px; /* Space for the external line */
-    background: #ff6a00;
-    color: #ffffff !important;
-    padding: 6px 18px;
-    border-radius: 4px;
+    color: #ff6a00 !important;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 17px;
     line-height: 1.2;
     white-space: nowrap;
+    padding-left: 35px; /* Space for the line */
 }
 
 .section-label::before, .app-section-label::before, .about-label::before, .service-label::before, .solution-label::before {
     content: '';
     position: absolute;
-    right: 100%;
-    margin-right: 12px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 25px;
