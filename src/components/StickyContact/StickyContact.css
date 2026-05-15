@@ -4,49 +4,35 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
   z-index: 9999;
+  padding: 15px 10px;
   justify-content: space-around;
-  padding: 12px 15px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
 }
 
 .sticky-mobile-contact a {
-  flex: 1;
-  text-align: center;
   text-decoration: none;
   font-weight: 700;
-  padding: 14px;
-  margin: 0 6px;
-  border-radius: 12px;
   font-family: 'Manrope', sans-serif;
-  font-size: 0.95rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  transition: opacity 0.2s;
 }
 
 .sticky-mobile-contact a:first-child {
-  background: #00123c;
-  color: #ffffff;
+  color: #4a148c; /* Purple color from screenshot */
 }
 
 .sticky-mobile-contact a:last-child {
-  background: linear-gradient(135deg, #ff5e14 0%, #ff8c00 100%);
-  color: #ffffff;
-  box-shadow: 0 4px 15px rgba(255, 94, 20, 0.3);
+  color: #0000ff; /* Blue color from screenshot */
 }
 
 .sticky-mobile-contact a:active {
-  transform: scale(0.96);
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {

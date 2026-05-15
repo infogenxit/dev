@@ -1,8 +1,9 @@
 import { Suspense, lazy } from "react";
+import LoadingScreen from "../components/Common/LoadingScreen/LoadingScreen";
 
 const Loadable = (Component) => (props) =>
   (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<LoadingScreen />}>
       <Component {...props} />
     </Suspense>
   );
