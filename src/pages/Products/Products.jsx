@@ -90,9 +90,6 @@ const Products = () => {
         ></img>
         <div className="product-WebDev-hero-container">
           <div className="product-WebDev-hero-left">
-            <div className="hero-intro-label">
-              <span className="section-label">Readymade Software Solutions</span>
-            </div>
             <h1 className="product-products-hero-heading">
               <span>Business Software Built for Real Operations</span>
             </h1>
