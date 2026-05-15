@@ -5,38 +5,61 @@
   left: 0;
   width: 100%;
   background: #ffffff;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
   z-index: 9999;
-  padding: 15px 10px;
-  justify-content: space-around;
-  align-items: center;
+  padding: 12px 15px;
+  gap: 12px;
   border-top: 1px solid #f0f0f0;
 }
 
 .sticky-mobile-contact a {
+  flex: 1;
   text-decoration: none;
   font-weight: 700;
+  padding: 16px 10px;
+  border-radius: 14px;
   font-family: 'Manrope', sans-serif;
-  font-size: 16px;
+  font-size: 14px; /* Slightly smaller to accommodate icons */
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Added gap for icons */
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  transition: opacity 0.2s;
+  border: none;
 }
 
-.sticky-mobile-contact a:first-child {
-  color: #4a148c; /* Purple color from screenshot */
+.sticky-mobile-contact a svg {
+  font-size: 18px;
 }
 
-.sticky-mobile-contact a:last-child {
-  color: #0000ff; /* Blue color from screenshot */
+.sticky-btn-contact {
+  background: #00123c;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 18, 60, 0.15);
+}
+
+.sticky-btn-call {
+  background: linear-gradient(to right, #ff6a00, #ff8c00);
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(255, 106, 0, 0.25);
 }
 
 .sticky-mobile-contact a:active {
-  opacity: 0.7;
+  transform: scale(0.97);
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
   .sticky-mobile-contact {
     display: flex;
+  }
+}
+
+/* Safe area padding for modern mobile devices */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .sticky-mobile-contact {
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
   }
 }
