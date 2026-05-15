@@ -11,7 +11,7 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Our Philosophy</span>
           <h2>Systems Integration in Brisbane Without Breaking What Already Works</h2>
-          <p className="expertise-intro-text" style={{ maxWidth: "950px", margin: "20px auto 0", color: "#666", fontSize: "1.05rem", lineHeight: "1.7" }}>
+          <p className="expertise-intro-text">
             Every business has a mix of tools — CRM, ERP, finance platforms, cloud apps, and internal systems. The issue isn’t the tools themselves. It’s the gaps between them. With our systems integration in Brisbane, we close those gaps properly.
             <br /><br />
             We don’t replace your systems unless it’s necessary. We integrate what you already use and make it work together properly, removing the friction that slows your team down.
