@@ -95,7 +95,7 @@
     justify-content: center;
 }
 
-.product-WebDev-primary-btn {
+.primary-btn {
     width: 273px;
     height: 50px;
 
@@ -115,13 +115,6 @@
 
     cursor: pointer;
 
-    /* 🔥 Gradient exactly like screenshot */
-    /* background: linear-gradient(45.6deg,
-            #081256 0%,
-            #03133a 50%,
-            #eb632a 70%,
-            #f36b2a 100%); */
-
     background: conic-gradient(at 50% 0%,
             #AC3300 0deg,
             #EB632A 90deg,
@@ -132,12 +125,12 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.product-WebDev-primary-btn:hover {
+.primary-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 1.5);
 }
 
-.product-WebDev-secondary-btn {
+.secondary-btn {
     /* width: 220px; */
     height: 50px;
 
@@ -172,7 +165,7 @@
     transition: all 0.2s ease;
 }
 
-.product-WebDev-secondary-btn:hover {
+.secondary-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
 }
