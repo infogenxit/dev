@@ -42,11 +42,7 @@ const AppDevImpactCTA = () => {
                 <img src={Correct} alt="correct" /> Outcomes built for measurable value
               </li>
             </ul>
-            <p className="impact-note">
-              Let’s turn insight into impact.
-              <br />
-              <strong>Talk to our experts today.</strong>
-            </p>
+            <p className="impact-note">Let us build the future together.<br /><strong>Call us now on +61 403339424.</strong></p>
           </div>
         </div>
       </div>
@@ -54,4 +50,5 @@ const AppDevImpactCTA = () => {
   );
 };
 export default AppDevImpactCTA;
+
 
