@@ -11,16 +11,25 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Our Microsoft Capabilities — Strategy, Delivery, and Optimisation</span>
           <h2>Why Are Businesses Moving to Microsoft Dynamics 365 in Brisbane?</h2>
-          <p className="expertise-intro-text" style={{ maxWidth: "950px", margin: "20px auto 0", color: "#666", fontSize: "1.05rem", lineHeight: "1.7" }}>
-            Microsoft Dynamics 365 is highly preferred by and famous among companies seeking greater control of their operations. Integration of sales, service, finance and operations is possible all at a single platform. Hence, no need to navigate multiple applications to get work done efficiently.
-            <br /><br />
-            Integration with Microsoft Power BI imparts businesses with reporting and insights in real time, which in any case supports them to make quicker decisions. With Microsoft Copilot in Brisbane, you will enjoy seeing how AI can help automate tasks and streamline teamwork.
-            <br /><br />
-            However, the technology itself isn't enough. If not configured correctly, it can be underused or become too complicated. As an expert Dynamics 365 consultant in Brisbane, we ensure that the setup is right - from workflows to integrations - so that it complements your business, and doesn't get in the way.
-          </p>
-          <p style={{ marginTop: "20px", fontWeight: "600", color: "#00123c" }}>
-            We work with businesses throughout the whole Microsoft ecosystem - from strategy with initial planning to long-term support.
-          </p>
+          
+          <div className="expertise-intro-grid">
+            <div className="expertise-intro-left">
+              <p>
+                Microsoft Dynamics 365 is highly preferred by and famous among companies seeking greater control of their operations. Integration of sales, service, finance and operations is possible all at a single platform. Hence, no need to navigate multiple applications to get work done efficiently.
+              </p>
+              <p>
+                Integration with Microsoft Power BI imparts businesses with reporting and insights in real time, which in any case supports them to make quicker decisions. With Microsoft Copilot in Brisbane, you will enjoy seeing how AI can help automate tasks and streamline teamwork.
+              </p>
+            </div>
+            <div className="expertise-intro-right">
+              <p>
+                However, the technology itself isn't enough. If not configured correctly, it can be underused or become too complicated. As an expert Dynamics 365 consultant in Brisbane, we ensure that the setup is right - from workflows to integrations - so that it complements your business, and doesn't get in the way.
+              </p>
+              <p className="expertise-focus-link">
+                We work with businesses throughout the whole Microsoft ecosystem - from strategy with initial planning to long-term support.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="appdev-expertise-grid">
           <div className="expertise-item">

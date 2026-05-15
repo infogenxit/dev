@@ -11,7 +11,7 @@
 
 /* ---------- HEADER ---------- */
 .appdev-expertise-header {
-    max-width: 520px;
+    max-width: 1200px;
     margin-bottom: 60px;
 }
 
@@ -23,8 +23,26 @@
     font-weight: 800;
     line-height: 120%;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: #00123C;
+}
+
+.expertise-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.expertise-intro-left p, .expertise-intro-right p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.expertise-focus-link {
+    font-weight: 600;
+    color: #00123c !important;
 }
 
 /* ---------- GRID ---------- */
@@ -110,6 +128,11 @@
     .appdev-expertise-grid {
         grid-template-columns: 1fr;
         row-gap: 40px;
+    }
+
+    .expertise-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .expertise-item {
