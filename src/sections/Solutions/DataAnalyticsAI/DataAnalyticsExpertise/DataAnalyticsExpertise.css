@@ -19,11 +19,10 @@
     display: inline-block;
     font-size: 17px;
     font-weight: 700;
-    /* color: #ff6a00; */
-background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.61%);
-    -webkit-text-fill-color: transparent;    
-    background-clip: text;
+    color: #ff6a00;
     margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .appdev-expertise-header h2 {
@@ -50,9 +49,10 @@ background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.
 }
 
 .expertise-icon {
-    font-size: 28px;
-    color: #ff6a00;
-    margin-bottom: 0;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .expertise-item h4 {
@@ -68,7 +68,7 @@ background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.
     font-size: 16px;
     font-weight: 500;
     line-height: 160%;
-    color: #555;
+    color: #2c2e33;
 }
 
 @media (max-width: 1199px) {
