@@ -47,14 +47,24 @@ const ImagePreview = ({ open, image, onClose }) => {
             onClick={onClose}
             sx={{
               position: 'absolute',
-              top: -40,
-              right: -10,
+              top: { xs: -50, sm: -60 },
+              right: { xs: 0, sm: -10 },
               color: 'white',
-              bgcolor: 'rgba(255, 255, 255, 0.1)',
-              '&:hover': { bgcolor: 'rgba(255, 255, 255, 0.2)' },
+              bgcolor: 'rgba(255, 255, 255, 0.15)',
+              backdropFilter: 'blur(4px)',
+              border: '1px solid rgba(255, 255, 255, 0.3)',
+              width: { xs: 40, sm: 50 },
+              height: { xs: 40, sm: 50 },
+              '&:hover': { 
+                bgcolor: 'rgba(255, 255, 255, 0.3)',
+                transform: 'rotate(90deg) scale(1.1)',
+                transition: 'all 0.3s ease'
+              },
+              cursor: 'pointer',
+              zIndex: 11000
             }}
           >
-            <CloseIcon />
+            <CloseIcon sx={{ fontSize: { xs: 24, sm: 32 } }} />
           </IconButton>
           
           <img

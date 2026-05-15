@@ -108,32 +108,32 @@ const projects = [
     image: WebImg6,
   },
   {
-    id: 11,
+    id: 16,
     category: "Website",
     image: WebImg7,
   },
   {
-    id: 12,
+    id: 17,
     category: "Logos",
     image: LogoImg1,
   },
   {
-    id: 13,
+    id: 18,
     category: "Logos",
     image: LogoImg2,
   },
   {
-    id: 14,
+    id: 19,
     category: "Logos",
     image: LogoImg3,
   },
   {
-    id: 15,
+    id: 20,
     category: "Logos",
     image: LogoImg4,
   },
   {
-    id: 16,
+    id: 21,
     category: "Logos",
     image: LogoImg5,
   },

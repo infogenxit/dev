@@ -182,6 +182,23 @@
     opacity: 1;
 }
 
+.view-text {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-card:hover .view-text {
+    transform: translateY(0);
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1200px) {
