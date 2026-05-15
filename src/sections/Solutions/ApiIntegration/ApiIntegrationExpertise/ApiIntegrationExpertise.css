@@ -19,22 +19,27 @@
 
 .appdev-expertise-header h2 {
     font-family: "Manrope", sans-serif;
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 800;
-    line-height: 125%;
+    line-height: 1.2;
     margin-top: 0;
     margin-bottom: 15px;
     color: #00123C;
-    max-width: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
+    display: block !important;
 }
 
 .expertise-intro-text {
-    max-width: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
     margin: 20px 0 0;
     color: #2c2e33;
     font-size: 17px;
     line-height: 1.7;
     font-weight: 500;
+    text-align: justify;
+    text-align-last: left;
 }
 
 /* ---------- GRID ---------- */
