@@ -199,8 +199,12 @@ section {
     border-radius: 2px;
 }
 
-@media (max-width: 768px) {
-    .about-corner-accent {
-        width: 120px;
-    }
+/* PREMIUM SECTION HEADINGS (Dual Color Gradient) */
+h2 {
+    background: linear-gradient(90deg, #00123c 45%, #ff6a00 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block; /* Required for background-clip on some layouts */
+    width: 100%;
 }
