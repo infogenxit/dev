@@ -205,6 +205,14 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    display: inline-block; /* Required for background-clip on some layouts */
+    display: inline-block;
     width: 100%;
+}
+
+/* For Dark Background Sections */
+.approach-section h2, .impact-cta-section h2, .dark-bg h2 {
+    background: linear-gradient(90deg, #ffffff 45%, #ff6a00 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
