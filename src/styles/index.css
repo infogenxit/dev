@@ -150,3 +150,20 @@ section {
   height: 2px;
   background: var(--secondary-color);
 }
+
+/* GLOBAL CORNER ACCENT */
+.about-corner-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 230px;
+    height: auto;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .about-corner-accent {
+        width: 120px;
+    }
+}

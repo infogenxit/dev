@@ -1,6 +1,8 @@
 .appdev-hero {
   background: #fff6f0;
   padding: 160px 0 0px;
+  position: relative;
+  overflow: hidden;
 }
 
 .appdev-container {
