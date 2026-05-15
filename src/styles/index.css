@@ -162,36 +162,41 @@ section {
     pointer-events: none;
 }
 
-/* PREMIUM SECTION LABELS */
+/* PREMIUM SECTION LABELS (Pill Design) */
 .section-label, .app-section-label, .about-label, .service-label, .solution-label {
     display: inline-flex;
     align-items: center;
+    gap: 12px;
     position: relative;
     margin-bottom: 25px;
+    background: #fff1e8; /* Soft peach background */
+    padding: 6px 20px 6px 16px;
+    border-radius: 50px; /* Pill shape */
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 17px;
-    line-height: 1.2;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1;
     white-space: nowrap;
-    padding-left: 35px; /* Space for the line */
     
     /* GRADIENT TEXT EFFECT */
-    background: linear-gradient(90deg, #00123c 30%, #ff6a00 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background: linear-gradient(90deg, #fff1e8, #fff1e8) padding-box, 
+                linear-gradient(90deg, #00123c 20%, #ff6a00 90%) border-box;
+    /* Wait! Simpler way to have gradient text on solid background */
+}
+
+.section-label, .app-section-label, .about-label, .service-label, .solution-label {
+    background: #fff1e8;
+    color: #ff6a00; /* Solid orange for better visibility on small text in pill */
 }
 
 .section-label::before, .app-section-label::before, .about-label::before, .service-label::before, .solution-label::before {
     content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 25px;
+    display: inline-block;
+    width: 20px;
     height: 2px;
     background: #ff6a00;
+    border-radius: 2px;
 }
 
 @media (max-width: 768px) {
