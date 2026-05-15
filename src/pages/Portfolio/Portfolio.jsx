@@ -114,32 +114,32 @@ const projects = [
   },
   {
     id: 17,
-    category: "Logos",
+    category: "Logo",
     image: LogoImg1,
   },
   {
     id: 18,
-    category: "Logos",
+    category: "Logo",
     image: LogoImg2,
   },
   {
     id: 19,
-    category: "Logos",
+    category: "Logo",
     image: LogoImg3,
   },
   {
     id: 20,
-    category: "Logos",
+    category: "Logo",
     image: LogoImg4,
   },
   {
     id: 21,
-    category: "Logos",
+    category: "Logo",
     image: LogoImg5,
   },
 ];
 
-const filters = ["All", "Application", "Website", "Logos"];
+const filters = ["All", "Website", "Application", "Logo"];
 const Portfolio = () => {
   const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
@@ -230,7 +230,14 @@ const Portfolio = () => {
                 className={
                   activeFilter === filter ? "filter-btn active" : "filter-btn"
                 }
-                onClick={() => setActiveFilter(filter)}
+                onClick={() => {
+                  setActiveFilter(filter);
+                  // Scroll to the start of the portfolio grid for better UX
+                  const gridElement = document.querySelector(".portfolio-grid");
+                  if (gridElement) {
+                    gridElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
               >
                 {filter}
               </button>

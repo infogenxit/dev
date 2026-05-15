@@ -344,11 +344,13 @@
         flex-direction: row;
         justify-content: flex-start;
         overflow-x: auto;
-        padding: 10px 0;
+        padding: 10px 20px; /* Added horizontal padding */
         margin-bottom: 30px;
         -webkit-overflow-scrolling: touch;
         gap: 12px;
         scrollbar-width: none; /* Hide scrollbar for cleaner look */
+        margin-left: -20px; /* Offset parent padding */
+        margin-right: -20px;
     }
 
     .portfolio-filters::-webkit-scrollbar {
