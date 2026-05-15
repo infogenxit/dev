@@ -88,9 +88,9 @@
     margin: 40px auto;
 }
 
-.product-WebDev-hero-buttons {
+.WebDev-hero-buttons {
     display: flex;
-    gap: 24px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
 }
