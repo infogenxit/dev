@@ -25,6 +25,7 @@
     margin-top: 0;
     margin-bottom: 10px;
     color: #00123C;
+    white-space: nowrap;
 }
 
 .expertise-intro-text {
@@ -80,6 +81,7 @@
 
     .appdev-expertise-header h2 {
         font-size: 36px;
+        white-space: normal;
     }
 
     .appdev-expertise-grid {
