@@ -21,7 +21,7 @@ const ImagePreview = ({ open, image, onClose }) => {
     maxHeight: '90vh',
     outline: 'none',
     display: 'flex',
-    justify-content: 'center',
+    justifyContent: 'center',
     alignItems: 'center',
   };
 
