@@ -92,7 +92,7 @@ const Products = () => {
             <span className="section-label">Readymade Software Solutions</span>
           </div>
           <h1 className="product-products-hero-heading">
-            Business Software Built for Real Operations
+            <span>Business Software Built for Real Operations</span>
           </h1>
 
           <p className="product-WebDev-hero-description">
@@ -103,13 +103,13 @@ const Products = () => {
 
           <div className="WebDev-hero-buttons">
             <button
-              className="product-WebDev-primary-btn"
+              className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
               Explore Our Products
             </button>
             <button
-              className="product-WebDev-secondary-btn"
+              className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
               Talk to an Expert
