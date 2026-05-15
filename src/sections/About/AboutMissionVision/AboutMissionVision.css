@@ -33,11 +33,10 @@
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    /* color: #ff6a00; */
-    background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #EB632A 89.61%);
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+    color: #ff6a00;
     margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .mission-block {
