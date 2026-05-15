@@ -14,7 +14,7 @@
 }
 
 .expertise-content {
-    max-width: 770px;
+    max-width: 1160px;
     margin-bottom: 20px;
 }
 
@@ -33,7 +33,7 @@
     font-size: 16px;
     line-height: 160%;
     color: #5a5a5a;
-    padding: 0px 0px 0px 60px;
+    padding: 0px 60px 0px 60px;
 }
 
 .expertise-cards {
