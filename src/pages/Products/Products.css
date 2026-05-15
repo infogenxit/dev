@@ -11,7 +11,17 @@
 .product-WebDev-hero-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 200px 50px;
+    padding: 160px 50px 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-intro-label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 .product-products-hero-heading {

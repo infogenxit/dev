@@ -88,6 +88,9 @@ const Products = () => {
           src={AppcornerAssent}
         ></img>
         <div className="product-WebDev-hero-container">
+          <div className="hero-intro-label">
+            <span className="section-label">Readymade Software Solutions</span>
+          </div>
           <h1 className="product-products-hero-heading">
             Business Software Built for Real Operations
           </h1>
