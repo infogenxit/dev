@@ -9,9 +9,7 @@ const AboutWhoWeAre = () => {
           <div className="about-who-left">
             <span className="about-label">Who We Are</span>
             <h2>
-              Helping Australian Businesses <br /> 
-              Simplify Operations and <br />
-              Scale with Smarter Systems.
+              Helping Australian Businesses Simplify Operations and Scale with Smarter Systems.
             </h2>
           </div>
           <div className="about-who-right">
