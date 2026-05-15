@@ -25,14 +25,13 @@
     margin-top: 0;
     margin-bottom: 15px;
     color: #00123C;
-    max-width: 100% !important;
-    width: 100% !important;
-    display: block !important;
+    max-width: 1210px !important;
+    width: 100%;
 }
 
 .expertise-intro-text {
-    max-width: 100% !important;
-    width: 100% !important;
+    max-width: 1210px !important;
+    width: 100%;
     margin: 20px 0 0;
     color: #2c2e33;
     font-size: 17px;
