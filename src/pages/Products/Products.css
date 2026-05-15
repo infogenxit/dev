@@ -11,21 +11,19 @@
 .product-WebDev-hero-container {
     max-width: 1280px;
     margin: 0 auto;
-    /* padding: 140px 24px 0; */
-    padding: 200px 150px 200px 150px;
+    padding: 200px 50px;
 }
 
 .product-products-hero-heading {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
-    /* ExtraBold */
     font-size: 58px;
-    line-height: 100%;
-    letter-spacing: 0;
+    line-height: 1.1;
+    letter-spacing: -1px;
     text-align: center;
     margin-bottom: 25px;
     color: #00123c;
-    padding: 0 40px;
+    max-width: 100%;
 }
 
 .product-WebDev-hero-subheading {
@@ -53,7 +51,7 @@
 
     color: #000E68;
     /* neutral readable text */
-    max-width: 820px;
+    max-width: 1100px;
     margin: 0 auto 28px;
 }
 
