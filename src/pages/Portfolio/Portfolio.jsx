@@ -4,6 +4,7 @@ import Header from "../../sections/Header/Header";
 import Footer from "../../sections/Footer/Footer";
 import { useState } from "react";
 import "./Portfolio.css";
+import ImagePreview from "../../components/Common/ImagePreview/ImagePreview";
 import AppImg1 from "../../assets/images/infogenx-application-images-1.webp";
 import AppImg2 from "../../assets/images/infogenx-application-images-2.webp";
 import AppImg3 from "../../assets/images/infogenx-application-images-3.webp";
@@ -254,17 +255,11 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* IMAGE PREVIEW MODAL */}
-      {selectedImage && (
-        <div className="portfolio-modal" onClick={() => setSelectedImage(null)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedImage(null)}>
-              &times;
-            </button>
-            <img src={selectedImage} alt="Project Preview" />
-          </div>
-        </div>
-      )}
+      <ImagePreview
+        open={!!selectedImage}
+        image={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
 
       <Footer />
     </>
