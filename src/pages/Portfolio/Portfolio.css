@@ -22,11 +22,19 @@
 .appdev-left h1 {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
-    font-size: 49px;
+    font-size: 52px;
     line-height: 120%;
     margin-top: 0;
     color: #00123c;
     margin-bottom: 20px;
+}
+
+.appdev-left h1 span {
+    background: linear-gradient(90deg, #00123c 0%, #ff6a00 50%, #ee0979 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
 }
 
 .appdev-left p {

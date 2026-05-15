@@ -164,7 +164,7 @@ const Portfolio = () => {
 
 
           <div className="appdev-left">
-            <h1>Explore Our Portfolio of High-Impact Digital Work</h1>
+            <h1><span>Explore Our Portfolio of High-Impact Digital Work</span></h1>
 
             <p>
               Websites, applications, and digital solutions built to combine
