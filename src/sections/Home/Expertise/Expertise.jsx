@@ -10,8 +10,8 @@ const Expertise = () => {
     const cards = Array.from(
       section.querySelectorAll(".expertise-card"),
     ).reverse(); // 🔥 reverse order
-    const maxMove = 80;
-    const fadeDistance = 600;
+    const maxMove = 100;
+    const fadeDistance = 700;
     const onScroll = () => {
       // ❌ Disable animation on tablet & mobile
       if (window.innerWidth <= 1024) {
