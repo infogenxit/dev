@@ -35,16 +35,13 @@
 .product-products-hero-heading {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
-    font-size: 58px;
-    line-height: 1.1;
+    font-size: 52px;
+    line-height: 1.2;
     letter-spacing: -1px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 25px;
     color: #00123c;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .product-products-hero-heading span {
@@ -57,43 +54,32 @@
 .product-WebDev-hero-subheading {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
-    /* Medium */
-    font-size: 45px;
-    line-height: 100%;
-    letter-spacing: 0;
-    text-align: center;
+    font-size: 38px;
+    line-height: 120%;
+    text-align: left;
     margin: 0 0 20px 0;
-
     color: #000e68;
-    /* background color converted to text color */
 }
 
 .product-WebDev-hero-description {
     font-family: "Manrope", sans-serif;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.6;
-    letter-spacing: 0;
-    text-align: center;
+    text-align: left;
     color: #444;
-    max-width: 900px;
-    margin: 0 auto 28px;
+    max-width: 100%;
+    margin-bottom: 32px;
 }
 
 .product-WebDev-hero-description-bottom {
-
     font-family: "Manrope", sans-serif;
     font-weight: 600;
-    /* SemiBold */
-    font-size: 20px;
+    font-size: 18px;
     line-height: 160%;
-    letter-spacing: 0;
-    text-align: center;
-
+    text-align: left;
     color: #000E68;
-    /* neutral readable text */
-    max-width: 820px;
-    margin: 40px auto;
+    margin: 30px 0;
 }
 
 .WebDev-hero-buttons {
