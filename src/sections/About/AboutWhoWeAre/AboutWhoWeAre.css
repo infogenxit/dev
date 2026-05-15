@@ -12,13 +12,13 @@
 /* ---------- TOP ---------- */
 .about-who-top {
     display: flex;
-    justify-content: space-between;
-    gap: 80px;
+    flex-direction: column;
+    gap: 30px;
     margin-bottom: 80px;
 }
 
 .about-who-left {
-    flex: 1.2;
+    max-width: 1000px;
 }
 
 .about-who-left h2 {
@@ -33,7 +33,7 @@
 /* Global Label Applied */
 
 .about-who-right {
-    flex: 1.8;
+    max-width: 1000px;
 }
 
 .about-who-right h4 {
@@ -66,13 +66,11 @@
 /* ---------- BOTTOM ---------- */
 .about-who-bottom {
     display: flex;
-    justify-content: space-between;
-    gap: 80px;
-    /* padding-top: 60px; */
-    /* border-top: 1px solid #ddd; */
+    flex-direction: column;
+    gap: 30px;
 }
 .about-who-bottom-left{
-    max-width: 620px;
+    max-width: 1000px;
 }
 
 .about-who-bottom h3 {
@@ -90,7 +88,7 @@
 
 
 .about-who-points {
-    flex: 1.8;
+    max-width: 1000px;
     font-size: 16px;
     font-weight: 500;
 }
