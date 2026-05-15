@@ -15,15 +15,7 @@
     margin-bottom: 60px;
 }
 
-.section-label {
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    color: #ff6a00;
-    margin-bottom: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* Local styles removed to use global .section-label from index.css */
 
 .appdev-expertise-header h2 {
     font-family: "Manrope", sans-serif;

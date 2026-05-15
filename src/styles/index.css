@@ -162,6 +162,37 @@ section {
     pointer-events: none;
 }
 
+/* PREMIUM SECTION LABELS (Highlights) */
+.section-label, .app-section-label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+    margin-left: 40px; /* Space for the external line */
+    background: #ff6a00;
+    color: #ffffff !important;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.section-label::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    margin-right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 2px;
+    background: #ff6a00;
+}
+
 @media (max-width: 768px) {
     .about-corner-accent {
         width: 120px;
