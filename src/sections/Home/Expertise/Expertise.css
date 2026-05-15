@@ -1,6 +1,8 @@
 .expertise-section {
-    margin-top: -100px;
-    padding: 0px 0;
+    margin-top: -120px;
+    padding: 0;
+    position: relative;
+    z-index: 10;
 }
 
 .expertise-container {
@@ -19,11 +21,11 @@
 .expertise-heading {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
-    font-size: 42px;
-    line-height: 120%;
+    font-size: 48px;
+    line-height: 1.2;
     color: #00123C;
-    margin-bottom: 20px;
-    padding: 60px 0px 0px 60px;
+    margin-bottom: 25px;
+    padding: 80px 60px 0px 60px;
 }
 
 .expertise-description {
@@ -37,28 +39,35 @@
 .expertise-cards {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 32px;
-    background-size: cover;
-    padding: 0 50px;
+    padding: 60px 60px 80px;
     background-image: url('../../../assets/images/wave.png');
+    background-size: cover;
+    background-position: center bottom;
     background-repeat: no-repeat;
+    margin-top: 20px;
 }
 
 .expertise-card {
-    width: 350px;
-    height: 350px;
-    
+    flex: 1;
+    min-height: 400px;
     text-align: center;
-    background: linear-gradient(180deg,
-            rgba(255, 190, 190, 0.683),
-            rgba(255, 255, 255, 0.9));
-            -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-    border-radius: 16px;
-    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    padding: 40px 25px;
     position: relative;
-    will-change: transform, opacity;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.expertise-card:hover {
+    transform: translateY(-10px) !important;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
 }
 /* .first-card {
     height: 380px;
@@ -107,10 +116,14 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 0px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 0 0 24px 24px;
 }
 
-.center-card img{
-    bottom: 0px;
+.last-card img {
+    width: 100%;
 }
 
 .expertise-card {
