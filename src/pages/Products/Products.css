@@ -11,16 +11,24 @@
 .product-WebDev-hero-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 160px 50px 180px;
+    padding: 160px 24px 80px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- LEFT ---------- */
+.product-WebDev-hero-left {
+    max-width: 620px;
+    text-align: left;
 }
 
 .hero-intro-label {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 25px;
 }
 
@@ -92,7 +100,39 @@
     display: flex;
     gap: 30px;
     align-items: center;
-    justify-content: center;
+}
+
+/* ---------- RIGHT ---------- */
+.product-WebDev-hero-right {
+    position: relative;
+    width: 485px;
+    height: 500px;
+}
+
+.product-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.product-video-bg {
+    position: absolute;
+    width: 455px;
+    height: 455px;
+    top: 30px;
+    left: 30px;
+    background: #d33e00;
+    border-radius: 50px;
+}
+
+.product-hero-video {
+    position: relative;
+    width: 464px;
+    height: 464px;
+    object-fit: cover;
+    border-radius: 40px;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .primary-btn {
@@ -215,31 +255,35 @@
     }
 
     .product-WebDev-hero-container {
-    padding: 140px 20px 60px;
-        gap: 40px;
-    }
-
-    .product-products-hero-heading{
-        font-size: 36px;
-        line-height: 120%;
-        margin-bottom: 25px;
-    }
-
-    .product-WebDev-hero-subheading {
-        font-size: 26px;
-        line-height: 120%;
-    }
-
-    .product-WebDev-hero-description {
-        font-size: 16px;
-        line-height: 150%;
-    }
-        .product-WebDev-hero-description-bottom{
-            display: none;
-        }
-    .product-WebDev-hero-buttons {
         flex-direction: column;
-        gap: 14px;
+        text-align: center;
+        padding-top: 140px;
+        gap: 50px;
+    }
+
+    .product-WebDev-hero-left {
+        max-width: 100%;
+    }
+
+    .WebDev-hero-buttons {
+        justify-content: center;
+    }
+
+    .product-WebDev-hero-right {
+        width: 420px;
+        height: 440px;
+        margin: 0 auto;
+    }
+
+    .product-video-bg {
+        width: 390px;
+        height: 390px;
+        left: 15px;
+    }
+
+    .product-hero-video {
+        width: 400px;
+        height: 400px;
     }
 
     .primary-btn,

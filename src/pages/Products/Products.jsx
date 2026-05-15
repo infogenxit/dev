@@ -1,6 +1,7 @@
 import React from "react";
 import "./Products.css";
 import AppcornerAssent from "../../assets/images/appcorner.webp";
+import productVideo from "../../assets/videos/app-dev-hero.mp4";
 import { AiOutlineStock } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
@@ -88,34 +89,49 @@ const Products = () => {
           src={AppcornerAssent}
         ></img>
         <div className="product-WebDev-hero-container">
-          <div className="hero-intro-label">
-            <span className="section-label">Readymade Software Solutions</span>
+          <div className="product-WebDev-hero-left">
+            <div className="hero-intro-label">
+              <span className="section-label">Readymade Software Solutions</span>
+            </div>
+            <h1 className="product-products-hero-heading">
+              <span>Business Software Built for Real Operations</span>
+            </h1>
+
+            <p className="product-WebDev-hero-description">
+              Ready-to-deploy business applications for Australian organisations
+              looking to automate workflows, improve visibility, and scale with
+              confidence.
+            </p>
+
+            <div className="WebDev-hero-buttons">
+              <button
+                className="primary-btn"
+                onClick={() => navigate("/contact-us")}
+              >
+                Explore Our Products
+              </button>
+              <button
+                className="secondary-btn"
+                onClick={() => navigate("/contact-us")}
+              >
+                Talk to an Expert
+              </button>
+            </div>
           </div>
-          <h1 className="product-products-hero-heading">
-            <span>Business Software Built for Real Operations</span>
-          </h1>
 
-          <p className="product-WebDev-hero-description">
-            Ready-to-deploy business applications for Australian organisations
-            looking to automate workflows, improve visibility, and scale with
-            confidence.
-          </p>
-
-          <div className="WebDev-hero-buttons">
-            <button
-              className="primary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              Explore Our Products
-            </button>
-            <button
-              className="secondary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              Talk to an Expert
-            </button>
+          <div className="product-WebDev-hero-right">
+            <div className="product-video-wrapper">
+              <div className="product-video-bg"></div>
+              <video
+                src={productVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="product-hero-video"
+              />
+            </div>
           </div>
-
         </div>
       </section>
 
