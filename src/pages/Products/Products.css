@@ -315,8 +315,7 @@
 
 /* ---------- HEADER ---------- */
 .approach-header {
-    max-width: 520px;
-
+    max-width: 100%;
     margin-bottom: 60px;
 }
 
@@ -332,10 +331,19 @@
 
 .approach-header h2 {
     font-family: "Manrope", sans-serif;
-    font-size: 42px;
+    font-size: 48px;
     margin-top: 0;
     font-weight: 800;
     color: #ffffff;
+    line-height: 1.2;
+}
+
+/* If the user wants gradient even on dark section, let's make it brighter */
+.approach-header h2 span {
+    background: linear-gradient(90deg, #ffffff 0%, #00e5ff 30%, #ff6a00 70%, #ee0979 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* ---------- GRID ---------- */

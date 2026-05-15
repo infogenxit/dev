@@ -126,7 +126,7 @@ const Products = () => {
 
           <div className="approach-header">
             <span className="app-section-label">Readymade Softwares</span>
-            <h2>Solutions Built for Real Operations</h2>
+            <h2><span>Solutions Built for Real Operations</span></h2>
           </div>
 
 
