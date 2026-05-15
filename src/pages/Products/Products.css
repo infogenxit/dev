@@ -45,10 +45,11 @@
 }
 
 .product-products-hero-heading span {
-    background: linear-gradient(90deg, #00123c 0%, #00123c 30%, #ff6a00 60%, #ee0979 100%);
+    background: linear-gradient(90deg, #00123c 0%, #ff6a00 50%, #ee0979 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
 }
 
 .product-WebDev-hero-subheading {
@@ -64,12 +65,12 @@
 .product-WebDev-hero-description {
     font-family: "Manrope", sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     text-align: left;
     color: #444;
     max-width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 .product-WebDev-hero-description-bottom {
