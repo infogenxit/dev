@@ -13,7 +13,6 @@ import { useState } from "react";
 import DemoPopup from "./DemoPopup";
 
 import SEO from "../../components/SEO/SEO";
-import AboutCornerAccent from "../../assets/images/about-corner-accent.webp";
 
 const Products = () => {
   const navigate = useNavigate();
