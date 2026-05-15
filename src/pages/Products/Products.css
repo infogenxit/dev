@@ -185,7 +185,7 @@
         min-height: 110vh;
     }
 
-    .product-WebDev-hero-heading {
+    .product-products-hero-heading {
         font-size: 52px;
     }
 
@@ -198,8 +198,8 @@
         max-width: 700px;
     }
 
-    .product-WebDev-primary-btn,
-    .product-WebDev-secondary-btn {
+    .primary-btn,
+    .secondary-btn {
         height: 48px;
     }
 
@@ -219,14 +219,10 @@
         gap: 40px;
     }
 
-    .product-WebDev-hero-heading {
-        font-size: 38px;
-        line-height: 110%;
-    }
     .product-products-hero-heading{
-        font-size: 30px;
-            line-height: 120%;
-            margin-bottom: 35px;
+        font-size: 36px;
+        line-height: 120%;
+        margin-bottom: 25px;
     }
 
     .product-WebDev-hero-subheading {
@@ -246,13 +242,8 @@
         gap: 14px;
     }
 
-    .product-WebDev-primary-btn,
-    .product-WebDev-secondary-btn {
-        width: 100%;
-        max-width: 320px;
-    }
-
-    .product-WebDev-secondary-btn {
+    .primary-btn,
+    .secondary-btn {
         width: 100%;
         max-width: 320px;
     }
@@ -285,7 +276,7 @@
 /*for smaller devices*/
 
 @media (max-width: 480px) {
-    .product-WebDev-hero-heading {
+    .product-products-hero-heading {
         font-size: 32px;
     }
 
