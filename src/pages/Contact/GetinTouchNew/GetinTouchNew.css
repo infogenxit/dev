@@ -929,7 +929,11 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #D95A22;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ffffff 45%, #F36B2A 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 @media (max-width: 1024px) {
