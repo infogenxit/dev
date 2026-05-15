@@ -14,7 +14,7 @@ const AboutHero = () => {
         alt="Infogenx Australia - AI Automation & App Development Corner Graphic"
         className="about-corner-accent"
         src={AboutCornerAccent}
-        fetchPriority="high"
+        fetchpriority="high"
         loading="eager"
       ></img>
       <div className="about-hero-overlay" />
