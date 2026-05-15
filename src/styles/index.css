@@ -210,7 +210,7 @@ h2 {
 }
 
 /* For Dark Background Sections */
-.approach-section h2, .impact-cta-section h2, .dark-bg h2 {
+.approach-section h2, .impact-cta-section h2, .dark-bg h2, .cta-title {
     background: linear-gradient(90deg, #ffffff 45%, #ff6a00 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
