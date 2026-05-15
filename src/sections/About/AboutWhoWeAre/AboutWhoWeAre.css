@@ -18,7 +18,7 @@
 }
 
 .about-who-left {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .about-who-left h2 {
@@ -33,7 +33,7 @@
 /* Global Label Applied */
 
 .about-who-right {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .about-who-right h4 {
@@ -70,7 +70,7 @@
     gap: 30px;
 }
 .about-who-bottom-left{
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .about-who-bottom h3 {
@@ -88,7 +88,7 @@
 
 
 .about-who-points {
-    max-width: 1000px;
+    max-width: 100%;
     font-size: 16px;
     font-weight: 500;
 }
