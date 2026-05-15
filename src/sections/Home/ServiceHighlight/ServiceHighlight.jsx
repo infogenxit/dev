@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import serviceVideo1 from "../../../assets/videos/homestackvideo/Digital_Data_Processing.mp4";
 import serviceVideo2 from "../../../assets/videos/homestackvideo/AI-Powered Business Insights.mp4";
 import serviceVideo3 from "../../../assets/videos/homestackvideo/Intelligent Automation for Repetitive Work.mp4";
-import serviceVideo4 from "../../../assets/videos/homestackvideo/AI-Enabled Application Development.mp4"; // your video
-import serviceVideo5 from "../../../assets/videos/homestackvideo/System Integration Solutions.mp4"; // your video
+import serviceVideo4 from "../../../assets/videos/homestackvideo/AI-Enabled Application Development.mp4"; 
+import serviceVideo5 from "../../../assets/videos/homestackvideo/System Integration Solutions.mp4"; 
 import { useNavigate } from "react-router-dom";
 
 const ServiceHighlight = () => {
@@ -13,15 +13,15 @@ const ServiceHighlight = () => {
     {
       index: "01",
       title: "IT Consulting",
-      description: "It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.",
-      video: serviceVideo5, // Using a suitable video
+      description: "It all begins with strategy. Our IT consulting is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.",
+      video: serviceVideo5,
       background: "#f0f4ff",
     },
     {
       index: "02",
       title: "Application Development",
       description: "We develop custom web, mobile and enterprise applications designed to meet your processes. Our application development services are quick, without compromising on scalability or quality.",
-      video: serviceVideo1,
+      video: serviceVideo4,
       background: "#ffd6bf",
     },
     {
@@ -34,7 +34,7 @@ const ServiceHighlight = () => {
     {
       index: "04",
       title: "Business Intelligence",
-      description: "Data is only valuable when it is actionable. Our service for business intelligence in Brisbane converts data into information via dashboards, reporting and analytics to support better, quicker decisions for business growth.",
+      description: "Data is only valuable when it is actionable. Our service for business intelligence converts data into information via dashboards, reporting and analytics to support better, quicker decisions for business growth.",
       video: serviceVideo2,
       background: "#C9D5FF",
     },
@@ -42,28 +42,21 @@ const ServiceHighlight = () => {
       index: "05",
       title: "Digital Transformation",
       description: "Digital transformation is not about adopting a new tool; it's about evolving your organization to function in a digital-first world. We work with organisations to modernise their business systems and processes with a strategic business transformation plan aligned to business outcomes.",
-      video: serviceVideo4,
+      video: serviceVideo1,
       background: "#C9F9FF",
     },
     {
       index: "06",
       title: "Cloud Solutions",
-      description: "Our cloud solutions in Brisbane include strategy, migration and management for Amazon Web Services (AWS), Microsoft Azure and Google Cloud to optimise scalability and cost.",
+      description: "Our cloud solutions include strategy, migration and management for Amazon Web Services (AWS), Microsoft Azure and Google Cloud to optimise scalability and cost.",
       video: serviceVideo5,
       background: "#CBFFC9",
     },
     {
       index: "07",
-      title: "Enterprise Automation",
-      description: "Enterprise automation is about connecting the big systems that run your business. We automate business processes across enterprise systems such as ERP and CRM to increase efficiency and eliminate bottlenecks.",
-      video: serviceVideo1, // Reusing video or adding new if available
-      background: "#FFC9D5",
-    },
-    {
-      index: "08",
       title: "Enterprise Integration",
       description: "Our enterprise integration services integrate your systems, apps and data sources—allowing information to move between systems, avoiding duplication, improving data integrity and removing the need for manual data reconciliation.",
-      video: serviceVideo3, // Reusing video
+      video: serviceVideo1,
       background: "#D5FFC9",
     },
   ];
@@ -98,10 +91,9 @@ const ServiceHighlight = () => {
     const handleWheel = (e) => {
       if (isHovered.current) {
         const now = Date.now();
-        if (now - lastScrollTime.current < 1000) return; // Increased throttle to 1s for deliberate control
+        if (now - lastScrollTime.current < 1000) return; 
 
         const rect = section.getBoundingClientRect();
-        // Only intercept if the section is currently in view/sticky
         if (rect.top <= 5 && rect.bottom >= window.innerHeight - 5) {
           const totalCards = services.length;
           const windowHeight = window.innerHeight;
@@ -178,7 +170,6 @@ const ServiceHighlight = () => {
                   pointerEvents: isActive ? "all" : "none",
                 }}
               >
-                {/* Left */}
                 <div className="service-content">
                   <h2 className="service-title">
                     {item.title.split("\n").map((line, idx) => (
@@ -204,7 +195,6 @@ const ServiceHighlight = () => {
                   </button>
                 </div>
 
-                {/* Right */}
                 <div className="service-media-container">
                   <div style={{ padding: "0 20px" }}>
                     <span className="service-index">{item.index}</span>
@@ -230,10 +220,4 @@ const ServiceHighlight = () => {
   );
 };
 
-
-
-
-
 export default ServiceHighlight;
-
-
