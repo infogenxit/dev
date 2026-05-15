@@ -11,7 +11,7 @@ const Expertise = () => {
       section.querySelectorAll(".expertise-card"),
     ).reverse(); // 🔥 reverse order
     const maxMove = 80;
-    const fadeDistance = 1200;
+    const fadeDistance = 600;
     const onScroll = () => {
       // ❌ Disable animation on tablet & mobile
       if (window.innerWidth <= 1024) {
@@ -22,9 +22,8 @@ const Expertise = () => {
         return;
       }
       const rect = section.getBoundingClientRect();
-      const viewportCenter = window.innerHeight / 2;
-      if (rect.top < viewportCenter) {
-        const scrollPastCenter = viewportCenter - rect.top;
+      if (rect.top < 0) {
+        const scrollPastCenter = -rect.top;
         cards.forEach((card, index) => {
           const delay = index * 120;
           const progress = Math.max(
