@@ -340,15 +340,22 @@ font-family: "Manrope", sans-serif;
 
     /* HERO */
     .appdev-hero {
-        padding: 130px 0 0;
+        padding: 160px 0 0;
     }
         .portfolio-container{
             padding: 0 20px 80px;
         }
+
+    .about-corner-accent {
+        width: 150px;
+        opacity: 0.4;
+    }
+
     .appdev-left h1 {
         font-size: 32px;
         line-height: 1.2;
         margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .appdev-left p {
