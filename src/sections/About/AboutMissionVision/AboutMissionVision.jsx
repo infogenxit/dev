@@ -4,9 +4,11 @@ const AboutMissionVision = () => {
   return (
     <section className="mission-section">
       <div className="mission-container">
+        <div className="mission-intro">
+          <span className="section-label">Mission & Vision</span>
+        </div>
         <div className="mission-top-container">
           <div className="mission-block">
-            <span className="section-label">Mission & Vision</span>
             <h2>Our Mission</h2>
             <p>
               To help businesses modernise operations through connected applications, intelligent automation,
@@ -70,5 +72,3 @@ const AboutMissionVision = () => {
   );
 };
 export default AboutMissionVision;
-
-
