@@ -162,22 +162,23 @@ section {
     pointer-events: none;
 }
 
-/* PREMIUM SECTION LABELS */
+/* PREMIUM SECTION LABELS (Chip Design) */
 .section-label, .app-section-label, .about-label, .service-label, .solution-label {
     display: inline-flex;
     align-items: center;
     position: relative;
     margin-bottom: 25px;
-    color: #ff6a00 !important;
+    padding: 6px 16px 6px 45px; /* Left padding for the line */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 17px;
-    line-height: 1.2;
+    font-size: 15px;
+    color: #ffffff !important;
     white-space: nowrap;
-    padding-left: 35px; /* Space for the line */
+    z-index: 1;
 }
 
+/* The Line (Outside the chip) */
 .section-label::before, .app-section-label::before, .about-label::before, .service-label::before, .solution-label::before {
     content: '';
     position: absolute;
@@ -187,6 +188,20 @@ section {
     width: 25px;
     height: 2px;
     background: #ff6a00;
+    z-index: 2;
+}
+
+/* The Chip Background */
+.section-label::after, .app-section-label::after, .about-label::after, .service-label::after, .solution-label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35px; /* Start after the line */
+    right: 0;
+    background: #ff6a00;
+    border-radius: 50px; /* Pill/Chip shape */
+    z-index: -1; /* Sit behind the text */
 }
 
 @media (max-width: 768px) {
