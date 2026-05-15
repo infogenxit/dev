@@ -29,15 +29,7 @@
     max-width: 620px;
 }
 
-.section-label {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    color: #ff6a00;
-    margin-bottom: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* Global Label Applied */
 
 .mission-block {
     margin-bottom: 36px;
@@ -209,3 +201,6 @@
         border-radius: 14px;
     }
 }
+
+
+

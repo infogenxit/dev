@@ -18,15 +18,7 @@
     margin-bottom: 60px;
 }
 
-.app-section-label {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    color: #ff6a00;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* Global Label Applied */
 
 .approach-header h2 {
     font-family: "Manrope", sans-serif;
@@ -159,9 +151,7 @@
         padding: 0 20px;
     }
 
-    .app-section-label {
-        font-size: 14px;
-    }
+    /* Global Label Applied */
 
     .approach-header h2 {
         font-size: 28px;
@@ -214,3 +204,6 @@
             width: 90px !important;
         }
 }
+
+
+

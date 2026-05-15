@@ -12,13 +12,7 @@
 }
 
 /* LABEL */
-.section-label {
-    font-size: 13px;
-    font-weight: 600;
-    color: #ff6a00;
-    display: inline-block;
-    margin-bottom: 10px;
-}
+/* Global Label Applied */
 
 /* HEADER */
 .tech-web-header {
@@ -221,3 +215,6 @@
         font-size: 13px;
     }
 }
+
+
+

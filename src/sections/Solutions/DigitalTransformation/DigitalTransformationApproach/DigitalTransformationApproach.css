@@ -20,15 +20,7 @@
     max-width: 750px;
     margin-bottom: 40px;
 }
-.app-section-label {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    color: #ff6a00;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* Global Label Applied */
 .approach-header h2 {
     font-size: 42px;
     margin-top: 0;
@@ -95,9 +87,7 @@
     .approach-container {
         padding: 0 20px;
     }
-    .app-section-label {
-        font-size: 14px;
-    }
+    /* Global Label Applied */
     .approach-header h2 {
         font-size: 26px;
         line-height: 130%;
@@ -116,3 +106,6 @@
         opacity: 0.6;
     }
 }
+
+
+

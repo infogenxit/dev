@@ -16,18 +16,7 @@
     flex: 1.2;
 }
 
-.industry-content .section-label {
-    display: inline-block;
-    padding: 8px 16px;
-    background: rgba(0, 18, 60, 0.05);
-    color: #00123c;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+.industry-content /* Global Label Applied */
 
 .industry-content h2 {
     font-size: clamp(2rem, 3.5vw, 2.8rem);
@@ -141,3 +130,6 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+

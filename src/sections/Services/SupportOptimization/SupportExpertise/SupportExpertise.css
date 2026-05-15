@@ -15,15 +15,7 @@
     margin-bottom: 60px;
 }
 
-.section-label {
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    color: #ff6a00;
-    margin-bottom: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* Global Label Applied */
 
 .appdev-expertise-header h2 {
     font-family: "Manrope", sans-serif;
@@ -109,9 +101,7 @@
         padding: 0 20px;
     }
 
-    .section-label {
-        font-size: 15px;
-    }
+    /* Global Label Applied */
 
     .appdev-expertise-header h2 {
         font-size: 28px;
@@ -140,3 +130,6 @@
         font-size: 14px;
     }
 }
+
+
+

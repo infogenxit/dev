@@ -15,16 +15,7 @@
     margin-bottom: 60px;
 }
 
-.section-label {
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    /* color: #ff6a00; */
-background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.61%);
-    -webkit-text-fill-color: transparent;    
-    background-clip: text;
-    margin-bottom: 14px;
-}
+/* Global Label Applied */
 
 .appdev-expertise-header h2 {
     font-family: "Manrope", sans-serif;
@@ -109,9 +100,7 @@ background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.
         padding: 0 20px;
     }
 
-    .section-label {
-        font-size: 15px;
-    }
+    /* Global Label Applied */
 
     .appdev-expertise-header h2 {
         font-size: 28px;
@@ -140,3 +129,6 @@ background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.
         font-size: 14px;
     }
 }
+
+
+

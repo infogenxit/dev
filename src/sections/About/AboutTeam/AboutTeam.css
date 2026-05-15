@@ -81,18 +81,7 @@
   color: #005582;
 }
 
-.section-label {
-  display: inline-block;
-  background: rgba(255, 106, 0, 0.1);
-  color: #ff6a00;
-  padding: 8px 16px;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
+/* Global Label Applied */
 
 @media (max-width: 768px) {
   .team-title {
@@ -103,3 +92,6 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+

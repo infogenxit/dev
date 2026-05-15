@@ -26,15 +26,7 @@
     color: #00123c;
 }
 
-.about-label {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    color: #ff6a00;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* Global Label Applied */
 
 .about-who-right {
     max-width: 520px;
@@ -171,9 +163,7 @@
     }
 
     /* Labels */
-    .about-label {
-        font-size: 14px;
-    }
+    /* Global Label Applied */
 
     /* Top section */
     .about-who-left h2 {
@@ -218,6 +208,9 @@
         margin-top: 60px !important;
     }
 }
+
+
+
 
 
 

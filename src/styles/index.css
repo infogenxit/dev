@@ -163,7 +163,7 @@ section {
 }
 
 /* PREMIUM SECTION LABELS (Highlights) */
-.section-label, .app-section-label {
+.section-label, .app-section-label, .about-label, .service-label, .solution-label {
     display: inline-flex;
     align-items: center;
     position: relative;
