@@ -50,3 +50,4 @@ const TechSlider = () => {
 };
 export default TechSlider;
 
+

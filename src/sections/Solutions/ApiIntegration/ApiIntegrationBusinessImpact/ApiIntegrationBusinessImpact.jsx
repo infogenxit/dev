@@ -10,7 +10,7 @@ const AppDevBusinessImpact = () => {
         <div className="business-impact-header">
           <span className="section-label">Our Impact</span>
           <h2>Why Businesses Choose Infogenx for Systems Integration in Brisbane</h2>
-          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+          <p className="impact-intro-text" >
             Businesses working with Infogenx are typically dealing with fragmented systems, manual workflows, or scaling challenges. They choose us because we focus on friction-free operations.
           </p>
         </div>
@@ -65,4 +65,5 @@ const AppDevBusinessImpact = () => {
   );
 };
 export default AppDevBusinessImpact;
+
 

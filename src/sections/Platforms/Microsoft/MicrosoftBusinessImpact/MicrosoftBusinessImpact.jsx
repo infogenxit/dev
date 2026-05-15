@@ -10,7 +10,7 @@ const AppDevBusinessImpact = () => {
         <div className="business-impact-header">
           <span className="section-label">Our Philosophy</span>
           <h2>What Sets Infogenx Apart in Microsoft Consulting?</h2>
-          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+          <p className="impact-intro-text">
             There’s no shortage of companies offering Microsoft solutions. What brings the difference is how dedicatedly we work.
           </p>
         </div>
@@ -65,4 +65,5 @@ const AppDevBusinessImpact = () => {
   );
 };
 export default AppDevBusinessImpact;
+
 

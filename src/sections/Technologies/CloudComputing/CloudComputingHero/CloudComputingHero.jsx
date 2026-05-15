@@ -33,3 +33,4 @@ const CloudComputingHero = () => {
   );
 };
 export default CloudComputingHero;
+

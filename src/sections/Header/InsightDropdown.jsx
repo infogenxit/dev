@@ -30,3 +30,4 @@ const InsightDropdown = ({ closeMenu }) => {
   );
 };
 export default InsightDropdown;
+

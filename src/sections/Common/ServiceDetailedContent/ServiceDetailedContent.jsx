@@ -31,3 +31,4 @@ const ServiceDetailedContent = ({ title, subtitle, sections }) => {
 };
 export default ServiceDetailedContent;
 
+

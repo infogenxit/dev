@@ -4,6 +4,7 @@ import IconB from "../../../../assets/images/icon2.webp";
 import IconC from "../../../../assets/images/icon3.webp";
 import IconD from "../../../../assets/images/icon4.webp";
 import IconE from "../../../../assets/images/icon5.webp";
+
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
@@ -13,12 +14,12 @@ const AppDevExpertise = () => {
           <h2>
             Why Partnering with a Zoho Consultant in Brisbane Improves Operational Performance?
           </h2>
-          <p style={{ marginTop: "20px", color: "#555", fontSize: "1.05rem", lineHeight: "1.7" }}>
+          <p className="expertise-intro-text">
             Zoho is more than a CRM, an integrated business system for sales, finance, human resources and operations. But it matters the most and has its own value in how well it’s implemented. Out-of-the-box setups rarely match real business workflows.
             <br /><br />
             Our experienced Zoho consultant in Brisbane will set it up correctly. They will connect it to your other systems and tailor it to your business. With 30+ years of experience, Infogenx offers structured Zoho implementations that minimise manual tasks, provide greater visibility, and build a scalable system that's future-proofed to perform.
           </p>
-          <p style={{ marginTop: "20px", fontWeight: "600", color: "#00123c" }}>
+          <p className="expertise-focus-link">
             We cover the full lifecycle—from strategy to support. No gaps, no handovers.
           </p>
         </div>
@@ -78,4 +79,3 @@ const AppDevExpertise = () => {
   );
 };
 export default AppDevExpertise;
-

@@ -10,7 +10,7 @@ const AppDevBusinessImpact = () => {
         <div className="business-impact-header">
           <span className="section-label">Our Approach</span>
           <h2>A Business-First Approach to Odoo Implementation and Optimisation</h2>
-          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+          <p className="impact-intro-text" >
             ERP projects fail mainly due to the fact that they are handled as IT initiatives rather than business decisions. We do not act in the same manner.
           </p>
         </div>
@@ -65,4 +65,5 @@ const AppDevBusinessImpact = () => {
   );
 };
 export default AppDevBusinessImpact;
+
 

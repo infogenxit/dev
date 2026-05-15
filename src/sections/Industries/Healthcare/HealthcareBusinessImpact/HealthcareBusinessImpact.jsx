@@ -10,7 +10,7 @@ const AppDevBusinessImpact = () => {
         <div className="business-impact-header">
           <span className="section-label">Our Difference</span>
           <h2>Why Practices Choose Infogenx Over the Big Vendors</h2>
-          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+          <p className="impact-intro-text" >
             The big software vendors sell you a product. We figure out what your operation actually needs first, then build or configure around that. It's a different approach, and it shows in the results.
           </p>
         </div>
@@ -65,4 +65,5 @@ const AppDevBusinessImpact = () => {
   );
 };
 export default AppDevBusinessImpact;
+
 

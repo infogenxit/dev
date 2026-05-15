@@ -11,7 +11,7 @@
 
 /* HEADER */
 .business-impact-header {
-    max-width: 520px;
+    max-width: 1000px;
     margin-bottom: 50px;
 }
 
@@ -23,7 +23,14 @@
     font-weight: 800;
     color: #00123C;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+.impact-intro-text {
+    max-width: 800px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* GRID */

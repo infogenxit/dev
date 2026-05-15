@@ -33,3 +33,4 @@ const MobileAppHero = () => {
   );
 };
 export default MobileAppHero;
+

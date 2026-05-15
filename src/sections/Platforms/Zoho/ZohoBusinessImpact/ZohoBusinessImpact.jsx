@@ -10,7 +10,7 @@ const AppDevBusinessImpact = () => {
         <div className="business-impact-header">
           <span className="section-label">Our Philosophy</span>
           <h2>The Infogenx Difference: Strategy, Execution, and Long-Term Partnership</h2>
-          <p className="impact-intro-text" style={{ maxWidth: "800px", margin: "20px auto 0", color: "#666" }}>
+          <p className="impact-intro-text" >
             There are plenty of Zoho partners out there. What makes us different is how we approach the work.
           </p>
         </div>
@@ -76,4 +76,5 @@ const AppDevBusinessImpact = () => {
   );
 };
 export default AppDevBusinessImpact;
+
 

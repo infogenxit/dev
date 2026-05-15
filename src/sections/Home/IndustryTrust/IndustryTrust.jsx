@@ -52,3 +52,4 @@ const IndustryTrust = () => {
 };
 
 export default IndustryTrust;
+
