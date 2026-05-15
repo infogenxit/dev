@@ -162,23 +162,27 @@ section {
     pointer-events: none;
 }
 
-/* PREMIUM SECTION LABELS (Chip Design) */
+/* PREMIUM SECTION LABELS */
 .section-label, .app-section-label, .about-label, .service-label, .solution-label {
     display: inline-flex;
     align-items: center;
     position: relative;
     margin-bottom: 25px;
-    padding: 6px 16px 6px 45px; /* Left padding for the line */
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 15px;
-    color: #ffffff !important;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+    line-height: 1.2;
     white-space: nowrap;
-    z-index: 1;
+    padding-left: 35px; /* Space for the line */
+    
+    /* GRADIENT TEXT EFFECT */
+    background: linear-gradient(90deg, #00123c 30%, #ff6a00 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-/* The Line (Outside the chip) */
 .section-label::before, .app-section-label::before, .about-label::before, .service-label::before, .solution-label::before {
     content: '';
     position: absolute;
@@ -188,20 +192,6 @@ section {
     width: 25px;
     height: 2px;
     background: #ff6a00;
-    z-index: 2;
-}
-
-/* The Chip Background */
-.section-label::after, .app-section-label::after, .about-label::after, .service-label::after, .solution-label::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 35px; /* Start after the line */
-    right: 0;
-    background: #ff6a00;
-    border-radius: 50px; /* Pill/Chip shape */
-    z-index: -1; /* Sit behind the text */
 }
 
 @media (max-width: 768px) {
