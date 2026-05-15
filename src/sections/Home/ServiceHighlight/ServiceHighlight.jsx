@@ -1,10 +1,12 @@
 import "./ServiceHighlight.css";
 import { useEffect, useRef, useState } from "react";
-import serviceVideo1 from "../../../assets/videos/homestackvideo/Digital_Data_Processing.mp4";
-import serviceVideo2 from "../../../assets/videos/homestackvideo/AI-Powered Business Insights.mp4";
-import serviceVideo3 from "../../../assets/videos/homestackvideo/Intelligent Automation for Repetitive Work.mp4";
-import serviceVideo4 from "../../../assets/videos/homestackvideo/AI-Enabled Application Development.mp4"; 
-import serviceVideo5 from "../../../assets/videos/homestackvideo/System Integration Solutions.mp4"; 
+import serviceVideo1 from "../../../assets/videos/consulting-advisory.mp4";
+import serviceVideo2 from "../../../assets/videos/app-dev-hero.mp4";
+import serviceVideo3 from "../../../assets/videos/Automate Intelligently.mp4";
+import serviceVideo4 from "../../../assets/videos/data-analytics-ai.mp4";
+import serviceVideo5 from "../../../assets/videos/digital-transformation.mp4";
+import serviceVideo6 from "../../../assets/videos/managed-services.mp4";
+import serviceVideo7 from "../../../assets/videos/implementation-intgration.mp4";
 import { useNavigate } from "react-router-dom";
 
 const ServiceHighlight = () => {
@@ -14,14 +16,14 @@ const ServiceHighlight = () => {
       index: "01",
       title: "IT Consulting",
       description: "It all begins with strategy. Our IT consulting is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.",
-      video: serviceVideo5,
+      video: serviceVideo1,
       background: "#f0f4ff",
     },
     {
       index: "02",
       title: "Application Development",
       description: "We develop custom web, mobile and enterprise applications designed to meet your processes. Our application development services are quick, without compromising on scalability or quality.",
-      video: serviceVideo4,
+      video: serviceVideo2,
       background: "#ffd6bf",
     },
     {
@@ -35,28 +37,28 @@ const ServiceHighlight = () => {
       index: "04",
       title: "Business Intelligence",
       description: "Data is only valuable when it is actionable. Our service for business intelligence converts data into information via dashboards, reporting and analytics to support better, quicker decisions for business growth.",
-      video: serviceVideo2,
+      video: serviceVideo4,
       background: "#C9D5FF",
     },
     {
       index: "05",
       title: "Digital Transformation",
       description: "Digital transformation is not about adopting a new tool; it's about evolving your organization to function in a digital-first world. We work with organisations to modernise their business systems and processes with a strategic business transformation plan aligned to business outcomes.",
-      video: serviceVideo1,
+      video: serviceVideo5,
       background: "#C9F9FF",
     },
     {
       index: "06",
       title: "Cloud Solutions",
       description: "Our cloud solutions include strategy, migration and management for Amazon Web Services (AWS), Microsoft Azure and Google Cloud to optimise scalability and cost.",
-      video: serviceVideo5,
+      video: serviceVideo6,
       background: "#CBFFC9",
     },
     {
       index: "07",
       title: "Enterprise Integration",
       description: "Our enterprise integration services integrate your systems, apps and data sources—allowing information to move between systems, avoiding duplication, improving data integrity and removing the need for manual data reconciliation.",
-      video: serviceVideo1,
+      video: serviceVideo7,
       background: "#D5FFC9",
     },
   ];
