@@ -1,5 +1,5 @@
 .about-team-section {
-  padding: 100px 20px;
+  padding: 30px 20px 50px; /* Reduced top from 50px */
   background-color: #ffffff;
 }
 
@@ -10,7 +10,7 @@
 
 .team-title {
   font-size: 2.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px; /* Reduced from 30px */
   color: #1a1a1a;
   font-family: 'Outfit', sans-serif;
   text-align: center;
@@ -28,7 +28,7 @@
 
 .team-card {
   background: #fdfdfd;
-  padding: 40px;
+  padding: 30px; /* Reduced from 40px */
   border-radius: 20px;
   border: 1px solid #eee;
   transition: all 0.3s ease;
@@ -55,14 +55,14 @@
   color: #ff6a00;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Reduced from 20px */
   letter-spacing: 1px;
 }
 
 .team-info p {
   color: #222;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 15px; /* Reduced from 30px */
   font-size: 1rem;
 }
 

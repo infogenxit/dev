@@ -1,6 +1,6 @@
 .about-who-section {
     background: #fff6f0;
-    padding: 80px 0 40px 0;
+    padding: 40px 0 20px 0; /* Reduced from 80px 0 40px 0 */
 }
 
 .about-who-container {
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 40px; /* Reduced from 80px */
 }
 
 .about-who-left {
@@ -54,7 +54,7 @@
 
 /* ---------- IMAGE ---------- */
 .about-who-image {
-    margin-bottom: 100px;
+    margin-bottom: 50px; /* Reduced from 100px */
 }
 
 .about-who-image img {
@@ -157,7 +157,7 @@
 
 @media (max-width: 767px) {
     .about-who-section {
-        padding: 60px 0 30px;
+        padding: 10px 0 15px; /* Aggressively reduced from 30px */
     }
 
     .about-who-container {
