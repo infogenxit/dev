@@ -6,21 +6,22 @@
 .service-sticky {
     align-items: center;
     display: flex;
-    flex-direction: column; /* Changed to column to accommodate header */
+    flex-direction: column; 
     height: 100vh;
-    justify-content: center;
+    justify-content: flex-start; /* Changed from center to flex-start for better control */
     overflow: hidden;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding-top: 40px; /* Space for the header */
+    padding-top: 80px; /* Increased space for the header */
 }
 
 .service-header-container {
     text-align: center;
-    max-width: 800px;
-    margin-bottom: 30px;
+    max-width: 900px; /* Increased max-width slightly */
+    margin-bottom: 50px; /* Increased margin to prevent overlapping */
     padding: 0 20px;
+    z-index: 20; /* Ensure header is above cards */
 }
 
 .service-header-container /* Global Label Applied */
@@ -243,44 +244,45 @@
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
     .service-section {
-        padding: 20px 0;
+        padding: 5px 0; /* Reduced top/bottom padding */
         background: #fff5ef;
         position: relative;
         z-index: 1; /* Ensure it stays below the header */
     }
     .service-sticky {
-        height: 80vh; /* Shorter height to fit between header and footer */
-        top: 120px; /* Larger offset to clearly stay below the pill header */
-        padding-top: 0;
-        justify-content: flex-start; /* Align content to top to avoid pushing cards down too much */
+        height: 75vh; /* Reduced from 85vh to prevent overlapping with bottom footer */
+        top: 85px; /* Increased from 70px to clear the header more effectively */
+        padding-top: 10px;
+        justify-content: flex-start; 
     }
     .service-header-container {
-        margin-bottom: 10px;
-        padding-top: 10px;
+        margin-bottom: 35px; /* Increased from 15px to prevent card overlap */
+        padding-top: 5px; 
+        z-index: 50; 
     }
-    .service-header-container /* Global Label Applied */
     .service-header-container .section-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem; /* Slightly smaller to save space */
         margin-bottom: 5px;
     }
     .service-header-container .section-subtitle {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         line-height: 1.3;
     }
     .service-stack {
-        height: 65%;
-        margin-top: 10px;
+        height: 55%; /* Reduced slightly */
+        margin-top: 5px;
     }
     .service-card {
         flex-direction: column;
         align-items: center;
-        padding: 15px 20px;
+        padding: 15px 20px 30px; /* Reduced padding */
         text-align: center;
         margin: 0 auto;
         gap: 8px;
-        width: calc(100% - 30px);
-        max-height: 320px; /* Constrain card height on mobile */
+        width: calc(100% - 40px);
+        max-height: 350px; /* Reduced from 380px to fit better on mobile screens */
         border-radius: 20px;
+        box-shadow: 0 -10px 20px rgba(0,0,0,0.1); 
     }
     .service-content {
         gap: 5px;

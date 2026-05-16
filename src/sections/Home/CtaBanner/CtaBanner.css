@@ -1,11 +1,11 @@
 .cta-section {
-    padding: 100px 0;
+    padding: 0; /* Removed top and bottom padding entirely */
     background: #fff7f2;
 }
 .cta-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 70px 40px;
+    padding: 40px; /* Reduced bottom padding */
 
     /* background: linear-gradient(110deg,
             #081256 0%,
@@ -32,8 +32,9 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
     font-size: 55px;
     font-weight: 800;
     color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    line-height: 1.1; /* Added to reduce space between headline lines */
+    margin-top: 0px; 
+    margin-bottom: 10px; /* Reduced from 15px */
 }
 
 .cta-buttons {
@@ -89,11 +90,11 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
 
 @media (max-width: 1024px) {
     .cta-section {
-        padding: 80px 0;
+        padding: 0; /* Removed padding */
     }
 
     .cta-container {
-        padding: 60px 30px;
+        padding: 40px 30px;
     }
 
     .cta-subtitle {
@@ -109,11 +110,11 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
 
 @media (max-width: 768px) {
     .cta-section {
-        padding: 60px 20px;
+        padding: 0 20px; /* Removed top/bottom padding */
     }
 
     .cta-container {
-        padding: 50px 20px;
+        padding: 30px 20px;
         border-radius: 20px;
     }
 
@@ -125,6 +126,11 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
     .cta-title {
         font-size: 34px;
         line-height: 120%;
+        margin-bottom: 10px;
+    }
+
+    .cta-description {
+        margin-bottom: 15px;
     }
 
     .cta-buttons {

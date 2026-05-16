@@ -15,7 +15,7 @@
 
 .expertise-content {
     max-width: 1160px;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced from 20px */
 }
 
 .expertise-heading {
@@ -24,8 +24,8 @@
     font-size: 48px;
     line-height: 1.2;
     color: #00123C;
-    margin-bottom: 25px;
-    padding: 80px 60px 0px 60px;
+    margin-bottom: 15px; /* Reduced from 25px */
+    padding: 30px 60px 0px 60px; /* Reduced from 60px */
 }
 
 .expertise-description {
@@ -41,12 +41,12 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 32px;
-    padding: 60px 60px 80px;
+    padding: 20px 60px 60px; /* Reduced from 60px 60px 80px */
     background-image: url('../../../assets/images/wave.png');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    margin-top: 20px;
+    margin-top: 10px; /* Reduced from 20px */
 }
 
 .expertise-card {
@@ -182,17 +182,17 @@
 @media (max-width: 768px) {
     .expertise-section {
         margin-top: 0;
-        padding: 60px 0 0;
+        padding: 0px 0 0; /* Minimized for mobile */
     }
 
     .expertise-container {
-        padding-bottom: 20px;
+        padding-bottom: 5px; /* Reduced for tighter mobile layout */
         background: #fff5ef;
     }
 
     .expertise-heading {
         font-size: 28px;
-        padding: 0 20px;
+        padding: 5px 20px 0; /* Minimized for mobile */
         text-align: center;
     }
 
@@ -207,7 +207,6 @@
         align-items: center;
         padding: 0 20px;
         background-image: none;
-        /* IMPORTANT */
     }
 
     .expertise-card {
@@ -215,6 +214,7 @@
         max-width: 360px;
         height: auto;
         padding: 20px;
+        margin-bottom: 15px; /* Reduced from 30px */
     }
 
     .first-card,

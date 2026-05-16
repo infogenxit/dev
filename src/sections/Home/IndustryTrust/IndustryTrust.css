@@ -1,5 +1,5 @@
 .industry-trust {
-    padding: 100px 0;
+    padding: 20px 0 20px; /* Reduced bottom padding from 80px */
     background-color: #ffffff;
 }
 

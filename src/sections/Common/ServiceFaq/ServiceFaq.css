@@ -1,5 +1,5 @@
 .service-faq-section {
-  padding: 40px 0 80px;
+  padding: 0 0 30px; /* Reduced top padding */
   background-color: #f8f9fa;
 }
 
@@ -7,7 +7,7 @@
   text-align: center;
   font-size: 32px;
   color: #00123c;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-weight: 800;
 }
 
@@ -64,4 +64,14 @@
 }
 
 
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+  .service-faq-section {
+    padding: 0px 0 20px; /* Reduced top padding */
+  }
 
+  .faq-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}

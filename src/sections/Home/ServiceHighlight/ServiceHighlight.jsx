@@ -136,7 +136,7 @@ const ServiceHighlight = () => {
     <section
       className="service-section"
       ref={sectionRef}
-      style={{ height: `${services.length * 150}vh` }}
+      style={{ height: `${services.length * 105}vh` }} /* Reduced from 120vh to eliminate bottom gap */
       onMouseEnter={() => (isHovered.current = true)}
       onMouseLeave={() => (isHovered.current = false)}
     >
@@ -164,11 +164,11 @@ const ServiceHighlight = () => {
                   transform: isActive 
                     ? "translateY(0) scale(1)" 
                     : isStacked 
-                      ? `translateY(-${stackOffset * 40}px) scale(${1 - stackOffset * 0.05})` 
+                      ? `scale(${1 - stackOffset * 0.05}) translateY(-${stackOffset * 20}px)` /* Minimal upward movement, mostly scaling back */
                       : "translateY(100vh)",
                   opacity: isFuture ? 0 : 1,
                   zIndex: i + 10,
-                  transition: "transform 1.2s cubic-bezier(0.2, 1, 0.3, 1), opacity 0.8s ease",
+                  transition: "transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease",
                   pointerEvents: isActive ? "all" : "none",
                 }}
               >
