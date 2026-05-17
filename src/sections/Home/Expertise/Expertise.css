@@ -52,7 +52,7 @@
 .expertise-card {
     flex: 1;
     min-height: 400px;
-    text-align: center;
+    text-align: left; /* Clean left alignment for modern readability */
     background: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -215,6 +215,7 @@
         height: auto;
         padding: 20px;
         margin-bottom: 15px; /* Reduced from 30px */
+        text-align: center; /* Centered layout for narrow mobile screens */
     }
 
     .first-card,

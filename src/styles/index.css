@@ -162,46 +162,42 @@ section {
     pointer-events: none;
 }
 
-/* PREMIUM SECTION LABELS (Pill Design) */
+/* PREMIUM SECTION LABELS (Modern Translucent Pill Design) */
 .section-label, .app-section-label, .about-label, .service-label, .solution-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    position: relative;
-    margin-bottom: 25px;
-    background: #fff1e8; /* Soft peach background */
-    padding: 10px 24px 10px 20px;
-    border-radius: 50px; /* Pill shape */
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
-    line-height: 1;
-    white-space: nowrap;
-    
-    /* GRADIENT TEXT EFFECT */
-    background: linear-gradient(90deg, #fff1e8, #fff1e8) padding-box, 
-                linear-gradient(90deg, #00123c 20%, #ff6a00 90%) border-box;
-    /* Wait! Simpler way to have gradient text on solid background */
-}
-
-.section-label, .app-section-label, .about-label, .service-label, .solution-label {
-    background: #fff1e8;
-    color: #ff6a00; /* Solid orange for better visibility on small text in pill */
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    position: relative !important;
+    margin-bottom: 25px !important;
+    background: rgba(255, 94, 20, 0.08) !important; /* Soft premium peach/orange translucent background */
+    padding: 10px 24px 10px 20px !important;
+    border-radius: 50px !important; /* Perfect Pill shape */
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    color: #ff5e14 !important; /* Consistent radiant brand orange */
+    -webkit-text-fill-color: #ff5e14 !important; /* Force orange text fill to override any local transparent settings */
+    background-clip: border-box !important; /* Clear any background clips */
+    -webkit-background-clip: border-box !important; /* Clear any webkit background clips */
+    border: 1.5px solid rgba(255, 94, 20, 0.25) !important; /* Subtle brand border */
+    box-shadow: 0 2px 10px rgba(255, 94, 20, 0.05) !important;
 }
 
 .section-label::before, .app-section-label::before, .about-label::before, .service-label::before, .solution-label::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 2px;
-    background: #ff6a00;
-    border-radius: 2px;
+    content: '' !important;
+    display: inline-block !important;
+    width: 16px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #00123c, #ff5e14) !important; /* Gorgeous gradient prefix line */
+    border-radius: 2px !important;
 }
 
-/* PREMIUM SECTION HEADINGS (Dual Color Gradient) */
-h2 {
-    background: linear-gradient(90deg, #00123c 45%, #ff6a00 95%);
+/* PREMIUM SECTION HEADINGS (Vibrant Radiant Brand Gradient) */
+h1, h2, .section-title, .hero-heading, .WebDev-hero-heading, .igx-pricing-title, .faq-title {
+    background: linear-gradient(90deg, #00123c 0%, #00123c 15%, #ff6a00 65%, #ee0979 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -210,11 +206,23 @@ h2 {
 }
 
 /* For Dark Background Sections */
-.approach-section h2, .impact-cta-section h2, .dark-bg h2, .cta-title {
-    background: linear-gradient(90deg, #ffffff 45%, #ff6a00 95%);
+.approach-section h2, .impact-cta-section h2, .dark-bg h2, .cta-title, .about-hero-left h1, .igx-hero-content h1, .igx-pricing-card h2, .igx-pricing-card h3 {
+    background: linear-gradient(90deg, #ffffff 40%, #ff6a00 80%, #ee0979 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
+}
+
+/* Global spacing optimization above FAQ section across all service and platform screens */
+[class*="impact-cta-section"] {
+    padding-bottom: 40px !important;
+}
+
+@media (max-width: 768px) {
+    [class*="impact-cta-section"] {
+        padding-bottom: 25px !important;
+    }
 }
 
 /* GLOBAL INTRO TEXT STYLING */
@@ -232,64 +240,123 @@ h2 {
     font-weight: 600;
     color: #00123c !important;
 }
-/* PREMIUM BUTTONS (Global) */
-.primary-btn {
-    width: 273px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 30px;
-    border-radius: 50px;
-    border: none;
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 100%;
-    color: #ffffff;
-    cursor: pointer;
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+/* PREMIUM BUTTONS (Global Mapping for Consistent Branding) */
+.primary-btn, 
+.about-primary-btn, 
+.cta-primary, 
+.WebDev-primary-btn, 
+.igx-hero-btn, 
+.igx-btn.primary, 
+.submit-btn, 
+.thank-you-message button, 
+.demo-btn,
+.quote-btn,
+.quote-btn.mobile-cta,
+.appdev-buttons .primary-btn,
+.impact-buttons .primary-btn,
+.hero-buttons .primary-btn,
+button.primary-btn,
+a.primary-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 30px !important;
+    border-radius: 50px !important;
+    border: 1.2px solid rgba(255, 255, 255, 0.25) !important; /* Elegant subtle outline to guarantee visibility on dark backgrounds */
+    font-family: "Manrope", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 100% !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important; /* Premium drop-shadow to separate button from dark backgrounds */
+    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-.primary-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    color: #00123C;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    border: 3px solid transparent;
+/* Enforce Standard Width and Height for full-size primary buttons */
+.primary-btn, 
+.about-primary-btn, 
+.WebDev-primary-btn,
+.appdev-buttons .primary-btn,
+.impact-buttons .primary-btn,
+.hero-buttons .primary-btn {
+    width: 273px !important;
+    height: 50px !important;
 }
 
-.secondary-btn {
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 30px;
-    border-radius: 50px;
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 100%;
-    color: #00123c;
-    cursor: pointer;
-    border: 3px solid transparent;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    transition: all 0.2s ease;
+.primary-btn:hover, 
+.about-primary-btn:hover, 
+.cta-primary:hover, 
+.WebDev-primary-btn:hover, 
+.igx-hero-btn:hover, 
+.igx-btn.primary:hover, 
+.submit-btn:hover, 
+.thank-you-message button:hover, 
+.demo-btn:hover,
+.quote-btn:hover,
+.appdev-buttons .primary-btn:hover,
+.impact-buttons .primary-btn:hover,
+.hero-buttons .primary-btn:hover,
+button.primary-btn:hover,
+a.primary-btn:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    color: #00123C !important;
+    background: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+    border: 3px solid transparent !important;
 }
 
-.secondary-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+.secondary-btn, 
+.about-secondary-btn, 
+.cta-secondary, 
+.WebDev-secondary-btn, 
+.igx-btn.secondary,
+.appdev-buttons .secondary-btn,
+.impact-buttons .secondary-btn,
+.hero-buttons .secondary-btn,
+button.secondary-btn,
+a.secondary-btn {
+    height: 50px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 30px !important;
+    border-radius: 50px !important;
+    font-family: "Manrope", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 100% !important;
+    color: #00123c !important;
+    cursor: pointer !important;
+    border: 3px solid transparent !important;
+    background: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+    transition: all 0.2s ease !important;
+}
+
+.secondary-btn:hover, 
+.about-secondary-btn:hover, 
+.cta-secondary:hover, 
+.WebDev-secondary-btn:hover, 
+.igx-btn.secondary:hover,
+.appdev-buttons .secondary-btn:hover,
+.impact-buttons .secondary-btn:hover,
+.hero-buttons .secondary-btn:hover,
+button.secondary-btn:hover,
+a.secondary-btn:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
 }
 
 @media (max-width: 768px) {
-    .primary-btn, .secondary-btn {
-        width: 100%;
-        max-width: 320px;
+    .primary-btn, .about-primary-btn, .cta-primary, .WebDev-primary-btn, .igx-hero-btn, .igx-btn.primary, .submit-btn, .thank-you-message button, .demo-btn, .quote-btn, .quote-btn.mobile-cta,
+    .secondary-btn, .about-secondary-btn, .cta-secondary, .WebDev-secondary-btn, .igx-btn.secondary {
+        width: 100% !important;
+        max-width: 320px !important;
     }
 }

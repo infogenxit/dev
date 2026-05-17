@@ -244,19 +244,19 @@
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
     .service-section {
-        padding: 5px 0; /* Reduced top/bottom padding */
+        padding: 5px 0 100px; /* Added generous bottom padding (100px) to create space below on mobile */
         background: #fff5ef;
         position: relative;
         z-index: 1; /* Ensure it stays below the header */
     }
     .service-sticky {
-        height: 75vh; /* Reduced from 85vh to prevent overlapping with bottom footer */
+        height: 82vh; /* Increased from 75vh to prevent button cut-off on mobile */
         top: 85px; /* Increased from 70px to clear the header more effectively */
         padding-top: 10px;
         justify-content: flex-start; 
     }
     .service-header-container {
-        margin-bottom: 35px; /* Increased from 15px to prevent card overlap */
+        margin-bottom: 20px; /* Reduced from 35px to prevent card overlap and save vertical space */
         padding-top: 5px; 
         z-index: 50; 
     }
@@ -269,23 +269,23 @@
         line-height: 1.3;
     }
     .service-stack {
-        height: 55%; /* Reduced slightly */
+        height: 75%; /* Increased from 55% to give the cards more vertical room */
         margin-top: 5px;
     }
     .service-card {
         flex-direction: column;
         align-items: center;
-        padding: 15px 20px 30px; /* Reduced padding */
+        padding: 20px 20px 25px; /* Adjusted padding to prevent button overflow */
         text-align: center;
         margin: 0 auto;
-        gap: 8px;
+        gap: 12px;
         width: calc(100% - 40px);
-        max-height: 350px; /* Reduced from 380px to fit better on mobile screens */
+        max-height: 380px; /* Increased from 350px to ensure the button is fully visible */
         border-radius: 20px;
         box-shadow: 0 -10px 20px rgba(0,0,0,0.1); 
     }
     .service-content {
-        gap: 5px;
+        gap: 8px;
     }
     .service-title {
         font-size: 18px;
@@ -293,11 +293,11 @@
     }
     .service-description {
         font-size: 12px;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         line-height: 1.3;
     }
     .service-btn {
-        padding: 6px 14px;
+        padding: 8px 18px; /* Slightly adjusted padding for clickability and visibility */
         font-size: 11px;
     }
     .service-media-container {
@@ -305,20 +305,18 @@
     }
 }
 
-
-
 /* ---------- SMALL MOBILE ---------- */
 @media (max-width: 480px) {
     .service-title {
-        font-size: 24px;
-        line-height: 130%;
+        font-size: 20px; /* Reduced from 24px to prevent description/button overflow */
+        line-height: 1.2;
     }
     .service-description {
-        font-size: 13px;
+        font-size: 12px; /* Adjusted from 13px to fit inside card bounds */
     }
     .service-btn {
-        font-size: 13px;
-        padding: 10px 18px;
+        font-size: 12px;
+        padding: 8px 16px;
     }
     .service-media {
         width: 200px;

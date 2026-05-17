@@ -26,58 +26,36 @@
 .about-hero-container {
     position: relative;
     z-index: 2;
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 120px 40px 60px; /* Reduced from 150px 40px 80px */
+    padding: 150px 24px 80px;
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
 }
 
-/* Left side */
-.about-hero-left h1 {
-    font-family: "Manrope", sans-serif;
+.about-hero-container h1 {
+    font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: 42px;
-    word-spacing: normal;
+    font-size: 52px;
     line-height: 115%;
-    margin-bottom: 30px; /* Reduced from 60px */
-    color: #ffffff;
+    margin: 0 auto;
+    max-width: 900px;
+    background: linear-gradient(90deg, #ffffff 40%, #ff6a00 80%, #ee0979 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
 }
 
 /* Buttons */
 .about-hero-buttons {
     display: flex;
     gap: 20px;
-}
-
-.about-primary-btn { 
-    padding: 14px 30px; 
-    border-radius: 50px; 
-    border: none; 
-    font-family: "Manrope", sans-serif; 
-    font-weight: 600; 
-    font-size: 17px; 
-    background: linear-gradient(135deg, #ff6a00, #ee0979); 
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.about-secondary-btn {
-    padding: 14px 26px;
-    border-radius: 50px;
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 17px;
-    background: transparent;
-    color: #ffffff;
-    border: 2px solid #ff6a00;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    justify-content: center;
+    width: 100%;
 }
 
 .about-secondary-btn span {
@@ -85,55 +63,29 @@
     color: #ff6a00;
 }
 
-.about-primary-btn:hover { 
-    transform: translateY(-2px); 
-    box-shadow: 0 10px 25px rgba(255, 106, 0, 0.4); 
-}
-
-.about-secondary-btn:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(255, 106, 0, 0.2);
-    background: #ffffff;
-    color: #ff6a00;
-    border-color: #ffffff;
-}
-
-/* Right side */
-.about-hero-right {
-    margin-top: 30px;
-    max-width: 420px;
-}
-
-.about-hero-right p {
+.about-hero-container p {
     font-family: "Manrope", sans-serif;
     font-size: 18px;
     line-height: 160%;
     font-weight: 500;
     color: #f1f1f1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left !important; /* Left-aligned description as requested */
 }
 
 /*tablet responsive*/
 @media (max-width: 1199px) {
     .about-hero-container {
-        padding: 160px 24px 80px;
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-        text-align: center;
+        padding: 130px 24px 60px;
     }
 
-    .about-hero-left h1 {
-        font-size: 38px;
-        margin-bottom: 40px;
+    .about-hero-container h1 {
+        font-size: 42px;
     }
 
-    .about-hero-buttons {
-        justify-content: center;
-    }
-
-    .about-hero-right {
-        max-width: 600px;
-        margin-top: 0;
+    .about-hero-container p {
+        font-size: 16px;
     }
 }
 
@@ -144,40 +96,23 @@
     }
 
     .about-hero-container {
-        padding: 100px 20px 40px !important; /* Reduced from 120px 20px 60px */
-        gap: 30px;
+        padding: 100px 20px 40px !important;
+        gap: 20px;
     }
 
     .about-corner-accent {
         width: 120px;
     }
 
-    .about-hero-left h1 {
+    .about-hero-container h1 {
         font-size: 28px !important;
-        line-height: 1.2 !important;
-        margin-bottom: 30px !important;
+        line-height: 1.25 !important;
     }
 
     .about-hero-buttons {
         flex-direction: column;
         gap: 12px;
-        width: 100%;
-    }
-
-    .about-primary-btn,
-    .about-secondary-btn {
-        width: 100% !important;
-        justify-content: center;
-        font-size: 16px;
-    }
-
-    .about-hero-right {
-        max-width: 100%;
-    }
-
-    .about-hero-right p {
-        font-size: 15px !important;
-        line-height: 1.5 !important;
+        align-items: center;
     }
 }
 

@@ -84,12 +84,21 @@
 /* Global Label Applied */
 
 @media (max-width: 768px) {
+  .about-team-section {
+    padding: 20px 15px 30px; /* Reduced top/bottom padding on mobile */
+  }
   .team-title {
     font-size: 2rem;
+    margin-bottom: 15px; /* Reduced from 20px */
   }
   
   .team-grid {
     grid-template-columns: 1fr;
+    gap: 20px; /* Reduced gap between cards on mobile */
+  }
+  
+  .team-card {
+    padding: 20px; /* Reduced padding inside the cards on mobile */
   }
 }
 

@@ -1,6 +1,6 @@
 .mission-section {
     background: #fff7f2;
-    padding: 30px 0 50px 0; /* Reduced from 60px 0 100px 0 */
+    padding: 5px 0 25px 0; /* Aggressively reduced top/bottom padding to tighten layout spacing */
 }
 
 .mission-container {
@@ -14,18 +14,18 @@
 }
 
 .mission-intro {
-    margin-bottom: 10px; /* Reduced from 20px */
+    margin-bottom: 5px; /* Reduced from 10px */
 }
 .mission-top-container{
     display: flex;
     justify-content: space-between;
-    gap: 40px; /* Reduced from 80px */
+    gap: 25px; /* Reduced from 40px */
 }
 .mission-bottom-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 30px; /* Reduced from 60px */
+    gap: 20px; /* Reduced from 30px */
     padding: 0;
 }
 /* ---------- LEFT ---------- */
@@ -47,7 +47,7 @@
     font-weight: 800;
     color: #00123c;
     margin-top: 0;
-    margin-bottom: 5px; /* Aggressively reduced from 10px */
+    margin-bottom: 5px;
 }
 
 .mission-block p {
@@ -55,11 +55,12 @@
     line-height: 160%;
     font-weight: 500;
     color: #2c2e33;
+    margin: 0 0 10px 0; /* Reset default browser margins, set custom bottom margin */
 }
 
 /* ---------- VALUES ---------- */
 .values-block {
-    margin-top: 20px; /* Reduced from 40px */
+    margin-top: 5px; /* Reduced from 15px to pull Core Values header closer to the text above */
 }
 
 .values-list {
@@ -69,7 +70,7 @@
 }
 
 .values-list li {
-    margin-bottom: 22px;
+    margin-bottom: 14px; /* Reduced from 22px */
 }
 
 .values-list strong {
@@ -90,6 +91,7 @@
     flex: 1;
     flex-shrink: 0;
     max-width: 580px;
+    margin-top: 25px; /* Aligns the top of the image/video perfectly with 'Purpose-Driven Innovation' heading */
 }
 
 .mission-image-wrapper {
@@ -114,19 +116,22 @@
 }
 
 @media (max-width: 1199px) {
+    .mission-right {
+        margin-top: 0 !important;
+    }
 
     .mission-container {
-        gap: 60px;
+        gap: 30px; /* Reduced from 60px */
     }
 
     .mission-top-container {
         flex-direction: column;
-        gap: 50px;
+        gap: 30px; /* Reduced from 50px */
     }
 
     .mission-bottom-container {
         flex-direction: column;
-        gap: 40px;
+        gap: 25px; /* Reduced from 40px */
         padding: 0;
     }
 
@@ -157,23 +162,23 @@
 @media (max-width: 767px) {
 
     .mission-section {
-        padding: 25px 0 35px; /* Reduced from 50px 0 70px */
+        padding: 5px 0 15px; /* Reduced top/bottom padding on mobile */
     }
 
     .mission-container {
-        gap: 40px;
+        gap: 20px; /* Reduced from 40px */
     }
 
     .mission-top-container
     {
         flex-direction: column;
-        gap: 20px; /* Reduced from 32px */
+        gap: 15px; /* Reduced from 20px */
         padding: 0;
     }
 
     .mission-bottom-container {
          flex-direction: column-reverse;
-         gap: 20px; /* Reduced from 32px */
+         gap: 15px; /* Reduced from 20px */
          padding: 0;
      }
     .mission-block {
@@ -187,6 +192,11 @@
 
     .mission-block p {
         font-size: 14px;
+        margin: 0 0 8px 0; /* Tightened paragraph margin on mobile */
+    }
+
+    .values-list li {
+        margin-bottom: 8px; /* Reduced from 14px on mobile */
     }
 
     .values-list strong {

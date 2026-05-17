@@ -48,7 +48,7 @@ const AboutWhoWeAre = () => {
             </p>
           </div>
         </div>
-        <hr style={{ marginTop: "50px", border: "1px solid #ddd" }} />
+        <hr style={{ marginTop: "20px", marginBottom: "20px", border: "0", borderTop: "1px solid #eee" }} />
       </div>
     </section>
   );

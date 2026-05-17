@@ -31,7 +31,11 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
     font-family: "Manrope", sans-serif;
     font-size: 55px;
     font-weight: 800;
-    color: #ffffff;
+    color: #ffffff !important; /* Force high-contrast solid white color */
+    -webkit-text-fill-color: #ffffff !important; /* Override global background gradient mask */
+    background: none !important; /* Remove background fill gradient */
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
     line-height: 1.1; /* Added to reduce space between headline lines */
     margin-top: 0px; 
     margin-bottom: 10px; /* Reduced from 15px */

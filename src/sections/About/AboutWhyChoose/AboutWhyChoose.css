@@ -1,6 +1,6 @@
 .why-choose-section {
     background: #fff6f0;
-    padding: 0px 0 40px 0;
+    padding: 0px 0 10px 0; /* Reduced bottom padding to tighten space above Mission & Vision */
 }
 
 .why-choose-container {
@@ -94,7 +94,7 @@
 
 @media (max-width: 767px) {
     .why-choose-section {
-        padding-bottom: 30px;
+        padding-bottom: 10px; /* Reduced from 30px on mobile */
     }
 
     .why-choose-container {

@@ -1,6 +1,6 @@
 .about-who-section {
     background: #fff6f0;
-    padding: 40px 0 20px 0; /* Reduced from 80px 0 40px 0 */
+    padding: 30px 0 15px 0; /* Reduced top/bottom padding */
 }
 
 .about-who-container {
@@ -13,8 +13,8 @@
 .about-who-top {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 40px; /* Reduced from 80px */
+    gap: 15px; /* Reduced from 30px */
+    margin-bottom: 30px; /* Reduced from 40px */
 }
 
 .about-who-left {
@@ -42,7 +42,7 @@
     font-weight: 600;
     line-height: 150%;
     color: #1a1a1a;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced from 20px */
 }
 
 .about-who-right p {
@@ -54,7 +54,7 @@
 
 /* ---------- IMAGE ---------- */
 .about-who-image {
-    margin-bottom: 50px; /* Reduced from 100px */
+    margin-bottom: 30px; /* Reduced from 50px */
 }
 
 .about-who-image img {
@@ -67,7 +67,7 @@
 .about-who-bottom {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px; /* Reduced from 30px */
 }
 .about-who-bottom-left{
     max-width: 100%;
@@ -119,8 +119,8 @@
     /* Top section */
     .about-who-top {
         flex-direction: column;
-        gap: 40px;
-        margin-bottom: 60px;
+        gap: 20px; /* Reduced from 40px */
+        margin-bottom: 30px; /* Reduced from 60px */
     }
 
     .about-who-left h2 {
@@ -137,13 +137,13 @@
 
     /* Image */
     .about-who-image {
-        margin-bottom: 70px;
+        margin-bottom: 30px; /* Reduced from 70px */
     }
 
     /* Bottom section */
     .about-who-bottom {
         flex-direction: column;
-        gap: 40px;
+        gap: 20px; /* Reduced from 40px */
     }
 
     .about-who-bottom-left h3 {
@@ -157,7 +157,7 @@
 
 @media (max-width: 767px) {
     .about-who-section {
-        padding: 10px 0 15px; /* Aggressively reduced from 30px */
+        padding: 10px 0 10px; /* Aggressively reduced */
     }
 
     .about-who-container {
@@ -168,6 +168,11 @@
     /* Global Label Applied */
 
     /* Top section */
+    .about-who-top {
+        gap: 15px; /* Aggressively reduced from 40px */
+        margin-bottom: 25px; /* Aggressively reduced from 60px */
+    }
+
     .about-who-left h2 {
         font-size: 26px;
         line-height: 125%;
@@ -176,6 +181,7 @@
     .about-who-right h4 {
         font-size: 18px;
         line-height: 145%;
+        margin-bottom: 8px; /* Reduced from 20px */
     }
 
     .about-who-right p {
@@ -183,12 +189,20 @@
     }
 
     /* Image */
+    .about-who-image {
+        margin-bottom: 25px; /* Aggressively reduced from 70px */
+    }
+
     .about-who-image img {
         border-radius: 12px;
         height: auto;
     }
 
     /* Bottom section */
+    .about-who-bottom {
+        gap: 15px; /* Aggressively reduced from 40px */
+    }
+
     .about-who-bottom-left h3 {
         font-size: 26px;
         line-height: 125%;
@@ -207,7 +221,8 @@
     }
 
     hr {
-        margin-top: 60px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
     }
 }
 

@@ -5,11 +5,9 @@ const CtaBanner = () => {
   return (
     <section className="cta-section">
       <div className="cta-container">
-        <h2 className="cta-title">Ready to Start? Let's Have an Honest Conversation.</h2>
+        <h2 className="cta-title">Ready to Automate, Integrate, and Scale? Let’s Talk Strategy.</h2>
         <p className="cta-description">
-          We understand the initial meeting with a new IT solution provider can be daunting. That's why we make it easy: we want to know what you want to do, and we will give you an honest - and non-technical - analysis of how we can help - or if we are not the right partner.
-          <br /><br />
-          If you need expert IT consulting in Brisbane, we make it easy. We will ask you what you want to do, and then we will tell you, simply and without buzzwords, how we can help, and if we're the right team.
+          We understand that choosing an enterprise solution partner can feel daunting. That’s why we cut through the buzzwords to deliver an honest, transparent analysis of how we can help—or if we aren't the right fit. From our Brisbane delivery centers to businesses nationwide, we map your operational goals directly to real-world growth.
           <br /><br />
           <strong>Call us now on +61 403339424.</strong>
         </p>
