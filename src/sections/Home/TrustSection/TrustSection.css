@@ -11,7 +11,7 @@
 }
 
 .trust-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     padding-top: 0; /* No extra top padding */
 }
@@ -21,8 +21,8 @@
 .trust-header h2 {
     font-size: clamp(2rem, 4vw, 2.8rem);
     color: #00123c;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0;
     line-height: 1.2;
 }
 

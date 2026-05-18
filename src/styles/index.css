@@ -197,7 +197,7 @@ section {
 
 /* PREMIUM SECTION HEADINGS (Vibrant Radiant Brand Gradient) */
 h1, h2, .section-title, .hero-heading, .WebDev-hero-heading, .igx-pricing-title, .faq-title {
-    background: linear-gradient(90deg, #00123c 0%, #00123c 15%, #ff6a00 65%, #ee0979 100%);
+    background: linear-gradient(90deg, #00123c 20%, #ff5e14 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -207,7 +207,7 @@ h1, h2, .section-title, .hero-heading, .WebDev-hero-heading, .igx-pricing-title,
 
 /* For Dark Background Sections */
 .approach-section h2, .impact-cta-section h2, .dark-bg h2, .cta-title, .about-hero-left h1, .igx-hero-content h1, .igx-pricing-card h2, .igx-pricing-card h3 {
-    background: linear-gradient(90deg, #ffffff 40%, #ff6a00 80%, #ee0979 100%);
+    background: linear-gradient(90deg, #ffffff 30%, #ff5e14 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -271,7 +271,7 @@ a.primary-btn {
     color: #ffffff !important;
     cursor: pointer !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important; /* Premium drop-shadow to separate button from dark backgrounds */
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg) !important;
+    background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
@@ -303,11 +303,9 @@ button.primary-btn:hover,
 a.primary-btn:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
-    color: #00123C !important;
-    background: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
-    background-origin: border-box !important;
-    background-clip: padding-box, border-box !important;
-    border: 3px solid transparent !important;
+    color: #ffffff !important;
+    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
+    border: 1.2px solid transparent !important;
 }
 
 .secondary-btn, 
@@ -333,7 +331,7 @@ a.secondary-btn {
     color: #00123c !important;
     cursor: pointer !important;
     border: 3px solid transparent !important;
-    background: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
+    background: linear-gradient(#ffffff, #ffffff), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     background-origin: border-box !important;
     background-clip: padding-box, border-box !important;
     transition: all 0.2s ease !important;
@@ -358,5 +356,82 @@ a.secondary-btn:hover {
     .secondary-btn, .about-secondary-btn, .cta-secondary, .WebDev-secondary-btn, .igx-btn.secondary {
         width: 100% !important;
         max-width: 320px !important;
+    }
+}
+
+/* GLOBAL LEFT-ALIGNMENT OVERRIDES FOR ALL MODULES (TECHNOLOGIES, SOLUTIONS, & SERVICES) ON TABLET & MOBILE */
+@media (max-width: 1199px) {
+    .tech-outcomes-container,
+    .business-impact-container,
+    .outcomes-container,
+    .tech-outcomes-content,
+    .business-impact-content,
+    .outcomes-content {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .appdev-expertise-header,
+    .expertise-header,
+    .sol-expertise-header,
+    .appdev-expertise-header h2,
+    .expertise-header h2,
+    .sol-expertise-header h2,
+    .tech-outcomes-content h2,
+    .business-impact-content h2,
+    .outcomes-content h2,
+    .expertise-item,
+    .sol-expertise-item,
+    .modern-expertise-item,
+    .support-expertise-item,
+    .managed-expertise-item,
+    .consulting-expertise-item,
+    .impl-expertise-item,
+    .marketing-expertise-item,
+    .outcome-item,
+    .business-impact-item,
+    .cta-content,
+    .impact-cta-content {
+        text-align: left !important;
+    }
+
+    .expertise-icon,
+    .sol-expertise-icon,
+    .modern-expertise-icon,
+    .outcome-icon {
+        margin: 0 0 10px 0 !important;
+        display: inline-block !important;
+    }
+}
+
+/* GLOBAL LEFT-ALIGNMENT FOR HERO SECTIONS ON TABLET & MOBILE */
+@media (max-width: 1199px) {
+    .appdev-container,
+    [class*="hero-container"],
+    [class*="hero-content"] {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+    
+    .appdev-buttons,
+    [class*="hero-buttons"] {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+    
+    .appdev-left,
+    [class*="hero-left"] {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .appdev-buttons,
+    [class*="hero-buttons"] {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100% !important;
     }
 }

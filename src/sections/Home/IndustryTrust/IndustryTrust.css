@@ -20,9 +20,14 @@
 
 .industry-content h2 {
     font-size: clamp(2rem, 3.5vw, 2.8rem);
-    color: #00123c;
     margin-bottom: 25px;
     line-height: 1.2;
+    background: linear-gradient(90deg, #00123c 20%, #ff5e14 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    width: 100%;
 }
 
 .industry-content p {
@@ -43,28 +48,58 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 500;
+    font-weight: 600;
     color: #00123c;
     background: #f8faff;
     padding: 12px 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid rgba(0, 18, 60, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.industry-tag:hover {
+    background: #ffffff;
+    border-color: rgba(255, 94, 20, 0.3);
+    color: #ff5e14;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 94, 20, 0.06);
 }
 
 .industry-tag .dot {
     width: 8px;
     height: 8px;
-    background: #00123c;
+    background: #ff5e14; /* Vibrant brand orange */
     border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.industry-tag:hover .dot {
+    transform: scale(1.2);
 }
 
 .industry-footer-note {
     font-weight: 600;
     color: #00123c;
-    border-left: 4px solid #00123c;
-    padding-left: 20px;
+    background: rgba(255, 94, 20, 0.04); /* Translucent peach background matching label pills */
+    padding: 20px 25px 20px 30px;
+    border-radius: 0 16px 16px 0;
     margin-top: 40px;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1.02rem;
+    box-shadow: 0 5px 15px rgba(255, 94, 20, 0.02);
+    position: relative;
+    overflow: hidden;
+    text-align: left !important;
+}
+
+.industry-footer-note::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #00123c 0%, #ff5e14 100%);
 }
 
 .industry-visual {
@@ -94,7 +129,7 @@
     position: absolute;
     bottom: 30px;
     right: 30px;
-    background: #00123c;
+    background: linear-gradient(135deg, #00123c 0%, #ff5e14 100%); /* Gorgeous brand gradient */
     color: #ffffff;
     padding: 20px;
     border-radius: 20px;
@@ -103,6 +138,7 @@
     align-items: center;
     text-align: center;
     min-width: 140px;
+    box-shadow: 0 10px 25px rgba(255, 94, 20, 0.2);
 }
 
 .experience-badge .number {

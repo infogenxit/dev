@@ -9,7 +9,7 @@
 .nav-link { color: #00123c; text-decoration: none; font-weight: 500; font-size: 14px; transition: 0.3s; white-space: nowrap; }
 .nav-link:hover { color: #ff6a00; }
 
-.quote-btn { background: linear-gradient(135deg, #ff6a00, #ee0979); color: #fff !important; padding: 12px 28px; border-radius: 50px; font-weight: 700; font-size: 14px; text-decoration: none; transition: transform 0.3s; display: inline-block; white-space: nowrap; }
+.quote-btn { background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important; color: #fff !important; padding: 12px 28px; border-radius: 50px; font-weight: 700; font-size: 14px; text-decoration: none; transition: transform 0.3s; display: inline-block; white-space: nowrap; }
 .quote-btn:hover { transform: scale(1.05); }
 
 /* DROPDOWN POSITIONING (DESKTOP) */

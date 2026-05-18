@@ -61,15 +61,21 @@ const Hero = () => {
         </div>
         <div className="hero-bottom-info">
           <div className="hero-secondary-text-container">
-            <p className="hero-secondary-text">
-              It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.
-            </p>
-            <p className="hero-secondary-text">
-              At Infogenx, we don't just focus on technology; we focus on results. We partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology.
-            </p>
-            <p className="hero-secondary-text">
-              Whether it is a bespoke application, a cloud migration strategy or real-world AI-based automation or a data strategy that provides your management team with actionable insight, our team of seasoned engineers, architects and consultants has the experience to deliver it right, first time.
-            </p>
+            <div className="hero-secondary-card animate-fade-in">
+              <p className="hero-secondary-text">
+                It all begins with strategy. Our IT consulting in Brisbane is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.
+              </p>
+            </div>
+            <div className="hero-secondary-card animate-fade-in">
+              <p className="hero-secondary-text">
+                At Infogenx, we don't just focus on technology; we focus on results. We partner with local, mid-market and emerging businesses to find solutions to operational problems by leveraging smart, future-focused technology.
+              </p>
+            </div>
+            <div className="hero-secondary-card animate-fade-in">
+              <p className="hero-secondary-text">
+                Whether it is a bespoke application, a cloud migration strategy or real-world AI-based automation or a data strategy that provides your management team with actionable insight, our team of seasoned engineers, architects and consultants has the experience to deliver it right, first time.
+              </p>
+            </div>
           </div>
         </div>
         </div>

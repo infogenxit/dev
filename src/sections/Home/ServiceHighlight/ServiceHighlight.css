@@ -13,14 +13,16 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding-top: 80px; /* Increased space for the header */
+    padding-top: 50px; /* Reduced unwanted top space */
 }
 
 .service-header-container {
-    text-align: center;
-    max-width: 900px; /* Increased max-width slightly */
-    margin-bottom: 50px; /* Increased margin to prevent overlapping */
-    padding: 0 20px;
+    text-align: left;
+    max-width: 1200px; /* Aligns perfectly with the 1200px cards */
+    margin: 0 auto 40px; /* Symmetrical auto margins with tight bottom space */
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
     z-index: 20; /* Ensure header is above cards */
 }
 
@@ -256,8 +258,12 @@
         justify-content: flex-start; 
     }
     .service-header-container {
+        text-align: left;
         margin-bottom: 20px; /* Reduced from 35px to prevent card overlap and save vertical space */
+        padding: 0 20px;
         padding-top: 5px; 
+        width: 100%;
+        box-sizing: border-box;
         z-index: 50; 
     }
     .service-header-container .section-title {
@@ -274,9 +280,9 @@
     }
     .service-card {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 20px 20px 25px; /* Adjusted padding to prevent button overflow */
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
         gap: 12px;
         width: calc(100% - 40px);

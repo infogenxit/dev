@@ -30,7 +30,7 @@
 }
 
 .appdev-left h1 span {
-    background: linear-gradient(90deg, #00123c 0%, #ff6a00 50%, #ee0979 100%);
+    background: linear-gradient(90deg, #00123c 0%, #ff6a00 50%, #ff5e14 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -105,7 +105,7 @@
 
     cursor: pointer;
 
-    background: linear-gradient(135deg, #ff6a00, #ee0979); /* Premium radiant brand gradient */
+    background: linear-gradient(135deg, #ff6a00, #ff5e14); /* Premium radiant brand gradient */
 
     transition: all 0.3s ease;
 }

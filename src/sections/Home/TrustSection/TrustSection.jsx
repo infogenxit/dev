@@ -35,7 +35,7 @@ const TrustSection = () => {
         <div className="trust-header">
           <span className="section-label">What Sets Us Apart</span>
           <h2>Why Do Organisations Trust Infogenx for IT Consulting and Technology Delivery?</h2>
-          <p style={{ marginTop: "20px", color: "#666", maxWidth: "800px", margin: "20px auto 0" }}>
+          <p style={{ marginTop: "15px", color: "#666", maxWidth: "900px", margin: "15px 0 0", textAlign: "left" }}>
             There are lots of IT companies. What sets us apart is simple: we are practitioners, not just consultants. We have the experience of delivery to back up our recommendations, and we stick around until the job is done.
           </p>
         </div>

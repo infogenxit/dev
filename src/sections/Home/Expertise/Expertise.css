@@ -193,12 +193,12 @@
     .expertise-heading {
         font-size: 28px;
         padding: 5px 20px 0; /* Minimized for mobile */
-        text-align: center;
+        text-align: left;
     }
 
     .expertise-description {
         padding: 0 20px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 30px;
     }
 
@@ -215,7 +215,7 @@
         height: auto;
         padding: 20px;
         margin-bottom: 15px; /* Reduced from 30px */
-        text-align: center; /* Centered layout for narrow mobile screens */
+        text-align: left; /* Clean left alignment matching desktop */
     }
 
     .first-card,
