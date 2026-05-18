@@ -4,56 +4,51 @@ import IconB from "../../../../assets/images/icon2.webp";
 import IconC from "../../../../assets/images/icon3.webp";
 import IconD from "../../../../assets/images/icon4.webp";
 import IconE from "../../../../assets/images/icon5.webp";
+
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
       <div className="appdev-expertise-container">
         <div className="appdev-expertise-header">
-          <span className="section-label">Managed Services</span>
+          <span className="section-label">Workflow Automation</span>
           <h2>
-            Proactive Support, Seamless Operations, and Scalable Managed
-            Services for Your Business
+            Intelligent Business Automation, Custom Integration, and Seamless Processes
           </h2>
         </div>
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>24/7 Monitoring and Response</h4>
+            <h4>Operations & Process Automation</h4>
             <p>
-              Constant monitoring to detect and resolve issues before they
-              impact your business.
+              We leverage RPA tools like UiPath, Automation Anywhere, and Blue Prism to automate rule-based processes cleanly.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Timely Updates and Tuning</h4>
+            <h4>Sales & CRM Automation</h4>
             <p>
-              Regular updates and optimisations ensure your platforms perform at
-              peak efficiency.
+              Automate lead capture, follow-up sequences, pipeline reporting, and updates inside Microsoft, Zoho, and Odoo.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>SLA-backed Service Guarantee</h4>
+            <h4>ERP & Finance Automation</h4>
             <p>
-              Clear service level agreements ensure reliable uptime and
-              predictable service delivery.
+              Connect systems to automate data entry, invoice processing, supply chain updates, and payment approvals flawlessly.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Customised Maintenance Plans</h4>
+            <h4>HR & Employee Onboarding</h4>
             <p>
-              Tailored maintenance to fit your platform needs, ensuring smooth
-              and uninterrupted operations.
+              Remove HR admin overhead by automating leave requests, document flows, onboarding systems, and compliance.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Comprehensive Security and Compliance</h4>
+            <h4>AI-Powered Intelligent RPA</h4>
             <p>
-              We ensure your data is secure and compliant with Australian
-              standards, mitigating risks.
+              Combine RPA with machine learning, NLP, and document understanding to handle unstructured emails and contracts.
             </p>
           </div>
         </div>
@@ -61,6 +56,5 @@ const AppDevExpertise = () => {
     </section>
   );
 };
+
 export default AppDevExpertise;
-
-

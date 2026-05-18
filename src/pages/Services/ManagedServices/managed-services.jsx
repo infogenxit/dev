@@ -1,9 +1,9 @@
+import React from "react";
 import AppDevHero from "../../../sections/Services/ManagedServices/ManagedServicesHero/ManagedServicesHero";
 import AppDevExpertise from "../../../sections/Services/ManagedServices/ManagedServicesExpertise/ManagedServicesExpertise";
 import AppDevApproach from "../../../sections/Services/ManagedServices/ManagedServicesApproach/ManagedServicesApproach";
 import AppDevBusinessImpact from "../../../sections/Services/ManagedServices/ManagedServicesBusinessImpact/ManagedServicesBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Services/ManagedServices/ManagedServicesImpactCTA/ManagedServicesImpactCTA";
-import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
@@ -14,38 +14,55 @@ import { PATHS } from "../../../route/paths";
 const ManagedServices = () => {
   const managedContent = [
     {
-      heading: "Reliable Managed IT Services for Proactive Growth",
+      heading: "Operations Automation in Brisbane",
       content: [
-        "In today’s technology-dependent business landscape, downtime isn’t just an inconvenience—it’s a direct hit to your reputation and revenue. At Infogenx, we provide comprehensive Managed IT Services designed to take the burden of technology management off your shoulders, allowing you to focus on your core business goals. Our proactive approach ensures that your systems are not just 'running,' but optimized for maximum performance, security, and scalability.",
-        "Our team of dedicated engineers provides 24/7 monitoring and support, acting as an seamless extension of your internal team. We don't wait for things to break; we use advanced telemetry and predictive maintenance to resolve issues before they ever impact your operations."
+        "Approvals sitting in inboxes. Status updates nobody can find. Reports that take half a day to compile. Our operations automation work maps where time is being lost and builds automated workflows that keep things moving — without someone having to chase it every time."
       ]
     },
     {
-      heading: "Our Holistic Managed Services Framework",
+      heading: "Process Automation",
       content: [
-        "A successful managed services engagement covers every aspect of your technical ecosystem, from infrastructure and security to user support and strategic planning."
-      ],
-      list: [
-        { label: "24/7 Infrastructure Monitoring", text: "We provide round-the-clock visibility into your servers, networks, and cloud environments, ensuring peak performance and immediate response to any anomalies." },
-        { label: "Advanced Cybersecurity Management", text: "Protect your business with enterprise-grade security monitoring, threat detection, and proactive patch management for all your critical systems." },
-        { label: "SLA-Driven Technical Support", text: "Get access to a dedicated helpdesk with guaranteed response times, ensuring your team stays productive and focused." }
+        "We use RPA tools like UiPath, Automation Anywhere, and Blue Prism to automate end-to-end business processes — from customer onboarding to supplier management to internal sign-off workflows. Our process automation in Brisbane service works around your existing systems. Nothing gets ripped out."
       ]
     },
     {
-      heading: "Why Organizations Choose Infogenx",
+      heading: "Sales Automation",
       content: [
-        "Unlike traditional IT providers who profit when your systems fail, our managed services model aligns our success with yours. We thrive when your technology is invisible, silent, and flawlessly efficient. We understand specific compliance and regulatory requirements, including the latest cybersecurity standards and privacy laws.",
-        "We provide transparent, fixed-monthly-cost models that allow you to budget your IT spend with total confidence, eliminating the unpredictable expenses associated with the 'break-fix' approach."
+        "Sales teams should be selling — not updating CRM fields or manually sending follow-ups. Our sales automation in Brisbane work automates lead capture, follow-up sequences, pipeline reporting, and task reminders so your team spends more time in front of customers and less time buried in admin."
       ]
     },
     {
-      heading: "Proactive Optimization & Strategic Governance",
+      heading: "CRM Automation in Brisbane",
       content: [
-        "Managed services at Infogenx go beyond simple maintenance. We provide regular performance audits and strategic technology reviews to ensure your infrastructure is evolving in line with your business growth. We help you navigate complex decisions around cloud migration, platform upgrades, and AI integration, ensuring every technology investment provides a measurable return.",
-        "With our detailed reporting and performance dashboards, you’ll have total visibility into the health of your digital ecosystem, allowing you to make data-driven decisions about your future technical roadmap."
+        "A CRM that isn't automated is just an expensive contact list. Our CRM automation service gets it working properly — auto-capturing leads, routing enquiries, triggering follow-ups, and keeping records updated without anyone touching it manually."
+      ]
+    },
+    {
+      heading: "ERP Automation",
+      content: [
+        "Most businesses barely use half of what their ERP can do. Our ERP automation work connects your ERP to the rest of your systems, automates data entry, invoice processing, and procurement workflows, and removes the manual steps that slow everything down and introduce errors."
+      ]
+    },
+    {
+      heading: "Finance Automation",
+      content: [
+        "Invoice processing. Payment approvals. Month-end reporting. All of it is automatable. Our finance automation in Brisbane service handles high-volume finance workflows end-to-end — improving accuracy, cutting processing times, and freeing your finance team for work that actually needs human thinking."
+      ]
+    },
+    {
+      heading: "HR Automation Brisbane",
+      content: [
+        "Onboarding, leave requests, compliance documents, approval routing — HR carries a heavy admin load. Our HR automation Brisbane work removes the repetitive side of it so your people team can focus on your people, not paperwork."
+      ]
+    },
+    {
+      heading: "AI Automation Services",
+      content: [
+        "This is where it gets powerful. Our AI automation services in Brisbane go beyond basic rule-based bots. We combine RPA with AI, machine learning, and natural language processing to automate processes involving emails, documents, contracts, and unstructured data — things that used to need a human at every step."
       ]
     }
   ];
+
   const relatedItems = [
     {
       title: "Digital Transformation",
@@ -63,44 +80,47 @@ const ManagedServices = () => {
       link: PATHS.dataAnalyticsAi
     }
   ];
+
   const faqs = [
     {
-      question: "What is included in Infogenx Managed IT Services?",
-      answer: "Our managed services include 24/7 proactive monitoring, SLA-driven support, system optimization, security management, and regular performance audits for Microsoft, Zoho, and Odoo ecosystems."
+      question: "How do I know which processes are worth automating first?",
+      answer: "Look for anything high-volume, repetitive, and rule-based — data entry, invoice processing, approval workflows, scheduled reports. We run a process audit with every new client to find exactly where automation saves the most time."
     },
     {
-      question: "Do you offer 24/7 support?",
-      answer: "Yes, we provide round-the-clock monitoring and support to ensure your critical business applications remain operational and secure at all times."
+      question: "Can you automate our CRM and ERP and connect them to each other?",
+      answer: "Yes — and that's often where the biggest wins are. Connecting CRM and ERP automation in Brisbane eliminates duplicate data entry and keeps both systems in sync without anyone manually updating either one."
     },
     {
-      question: "How does proactive monitoring help my business?",
-      answer: "Proactive monitoring allows us to identify and resolve potential issues before they cause downtime, ensuring uninterrupted productivity and system reliability."
+      question: "How long until we see results?",
+      answer: "Simpler automations like approval flows or report generation can go live in 2–4 weeks. More complex multi-system process automation projects are typically 6–12 weeks. We always validate with a proof-of-concept before full build."
     },
     {
-      question: "Can you manage our existing Microsoft or Zoho environment?",
-      answer: "Absolutely. Our experts specialize in optimizing and managing existing platform implementations to improve governance, performance, and user adoption."
+      question: "Is AI automation only for large businesses?",
+      answer: "Not anymore. AI automation services in Brisbane are practical for mid-sized businesses — especially for processing emails, documents, and customer communications. We scope what makes commercial sense for your size."
     },
     {
-      question: "What is the typical response time for support requests?",
-      answer: "We offer tiered SLA response times based on the severity of the issue, with critical alerts being addressed immediately by our dedicated support team."
+      question: "Will our team push back on automation?",
+      answer: "Rarely. In our experience the people who've been doing the manual work longest are the first to welcome it. When the repetitive admin disappears, people have more energy for the work that actually matters."
     }
   ];
+
   const breadcrumbItems = [
     { name: "Services", path: PATHS.home },
-    { name: "Managed Services", path: PATHS.managedServices }
+    { name: "Workflow Automation", path: PATHS.managedServices }
   ];
+
   return (
     <>
       <SEO
-        title="Api Integration Brisbane | Trusted Experts & Agency"
-        description="Scale your company with leading Api Integration Brisbane services in Brisbane. Our team delivers high-quality Crm Automation Brisbane. Get started today!"
-        keywords="managed IT services, proactive IT support, business system monitoring"
+        title="Workflow Automation Services in Brisbane | Infogenx"
+        description="Workflow Automation Services in Brisbane | Your team didn't sign up to copy-paste data between systems, chase approvals over email, or rebuild the same report every Monday. Our workflow automation services in Brisbane identify what’s slowing your business down and replace it with intelligent, automated processes."
+        keywords="workflow automation brisbane, business process automation, crm automation brisbane, erp automation brisbane, RPA services, UiPath brisbane, finance automation, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <ServiceDetailedContent 
-        title="Proactive IT Management & Strategic Support" 
+        title="What We Automate: Intelligent Business Automation Services" 
         subtitle="Uptime Guaranteed"
         sections={managedContent} 
       />

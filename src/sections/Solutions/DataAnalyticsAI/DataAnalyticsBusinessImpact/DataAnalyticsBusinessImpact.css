@@ -1,5 +1,5 @@
 .business-impact-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #fff7f2;
 }
 
@@ -63,7 +63,7 @@
 
 @media (max-width: 1199px) {
     .business-impact-section {
-        padding: 90px 0;
+        padding: 50px 0;
     }
 
     .business-impact-header {
@@ -99,7 +99,7 @@
 
 @media (max-width: 767px) {
     .business-impact-section {
-        padding: 70px 0;
+        padding: 40px 0;
     }
 
     .business-impact-container {

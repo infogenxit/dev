@@ -1,18 +1,17 @@
 import "./DataAnalyticsImpactCTA.css";
 import { useNavigate } from "react-router-dom";
 import Correct from "../../../../assets/images/correct.webp";
+
 const AppDevImpactCTA = () => {
   const navigate = useNavigate();
+
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
         <div className="impact-cta-left">
-          <h2>
-           Ready to Turn Data <span>Into Decisions?</span>
-          </h2>
+          <h2>Ready to stop guessing?</h2>
           <p>
-            Whether you are improving visibility, connecting fragmented data, or applying AI,
-            Infogenx helps you build intelligence that drives action.
+            If your data is sitting there doing nothing while you're making big calls on gut feel, let's fix that. We're Infogenx — a data analytics agency in Brisbane that helps businesses turn scattered numbers into decisions that actually make sense. No generic dashboards, no junior handoffs, no fluff. Just a straight conversation about your data and whether we can help.
           </p>
           <div className="impact-buttons">
             <button
@@ -33,13 +32,13 @@ const AppDevImpactCTA = () => {
           <div className="impact-cta-content">
             <ul>
               <li>
-                <img src={Correct} alt="correct" /> Decision-ready insights at scale
+                <img src={Correct} alt="correct" /> 30+ Years Combined IT Experience
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Trusted data foundations for growth
+                <img src={Correct} alt="correct" /> 100% Bespoke Data Audits & Dashboards
               </li>
               <li>
-                <img src={Correct} alt="correct" /> Outcomes built for measurable value
+                <img src={Correct} alt="correct" /> Genuinely Local (Brisbane, Queensland)
               </li>
             </ul>
             <p className="impact-note">Let us build the future together.<br /><strong>Call us now on +61 403339424.</strong></p>
@@ -49,7 +48,5 @@ const AppDevImpactCTA = () => {
     </section>
   );
 };
+
 export default AppDevImpactCTA;
-
-
-

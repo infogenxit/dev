@@ -3,68 +3,54 @@ import Business1 from "../../../../assets/images/business_impact_managed_service
 import Business2 from "../../../../assets/images/businessimg2.webp";
 import Business3 from "../../../../assets/images/businessimg3.webp";
 import Business4 from "../../../../assets/images/businessimg4.webp";
+
 const AppDevBusinessImpact = () => {
+  const items = [
+    {
+      title: "We Audit Before We Build",
+      desc: "We map your processes first, find where automation delivers real ROI, and flag anything that needs fixing before it gets automated. No guesswork.",
+      img: Business1
+    },
+    {
+      title: "100% Vendor-Agnostic",
+      desc: "UiPath, Automation Anywhere, Blue Prism, Power Automate — we recommend what fits your environment, budget, and scale. Not what's easiest for us.",
+      img: Business2
+    },
+    {
+      title: "Senior Team & Hands-On Delivery",
+      desc: "The people scoping your project build it too. No handoffs. No juniors were sent to figure it out. Leadership stays involved start to finish.",
+      img: Business3
+    },
+    {
+      title: "Built to Last & Scale",
+      desc: "We monitor, optimise, and support your automations as your business grows. And we build systems designed to scale — not just fix today's problem.",
+      img: Business4
+    }
+  ];
+
   return (
     <section className="business-impact-section">
       <div className="business-impact-container">
         <div className="business-impact-header">
           <span className="section-label">Why Choose Infogenx</span>
-          <h2>Built for Business Impact</h2>
+          <h2>Why Do Businesses Choose Infogenx for Workflow Automation?</h2>
         </div>
         <div className="business-impact-grid">
-          <div className="impact-card">
-            <div className="impact-image">
-              <img src={Business1} alt="" />
+          {items.map((item, idx) => (
+            <div className="impact-card" key={idx}>
+              <div className="impact-image">
+                <img src={item.img} alt={item.title} />
+              </div>
+              <div className="impact-content">
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
             </div>
-            <div className="impact-content">
-              <h4>Australian-led Consultings</h4>
-              <p>
-                Local expertise ensures your business gets tailored solutions
-                with national scalability.
-              </p>
-            </div>
-          </div>
-          <div className="impact-card">
-            <div className="impact-image">
-              <img src={Business2} alt="" />
-            </div>
-            <div className="impact-content">
-              <h4>Predictable Costs and Reliable Uptime</h4>
-              <p>
-                Our structured services come with fixed costs and maximum uptime
-                for peace of mind.
-              </p>
-            </div>
-          </div>
-          <div className="impact-card">
-            <div className="impact-image">
-              <img src={Business3} alt="" />
-            </div>
-            <div className="impact-content">
-              <h4>Proven Outcomes</h4>
-              <p>
-                Reduced Downtime and IT Burden. Focus on growth while we handle
-                the tech, ensuring minimal disruptions.
-              </p>
-            </div>
-          </div>
-          <div className="impact-card">
-            <div className="impact-image">
-              <img src={Business4} alt="" />
-            </div>
-            <div className="impact-content">
-              <h4>Security-first Approach</h4>
-              <p>
-                Your data and operations are secure, compliant, and protected
-                with a robust security framework.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
 };
+
 export default AppDevBusinessImpact;
-
-

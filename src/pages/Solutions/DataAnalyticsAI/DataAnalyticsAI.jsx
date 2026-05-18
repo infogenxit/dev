@@ -4,7 +4,6 @@ import AppDevExpertise from "../../../sections/Solutions/DataAnalyticsAI/DataAna
 import AppDevApproach from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsApproach/DataAnalyticsApproach";
 import AppDevBusinessImpact from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsBusinessImpact/DataAnalyticsBusinessImpact";
 import AppDevImpactCTA from "../../../sections/Solutions/DataAnalyticsAI/DataAnalyticsImpactCTA/DataAnalyticsImpactCTA";
-import { Helmet } from "react-helmet-async";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
@@ -15,35 +14,51 @@ import { PATHS } from "../../../route/paths";
 const DataAnalyticsAI = () => {
   const analyticsContent = [
     {
-      heading: "Transforming Data into Decision-Grade Intelligence",
+      heading: "Data Strategy in Brisbane",
       content: [
-        "In the digital economy, data is often referred to as the 'new oil.' However, raw data without refinement is just noise. At Infogenx, we specialize in the refinement process, transforming vast quantities of unstructured information into clear, actionable, decision-grade intelligence. Our Data Analytics & AI solutions are designed to help businesses move beyond looking in the rearview mirror and start predicting the road ahead.",
-        "From identifying hidden market trends to automating complex decision-making processes, our data scientists and engineers build the intelligent systems that give your organization a distinct competitive advantage. We help you unlock the true value of your information, ensuring that every data point serves a strategic purpose."
+        "Most businesses jump straight to tools before they know what they're trying to measure. We slow that down on purpose. We sit with your team, understand your goals, find the gaps, and build a data strategy that connects what you're collecting to what actually matters for your business. No generic frameworks. Just a clear plan that makes sense for your size, your industry, and your budget."
       ]
     },
     {
-      heading: "The Analytics Spectrum: From Descriptive to Predictive",
+      heading: "Data Engineering in Brisbane",
       content: [
-        "We guide our clients through the full maturity curve of data analytics, moving from simple reporting to advanced predictive modeling."
-      ],
-      list: [
-        { label: "Descriptive & Diagnostic Analytics", text: "Understand exactly what happened in your business and, more importantly, why it happened, through advanced visualization and root-cause analysis." },
-        { label: "Predictive Intelligence", text: "Leverage historical data and machine learning algorithms to forecast future trends, customer behaviors, and market shifts with high accuracy." },
-        { label: "Prescriptive Strategy", text: "Move beyond 'what will happen' to 'what should we do,' using AI to recommend the optimal course of action for maximum business impact." }
+        "Good analytics needs clean, connected data underneath it. We build the pipelines, data warehouses, and infrastructure that pull everything — your CRM, your ERP, your marketing platforms — into one place. If your data is scattered, siloed, or just plain messy, this is where we start."
       ]
     },
     {
-      heading: "Modernizing Your Data Engineering Pipeline",
+      heading: "Business Intelligence in Brisbane",
       content: [
-        "Great insights require great data. We focus heavily on the underlying data engineering that powers your analytics. We build robust, automated pipelines that ingest data from across your ecosystem—CRMs, ERPs, web analytics, and IoT devices—cleansing and consolidating it into a unified, high-performance data warehouse.",
-        "By utilizing modern cloud technologies like Azure Synapse, AWS Redshift, or BigQuery, we ensure that your data is always fresh, accurate, and ready for analysis, providing a reliable foundation for your most critical business decisions."
+        "Our BI consulting in Brisbane work helps you stop drowning in reports and start actually understanding your business. We identify the metrics that matter, cut the noise, and set up a BI environment your whole team can use — not just the analysts."
       ]
     },
     {
-      heading: "AI & Machine Learning for Real-World Challenges",
+      heading: "Dashboard Development in Brisbane",
       content: [
-        "AI is most powerful when applied to specific, high-impact business challenges. Whether it's building a recommendation engine for an e-commerce platform, developing a fraud detection model for a financial service, or creating an AI assistant to handle complex customer queries, our focus is on practical, outcome-driven innovation.",
-        "We prioritize transparency and explainability in our AI models, ensuring that you not only get a prediction but understand the factors that drove it. This builds trust in the technology and allows your team to act on AI insights with total confidence."
+        "We build Power BI dashboards teams genuinely use. Not pretty demos that get ignored after week two. Real dashboards with the right data, built around how your people actually work. We also work with Tableau and Looker — we'll always recommend what fits your stack, not what's easiest for us."
+      ]
+    },
+    {
+      heading: "Reporting Automation in Brisbane",
+      content: [
+        "If someone on your team is still manually pulling reports every week, that time is being wasted. We automate the whole process — scheduled, accurate, delivered straight to whoever needs it. Finance, ops, sales — doesn't matter. If it's repetitive, we'll automate it."
+      ]
+    },
+    {
+      heading: "Predictive & Forecasting Analytics",
+      content: [
+        "This is where things get interesting. Our predictive analytics services in Brisbane use your historical data to show you what's likely coming next — demand forecasting, churn risk, sales trends. Forecasting analytics businesses use to stop reacting and start planning ahead."
+      ]
+    },
+    {
+      heading: "Data Platform Development in Brisbane",
+      content: [
+        "We build and manage modern data platform development solutions on cloud infrastructure including AWS and Azure. Scalable, secure, and built to grow with your business. Not a patchwork of tools duct-taped together."
+      ]
+    },
+    {
+      heading: "Enterprise Reporting",
+      content: [
+        "Multiple teams. Different systems. Everyone working off different numbers. Our enterprise reporting in Brisbane work fixes that by creating one consistent, trusted reporting environment across your whole organisation. One version of the truth, finally."
       ]
     }
   ];
@@ -55,24 +70,24 @@ const DataAnalyticsAI = () => {
 
   const faqs = [
     {
-      question: "How can AI and analytics benefit my business?",
-      answer: "AI and analytics help you uncover hidden patterns in your data, predict future trends, and automate complex decision-making processes, leading to increased efficiency and competitive advantage."
+      question: "How long does a Power BI dashboard take to build?",
+      answer: "Usually 2–4 weeks for a solid working version. If your data sources are already accessible, sometimes faster. We scope it properly upfront so there are no surprises."
     },
     {
-      question: "What platforms do you use for data analytics?",
-      answer: "We primarily use Microsoft Power BI, Zoho Analytics, and custom-built Python/SQL models to create comprehensive dashboards and predictive tools."
+      question: "My data is scattered across systems — where do we even start?",
+      answer: "With a data audit. Our data engineering team maps what you have, identifies what's usable, and builds the infrastructure to bring it all together. You don't need to be organised before calling us."
     },
     {
-      question: "Can you analyze data from multiple sources?",
-      answer: "Yes, we specialize in data engineering to consolidate data from various sources like CRM, ERP, and web analytics into a single source of truth."
+      question: "What's the real difference between BI consulting and just buying a BI tool?",
+      answer: "A tool is just software. BI consulting in Brisbane means someone helps you figure out what to measure, how to model your data correctly, and how to build something your team will actually trust and use. Tools without strategy usually just create faster confusion."
     },
     {
-      question: "How do you ensure the accuracy of AI models?",
-      answer: "We follow a rigorous validation process, using historical data to test our models and continuously monitoring their performance to ensure they remain accurate over time."
+      question: "Can a smaller business actually benefit from predictive analytics?",
+      answer: "Yes — and it doesn't need to cost a fortune. Predictive analytics services are far more accessible now than they were five years ago. We scope projects around a specific problem you're trying to solve, not a full enterprise rollout."
     },
     {
-      question: "Is my business data secure when using your AI solutions?",
-      answer: "Absolutely. We implement strict data governance and security protocols, ensuring all data processing complies with the latest privacy standards."
+      question: "How do we know if we need a data strategy or just better reporting?",
+      answer: "If you're unsure what to measure — you need a data strategy. If you know what to measure but the reports are slow, manual, or inconsistent — that's enterprise reporting. We'll tell you honestly which one you actually need."
     }
   ];
 
@@ -93,18 +108,19 @@ const DataAnalyticsAI = () => {
       link: PATHS.apiIntegration
     }
   ];
+
   return (
     <>
       <SEO
-        title="Business Intelligence Brisbane | Trusted Experts"
-        description="Scale your company with leading Business Intelligence Brisbane services in Brisbane. Our team delivers high-quality Data Analytics Brisbane. Get started today!"
-        keywords="data analytics, business intelligence, AI solutions, predictive analytics, Infogenx"
+        title="Data Analytics Brisbane | Smarter Decisions, Real Business Results"
+        description="Data Analytics in Brisbane | Smarter Decisions, Real Business Results Most businesses have more data than they know what to do with. CRM data, sales reports, website analytics, finance exports — it's all there. But when someone asks 'why did revenue drop last quarter?' or 'which customers are about to churn?' the answer is usually a shrug and a spreadsheet."
+        keywords="data analytics brisbane, business intelligence brisbane, data strategy, predictive analytics, Power BI brisbane, data engineering, reporting automation, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <ServiceDetailedContent 
-        title="Intelligence That Powers Strategic Growth" 
+        title="Smarter Growth Starts with Data Analytics in Brisbane Solutions" 
         subtitle="Data-Driven Excellence"
         sections={analyticsContent} 
       />
