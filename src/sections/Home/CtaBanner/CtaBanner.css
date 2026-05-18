@@ -29,21 +29,25 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
 
 .cta-title {
     font-family: "Manrope", sans-serif;
-    font-size: 55px;
+    font-size: 42px; /* Reduced from 55px */
     font-weight: 800;
     color: #ffffff !important; /* Force high-contrast solid white color */
     -webkit-text-fill-color: #ffffff !important; /* Override global background gradient mask */
     background: none !important; /* Remove background fill gradient */
     background-clip: border-box !important;
     -webkit-background-clip: border-box !important;
-    line-height: 1.1; /* Added to reduce space between headline lines */
+    line-height: 1.25; /* Added to reduce space between headline lines */
     margin-top: 0px; 
-    margin-bottom: 10px; /* Reduced from 15px */
+    margin-bottom: 15px; /* Reduced from 15px */
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-buttons {
     display: flex;
     justify-content: center;
+    align-items: center; /* Enforce vertical centering */
     gap: 20px;
 }
 
@@ -59,6 +63,7 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
     color: #ffffff;
     background: #d33e00;
     cursor: pointer;
+    height: 50px !important; /* Perfect height matching with secondary button */
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -152,11 +157,15 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
 /*Muneendra*/
 .cta-description {
     font-family: "Manrope", sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     color: #ffffff;
     opacity: 0.9;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 /*for smaller devices*/

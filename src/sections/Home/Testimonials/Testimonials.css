@@ -46,17 +46,26 @@
  }
 
  .testimonial-card {
-     flex: 0 0 100%;
-     max-width: 450px;
-     margin: 0 auto;
-    min-height: 260px;
-        background: linear-gradient(150deg,
-                #FEEFE6,
-                #FFD0B3);
-        border-radius: 16px;
-        padding: 24px 70px 24px 24px;
-        text-align: left;
-        position: relative;
+     flex: 0 0 auto;
+     width: 450px;
+     margin: 0;
+     min-height: 260px;
+     background: linear-gradient(150deg,
+             #FEEFE6,
+             #FFD0B3);
+     border-radius: 16px;
+     padding: 24px 70px 24px 24px;
+     text-align: left;
+     position: relative;
+     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease, box-shadow 0.6s ease;
+     opacity: 0.5;
+     transform: scale(0.92);
+ }
+
+ .testimonial-card.active {
+     opacity: 1;
+     transform: scale(1.03);
+     box-shadow: 0 15px 35px rgba(255, 106, 0, 0.15);
  }
 
 .quote {
