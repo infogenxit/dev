@@ -3,6 +3,10 @@
     padding: 30px 0 15px 0; /* Reduced top/bottom padding */
 }
 
+.about-label {
+    margin-bottom: 12px !important; /* Tight spacing between label and heading on desktop */
+}
+
 .about-who-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -13,8 +17,8 @@
 .about-who-top {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Reduced from 30px */
-    margin-bottom: 30px; /* Reduced from 40px */
+    gap: 10px; /* Reduced to reduce space */
+    margin-bottom: 20px; /* Reduced from 30px */
 }
 
 .about-who-left {
@@ -27,6 +31,7 @@
     font-weight: 800;
     line-height: 125%;
     margin-top: 0;
+    margin-bottom: 0px !important; /* Zero default browser margin */
     color: #00123c;
 }
 
@@ -42,7 +47,8 @@
     font-weight: 600;
     line-height: 150%;
     color: #1a1a1a;
-    margin-bottom: 10px; /* Reduced from 20px */
+    margin-top: 0px !important;
+    margin-bottom: 12px !important; /* Tight spacing between paragraphs */
 }
 
 .about-who-right p {
@@ -50,11 +56,13 @@
     font-weight: 500;
     line-height: 160%;
     color: #2c2e33;
+    margin-top: 0px !important;
+    margin-bottom: 12px !important; /* Tight spacing between paragraphs */
 }
 
 /* ---------- IMAGE ---------- */
 .about-who-image {
-    margin-bottom: 30px; /* Reduced from 50px */
+    margin-bottom: 20px; /* Reduced from 30px */
 }
 
 .about-who-image img {
@@ -67,7 +75,7 @@
 .about-who-bottom {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Reduced from 30px */
+    gap: 10px; /* Reduced */
 }
 .about-who-bottom-left{
     max-width: 100%;
@@ -77,6 +85,7 @@
     font-family: "Manrope", sans-serif;
     font-size: 39px;
     margin-top: 0;
+    margin-bottom: 0px !important; /* Zero default browser margin */
     font-weight: 800;
     color: #00123c;
 }
@@ -96,12 +105,12 @@
 .about-who-points ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px;
+    margin: 0 0 12px !important; /* Tight spacing */
 }
 
 .about-who-points li {
     /* font-size: 15px; */
-    margin-bottom: 8px;
+    margin-bottom: 6px; /* Tight spacing */
     color: #333;
 }
 
@@ -109,9 +118,15 @@
     font-size: 14px;
     line-height: 160%;
     color: #2c2e33;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important; /* Zero margin */
 }
 
 @media (max-width: 1199px) {
+    .about-label {
+        margin-bottom: 12px !important; /* Tight spacing on tablet */
+    }
+
     .about-who-container {
         padding: 0 24px;
     }
@@ -119,8 +134,8 @@
     /* Top section */
     .about-who-top {
         flex-direction: column;
-        gap: 20px; /* Reduced from 40px */
-        margin-bottom: 30px; /* Reduced from 60px */
+        gap: 10px !important; /* Reduced to reduce space */
+        margin-bottom: 20px !important;
     }
 
     .about-who-left h2 {
@@ -137,13 +152,13 @@
 
     /* Image */
     .about-who-image {
-        margin-bottom: 30px; /* Reduced from 70px */
+        margin-bottom: 20px !important;
     }
 
     /* Bottom section */
     .about-who-bottom {
         flex-direction: column;
-        gap: 20px; /* Reduced from 40px */
+        gap: 10px !important; /* Reduced to reduce space */
     }
 
     .about-who-bottom-left h3 {
@@ -156,6 +171,10 @@
 }
 
 @media (max-width: 767px) {
+    .about-label {
+        margin-bottom: 10px !important; /* Tight spacing on mobile */
+    }
+
     .about-who-section {
         padding: 10px 0 10px; /* Aggressively reduced */
     }
@@ -169,8 +188,8 @@
 
     /* Top section */
     .about-who-top {
-        gap: 15px; /* Aggressively reduced from 40px */
-        margin-bottom: 25px; /* Aggressively reduced from 60px */
+        gap: 8px !important; /* Aggressively reduced */
+        margin-bottom: 15px !important;
     }
 
     .about-who-left h2 {
@@ -190,7 +209,7 @@
 
     /* Image */
     .about-who-image {
-        margin-bottom: 25px; /* Aggressively reduced from 70px */
+        margin-bottom: 15px !important; /* Aggressively reduced */
     }
 
     .about-who-image img {
@@ -200,7 +219,7 @@
 
     /* Bottom section */
     .about-who-bottom {
-        gap: 15px; /* Aggressively reduced from 40px */
+        gap: 8px !important; /* Aggressively reduced */
     }
 
     .about-who-bottom-left h3 {
@@ -221,13 +240,7 @@
     }
 
     hr {
-        margin-top: 20px !important;
-        margin-bottom: 20px !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
     }
 }
-
-
-
-
-
-

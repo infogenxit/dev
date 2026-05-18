@@ -409,27 +409,27 @@ a.secondary-btn:hover {
 /* GLOBAL LEFT-ALIGNMENT FOR HERO SECTIONS ON TABLET & MOBILE */
 @media (max-width: 1199px) {
     .appdev-container,
-    [class*="hero-container"],
-    [class*="hero-content"] {
+    [class*="hero-container"]:not(.about-hero-container),
+    [class*="hero-content"]:not(.about-hero-content) {
         text-align: left !important;
         align-items: flex-start !important;
     }
     
     .appdev-buttons,
-    [class*="hero-buttons"] {
+    [class*="hero-buttons"]:not(.about-hero-buttons) {
         justify-content: flex-start !important;
         align-items: flex-start !important;
     }
     
     .appdev-left,
-    [class*="hero-left"] {
+    [class*="hero-left"]:not(.about-hero-left) {
         text-align: left !important;
     }
 }
 
 @media (max-width: 767px) {
     .appdev-buttons,
-    [class*="hero-buttons"] {
+    [class*="hero-buttons"]:not(.about-hero-buttons) {
         flex-direction: column !important;
         align-items: flex-start !important;
         width: 100% !important;

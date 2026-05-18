@@ -1,10 +1,10 @@
 .about-hero {
+    position: relative;
+    overflow: hidden;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
+    padding-bottom: 120px !important;
     color: #ffffff;
     max-width: 100%;
 }
@@ -16,7 +16,7 @@
     width: 230px;
     height: auto;
 }
-/* Dark overlay for readability */
+/* Original dark overlay for high contrast readability */
 .about-hero-overlay {
     position: absolute;
     inset: 0;
@@ -26,28 +26,35 @@
 .about-hero-container {
     position: relative;
     z-index: 2;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 150px 24px 80px;
+    padding-top: 100px !important; /* MATCHING HOME HERO! */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 30px;
 }
 
-.about-hero-container h1 {
+.about-hero-heading {
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: 52px;
-    line-height: 115%;
-    margin: 0 auto;
+    font-size: 64px;
+    line-height: 1.2;
+    margin: 0 auto 25px;
     max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-hero-heading span {
     background: linear-gradient(90deg, #ffffff 40%, #ff6a00 80%, #ff5e14 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
     display: inline-block !important;
+    text-align: center;
 }
 
 /* Buttons */
@@ -56,6 +63,7 @@
     gap: 20px;
     justify-content: center;
     width: 100%;
+    margin-top: 40px; /* MATCHING HOME HERO! */
 }
 
 .about-secondary-btn span {
@@ -63,28 +71,28 @@
     color: #ff6a00;
 }
 
-.about-hero-container p {
+.about-hero-description {
     font-family: "Manrope", sans-serif;
-    font-size: 18px;
-    line-height: 160%;
+    font-size: 21px;
+    line-height: 1.6;
     font-weight: 500;
-    color: #f1f1f1;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left !important; /* Left-aligned description as requested */
+    color: #f1f1f1 !important;
+    max-width: 900px;
+    margin: 0 auto 10px;
+    text-align: center !important;
 }
 
 /*tablet responsive*/
 @media (max-width: 1199px) {
     .about-hero-container {
-        padding: 130px 24px 60px;
+        padding-top: 80px !important;
     }
 
-    .about-hero-container h1 {
+    .about-hero-heading {
         font-size: 42px;
     }
 
-    .about-hero-container p {
+    .about-hero-description {
         font-size: 16px;
     }
 }
@@ -92,11 +100,12 @@
 /*mobile responsive*/
 @media (max-width: 768px) {
     .about-hero {
-        min-height: 80vh;
+        padding-bottom: 5px !important;
     }
 
     .about-hero-container {
-        padding: 100px 20px 40px !important;
+        padding-top: 60px !important;
+        padding-bottom: 120px !important; /* MATCHING HOME HERO FOR STICKY FOOTER! */
         gap: 20px;
     }
 
@@ -104,7 +113,7 @@
         width: 120px;
     }
 
-    .about-hero-container h1 {
+    .about-hero-heading {
         font-size: 28px !important;
         line-height: 1.25 !important;
     }
@@ -113,8 +122,13 @@
         flex-direction: column;
         gap: 12px;
         align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .about-hero-buttons button {
+        width: 100% !important;
+        max-width: 273px !important;
+        height: 48px !important;
     }
 }
-
-
-

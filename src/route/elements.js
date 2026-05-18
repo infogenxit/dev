@@ -33,7 +33,7 @@ export const ECommerce = Loadable(lazy(() => import("../pages/Industries/ECommer
 export const Manufacturing = Loadable(lazy(() => import("../pages/Industries/Manufacturing/Manufacturing")));
 export const Transport = Loadable(lazy(() => import("../pages/Industries/Transport/Transport")));
 export const Portfolio = Loadable(lazy(() => import("../pages/Portfolio/Portfolio")));
-export const ApiIntegration = Loadable(lazy(() => import("../pages/Solutions/ApiIntegration/ApiIntegration")));
+export const ApiIntegration = Loadable(lazy(() => import("../pages/Solutions/APIintegration/ApiIntegration")));
 export const DataAnalyticsAI = Loadable(lazy(() => import("../pages/Solutions/DataAnalyticsAI/DataAnalyticsAI")));
 export const DigitalTransformation = Loadable(lazy(() => import("../pages/Solutions/DigitalTransformation/DigitalTransformation")));
 export const IntelligentAutomation = Loadable(lazy(() => import("../pages/Solutions/IntelligentAutomation/IntelligentAutomation")));

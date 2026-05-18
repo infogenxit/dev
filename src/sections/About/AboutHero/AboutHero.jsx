@@ -2,6 +2,8 @@ import "./AboutHero.css";
 import { useNavigate } from "react-router-dom";
 import aboutHeroBg from "../../../assets/images/about-hero-bg.webp";
 import AboutCornerAccent from "../../../assets/images/about-corner-accent.webp";
+import NetworkBackground from "../../../components/NetworkBackground/NetworkBackground";
+
 const AboutHero = () => {
   const navigate = useNavigate();
   return (
@@ -9,6 +11,7 @@ const AboutHero = () => {
       className="about-hero"
       style={{ backgroundImage: `url(${aboutHeroBg})` }}
     >
+      <NetworkBackground />
       {/* Original alt: alt="corner accent" */}
       <img
         alt="Infogenx Australia - AI Automation & App Development Corner Graphic"
@@ -19,13 +22,12 @@ const AboutHero = () => {
       ></img>
       <div className="about-hero-overlay" />
       <div className="about-hero-container">
-        <h1>
-          InfogenX | AI Automation & App Development Australia
+        <h1 className="about-hero-heading">
+          <span>InfogenX | AI Automation & App Development Australia</span>
         </h1>
-        <p>
-          Infogenx helps small Australian Small Business Enterprise operations with AI-enabled 
-          applications, automation, and analytics across Microsoft, Zoho, and Odoo - delivering connected, 
-          scalable solutions that reduce complexity, improve visibility, and drive smarter decisions with real business impact.
+        <p className="about-hero-description">
+          Infogenx helps small Australian Small Business Enterprise operations with AI-enabled applications, automation, and analytics across{" "}
+          <span className="platforms-highlight">Microsoft, Zoho, and Odoo</span> - delivering connected, scalable solutions that reduce complexity, improve visibility, and drive smarter decisions with real business impact.
         </p>
         <div className="about-hero-buttons">
           <button
@@ -46,5 +48,3 @@ const AboutHero = () => {
   );
 };
 export default AboutHero;
-
-
