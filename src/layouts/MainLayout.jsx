@@ -4,7 +4,7 @@ import Footer from "../sections/Footer/Footer";
 import StickyContact from "../components/StickyContact/StickyContact";
 import ScrollToTop from "../components/ScrollTop/ScrollToTop";
 import RouteSeo from "../components/SEO/RouteSeo";
-import GtmPageViewTracker from "../components/analytics/GtmPageViewTracker";
+import GtmPageViewTracker from "../components/Analytics/GtmPageViewTracker";
 
 const MainLayout = ({ children }) => {
   return (
