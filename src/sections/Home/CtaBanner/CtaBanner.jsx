@@ -8,7 +8,8 @@ const CtaBanner = () => {
         <h2 className="cta-title">Ready to Automate, Integrate, and Scale? Let’s Talk Strategy.</h2>
         <p className="cta-description">
           We understand that choosing an enterprise solution partner can feel daunting. That’s why we cut through the buzzwords to deliver an honest, transparent analysis of how we can help—or if we aren't the right fit. From our Brisbane delivery centers to businesses nationwide, we map your operational goals directly to real-world growth.
-          <br /><br />
+        </p>
+        <p className="cta-call-us">
           <strong>Call us now on +61 403339424.</strong>
         </p>
         <div className="cta-buttons">

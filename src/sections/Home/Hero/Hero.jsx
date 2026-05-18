@@ -26,9 +26,12 @@ const Hero = () => {
         onPlay={() => setVideoLoaded(true)}
       />
       <div className="hero-container">
-        <h1 className="hero-heading"><span>Build Smarter. Automate Faster.</span><span>Decide Better.</span></h1>   
+        <h1 className="hero-heading">
+          <span>Build <span className="highlight-orange">Smarter.</span> Automate <span className="highlight-orange">Faster.</span></span>
+          <span>Decide <span className="highlight-orange">Better.</span></span>
+        </h1>   
         <p className="hero-description">
-          AI-enabled application, automation, and analytics for <span className="platforms-highlight">Microsoft, Zoho, and Odoo</span>-engineered for growth, governance, and impact.
+          AI-enabled applications, automation, and analytics for <span className="platforms-highlight">Microsoft, Zoho, and Odoo</span> – engineered for growth, governance, and impact.
         </p>
         <div
           style={{ textAlign: "center", fontWeight: "500", color: "#403f3f" }}

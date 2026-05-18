@@ -195,23 +195,207 @@ section {
     border-radius: 2px !important;
 }
 
-/* PREMIUM SECTION HEADINGS (Vibrant Radiant Brand Gradient) */
-h1, h2, .section-title, .hero-heading, .WebDev-hero-heading, .igx-pricing-title, .faq-title {
-    background: linear-gradient(90deg, #00123c 20%, #ff5e14 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: inline-block;
-    width: 100%;
+/* ==========================================================================
+   UNIFIED PREMIUM TYPOGRAPHY SYSTEM (GLOBALLY CONSISTENT FONT, COLOR, SCALED SIZES)
+   ========================================================================== */
+
+/* --- 1. HEADLINES (H1 / HERO HEADINGS) - DESKTOP --- */
+h1, 
+.hero-heading, 
+.WebDev-hero-heading {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 52px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    background: linear-gradient(90deg, #00123c 15%, #ff5e14 85%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: block !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
 }
 
-/* For Dark Background Sections */
-.approach-section h2, .impact-cta-section h2, .dark-bg h2, .cta-title, .about-hero-left h1, .igx-hero-content h1, .igx-pricing-card h2, .igx-pricing-card h3 {
-    background: linear-gradient(90deg, #ffffff 30%, #ff5e14 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: inline-block;
+/* Headlines on Dark Background - Desktop */
+.about-hero-left h1, 
+.igx-hero-content h1 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 52px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    background: linear-gradient(90deg, #ffffff 30%, #ff5e14 90%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
+}
+
+/* --- 2. SUBHEADLINES / SECTION TITLES (H2) - DESKTOP --- */
+h2, 
+.section-title, 
+.igx-pricing-title, 
+.faq-title, 
+.expertise-heading, 
+.testimonials-title,
+.business-outcome h1,
+.appdev-expertise-header h2,
+.appdev-outcomes-header h2,
+.appdev-tech-content h2,
+.platform-cta-title,
+[class*="expertise-header"] h2,
+[class*="outcomes-header"] h2,
+[class*="tech-content"] h2 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 38px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.01em !important;
+    background: linear-gradient(90deg, #ff5e14 15%, #00123c 85%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: block !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+/* Section Titles / H2 on Dark Background - Desktop */
+.approach-section h2, 
+.impact-cta-section h2, 
+.dark-bg h2, 
+.cta-title, 
+.igx-pricing-card h2 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 38px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.01em !important;
+    background: linear-gradient(90deg, #ffffff 30%, #ff5e14 90%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
+}
+
+/* --- 3. SUBTITLES / CARD TITLES (H3) - DESKTOP --- */
+h3, 
+.card-title, 
+.feature-title, 
+.pricing-card-title, 
+#contact-thankyou-title, 
+.outcome-container h3 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    background: linear-gradient(90deg, #00123c 50%, #ff5e14 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: block !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+/* Card Titles / H3 on Dark Background - Desktop */
+.igx-pricing-card h3 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+}
+
+/* --- 4. MINOR SUBTITLES / LABELS (H4) - DESKTOP --- */
+h4, 
+.card-subtitle, 
+.feature-subtitle, 
+.global-subtitle, 
+.approach-card h4 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    color: #ff5e14 !important;
+    -webkit-text-fill-color: #ff5e14 !important;
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    display: block !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE TYPOGRAPHY OVERRIDES (MAX-WIDTH: 768PX)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* --- 1. HEADLINES (H1 / HERO HEADINGS) - MOBILE --- */
+    h1, 
+    .hero-heading, 
+    .WebDev-hero-heading,
+    .about-hero-left h1, 
+    .igx-hero-content h1 {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* --- 2. SUBHEADLINES / SECTION TITLES (H2) - MOBILE --- */
+    h2, 
+    .section-title, 
+    .igx-pricing-title, 
+    .faq-title, 
+    .expertise-heading, 
+    .testimonials-title,
+    .business-outcome h1,
+    .approach-section h2, 
+    .impact-cta-section h2, 
+    .dark-bg h2, 
+    .cta-title, 
+    .igx-pricing-card h2 {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* --- 3. SUBTITLES / CARD TITLES (H3) - MOBILE --- */
+    h3, 
+    .card-title, 
+    .feature-title, 
+    .pricing-card-title, 
+    #contact-thankyou-title, 
+    .outcome-container h3,
+    .igx-pricing-card h3 {
+        font-size: 19px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* --- 4. MINOR SUBTITLES / LABELS (H4) - MOBILE --- */
+    h4, 
+    .card-subtitle, 
+    .feature-subtitle, 
+    .section-subtitle, 
+    .global-subtitle, 
+    .approach-card h4 {
+        font-size: 14px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 6px !important;
+    }
 }
 
 /* Global spacing optimization above FAQ section across all service and platform screens */
@@ -406,17 +590,17 @@ a.secondary-btn:hover {
     }
 }
 
-/* GLOBAL LEFT-ALIGNMENT FOR HERO SECTIONS ON TABLET & MOBILE */
+/* GLOBAL CENTER-ALIGNMENT FOR CONTAINERS WITH LEFT-ALIGNED TEXT ON MOBILE */
 @media (max-width: 1199px) {
     .appdev-container,
-    [class*="hero-container"]:not(.about-hero-container),
+    [class*="hero-container"]:not(.about-hero-container):not(.hero-container),
     [class*="hero-content"]:not(.about-hero-content) {
         text-align: left !important;
         align-items: flex-start !important;
     }
     
     .appdev-buttons,
-    [class*="hero-buttons"]:not(.about-hero-buttons) {
+    [class*="hero-buttons"]:not(.about-hero-buttons):not(.hero-buttons) {
         justify-content: flex-start !important;
         align-items: flex-start !important;
     }
@@ -427,11 +611,77 @@ a.secondary-btn:hover {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    /* Enforce elements/containers centered, but text alignment left globally on mobile */
+    h1, h2, h3, h4, h5, h6, p, span, li, a {
+        text-align: left !important;
+    }
+
+    .appdev-container,
+    [class*="hero-container"]:not(.about-hero-container):not(.hero-container),
+    [class*="hero-content"]:not(.about-hero-content) {
+        text-align: left !important;
+        align-items: center !important; /* Center the layout container */
+    }
+
+    .appdev-left,
+    [class*="hero-left"]:not(.about-hero-left) {
+        text-align: left !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; /* Center content in the column */
+        width: 100% !important;
+    }
+
     .appdev-buttons,
     [class*="hero-buttons"]:not(.about-hero-buttons) {
         flex-direction: column !important;
-        align-items: flex-start !important;
+        align-items: center !important; /* Center buttons horizontally */
+        justify-content: center !important;
         width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-heading,
+    .WebDev-hero-heading,
+    .faq-title,
+    .section-title,
+    .testimonials-title,
+    .igx-pricing-title,
+    .hero-description,
+    .hero-proof,
+    .footer-bottom p,
+    .footer-copyright {
+        text-align: left !important; /* Enforce left text alignment */
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Enforce CTA Banner centered position & full left alignment on mobile */
+    .cta-container {
+        text-align: left !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+    }
+
+    .cta-title,
+    .cta-description,
+    .cta-call-us {
+        text-align: left !important; /* Full left alignment on mobile */
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .cta-buttons {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        gap: 14px !important;
     }
 }

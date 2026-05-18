@@ -186,10 +186,12 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials-section">
-      <h2 className="testimonials-title">Our Success Stories</h2>
-      <p className="testimonials-subtitle">
-        Delivering measurable results across industries.
-      </p>
+      <div className="testimonials-header">
+        <h2 className="testimonials-title">Our Success Stories</h2>
+        <p className="testimonials-subtitle">
+          Delivering measurable results across industries.
+        </p>
+      </div>
       <div className="testimonial-slider">
         <div
           ref={trackRef}

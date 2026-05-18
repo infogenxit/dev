@@ -26,11 +26,15 @@
     z-index: 20; /* Ensure header is above cards */
 }
 
-.service-header-container /* Global Label Applied */
+
 
 .service-header-container .section-title {
     font-size: clamp(2rem, 4vw, 2.8rem);
-    color: #00123c;
+    background: linear-gradient(90deg, #00123c 20%, #ff5e14 80%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: block !important;
     margin-bottom: 15px;
     line-height: 1.2;
 }
@@ -115,13 +119,17 @@
 }
 
 .service-title {
-    color: #00123c;
     font-family: Manrope, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 50px;
     font-weight: 800;
     line-height: 120%;
+    background: linear-gradient(90deg, #00123c 20%, #ff5e14 80%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
 }
 
 @media (max-width: 1199px) {
@@ -246,7 +254,7 @@
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
     .service-section {
-        padding: 5px 0 100px; /* Added generous bottom padding (100px) to create space below on mobile */
+        padding: 5px 0 20px !important; /* Reduced bottom padding from 100px to 20px to reduce space at the bottom */
         background: #fff5ef;
         position: relative;
         z-index: 1; /* Ensure it stays below the header */
@@ -254,12 +262,12 @@
     .service-sticky {
         height: 82vh; /* Increased from 75vh to prevent button cut-off on mobile */
         top: 85px; /* Increased from 70px to clear the header more effectively */
-        padding-top: 10px;
+        padding-top: 35px !important; /* Increased top padding to create beautiful breathing room at the top */
         justify-content: flex-start; 
     }
     .service-header-container {
         text-align: left;
-        margin-bottom: 20px; /* Reduced from 35px to prevent card overlap and save vertical space */
+        margin-bottom: 50px !important; /* Increased margin-bottom to completely prevent subtitle and card overlap */
         padding: 0 20px;
         padding-top: 5px; 
         width: 100%;

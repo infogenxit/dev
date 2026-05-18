@@ -75,6 +75,7 @@
 
 .industry-tag:hover .dot {
     transform: scale(1.2);
+    background: #00123c !important; /* Elegant color shift to deep brand navy */
 }
 
 .industry-footer-note {

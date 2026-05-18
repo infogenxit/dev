@@ -1,12 +1,14 @@
 .service-faq-section {
-  padding: 80px 0 30px; /* Added elegant top padding for breathing room */
-  background-color: #f8f9fa;
+  padding: 40px 0 40px !important; /* Reduced top padding for a tighter, cleaner layout below banner */
+  background-color: transparent !important; /* Transparent background to blend seamlessly with the page */
+  margin-top: 10px !important; /* Tighter gap below the CTA banner */
 }
 
 .faq-title {
-  text-align: left;
-  max-width: 900px;
-  margin: 0 auto 25px;
+  display: block !important; /* Force block-level rendering to allow block margins to center */
+  text-align: center !important; /* Center text alignments */
+  max-width: 900px !important;
+  margin: 0 auto 30px !important; /* Centered block-level margins */
   font-size: 32px;
   color: #00123c;
   font-weight: 800;
@@ -69,11 +71,13 @@
 /* Responsive Design for mobile */
 @media (max-width: 768px) {
   .service-faq-section {
-    padding: 40px 0 20px; /* Elegant mobile top padding */
+    padding: 30px 0 20px !important; /* Reduced mobile top padding */
+    margin-top: 10px !important;
   }
 
   .faq-title {
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+    text-align: center !important;
   }
 }
