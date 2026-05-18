@@ -7,20 +7,24 @@ import heroVideo from "../../../assets/videos/herovideobg.mp4";
 import MicrosoftImg from "../../../assets/images/microsoft (2).webp";
 import ZohoImg from "../../../assets/images/zoho (2).webp";
 import OdooImg from "../../../assets/images/odoo (2).webp";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import NetworkBackground from "../../../components/NetworkBackground/NetworkBackground";
 const Hero = () => {
   const navigate = useNavigate();
+  const [videoLoaded, setVideoLoaded] = useState(false);
   return (
     <section className="hero">
+      <NetworkBackground />
       <video
-        className="hero-video"
+        className={`hero-video ${videoLoaded ? "loaded" : ""}`}
         src={heroVideo}
         autoPlay
         muted
         loop
         playsInline
+        onPlay={() => setVideoLoaded(true)}
       />
-      {/* <NetworkBackground /> */}
       <div className="hero-container">
         <h1 className="hero-heading"><span>Build Smarter. Automate Faster.</span><span>Decide Better.</span></h1>   
         <p className="hero-description">
