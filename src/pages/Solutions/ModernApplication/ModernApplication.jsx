@@ -15,35 +15,33 @@ import { PATHS } from "../../../route/paths";
 const ModernApplication = () => {
   const modernAppContent = [
     {
-      heading: "Engineering Future-Proof Applications for the Global Market",
+      heading: "Implementation & Integration",
       content: [
-        "In a world where software is the primary touchpoint between businesses and their customers, the quality of your applications directly impacts your bottom line. At Infogenx, we don't just write code; we engineer robust, scalable, and secure digital products designed to meet the rigorous demands of the modern market. Modern application development requires a departure from legacy thinking, embracing agility, user-centric design, and technical excellence.",
-        "From consumer-facing mobile apps to complex enterprise resource planning systems, our engineering team focuses on creating software that is not only functional today but adaptable for the innovations of tomorrow. We bridge the gap between complex business requirements and elegant technical execution, ensuring your digital assets drive real value."
+        "Most businesses already have a technology stack they have invested in — Microsoft 365, Zoho, Odoo, or some combination of all three. What they often lack is a web application that talks to those platforms properly. We handle both sides of that in a single engagement: the application build and the integration architecture. One team, one brief, one delivery. No finger-pointing between a developer who built the app and a consultant who was supposed to connect it."
       ]
     },
     {
-      heading: "Cloud-Native: The Standard for Modern Enterprises",
+      heading: "API Integration",
       content: [
-        "We believe that the future of business is cloud-native. By building applications specifically for the cloud, we unlock levels of performance, resilience, and cost-efficiency that traditional software simply cannot match."
-      ],
-      list: [
-        { label: "Microservices Architecture", text: "We break complex systems into smaller, independent services that can be updated, deployed, and scaled individually without affecting the whole system." },
-        { label: "Serverless Computing", text: "Leverage modern cloud capabilities to run code only when needed, reducing infrastructure management overhead and operational costs." },
-        { label: "DevSecOps Integration", text: "We bake security into the very core of our development lifecycle, ensuring that your applications are protected against modern threats from day one." }
+        "Disconnected systems quietly drain time and quietly introduce errors — and most teams do not notice the full cost until it is significant. Our team of web app development in Brisbane designs and builds API layers that bring your legacy platforms, SaaS tools, and custom applications into a single, coherent data flow. When your systems share data cleanly, your people stop doing the work that software should be doing for them."
       ]
     },
     {
-      heading: "Our Core Engineering Principles",
+      heading: "Intelligent Automation",
       content: [
-        "Every application that leaves the Infogenx engineering lab is built upon three foundational principles: Security, Performance, and Scalability.",
-        "Security is never an afterthought; we implement industry-standard encryption, secure authentication (OAuth2/SAML), and rigorous penetration testing. Performance is optimized through efficient code, global content delivery networks (CDNs), and advanced caching strategies. Scalability ensures that as your user base grows from hundreds to millions, your application remains fast and responsive, automatically adjusting to meet demand."
+        "We embed process automation directly into the application logic — not as a separate module you bolt on later, but as part of how the application is engineered in the first place. Manual handoffs get removed. Data re-entry gets eliminated. Your team gets their time back and can focus on the work that actually requires human judgement."
       ]
     },
     {
-      heading: "The Lifecycle of a Modern Application",
+      heading: "Data Analytics & AI",
       content: [
-        "Software is a living entity. Our approach covers the entire lifecycle, from the initial discovery workshops and UI/UX design to continuous integration (CI/CD) and proactive maintenance. We use agile methodologies to ensure transparent communication and rapid delivery, allowing you to see progress in real-time and pivot as market conditions change.",
-        "Post-launch, we provide continuous monitoring and optimization services, ensuring your application stays ahead of the technical curve and continues to delight your users."
+        "Reporting and decision support tools should not be an afterthought. We build custom dashboards, real-time reporting layers, and AI-assisted decision tools into the application from the start. By the time your team is using the platform day to day, the visibility they need is already there — not sitting in a separate product with a separate licence fee."
+      ]
+    },
+    {
+      heading: "Managed Services & Ongoing Support",
+      content: [
+        "A web application is not a one-time project — it is an operational asset. After deployment, we stay engaged. Performance optimisation, platform updates, and ongoing support are part of our delivery model, not an upsell. Your application keeps running the way it was engineered to, and when your business requirements shift, we are already familiar enough with the system to move quickly."
       ]
     }
   ];
@@ -55,24 +53,24 @@ const ModernApplication = () => {
 
   const faqs = [
     {
-      question: "What is a modern application?",
-      answer: "A modern application is an architectural approach that prioritizes cloud-native technologies, microservices, and rapid delivery cycles to ensure software is scalable, resilient, and easy to maintain."
+      question: "What makes Infogenx different from other web app developers in Brisbane?",
+      answer: "We're a national partner for Microsoft, Zoho, and Odoo — not a generalist agency picking up whatever work comes in. Our developers are certified on these platforms, so there's no learning curve on your project. You get people who already know the technology your business runs on."
     },
     {
-      question: "Why should we modernize our legacy applications?",
-      answer: "Legacy applications often suffer from security vulnerabilities, high maintenance costs, and an inability to scale. Modernization improves performance, reduces costs, and allows for faster integration with new technologies like AI."
+      question: "Can you connect a new web application to our existing Microsoft or Zoho setup?",
+      answer: "Yes, and we do it regularly. Microsoft 365, Dynamics, Power Platform, Zoho CRM, Zoho Creator, Odoo ERP — integration is scoped into the project from the start, not added on at the end when it becomes a problem."
     },
     {
-      question: "What technologies do you use for application development?",
-      answer: "We specialize in full-stack development using React, Node.js, Python, and cloud platforms like Azure and AWS, ensuring every application is built for performance and security."
+      question: "Do you work with clients outside Brisbane?",
+      answer: "We do. Most of our clients are across Australia. Having teams in both Australia and India means we can scale a project without it affecting timelines or quality."
     },
     {
-      question: "Do you build mobile applications as well?",
-      answer: "Yes, we build high-performance mobile applications for iOS and Android using cross-platform frameworks like React Native and Flutter, as well as native development."
+      question: "Which industries does your team have direct experience in?",
+      answer: "Healthcare, retail, manufacturing, finance, and transport and logistics. Real projects, not demos. Each sector has its own compliance and workflow requirements and we've dealt with them across all five."
     },
     {
-      question: "How do you ensure application security?",
-      answer: "We follow DevSecOps practices, integrating security checks throughout the development lifecycle and ensuring all applications comply with industry-standard encryption and authentication protocols."
+      question: "What support is available after the application goes live?",
+      answer: "Managed services and ongoing support are part of our standard offering. After go-live you get a direct contact, not a ticketing system. We handle performance monitoring, updates, and integration changes as your business needs shift."
     }
   ];
 
@@ -93,19 +91,20 @@ const ModernApplication = () => {
       link: PATHS.apiIntegration
     }
   ];
+
   return (
     <>
       <SEO
-        title="Application Development Brisbane | Trusted Experts"
-        description="Experience the best Application Development Brisbane has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
-        keywords="modern application development, cloud-native applications, custom software engineering, Infogenx"
+        title="Web Application Development Brisbane | Infogenx Digital Solutions"
+        description="Infogenx Digital Solutions is a Brisbane-based technology firm specializing in web application development, enterprise platform integration, and intelligent automation."
+        keywords="web application development brisbane, custom web apps, microsoft partner, zoho creator, odoo erp, API integration, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
       <ServiceDetailedContent 
-        title="Scalable, Secure & Performance-Driven Engineering" 
-        subtitle="Built for the Cloud"
+        title="Automation-First Brisbane Web Application Development Services" 
+        subtitle="Custom Web Applications"
         sections={modernAppContent} 
       />
       <AppDevApproach />

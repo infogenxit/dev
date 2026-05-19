@@ -58,6 +58,9 @@ export const PATHS = {
   supportLegacy: "/support-optimization",
   digitalMarketingLegacy: "/digital-marketing",
   aboutUsLegacy: "/about-us",
+  cloudComputingLegacy: "/cloud-computing",
+  webAppDevelopmentLegacy: "/web-app-development",
+  websiteDevelopmentLegacy: "/website-development",
   
   // Redirects/Legacy (Sub-paths)
   microsoftLegacy: "/platforms/microsoft-solutions",

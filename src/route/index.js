@@ -52,6 +52,9 @@ export default function Router() {
     { path: PATHS.supportLegacy, element: <Navigate to={PATHS.supportOptimization} replace /> },
     { path: PATHS.digitalMarketingLegacy, element: <Navigate to={PATHS.digitalMarketing} replace /> },
     { path: PATHS.aboutUsLegacy, element: <Navigate to={PATHS.about} replace /> },
+    { path: PATHS.cloudComputingLegacy, element: <Navigate to={PATHS.cloudComputing} replace /> },
+    { path: PATHS.webAppDevelopmentLegacy, element: <Navigate to={PATHS.modernApplications} replace /> },
+    { path: PATHS.websiteDevelopmentLegacy, element: <Navigate to={PATHS.webDevelopment} replace /> },
     
     { path: PATHS.microsoftLegacy, element: <Elements.MicrosoftSolution /> },
     { path: PATHS.zohoLegacy, element: <Elements.ZohoSolution /> },
