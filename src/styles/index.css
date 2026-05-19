@@ -453,7 +453,6 @@ h4,
 
 /* PREMIUM BUTTONS (Global Mapping for Consistent Branding) */
 .primary-btn, 
-.about-primary-btn, 
 .cta-primary, 
 .WebDev-primary-btn, 
 .igx-hero-btn, 
@@ -485,6 +484,35 @@ a.primary-btn {
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
+/* Enforce Conic Gradient and Hover styles specifically for About-style Primary Buttons to match Home Hero */
+.about-primary-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 30px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    font-family: "Manrope", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 100% !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+.about-primary-btn:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    color: #00123C !important;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+    border: 3px solid transparent !important;
+}
+
 /* Enforce Standard Width and Height for full-size primary buttons */
 .primary-btn, 
 .about-primary-btn, 
@@ -497,7 +525,6 @@ a.primary-btn {
 }
 
 .primary-btn:hover, 
-.about-primary-btn:hover, 
 .cta-primary:hover, 
 .WebDev-primary-btn:hover, 
 .igx-hero-btn:hover, 
@@ -519,7 +546,6 @@ a.primary-btn:hover {
 }
 
 .secondary-btn, 
-.about-secondary-btn, 
 .cta-secondary, 
 .WebDev-secondary-btn, 
 .igx-btn.secondary,
@@ -547,6 +573,27 @@ a.secondary-btn {
     transition: all 0.2s ease !important;
 }
 
+/* Enforce Conic Gradient Border style specifically for About-style Secondary Buttons to match Home Hero */
+.about-secondary-btn {
+    height: 50px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 30px !important;
+    border-radius: 50px !important;
+    font-family: "Manrope", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 100% !important;
+    color: #00123c !important;
+    cursor: pointer !important;
+    border: 3px solid transparent !important;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+    transition: all 0.2s ease !important;
+}
+
 .secondary-btn:hover, 
 .about-secondary-btn:hover, 
 .cta-secondary:hover, 
@@ -559,6 +606,15 @@ button.secondary-btn:hover,
 a.secondary-btn:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* GLOBAL PLATFORMS HIGHLIGHT STYLE */
+.platforms-highlight {
+    text-decoration: underline !important;
+    text-decoration-color: #ff6a00 !important; /* Brand Orange-Red Line */
+    text-underline-offset: 4px !important;
+    font-weight: 700 !important;
+    color: inherit;
 }
 
 @media (max-width: 768px) {

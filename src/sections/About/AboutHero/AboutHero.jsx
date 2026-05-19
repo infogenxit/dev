@@ -23,7 +23,7 @@ const AboutHero = () => {
       <div className="about-hero-overlay" />
       <div className="about-hero-container">
         <h1 className="about-hero-heading">
-          <span>InfogenX | AI Automation & App Development Australia</span>
+          <span>InfogenX | <span className="highlight-orange">AI Automation</span> & <span className="highlight-orange">App Development</span> Australia</span>
         </h1>
         <p className="about-hero-description">
           Infogenx helps small Australian Small Business Enterprise operations with AI-enabled applications, automation, and analytics across{" "}

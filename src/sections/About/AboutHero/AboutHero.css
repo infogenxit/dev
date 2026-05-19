@@ -38,23 +38,34 @@
 .about-hero-heading {
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: 64px;
+    font-size: 44px !important;
     line-height: 1.2;
     margin: 0 auto 25px;
-    max-width: 900px;
+    max-width: 1200px;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .about-hero-heading span {
-    background: linear-gradient(90deg, #ffffff 40%, #ff6a00 80%, #ff5e14 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    display: inline-block !important;
-    text-align: center;
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background-clip: initial !important;
+    display: inline !important;
+    text-align: left;
+}
+
+.about-hero-heading .highlight-orange {
+    color: #ff5e14 !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: #ff5e14 !important;
+    background-clip: initial !important;
 }
 
 /* Buttons */
@@ -79,7 +90,7 @@
     color: #f1f1f1 !important;
     max-width: 900px;
     margin: 0 auto 10px;
-    text-align: center !important;
+    text-align: left !important;
 }
 
 /*tablet responsive*/
@@ -89,7 +100,8 @@
     }
 
     .about-hero-heading {
-        font-size: 42px;
+        font-size: 42px !important;
+        white-space: normal !important;
     }
 
     .about-hero-description {
@@ -116,6 +128,7 @@
     .about-hero-heading {
         font-size: 28px !important;
         line-height: 1.25 !important;
+        white-space: normal !important;
     }
 
     .about-hero-buttons {
@@ -128,7 +141,7 @@
 
     .about-hero-buttons button {
         width: 100% !important;
-        max-width: 273px !important;
+        max-width: 100% !important;
         height: 48px !important;
     }
 }
