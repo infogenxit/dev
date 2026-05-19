@@ -4,6 +4,7 @@ import IconB from "../../../../assets/images/icon2.webp";
 import IconC from "../../../../assets/images/icon3.webp";
 import IconD from "../../../../assets/images/icon4.webp";
 import IconE from "../../../../assets/images/icon5.webp";
+
 const WebDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">
@@ -11,49 +12,44 @@ const WebDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">What We Do</span>
           <h2>
-            Our Application <br />
-            Development Expertise
+            Our Cloud Computing <br />
+            Integration Expertise
           </h2>
         </div>
         <div className="appdev-expertise-grid">
           <div className="expertise-item">
             <img src={IconA} alt="expertise-icon" className="expertise-icon" />
-            <h4>AI-Powered Codeless Development</h4>
+            <h4>Cloud-Native Architectures</h4>
             <p>
-              Rapidly prototype and launch business apps without traditional
-              coding constraints.
+              Design serverless architectures and distributed microservices engineered for automated scaling.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconB} alt="expertise-icon" className="expertise-icon" />
-            <h4>Custom Application Development</h4>
+            <h4>Secure Workload Migration</h4>
             <p>
-              Deliberately crafted web and mobile solutions aligned with your
-              strategic goals.
+              Perform lift-and-shift of transactional databases and legacy ERP platforms with minimal downtime.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconC} alt="expertise-icon" className="expertise-icon" />
-            <h4>Cloud-Native Application Engineering</h4>
+            <h4>Multi-Cloud Architecture</h4>
             <p>
-              Build resilient, scalable applications optimized for AWS, Azure,
-              GCP, and hybrid architectures.
+              Deploy and orchestrate secure hybrid workloads seamlessly across AWS, Microsoft Azure, and GCP environments.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconD} alt="expertise-icon" className="expertise-icon" />
-            <h4>Application Modernization & Optimization</h4>
+            <h4>Cost Governance & Auditing</h4>
             <p>
-              Upgrade legacy systems with performance, usability, and
-              future-ready capabilities.
+              Perform deep environment audits to discover overprovisioning, optimize nodes, and reduce licensing fees.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconE} alt="expertise-icon" className="expertise-icon" />
-            <h4>Security, Scalability, & Compliance</h4>
+            <h4>Enterprise Cloud Security</h4>
             <p>
-              Ensure applications meet industry standards while performing under
-              real-world load.
+              Implement identity access management (IAM), strict encryption rules, and threat monitoring.
             </p>
           </div>
         </div>
@@ -61,6 +57,7 @@ const WebDevExpertise = () => {
     </section>
   );
 };
+
 export default WebDevExpertise;
 
 

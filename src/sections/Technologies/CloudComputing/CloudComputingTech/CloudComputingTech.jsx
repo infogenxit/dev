@@ -1,76 +1,69 @@
 import "./CloudComputingTech.css";
 import AppcornerAssent from "../../../../assets/images/corner-accent.webp";
+
 const WebDevTech = () => {
   return (
     <section className="tech-web-section">
       <div className="tech-web-container">
         <div className="tech-web-header">
           <span className="app-section-label">What We Offer</span>
-          <h2>What Web Development Means</h2>
+          <h2>What Cloud Computing Means</h2>
           <p className="tech-web-desc">
-            Web development isn’t just about code – it’s about creating digital
-            platforms that engage users, support business goals, and adapt to
-            your future needs.
+            Cloud computing isn’t just about hosting – it’s about creating digital environments that scale dynamically, support business goals, and protect your critical data assets.
           </p>
           <p className="tech-web-desc">
-            We combine proven technologies, UX-centric design, and
-            performance-focused engineering to deliver websites and web
-            applications that are secure, responsive, and scalable across
-            devices.
+            We combine proven public/private cloud models, robust migration sequencing, and optimization strategies to deliver cloud environments that are fast, secure, and cost-effective across your operations.
           </p>
         </div>
         <div className="tech-stack">
-          <h3>Core Technology Stack</h3>
+          <h3>Core Cloud Integration Stack</h3>
           <div className="tech-stack-grid">
             <div className="tech-stack-card">
-              <h4>Front-End Development</h4>
+              <h4>Cloud Architecture & Strategy</h4>
               <p>
-                We build intuitive user interfaces that are fast, engaging, and
-                accessible across devices.
+                We architect landing zones and cross-region architectures tailored to your operational scale and latency needs.
               </p>
-              <span className="tech-label">Technologies:</span>
+              <span className="tech-label">Platforms:</span>
               <p>
-                HTML5, CSS3, JavaScript
+                Amazon Web Services (AWS)
                 <br />
-                React, Angular, Vue
+                Microsoft Azure, Google Cloud
               </p>
             </div>
             <div className="tech-stack-card">
-              <h4>API & Microservices</h4>
+              <h4>Migration & Modernisation</h4>
               <p>
-                Integrate platforms and data sources with robust API
-                architectures that scale with your needs.
+                Minimise disruption with planned cutovers, sequenced dependencies, and secure data sync pipelines.
               </p>
-              <span className="tech-label">Technologies:</span>
+              <span className="tech-label">Methodologies:</span>
               <p>
-                RESTful APIs, GraphQL
+                Rehosting (Lift-and-Shift)
                 <br />
-                Microservices architecture
-              </p>
-            </div>
-            <div className="tech-stack-card">
-              <h4>Back-End Development</h4>
-              <p>
-                Our backend solutions power your applications with reliable,
-                scalable server-side logic.
-              </p>
-              <span className="tech-label">Technologies:</span>
-              <p>
-                Node.js
-                <br />
-                Python (Django, Flask)
-                <br />
-                PHP (Laravel, CodeIgniter)
+                Replatforming & Refactoring
               </p>
             </div>
             <div className="tech-stack-card">
-              <h4>Database & Storage</h4>
-              <p>Data-driven web apps with secure, optimized data handling.</p>
+              <h4>Cloud-Native Development</h4>
+              <p>
+                Build applications that natively scale, utilizing auto-scaling features and serverless compute models.
+              </p>
               <span className="tech-label">Technologies:</span>
               <p>
-                SQL / NoSQL databases
+                Docker & Kubernetes (EKS, AKS)
                 <br />
-                Cloud storage, caching
+                AWS Lambda, Azure Functions
+              </p>
+            </div>
+            <div className="tech-stack-card">
+              <h4>Database & Cloud Storage</h4>
+              <p>
+                Secure and highly available storage systems built for enterprise persistence and rapid query execution.
+              </p>
+              <span className="tech-label">Solutions:</span>
+              <p>
+                Relational Databases (RDS, SQL)
+                <br />
+                NoSQL (DynamoDB, CosmosDB), S3
               </p>
             </div>
           </div>
@@ -78,40 +71,36 @@ const WebDevTech = () => {
         <hr />
         <div className="tech-approach">
           <span className="app-section-label">Approach</span>
-          <h3>Our Web Development Approach</h3>
+          <h3>Our Cloud Engineering Approach</h3>
           <div className="tech-approach-grid">
             <div>
-              <h5>Plan & Architect</h5>
+              <h5>Assess & Strategy</h5>
               <p>
-                We start with strategic requirements and UX goals to define a
-                clear web architecture and roadmap.
+                We audit current servers, map data dependencies, and define workload readiness to build your migration roadmap.
               </p>
             </div>
             <div>
-              <h5>Design & Prototype</h5>
+              <h5>Architect & Design</h5>
               <p>
-                User interfaces are crafted with usability and conversion in
-                mind, backed by UX principles and responsive design.
+                Design secure virtual private networks (VPCs), landing zones, identity access controls, and recovery protocols.
               </p>
             </div>
             <div>
-              <h5>Build & Integrate</h5>
+              <h5>Migrate & Validate</h5>
               <p>
-                Modular, scalable development with iterative releases for faster
-                feedback and quality.
+                Incremental cutovers of applications and data databases with zero operational disruption and post-migration checks.
               </p>
             </div>
             <div>
-              <h5>Test & Optimize</h5>
+              <h5>Optimize & Govern</h5>
               <p>
-                Performance, security, and cross-device testing ensure a
-                reliable experience.
+                Implement real-time billing alerts, cost-saving recommendations, rightsized nodes, and resource scaling controls.
               </p>
             </div>
             <div>
-              <h5>Launch & Support</h5>
+              <h5>Manage & Support</h5>
               <p>
-                Deployment with long-term support and performance monitoring.
+                Ongoing environment maintenance, proactive OS/patch management, and security audits for long-term reliability.
               </p>
             </div>
           </div>
@@ -125,6 +114,7 @@ const WebDevTech = () => {
     </section>
   );
 };
+
 export default WebDevTech;
 
 
