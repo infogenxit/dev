@@ -156,10 +156,18 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 1; /* Changed from 3 to 1 so it stays behind headers and text */
     width: 230px;
     height: auto;
     pointer-events: none;
+    opacity: 0.85; /* Subtle styling */
+}
+
+@media (max-width: 768px) {
+    .about-corner-accent {
+        width: 140px; /* Scale down on mobile to prevent blocking headings */
+        opacity: 0.45; /* Semi-transparent to guarantee text legibility */
+    }
 }
 
 /* PREMIUM SECTION LABELS (Modern Translucent Pill Design) */
@@ -266,10 +274,14 @@ h2,
 
 /* Section Titles / H2 on Dark Background - Desktop */
 .approach-section h2, 
-.impact-cta-section h2, 
 .dark-bg h2, 
 .cta-title, 
-.igx-pricing-card h2 {
+.igx-pricing-card h2,
+.tech-web-section h2,
+.why-choose-section h2,
+.why-choose-container h2,
+[class*="dark-bg"] h2,
+[class*="tech-web-section"] h2 {
     font-family: 'Outfit', sans-serif !important;
     font-weight: 800 !important;
     font-size: 38px !important;
@@ -305,7 +317,13 @@ h3,
 }
 
 /* Card Titles / H3 on Dark Background - Desktop */
-.igx-pricing-card h3 {
+.igx-pricing-card h3,
+.tech-web-section h3,
+.why-choose-section h3,
+.why-choose-container h3,
+.why-card h3,
+[class*="dark-bg"] h3,
+[class*="tech-web-section"] h3 {
     font-family: 'Outfit', sans-serif !important;
     font-weight: 700 !important;
     font-size: 22px !important;
@@ -711,5 +729,17 @@ h1, h2, h3, h4, section {
 @media (max-width: 768px) {
     h1, h2, h3, h4, section {
         scroll-margin-top: 100px;
+    }
+}
+
+/* ZOHO SALESIQ WIDGET MOBILE POSITIONING ADJUSTMENT */
+@media (max-width: 768px) {
+    /* Push Zoho SalesIQ float bubble up to clear the mobile sticky contact footer */
+    #zsiq_float, 
+    .zsiq_float, 
+    #zsiq_cnt, 
+    .zsq_theme1, 
+    [id*="zsiq"] {
+        bottom: 85px !important;
     }
 }
