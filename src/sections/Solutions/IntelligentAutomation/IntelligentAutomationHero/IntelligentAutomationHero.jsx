@@ -20,7 +20,7 @@ const AppDevHero = () => {
       ></img>
       <div className="appdev-container">
         <div className="appdev-left">
-          <h1>Brisbane Intelligent Process Automation in Brisbane to Scale Your Business</h1>
+          <h1>Brisbane Intelligent Process Automation to Scale Your Business</h1>
           <p>
             Replace repetitive work with AI-driven orchestration that improves
             accuracy, reduces delays, and keeps operations moving faster.
