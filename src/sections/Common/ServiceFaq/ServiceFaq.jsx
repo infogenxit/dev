@@ -35,11 +35,11 @@ const ServiceFaq = ({ faqs }) => {
               <h3>{faq.question}</h3>
               <span className="faq-toggle">{activeIndex === index ? '−' : '+'}</span>
             </div>
-            {activeIndex === index && (
+            <div className={`faq-answer-wrapper ${activeIndex === index ? 'open' : ''}`}>
               <div className="faq-answer">
                 <p>{faq.answer}</p>
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>

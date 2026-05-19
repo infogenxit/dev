@@ -29,9 +29,9 @@
 }
 
 .related-card:hover {
-  border-color: #f36b2a;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border-color: #ff5e14;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(255, 94, 20, 0.12); /* Radiant brand shadow */
 }
 
 .related-card h3 {
@@ -41,9 +41,15 @@
 }
 
 .related-card .learn-more {
-  color: #f36b2a;
+  color: #ff5e14;
   font-weight: 600;
   font-size: 14px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.related-card:hover .learn-more {
+  transform: translateX(5px);
 }
 
 
