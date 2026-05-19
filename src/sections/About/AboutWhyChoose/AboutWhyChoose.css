@@ -19,17 +19,6 @@
     color: #ffffff;
 }
 
-/* Label */
-.why-choose-label {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    /* color: #ff6a00; */
-    background: linear-gradient(89.95deg, #faa87b 8.97%, #e58033 33.19%, #f05d1d 89.61%);
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    margin-bottom: 15px; /* Reduced from 20px */
-}
 
 /* Grid */
 .why-choose-grid {
@@ -100,11 +89,6 @@
     .why-choose-container {
         padding: 20px 15px; /* Reduced from 30px 22px */
         border-radius: 16px;
-    }
-
-    .why-choose-label {
-        font-size: 14px;
-        margin-bottom: 30px;
     }
 
     .why-choose-grid {

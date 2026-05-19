@@ -3,7 +3,7 @@ const AboutWhyChoose = () => {
   return (
     <section className="why-choose-section">
       <div className="why-choose-container">
-        <span className="why-choose-label">Why Choose Infogenx?</span>
+        <span className="section-label">Why Choose Infogenx?</span>
         <div className="why-choose-grid">
           <div className="why-card">
             <h3>Trusted Platform Expertise</h3>

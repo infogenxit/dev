@@ -53,17 +53,15 @@ const AboutMissionVision = () => {
           </div>
           {/* Right image */}
           <div className="mission-right">
-            <div className="mission-right">
-              <div className="mission-image-wrapper">
-                <video
-                  src={missionVideo}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="mission-video"
-                />
-              </div>
+            <div className="mission-image-wrapper">
+              <video
+                src={missionVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="mission-video"
+              />
             </div>
           </div>
         </div>

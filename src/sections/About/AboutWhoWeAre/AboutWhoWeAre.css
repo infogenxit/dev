@@ -90,9 +90,9 @@
     color: #00123c;
 }
 .about-who-bottom h3 span{
-    background: linear-gradient(89.95deg, #00123c 8.97%, #00123c 33.19%, #f57037 89.61%);
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+    background: linear-gradient(90deg, #00123c 15%, #ff5e14 85%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 
