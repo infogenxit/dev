@@ -712,50 +712,7 @@ a.secondary-btn:hover {
     }
 }
 
-/* FIXED HEADER OFFSET FOR SUBPAGES */
-.main-subpage {
-    padding-top: 110px; /* Offset for desktop fixed header + gap */
-}
-
-/* UNIFIED HERO TOP PADDING REDUCTION FOR SUBPAGES */
-.main-subpage .about-hero-container,
-.main-subpage .WebDev-hero-container,
-.main-subpage .webDev-hero-container,
-.main-subpage .appdev-hero,
-.main-subpage .igx-hero-container,
-.main-subpage .product-WebDev-hero-container {
-    padding-top: 30px !important;
-}
-
-@media (max-width: 1024px) {
-    .main-subpage {
-        padding-top: 100px; /* Offset for tablet fixed header */
-    }
-    
-    .main-subpage .about-hero-container,
-    .main-subpage .WebDev-hero-container,
-    .main-subpage .webDev-hero-container,
-    .main-subpage .appdev-hero,
-    .main-subpage .igx-hero-container,
-    .main-subpage .product-WebDev-hero-container {
-        padding-top: 25px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-subpage {
-        padding-top: 90px; /* Offset for mobile fixed header */
-    }
-    
-    .main-subpage .about-hero-container,
-    .main-subpage .WebDev-hero-container,
-    .main-subpage .webDev-hero-container,
-    .main-subpage .appdev-hero,
-    .main-subpage .igx-hero-container,
-    .main-subpage .product-WebDev-hero-container {
-        padding-top: 20px !important;
-    }
-}
+/* FIXED HEADER OFFSET FOR SUBPAGES REMOVED (Full-bleed backgrounds with hero-level paddings) */
 
 /* SCROLL MARGIN PREVENTIONS */
 h1, h2, h3, h4, section {
