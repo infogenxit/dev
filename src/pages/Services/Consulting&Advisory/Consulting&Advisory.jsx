@@ -92,8 +92,8 @@ const ConsultingAdvisory = () => {
   return (
     <>
       <SEO
-        title="It Consulting Brisbane | Trusted Experts & Agency"
-        description="Scale your company with leading It Consulting Brisbane services in Brisbane. Our team delivers high-quality Application Development Brisbane. Get started today!"
+        title="IT Consulting Brisbane | Trusted Experts & Agency"
+        description="Scale your company with leading IT Consulting Brisbane services in Brisbane. Our team delivers high-quality Application Development Brisbane. Get started today!"
         keywords="AI & Automation Consulting, technology advisory, digital strategy consulting"
       />
       <Breadcrumbs items={breadcrumbItems} />

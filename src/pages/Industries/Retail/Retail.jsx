@@ -40,8 +40,8 @@ const Retail = () => {
   return (
     <>
       <SEO
-        title="Brisbane Retail It Solutions | Trusted Experts"
-        description="Scale your company with leading Brisbane Retail It Solutions services in Brisbane. Our team delivers high-quality Custom Software. Get started today!"
+        title="Brisbane Retail IT Solutions | Trusted Experts"
+        description="Scale your company with leading Brisbane Retail IT Solutions services in Brisbane. Our team delivers high-quality Custom Software. Get started today!"
         keywords="retail IT solutions Brisbane, Custom Software Brisbane, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />

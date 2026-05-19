@@ -36,8 +36,8 @@ const Home = () => {
   return (
     <>
       <SEO 
-        title="It Consulting Brisbane | Trusted Experts & Agency"
-        description="Scale your company with leading It Consulting Brisbane services in Brisbane. Our team delivers high-quality Application Development Brisbane. Get started today!"
+        title="IT Consulting Brisbane | Trusted Experts & Agency"
+        description="Scale your company with leading IT Consulting Brisbane services in Brisbane. Our team delivers high-quality Application Development Brisbane. Get started today!"
         keywords="it consulting brisbane, application development brisbane, business intelligence brisbane, cloud solutions brisbane, custom software development brisbane, data analytics brisbane, digital transformation brisbane, ai automation brisbane, ai consulting brisbane, business automation brisbane, enterprise automation brisbane, enterprise integration brisbane, predictive analytics brisbane"
       />
       <Hero />

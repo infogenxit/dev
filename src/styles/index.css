@@ -685,3 +685,31 @@ a.secondary-btn:hover {
         gap: 14px !important;
     }
 }
+
+/* FIXED HEADER OFFSET FOR SUBPAGES */
+.main-subpage {
+    padding-top: 110px; /* Offset for desktop fixed header + gap */
+}
+
+@media (max-width: 1024px) {
+    .main-subpage {
+        padding-top: 100px; /* Offset for tablet fixed header */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-subpage {
+        padding-top: 90px; /* Offset for mobile fixed header */
+    }
+}
+
+/* SCROLL MARGIN PREVENTIONS */
+h1, h2, h3, h4, section {
+    scroll-margin-top: 120px; /* Ensures anchor links don't get covered by sticky header */
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3, h4, section {
+        scroll-margin-top: 100px;
+    }
+}
