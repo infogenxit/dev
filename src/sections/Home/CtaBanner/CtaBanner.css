@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding: 40px;
     /* Reduced bottom padding */
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
+    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
     border-radius: 28px;
     text-align: center;
     color: #ffffff;
@@ -108,7 +108,7 @@
     transform: translateY(-5px) !important;
     background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     background-origin: border-box !important;
-    background-clip: padding-box, border-box !important;
+    background-clip: padding-box !important;
     border-color: transparent !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
 }

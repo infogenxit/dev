@@ -166,7 +166,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: conic-gradient(at 52% -200%, #cf5d2d 158deg, #EB632A 166deg, #a53606 177deg, #00123C 183deg, #00123C 165deg);
+    background-image: conic-gradient(at 52% -200%, #cf5d2d 158deg, #EB632A 166deg, #a53606 177deg, #00123C 183deg, #00123C 165deg);
     color: #ffffff;
     display: flex;
     align-items: center;

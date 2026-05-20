@@ -86,7 +86,7 @@
     width: 100%;
     margin-top: 20px;
     padding: 14px;
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -107,7 +107,7 @@
                 #eb632a 70%,
                 #f36b2a 100%);
         background-origin: border-box;
-        background-clip: padding-box, border-box;
+        background-clip: padding-box;
 } */
 
 /* SIDE CARDS */
@@ -372,7 +372,7 @@ textarea::placeholder {
     padding: 16px;
     border-radius: 40px;
     border: none;
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);;
+    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);;
     color: #fff;
     font-size: 15px;
     font-weight: 600;

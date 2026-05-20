@@ -112,7 +112,7 @@
             #eb632a 70%,
             #f36b2a 100%); */
 
-    background: conic-gradient(at 50% 0%,
+    background-image: conic-gradient(at 50% 0%,
             #AC3300 0deg,
             #EB632A 90deg,
             #a53606 110deg,
@@ -157,7 +157,7 @@
             #eb632a 70%,
             #f36b2a 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box;
+    background-clip: padding-box;
 
     transition: all 0.2s ease;
 }

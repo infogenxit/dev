@@ -146,7 +146,7 @@
             #eb632a 70%,
             #f36b2a 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box;
+    background-clip: padding-box;
 
     transition: all 0.2s ease;
 }
