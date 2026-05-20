@@ -1,6 +1,6 @@
 import "./RetailPos.css";
-import logo from "../../../assets/images/products/pos-logo.webp";
-import laptopImg from "../../../assets/images/products/pos-laptop.webp";
+import logo from "../../../assets/images/products/pos-logo.png";
+import laptopImg from "../../../assets/images/products/pos-laptop.png";
 import { useEffect, useState } from "react";
 import {
   FaPhoneAlt,
@@ -9,17 +9,17 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import img1 from "../../../assets/images/products/pos1.webp";
-import img2 from "../../../assets/images/products/pos2.webp";
-import img3 from "../../../assets/images/products/pos3.webp";
-import img4 from "../../../assets/images/products/pos4.webp";
-import img5 from "../../../assets/images/products/pos5.webp";
-import img6 from "../../../assets/images/products/pos6.webp";
-import img7 from "../../../assets/images/products/pos7.webp";
-import img8 from "../../../assets/images/products/pos8.webp";
-import img9 from "../../../assets/images/products/pos9.webp";
-import img10 from "../../../assets/images/products/pos10.webp";
-import img11 from "../../../assets/images/products/pos11.webp";
+import img1 from "../../../assets/images/products/pos1.png";
+import img2 from "../../../assets/images/products/pos2.png";
+import img3 from "../../../assets/images/products/pos3.png";
+import img4 from "../../../assets/images/products/pos4.png";
+import img5 from "../../../assets/images/products/pos5.png";
+import img6 from "../../../assets/images/products/pos6.png";
+import img7 from "../../../assets/images/products/pos7.png";
+import img8 from "../../../assets/images/products/pos8.png";
+import img9 from "../../../assets/images/products/pos9.png";
+import img10 from "../../../assets/images/products/pos10.png";
+import img11 from "../../../assets/images/products/pos11.png";
 import { Link } from "react-router-dom";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
@@ -27,7 +27,6 @@ import { HiOutlineTrophy } from "react-icons/hi2";
 import { VscRemoteExplorer } from "react-icons/vsc";
 import { RiShieldCheckLine } from "react-icons/ri";
 import { Helmet } from "react-helmet-async";
-import SEO from "../../../components/SEO/SEO";
 
 const descItems = [
   {
@@ -92,12 +91,7 @@ const RetailPos = () => {
   }, [maxIndex]);
   return (
     <>
-      <SEO
-        title="Retail Pos System Brisbane | Trusted Experts"
-        description="Experience the best Retail Pos System Brisbane has to offer. Our expert team focuses on Custom Software to drive results and maximize your ROI."
-        keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
-      />
-      {/* <Helmet>
+      <Helmet>
         <title>Retail POS in Brisbane, Australia|Infogenx</title>
         <meta
           name="description"
@@ -107,7 +101,7 @@ const RetailPos = () => {
           name="keywords"
           content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
         />
-      </Helmet> */}
+      </Helmet>
       {/* NAVBAR */}
       <header className="igx-navbar">
         <div className="igx-nav-container">
@@ -142,7 +136,7 @@ const RetailPos = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Retail Pos System in Brisbane to Scale Your Business</h1>
+            <h1>Retail POS Transformed</h1>
 
             <p>
               Retail POS management system for Australian stores — fast

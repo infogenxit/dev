@@ -1,6 +1,6 @@
 import "./OdooErp.css";
-import logo from "../../../assets/images/products/erplogo.webp";
-import laptopImg from "../../../assets/images/products/erp-laptop.webp";
+import logo from "../../../assets/images/products/erplogo.png";
+import laptopImg from "../../../assets/images/products/erp-laptop.png";
 import { useEffect, useState } from "react";
 import {
   FaPhoneAlt,
@@ -9,17 +9,17 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import img1 from "../../../assets/images/products/erp1.webp";
-import img2 from "../../../assets/images/products/erp2.webp";
-import img3 from "../../../assets/images/products/erp3.webp";
-import img4 from "../../../assets/images/products/erp4.webp";
-import img5 from "../../../assets/images/products/erp5.webp";
-import img6 from "../../../assets/images/products/erp6.webp";
-import img7 from "../../../assets/images/products/erp7.webp";
-import img8 from "../../../assets/images/products/erp8.webp";
-import img9 from "../../../assets/images/products/erp9.webp";
-import img10 from "../../../assets/images/products/erp10.webp";
-import img11 from "../../../assets/images/products/erp11.webp";
+import img1 from "../../../assets/images/products/erp1.png";
+import img2 from "../../../assets/images/products/erp2.png";
+import img3 from "../../../assets/images/products/erp3.png";
+import img4 from "../../../assets/images/products/erp4.png";
+import img5 from "../../../assets/images/products/erp5.png";
+import img6 from "../../../assets/images/products/erp6.png";
+import img7 from "../../../assets/images/products/erp7.png";
+import img8 from "../../../assets/images/products/erp8.png";
+import img9 from "../../../assets/images/products/erp9.png";
+import img10 from "../../../assets/images/products/erp10.png";
+import img11 from "../../../assets/images/products/erp11.png";
 import { Link } from "react-router-dom";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
@@ -27,7 +27,6 @@ import { HiOutlineTrophy } from "react-icons/hi2";
 import { VscRemoteExplorer } from "react-icons/vsc";
 import { RiShieldCheckLine } from "react-icons/ri";
 import { Helmet } from "react-helmet-async";
-import SEO from "../../../components/SEO/SEO";
 
 const descItems = [
   {
@@ -92,12 +91,7 @@ const OdooErp = () => {
   }, [maxIndex]);
   return (
     <>
-      <SEO
-        title="Odoo Consultant Brisbane | Trusted Experts & Agency"
-        description="Unlock business growth with expert Odoo Consultant in Brisbane. We specialize in Odoo Brisbane and innovative digital strategies. Book a consult now."
-        keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
-      />
-      {/* <Helmet>
+      <Helmet>
         <title>ODOO ERP in Brisbane, Australia|Infogenx</title>
         <meta
           name="description"
@@ -107,7 +101,7 @@ const OdooErp = () => {
           name="keywords"
           content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
         />
-      </Helmet> */}
+      </Helmet>
       {/* NAVBAR */}
       <header className="igx-navbar">
         <div className="igx-nav-container">
@@ -142,7 +136,7 @@ const OdooErp = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Odoo Consultant in Brisbane to Scale Your Business</h1>
+            <h1>Odoo ERP Mastered</h1>
 
             <p>
               Odoo ERP management system for Australian businesses — integrated

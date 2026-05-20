@@ -1,6 +1,6 @@
 import "./IgxStock.css";
-import logo from "../../../assets/images/products/Igx-stocklogo.webp";
-import laptopImg from "../../../assets/images/products/laptop.webp";
+import logo from "../../../assets/images/products/Igx-stocklogo.png";
+import laptopImg from "../../../assets/images/products/laptop.png";
 import { useEffect, useState } from "react";
 import {
   FaPhoneAlt,
@@ -9,17 +9,17 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import img1 from "../../../assets/images/products/igx1.webp";
-import img2 from "../../../assets/images/products/igx2.webp";
-import img3 from "../../../assets/images/products/igx3.webp";
-import img4 from "../../../assets/images/products/igx4.webp";
-import img5 from "../../../assets/images/products/igx5.webp";
-import img6 from "../../../assets/images/products/igx6.webp";
-import img7 from "../../../assets/images/products/igx7.webp";
-import img8 from "../../../assets/images/products/igx8.webp";
-import img9 from "../../../assets/images/products/igx9.webp";
-import img10 from "../../../assets/images/products/igx10.webp";
-import img11 from "../../../assets/images/products/igx11.webp";
+import img1 from "../../../assets/images/products/igx1.png";
+import img2 from "../../../assets/images/products/igx2.png";
+import img3 from "../../../assets/images/products/igx3.png";
+import img4 from "../../../assets/images/products/igx4.png";
+import img5 from "../../../assets/images/products/igx5.png";
+import img6 from "../../../assets/images/products/igx6.png";
+import img7 from "../../../assets/images/products/igx7.png";
+import img8 from "../../../assets/images/products/igx8.png";
+import img9 from "../../../assets/images/products/igx9.png";
+import img10 from "../../../assets/images/products/igx10.png";
+import img11 from "../../../assets/images/products/igx11.png";
 import { Link } from "react-router-dom";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
@@ -31,7 +31,6 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { GrUpdate } from "react-icons/gr";
 import { RxAvatar } from "react-icons/rx";
 import { Helmet } from "react-helmet-async";
-import SEO from "../../../components/SEO/SEO";
 
 const descItems = [
   {
@@ -128,12 +127,7 @@ const IgxStock = () => {
   }, [maxIndex]);
   return (
     <>
-      <SEO
-        title="Stock Management System Brisbane | Trusted Experts"
-        description="Scale your company with leading Stock Management System Brisbane services in Brisbane. Our team delivers high-quality Custom Software. Get started today!"
-        keywords="automation software, custom software development, ERP software, ODOO ERP, stock management system, inventory management software, business automation solutions, software products Australia, Brisbane software development"
-      />
-      {/* <Helmet>
+      <Helmet>
         <title>Stock Management System in Brisbane, Australia|Infogenx</title>
         <meta
           name="description"
@@ -141,9 +135,9 @@ const IgxStock = () => {
         />
         <meta
           name="keywords"
-          content="automation software, custom software development, ERP software, ODOO ERP, stock management system, inventory management software, business automation solutions, software products Australia, Brisbane software development"
+          content="automation software, custom software development, ERP software, ODOO ERP, stock management system, inventory management software,  business automation solutions, software products Australia, Brisbane software development"
         />
-      </Helmet> */}
+      </Helmet>
       {/* NAVBAR */}
       <header className="igx-navbar">
         <div className="igx-nav-container">
@@ -180,7 +174,7 @@ const IgxStock = () => {
 
         <div className="igx-hero-container">
           <div className="igx-hero-content">
-            <h1>Stock Management System in Brisbane to Scale Your Business</h1>
+            <h1>Inventory Controlled Perfectly</h1>
 
             <p>
               Inventory inefficiencies slow operations, reduce fulfilment speed,
