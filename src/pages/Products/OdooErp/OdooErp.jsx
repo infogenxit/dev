@@ -90,7 +90,7 @@ const OdooErp = () => {
     return () => clearInterval(timer);
   }, [maxIndex]);
   return (
-    <>
+    <div className="igx-isolated-product-wrapper">
       <Helmet>
         <title>ODOO ERP in Brisbane, Australia|Infogenx</title>
         <meta
@@ -358,7 +358,7 @@ const OdooErp = () => {
           ↑
         </button>
       </footer>
-    </>
+    </div>
   );
 };
 

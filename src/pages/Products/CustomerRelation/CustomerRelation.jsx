@@ -90,7 +90,7 @@ const CustomerRelation = () => {
     return () => clearInterval(timer);
   }, [maxIndex]);
   return (
-    <>
+    <div className="igx-isolated-product-wrapper">
       <Helmet>
         <title>
           Customer Relationship Management in Brisbane, Australia|Infogenx
@@ -360,7 +360,7 @@ const CustomerRelation = () => {
           ↑
         </button>
       </footer>
-    </>
+    </div>
   );
 };
 

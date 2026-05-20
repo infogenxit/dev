@@ -90,7 +90,7 @@ const RetailPos = () => {
     return () => clearInterval(timer);
   }, [maxIndex]);
   return (
-    <>
+    <div className="igx-isolated-product-wrapper">
       <Helmet>
         <title>Retail POS in Brisbane, Australia|Infogenx</title>
         <meta
@@ -358,7 +358,7 @@ const RetailPos = () => {
           ↑
         </button>
       </footer>
-    </>
+    </div>
   );
 };
 

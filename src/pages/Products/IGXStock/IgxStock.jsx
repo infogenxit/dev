@@ -126,7 +126,7 @@ const IgxStock = () => {
     return () => clearInterval(timer);
   }, [maxIndex]);
   return (
-    <>
+    <div className="igx-isolated-product-wrapper">
       <Helmet>
         <title>Stock Management System in Brisbane, Australia|Infogenx</title>
         <meta
@@ -404,7 +404,7 @@ const IgxStock = () => {
           ↑
         </button>
       </footer>
-    </>
+    </div>
   );
 };
 

@@ -1,154 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap');
 
 :root {
-  --primary-color: #00123c;
-  --secondary-color: #ff5e14;
-  --accent-color: #ff8c00;
-  --text-main: #333333;
-  --text-muted: #666666;
-  --bg-light: #f8faff;
-  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --primary-color: #00123c;
+    --secondary-color: #ff5e14;
+    --accent-color: #ff8c00;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --bg-light: #f8faff;
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 #root {
-  /* overflow removed to fix sticky positioning */
+    /* overflow removed to fix sticky positioning */
 }
 
 body {
-  margin: 0;
-  font-family: 'Manrope', sans-serif;
-  color: var(--text-main);
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
-  overflow-x: hidden;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-main);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 0;
 }
 
 p {
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
 }
 
 a {
-  text-decoration: none;
-  transition: var(--transition-smooth);
+    text-decoration: none;
+    transition: var(--transition-smooth);
 }
 
 /* Global Section Spacing */
 section {
-  padding: 100px 0;
+    padding: 100px 0;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Premium Entry Animations */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .animate-fade-in {
-  animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 /* Custom Selection Color */
 ::selection {
-  background: var(--secondary-color);
-  color: white;
+    background: var(--secondary-color);
+    color: white;
 }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
-  border-radius: 10px;
-  border: 3px solid #f1f1f1;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color);
+    background: var(--primary-color);
 }
 
 /* Firefox Support */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: var(--secondary-color) #f1f1f1;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) #f1f1f1;
 }
 
 /* Mobile Font Size Optimization */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-  main {
-    padding-bottom: 120px;
-  }
-  section {
-    padding: 60px 0;
-  }
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
-  
-  /* Tap Target Optimization */
-  button, .primary-btn, .secondary-btn {
-    min-height: 48px;
-  }
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        padding-bottom: 120px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Tap Target Optimization */
+    button,
+    .primary-btn,
+    .secondary-btn {
+        min-height: 48px;
+    }
 }
 
 /* Section Labels (Small accent text above headings) */
 .section-label {
-  display: inline-block;
-  color: var(--secondary-color);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.85rem;
-  margin-bottom: 15px;
-  position: relative;
-  padding-left: 30px;
+    display: inline-block;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
 }
 
 .section-label::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 20px;
-  height: 2px;
-  background: var(--secondary-color);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: var(--secondary-color);
 }
 
 /* GLOBAL CORNER ACCENT */
@@ -156,50 +172,70 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1 !important; /* Changed from 3 to 1 so it stays behind headers and text */
+    z-index: 1 !important;
+    /* Changed from 3 to 1 so it stays behind headers and text */
     width: 230px;
     height: auto;
     pointer-events: none;
-    opacity: 0.85; /* Subtle styling */
+    opacity: 0.85;
+    /* Subtle styling */
 }
 
 @media (max-width: 768px) {
     .about-corner-accent {
-        width: 140px; /* Scale down on mobile to prevent blocking headings */
-        opacity: 0.45; /* Semi-transparent to guarantee text legibility */
+        width: 140px;
+        /* Scale down on mobile to prevent blocking headings */
+        opacity: 0.45;
+        /* Semi-transparent to guarantee text legibility */
     }
 }
 
 /* PREMIUM SECTION LABELS (Modern Translucent Pill Design) */
-.section-label, .app-section-label, .about-label, .service-label, .solution-label {
+.section-label,
+.app-section-label,
+.about-label,
+.service-label,
+.solution-label {
     display: inline-flex !important;
     align-items: center !important;
     gap: 12px !important;
     position: relative !important;
     margin-bottom: 25px !important;
-    background: rgba(255, 94, 20, 0.08) !important; /* Soft premium peach/orange translucent background */
+    background: rgba(255, 94, 20, 0.08) !important;
+    /* Soft premium peach/orange translucent background */
     padding: 10px 24px 10px 20px !important;
-    border-radius: 50px !important; /* Perfect Pill shape */
+    border-radius: 50px !important;
+    /* Perfect Pill shape */
     font-weight: 800 !important;
     text-transform: uppercase !important;
     letter-spacing: 1.5px !important;
     font-size: 13px !important;
     line-height: 1 !important;
     white-space: nowrap !important;
-    color: #ff5e14 !important; /* Consistent radiant brand orange */
-    -webkit-text-fill-color: #ff5e14 !important; /* Force orange text fill to override any local transparent settings */
-    background-clip: border-box !important; /* Clear any background clips */
-    -webkit-background-clip: border-box !important; /* Clear any webkit background clips */
-    border: 1.5px solid rgba(255, 94, 20, 0.25) !important; /* Subtle brand border */
+    color: #ff5e14 !important;
+    /* Consistent radiant brand orange */
+    -webkit-text-fill-color: #ff5e14 !important;
+    /* Force orange text fill to override any local transparent settings */
+    background-clip: border-box !important;
+    /* Clear any background clips */
+    -webkit-background-clip: border-box !important;
+    /* Clear any webkit background clips */
+    border: 1.5px solid rgba(255, 94, 20, 0.25) !important;
+    /* Subtle brand border */
     box-shadow: 0 2px 10px rgba(255, 94, 20, 0.05) !important;
 }
 
-.section-label::before, .app-section-label::before, .about-label::before, .service-label::before, .solution-label::before {
+.section-label::before,
+.app-section-label::before,
+.about-label::before,
+.service-label::before,
+.solution-label::before {
     content: '' !important;
     display: inline-block !important;
     width: 16px !important;
     height: 3px !important;
-    background: linear-gradient(90deg, #00123c, #ff5e14) !important; /* Gorgeous gradient prefix line */
+    background: linear-gradient(90deg, #00123c, #ff5e14) !important;
+    /* Gorgeous gradient prefix line */
     border-radius: 2px !important;
 }
 
@@ -208,8 +244,8 @@ section {
    ========================================================================== */
 
 /* --- 1. HEADLINES (H1 / HERO HEADINGS) - DESKTOP --- */
-h1, 
-.hero-heading, 
+h1,
+.hero-heading,
 .WebDev-hero-heading {
     font-family: 'Outfit', sans-serif !important;
     font-weight: 800 !important;
@@ -227,7 +263,7 @@ h1,
 }
 
 /* Headlines on Dark Background - Desktop */
-.about-hero-left h1, 
+.about-hero-left h1,
 .igx-hero-content h1 {
     font-family: 'Outfit', sans-serif !important;
     font-weight: 800 !important;
@@ -242,11 +278,11 @@ h1,
 }
 
 /* --- 2. SUBHEADLINES / SECTION TITLES (H2) - DESKTOP --- */
-h2, 
-.section-title, 
-.igx-pricing-title, 
-.faq-title, 
-.expertise-heading, 
+h2,
+.section-title,
+.igx-pricing-title,
+.faq-title,
+.expertise-heading,
 .testimonials-title,
 .business-outcome h1,
 .appdev-expertise-header h2,
@@ -258,7 +294,6 @@ h2,
 [class*="tech-content"] h2,
 [class*="cta-left"] h2,
 [class*="cta-right"] h2,
-[class*="cta-container"] h2,
 .impact-cta-left h2,
 .about-who-title,
 .careers-title,
@@ -281,9 +316,8 @@ h2,
 }
 
 /* Section Titles / H2 on Dark Background - Desktop */
-.approach-section h2, 
-.dark-bg h2, 
-.cta-title, 
+.approach-section h2,
+.dark-bg h2,
 .igx-pricing-card h2,
 .tech-web-section h2,
 .why-choose-section h2,
@@ -303,11 +337,11 @@ h2,
 }
 
 /* --- 3. SUBTITLES / CARD TITLES (H3) - DESKTOP --- */
-h3, 
-.card-title, 
-.feature-title, 
-.pricing-card-title, 
-#contact-thankyou-title, 
+h3,
+.card-title,
+.feature-title,
+.pricing-card-title,
+#contact-thankyou-title,
 .outcome-container h3 {
     font-family: 'Outfit', sans-serif !important;
     font-weight: 700 !important;
@@ -344,10 +378,10 @@ h3,
 }
 
 /* --- 4. MINOR SUBTITLES / LABELS (H4) - DESKTOP --- */
-h4, 
-.card-subtitle, 
-.feature-subtitle, 
-.global-subtitle, 
+h4,
+.card-subtitle,
+.feature-subtitle,
+.global-subtitle,
 .approach-card h4 {
     font-family: 'Outfit', sans-serif !important;
     font-weight: 600 !important;
@@ -369,11 +403,12 @@ h4,
    MOBILE RESPONSIVE TYPOGRAPHY OVERRIDES (MAX-WIDTH: 768PX)
    ========================================================================== */
 @media (max-width: 768px) {
+
     /* --- 1. HEADLINES (H1 / HERO HEADINGS) - MOBILE --- */
-    h1, 
-    .hero-heading, 
+    h1,
+    .hero-heading,
     .WebDev-hero-heading,
-    .about-hero-left h1, 
+    .about-hero-left h1,
     .igx-hero-content h1 {
         font-size: 32px !important;
         line-height: 1.2 !important;
@@ -381,17 +416,16 @@ h4,
     }
 
     /* --- 2. SUBHEADLINES / SECTION TITLES (H2) - MOBILE --- */
-    h2, 
-    .section-title, 
-    .igx-pricing-title, 
-    .faq-title, 
-    .expertise-heading, 
+    h2,
+    .section-title,
+    .igx-pricing-title,
+    .faq-title,
+    .expertise-heading,
     .testimonials-title,
     .business-outcome h1,
-    .approach-section h2, 
-    .impact-cta-section h2, 
-    .dark-bg h2, 
-    .cta-title, 
+    .approach-section h2,
+    .impact-cta-section h2,
+    .dark-bg h2,
     .igx-pricing-card h2 {
         font-size: 26px !important;
         line-height: 1.3 !important;
@@ -399,11 +433,11 @@ h4,
     }
 
     /* --- 3. SUBTITLES / CARD TITLES (H3) - MOBILE --- */
-    h3, 
-    .card-title, 
-    .feature-title, 
-    .pricing-card-title, 
-    #contact-thankyou-title, 
+    h3,
+    .card-title,
+    .feature-title,
+    .pricing-card-title,
+    #contact-thankyou-title,
     .outcome-container h3,
     .igx-pricing-card h3 {
         font-size: 19px !important;
@@ -412,11 +446,11 @@ h4,
     }
 
     /* --- 4. MINOR SUBTITLES / LABELS (H4) - MOBILE --- */
-    h4, 
-    .card-subtitle, 
-    .feature-subtitle, 
-    .section-subtitle, 
-    .global-subtitle, 
+    h4,
+    .card-subtitle,
+    .feature-subtitle,
+    .section-subtitle,
+    .global-subtitle,
     .approach-card h4 {
         font-size: 14px !important;
         line-height: 1.45 !important;
@@ -436,7 +470,9 @@ h4,
 }
 
 /* GLOBAL INTRO TEXT STYLING */
-.impact-intro-text, .expertise-intro-text, .approach-lead {
+.impact-intro-text,
+.expertise-intro-text,
+.approach-lead {
     max-width: 1000px;
     margin: 20px 0 0;
     color: #666;
@@ -452,13 +488,13 @@ h4,
 }
 
 /* PREMIUM BUTTONS (Global Mapping for Consistent Branding) */
-.primary-btn, 
-.cta-primary, 
-.WebDev-primary-btn, 
-.igx-hero-btn, 
-.igx-btn.primary, 
-.submit-btn, 
-.thank-you-message button, 
+.primary-btn,
+.cta-primary,
+.WebDev-primary-btn,
+.igx-hero-btn,
+.igx-btn.primary,
+.submit-btn,
+.thank-you-message button,
 .demo-btn,
 .quote-btn,
 .quote-btn.mobile-cta,
@@ -472,50 +508,48 @@ a.primary-btn {
     justify-content: center !important;
     padding: 14px 30px !important;
     border-radius: 50px !important;
-    border: 1.2px solid rgba(255, 255, 255, 0.25) !important; /* Elegant subtle outline to guarantee visibility on dark backgrounds */
+    border: 1.2px solid rgba(255, 255, 255, 0.25) !important;
     font-family: "Manrope", sans-serif !important;
     font-weight: 600 !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
     line-height: 100% !important;
     color: #ffffff !important;
     cursor: pointer !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important; /* Premium drop-shadow to separate button from dark backgrounds */
+    box-shadow: none !important;
     background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-/* Enforce Conic Gradient and Hover styles specifically for About-style Primary Buttons to match Home Hero */
+/* about-primary-btn inherits global primary-btn styles — kept for legacy compatibility */
 .about-primary-btn {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     padding: 14px 30px !important;
     border-radius: 50px !important;
-    border: none !important;
+    border: 1.2px solid rgba(255, 255, 255, 0.25) !important;
     font-family: "Manrope", sans-serif !important;
     font-weight: 600 !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
     line-height: 100% !important;
     color: #ffffff !important;
     cursor: pointer !important;
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg) !important;
+    box-shadow: none !important;
+    background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
 }
 
 .about-primary-btn:hover {
     transform: translateY(-5px) !important;
+    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
-    color: #00123C !important;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
-    background-origin: border-box !important;
-    background-clip: padding-box, border-box !important;
-    border: 3px solid transparent !important;
+    color: #ffffff !important;
+    border: 1.2px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 /* Enforce Standard Width and Height for full-size primary buttons */
-.primary-btn, 
-.about-primary-btn, 
+.primary-btn,
+.about-primary-btn,
 .WebDev-primary-btn,
 .appdev-buttons .primary-btn,
 .impact-buttons .primary-btn,
@@ -524,13 +558,13 @@ a.primary-btn {
     height: 50px !important;
 }
 
-.primary-btn:hover, 
-.cta-primary:hover, 
-.WebDev-primary-btn:hover, 
-.igx-hero-btn:hover, 
-.igx-btn.primary:hover, 
-.submit-btn:hover, 
-.thank-you-message button:hover, 
+.primary-btn:hover,
+.cta-primary:hover,
+.WebDev-primary-btn:hover,
+.igx-hero-btn:hover,
+.igx-btn.primary:hover,
+.submit-btn:hover,
+.thank-you-message button:hover,
 .demo-btn:hover,
 .quote-btn:hover,
 .appdev-buttons .primary-btn:hover,
@@ -539,15 +573,22 @@ a.primary-btn {
 button.primary-btn:hover,
 a.primary-btn:hover {
     transform: translateY(-5px) !important;
+    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
     color: #ffffff !important;
-    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
-    border: 1.2px solid transparent !important;
+    border: 1.2px solid rgba(255, 255, 255, 0.25) !important;
+    font-family: "Manrope", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    line-height: 100% !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
 }
 
-.secondary-btn, 
-.cta-secondary, 
-.WebDev-secondary-btn, 
+/* GLOBAL SECONDARY BUTTON — White fill, gradient border (navy→orange) */
+.secondary-btn,
+.about-secondary-btn,
+.WebDev-secondary-btn,
 .igx-btn.secondary,
 .appdev-buttons .secondary-btn,
 .impact-buttons .secondary-btn,
@@ -562,42 +603,19 @@ a.secondary-btn {
     border-radius: 50px !important;
     font-family: "Manrope", sans-serif !important;
     font-weight: 600 !important;
-    font-size: 16px !important;
+    font-size: 15px !important;
     line-height: 100% !important;
     color: #00123c !important;
+    -webkit-text-fill-color: #00123c !important;
     cursor: pointer !important;
-    border: 3px solid transparent !important;
-    background: linear-gradient(#ffffff, #ffffff), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
-    background-origin: border-box !important;
-    background-clip: padding-box, border-box !important;
+    border: 3px solid #00123c !important;
+    background: transparent !important;
     transition: all 0.2s ease !important;
 }
 
-/* Enforce Conic Gradient Border style specifically for About-style Secondary Buttons to match Home Hero */
-.about-secondary-btn {
-    height: 50px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 14px 30px !important;
-    border-radius: 50px !important;
-    font-family: "Manrope", sans-serif !important;
-    font-weight: 600 !important;
-    font-size: 16px !important;
-    line-height: 100% !important;
-    color: #00123c !important;
-    cursor: pointer !important;
-    border: 3px solid transparent !important;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%) !important;
-    background-origin: border-box !important;
-    background-clip: padding-box, border-box !important;
-    transition: all 0.2s ease !important;
-}
-
-.secondary-btn:hover, 
-.about-secondary-btn:hover, 
-.cta-secondary:hover, 
-.WebDev-secondary-btn:hover, 
+.secondary-btn:hover,
+.about-secondary-btn:hover,
+.WebDev-secondary-btn:hover,
 .igx-btn.secondary:hover,
 .appdev-buttons .secondary-btn:hover,
 .impact-buttons .secondary-btn:hover,
@@ -606,20 +624,68 @@ button.secondary-btn:hover,
 a.secondary-btn:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+    border-color: transparent !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Ensure secondary buttons are visible on dark backgrounds */
+.dark-bg .secondary-btn,
+[class*="dark-bg"] .secondary-btn,
+[class*="cta"] .secondary-btn,
+.footer .secondary-btn,
+.tech-web-section .secondary-btn,
+.why-choose-section .secondary-btn,
+.approach-section .secondary-btn,
+.impact-cta-section .secondary-btn {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.dark-bg .secondary-btn:hover,
+[class*="dark-bg"] .secondary-btn:hover,
+[class*="cta"] .secondary-btn:hover,
+.footer .secondary-btn:hover,
+.tech-web-section .secondary-btn:hover,
+.why-choose-section .secondary-btn:hover,
+.approach-section .secondary-btn:hover,
+.impact-cta-section .secondary-btn:hover {
+    background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
 /* GLOBAL PLATFORMS HIGHLIGHT STYLE */
 .platforms-highlight {
     text-decoration: underline !important;
-    text-decoration-color: #ff6a00 !important; /* Brand Orange-Red Line */
+    text-decoration-color: #ff6a00 !important;
+    /* Brand Orange-Red Line */
     text-underline-offset: 4px !important;
     font-weight: 700 !important;
     color: inherit;
 }
 
 @media (max-width: 768px) {
-    .primary-btn, .about-primary-btn, .cta-primary, .WebDev-primary-btn, .igx-hero-btn, .igx-btn.primary, .submit-btn, .thank-you-message button, .demo-btn, .quote-btn, .quote-btn.mobile-cta,
-    .secondary-btn, .about-secondary-btn, .cta-secondary, .WebDev-secondary-btn, .igx-btn.secondary {
+
+    .primary-btn,
+    .about-primary-btn,
+    .cta-primary,
+    .WebDev-primary-btn,
+    .igx-hero-btn,
+    .igx-btn.primary,
+    .submit-btn,
+    .thank-you-message button,
+    .demo-btn,
+    .quote-btn,
+    .quote-btn.mobile-cta,
+    .secondary-btn,
+    .about-secondary-btn,
+    .WebDev-secondary-btn,
+    .igx-btn.secondary {
         width: 100% !important;
         max-width: 320px !important;
     }
@@ -627,6 +693,7 @@ a.secondary-btn:hover {
 
 /* GLOBAL LEFT-ALIGNMENT OVERRIDES FOR ALL MODULES (TECHNOLOGIES, SOLUTIONS, & SERVICES) ON TABLET & MOBILE */
 @media (max-width: 1199px) {
+
     .tech-outcomes-container,
     .business-impact-container,
     .outcomes-container,
@@ -639,6 +706,7 @@ a.secondary-btn:hover {
 }
 
 @media (max-width: 768px) {
+
     .appdev-expertise-header,
     .expertise-header,
     .sol-expertise-header,
@@ -674,19 +742,20 @@ a.secondary-btn:hover {
 
 /* GLOBAL CENTER-ALIGNMENT FOR CONTAINERS WITH LEFT-ALIGNED TEXT ON MOBILE */
 @media (max-width: 1199px) {
+
     .appdev-container,
     [class*="hero-container"]:not(.about-hero-container):not(.hero-container),
     [class*="hero-content"]:not(.about-hero-content) {
         text-align: left !important;
         align-items: flex-start !important;
     }
-    
+
     .appdev-buttons,
     [class*="hero-buttons"]:not(.about-hero-buttons):not(.hero-buttons) {
         justify-content: flex-start !important;
         align-items: flex-start !important;
     }
-    
+
     .appdev-left,
     [class*="hero-left"]:not(.about-hero-left) {
         text-align: left !important;
@@ -694,8 +763,18 @@ a.secondary-btn:hover {
 }
 
 @media (max-width: 768px) {
+
     /* Enforce elements/containers centered, but text alignment left globally on mobile */
-    h1, h2, h3, h4, h5, h6, p, span, li, a {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    li,
+    a {
         text-align: left !important;
     }
 
@@ -703,7 +782,8 @@ a.secondary-btn:hover {
     [class*="hero-container"]:not(.about-hero-container):not(.hero-container),
     [class*="hero-content"]:not(.about-hero-content) {
         text-align: left !important;
-        align-items: center !important; /* Center the layout container */
+        align-items: center !important;
+        /* Center the layout container */
     }
 
     .appdev-left,
@@ -711,14 +791,16 @@ a.secondary-btn:hover {
         text-align: left !important;
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important; /* Center content in the column */
+        align-items: center !important;
+        /* Center content in the column */
         width: 100% !important;
     }
 
     .appdev-buttons,
     [class*="hero-buttons"]:not(.about-hero-buttons) {
         flex-direction: column !important;
-        align-items: center !important; /* Center buttons horizontally */
+        align-items: center !important;
+        /* Center buttons horizontally */
         justify-content: center !important;
         width: 100% !important;
         margin: 0 auto !important;
@@ -734,61 +816,144 @@ a.secondary-btn:hover {
     .hero-proof,
     .footer-bottom p,
     .footer-copyright {
-        text-align: left !important; /* Enforce left text alignment */
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    /* Enforce CTA Banner centered position & full left alignment on mobile */
-    .cta-container {
         text-align: left !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        justify-content: center !important;
-    }
-
-    .cta-title,
-    .cta-description,
-    .cta-call-us {
-        text-align: left !important; /* Full left alignment on mobile */
+        /* Enforce left text alignment */
         width: 100% !important;
         max-width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: auto !important;
-    }
-
-    .cta-buttons {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
-        gap: 14px !important;
     }
 }
 
 /* FIXED HEADER OFFSET FOR SUBPAGES REMOVED (Full-bleed backgrounds with hero-level paddings) */
 
 /* SCROLL MARGIN PREVENTIONS */
-h1, h2, h3, h4, section {
-    scroll-margin-top: 120px; /* Ensures anchor links don't get covered by sticky header */
+h1,
+h2,
+h3,
+h4,
+section {
+    scroll-margin-top: 120px;
+    /* Ensures anchor links don't get covered by sticky header */
 }
 
 @media (max-width: 768px) {
-    h1, h2, h3, h4, section {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    section {
         scroll-margin-top: 100px;
     }
 }
 
 /* ZOHO SALESIQ WIDGET MOBILE POSITIONING ADJUSTMENT */
 @media (max-width: 768px) {
+
     /* Push Zoho SalesIQ float bubble up to clear the mobile sticky contact footer */
-    #zsiq_float, 
-    .zsiq_float, 
-    #zsiq_cnt, 
-    .zsq_theme1, 
+    #zsiq_float,
+    .zsiq_float,
+    #zsiq_cnt,
+    .zsq_theme1,
     [id*="zsiq"] {
         bottom: 85px !important;
     }
+}
+
+/* ISOLATION FOR PRODUCT PAGES */
+.igx-isolated-product-wrapper h1,
+.igx-isolated-product-wrapper h2,
+.igx-isolated-product-wrapper h3,
+.igx-isolated-product-wrapper h4,
+.igx-isolated-product-wrapper h5,
+.igx-isolated-product-wrapper h6 {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    color: #00123c !important; /* Default header color, will be overridden by specific styles if they exist */
+}
+
+/* Specific colors for specific headers based on original Product CSS */
+.igx-isolated-product-wrapper .igx-hero-content h1 {
+    color: #fff !important;
+}
+
+.igx-isolated-product-wrapper .igx-tour-title,
+.igx-isolated-product-wrapper .igx-pricing-title {
+    color: #00123c !important;
+}
+
+.igx-isolated-product-wrapper .igx-footer-col h3 {
+    color: #f04b3f !important;
+}
+
+.igx-isolated-product-wrapper .igx-pricing-card.free h3,
+.igx-isolated-product-wrapper .igx-pricing-card.free h4 {
+    color: #fff !important;
+}
+
+.igx-isolated-product-wrapper .igx-pricing-card.standard h3 {
+    color: #fff !important;
+}
+
+.igx-isolated-product-wrapper .igx-pricing-card.standard h4 {
+    color: #f04b3f !important;
+}
+
+/* ---------------------------------------------------- */
+/* NEW CUSTOMIZATIONS AS REQUESTED BY USER FOR PRODUCTS */
+/* ---------------------------------------------------- */
+
+/* 1. Heading or title position center but text alignment left */
+.igx-isolated-product-wrapper h2,
+.igx-isolated-product-wrapper h3 {
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: left !important;
+    color: #000 !important; /* Title color pure black matching logo */
+}
+
+/* Ensure the hero title doesn't break its alignment */
+.igx-isolated-product-wrapper .igx-hero-content h1 {
+    text-align: left !important;
+}
+
+/* 2. Description text color black */
+.igx-isolated-product-wrapper p,
+.igx-isolated-product-wrapper .igx-description-grid p,
+.igx-isolated-product-wrapper .igx-experience-content p {
+    color: #000 !important;
+}
+
+/* 3. Button design and hover - black */
+.igx-isolated-product-wrapper button,
+.igx-isolated-product-wrapper .igx-nav-btn,
+.igx-isolated-product-wrapper .igx-hero-btn,
+.igx-isolated-product-wrapper .igx-btn {
+    background: #000 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    transition: background 0.3s ease !important;
+}
+
+.igx-isolated-product-wrapper button:hover,
+.igx-isolated-product-wrapper .igx-nav-btn:hover,
+.igx-isolated-product-wrapper .igx-hero-btn:hover,
+.igx-isolated-product-wrapper .igx-btn:hover {
+    background: #333 !important;
+    color: #fff !important;
+}
+
+/* 4. Footer column alignments */
+.igx-isolated-product-wrapper .igx-footer-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.igx-isolated-product-wrapper .igx-footer-col > * {
+    width: fit-content !important;
+    text-align: left !important;
 }
