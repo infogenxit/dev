@@ -43,11 +43,15 @@ h6 {
     font-weight: 700;
     color: var(--primary-color);
     margin-top: 0;
+    position: relative;
+    z-index: 1;
 }
 
 p {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 a {
@@ -167,16 +171,22 @@ section {
     background: var(--secondary-color);
 }
 
-/* GLOBAL CORNER ACCENT */
+/* GLOBAL CORNER ACCENT FIX */
+.about-corner-accent,
+.app-corner-accent,
+.web-corner-accent,
+.automation-corner-accent,
+.corner-accent {
+    z-index: 0 !important; /* Force to background layer */
+    pointer-events: none !important; /* Prevent blocking clicks */
+}
+
 .about-corner-accent {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1 !important;
-    /* Changed from 3 to 1 so it stays behind headers and text */
     width: 230px;
     height: auto;
-    pointer-events: none;
     opacity: 0.85;
     /* Subtle styling */
 }
@@ -640,7 +650,8 @@ a.secondary-btn:hover {
 .tech-web-section .secondary-btn,
 .why-choose-section .secondary-btn,
 .approach-section .secondary-btn,
-.impact-cta-section .secondary-btn {
+.impact-cta-section .secondary-btn,
+.about-hero .about-secondary-btn {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
     border-color: #ffffff !important;
@@ -653,7 +664,8 @@ a.secondary-btn:hover {
 .tech-web-section .secondary-btn:hover,
 .why-choose-section .secondary-btn:hover,
 .approach-section .secondary-btn:hover,
-.impact-cta-section .secondary-btn:hover {
+.impact-cta-section .secondary-btn:hover,
+.about-hero .about-secondary-btn:hover {
     background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
@@ -926,24 +938,61 @@ section {
     color: #000 !important;
 }
 
-/* 3. Button design and hover - black */
+/* 3. Button design and hover - adapted to background */
+
+/* Shared generic button styles */
 .igx-isolated-product-wrapper button,
 .igx-isolated-product-wrapper .igx-nav-btn,
 .igx-isolated-product-wrapper .igx-hero-btn,
 .igx-isolated-product-wrapper .igx-btn {
-    background: #000 !important;
-    color: #fff !important;
     border: none !important;
     border-radius: 4px !important;
-    transition: background 0.3s ease !important;
+    transition: all 0.3s ease !important;
 }
 
-.igx-isolated-product-wrapper button:hover,
-.igx-isolated-product-wrapper .igx-nav-btn:hover,
-.igx-isolated-product-wrapper .igx-hero-btn:hover,
-.igx-isolated-product-wrapper .igx-btn:hover {
-    background: #333 !important;
+/* Nav Button (White Background -> Black Button) */
+.igx-isolated-product-wrapper .igx-nav-btn {
+    background: #000 !important;
     color: #fff !important;
+}
+.igx-isolated-product-wrapper .igx-nav-btn:hover {
+    background: #333 !important;
+}
+
+/* Hero Button (Dark Background -> White Button) */
+.igx-isolated-product-wrapper .igx-hero-btn {
+    background: #fff !important;
+    color: #000 !important;
+}
+.igx-isolated-product-wrapper .igx-hero-btn:hover {
+    background: #ddd !important;
+}
+
+/* General Pricing Card Buttons (Orange/Light Background -> Black Button) */
+.igx-isolated-product-wrapper .igx-pricing-card .igx-btn {
+    background: #000 !important;
+    color: #fff !important;
+}
+.igx-isolated-product-wrapper .igx-pricing-card .igx-btn:hover {
+    background: #333 !important;
+}
+
+/* Standard Pricing Card Button (Dark Background -> White Button) */
+.igx-isolated-product-wrapper .igx-pricing-card.standard .igx-btn {
+    background: #fff !important;
+    color: #000 !important;
+}
+.igx-isolated-product-wrapper .igx-pricing-card.standard .igx-btn:hover {
+    background: #ddd !important;
+}
+
+/* Scroll Top / General Button catch-all (Fallback -> Black Button) */
+.igx-isolated-product-wrapper button {
+    background: #000 !important;
+    color: #fff !important;
+}
+.igx-isolated-product-wrapper button:hover {
+    background: #333 !important;
 }
 
 /* 4. Footer column alignments */
