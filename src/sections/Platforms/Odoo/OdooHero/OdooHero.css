@@ -166,3 +166,18 @@
 
 
 
+
+
+@media (max-width: 768px) {
+  [class$="-hero"] {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  [class$="-hero"] h1,
+  [class$="-hero"] h2,
+  [class$="-hero"] h3,
+  [class$="-hero"] p {
+    text-align: left !important;
+  }
+}
