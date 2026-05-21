@@ -636,7 +636,7 @@ a.secondary-btn:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
     background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     background-origin: border-box !important;
-    background-clip: padding-box !important;
+    background-clip: padding-box, border-box !important;
     border-color: transparent !important;
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
