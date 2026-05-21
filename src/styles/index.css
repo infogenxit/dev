@@ -1006,3 +1006,28 @@ section {
     width: fit-content !important;
     text-align: left !important;
 }
+
+/* Fix all approach and section headers on dark backgrounds to stack elements vertically and reduce margin */
+.approach-header,
+[class*="approach-header"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-bottom: 30px !important; /* Reduced from 60px to reduce space */
+}
+
+/* Fix h1 and h3 color contrast on dark background sections (approach, business outcomes, etc.) */
+.approach-section h1,
+.business-outcome h1,
+[class*="approach-section"] h1,
+[class*="dark-bg"] h1,
+.approach-section h3,
+.business-outcome h3,
+[class*="approach-section"] h3,
+[class*="dark-bg"] h3 {
+    background: linear-gradient(90deg, #ffffff 15%, #ff5e14 85%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
