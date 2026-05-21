@@ -651,7 +651,8 @@ a.secondary-btn:hover {
 .why-choose-section .secondary-btn,
 .approach-section .secondary-btn,
 .impact-cta-section .secondary-btn,
-.about-hero .about-secondary-btn {
+.about-hero .about-secondary-btn,
+.appdev-hero .secondary-btn {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
     border-color: #ffffff !important;
@@ -665,7 +666,8 @@ a.secondary-btn:hover {
 .why-choose-section .secondary-btn:hover,
 .approach-section .secondary-btn:hover,
 .impact-cta-section .secondary-btn:hover,
-.about-hero .about-secondary-btn:hover {
+.about-hero .about-secondary-btn:hover,
+.appdev-hero .secondary-btn:hover {
     background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
