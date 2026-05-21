@@ -705,7 +705,7 @@ a.secondary-btn:hover {
     }
 }
 
-/* GLOBAL LEFT-ALIGNMENT OVERRIDES FOR ALL MODULES (TECHNOLOGIES, SOLUTIONS, & SERVICES) ON TABLET & MOBILE */
+/* GLOBAL CENTER-ALIGNMENT OVERRIDES FOR ALL MODULES (TECHNOLOGIES, SOLUTIONS, & SERVICES) ON TABLET & MOBILE */
 @media (max-width: 1199px) {
 
     .tech-outcomes-container,
@@ -714,8 +714,9 @@ a.secondary-btn:hover {
     .tech-outcomes-content,
     .business-impact-content,
     .outcomes-content {
-        text-align: left !important;
-        align-items: flex-start !important;
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 }
 
@@ -741,20 +742,21 @@ a.secondary-btn:hover {
     .outcome-item,
     .business-impact-item,
     .cta-content,
-    .impact-cta-content {
-        text-align: left !important;
+    .impact-cta-content,
+    .impact-card {
+        text-align: center !important;
     }
 
     .expertise-icon,
     .sol-expertise-icon,
     .modern-expertise-icon,
     .outcome-icon {
-        margin: 0 0 10px 0 !important;
-        display: inline-block !important;
+        margin: 0 auto 10px auto !important;
+        display: block !important;
     }
 }
 
-/* GLOBAL LEFT-ALIGNMENT FOR CONTAINERS ON TABLET */
+/* GLOBAL CENTER-POSITIONING WITH CENTERED TEXT ON TABLET */
 @media (max-width: 1199px) {
 
     .appdev-container,
@@ -765,42 +767,81 @@ a.secondary-btn:hover {
     .about-hero,
     .igx-hero-container,
     .product-WebDev-hero-container {
-        text-align: left !important;
-        align-items: flex-start !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
 
     .appdev-buttons,
     [class*="hero-buttons"],
     .about-hero-buttons,
-    .hero-buttons {
-        justify-content: flex-start !important;
-        align-items: flex-start !important;
+    .hero-buttons,
+    .impact-buttons {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 100% !important;
     }
 
     .appdev-left,
     [class*="hero-left"],
     .about-hero-left {
-        text-align: left !important;
-        align-items: flex-start !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
     }
 
-    /* Reset margins and expand descriptions/paragraphs to 100% width on tablet */
+    /* Center text block elements visually as blocks, and align text center */
+    .hero-heading,
+    .WebDev-hero-heading,
+    .about-hero-heading,
+    .faq-title,
+    .section-title,
+    .testimonials-title,
+    .igx-pricing-title,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
     .hero-description,
     .WebDev-hero-description,
     .about-hero-description,
     [class*="description"],
     [class*="desc"],
+    .hero-proof,
     p {
-        max-width: 100% !important;
+        text-align: center !important;
+        max-width: 800px !important;
         width: 100% !important;
-        margin-left: 0 !important;
+        margin-left: auto !important;
         margin-right: auto !important;
     }
 }
 
 @media (max-width: 768px) {
 
-    /* Enforce elements/containers and text alignment left globally on mobile */
+    /* Enforce elements/containers and text alignment center globally on mobile */
     h1,
     h2,
     h3,
@@ -811,7 +852,7 @@ a.secondary-btn:hover {
     span,
     li,
     a {
-        text-align: left !important;
+        text-align: center !important;
     }
 
     .appdev-container,
@@ -822,34 +863,36 @@ a.secondary-btn:hover {
     .about-hero,
     .igx-hero-container,
     .product-WebDev-hero-container {
-        text-align: left !important;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
 
     .appdev-left,
     [class*="hero-left"],
     .about-hero-left {
-        text-align: left !important;
         display: flex !important;
         flex-direction: column !important;
-        align-items: flex-start !important;
-        /* Align content in the column to the left */
+        align-items: center !important;
+        justify-content: center !important;
         width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
     }
 
     .appdev-buttons,
     [class*="hero-buttons"],
     .about-hero-buttons,
-    .hero-buttons {
+    .hero-buttons,
+    .impact-buttons {
         flex-direction: column !important;
-        align-items: flex-start !important;
-        /* Stack and align buttons left */
-        justify-content: flex-start !important;
+        align-items: center !important;
+        justify-content: center !important;
         width: 100% !important;
-        margin: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        margin: 0 auto !important;
     }
 
     .hero-heading,
@@ -859,6 +902,22 @@ a.secondary-btn:hover {
     .section-title,
     .testimonials-title,
     .igx-pricing-title,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
     .hero-description,
     .WebDev-hero-description,
     .about-hero-description,
@@ -866,13 +925,36 @@ a.secondary-btn:hover {
     [class*="desc"],
     .hero-proof,
     .footer-bottom p,
-    .footer-copyright {
-        text-align: left !important;
-        /* Enforce left text alignment */
+    .footer-copyright,
+    p {
+        text-align: center !important;
+        max-width: 650px !important;
         width: 100% !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
+        margin-left: auto !important;
         margin-right: auto !important;
+    }
+
+    /* Stack list items inside impact CTA in the center */
+    .impact-cta-right ul {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .impact-cta-right li {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    /* Stack card items in the center */
+    .impact-card {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .impact-card img {
+        margin: 0 auto !important;
     }
 }
 
