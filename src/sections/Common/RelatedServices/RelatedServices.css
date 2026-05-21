@@ -1,5 +1,5 @@
-.related-services-section {
-  padding: 60px 0;
+﻿.related-services-section {
+  padding: 30px 0 10px !important;
   border-top: 1px solid #eee;
 }
 
@@ -52,5 +52,8 @@
   transform: translateX(5px);
 }
 
-
-
+@media (max-width: 768px) {
+  .related-services-section {
+    padding: 20px 0 10px !important;
+  }
+}

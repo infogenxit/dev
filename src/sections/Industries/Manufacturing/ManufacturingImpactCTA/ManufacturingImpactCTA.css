@@ -1,5 +1,5 @@
 ﻿.impact-cta-section {
-    padding: 10px 0 30px !important;
+    padding: 10px 0 15px !important;
     background: #fff7f2;
 }
 
@@ -112,7 +112,7 @@
 /* RESPONSIVE DESIGN */
 @media (max-width: 1199px) {
     .impact-cta-section {
-        padding: 20px 24px 30px !important;
+        padding: 20px 24px 15px !important;
     }
 
     .impact-cta-container {
@@ -145,7 +145,7 @@
 
 @media (max-width: 767px) {
     .impact-cta-section {
-        padding: 0 20px 30px !important;
+        padding: 0 20px 15px !important;
     }
 
     .impact-cta-container {
