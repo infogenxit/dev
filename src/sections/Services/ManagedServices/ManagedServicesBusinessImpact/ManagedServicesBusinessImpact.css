@@ -1,5 +1,5 @@
-.business-impact-section {
-    padding: 60px 0;
+﻿.business-impact-section {
+    padding: 80px 0;
     background: #fff7f2;
 }
 
@@ -12,10 +12,8 @@
 /* HEADER */
 .business-impact-header {
     max-width: 1000px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
-
-/* Global Label Applied */
 
 .business-impact-header h2 {
     font-family: "Manrope", sans-serif;
@@ -30,45 +28,58 @@
 .business-impact-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px 80px;
+    gap: 40px 50px;
 }
 
 /* CARD */
-.impact-card{
+.impact-card {
     display: flex;
-    gap: 30px;
-    align-items: center;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: left;
 }
+
 .impact-card img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 8px;
-    margin-bottom: 14px;
     object-fit: cover;
+    flex-shrink: 0;
+}
+
+.impact-content {
+    flex: 1;
 }
 
 .impact-card h4 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #00123C;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    margin-top: 0 !important;
+    color: #00123C !important;
+    -webkit-text-fill-color: #00123C !important;
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
 }
 
 .impact-card p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 160%;
-    color: #555;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 160% !important;
+    color: #555555 !important;
+    margin-bottom: 0 !important;
 }
 
 @media (max-width: 1199px) {
     .business-impact-section {
-        padding: 50px 0;
+        padding: 60px 0;
     }
 
     .business-impact-header {
         max-width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
     }
 
     .business-impact-header h2 {
@@ -76,24 +87,24 @@
     }
 
     .business-impact-grid {
-        gap: 40px 50px;
+        gap: 24px 30px;
     }
 
     .impact-card {
-        gap: 24px;
+        gap: 16px;
     }
 
     .impact-card img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .impact-card h4 {
-        font-size: 20px;
+        font-size: 18px !important;
     }
 
     .impact-card p {
-        font-size: 15px;
+        font-size: 14px !important;
     }
 }
 
@@ -106,8 +117,6 @@
         padding: 0 20px;
     }
 
-    /* Global Label Applied */
-
     .business-impact-header h2 {
         font-size: 28px;
         line-height: 125%;
@@ -115,29 +124,27 @@
 
     .business-impact-grid {
         grid-template-columns: 1fr;
-        gap: 36px;
+        gap: 24px;
     }
 
     .impact-card {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 18px;
+        align-items: flex-start;
+        text-align: left;
+        gap: 12px;
     }
 
     .impact-card img {
-        width: 130px;
-        height: 130px;
+        width: 90px;
+        height: 90px;
     }
 
     .impact-card h4 {
-        font-size: 18px;
+        font-size: 17px !important;
+        margin-bottom: 6px !important;
     }
 
     .impact-card p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 }
-
-
-
