@@ -4,8 +4,7 @@
 }
 
 .content-header {
-  max-width: 900px;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -23,8 +22,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .content-section {
