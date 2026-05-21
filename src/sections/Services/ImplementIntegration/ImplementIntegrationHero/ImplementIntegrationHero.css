@@ -127,5 +127,49 @@
     z-index: 2;
 }
 
+/* Center the hero content on large screens but keep text left-aligned */
+@media (min-width: 1100px) {
+  .appdev-container {
+    justify-content: center;
+    gap: 60px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .appdev-left {
+    flex: 0 0 620px;
+    max-width: 620px;
+    text-align: left;
+    /* ensure text remains left aligned */
+  }
+
+  .appdev-right {
+    flex: 0 0 485px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Nudge the video to visually overlap like the reference screen */
+  .appdev-video-wrapper {
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 1099px) {
+  .appdev-container {
+    flex-direction: column-reverse;
+    gap: 36px;
+    align-items: flex-start;
+  }
+
+  .appdev-video-wrapper,
+  .bg,
+  .appdev-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 
