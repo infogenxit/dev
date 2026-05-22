@@ -172,7 +172,6 @@ const Testimonials = () => {
         setIndex(testimonials.length + 2);
       }, 800);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
   /* RE-ENABLE ANIMATION */
   useEffect(() => {
