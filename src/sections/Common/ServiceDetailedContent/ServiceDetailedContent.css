@@ -1,5 +1,5 @@
 .service-detailed-content {
-  padding: 20px 0 50px;
+  padding: 0px 0 30px;
   color: #333;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .content-header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -27,7 +27,7 @@
 .detailed-grid {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .content-section {
