@@ -7,7 +7,7 @@
 .cta-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 40px 50px; /* Reduced vertical padding to decrease height */
+    padding: 25px 50px 40px; /* Reduced top padding from 40px to 25px */
     background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
     border-radius: 28px;
     display: flex;
@@ -26,7 +26,7 @@
 .cta-right {
     flex: 0 0 350px;
     text-align: left;
-    margin-top: 85px; /* Shift down to avoid overlap with the non-wrapping title */
+    margin-top: 70px; /* Shifted up slightly to match the reduced top gap */
 }
 
 .cta-subtitle {
@@ -55,7 +55,7 @@
     -webkit-background-clip: border-box !important;
     line-height: 1.25;
     margin-top: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 25px; /* Added gap below headline as requested */
     max-width: 100% !important;
     text-align: left !important;
     margin-left: 0 !important;
