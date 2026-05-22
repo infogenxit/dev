@@ -7,12 +7,25 @@
 .cta-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 20px 40px; /* Reduced vertical padding */
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
+    padding: 60px 80px; /* Matched the visual padding of the image */
+    background: linear-gradient(90deg, #00123c 0%, #00123c 45%, #e0540d 100%);
     border-radius: 28px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #ffffff;
-    /* Ensure banner text is white */
+    gap: 40px;
+}
+
+.cta-left {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.cta-right {
+    flex: 0 0 350px;
+    text-align: left;
 }
 
 .cta-subtitle {
@@ -24,7 +37,7 @@
     margin-bottom: 8px;
 }
 
-.cta-title {
+.cta-left .cta-title {
     font-family: "Manrope", sans-serif;
     font-size: 36px; /* Reduced from 42px to be more compact */
     font-weight: 800;
@@ -40,18 +53,18 @@
     -webkit-background-clip: border-box !important;
     line-height: 1.25;
     margin-top: 0px;
-    margin-bottom: 8px; /* Reduced from 10px */
-    max-width: 1100px !important;
-    text-align: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-bottom: 12px;
+    max-width: 100% !important;
+    text-align: left !important;
+    margin-left: 0 !important;
 }
 
 .cta-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
+    margin-top: 25px;
 }
 
 .cta-primary {
@@ -64,8 +77,8 @@
     font-weight: 600;
 
     color: #ffffff !important;
-    background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
-    /* Brand Navy/Orange gradient */
+    background: linear-gradient(90deg, #ff5e14 0%, #cc5500 100%) !important;
+    /* Brand Orange gradient */
     cursor: pointer;
     height: 48px !important; /* Perfect height matching with secondary button, slightly reduced from 50px */
 
@@ -74,7 +87,7 @@
 
 .cta-primary:hover {
     transform: translateY(-5px) !important;
-    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
+    background: linear-gradient(90deg, #cc5500 0%, #ff5e14 100%) !important;
     /* Flip gradient on hover */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
 }
@@ -133,9 +146,31 @@
     }
 
     .cta-container {
-        padding: 20px 20px; /* Reduced vertical padding */
+        padding: 40px 30px; 
         border-radius: 20px;
-        text-align: center !important;
+        flex-direction: column;
+    }
+
+    .cta-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .cta-right {
+        max-width: 100%;
+        flex: auto;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .cta-checklist {
+        margin: 0 auto 20px auto;
+        max-width: max-content;
+    }
+
+    .cta-checklist li {
+        justify-content: flex-start;
     }
 
     .cta-subtitle {
@@ -160,6 +195,7 @@
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 12px;
     }
 
@@ -177,22 +213,53 @@
     font-size: 15px; /* Reduced from 17px */
     font-weight: 400;
     color: #ffffff;
-    max-width: 1100px;
-    margin: 0 auto 10px !important; /* Explicitly reset top margin and set bottom margin to 10px */
+    max-width: 100%;
+    margin: 0 0 10px 0 !important; /* Explicitly reset top margin and set bottom margin to 10px */
     line-height: 1.6;
-    text-align: center;
+    text-align: left;
     -webkit-text-fill-color: #ffffff !important;
+}
+
+.cta-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.cta-checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.cta-check-icon {
+    color: #ffffff;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
 .cta-call-us {
     font-family: "Manrope", sans-serif;
-    font-size: 16px; /* Reduced from 17px */
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     color: #ffffff;
-    opacity: 0.9;
-    margin: 0 auto 12px !important; /* Explicitly reset margins and set bottom margin to 12px */
-    text-align: center !important;
-    /* Center call-to-action line */
+    opacity: 0.95;
+    margin: 0 !important; 
+    text-align: left !important;
+    line-height: 1.5;
+}
+
+.cta-call-us strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 4px;
 }
 
 /*for smaller devices*/

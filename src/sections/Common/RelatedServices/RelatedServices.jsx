@@ -3,30 +3,30 @@ import { Link } from 'react-router-dom';
 import './RelatedServices.css';
 const RelatedServices = ({ currentService, items }) => {
   const allServices = [
-    {
-      name: "Intelligent Automation",
+    { 
+      name: "Intelligent Automation", 
       path: "/solutions/intelligent-automation",
       description: "Streamline workflows and reduce operational friction with AI-driven automation."
     },
-    {
-      name: "Modern Application",
+    { 
+      name: "Modern Application", 
       path: "/solutions/modern-applications",
-      description: "Build robust applications designed for seamless integration and performance."
+      description: "Build scalable, cloud-native applications tailored to your business objectives."
     },
-    {
-      name: "API Integration",
+    { 
+      name: "API Integration", 
       path: "/solutions/api-integration",
       description: "Connect your business ecosystem with seamless API-first solutions."
     },
-    {
-      name: "Data & Analytics",
+    { 
+      name: "Data & Analytics", 
       path: "/solutions/data-analytics-ai",
-      description: "Turn your business data into actionable intelligence and strategic decision-support."
+      description: "Unlock actionable insights and drive business growth with advanced data analytics."
     },
-    {
-      name: "Digital Transformation",
+    { 
+      name: "Digital Transformation", 
       path: "/solutions/digital-transformation",
-      description: "Modernise your business ecosystem with global digital strategy and engineering."
+      description: "Transform your business operations and customer experiences with digital solutions."
     }
   ];
   const filteredServices = items || allServices
