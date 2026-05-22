@@ -1,6 +1,6 @@
 .appdev-expertise-section {
     background: #fff6f0;
-    padding: 10px 0px 20px;
+    padding: 10px 0px 50px;
 }
 
 .appdev-expertise-container {
@@ -46,7 +46,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
-    row-gap: 30px; /* Reduced from 60px to shrink vertical spacing between rows */
+    row-gap: 30px;
 }
 
 /* ---------- ITEM ---------- */
@@ -80,7 +80,7 @@
 @media (max-width: 1199px) {
     .appdev-expertise-header {
         max-width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
     .appdev-expertise-header h2 {
@@ -90,7 +90,7 @@
     .appdev-expertise-grid {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
-        row-gap: 50px;
+        row-gap: 25px;
     }
 
     .expertise-item {
