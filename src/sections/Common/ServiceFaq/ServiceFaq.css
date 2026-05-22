@@ -1,7 +1,7 @@
 .service-faq-section {
-  padding: 20px 0 30px !important; /* Tighter layout below CTA banner and above related solutions */
-  background-color: transparent !important; /* Transparent background to blend seamlessly */
-  margin-top: 5px !important; /* Tighter gap below the CTA banner */
+  padding: 20px 20px 30px !important; /* Preserves container side padding */
+  background-color: transparent !important;
+  margin-top: 5px !important;
 }
 
 .faq-title {
@@ -82,7 +82,7 @@
 /* Responsive Design for mobile */
 @media (max-width: 768px) {
   .service-faq-section {
-    padding: 15px 0 20px !important;
+    padding: 15px 20px 20px !important;
     margin-top: 5px !important;
   }
 
