@@ -1,59 +1,22 @@
-import "./IntelligentAutomationImpactCTA.css";
-import { useNavigate } from "react-router-dom";
-import Correct from "../../../../assets/images/correct.webp";
-const AppDevImpactCTA = () => {
-  const navigate = useNavigate();
+import GlobalCtaBanner from "../../../../components/Common/GlobalCtaBanner/GlobalCtaBanner";
+
+const IntelligentAutomationImpactCTA = () => {
   return (
-    <section className="impact-cta-section">
-      <div className="impact-cta-container">
-        <div className="impact-cta-left">
-          <h2>
-            Ready to Unlock Intelligent <span>Automation?</span>
-          </h2>
-          <p>
-            If manual work, process delays, or disconnected workflows are
+    <GlobalCtaBanner 
+      title={
+        <>
+          Ready to Unlock Intelligent <span>Automation?</span>
+        </>
+      }
+      description={
+        <>
+          If manual work, process delays, or disconnected workflows are
             slowing your business down, Infogenx can help you automate with
             clarity.
-          </p>
-          <div className="impact-buttons">
-            <button
-              className="primary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              Unlock Intelligent Automation
-            </button>
-            <button
-              className="secondary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              Talk to an Expert <span>↗</span>
-            </button>
-          </div>
-        </div>
-        <div className="impact-cta-right">
-          <div className="impact-cta-content">
-            <ul>
-              <li>
-                <img src={Correct} alt="correct" /> Smarter workflows, less
-                manual effort
-              </li>
-              <li>
-                <img src={Correct} alt="correct" /> Connected systems with
-                greater control
-              </li>
-              <li>
-                <img src={Correct} alt="correct" /> Faster operations,
-                measurable impact
-              </li>
-            </ul>
-            <p className="impact-note">Let us build the future together.<br /><strong>Call us now on +61 403339424.</strong></p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </>
+      }
+    />
   );
 };
-export default AppDevImpactCTA;
 
-
-
+export default IntelligentAutomationImpactCTA;

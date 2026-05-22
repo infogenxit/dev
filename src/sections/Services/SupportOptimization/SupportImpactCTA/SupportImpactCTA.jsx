@@ -1,53 +1,21 @@
-import "./SupportImpactCTA.css";
-import { useNavigate } from "react-router-dom";
-import Correct from "../../../../assets/images/correct.webp";
-const AppDevImpactCTA = () => {
-  const navigate = useNavigate();
+import GlobalCtaBanner from "../../../../components/Common/GlobalCtaBanner/GlobalCtaBanner";
+
+const SupportImpactCTA = () => {
   return (
-    <section className="impact-cta-section">
-      <div className="impact-cta-container">
-        <div className="impact-cta-left">
-          <h2>Ready to Optimise Your Platform?</h2>
-          <p>
-            Boost performance and get seamless support with Infogenx’s expert
+    <GlobalCtaBanner 
+      title={
+        <>
+          Ready to Optimise Your Platform?
+        </>
+      }
+      description={
+        <>
+          Boost performance and get seamless support with Infogenx’s expert
             platform optimisation services.
-          </p>
-          <div className="impact-buttons">
-            <button
-              className="primary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              Request Optimisation Review
-            </button>
-            <button
-              className="secondary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              Talk to an Expert <span>↗</span>
-            </button>
-          </div>
-        </div>
-        <div className="impact-cta-right">
-          <div className="impact-cta-content">
-            <ul>
-              <li>
-                <img src={Correct} alt="correct" /> Enterprise-ready solutions
-              </li>
-              <li>
-                <img src={Correct} alt="correct" /> Technology you can trust
-              </li>
-              <li>
-                <img src={Correct} alt="correct" /> Outcomes you can measure
-              </li>
-            </ul>
-            <p className="impact-note">Let us build the future together.<br /><strong>Call us now on +61 403339424.</strong></p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </>
+      }
+    />
   );
 };
-export default AppDevImpactCTA;
 
-
-
+export default SupportImpactCTA;
