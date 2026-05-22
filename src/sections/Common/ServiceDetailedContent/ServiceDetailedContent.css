@@ -1,10 +1,16 @@
 .service-detailed-content {
-  padding: 20px 0;
+  padding: 20px 0 50px;
   color: #333;
 }
 
+.service-detailed-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .content-header {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
