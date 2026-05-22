@@ -7,7 +7,7 @@
 .cta-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 60px 50px; /* Reduced padding to make room for non-wrapping title */
+    padding: 40px 50px; /* Reduced vertical padding to decrease height */
     background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
     border-radius: 28px;
     display: flex;

@@ -3,7 +3,7 @@ import IconA from "../../../../assets/images/icon1.webp";
 import IconB from "../../../../assets/images/icon2.webp";
 import IconC from "../../../../assets/images/icon3.webp";
 import IconD from "../../../../assets/images/icon4.webp";
-import IconE from "../../../../assets/images/icon5.webp";
+
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">

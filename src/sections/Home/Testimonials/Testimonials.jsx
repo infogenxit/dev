@@ -172,7 +172,7 @@ const Testimonials = () => {
         setIndex(testimonials.length + 2);
       }, 800);
     }
-  }, [index, testimonials.length]);
+  }, [index]);
   /* RE-ENABLE ANIMATION */
   useEffect(() => {
     if (!animate) {
