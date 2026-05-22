@@ -7,25 +7,26 @@
 .cta-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 60px 80px; /* Matched the visual padding of the image */
-    background: linear-gradient(90deg, #00123c 0%, #00123c 45%, #e0540d 100%);
+    padding: 60px 50px; /* Reduced padding to make room for non-wrapping title */
+    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
     border-radius: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
-    gap: 40px;
+    gap: 30px;
 }
 
 .cta-left {
     flex: 1;
     text-align: left;
-    max-width: 600px;
+    max-width: calc(100% - 380px); /* Allow title to stretch but leave room for right side */
 }
 
 .cta-right {
     flex: 0 0 350px;
     text-align: left;
+    margin-top: 55px; /* Shift down to avoid overlap with the non-wrapping title */
 }
 
 .cta-subtitle {
@@ -39,8 +40,9 @@
 
 .cta-left .cta-title {
     font-family: "Manrope", sans-serif;
-    font-size: 36px; /* Reduced from 42px to be more compact */
+    font-size: 32px; /* Reduced slightly so it fits on one line */
     font-weight: 800;
+    white-space: nowrap;
     color: #ffffff !important;
     /* Force high-contrast solid white color */
     -webkit-text-fill-color: #ffffff !important;
@@ -77,8 +79,8 @@
     font-weight: 600;
 
     color: #ffffff !important;
-    background: linear-gradient(90deg, #ff5e14 0%, #cc5500 100%) !important;
-    /* Brand Orange gradient */
+    background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
+    /* Brand Navy/Orange gradient */
     cursor: pointer;
     height: 48px !important; /* Perfect height matching with secondary button, slightly reduced from 50px */
 
@@ -87,7 +89,7 @@
 
 .cta-primary:hover {
     transform: translateY(-5px) !important;
-    background: linear-gradient(90deg, #cc5500 0%, #ff5e14 100%) !important;
+    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
     /* Flip gradient on hover */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
 }
@@ -119,6 +121,13 @@
 }
 
 /* Responsive Design for tablet */
+
+@media (max-width: 1100px) {
+    .cta-left .cta-title {
+        white-space: normal;
+        font-size: 28px;
+    }
+}
 
 @media (max-width: 1024px) {
     .cta-section {
@@ -213,7 +222,7 @@
     font-size: 15px; /* Reduced from 17px */
     font-weight: 400;
     color: #ffffff;
-    max-width: 100%;
+    max-width: 600px;
     margin: 0 0 10px 0 !important; /* Explicitly reset top margin and set bottom margin to 10px */
     line-height: 1.6;
     text-align: left;
@@ -237,7 +246,7 @@
 }
 
 .cta-check-icon {
-    color: #ffffff;
+    color: #ff5e14;
     margin-right: 12px;
     width: 20px;
     height: 20px;
