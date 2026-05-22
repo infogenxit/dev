@@ -26,7 +26,7 @@
 .cta-right {
     flex: 0 0 350px;
     text-align: left;
-    margin-top: 55px; /* Shift down to avoid overlap with the non-wrapping title */
+    margin-top: 85px; /* Shift down to avoid overlap with the non-wrapping title */
 }
 
 .cta-subtitle {
