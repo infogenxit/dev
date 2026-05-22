@@ -333,6 +333,9 @@ select option{
         color: blue;
         font-size: 14px;
         transition: all 0.3s ease;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
 
 }
 .checkbox-group input{

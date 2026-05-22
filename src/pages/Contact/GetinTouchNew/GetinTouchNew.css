@@ -1166,6 +1166,9 @@ body {
 .contact-form select {
     letter-spacing: -0.5px !important; 
     padding-right: 30px !important; 
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
 }
 div.page-intro-header.container {
     padding-top: 100px !important; /* Pushes content down past the fixed navbar */
