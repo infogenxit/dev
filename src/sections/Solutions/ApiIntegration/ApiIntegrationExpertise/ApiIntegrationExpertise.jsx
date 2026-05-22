@@ -26,8 +26,8 @@ const AppDevExpertise = () => {
             </p>
           </div>
           <div className="expertise-item">
-            <h4>No Duplication</h4>
             <img src={IconB} alt="No manual syncing" className="expertise-icon" />
+            <h4>No Duplication</h4>
             <p>
               Eliminate duplication or manual syncing. Our integrations ensure data is entered once and reflected everywhere it needs to be.
             </p>
