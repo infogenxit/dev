@@ -929,11 +929,11 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #ffffff;
-    background: linear-gradient(90deg, #ffffff 45%, #F36B2A 95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff !important;
+    background: linear-gradient(90deg, #ffffff 45%, #F36B2A 95%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
 }
 
 @media (max-width: 1024px) {
@@ -1302,6 +1302,8 @@ body .contact-form-container .contact-form textarea {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
     margin-bottom: 20px;
     color: #00123c;
 }
@@ -1360,4 +1362,10 @@ body .contact-form-container .contact-form textarea {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+body .contact-form .submit-btn {
+    display: flex !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
