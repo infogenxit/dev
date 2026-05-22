@@ -12,7 +12,7 @@
 /* ---------- HEADER ---------- */
 .appdev-expertise-header {
     max-width: 1000px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 /* Global Label Applied */
@@ -32,7 +32,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
-    row-gap: 60px;
+    row-gap: 30px;
 }
 
 /* ---------- ITEM ---------- */
@@ -66,7 +66,7 @@
 @media (max-width: 1199px) {
     .appdev-expertise-header {
         max-width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
     .appdev-expertise-header h2 {
@@ -76,7 +76,7 @@
     .appdev-expertise-grid {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
-        row-gap: 50px;
+        row-gap: 25px;
     }
 
     .expertise-item {
@@ -110,7 +110,7 @@
 
     .appdev-expertise-grid {
         grid-template-columns: 1fr;
-        row-gap: 40px;
+        row-gap: 20px;
     }
 
     .expertise-item {
