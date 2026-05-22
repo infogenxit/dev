@@ -2,11 +2,11 @@ import { Suspense, lazy } from "react";
 import LoadingScreen from "../components/Common/LoadingScreen/LoadingScreen";
 
 const Loadable = (Component) => (props) =>
-  (
-    <Suspense fallback={<LoadingScreen />}>
-      <Component {...props} />
-    </Suspense>
-  );
+(
+  <Suspense fallback={<LoadingScreen />}>
+    <Component {...props} />
+  </Suspense>
+);
 
 // Pages
 export const Home = Loadable(lazy(() => import("../pages/Home/Home")));
@@ -38,6 +38,11 @@ export const DataAnalyticsAI = Loadable(lazy(() => import("../pages/Solutions/Da
 export const DigitalTransformation = Loadable(lazy(() => import("../pages/Solutions/DigitalTransformation/DigitalTransformation")));
 export const IntelligentAutomation = Loadable(lazy(() => import("../pages/Solutions/IntelligentAutomation/IntelligentAutomation")));
 export const ModernApplication = Loadable(lazy(() => import("../pages/Solutions/ModernApplication/ModernApplication")));
+export const CustomSoftwareDevelopment = Loadable(lazy(() => import("../pages/Solutions/CustomSoftwareDevelopment/CustomSoftwareDevelopment")));
+export const MobileAppDevelopmentNew = Loadable(lazy(() => import("../pages/Solutions/MobileAppDevelopment/MobileAppDevelopment")));
+export const LowCodeDevelopment = Loadable(lazy(() => import("../pages/Solutions/LowCodeDevelopment/LowCodeDevelopment")));
+export const BusinessIntelligence = Loadable(lazy(() => import("../pages/Solutions/BusinessIntelligence/BusinessIntelligence")));
+export const ArtificialIntelligenceNew = Loadable(lazy(() => import("../pages/Solutions/ArtificialIntelligence/ArtificialIntelligence")));
 export const MicrosoftSolution = Loadable(lazy(() => import("../pages/Platforms/MicrosoftSolutions/MicrosoftSolution")));
 export const ZohoSolution = Loadable(lazy(() => import("../pages/Platforms/ZohoSolutions/ZohoSolution")));
 export const OdooSolution = Loadable(lazy(() => import("../pages/Platforms/OdooSolutions/OdooSolution")));

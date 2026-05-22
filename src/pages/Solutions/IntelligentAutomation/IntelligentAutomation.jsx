@@ -76,6 +76,24 @@ const IntelligentAutomation = () => {
     { name: "Intelligent Automation", path: PATHS.intelligentAutomation }
   ];
 
+  const relatedItems = [
+    {
+      title: "Modern Applications",
+      description: "Build robust applications designed for seamless integration and performance.",
+      link: PATHS.modernApplications
+    },
+    {
+      title: "API Integration",
+      description: "Connect your business ecosystem with seamless API-first solutions.",
+      link: PATHS.apiIntegration
+    },
+    {
+      title: "Data & Analytics",
+      description: "Turn your business data into actionable intelligence and strategic decision-support.",
+      link: PATHS.dataAnalyticsAi
+    }
+  ];
+
   return (
     <>
       <SEO
@@ -95,7 +113,7 @@ const IntelligentAutomation = () => {
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqData} />
-      <RelatedServices currentService={PATHS.intelligentAutomation} />
+      <RelatedServices currentService={PATHS.intelligentAutomation} items={relatedItems} />
     </>
   );
 };

@@ -3,11 +3,31 @@ import { Link } from 'react-router-dom';
 import './RelatedServices.css';
 const RelatedServices = ({ currentService, items }) => {
   const allServices = [
-    { name: "Intelligent Automation", path: "/solutions/intelligent-automation" },
-    { name: "Modern Application", path: "/solutions/modern-applications" },
-    { name: "API Integration", path: "/solutions/api-integration" },
-    { name: "Data & Analytics", path: "/solutions/data-analytics-ai" },
-    { name: "Digital Transformation", path: "/solutions/digital-transformation" }
+    {
+      name: "Intelligent Automation",
+      path: "/solutions/intelligent-automation",
+      description: "Streamline workflows and reduce operational friction with AI-driven automation."
+    },
+    {
+      name: "Modern Application",
+      path: "/solutions/modern-applications",
+      description: "Build robust applications designed for seamless integration and performance."
+    },
+    {
+      name: "API Integration",
+      path: "/solutions/api-integration",
+      description: "Connect your business ecosystem with seamless API-first solutions."
+    },
+    {
+      name: "Data & Analytics",
+      path: "/solutions/data-analytics-ai",
+      description: "Turn your business data into actionable intelligence and strategic decision-support."
+    },
+    {
+      name: "Digital Transformation",
+      path: "/solutions/digital-transformation",
+      description: "Modernise your business ecosystem with global digital strategy and engineering."
+    }
   ];
   const filteredServices = items || allServices
     .filter(service => service.path !== currentService)
