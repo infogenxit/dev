@@ -20,19 +20,26 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="error-boundary-container">
-          <h1 className="error-title">
-            Something went wrong.
-          </h1>
-          <p className="error-subtitle">
-            We're sorry for the inconvenience. Please try refreshing the page.
-          </p>
-          <button
-            onClick={() => window.location.assign("/")}
-            className="error-home-btn"
-          >
-            Go to Home
-          </button>
+        <div className="error-boundary-wrapper">
+          {/* Animated Background Orbs */}
+          <div className="error-blob error-blob-1"></div>
+          <div className="error-blob error-blob-2"></div>
+          
+          {/* Glassmorphic Error Card */}
+          <div className="error-boundary-card">
+            <span className="error-icon" role="img" aria-label="warning">⚠️</span>
+            <h1 className="error-title">Oops!</h1>
+            <p className="error-subtitle">
+              Something went wrong. We're sorry for the inconvenience.<br/>
+              Please try refreshing the page or return home.
+            </p>
+            <button
+              onClick={() => window.location.assign("/")}
+              className="error-home-btn"
+            >
+              Go to Home
+            </button>
+          </div>
         </div>
       );
     }
