@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ErrorBoundary.css";
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -18,37 +20,16 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            minHeight: "100vh",
-            background: "#0a0a0a",
-            color: "#ffffff",
-            fontFamily: "'Manrope', sans-serif",
-            textAlign: "center",
-            padding: "2rem",
-          }}
-        >
-          <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
+        <div className="error-boundary-container">
+          <h1 className="error-title">
             Something went wrong.
           </h1>
-          <p style={{ color: "#aaa", marginBottom: "2rem", fontSize: "1.1rem" }}>
+          <p className="error-subtitle">
             We're sorry for the inconvenience. Please try refreshing the page.
           </p>
           <button
             onClick={() => window.location.assign("/")}
-            style={{
-              background: "#4F46E5",
-              color: "#fff",
-              border: "none",
-              padding: "0.85rem 2rem",
-              borderRadius: "8px",
-              fontSize: "1rem",
-              cursor: "pointer",
-            }}
+            className="error-home-btn"
           >
             Go to Home
           </button>
