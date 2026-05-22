@@ -65,9 +65,6 @@ const ServiceHighlight = () => {
 
   const sectionRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const isHovered = useRef(false);
-  const lastScrollTime = useRef(0);
-
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -90,55 +87,21 @@ const ServiceHighlight = () => {
       }
     };
 
-    const handleWheel = (e) => {
-      if (isHovered.current) {
-        const now = Date.now();
-        if (now - lastScrollTime.current < 1000) return; 
-
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 5 && rect.bottom >= window.innerHeight - 5) {
-          const totalCards = services.length;
-          const windowHeight = window.innerHeight;
-          const totalScrollable = section.offsetHeight - windowHeight;
-          const segmentHeight = totalScrollable / totalCards;
-
-          if (e.deltaY > 0 && activeIndex < totalCards - 1) {
-            e.preventDefault();
-            lastScrollTime.current = now;
-            const nextIndex = activeIndex + 1;
-            const targetScroll = section.offsetTop + (nextIndex * segmentHeight) + (segmentHeight / 2);
-            window.scrollTo({ top: targetScroll, behavior: "smooth" });
-          } else if (e.deltaY < 0 && activeIndex > 0) {
-            e.preventDefault();
-            lastScrollTime.current = now;
-            const prevIndex = activeIndex - 1;
-            const targetScroll = section.offsetTop + (prevIndex * segmentHeight) + (segmentHeight / 2);
-            window.scrollTo({ top: targetScroll, behavior: "smooth" });
-          }
-        }
-      }
-    };
-
-
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleScroll);
-    window.addEventListener("wheel", handleWheel, { passive: false });
     handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleScroll);
-      window.removeEventListener("wheel", handleWheel);
     };
-  }, [services.length, activeIndex]);
+  }, [services.length]);
 
   return (
     <section
       className="service-section"
       ref={sectionRef}
       style={{ height: `${services.length * 105}vh` }} /* Reduced from 120vh to eliminate bottom gap */
-      onMouseEnter={() => (isHovered.current = true)}
-      onMouseLeave={() => (isHovered.current = false)}
     >
       <div className="service-sticky">
         <div className="service-header-container">
@@ -168,7 +131,7 @@ const ServiceHighlight = () => {
                       : "translateY(100vh)",
                   opacity: isFuture ? 0 : 1,
                   zIndex: i + 10,
-                  transition: "transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease",
+                  transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease",
                   pointerEvents: isActive ? "all" : "none",
                 }}
               >

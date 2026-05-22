@@ -8,7 +8,7 @@
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -79,18 +79,26 @@
 }
 
 .industry-footer-note {
-    font-weight: 600;
+    font-weight: 500;
     color: #00123c;
-    background: rgba(255, 94, 20, 0.04); /* Translucent peach background matching label pills */
-    padding: 20px 25px 20px 30px;
-    border-radius: 0 16px 16px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 246, 240, 0.95) 100%);
+    padding: 22px 25px 22px 45px;
+    border-radius: 16px;
     margin-top: 40px;
-    line-height: 1.7;
-    font-size: 1.02rem;
-    box-shadow: 0 5px 15px rgba(255, 94, 20, 0.02);
+    line-height: 1.8;
+    font-size: 0.98rem;
+    box-shadow: 0 15px 35px rgba(0, 18, 60, 0.05), 0 5px 15px rgba(255, 94, 20, 0.03);
+    border: 1px solid rgba(255, 94, 20, 0.12);
     position: relative;
     overflow: hidden;
     text-align: left !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industry-footer-note:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 94, 20, 0.25);
+    box-shadow: 0 20px 45px rgba(0, 18, 60, 0.08), 0 8px 20px rgba(255, 94, 20, 0.05);
 }
 
 .industry-footer-note::before {
@@ -101,6 +109,20 @@
     width: 5px;
     height: 100%;
     background: linear-gradient(180deg, #00123c 0%, #ff5e14 100%);
+}
+
+.industry-footer-note::after {
+    content: "“";
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    font-size: 8rem;
+    font-family: "Georgia", serif;
+    color: #ff5e14;
+    opacity: 0.08;
+    pointer-events: none;
+    line-height: 1;
+    font-weight: 900;
 }
 
 .industry-visual {

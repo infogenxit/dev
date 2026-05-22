@@ -1,4 +1,4 @@
-﻿.service-faq-section {
+.service-faq-section {
   padding: 20px 0 30px !important; /* Tighter layout below CTA banner and above related solutions */
   background-color: transparent !important; /* Transparent background to blend seamlessly */
   margin-top: 5px !important; /* Tighter gap below the CTA banner */
@@ -43,9 +43,9 @@
 
 .faq-question h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   color: #00123c;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .faq-toggle {

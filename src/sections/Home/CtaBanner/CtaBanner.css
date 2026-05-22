@@ -1,6 +1,6 @@
 .cta-section {
     padding: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
     background: #fff7f2;
 }
 
@@ -165,7 +165,7 @@
 
     .cta-description {
         margin-bottom: 15px;
-        text-align: left;
+        text-align: center;
         margin-left: 0;
     }
 
@@ -192,11 +192,11 @@
     font-size: 17px;
     font-weight: 400;
     color: #ffffff;
-    max-width: 850px;
+    max-width: 1100px;
     margin-left: auto !important;
     margin-right: auto !important;
     line-height: 1.6;
-    text-align: left;
+    text-align: center;
     transform: translateX(30px);
     -webkit-text-fill-color: #ffffff !important;
 }
@@ -227,5 +227,11 @@
     .cta-secondary {
         font-size: 14px;
         padding: 12px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-br {
+        display: none;
     }
 }
