@@ -26,7 +26,7 @@
 }
 
 .audit-left p {
-    color: #555;
+    color: #333;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -34,7 +34,7 @@
 .audit-left h4 {
     margin-bottom: 10px;
     display: inline-block;
-        background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #EB632A 89.61%);
+        background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, var(--secondary-color) 89.61%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
 }
@@ -46,7 +46,7 @@
 
 .audit-left li {
     margin-bottom: 8px;
-    color: #444;
+    color: #333;
 } */
 
 /* RIGHT */
@@ -86,7 +86,7 @@
     width: 100%;
     margin-top: 20px;
     padding: 14px;
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -102,10 +102,10 @@
         background-image:
             linear-gradient(#ffffff, #ffffff),
             linear-gradient(110deg,
-                #081256 0%,
-                #001b5e 35%,
-                #eb632a 70%,
-                #f36b2a 100%);
+                var(--primary-color) 0%,
+                var(--primary-color) 35%,
+                var(--secondary-color) 70%,
+                var(--secondary-color) 100%);
         background-origin: border-box;
         background-clip: padding-box;
 } */
@@ -129,7 +129,7 @@
 .did-you-know h5 {
     margin-bottom: 10px;
     display: inline-block;
-    background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #EB632A 89.61%);
+    background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, var(--secondary-color) 89.61%);
     -webkit-text-fill-color: transparent;
         background-clip: text;
 }
@@ -145,7 +145,7 @@
 }
 
 .did-you-know {
-    border-left: 4px solid #d33e00;
+    border-left: 4px solid var(--secondary-color);
 }
 
 .did-you-know p {
@@ -234,7 +234,7 @@
 }
 
 .strategy-left h1 span {
-    color: #d33e00;
+    color: var(--secondary-color);
 }
 
 .subtitle {
@@ -248,7 +248,7 @@
 .lux-divider {
     height: 1px;
     /* width: 80px; */
-    background: linear-gradient(to right, #d33e00, transparent);
+    background: linear-gradient(to right, var(--secondary-color), transparent);
     margin-bottom: 40px;
 }
 
@@ -346,7 +346,7 @@ input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border-color: #d33e00;
+    border-color: var(--secondary-color);
     background: rgba(255, 255, 255, 0.08);
 }
 
@@ -375,7 +375,7 @@ textarea::placeholder {
     padding: 16px;
     border-radius: 40px;
     border: none;
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);;
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);;
     color: #fff;
     font-size: 15px;
     font-weight: 600;

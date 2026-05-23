@@ -1,6 +1,6 @@
 .tech-web-section {
     position: relative;
-    background: linear-gradient(180deg, #121824, #0e1420);
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-color));
     padding: 120px 0;
     overflow: hidden;
 }
@@ -74,7 +74,7 @@
     display: block;
     font-size: 13px;
     font-weight: 600;
-    color: #ff6a00;
+    color: var(--secondary-color);
     margin-top: 14px;
 }
 
@@ -112,7 +112,7 @@
     right: -60px;
     width: 180px;
     height: 180px;
-    background: linear-gradient(135deg, #ff6a00, #ff9d6c);
+    background: linear-gradient(135deg, var(--secondary-color), #ff9d6c);
     border-radius: 50px;
     transform: rotate(-25deg);
 }

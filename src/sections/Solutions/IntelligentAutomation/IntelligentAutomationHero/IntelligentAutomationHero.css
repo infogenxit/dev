@@ -25,7 +25,7 @@
   font-size: 49px;
   line-height: 120%;
   margin-top: 0;
-  color: #171D27;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
@@ -50,7 +50,7 @@
     font-family: "Manrope", sans-serif; 
     font-weight: 600; 
     font-size: 17px; 
-    background: linear-gradient(135deg, #ff6a00, #ff5e14); 
+    background: linear-gradient(135deg, var(--secondary-color), #ff5e14); 
     color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -63,8 +63,8 @@
     font-weight: 600;
     font-size: 17px;
     background: transparent;
-    color: #ff6a00;
-    border: 2px solid #ff6a00;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -74,7 +74,7 @@
 
 .secondary-btn span {
     font-size: 16px;
-    color: #ff6a00;
+    color: var(--secondary-color);
     transition: transform 0.3s ease;
 }
 
@@ -87,7 +87,7 @@
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(255, 106, 0, 0.2);
     background: #ffffff;
-    color: #ff6a00;
+    color: var(--secondary-color);
     border-color: #ffffff;
 }
 
@@ -111,7 +111,7 @@
     right: 20px;
     left: 0;
     bottom: 0;
-    background: #d33e00;
+    background: var(--secondary-color);
     border-radius: 50px;
 }
 

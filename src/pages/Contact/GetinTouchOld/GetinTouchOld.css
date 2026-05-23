@@ -25,7 +25,7 @@
     font-size: 49px;
     line-height: 120%;
     margin-top: 0;
-    color: #171D27;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -33,7 +33,7 @@
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     line-height: 160%;
-    color: #555;
+    color: #333;
     margin-bottom: 32px;
 }
 
@@ -60,7 +60,7 @@
     right: 20px;
     left: 0;
     bottom: 0;
-    background: #d33e00;
+    background: var(--secondary-color);
     border-radius: 50px;
 }
 
@@ -124,7 +124,7 @@
 .location-block p {
     font-size: 16px;
     line-height: 150%;
-    color: #555;
+    color: #333;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -168,7 +168,7 @@
 .contact-form input:focus,.contact-form textarea:focus {
     outline: none;
     border: 2px solid transparent;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
     
@@ -198,14 +198,14 @@
         color: #ffffff;
         cursor: pointer;
        
-        background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+        background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .thank-you-message{
     text-align: center;
     padding: 40px 20px;
     border: 2px solid transparent;
-        background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+        background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
         background-origin: border-box;
         background-clip: padding-box;
         transition: all 0.2s ease;
@@ -221,7 +221,7 @@
 .thank-you-message p{
     font-size: 16px;
         line-height: 150%;
-        color: #555;
+        color: #333;
         font-weight: 500;
 }
 .thank-you-message button{
@@ -239,7 +239,7 @@
         color: #ffffff;
         cursor: pointer;
        
-        background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+        background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 @media (max-width: 1199px) {

@@ -31,7 +31,7 @@
 }
 
 .faq-item:hover {
-  border-color: #f36b2a;
+  border-color: var(--secondary-color);
 }
 
 .faq-question {
@@ -50,7 +50,7 @@
 
 .faq-toggle {
   font-size: 24px;
-  color: #f36b2a;
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -68,7 +68,7 @@
 
 .faq-answer {
   padding: 0 25px 25px;
-  color: #444;
+  color: #333;
   line-height: 1.6;
   font-size: 16px;
   border-top: 1px solid #f0f0f0;
@@ -76,7 +76,7 @@
 }
 
 .faq-item.active {
-  border-color: #f36b2a;
+  border-color: var(--secondary-color);
 }
 
 /* Responsive Design for mobile */

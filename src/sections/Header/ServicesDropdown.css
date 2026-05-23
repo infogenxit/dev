@@ -153,7 +153,7 @@
         flex-direction: column !important;
         gap: 8px !important;
         padding-left: 10px !important;
-        border-left: 2px solid #ff6a00 !important;
+        border-left: 2px solid var(--secondary-color) !important;
     }
 
     .services-grid a {

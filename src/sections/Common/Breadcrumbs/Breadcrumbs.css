@@ -48,12 +48,12 @@
 }
 
 .breadcrumb-item .home-link svg {
-  color: #f36b2a;
+  color: var(--secondary-color);
 }
 
 .breadcrumb-item .home-link:hover {
   background: #fff5ef;
-  color: #f36b2a;
+  color: var(--secondary-color);
 }
 
 .breadcrumb-item .separator {
@@ -74,11 +74,11 @@
 
 .breadcrumb-item .breadcrumb-link:hover {
   background: #f8fafc;
-  color: #f36b2a;
+  color: var(--secondary-color);
 }
 
 .breadcrumb-item .current {
-  color: #f36b2a;
+  color: var(--secondary-color);
   font-weight: 600;
   padding: 6px 10px;
   background: #fff5ef;

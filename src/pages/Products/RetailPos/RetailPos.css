@@ -39,11 +39,11 @@
 }
 
 .igx-nav-links a.active {
-    color: #f04b3f;
+    color: var(--secondary-color);
 }
 
 .igx-nav-btn {
-    background: #f04b3f;
+    background: var(--secondary-color);
     color: #fff;
     border: none;
     padding: 10px 18px;
@@ -99,7 +99,7 @@
 }
 
 .igx-hero-btn {
-    background: #f04b3f;
+    background: var(--secondary-color);
     border: none;
     color: #fff;
     padding: 14px 28px;
@@ -187,7 +187,7 @@
 
 .igx-description-card p {
     font-size: 15px;
-    color: #666;
+    color: #333;
     font-weight: 500;
     word-spacing: 3px;
     text-align: justify;
@@ -197,7 +197,7 @@
 .igx-desc-icon svg {
     width: 52px;
     height: 52px;
-    color: #f04b3f;
+    color: var(--secondary-color);
     margin: 0;
 }
 
@@ -248,7 +248,7 @@
 }
 
 .igx-experience-card:hover .igx-icon-box::after {
-    background: #f04b3f;
+    background: var(--secondary-color);
 }
 
 .igx-icon-box {
@@ -294,7 +294,7 @@
 }
 
 .igx-icon-box::after:hover {
-    background: #f04b3f;
+    background: var(--secondary-color);
 }
 
 .igx-icon-box svg {
@@ -332,7 +332,7 @@
     font-size: 15px;
     font-weight: 500;
     word-spacing: 3px;
-    color: #666;
+    color: #333;
     text-align: justify;
     line-height: 1.8;
 }
@@ -406,7 +406,7 @@
 }
 
 .igx-dot.active {
-    background: #f04b3f;
+    background: var(--secondary-color);
 }
 
 /* ================= RESPONSIVE ================= */
@@ -591,13 +591,13 @@
 }
 
 .igx-footer-col a:hover {
-    color: #f04b3f;
+    color: var(--secondary-color);
 }
 
 /* Contact */
 .igx-footer-col p svg {
     margin-right: 10px;
-    color: #f04b3f;
+    color: var(--secondary-color);
 }
 
 /* Social */
@@ -627,7 +627,7 @@
 }
 
 .igx-social a:hover {
-    background: #f04b3f;
+    background: var(--secondary-color);
     color: #fff;
 }
 
@@ -650,7 +650,7 @@
     height: 44px;
     border-radius: 50%;
     border: none;
-    background: #f04b3f;
+    background: var(--secondary-color);
     color: #fff;
     font-size: 20px;
     cursor: pointer;

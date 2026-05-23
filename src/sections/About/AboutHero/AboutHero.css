@@ -4,7 +4,7 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    padding-bottom: 120px !important;
+    padding-bottom: 80px !important; /* Reduced bottom spacing */
     color: #ffffff;
     max-width: 100%;
 }
@@ -28,7 +28,7 @@
     z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 100px !important; /* MATCHING HOME HERO! */
+    padding-top: 80px !important; /* Reduced top spacing */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@
 .about-hero-heading {
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: 44px !important;
+    font-size: 52px !important; /* Larger title for hierarchy */
     line-height: 1.2;
     margin: 0 auto 25px;
     max-width: 1200px;
@@ -80,18 +80,18 @@
 
 .about-secondary-btn span {
     font-size: 16px;
-    color: #ff6a00;
+    color: var(--secondary-color);
 }
 
 .about-hero-description {
     font-family: "Manrope", sans-serif;
-    font-size: 21px;
+    font-size: 18px; /* Smaller subtitle/description */
     line-height: 1.6;
     font-weight: 500;
     color: #f1f1f1 !important;
     max-width: 900px;
     margin: 0 auto 10px;
-    text-align: left !important;
+    text-align: justify !important;
     padding-left: 60px;
 }
 

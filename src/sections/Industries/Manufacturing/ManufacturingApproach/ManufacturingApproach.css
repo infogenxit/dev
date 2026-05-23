@@ -1,6 +1,6 @@
 .approach-section {
     position: relative;
-    background: linear-gradient(180deg, #121824, #0e1420);
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-color));
     padding: 60px 0;
     overflow: hidden;
 }
@@ -38,7 +38,7 @@
 /* ---------- CARD ---------- */
 .approach-card {
     position: relative;
-    background: #172337;
+    background: var(--primary-color);
     border-radius: 16px;
     padding: 30px 28px;
     min-height: 180px;

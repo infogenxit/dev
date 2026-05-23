@@ -40,29 +40,29 @@
     align-items: flex-start; 
     text-align: left; 
     font-family: 'Outfit', sans-serif;
-    background: none !important;
-    -webkit-background-clip: initial !important;
-    -webkit-text-fill-color: initial !important;
-    background-clip: initial !important;
-    color: #00123c !important;
+    background: linear-gradient(90deg, var(--primary-color) 15%, var(--secondary-color) 85%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
 } 
 .hero-heading span { 
     background: none !important;
-    -webkit-background-clip: initial !important;
-    -webkit-text-fill-color: #00123c !important;
-    background-clip: initial !important;
-    color: #00123c !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
 }
 
 .hero-heading .highlight-orange {
     background: none !important;
-    -webkit-background-clip: initial !important;
-    -webkit-text-fill-color: #ff5e14 !important;
-    background-clip: initial !important;
-    color: #ff5e14 !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
 }
 
 .hero-subheading {
@@ -79,16 +79,22 @@
 }
 
 
-.hero-description { font-size: 21px; color: #444; max-width: 900px; margin: 0 auto 10px; line-height: 1.6; font-weight: 500; text-align: left; }
+.hero-description { font-size: 21px; color: var(--primary-color); max-width: 830px; margin: 0 auto 10px; line-height: 1.6; font-weight: 500; text-align: left; position: relative; left: 30px; }
 .hero-description u, .platforms-highlight {
     text-decoration: underline !important;
-    text-decoration-color: #ff6a00 !important; /* Brand Orange-Red Line */
+    text-decoration-color: var(--secondary-color) !important; /* Brand Orange-Red Line */
     text-underline-offset: 4px !important;
     font-weight: 700 !important;
     color: inherit;
 }
 
 .hero-buttons { display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 40px; width: 100%; }
+
+.hero-proof {
+    text-align: center !important;
+    margin-top: 15px;
+    margin-left: 20px; /* shift a little to the right as requested */
+}
 
 .primary-btn {
     width: 273px;
@@ -105,7 +111,7 @@
     line-height: 100%;
     color: #ffffff;
     cursor: pointer;
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -113,7 +119,7 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     color: #00123C;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
     border: 3px solid transparent;
@@ -133,7 +139,7 @@
     color: #00123c;
     cursor: pointer;
     border: 3px solid transparent;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
     transition: all 0.2s ease;
@@ -209,6 +215,7 @@
     box-shadow: 0 25px 50px rgba(255, 94, 20, 0.08), 0 10px 20px rgba(0, 12, 60, 0.04);
 }
 
+
 .hero-secondary-card:hover::before {
     background: linear-gradient(180deg, #ff5e14 0%, #00123c 100%);
 }
@@ -217,10 +224,10 @@
     font-family: "Manrope", sans-serif;
     font-size: 15px;
     line-height: 1.65;
-    color: #444 !important;
+    color: #333 !important;
     font-weight: 500;
     margin: 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .hero-floating-icons {
@@ -281,7 +288,7 @@
     .platforms-highlight {
         display: inline !important;
         text-decoration: underline !important;
-        text-decoration-color: #ff6a00 !important; /* Brand Orange-Red Line */
+        text-decoration-color: var(--secondary-color) !important; /* Brand Orange-Red Line */
         font-weight: 700 !important;
         white-space: normal !important; /* Allow wrapping on mobile */
     }

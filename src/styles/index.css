@@ -3,9 +3,9 @@
 :root {
     --primary-color: #00123c;
     --secondary-color: #ff5e14;
-    --accent-color: #ff8c00;
+    --accent-color: var(--secondary-color);
     --text-main: #333333;
-    --text-muted: #666666;
+    --text-muted: #333333;
     --bg-light: #f8faff;
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -48,10 +48,14 @@ h6 {
 }
 
 p {
-    color: var(--text-muted);
+    color: var(--primary-color);
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
     position: relative;
     z-index: 1;
+    text-align: justify;
 }
 
 a {
@@ -95,27 +99,27 @@ section {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f8faff;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     border-radius: 10px;
-    border: 3px solid #f1f1f1;
+    border: 2px solid #f8faff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color);
+    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 100%);
 }
 
 /* Firefox Support */
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--secondary-color) #f1f1f1;
+    scrollbar-color: var(--secondary-color) #f8faff;
 }
 
 /* Mobile Font Size Optimization */
@@ -177,8 +181,10 @@ section {
 .web-corner-accent,
 .automation-corner-accent,
 .corner-accent {
-    z-index: 0 !important; /* Force to background layer */
-    pointer-events: none !important; /* Prevent blocking clicks */
+    z-index: 0 !important;
+    /* Force to background layer */
+    pointer-events: none !important;
+    /* Prevent blocking clicks */
 }
 
 .about-corner-accent {
@@ -225,14 +231,26 @@ section {
     color: #ff5e14 !important;
     /* Consistent radiant brand orange */
     -webkit-text-fill-color: #ff5e14 !important;
-    /* Force orange text fill to override any local transparent settings */
-    background-clip: border-box !important;
-    /* Clear any background clips */
-    -webkit-background-clip: border-box !important;
-    /* Clear any webkit background clips */
-    border: 1.5px solid rgba(255, 94, 20, 0.25) !important;
-    /* Subtle brand border */
+    border: none !important;
     box-shadow: 0 2px 10px rgba(255, 94, 20, 0.05) !important;
+}
+
+/* Gradient border using ::after mask trick */
+.section-label::after,
+.app-section-label::after,
+.about-label::after,
+.service-label::after,
+.solution-label::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    border-radius: 50px !important;
+    padding: 1.5px !important;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+    pointer-events: none !important;
 }
 
 .section-label::before,
@@ -485,9 +503,10 @@ h4,
 .approach-lead {
     max-width: 1000px;
     margin: 20px 0 0;
-    color: #666;
-    font-size: 16px;
+    color: var(--primary-color);
+    font-size: 15px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .expertise-focus-link {
@@ -618,9 +637,32 @@ a.secondary-btn {
     color: #00123c !important;
     -webkit-text-fill-color: #00123c !important;
     cursor: pointer !important;
-    border: 3px solid #00123c !important;
+    border: none !important;
     background: transparent !important;
+    position: relative !important;
     transition: all 0.2s ease !important;
+}
+
+.secondary-btn::before,
+.about-secondary-btn::before,
+.WebDev-secondary-btn::before,
+.igx-btn.secondary::before,
+.appdev-buttons .secondary-btn::before,
+.impact-buttons .secondary-btn::before,
+.hero-buttons .secondary-btn::before,
+button.secondary-btn::before,
+a.secondary-btn::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    border-radius: 50px !important;
+    padding: 2.5px !important;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s ease !important;
 }
 
 .secondary-btn:hover,
@@ -634,12 +676,21 @@ button.secondary-btn:hover,
 a.secondary-btn:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
-    background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
-    background-origin: border-box !important;
-    background-clip: padding-box, border-box !important;
-    border-color: transparent !important;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
+}
+
+.secondary-btn:hover::before,
+.about-secondary-btn:hover::before,
+.WebDev-secondary-btn:hover::before,
+.igx-btn.secondary:hover::before,
+.appdev-buttons .secondary-btn:hover::before,
+.impact-buttons .secondary-btn:hover::before,
+.hero-buttons .secondary-btn:hover::before,
+button.secondary-btn:hover::before,
+a.secondary-btn:hover::before {
+    opacity: 0 !important;
 }
 
 /* Ensure secondary buttons are visible on dark backgrounds */
@@ -651,7 +702,12 @@ a.secondary-btn:hover {
 .why-choose-section .secondary-btn,
 .approach-section .secondary-btn,
 .impact-cta-section .secondary-btn,
-.about-hero .about-secondary-btn {
+.about-hero .about-secondary-btn,
+.appdev-hero .secondary-btn,
+[class$="-hero"] .secondary-btn,
+[class*="hero"] .secondary-btn,
+.hero .secondary-btn,
+.about-hero .secondary-btn {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
     border-color: #ffffff !important;
@@ -665,16 +721,30 @@ a.secondary-btn:hover {
 .why-choose-section .secondary-btn:hover,
 .approach-section .secondary-btn:hover,
 .impact-cta-section .secondary-btn:hover,
-.about-hero .about-secondary-btn:hover {
+.about-hero .about-secondary-btn:hover,
+.appdev-hero .secondary-btn:hover,
+[class$="-hero"] .secondary-btn:hover,
+[class*="hero"] .secondary-btn:hover,
+.hero .secondary-btn:hover,
+.about-hero .secondary-btn:hover {
     background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
 
+/* Premium gradient border override for hero secondary buttons to match global-cta-secondary */
+.appdev-hero .secondary-btn::before,
+[class$="-hero"] .secondary-btn::before,
+[class*="hero"] .secondary-btn::before,
+.hero .secondary-btn::before,
+.about-hero .secondary-btn::before {
+    background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 40%, #ff7b39 60%, #ff5e14 100%) !important;
+}
+
 /* GLOBAL PLATFORMS HIGHLIGHT STYLE */
 .platforms-highlight {
     text-decoration: underline !important;
-    text-decoration-color: #ff6a00 !important;
+    text-decoration-color: var(--secondary-color) !important;
     /* Brand Orange-Red Line */
     text-underline-offset: 4px !important;
     font-weight: 700 !important;
@@ -1003,7 +1073,8 @@ section {
     -webkit-background-clip: initial !important;
     background-clip: initial !important;
     -webkit-text-fill-color: initial !important;
-    color: #00123c !important; /* Default header color, will be overridden by specific styles if they exist */
+    color: #00123c !important;
+    /* Default header color, will be overridden by specific styles if they exist */
 }
 
 /* Specific colors for specific headers based on original Product CSS */
@@ -1017,7 +1088,7 @@ section {
 }
 
 .igx-isolated-product-wrapper .igx-footer-col h3 {
-    color: #f04b3f !important;
+    color: var(--secondary-color) !important;
 }
 
 .igx-isolated-product-wrapper .igx-pricing-card.free h3,
@@ -1030,7 +1101,7 @@ section {
 }
 
 .igx-isolated-product-wrapper .igx-pricing-card.standard h4 {
-    color: #f04b3f !important;
+    color: var(--secondary-color) !important;
 }
 
 /* ---------------------------------------------------- */
@@ -1044,7 +1115,8 @@ section {
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: left !important;
-    color: #000 !important; /* Title color pure black matching logo */
+    color: #000 !important;
+    /* Title color pure black matching logo */
 }
 
 /* Ensure the hero title doesn't break its alignment */
@@ -1076,6 +1148,7 @@ section {
     background: #000 !important;
     color: #fff !important;
 }
+
 .igx-isolated-product-wrapper .igx-nav-btn:hover {
     background: #333 !important;
 }
@@ -1085,6 +1158,7 @@ section {
     background: #fff !important;
     color: #000 !important;
 }
+
 .igx-isolated-product-wrapper .igx-hero-btn:hover {
     background: #ddd !important;
 }
@@ -1094,6 +1168,7 @@ section {
     background: #000 !important;
     color: #fff !important;
 }
+
 .igx-isolated-product-wrapper .igx-pricing-card .igx-btn:hover {
     background: #333 !important;
 }
@@ -1103,6 +1178,7 @@ section {
     background: #fff !important;
     color: #000 !important;
 }
+
 .igx-isolated-product-wrapper .igx-pricing-card.standard .igx-btn:hover {
     background: #ddd !important;
 }
@@ -1112,6 +1188,7 @@ section {
     background: #000 !important;
     color: #fff !important;
 }
+
 .igx-isolated-product-wrapper button:hover {
     background: #333 !important;
 }
@@ -1123,7 +1200,7 @@ section {
     align-items: center !important;
 }
 
-.igx-isolated-product-wrapper .igx-footer-col > * {
+.igx-isolated-product-wrapper .igx-footer-col>* {
     width: fit-content !important;
     text-align: left !important;
 }
@@ -1134,7 +1211,8 @@ section {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    margin-bottom: 30px !important; /* Reduced from 60px to reduce space */
+    margin-bottom: 30px !important;
+    /* Reduced from 60px to reduce space */
 }
 
 /* Fix h1 and h3 color contrast on dark background sections (approach, business outcomes, etc.) */

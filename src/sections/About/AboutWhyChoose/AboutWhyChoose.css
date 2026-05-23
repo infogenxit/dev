@@ -34,7 +34,11 @@
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 14px;
-    color: #ffffff;
+    background: linear-gradient(90deg, #ffffff 15%, var(--secondary-color) 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .why-card p {
@@ -54,7 +58,7 @@
     height: 1px;
     background: linear-gradient(90deg,
             transparent,
-            #ff6a00,
+            var(--secondary-color),
             transparent);
     margin: 25px 0; /* Reduced from 50px 0 */
 }

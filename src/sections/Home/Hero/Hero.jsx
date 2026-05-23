@@ -1,3 +1,4 @@
+import React from "react";
 import "./Hero.css";
 import aiIcon from "../../../assets/images/aiIcon.webp";
 import automationIcon from "../../../assets/images/automationIcon.webp";
@@ -9,13 +10,13 @@ import ZohoImg from "../../../assets/images/zoho (2).webp";
 import OdooImg from "../../../assets/images/odoo (2).webp";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NetworkBackground from "../../../components/NetworkBackground/NetworkBackground";
+
 const Hero = () => {
   const navigate = useNavigate();
   const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <section className="hero">
-      <NetworkBackground />
       <video
         className={`hero-video ${videoLoaded ? "loaded" : ""}`}
         src={heroVideo}

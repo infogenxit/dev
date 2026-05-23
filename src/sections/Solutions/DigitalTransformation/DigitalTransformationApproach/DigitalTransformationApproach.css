@@ -5,7 +5,7 @@
 
 .approach-section {
     position: relative;
-    background: linear-gradient(180deg, #121824, #0e1420);
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-color));
     padding: 80px 0;
     overflow: hidden;
 }

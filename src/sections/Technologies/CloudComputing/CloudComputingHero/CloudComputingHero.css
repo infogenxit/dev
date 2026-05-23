@@ -26,9 +26,9 @@
     color: #000;
     /* Gradient text */
     /* background: linear-gradient(89.95deg,
-            #081256 8.97%,
+            var(--primary-color) 8.97%,
             #011BDD 33.19%,
-            #EB632A 89.61%);
+            var(--secondary-color) 89.61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; */
@@ -44,7 +44,7 @@
     text-align: center;
     margin: 0 0 20px 0;
 
-    color: #000e68;
+    color: var(--primary-color);
     /* background color converted to text color */
 }
 
@@ -57,7 +57,7 @@
     letter-spacing: 0;
     text-align: center;
 
-    color: #000E68;
+    color: var(--primary-color);
     /* neutral readable text */
     max-width: 820px;
     margin: 0 auto 28px;
@@ -72,7 +72,7 @@
         letter-spacing: 0;
         text-align: center;
     
-        color: #000E68;
+        color: var(--primary-color);
         /* neutral readable text */
         max-width: 820px;
         margin: 40px auto;
@@ -107,15 +107,15 @@
 
     /* 🔥 Gradient exactly like screenshot */
     /* background: linear-gradient(45.6deg,
-            #081256 0%,
+            var(--primary-color) 0%,
             #03133a 50%,
-            #eb632a 70%,
-            #f36b2a 100%); */
+            var(--secondary-color) 70%,
+            var(--secondary-color) 100%); */
 
     background-image: conic-gradient(at 50% 0%,
-            #AC3300 0deg,
-            #EB632A 90deg,
-            #a53606 110deg,
+            var(--secondary-color) 0deg,
+            var(--secondary-color) 90deg,
+            var(--secondary-color) 110deg,
             #00123C 150deg,
             #00123C 180deg);
 
@@ -152,10 +152,10 @@
     background-image:
         linear-gradient(#ffffff, #ffffff),
         linear-gradient(110deg,
-            #081256 0%,
-            #001b5e 35%,
-            #eb632a 70%,
-            #f36b2a 100%);
+            var(--primary-color) 0%,
+            var(--primary-color) 35%,
+            var(--secondary-color) 70%,
+            var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
 

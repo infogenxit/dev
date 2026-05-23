@@ -42,7 +42,7 @@
 
 .expertise-icon {
     font-size: 28px;
-    color: #ff6a00;
+    color: var(--secondary-color);
     margin-bottom: 0;
 }
 
@@ -59,7 +59,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 160%;
-    color: #555;
+    color: #333;
 }
 
 @media (max-width: 1199px) {

@@ -81,7 +81,7 @@
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  background: linear-gradient(135deg, #ff6a00, #ff5e14);
+  background: linear-gradient(135deg, var(--secondary-color), #ff5e14);
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(255, 94, 20, 0.25);
@@ -231,7 +231,7 @@
 }
 
 .cs-op-card:hover .cs-op-icon-wrapper {
-  background: linear-gradient(135deg, #ff6a00 0%, #ff5e14 100%);
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #ff5e14 100%);
   color: #ffffff;
   transform: scale(1.05);
 }
@@ -430,7 +430,7 @@
 }
 
 .cs-phone-link:hover {
-  color: #ff8c00;
+  color: var(--secondary-color);
 }
 
 .cs-why-right {

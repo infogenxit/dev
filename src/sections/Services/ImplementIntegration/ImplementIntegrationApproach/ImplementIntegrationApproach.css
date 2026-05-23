@@ -1,6 +1,6 @@
 .approach-section {
     position: relative;
-    background: linear-gradient(180deg, #121824, #0e1420);
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-color));
     padding: 60px 0;
     overflow: hidden;
 }
@@ -35,14 +35,22 @@
     gap: 30px;
 }
 
-/* ---------- CARD ---------- */
 .approach-card {
     position: relative;
-    background: #172337;
+    background: linear-gradient(#05163d, #05163d) padding-box,
+                linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) border-box;
+    border: 2px solid transparent;
     border-radius: 16px;
     padding: 30px 28px;
     min-height: 180px;
-    border-left: 2px solid rgba(248, 138, 60, 0.792);
+    transition: all 0.3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 94, 20, 0.15);
+    background: linear-gradient(#05163d, #05163d) padding-box,
+                linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%) border-box;
 }
 
 .approach-card h4 {
@@ -140,7 +148,7 @@
 
 .business-outcome-item h3 {
     font-size: 20px;
-    color: #ff6a00;
+    color: var(--secondary-color);
     margin-bottom: 15px;
     font-family: "Outfit", sans-serif;
 }

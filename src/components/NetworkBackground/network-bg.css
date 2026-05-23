@@ -10,14 +10,14 @@
 /* Lines */
 .mesh polyline {
     fill: none;
-    stroke: #ff6a00;
+    stroke: var(--secondary-color);
     stroke-width: 1.2;
     opacity: 0.85;
 }
 
 /* Nodes */
 .mesh circle {
-    fill: #ff6a00;
+    fill: var(--secondary-color);
 }
 
 /* VERY subtle motion (optional) */

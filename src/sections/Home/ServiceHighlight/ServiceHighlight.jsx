@@ -17,64 +17,72 @@ const ServiceHighlight = () => {
       title: "IT Consulting",
       description: "It all begins with strategy. Our IT consulting is focused on understanding your current IT infrastructure, what's missing, and a workable strategy for growth, one that works for your business - not a one-size-fits-all approach.",
       video: serviceVideo1,
-      background: "#f0f4ff",
+      background: "#dbe4ff",
     },
     {
       index: "02",
       title: "Application Development",
       description: "We develop custom web, mobile and enterprise applications designed to meet your processes. Our application development services are quick, without compromising on scalability or quality.",
       video: serviceVideo2,
-      background: "#ffd6bf",
+      background: "#ffc9ab",
     },
     {
       index: "03",
       title: "AI Automation",
       description: "We deploy smart business automation to automate tasks, improve accuracy and boost productivity with artificial intelligence (AI), robotic process automation (RPA) and process automation.",
       video: serviceVideo3,
-      background: "#E9C9FF",
+      background: "#d6a6ff",
     },
     {
       index: "04",
       title: "Business Intelligence",
       description: "Data is only valuable when it is actionable. Our service for business intelligence converts data into information via dashboards, reporting and analytics to support better, quicker decisions for business growth.",
       video: serviceVideo4,
-      background: "#C9D5FF",
+      background: "#aebfff",
     },
     {
       index: "05",
       title: "Digital Transformation",
       description: "Digital transformation is not about adopting a new tool; it's about evolving your organization to function in a digital-first world. We work with organisations to modernise their business systems and processes with a strategic business transformation plan aligned to business outcomes.",
       video: serviceVideo5,
-      background: "#C9F9FF",
+      background: "#a6eeff",
     },
     {
       index: "06",
       title: "Cloud Solutions",
       description: "Our cloud solutions include strategy, migration and management for Amazon Web Services (AWS), Microsoft Azure and Google Cloud to optimise scalability and cost.",
       video: serviceVideo6,
-      background: "#CBFFC9",
+      background: "#a6fcad",
     },
     {
       index: "07",
       title: "Enterprise Integration",
       description: "Our enterprise integration services integrate your systems, apps and data sources—allowing information to move between systems, avoiding duplication, improving data integrity and removing the need for manual data reconciliation.",
       video: serviceVideo7,
-      background: "#D5FFC9",
+      background: "#bcfca4",
     },
   ];
 
   const sectionRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const stickyRef = useRef(null);
+
   useEffect(() => {
     const section = sectionRef.current;
-    if (!section) return;
+    const sticky = stickyRef.current;
+    if (!section || !sticky) return;
 
     const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const stepSize = windowHeight * 0.55; // 55vh per card transition
+      const totalScrollable = (services.length - 1) * stepSize;
+      
+      // Dynamically set section height so it ends exactly when we want it to unpin
+      section.style.height = `${sticky.offsetHeight + totalScrollable}px`;
+
       const rect = section.getBoundingClientRect();
       const scrollInside = -rect.top;
-      const windowHeight = window.innerHeight;
-      const totalScrollable = section.offsetHeight - windowHeight;
 
       if (scrollInside <= 0) {
         setActiveIndex(0);
@@ -82,14 +90,15 @@ const ServiceHighlight = () => {
         setActiveIndex(services.length - 1);
       } else {
         const progress = scrollInside / totalScrollable;
-        const index = Math.floor(progress * services.length);
+        const index = Math.round(progress * (services.length - 1));
         setActiveIndex(Math.min(services.length - 1, Math.max(0, index)));
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleScroll);
-    handleScroll();
+    // Initial call after a slight delay to ensure DOM is fully rendered
+    setTimeout(handleScroll, 100);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -101,9 +110,8 @@ const ServiceHighlight = () => {
     <section
       className="service-section"
       ref={sectionRef}
-      style={{ height: `${services.length * 105}vh` }} /* Reduced from 120vh to eliminate bottom gap */
     >
-      <div className="service-sticky">
+      <div className="service-sticky" ref={stickyRef}>
         <div className="service-header-container">
           <span className="section-label">Focused On Your Business Goals</span>
           <h2 className="section-title">What We Do</h2>
@@ -124,9 +132,9 @@ const ServiceHighlight = () => {
                 className={`service-card ${isActive ? "active" : isStacked ? "stacked" : "future"}`}
                 style={{
                   background: item.background,
-                  transform: isActive 
-                    ? "translateY(0) scale(1)" 
-                    : isStacked 
+                  transform: isActive
+                    ? "translateY(0) scale(1)"
+                    : isStacked
                       ? `scale(${1 - stackOffset * 0.05}) translateY(-${stackOffset * 20}px)` /* Minimal upward movement, mostly scaling back */
                       : "translateY(100vh)",
                   opacity: isFuture ? 0 : 1,
@@ -148,9 +156,9 @@ const ServiceHighlight = () => {
                   <p className="service-description">{item.description}</p>
 
                   <button
-                    className="service-btn"
-                    style={{ 
-                      opacity: isActive ? 1 : 0, 
+                    className="secondary-btn"
+                    style={{
+                      opacity: isActive ? 1 : 0,
                       visibility: isActive ? "visible" : "hidden",
                       transition: "opacity 0.3s ease"
                     }}
@@ -161,9 +169,6 @@ const ServiceHighlight = () => {
                 </div>
 
                 <div className="service-media-container">
-                  <div style={{ padding: "0 20px" }}>
-                    <span className="service-index">{item.index}</span>
-                  </div>
                   <div className="service-media" style={{ opacity: isActive ? 1 : 0.4 }}>
                     <video
                       key={item.video}

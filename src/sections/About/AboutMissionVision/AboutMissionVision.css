@@ -45,9 +45,14 @@
     font-family: "Manrope", sans-serif;
     font-size: 39px;
     font-weight: 800;
-    color: #00123c;
     margin-top: 0;
     margin-bottom: 5px;
+    display: inline-block;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .mission-block p {
@@ -74,13 +79,18 @@
 }
 
 .values-list strong {
-    display: block;
+    display: inline-block;
     font-size: 25px;
     font-weight: 700;
-    color: #00123c;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .values-list span {
+    display: block;
     font-size: 16px;
     font-weight: 500;
     color: #333;
@@ -95,8 +105,8 @@
 }
 
 .mission-image-wrapper {
-    background: #ff5e14; /* Solid logo orange */
-    padding: 35px 36px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 16px;
     border-radius: 30px;
 }
 .mission-video {
@@ -148,7 +158,7 @@
     }
 
     .mission-image-wrapper {
-        padding: 28px;
+        padding: 12px;
         border-radius: 26px;
         margin: 0 auto;
     }
@@ -208,7 +218,7 @@
     }
 
     .mission-image-wrapper {
-        padding: 18px;
+        padding: 8px;
         border-radius: 20px;
     }
 

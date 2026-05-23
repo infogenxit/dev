@@ -35,7 +35,7 @@
 .contact-form textarea:focus {
     outline: none;
     border: 2px solid transparent;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
 
@@ -64,8 +64,8 @@
     line-height: 100%;
     color: #ffffff;
     cursor: pointer;
-    /* background: linear-gradient(45.6deg, #081256 0%, #03133a 50%, #eb632a 70%, #f36b2a 100%); */
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    /* background: linear-gradient(45.6deg, var(--primary-color) 0%, #03133a 50%, var(--secondary-color) 70%, var(--secondary-color) 100%); */
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -73,7 +73,7 @@
     text-align: center;
     padding: 40px 20px;
     border: 2px solid transparent;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
     transition: all 0.2s ease;
@@ -89,7 +89,7 @@
 .thank-you-message p {
     font-size: 16px;
     line-height: 150%;
-    color: #555;
+    color: #333;
     font-weight: 500;
 }
 
@@ -107,7 +107,7 @@
     line-height: 100%;
     color: #ffffff;
     cursor: pointer;
-    /* background: linear-gradient(45.6deg, #081256 0%, #03133a 50%, #eb632a 70%, #f36b2a 100%); */
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    /* background: linear-gradient(45.6deg, var(--primary-color) 0%, #03133a 50%, var(--secondary-color) 70%, var(--secondary-color) 100%); */
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

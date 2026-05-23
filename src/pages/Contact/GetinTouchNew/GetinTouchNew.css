@@ -2,8 +2,8 @@ body {
     background-color: #FFF6F0 !important;
 }
 :root {
-    --field-border-color: #081256;  
-    --field-focus-accent: #F36B2A;   
+    --field-border-color: var(--primary-color);  
+    --field-focus-accent: var(--secondary-color);   
 }
 
 .get-in-touch-page{
@@ -63,7 +63,7 @@ body {
     /* The !important here forces the gradient border to show up */
     background:
         linear-gradient(#ffffff, #ffffff) padding-box,
-        linear-gradient(110deg, #081256 0%, #081256 55%, #F36B2A 100%) border-box !important;
+        linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 55%, var(--secondary-color) 100%) border-box !important;
 }
 
 @media (max-width: 480px) {
@@ -111,7 +111,7 @@ body {
         90deg,
         #071E3D 0%,
         #0A1F44 35%,
-        #F36B2A 100%
+        var(--secondary-color) 100%
     );
     box-shadow: 0 8px 20px rgba(243, 107, 42, 0.25);
     transition: all 0.3s ease;
@@ -141,7 +141,7 @@ body {
     text-align: center;
     padding: 40px 20px;
     border: 2px solid transparent;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
     transition: all 0.2s ease;
@@ -157,7 +157,7 @@ body {
 .thank-you-message p {
     font-size: 16px;
     line-height: 150%;
-    color: #555;
+    color: #333;
     font-weight: 500;
 }
 
@@ -175,8 +175,8 @@ body {
     line-height: 100%;
     color: #ffffff;
     cursor: pointer;
-    /* background: linear-gradient(45.6deg, #081256 0%, #03133a 50%, #eb632a 70%, #f36b2a 100%); */
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    /* background: linear-gradient(45.6deg, var(--primary-color) 0%, #03133a 50%, var(--secondary-color) 70%, var(--secondary-color) 100%); */
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -221,7 +221,7 @@ body {
 
 .contact-thankyou-sub {
     font-size: 14px !important;
-    color: #666 !important;
+    color: #333 !important;
     margin-top: 8px !important;
 }
 
@@ -293,7 +293,7 @@ body {
     font-size: 14px;
     display: block;
     margin-bottom: 12px;
-    color: #081256;
+    color: var(--primary-color);
 }
 
 
@@ -368,7 +368,7 @@ body {
     border: 2px solid transparent;
     background:
         linear-gradient(#ffffff, #ffffff) padding-box,
-        linear-gradient(110deg, #081256 0%, #081256 55%, #F36B2A 100%) border-box;
+        linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 55%, var(--secondary-color) 100%) border-box;
 }
 .primary-platform {
     flex: 0.8; 
@@ -393,7 +393,7 @@ body {
 .nda-note {
     justify-content: center; 
     font-size: 13px;
-    color: #666;
+    color: #333;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -413,7 +413,7 @@ body {
     margin-right: 0;
     
     /* 2. The smooth text gradient from Navy to Orange */
-    background: linear-gradient(90deg, #071E3D 0%, #0A1F44 45%, #F36B2A 100%) !important;
+    background: linear-gradient(90deg, #071E3D 0%, #0A1F44 45%, var(--secondary-color) 100%) !important;
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -460,7 +460,7 @@ body {
     box-shadow: none;
 }
 .sub-headline {
-    color: #F36B2A;
+    color: var(--secondary-color);
     font-size: 22px;
     font-weight: 700;
 }
@@ -470,21 +470,21 @@ body {
     padding: 15px;
     background: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #081256;
+    border-left: 4px solid var(--primary-color);
 }
 
 .confidential-shield p {
     font-size: 12px;
-    color: #555;
+    color: #333;
     line-height: 1.5;
 }
 
 .highlight-text {
     font-weight: 700;
-    color: #081256;
+    color: var(--primary-color);
     margin-top: 10px;
     padding-left: 10px;
-    border-left: 3px solid #F36B2A;
+    border-left: 3px solid var(--secondary-color);
 }
 
 .fact-card, 
@@ -515,10 +515,10 @@ body {
 }
 
 .fact-card h4, .did-you-know-card h4 {
-    color: #081256;            
+    color: var(--primary-color);            
     font-size: 16px !important;
     margin-bottom: 8px;
-    border-left: 4px solid #F36B2A;
+    border-left: 4px solid var(--secondary-color);
     padding-left: 12px;
 }
 .fact-card h4 {
@@ -529,7 +529,7 @@ body {
     font-size: 18px;
     font-weight: 650;
     line-height: 1.6;
-    color: #081256 !important;
+    color: var(--primary-color) !important;
     margin: 20px 0 0 0 !important;
     
     /* 1. Increases width to actually reach the end of your title */
@@ -574,7 +574,7 @@ body {
     line-height: 1.2;
     text-align: left;
     white-space: nowrap;
-    background: linear-gradient(90deg, #F36B2A 0%, #081256 100%) !important;
+    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%) !important;
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -651,11 +651,11 @@ body {
     opacity: 1;                
 }
 .leaders-card h4 {
-    color: #081256; 
+    color: var(--primary-color); 
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 25px;
-    border-left: 4px solid #F36B2A; 
+    border-left: 4px solid var(--secondary-color); 
     padding-left: 12px;
     padding-right: 20px;
     white-space: nowrap;
@@ -667,7 +667,7 @@ body {
     margin-bottom: 18px;
     font-size: 15px;
     font-weight: 600;
-    color: #081256;
+    color: var(--primary-color);
     white-space: nowrap; 
 }
 .fact-card ul {
@@ -694,20 +694,20 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    color: #081256;          
+    color: var(--primary-color);          
     font-weight: bold;
 }
 
 .fact-card strong {
     display: block;           
     margin-bottom: 4px;
-    color: #081256;
+    color: var(--primary-color);
 }
 
 .mini-heading {
     font-size: 15px;
     font-weight: 700;
-    color: #081256;
+    color: var(--primary-color);
     margin: 0;
 }
 .fact-card {
@@ -718,7 +718,7 @@ body {
 .mini-heading {
     font-size: 15px;
     font-weight: 700;
-    color: #081256;
+    color: var(--primary-color);
     margin: 0 0 12px 0;
 }
 .did-you-know-card {
@@ -789,10 +789,10 @@ body {
 }
 .highlight-text {
     font-weight: 700;
-    color: #081256 !important;  
+    color: var(--primary-color) !important;  
     margin-top: 10px;
     padding-left: 10px;
-    border-left: 3px solid #F36B2A;
+    border-left: 3px solid var(--secondary-color);
 }
 
 .did-you-know-card p, 
@@ -811,7 +811,7 @@ body {
     border: 2px solid transparent;
     background:
         linear-gradient(#ffffff, #ffffff) padding-box,
-        linear-gradient(110deg, #081256 0%, #081256 55%, #F36B2A 100%) border-box;
+        linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 55%, var(--secondary-color) 100%) border-box;
     box-sizing: border-box;
 }
 
@@ -852,7 +852,7 @@ body {
 .global-delivery-section {
     position: relative;
     width: 100%;
-    background-color: #081256;
+    background-color: var(--primary-color);
     color: #ffffff;
     padding: 100px 40px; 
     margin-top: 60px;
@@ -930,7 +930,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 10px;
     color: #ffffff !important;
-    background: linear-gradient(90deg, #ffffff 45%, #F36B2A 95%) !important;
+    background: linear-gradient(90deg, #ffffff 45%, var(--secondary-color) 95%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
@@ -976,7 +976,7 @@ body {
 .insight-box {
     background: rgba(8, 18, 86, 0.6); 
     border: 1px solid rgba(243, 107, 42, 0.3); 
-    border-left: 4px solid #F36B2A; 
+    border-left: 4px solid var(--secondary-color); 
     padding: 5px 35px 20px 35px !important;
     border-radius: 12px;
     max-width: 450px; 
@@ -1069,8 +1069,8 @@ body {
     
     overflow: visible;
     
-    color: #F36B2A;
-    background: #081256;
+    color: var(--secondary-color);
+    background: var(--primary-color);
     font-family: "Manrope", Arial, sans-serif; 
     font-weight: 900;
 }
@@ -1203,7 +1203,7 @@ body div.page-intro-header p.intro-subtext {
     font-size: 18px !important;
     font-weight: 650 !important;
     line-height: 1.6 !important;
-    color: #081256 !important;
+    color: var(--primary-color) !important;
     
     /* 2. INCREASE THE WIDTH to match the title's physical width. */
     /* Since 1060px was too short to reach the end, we bump this up. */
@@ -1331,7 +1331,7 @@ body .contact-form-container .contact-form textarea {
     transition: all 0.3s ease;
     /* border: 1px solid #f0f0f0; */
     border: 2px solid transparent;
-    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(110deg, #081256 0%, #081256 55%, #F36B2A 100%) border-box;
+    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 55%, var(--secondary-color) 100%) border-box;
     box-sizing: border-box;
 
 }
@@ -1349,7 +1349,7 @@ body .contact-form-container .contact-form textarea {
 
 .location-box p {
     font-size: 14px;
-    color: #555;
+    color: #333;
     line-height: 1.6;
     font-weight: 500
 }

@@ -26,9 +26,10 @@
 
 .testimonials-subtitle {
     font-size: 16px;
-    color: #666;
+    color: #333;
     margin-bottom: 0;
     padding: 0;
+    text-align: center !important;
 }
 
 /* .testimonial-slider {
@@ -152,7 +153,7 @@
 }
 
 .dot.active {
-    background: #ff6a00;
+    background: var(--secondary-color);
 }
 
 /* Responsive Design for tablet */

@@ -31,7 +31,7 @@
 }
 
 .industry-content p {
-    color: #555;
+    color: #333;
     line-height: 1.7;
     margin-bottom: 20px;
     font-size: 1.05rem;
@@ -53,13 +53,27 @@
     background: #f8faff;
     padding: 12px 20px;
     border-radius: 12px;
-    border: 1px solid rgba(0, 18, 60, 0.05);
+    border: 1px solid transparent;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.industry-tag::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .industry-tag:hover {
     background: #ffffff;
-    border-color: rgba(255, 94, 20, 0.3);
     color: #ff5e14;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255, 94, 20, 0.06);

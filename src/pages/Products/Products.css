@@ -45,7 +45,7 @@
 }
 
 .product-products-hero-heading span {
-    background: linear-gradient(90deg, #00123c 0%, #ff6a00 50%, #ff5e14 100%);
+    background: linear-gradient(90deg, #00123c 0%, var(--secondary-color) 50%, #ff5e14 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -59,7 +59,7 @@
     line-height: 120%;
     text-align: left;
     margin: 0 0 20px 0;
-    color: #000e68;
+    color: var(--primary-color);
 }
 
 .product-WebDev-hero-description {
@@ -68,7 +68,7 @@
     font-size: 20px;
     line-height: 1.6;
     text-align: left;
-    color: #444;
+    color: #333;
     max-width: 100%;
     margin-bottom: 35px;
 }
@@ -79,7 +79,7 @@
     font-size: 18px;
     line-height: 160%;
     text-align: left;
-    color: #000E68;
+    color: var(--primary-color);
     margin: 30px 0;
 }
 
@@ -108,7 +108,7 @@
     height: 455px;
     top: 30px;
     left: 30px;
-    background: #d33e00;
+    background: var(--secondary-color);
     border-radius: 50px;
 }
 
@@ -263,7 +263,7 @@
 
 .product-approach-section {
     position: relative;
-    background: linear-gradient(180deg, #121824, #0e1420);
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-color));
     padding: 60px 0;
     overflow: hidden;
 }
@@ -301,7 +301,7 @@
 
 /* If the user wants gradient even on dark section, let's make it brighter */
 .approach-header h2 span {
-    background: linear-gradient(90deg, #ffffff 0%, #00e5ff 30%, #ff6a00 70%, #ff5e14 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #00e5ff 30%, var(--secondary-color) 70%, #ff5e14 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -317,7 +317,7 @@
 /* ---------- CARD ---------- */
 .product-approach-card {
     position: relative;
-    background: #172337;
+    background: var(--primary-color);
     gap: 50px ;
     display: flex;
     flex-direction: column;
@@ -359,7 +359,7 @@
     right: 24px;
     font-size: 65px;
     font-weight: 800;
-    color: #eb632a;
+    color: var(--secondary-color);
 }
 .approach-card-button{
     position: absolute;
@@ -380,7 +380,7 @@
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    background: #d33e00;
+    background: var(--secondary-color);
     color: #ffffff;
 }
 .approach-card-button .try-btn {
@@ -391,17 +391,17 @@
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    color: #d33e00;
+    color: var(--secondary-color);
     background: #ffffff;
 }
 .approach-card-button .demo-btn:hover{
-    background: #a53606;
+    background: var(--secondary-color);
     color: #ffffff;
     transition: all 0.2s ease ;
 }
 .approach-card-button .try-btn:hover{
     background: #b4b1b1;
-    color: #a53606;
+    color: var(--secondary-color);
     transition: all 0.2s ease ;
 }
 

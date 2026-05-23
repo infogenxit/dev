@@ -17,7 +17,7 @@
 }
 
 .team-title span {
-  color: #ff6a00;
+  color: var(--secondary-color);
 }
 
 .team-grid {
@@ -33,10 +33,11 @@
 }
 
 .team-card {
-  background: #fdfdfd;
+  background: linear-gradient(#fdfdfd, #fdfdfd) padding-box,
+              linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) border-box;
   padding: 30px; /* Reduced from 40px */
   border-radius: 20px;
-  border: 1px solid #eee;
+  border: 2px solid transparent;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -46,7 +47,6 @@
 .team-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-  border-color: #ff6a00;
 }
 
 .team-info h3 {
@@ -58,7 +58,7 @@
 .team-role {
   display: block;
   font-size: 0.9rem;
-  color: #ff6a00;
+  color: var(--secondary-color);
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 10px; /* Reduced from 20px */

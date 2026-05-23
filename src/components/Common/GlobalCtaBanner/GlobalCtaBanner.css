@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding: 20px 50px 40px;
     /* Original padding */
-    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
+    background: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 175deg, #00123C 180deg);
     border-radius: 28px;
     display: flex;
     justify-content: space-between;
@@ -115,22 +115,42 @@
     font-size: 15px;
     font-weight: 700;
 
-    background: linear-gradient(135deg, #E2E8F0 0%, #F8FAFC 50%, #CBD5E1 100%) !important;
-    color: #ff5e14 !important;
-    border: 2px solid #ff5e14 !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid transparent !important;
+    position: relative;
+    z-index: 1;
 
     cursor: pointer;
     transition: all 0.2s ease;
     height: 48px !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+}
+
+.global-cta-secondary::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 40%, #ff7b39 60%, #ff5e14 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    pointer-events: none;
+    transition: all 0.2s ease;
 }
 
 .global-cta-secondary:hover {
     transform: translateY(-5px) !important;
-    background: linear-gradient(135deg, #ff5e14 0%, #ff7b39 60%, #E2E8F0 100%) !important;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
     color: #ffffff !important;
     border: 2px solid transparent !important;
-    box-shadow: 0 10px 25px rgba(255, 94, 20, 0.35) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+.global-cta-secondary:hover::before {
+    opacity: 0;
 }
 
 /* Responsive Design for tablet */
@@ -263,7 +283,7 @@
 }
 
 .global-cta-check-icon {
-    color: #ff5e14;
+    color: #ffffff;
     margin-right: 12px;
     width: 20px;
     height: 20px;

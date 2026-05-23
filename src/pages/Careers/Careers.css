@@ -51,7 +51,7 @@
 }
 
 .about-hero-heading span {
-    background: linear-gradient(90deg, #ffffff 40%, #ff6a00 80%, #ff5e14 100%) !important;
+    background: linear-gradient(90deg, #ffffff 40%, var(--secondary-color) 80%, #ff5e14 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
@@ -95,7 +95,7 @@
     line-height: 100%;
     color: #ffffff !important;
     cursor: pointer;
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -103,7 +103,7 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     color: #00123C !important;
-    background: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
     background-origin: border-box;
     background-clip: padding-box;
     border: 3px solid transparent;
@@ -239,7 +239,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 60px 40px;
-    background-image: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 175deg, #00123C 180deg);
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 175deg, #00123C 180deg);
     border-radius: 28px;
     text-align: center;
 }
@@ -289,7 +289,7 @@
     font-size: 15px;
     font-weight: 600;
     color: #ffffff;
-    background: #d33e00;
+    background: var(--secondary-color);
     cursor: pointer;
     height: 50px !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -297,7 +297,7 @@
 
 .cta-primary:hover {
     transform: translateY(-2px);
-    background: #eb632a;
+    background: var(--secondary-color);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.65);
 }
 

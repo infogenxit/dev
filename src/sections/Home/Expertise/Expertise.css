@@ -15,7 +15,8 @@
 
 .expertise-content {
     max-width: 1160px;
-    margin-bottom: 10px; /* Reduced from 20px */
+    margin-bottom: 10px;
+    /* Reduced from 20px */
 }
 
 .expertise-heading {
@@ -24,15 +25,17 @@
     font-size: 48px;
     line-height: 1.2;
     color: #00123C;
-    margin-bottom: 15px; /* Reduced from 25px */
-    padding: 30px 60px 0px 60px; /* Reduced from 60px */
+    margin-bottom: 15px;
+    /* Reduced from 25px */
+    padding: 30px 60px 0px 60px;
+    /* Reduced from 60px */
 }
 
 .expertise-description {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     line-height: 160%;
-    color: #5a5a5a;
+    color: #333;
     padding: 0px 60px 0px 60px;
 }
 
@@ -41,18 +44,21 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 32px;
-    padding: 20px 60px 60px; /* Reduced from 60px 60px 80px */
+    padding: 20px 60px 20px;
+    /* Reduced from 60px 60px 80px */
     background-image: url('../../../assets/images/wave.png');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    margin-top: 10px; /* Reduced from 20px */
+    margin-top: 10px;
+    /* Reduced from 20px */
 }
 
 .expertise-card {
     flex: 1;
     min-height: 400px;
-    text-align: left; /* Clean left alignment for modern readability */
+    text-align: left;
+    /* Clean left alignment for modern readability */
     background: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -69,6 +75,7 @@
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
 }
+
 /* .first-card {
     height: 380px;
     top: 100PX;
@@ -83,14 +90,15 @@
     
 } */
 .last-card img {
-        width: 350px;
+    width: 350px;
 }
+
 .expertise-card h4 {
     font-family: "Outfit", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
-    color: #00123C;
+    color: var(--secondary-color);
 }
 
 .expertise-card p {
@@ -98,7 +106,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
-    color: #444;
+    color: #333;
 }
 
 .card-visual {
@@ -182,17 +190,20 @@
 @media (max-width: 768px) {
     .expertise-section {
         margin-top: 0;
-        padding: 0px 0 0; /* Minimized for mobile */
+        padding: 0px 0 0;
+        /* Minimized for mobile */
     }
 
     .expertise-container {
-        padding-bottom: 5px; /* Reduced for tighter mobile layout */
+        padding-bottom: 5px;
+        /* Reduced for tighter mobile layout */
         background: #fff5ef;
     }
 
     .expertise-heading {
         font-size: 28px;
-        padding: 5px 20px 0; /* Minimized for mobile */
+        padding: 5px 20px 0;
+        /* Minimized for mobile */
         text-align: left;
     }
 
@@ -214,8 +225,10 @@
         max-width: 360px;
         height: auto;
         padding: 20px;
-        margin-bottom: 15px; /* Reduced from 30px */
-        text-align: left; /* Clean left alignment matching desktop */
+        margin-bottom: 15px;
+        /* Reduced from 30px */
+        text-align: left;
+        /* Clean left alignment matching desktop */
     }
 
     .first-card,
@@ -224,7 +237,7 @@
         top: 0;
         height: auto;
     }
-    
+
     .expertise-card img {
         position: static;
         transform: none;
@@ -246,13 +259,10 @@
     }
 
     .expertise-card h4 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .expertise-card p {
         font-size: 13px;
     }
 }
-
-
-

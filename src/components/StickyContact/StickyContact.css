@@ -41,7 +41,7 @@
 }
 
 .sticky-btn-call {
-  background: linear-gradient(to right, #ff6a00, #ff8c00);
+  background: linear-gradient(to right, var(--secondary-color), var(--secondary-color));
   color: #ffffff !important;
   box-shadow: 0 4px 15px rgba(255, 106, 0, 0.25);
 }

@@ -1,29 +1,34 @@
 .service-section {
     background: #fff5ef;
-    padding: 0 !important;
+    padding: 50px 0 0 !important;
 }
 
 .service-sticky {
     align-items: center;
     display: flex;
-    flex-direction: column; 
-    height: 100vh;
-    justify-content: flex-start; /* Changed from center to flex-start for better control */
-    overflow: hidden;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+    /* Changed from center to flex-start for better control */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding-top: 50px; /* Reduced unwanted top space */
+    padding-top: 5px;
+    /* Significantly reduced top space */
 }
 
 .service-header-container {
     text-align: left;
-    max-width: 1200px; /* Aligns perfectly with the 1200px cards */
-    margin: 0 auto 40px; /* Symmetrical auto margins with tight bottom space */
+    max-width: 1200px;
+    /* Aligns perfectly with the 1200px cards */
+    margin: 0 auto 5px;
+    /* Reduced bottom margin to bring cards closer */
     padding: 0 40px;
     width: 100%;
     box-sizing: border-box;
-    z-index: 20; /* Ensure header is above cards */
+    z-index: 20;
+    /* Ensure header is above cards */
 }
 
 
@@ -40,35 +45,50 @@
 }
 
 .service-header-container .section-subtitle {
-    color: #666;
+    color: #333;
     line-height: 1.6;
     font-size: 1rem;
 }
 
 .service-stack {
-    position: relative;
+    display: grid;
+    grid-template-areas: "card";
     width: 100%;
-    height: 100%;
+    padding-top: 20px;
 }
 
 .service-card {
+    grid-area: card;
+    position: relative;
     align-items: center;
     border-radius: 24px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 40px;
     height: -webkit-fit-content;
     height: fit-content;
-    inset: 0;
     justify-content: space-between;
-    margin: auto;
+    margin: 0 auto;
     max-width: 1200px;
     overflow: hidden;
-    padding: 50px 60px;
-    position: absolute;
+    padding: 20px 50px;
     transition: transform 0.5s ease, opacity 0.4s ease;
     width: calc(100% - 80px);
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(90deg, #00123c, #ff5e14);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .service-card.active {
@@ -88,6 +108,7 @@
         transform: translateY(80px) scale(0.95);
         opacity: 0;
     }
+
     to {
         transform: translateY(0) scale(1);
         opacity: 1;
@@ -105,7 +126,7 @@
     display: flex;
     flex: 1 1;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     height: -webkit-fit-content;
     height: fit-content;
     min-width: 0;
@@ -140,43 +161,64 @@
 
 .service-description {
     font-family: "Manrope", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 160%;
     color: #00123C;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 .service-btn {
+    height: 50px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    padding: 12px 22px;
-    border-radius: 30px;
+    padding: 14px 30px;
+    border-radius: 50px;
     border: none;
     font-family: "Manrope", sans-serif;
     font-weight: 600;
-    font-size: 14px;
-    background: #ffffff;
-    color: #00123C;
+    font-size: 16px;
+    line-height: 100%;
+    color: #ffffff;
     cursor: pointer;
+    background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
+    border: 3px solid transparent;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.service-btn .arrow {
-    width: 35px;
-    height: 35px;
+.secondary-btn {
+    gap: 10px;
+}
+
+.secondary-btn .arrow {
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    background-image: conic-gradient(at 52% -200%, #cf5d2d 158deg, #EB632A 166deg, #a53606 177deg, #00123C 183deg, #00123C 165deg);
+    background: linear-gradient(110deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.secondary-btn:hover .arrow {
+    transform: translateX(3px);
 }
 
 .service-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    color: #00123C;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 70%, var(--secondary-color) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
 .service-media-container {
@@ -228,24 +270,29 @@
     .service-sticky {
         height: 100vh;
     }
+
     .service-card {
         margin: 40px auto;
         padding: 40px 30px;
         gap: 40px;
     }
+
     .service-title {
         font-size: 40px;
         margin: 0 0 40px 0;
     }
+
     .service-description {
         font-size: 14px;
         margin-bottom: 24px;
     }
+
     .service-media {
         width: 280px;
         height: 280px;
         border-width: 8px;
     }
+
     .service-index {
         font-size: 48px;
     }
@@ -254,66 +301,89 @@
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
     .service-section {
-        padding: 5px 0 20px !important; /* Reduced bottom padding from 100px to 20px to reduce space at the bottom */
+        padding: 5px 0 20px !important;
+        /* Reduced bottom padding from 100px to 20px to reduce space at the bottom */
         background: #fff5ef;
         position: relative;
-        z-index: 1; /* Ensure it stays below the header */
+        z-index: 1;
+        /* Ensure it stays below the header */
     }
+
     .service-sticky {
-        height: 82vh; /* Increased from 75vh to prevent button cut-off on mobile */
-        top: 85px; /* Increased from 70px to clear the header more effectively */
-        padding-top: 35px !important; /* Increased top padding to create beautiful breathing room at the top */
-        justify-content: flex-start; 
+        height: auto;
+        padding-bottom: 0px;
+        /* Replaced 82vh with auto to avoid bottom gap */
+        top: 85px;
+        /* Increased from 70px to clear the header more effectively */
+        padding-top: 35px !important;
+        /* Increased top padding to create beautiful breathing room at the top */
+        justify-content: flex-start;
     }
+
     .service-header-container {
         text-align: left;
-        margin-bottom: 50px !important; /* Increased margin-bottom to completely prevent subtitle and card overlap */
+        margin-bottom: 50px !important;
+        /* Increased margin-bottom to completely prevent subtitle and card overlap */
         padding: 0 20px;
-        padding-top: 5px; 
+        padding-top: 5px;
         width: 100%;
         box-sizing: border-box;
-        z-index: 50; 
+        z-index: 50;
     }
+
     .service-header-container .section-title {
-        font-size: 1.6rem; /* Slightly smaller to save space */
+        font-size: 1.6rem;
+        /* Slightly smaller to save space */
         margin-bottom: 5px;
     }
+
     .service-header-container .section-subtitle {
         font-size: 0.85rem;
         line-height: 1.3;
     }
+
     .service-stack {
-        height: 75%; /* Increased from 55% to give the cards more vertical room */
         margin-top: 5px;
+        padding-top: 0;
+        /* Override desktop padding if needed */
     }
+
     .service-card {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px 20px 25px; /* Adjusted padding to prevent button overflow */
+        padding: 20px 20px 25px;
+        /* Adjusted padding to prevent button overflow */
         text-align: left;
         margin: 0 auto;
         gap: 12px;
         width: calc(100% - 40px);
-        max-height: 380px; /* Increased from 350px to ensure the button is fully visible */
+        max-height: 380px;
+        /* Increased from 350px to ensure the button is fully visible */
         border-radius: 20px;
-        box-shadow: 0 -10px 20px rgba(0,0,0,0.1); 
+        box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
     }
+
     .service-content {
         gap: 8px;
     }
+
     .service-title {
         font-size: 18px;
         line-height: 1.1;
     }
+
     .service-description {
         font-size: 12px;
         margin-bottom: 12px;
         line-height: 1.3;
     }
+
     .service-btn {
-        padding: 8px 18px; /* Slightly adjusted padding for clickability and visibility */
+        padding: 8px 18px;
+        /* Slightly adjusted padding for clickability and visibility */
         font-size: 11px;
     }
+
     .service-media-container {
         display: none;
     }
@@ -322,24 +392,27 @@
 /* ---------- SMALL MOBILE ---------- */
 @media (max-width: 480px) {
     .service-title {
-        font-size: 20px; /* Reduced from 24px to prevent description/button overflow */
+        font-size: 20px;
+        /* Reduced from 24px to prevent description/button overflow */
         line-height: 1.2;
     }
+
     .service-description {
-        font-size: 12px; /* Adjusted from 13px to fit inside card bounds */
+        font-size: 12px;
+        /* Adjusted from 13px to fit inside card bounds */
     }
+
     .service-btn {
         font-size: 12px;
         padding: 8px 16px;
     }
+
     .service-media {
         width: 200px;
         height: 200px;
     }
+
     .service-index {
         font-size: 32px;
     }
 }
-
-
-
