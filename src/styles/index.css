@@ -634,8 +634,8 @@ a.secondary-btn {
     font-weight: 600 !important;
     font-size: 15px !important;
     line-height: 100% !important;
-    color: #00123c !important;
-    -webkit-text-fill-color: #00123c !important;
+    color: var(--primary-color) !important;
+    -webkit-text-fill-color: var(--primary-color) !important;
     cursor: pointer !important;
     border: none !important;
     background: transparent !important;
@@ -676,9 +676,11 @@ button.secondary-btn:hover,
 a.secondary-btn:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
+    /* Preserve label color via inherited var(--primary-color) */
+    color: var(--primary-color) !important;
+    -webkit-text-fill-color: var(--primary-color) !important;
+    /* Keep transparent background to retain border gradient */
+    background: transparent !important;
 }
 
 .secondary-btn:hover::before,
@@ -708,8 +710,8 @@ a.secondary-btn:hover::before {
 [class*="hero"] .secondary-btn,
 .hero .secondary-btn,
 .about-hero .secondary-btn {
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
+    color: var(--primary-color) !important;
+    -webkit-text-fill-color: var(--primary-color) !important;
     border-color: #ffffff !important;
 }
 
@@ -732,13 +734,13 @@ a.secondary-btn:hover::before {
     -webkit-text-fill-color: #ffffff !important;
 }
 
-/* Premium gradient border override for hero secondary buttons to match global-cta-secondary */
+/* Gradient border for hero secondary buttons using primary & secondary colors */
 .appdev-hero .secondary-btn::before,
 [class$="-hero"] .secondary-btn::before,
 [class*="hero"] .secondary-btn::before,
 .hero .secondary-btn::before,
 .about-hero .secondary-btn::before {
-    background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 40%, #ff7b39 60%, #ff5e14 100%) !important;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
 }
 
 /* GLOBAL PLATFORMS HIGHLIGHT STYLE */
