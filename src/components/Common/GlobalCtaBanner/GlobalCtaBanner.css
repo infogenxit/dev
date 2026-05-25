@@ -4,6 +4,12 @@
     background: #fff7f2;
 }
 
+:root {
+  --primary-color: #00123c;
+  --secondary-color: #ff5e14;
+}
+
+
 .global-cta-container {
     max-width: 1280px;
     margin: 0 auto;
