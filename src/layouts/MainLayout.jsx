@@ -25,7 +25,7 @@ const MainLayout = ({ children }) => {
       <GtmPageViewTracker />
       {!isIsolatedProduct && <RouteSeo />}
       {!isIsolatedProduct && <Header />}
-      <main className={isHome ? "" : (isIsolatedProduct ? "" : "main-subpage")}>{children}</main>
+      <main className={isHome ? "home" : isIsolatedProduct ? "product" : "main-subpage"}>{children}</main>
       {!isIsolatedProduct && <StickyContact />}
       {!isIsolatedProduct && <Footer />}
     </div>
