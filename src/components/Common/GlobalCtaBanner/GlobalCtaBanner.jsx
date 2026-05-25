@@ -7,10 +7,10 @@ import Stack from '@mui/material/Stack';
 import CheckIcon from '@mui/icons-material/Check';
 import "./GlobalCtaBanner.css";
 
-const GlobalCtaBanner = ({ 
-  title, 
-  description, 
-  primaryBtnText = "Start Your Transformation", 
+const GlobalCtaBanner = ({
+  title,
+  description,
+  primaryBtnText = "Start Your Transformation",
   secondaryBtnText = "Talk to an Expert ↗",
   checklist = [
     "Enterprise-Ready Solutions",
@@ -52,7 +52,7 @@ const GlobalCtaBanner = ({
             </Button>
           </Stack>
         </Box>
-        
+
         <Box className="global-cta-r" sx={{ flex: '0 0 350px', mt: { xs: 4, sm: 0 } }}>
           {checklist && checklist.length > 0 && (
             <ul className="global-cta-checklist">
