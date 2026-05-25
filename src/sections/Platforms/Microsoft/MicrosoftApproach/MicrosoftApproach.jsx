@@ -1,5 +1,7 @@
 import "./MicrosoftApproach.css";
 import AppcornerAssent from "../../../../assets/images/appcorner.webp";
+import SolutionPath from "../../../../components/SolutionPath/SolutionPath";
+
 const steps = [
   {
     number: "1",
@@ -41,13 +43,7 @@ const AppDevApproach = () => {
           <h2>A Proven Approach to Microsoft Implementation and Optimisation</h2>
         </div>
         <div className="approach-grid">
-          {steps.map((step, index) => (
-            <div className="approach-card" key={index}>
-              <span className="step-number">{step.number}</span>
-              <h4>{step.title}</h4>
-              <p>{step.desc}</p>
-            </div>
-          ))}
+          <SolutionPath steps={steps} />
         </div>
       </div>
       <img

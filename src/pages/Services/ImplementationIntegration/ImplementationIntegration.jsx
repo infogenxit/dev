@@ -10,6 +10,7 @@ import RelatedServices from "../../../sections/Common/RelatedServices/RelatedSer
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
 import { PATHS } from "../../../route/paths";
 
+
 const ImplementationIntegration = () => {
   const implementationContent = [
     {
@@ -100,10 +101,10 @@ const ImplementationIntegration = () => {
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
-      <ServiceDetailedContent 
-        title="Flawless System Deployment & Technical Integration" 
+      <ServiceDetailedContent
+        title="Flawless System Deployment & Technical Integration"
         subtitle="Precision Implementation"
-        sections={implementationContent} 
+        sections={implementationContent}
       />
       <AppDevApproach />
       <AppDevBusinessImpact />

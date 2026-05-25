@@ -1,5 +1,7 @@
 import "./ConsultingAppDev.css";
 import AppcornerAssent from "../../../../assets/images/appcorner.webp";
+import SolutionPath from "../../../../components/SolutionPath/SolutionPath";
+
 const steps = [
   {
     number: "1",
@@ -35,15 +37,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">How We Deliver</span>
           <h2>Our Approach to Deliver</h2>
         </div>
-        <div className="approach-grid">
-          {steps.map((step, index) => (
-            <div className="approach-card" key={index}>
-              {/* <span className="step-number">{step.number}</span> */}
-              <h4>{step.title}</h4>
-              <p>{step.desc}</p>
-            </div>
-          ))}
-        </div>
+        <SolutionPath steps={steps} />
       </div>
       <img
         src={AppcornerAssent}

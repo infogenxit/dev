@@ -1,5 +1,7 @@
 import "./ImplementIntegrationApproach.css";
 import cornerAssent from "../../../../assets/images/corner-accent.webp";
+import SolutionPath from "../../../../components/SolutionPath/SolutionPath";
+
 const steps = [
   {
     number: "1",
@@ -30,15 +32,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">How We Deliver</span>
           <h2>A Smarter Path to Successful Implementation</h2>
         </div>
-        <div className="approach-grid">
-          {steps.map((step, index) => (
-            <div className="approach-card" key={index}>
-              {/* <span className="step-number">{step.number}</span> */}
-              <h4>{step.title}</h4>
-              <p>{step.desc}</p>
-            </div>
-          ))}
-        </div>
+        <SolutionPath steps={steps} />
         <hr
           style={{
             margin: "50px 0px",

@@ -1,5 +1,6 @@
-import "./SupportApproach.css";
 import AppcornerAssent from "../../../../assets/images/corner-accent.webp";
+import SolutionPath from "../../../../components/SolutionPath/SolutionPath";
+
 const steps = [
   {
     number: "1",
@@ -35,21 +36,8 @@ const AppDevApproach = () => {
           <span className="app-section-label">How We Deliver</span>
           <h2>A Smarter Approach to Platform Support</h2>
         </div>
-        <div className="approach-grid">
-          {steps.map((step, index) => (
-            <div className="approach-card" key={index}>
-              {/* <span className="step-number">{step.number}</span> */}
-              <h4>{step.title}</h4>
-              <p>{step.desc}</p>
-            </div>
-          ))}
-        </div>
-        <hr
-          style={{
-            margin: "50px 0px",
-            border: "1px solid  rgba(248, 138, 60, 0.792)",
-          }}
-        />
+        <SolutionPath steps={steps} />
+
         <div className="business-outcome">
           <h1>Business Outcomes</h1>
           <div className="outcome-container">

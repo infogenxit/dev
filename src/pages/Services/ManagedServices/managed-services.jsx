@@ -10,8 +10,9 @@ import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
 import { PATHS } from "../../../route/paths";
-
+import SolutionPath from "../../../components/SolutionPath/SolutionPath";
 const ManagedServices = () => {
+    const steps = ["Step 1", "Step 2", "Step 3"];
   const managedContent = [
     {
       heading: "Operations Automation in Brisbane",
@@ -124,7 +125,7 @@ const ManagedServices = () => {
         subtitle="Uptime Guaranteed"
         sections={managedContent} 
       />
-      <AppDevApproach />
+      <SolutionPath steps={steps} />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqs} />

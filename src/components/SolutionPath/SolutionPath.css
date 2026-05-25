@@ -1,0 +1,52 @@
+.approach-card {
+  background: var(--primary-color);
+  border-radius: 16px;
+  padding: 16px 14px;
+  /* reduced padding */
+  min-height: auto;
+  border-left: 2px solid rgba(248, 138, 60, 0.792);
+  margin-bottom: 16px;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  /* border-left-color: var(--secondary-color); */
+  /* border-left-width: 6px; */
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  gap: 1rem;
+}
+
+.approach-card:hover {
+  background: var(--primary-color);
+  border-left: 5px solid var(--secondary-color);
+}
+
+.step-number {
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  /* smaller step number */
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.12);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.approach-card h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  text-align: justify;
+}
+
+.approach-card p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #cbd2e1;
+  margin: 0;
+}
+
+/* Hover effects */
