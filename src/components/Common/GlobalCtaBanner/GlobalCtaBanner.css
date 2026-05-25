@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding: 20px 50px 40px;
     /* Original padding */
-    background: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 175deg, #00123C 180deg);
+    background: conic-gradient(at 50% 0%, var(--secondary-color, #ff5e14) 0deg, var(--secondary-color, #ff5e14) 90deg, var(--secondary-color, #ff5e14) 110deg, #00123C 175deg, #00123C 180deg);
     border-radius: 28px;
     display: flex;
     justify-content: space-between;
@@ -143,7 +143,7 @@
 
 .global-cta-secondary:hover {
     transform: translateY(-5px) !important;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
+    background: linear-gradient(90deg, var(--primary-color, #00123c), var(--secondary-color, #ff5e14)) !important;
     color: #ffffff !important;
     border: 2px solid transparent !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
