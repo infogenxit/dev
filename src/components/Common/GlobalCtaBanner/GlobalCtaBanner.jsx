@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -71,6 +72,27 @@ const GlobalCtaBanner = ({
       </Box>
     </Box>
   );
+};
+
+GlobalCtaBanner.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  primaryBtnText: PropTypes.string,
+  secondaryBtnText: PropTypes.string,
+  checklist: PropTypes.arrayOf(PropTypes.string),
+  contactText: PropTypes.node,
+};
+
+GlobalCtaBanner.defaultProps = {
+  primaryBtnText: "Start Your Transformation",
+  secondaryBtnText: "Talk to an Expert ↗",
+  checklist: ["Enterprise-Ready Solutions", "Cutting-Edge Technology", "Outcomes You Can Measure"],
+  contactText: (
+    <>
+      Let us build the future together.<br />
+      <strong>Call us now on +61 403339424.</strong>
+    </>
+  ),
 };
 
 export default GlobalCtaBanner;
