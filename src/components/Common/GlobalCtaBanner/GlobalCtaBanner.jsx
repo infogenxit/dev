@@ -28,7 +28,7 @@ const GlobalCtaBanner = ({
   return (
     <Box component="section" className="global-cta-section">
       <Box className="global-cta-container" sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 2 }}>
-        <Box className="global-cta-left" sx={{ flex: 1, minWidth: 300 }}>
+        <Box className="global-cta-l" sx={{ flex: 1, minWidth: 300 }}>
           <Typography variant="h4" component="h2" className="global-cta-title">
             {title}
           </Typography>
@@ -53,7 +53,7 @@ const GlobalCtaBanner = ({
           </Stack>
         </Box>
         
-        <Box className="global-cta-right" sx={{ flex: '0 0 350px', mt: { xs: 4, sm: 0 } }}>
+        <Box className="global-cta-r" sx={{ flex: '0 0 350px', mt: { xs: 4, sm: 0 } }}>
           {checklist && checklist.length > 0 && (
             <ul className="global-cta-checklist">
               {checklist.map((item, index) => (
