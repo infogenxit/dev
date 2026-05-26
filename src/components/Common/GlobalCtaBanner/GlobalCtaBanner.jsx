@@ -28,44 +28,47 @@ const GlobalCtaBanner = ({
   const navigate = useNavigate();
   return (
     <Box component="section" className="global-cta-section">
-      <Box className="global-cta-container" sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 2 }}>
-        <Box className="global-cta-l" sx={{ flex: 1, minWidth: 300 }}>
-          <Typography variant="h4" component="h2" className="global-cta-title">
-            {title}
-          </Typography>
-          <Typography variant="body1" className="global-cta-description">
-            {description}
-          </Typography>
-          <div className="global-cta-buttons">
-            <button
-              className="primary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              {primaryBtnText}
-            </button>
-            <button
-              className="secondary-btn"
-              onClick={() => navigate("/contact-us")}
-            >
-              {secondaryBtnText}
-            </button>
-          </div>
-        </Box>
+      <Box className="global-cta-container">
+        <Typography variant="h4" component="h2" className="global-cta-title">
+          {title}
+        </Typography>
+        <Box className="global-cta-content">
+          <Box className="global-cta-l">
+            <Typography variant="body1" className="global-cta-description">
+              {description}
+            </Typography>
+            <div className="global-cta-buttons">
+              <button
 
-        <Box className="global-cta-r" sx={{ flex: '0 0 350px', mt: { xs: 4, sm: 0 } }}>
-          {checklist && checklist.length > 0 && (
-            <ul className="global-cta-checklist">
-              {checklist.map((item, index) => (
-                <li key={index} style={{ display: 'flex', alignItems: 'center' }}>
-                  <CheckIcon className="global-cta-check-icon" sx={{ mr: 1, fontSize: 20, color: '#ff5e14' }} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          )}
-          <Typography variant="body2" className="global-cta-call-us">
-            {contactText}
-          </Typography>
+                className="primary-btn"
+                onClick={() => navigate("/contact-us")}
+              >
+                {primaryBtnText}
+              </button>
+              <button
+                className="secondary-btn"
+                onClick={() => navigate("/contact-us")}
+              >
+                {secondaryBtnText}
+              </button>
+            </div>
+          </Box>
+
+          <Box className="global-cta-r">
+            {checklist && checklist.length > 0 && (
+              <ul className="global-cta-checklist">
+                {checklist.map((item, index) => (
+                  <li key={index} style={{ display: 'flex', alignItems: 'center' }}>
+                    <CheckIcon className="global-cta-check-icon" sx={{ mr: 1, fontSize: 20, color: '#ffffff' }} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <Typography variant="body2" className="global-cta-call-us">
+              {contactText}
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>
