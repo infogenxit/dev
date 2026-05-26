@@ -127,11 +127,33 @@
 
   <!-- ZOHO SALESIQ INTEGRATION -->
   <script>
-    // Ensure the app's primary colour is set as a CSS variable
+    // Set primary theme color if not already defined
     const root = document.documentElement;
     if (!root.style.getPropertyValue('--app-primary-color')) {
-      root.style.setProperty('--app-primary-color', '#00123c'); // replace with your theme colour
+      root.style.setProperty('--app-primary-color', '#00123c'); // default theme colour
     }
+
+    // Detect current domain to adjust Zoho widget configuration if needed
+    const hostname = window.location.hostname;
+    let widgetUrl = 'https://salesiq.zohopublic.in/widget?wc=siq74d378f7fb8618919f5437e09bd5fa8ea3ca88761d393ab064499823c7b633f1d4fd7fed6d33759d5a1102e297a588ed';
+    if (hostname.includes('dev.')) {
+      // Development environment – you may use a different widget code if required
+      // For now we keep the same URL; replace with dev‑specific ``wc`` if available
+    } else if (hostname.endsWith('.com.au')) {
+      // Production Australia – you may use a different widget code if required
+    } else if (hostname.endsWith('.com')) {
+      // Production generic .com – you may use a different widget code if required
+    }
+
+    // Insert the Zoho SalesIQ script only once
+    if (!document.getElementById('zsiqscript')) {
+      const script = document.createElement('script');
+      script.id = 'zsiqscript';
+      script.src = widgetUrl;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+
     window.$zoho = window.$zoho || {};
     $zoho.salesiq = $zoho.salesiq || {
       ready: function () {
@@ -142,9 +164,6 @@
       }
     };
   </script>
-  <script id="zsiqscript"
-    src="https://salesiq.zohopublic.in/widget?wc=siq74d378f7fb8618919f5437e09bd5fa8ea3ca88761d393ab064499823c7b633f1d4fd7fed6d33759d5a1102e297a588ed"
-    defer></script>
 </body>
 
 </html>
