@@ -193,7 +193,7 @@
 
 /* Responsive Design for mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .testimonials-section{
         padding: 30px 20px; /* Gap of 30px above and below on mobile */
         scroll-margin-top: 100px; 

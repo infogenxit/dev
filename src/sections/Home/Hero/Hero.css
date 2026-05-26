@@ -7,7 +7,7 @@
 }
 
 /* Increased for desktop */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero {
         padding-bottom: 5px !important;
     }
@@ -358,7 +358,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero-container {
         padding-top: 60px !important;
         padding-bottom: 120px !important;
@@ -470,7 +470,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     [class$="-hero"] {
         justify-content: center;
         align-items: center;

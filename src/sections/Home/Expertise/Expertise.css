@@ -187,7 +187,7 @@
 }
 
 /* Responsive Design for mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .expertise-section {
         margin-top: 0;
         padding: 0px 0 0;

@@ -89,7 +89,7 @@
 
 /* Global Label Applied */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-team-section {
     padding: 20px 15px 30px; /* Reduced top/bottom padding on mobile */
   }

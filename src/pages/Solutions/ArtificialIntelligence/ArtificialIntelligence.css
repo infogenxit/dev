@@ -548,7 +548,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .ai-hero {
     padding: 120px 0 40px;
   }

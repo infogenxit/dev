@@ -1,8 +1,3 @@
-/* Force Arial on everything */
-.approach-section * {
-    font-family: Arial, sans-serif;
-}
-
 .approach-section {
     position: relative;
     background: linear-gradient(180deg, var(--primary-color), var(--primary-color));

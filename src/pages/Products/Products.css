@@ -162,7 +162,7 @@
 }
 
 /* Responsive Design for mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .product-WebDev-hero {
 
         min-height: auto;

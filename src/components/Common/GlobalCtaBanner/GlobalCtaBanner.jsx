@@ -76,24 +76,12 @@ const GlobalCtaBanner = ({
 };
 
 GlobalCtaBanner.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
   description: PropTypes.string.isRequired,
   primaryBtnText: PropTypes.string,
   secondaryBtnText: PropTypes.string,
   checklist: PropTypes.arrayOf(PropTypes.string),
   contactText: PropTypes.any,
-};
-
-GlobalCtaBanner.defaultProps = {
-  primaryBtnText: "Start Your Transformation",
-  secondaryBtnText: "Talk to an Expert ↗",
-  checklist: ["Enterprise-Ready Solutions", "Cutting-Edge Technology", "Outcomes You Can Measure"],
-  contactText: (
-    <>
-      Let us build the future together.<br />
-      <strong>Call us now on +61 403339424.</strong>
-    </>
-  ),
 };
 
 export default GlobalCtaBanner;

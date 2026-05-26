@@ -121,7 +121,7 @@
 }
 
 /*mobile responsive*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about-hero {
         padding-bottom: 5px !important;
     }
@@ -164,7 +164,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     [class$="-hero"] {
         justify-content: center;
         align-items: center;

@@ -84,7 +84,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .services-dropdown {
         position: fixed !important;
         top: 70px !important;

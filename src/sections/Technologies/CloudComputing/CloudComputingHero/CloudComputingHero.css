@@ -202,7 +202,7 @@
 }
 
 /* Responsive Design for mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .WebDev-hero {
         /* height: 100vh; */
         min-height: auto;
@@ -292,7 +292,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   [class$="-hero"] {
     justify-content: center;
     align-items: center;

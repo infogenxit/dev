@@ -29,7 +29,7 @@
   /* Container max‑width */
   --container-max-mobile: 100%;
   --container-max-tablet: 720px;
-  --container-max-laptop: 960px;
+  --container-max-laptop: 1200px;
   --container-max-desktop: 1200px;
 
   /* Gutter / gap */

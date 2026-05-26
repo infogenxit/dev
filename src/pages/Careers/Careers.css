@@ -338,7 +338,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .careers-hero-section {
         padding-bottom: 5px !important;
     }

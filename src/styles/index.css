@@ -125,7 +125,7 @@ section {
 }
 
 /* Mobile Font Size Optimization */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         font-size: 16px;
     }
@@ -199,7 +199,7 @@ section {
     /* Subtle styling */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about-corner-accent {
         width: 140px;
         /* Scale down on mobile to prevent blocking headings */
@@ -432,7 +432,7 @@ h4,
 /* ==========================================================================
    MOBILE RESPONSIVE TYPOGRAPHY OVERRIDES (MAX-WIDTH: 768PX)
    ========================================================================== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* --- 1. HEADLINES (H1 / HERO HEADINGS) - MOBILE --- */
     h1,
@@ -493,7 +493,7 @@ h4,
     padding-bottom: 40px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     [class*="impact-cta-section"] {
         padding-bottom: 25px !important;
     }
@@ -755,7 +755,7 @@ a.secondary-btn:hover::before {
     color: inherit;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .primary-btn,
     .about-primary-btn,
@@ -777,9 +777,10 @@ a.secondary-btn:hover::before {
     }
 }
 
-/* GLOBAL CENTER-ALIGNMENT OVERRIDES FOR ALL MODULES (TECHNOLOGIES, SOLUTIONS, & SERVICES) ON TABLET & MOBILE */
+/* ==========================================================================
+   GLOBAL CENTER-ALIGNMENT OVERRIDES FOR TABLET & MOBILE (MAX-WIDTH: 1199PX)
+   ========================================================================== */
 @media (max-width: 1199px) {
-
     .tech-outcomes-container,
     .business-impact-container,
     .outcomes-container,
@@ -790,46 +791,6 @@ a.secondary-btn:hover::before {
         align-items: center !important;
         justify-content: center !important;
     }
-}
-
-@media (max-width: 768px) {
-
-    .appdev-expertise-header,
-    .expertise-header,
-    .sol-expertise-header,
-    .appdev-expertise-header h2,
-    .expertise-header h2,
-    .sol-expertise-header h2,
-    .tech-outcomes-content h2,
-    .business-impact-content h2,
-    .outcomes-content h2,
-    .expertise-item,
-    .sol-expertise-item,
-    .modern-expertise-item,
-    .support-expertise-item,
-    .managed-expertise-item,
-    .consulting-expertise-item,
-    .impl-expertise-item,
-    .marketing-expertise-item,
-    .outcome-item,
-    .business-impact-item,
-    .cta-content,
-    .impact-cta-content,
-    .impact-card {
-        text-align: center !important;
-    }
-
-    .expertise-icon,
-    .sol-expertise-icon,
-    .modern-expertise-icon,
-    .outcome-icon {
-        margin: 0 auto 10px auto !important;
-        display: block !important;
-    }
-}
-
-/* GLOBAL CENTER-POSITIONING WITH CENTERED TEXT ON TABLET */
-@media (max-width: 1199px) {
 
     .appdev-container,
     [class*="hero-container"],
@@ -909,22 +870,125 @@ a.secondary-btn:hover::before {
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
+    /* Center layout images, videos, and wrappers on tablet & mobile */
+    .appdev-right,
+    [class*="hero-right"],
+    [class*="-image-wrapper"],
+    [class*="-video-wrapper"],
+    .appdev-video-wrapper,
+    .tech-outcomes-image,
+    .business-impact-image,
+    .outcomes-image {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        max-width: 450px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        height: auto !important;
+    }
+
+    .appdev-video-wrapper .bg {
+        width: 90% !important;
+        height: 90% !important;
+        aspect-ratio: 1 / 1 !important;
+        top: 15px !important;
+        right: 15px !important;
+        border-radius: 30px !important;
+    }
+
+    .appdev-video,
+    .tech-outcomes-image img,
+    .business-impact-image img,
+    .outcomes-image img,
+    .outcome-image img,
+    .outcome-icon img,
+    .expertise-icon img,
+    .sol-expertise-icon img,
+    .testimonials-avatar img,
+    .service-detailed-image img,
+    .impact-card img,
+    .hero-brands img,
+    .about-hero-right img,
+    video:not(.hero-video),
+    iframe {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
 }
 
-@media (max-width: 768px) {
-
-    /* Enforce elements/containers and text alignment center globally on mobile */
+/* ==========================================================================
+   GLOBAL MOBILE ALIGNMENT OVERRIDES (MAX-WIDTH: 767PX)
+   ========================================================================== */
+@media (max-width: 767px) {
+    /* Text alignment center globally on mobile except paragraphs */
     h1,
     h2,
     h3,
     h4,
     h5,
     h6,
-    p,
     span,
     li,
-    a {
+    a,
+    .appdev-expertise-header,
+    .expertise-header,
+    .sol-expertise-header,
+    .appdev-expertise-header h2,
+    .expertise-header h2,
+    .sol-expertise-header h2,
+    .tech-outcomes-content h2,
+    .business-impact-content h2,
+    .outcomes-content h2,
+    .expertise-item,
+    .sol-expertise-item,
+    .modern-expertise-item,
+    .support-expertise-item,
+    .managed-expertise-item,
+    .consulting-expertise-item,
+    .impl-expertise-item,
+    .marketing-expertise-item,
+    .outcome-item,
+    .business-impact-item,
+    .cta-content,
+    .impact-cta-content,
+    .impact-card {
         text-align: center !important;
+    }
+
+    /* Paragraphs and descriptions justified with centered last line */
+    p,
+    .hero-description,
+    .WebDev-hero-description,
+    .about-hero-description,
+    [class*="description"],
+    [class*="desc"],
+    .hero-proof,
+    .footer-bottom p,
+    .footer-copyright {
+        text-align: justify !important;
+        text-align-last: center !important;
+        max-width: 650px !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .expertise-icon,
+    .sol-expertise-icon,
+    .modern-expertise-icon,
+    .outcome-icon {
+        margin: 0 auto 10px auto !important;
+        display: block !important;
     }
 
     .appdev-container,
@@ -967,45 +1031,6 @@ a.secondary-btn:hover::before {
         margin: 0 auto !important;
     }
 
-    .hero-heading,
-    .WebDev-hero-heading,
-    .about-hero-heading,
-    .faq-title,
-    .section-title,
-    .testimonials-title,
-    .igx-pricing-title,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        text-align: center !important;
-        max-width: 100% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .hero-description,
-    .WebDev-hero-description,
-    .about-hero-description,
-    [class*="description"],
-    [class*="desc"],
-    .hero-proof,
-    .footer-bottom p,
-    .footer-copyright,
-    p {
-        text-align: center !important;
-        max-width: 650px !important;
-        width: 100% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
     /* Stack list items inside impact CTA in the center */
     .impact-cta-right ul {
         display: flex !important;
@@ -1028,22 +1053,8 @@ a.secondary-btn:hover::before {
     .impact-card img {
         margin: 0 auto !important;
     }
-}
 
-/* FIXED HEADER OFFSET FOR SUBPAGES REMOVED (Full-bleed backgrounds with hero-level paddings) */
-
-/* SCROLL MARGIN PREVENTIONS */
-h1,
-h2,
-h3,
-h4,
-section {
-    scroll-margin-top: 120px;
-    /* Ensures anchor links don't get covered by sticky header */
-}
-
-@media (max-width: 768px) {
-
+    /* Scroll margin optimizations */
     h1,
     h2,
     h3,
@@ -1051,10 +1062,6 @@ section {
     section {
         scroll-margin-top: 100px;
     }
-}
-
-/* ZOHO SALESIQ WIDGET MOBILE POSITIONING ADJUSTMENT */
-@media (max-width: 768px) {
 
     /* Push Zoho SalesIQ float bubble up to clear the mobile sticky contact footer */
     #zsiq_float,

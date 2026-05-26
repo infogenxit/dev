@@ -1,23 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import SEO from "../../../components/SEO/SEO";
 import Breadcrumbs from "../../../sections/Common/Breadcrumbs/Breadcrumbs";
 import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import { PATHS } from "../../../route/paths";
-import appDevVideo from "../../../assets/videos/app-dev-hero.mp4";
+import customSoftwareHero from "../../../assets/images/custom_software_hero.png";
 import AboutCornerAccent from "../../../assets/images/about-corner-accent.webp";
 import "./CustomSoftwareDevelopment.css";
 
 const CustomSoftwareDevelopment = () => {
   const navigate = useNavigate();
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.7; // Slow speed for smooth feel
-    }
-  }, []);
 
   const breadcrumbItems = [
     { name: "Solutions", path: PATHS.home },
@@ -106,14 +99,11 @@ const CustomSoftwareDevelopment = () => {
           <div className="cs-hero-right">
             <div className="cs-video-wrapper">
               <div className="cs-video-bg"></div>
-              <video
-                src={appDevVideo}
-                ref={videoRef}
-                autoPlay
-                muted
-                loop
-                playsInline
+              <img
+                src={customSoftwareHero}
+                alt="Custom Software Development Brisbane"
                 className="cs-video"
+                style={{ objectFit: "cover" }}
               />
             </div>
           </div>

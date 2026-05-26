@@ -94,7 +94,7 @@
   color: #00123c;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .service-detailed-content {
     padding: 30px 20px;
   }

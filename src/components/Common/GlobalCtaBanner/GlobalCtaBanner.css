@@ -135,7 +135,7 @@
 
 /* Responsive Design for mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .global-cta-section {
         padding: 0 20px;
     }
@@ -283,7 +283,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .global-cta-br {
         display: none;
     }

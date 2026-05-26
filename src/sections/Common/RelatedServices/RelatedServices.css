@@ -54,7 +54,7 @@
   transform: translateX(5px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .related-services-section {
     padding: 20px 0 10px !important;
   }

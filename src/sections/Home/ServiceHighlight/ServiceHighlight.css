@@ -299,7 +299,7 @@
 }
 
 /* ---------- MOBILE ---------- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .service-section {
         padding: 5px 0 20px !important;
         /* Reduced bottom padding from 100px to 20px to reduce space at the bottom */

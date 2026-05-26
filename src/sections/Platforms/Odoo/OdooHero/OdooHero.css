@@ -168,7 +168,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   [class$="-hero"] {
     justify-content: center;
     align-items: center;

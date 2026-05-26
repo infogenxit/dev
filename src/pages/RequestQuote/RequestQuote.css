@@ -111,3 +111,10 @@
     background-image: conic-gradient(at 50% 0%, var(--secondary-color) 0deg, var(--secondary-color) 90deg, var(--secondary-color) 110deg, #00123C 150deg, #00123C 180deg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+@media (max-width: 767px) {
+    .form-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

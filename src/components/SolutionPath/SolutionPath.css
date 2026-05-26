@@ -50,3 +50,40 @@
 }
 
 /* Hover effects */
+
+/* Responsive adjustments for all screen sizes */
+
+/* Mobile (0px - 767px) */
+@media (max-width: 767px) {
+  .solution-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
+  }
+  .approach-card {
+    padding: 14px 12px !important;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .solution-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+}
+
+/* Laptop (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .solution-grid {
+    grid-template-columns: repeat(var(--cols), 1fr) !important;
+    gap: 1.15rem !important;
+  }
+}
+
+/* Desktop (1441px and above) */
+@media (min-width: 1441px) {
+  .solution-grid {
+    grid-template-columns: repeat(var(--cols), 1fr) !important;
+    gap: 1.25rem !important;
+  }
+}

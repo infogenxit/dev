@@ -81,5 +81,25 @@
         width: 230px;
 }
 
+@media (max-width: 991px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .approach-header h2 {
+        font-size: 32px;
+    }
+}
 
-
+@media (max-width: 767px) {
+    .approach-header h2 {
+        font-size: 28px;
+    }
+    .approach-card {
+        padding: 24px 20px;
+        min-height: auto;
+    }
+    .step-number {
+        font-size: 50px;
+    }
+}
