@@ -49,11 +49,11 @@
 }
 
 .global-cta-l .global-cta-title {
-    font-family: "Manrope", sans-serif;
-    font-size: 21px;
-    /* Slightly smaller title */
-    font-weight: 800;
-    white-space: nowrap;
+    font-family: "Outfit", sans-serif !important;
+    font-size: 32px !important;
+    /* Slightly smaller title for better containment */
+    font-weight: 800 !important;
+    white-space: normal !important;
     color: #ffffff !important;
     /* Force high-contrast solid white color */
     -webkit-text-fill-color: #ffffff !important;
@@ -64,7 +64,7 @@
     /* Remove background fill gradient */
     background-clip: border-box !important;
     -webkit-background-clip: border-box !important;
-    line-height: 1.25;
+    line-height: 1.25 !important;
     margin-top: 0px;
     margin-bottom: 16px;
     /* Little gap below headline */
