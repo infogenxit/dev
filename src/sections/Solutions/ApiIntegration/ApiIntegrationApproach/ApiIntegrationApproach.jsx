@@ -1,5 +1,6 @@
 import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 import SolutionPath from "../../../../components/SolutionPath/SolutionPath";
+import "./ApiIntegrationApproach.css";
 
 const steps = [
   {
@@ -36,9 +37,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">How We Deliver</span>
           <h2>A Smarter Path to Connected Systems</h2>
         </div>
-        <div className="approach-grid">
-          <SolutionPath steps={steps} />
-        </div>
+        <SolutionPath steps={steps} />
       </div>
       <img
         src={AppcornerAssent}

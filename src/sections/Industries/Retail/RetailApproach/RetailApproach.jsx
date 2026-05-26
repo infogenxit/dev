@@ -31,9 +31,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">Our Process</span>
           <h2>Simple and Transparent Delivery</h2>
         </div>
-        <div className="approach-grid">
-          <SolutionPath steps={steps} />
-        </div>
+        <SolutionPath steps={steps} />
       </div>
       <img
         src={AppcornerAssent}

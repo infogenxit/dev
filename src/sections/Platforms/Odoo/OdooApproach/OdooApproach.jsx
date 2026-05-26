@@ -36,9 +36,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">A Business-First Approach</span>
           <h2>A Smarter Path to Odoo Success in Brisbane</h2>
         </div>
-        <div className="approach-grid">
-          <SolutionPath steps={steps} />
-        </div>
+        <SolutionPath steps={steps} />
       </div>
       <img
         src={AppcornerAssent}

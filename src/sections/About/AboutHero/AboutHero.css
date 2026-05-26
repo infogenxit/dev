@@ -4,10 +4,12 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    padding-bottom: 80px !important; /* Reduced bottom spacing */
+    padding-bottom: 80px !important;
+    /* Reduced bottom spacing */
     color: #ffffff;
     max-width: 100%;
 }
+
 .about-corner-accent {
     position: absolute;
     top: 0;
@@ -16,6 +18,7 @@
     width: 230px;
     height: auto;
 }
+
 /* Original dark overlay for high contrast readability */
 .about-hero-overlay {
     position: absolute;
@@ -28,7 +31,8 @@
     z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 80px !important; /* Reduced top spacing */
+    padding-top: 80px !important;
+    /* Reduced top spacing */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +42,8 @@
 .about-hero-heading {
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: 52px !important; /* Larger title for hierarchy */
+    font-size: 52px !important;
+    /* Larger title for hierarchy */
     line-height: 1.2;
     margin: 0 auto 25px;
     max-width: 1200px;
@@ -75,7 +80,8 @@
     gap: 20px;
     justify-content: center;
     width: 100%;
-    margin-top: 40px; /* MATCHING HOME HERO! */
+    margin-top: 40px;
+    /* MATCHING HOME HERO! */
 }
 
 .about-secondary-btn span {
@@ -85,7 +91,8 @@
 
 .about-hero-description {
     font-family: "Manrope", sans-serif;
-    font-size: 18px; /* Smaller subtitle/description */
+    font-size: 18px;
+    /* Smaller subtitle/description */
     line-height: 1.6;
     font-weight: 500;
     color: #f1f1f1 !important;
@@ -121,7 +128,8 @@
 
     .about-hero-container {
         padding-top: 60px !important;
-        padding-bottom: 120px !important; /* MATCHING HOME HERO FOR STICKY FOOTER! */
+        padding-bottom: 120px !important;
+        /* MATCHING HOME HERO FOR STICKY FOOTER! */
         gap: 20px;
     }
 
@@ -157,15 +165,16 @@
 
 
 @media (max-width: 768px) {
-  [class$="-hero"] {
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-  }
-  [class$="-hero"] h1,
-  [class$="-hero"] h2,
-  [class$="-hero"] h3,
-  [class$="-hero"] p {
-    text-align: left !important;
-  }
+    [class$="-hero"] {
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    [class$="-hero"] h1,
+    [class$="-hero"] h2,
+    [class$="-hero"] h3,
+    [class$="-hero"] p {
+        text-align: left !important;
+    }
 }

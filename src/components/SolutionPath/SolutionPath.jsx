@@ -12,7 +12,7 @@ const SolutionPath = ({ steps = [] }) => {
   const cols = Math.ceil(Math.sqrt(steps.length));
 
   return (
-    <div className="solution-grid" style={{ "--cols": cols }}>
+    <div className="solution-grid" style={{ "--cols": cols, "--rows": cols }}>
       {steps.map((step, idx) => {
         // Scale the badge number and title size based on index (starting at 1)
         const scale = 1 + idx * 0.15; // 1, 1.15, 1.30, ...

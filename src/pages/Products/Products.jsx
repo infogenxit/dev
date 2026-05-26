@@ -79,8 +79,6 @@ const Products = () => {
         description="Explore Infogenx’s innovative IT products designed to streamline operations, enhance efficiency, and drive business growth across Australia."
         keywords="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
       />
-
-
       <section className="product-WebDev-hero">
         <img
           alt="corner accent"
@@ -131,17 +129,12 @@ const Products = () => {
         </div>
       </section>
 
-
-
       <section className="product-approach-section">
         <div className="approach-container">
-
           <div className="approach-header">
             <span className="app-section-label">Readymade Softwares</span>
             <h2><span>Solutions Built for Real Operations</span></h2>
           </div>
-
-
           <div className="approach-grid">
             {steps.map((step, index) => (
               <div className="product-approach-card" key={index}>
@@ -170,8 +163,6 @@ const Products = () => {
             ))}
           </div>
         </div>
-
-
         <img
           src={AppcornerAssent}
           alt="corner accent"

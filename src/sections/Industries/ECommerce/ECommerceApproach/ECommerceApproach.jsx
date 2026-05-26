@@ -1,4 +1,5 @@
 import "./ECommerceApproach.css";
+import SolutionPath from "../../../../components/SolutionPath/SolutionPath";
 import AppcornerAssent from "../../../../assets/images/appcorner.webp";
 const steps = [
   {
@@ -35,15 +36,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">Our Process</span>
           <h2>Simple and Transparent Delivery</h2>
         </div>
-        <div className="approach-grid">
-          {steps.map((step, index) => (
-            <div className="approach-card" key={index}>
-              <span className="step-number">{step.number}</span>
-              <h4>{step.title}</h4>
-              <p>{step.desc}</p>
-            </div>
-          ))}
-        </div>
+        <SolutionPath steps={steps} />
       </div>
       <img
         src={AppcornerAssent}

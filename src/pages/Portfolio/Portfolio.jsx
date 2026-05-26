@@ -1,7 +1,7 @@
 import PortfolioVideo from "../../assets/videos/portfolio.mp4";
 import AboutCornerAccent from "../../assets/images/about-corner-accent.webp";
 import Header from "../../sections/Header/Header";
-import Footer from "../../sections/Footer/Footer";
+
 import { useState } from "react";
 import "./Portfolio.css";
 import ImagePreview from "../../components/Common/ImagePreview/ImagePreview";
@@ -159,24 +159,19 @@ const Portfolio = () => {
       />
       <Breadcrumbs items={[{ name: "Portfolio", path: PATHS.portfolio }]} />
       <section className="appdev-hero">
-
         <img
           alt="corner accent"
           className="about-corner-accent"
           src={AboutCornerAccent}
         ></img>
         <div className="appdev-container">
-
-
           <div className="appdev-left">
             <h1><span>Explore Our Portfolio of High-Impact Digital Work</span></h1>
-
             <p>
               Websites, applications, and digital solutions built to combine
               design clarity, functional strength, and measurable business
               value.
             </p>
-
             <div className="appdev-buttons">
               <button
                 className="primary-btn"
@@ -193,8 +188,6 @@ const Portfolio = () => {
               </button>
             </div>
           </div>
-
-
           <div className="appdev-right">
             <div className="appdev-video-wrapper">
               <div className="bg"></div>
@@ -210,18 +203,14 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-
       <section className="portfolio-section">
         <div className="portfolio-container">
-
           <h2 className="portfolio-title">Built to Perform</h2>
-
           <p className="portfolio-subtitle">
             Our portfolio highlights digital experiences crafted to improve
             usability, strengthen operations, and support long-term growth
             across industries.
           </p>
-
 
           <div className="portfolio-filters">
             {filters.map((filter) => (
@@ -244,7 +233,6 @@ const Portfolio = () => {
             ))}
           </div>
 
-
           <div className="portfolio-grid">
             {filteredProjects.map((project) => (
               <div
@@ -261,14 +249,11 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-
       <ImagePreview
         open={!!selectedImage}
         image={selectedImage}
         onClose={() => setSelectedImage(null)}
       />
-
-      <Footer />
     </>
   );
 };

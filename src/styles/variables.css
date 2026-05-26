@@ -1,0 +1,42 @@
+:root {
+  /* Breakpoint ranges */
+  --mobile-min: 0px;
+  --mobile-max: 767px;
+  --tablet-min: 768px;
+  --tablet-max: 1024px;
+  --laptop-min: 1025px;
+  --laptop-max: 1440px;
+  --desktop-min: 1441px;
+  --desktop-max: 2560px;
+
+  /* Alignment helpers */
+  --align-center: center;
+  --align-start: flex-start;
+  --align-end: flex-end;
+  --justify-center: center;
+  --justify-start: flex-start;
+  --justify-end: flex-end;
+  --justify-between: space-between;
+  --justify-around: space-around;
+
+  /* Positioning / spacing defaults per breakpoint */
+  /* Header height */
+  --header-height-mobile: 60px;
+  --header-height-tablet: 80px;
+  --header-height-laptop: 100px;
+  --header-height-desktop: 120px;
+
+  /* Container max‑width */
+  --container-max-mobile: 100%;
+  --container-max-tablet: 720px;
+  --container-max-laptop: 960px;
+  --container-max-desktop: 1200px;
+
+  /* Gutter / gap */
+  --gap-mobile: 16px;
+  --gap-tablet: 24px;
+  --gap-laptop: 32px;
+  --gap-desktop: 40px;
+  --justify-justify: justify;
+  --text-align-default: justify;
+}

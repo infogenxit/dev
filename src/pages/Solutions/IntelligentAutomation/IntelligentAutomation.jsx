@@ -86,10 +86,10 @@ const IntelligentAutomation = () => {
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
-      <ServiceDetailedContent 
-        title="AI-Driven Workflow Orchestration & Efficiency" 
+      <ServiceDetailedContent
+        title="AI-Driven Workflow Orchestration & Efficiency"
         subtitle="Automate to Innovate"
-        sections={automationContent} 
+        sections={automationContent}
       />
       <AppDevApproach />
       <AppDevBusinessImpact />

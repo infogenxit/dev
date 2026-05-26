@@ -1,5 +1,5 @@
 .service-detailed-content {
-  padding: 0px 0 30px;
+  padding: 0px 0 20px;
   color: #333;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .content-header .main-title {
-  font-size: 42px;
+  font-size: 40px;
   line-height: 1.2;
   color: #00123c;
   margin-top: 8px;
@@ -34,16 +34,16 @@
 .content-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .section-title {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.4;
   color: #00123c;
-  font-weight: 700;
+  font-weight: 400;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 .section-title::after {
@@ -98,15 +98,12 @@
   .service-detailed-content {
     padding: 30px 20px;
   }
-  
+
   .content-header .main-title {
     font-size: 32px;
   }
-  
+
   .section-title {
     font-size: 22px;
   }
 }
-
-
-

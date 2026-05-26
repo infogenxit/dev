@@ -11,22 +11,22 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Our Microsoft Capabilities — Strategy, Delivery, and Optimisation</span>
           <h2>Why Are Businesses Moving to Microsoft Dynamics 365 in Brisbane?</h2>
-          
+
           <div className="expertise-intro-grid">
             <div className="expertise-intro-left">
               <p>
                 Microsoft Dynamics 365 is highly preferred by and famous among companies seeking greater control of their operations. Integration of sales, service, finance and operations is possible all at a single platform. Hence, no need to navigate multiple applications to get work done efficiently.
               </p>
               <p>
-                Integration with Microsoft Power BI imparts businesses with reporting and insights in real time, which in any case supports them to make quicker decisions. With Microsoft Copilot in Brisbane, you will enjoy seeing how AI can help automate tasks and streamline teamwork.
+                Integration with <strong>Microsoft Power BI</strong> imparts businesses with reporting and insights in real time, which in any case supports them to make quicker decisions. With <strong>Microsoft Copilot</strong> in Brisbane, you will enjoy seeing how AI can help automate tasks and streamline teamwork.
               </p>
             </div>
             <div className="expertise-intro-right">
               <p>
-                However, the technology itself isn't enough. If not configured correctly, it can be underused or become too complicated. As an expert Dynamics 365 consultant in Brisbane, we ensure that the setup is right - from workflows to integrations - so that it complements your business, and doesn't get in the way.
+                However, the technology itself isn't enough. If not configured correctly, it can be underused or become too complicated. As an expert <strong>Dynamics 365 consultant</strong> in Brisbane, we ensure that the setup is right - from workflows to integrations - so that it complements your business, and doesn't get in the way.
               </p>
               <p className="expertise-focus-link">
-                We work with businesses throughout the whole Microsoft ecosystem - from strategy with initial planning to long-term support.
+                We work with businesses throughout the whole <strong>Microsoft ecosystem</strong> - from strategy with initial planning to long-term support.
               </p>
             </div>
           </div>
@@ -36,14 +36,14 @@ const AppDevExpertise = () => {
             <img src={IconA} alt="Microsoft Dynamics 365 Implementation" className="expertise-icon" />
             <h4>Microsoft Dynamics 365 Implementation</h4>
             <p>
-              As a Dynamics 365 partner in Brisbane, we design systems that align with your sales, service and operational processes. This is how we support your employees to work smarter with less administrative clutter.
+              As a <strong>Dynamics 365 partner</strong> in Brisbane, we design systems that align with your sales, service and operational processes. This is how we support your employees to work smarter with less administrative clutter.
             </p>
           </div>
           <div className="expertise-item">
             <img src={IconB} alt="Power BI & Reporting Brisbane" className="expertise-icon" />
             <h4>Power BI & Reporting</h4>
             <p>
-              We create dashboards that are easy to use. As a Power BI consultant in Brisbane, we aim to help you get the most out of your data without having to slog through reports.
+              We create dashboards that are easy to use. As a <strong>Power BI consultant</strong> in Brisbane, we aim to help you get the most out of your data without having to slog through reports.
             </p>
           </div>
           <div className="expertise-item">
@@ -57,7 +57,7 @@ const AppDevExpertise = () => {
             <img src={IconD} alt="Microsoft Azure & Integrations" className="expertise-icon" />
             <h4>Microsoft Azure & Integrations</h4>
             <p>
-              Using Microsoft Azure in Brisbane, we take care of and secure your systems and help them to grow. By integrating your systems using Azure Logic Apps, we ensure data can flow from one system to another.
+              Using <strong>Microsoft Azure</strong> in Brisbane, we take care of and secure your systems and help them to grow. By integrating your systems using Azure Logic Apps, we ensure data can flow from one system to another.
             </p>
           </div>
           <div className="expertise-item">

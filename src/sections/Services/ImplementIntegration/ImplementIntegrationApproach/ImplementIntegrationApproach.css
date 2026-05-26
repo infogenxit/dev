@@ -22,10 +22,17 @@
 
 .approach-header h2 {
     font-family: "Manrope", sans-serif;
-    font-size: 42px;
+    font-size: 28px; /* smaller than previous */
     margin-top: 0;
     font-weight: 800;
     color: #ffffff;
+}
+
+.approach-header .app-section-label {
+    font-size: 14px; /* subtitle smaller */
+    color: #cbd2e1;
+    display: block;
+    margin-bottom: 8px;
 }
 
 /* ---------- GRID ---------- */

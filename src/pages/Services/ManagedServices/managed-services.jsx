@@ -10,9 +10,9 @@ import ServiceFaq from "../../../sections/Common/ServiceFaq/ServiceFaq";
 import RelatedServices from "../../../sections/Common/RelatedServices/RelatedServices";
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
 import { PATHS } from "../../../route/paths";
-import SolutionPath from "../../../components/SolutionPath/SolutionPath";
+
 const ManagedServices = () => {
-    const steps = ["Step 1", "Step 2", "Step 3"];
+
   const managedContent = [
     {
       heading: "Operations Automation in Brisbane",
@@ -120,12 +120,12 @@ const ManagedServices = () => {
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
-      <ServiceDetailedContent 
-        title="What We Automate: Intelligent Business Automation Services" 
+      <ServiceDetailedContent
+        title="What We Automate: Intelligent Business Automation Services"
         subtitle="Uptime Guaranteed"
-        sections={managedContent} 
+        sections={managedContent}
       />
-      <SolutionPath steps={steps} />
+      <AppDevApproach />
       <AppDevBusinessImpact />
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqs} />

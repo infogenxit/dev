@@ -1,0 +1,76 @@
+
+@import "./variables.css";
+
+/* Global text justification utility */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* Flex center utility */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout containers */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Mobile (0‑767px) */
+@media (max-width: var(--mobile-max)) {
+  .container {
+    max-width: 100% !important;
+    padding: 0 16px !important;
+  }
+  .header {
+    height: var(--header-height-mobile) !important;
+  }
+  .gap {
+    gap: var(--gap-mobile) !important;
+  }
+}
+
+/* Tablet (768‑1024px) */
+@media (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
+  .container {
+    max-width: var(--container-max-tablet) !important;
+    padding: 0 24px !important;
+  }
+  .header {
+    height: var(--header-height-tablet) !important;
+  }
+  .gap {
+    gap: var(--gap-tablet) !important;
+  }
+}
+
+/* Laptop (1025‑1440px) */
+@media (min-width: var(--laptop-min)) and (max-width: var(--laptop-max)) {
+  .container {
+    max-width: var(--container-max-laptop) !important;
+    padding: 0 32px !important;
+  }
+  .header {
+    height: var(--header-height-laptop) !important;
+  }
+  .gap {
+    gap: var(--gap-laptop) !important;
+  }
+}
+
+/* Desktop (1441px and above) */
+@media (min-width: var(--desktop-min)) {
+  .container {
+    max-width: var(--container-max-desktop) !important;
+    padding: 0 40px !important;
+  }
+  .header {
+    height: var(--header-height-desktop) !important;
+  }
+  .gap {
+    gap: var(--gap-desktop) !important;
+  }
+}

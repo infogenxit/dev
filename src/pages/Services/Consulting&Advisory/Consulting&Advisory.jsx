@@ -99,10 +99,10 @@ const ConsultingAdvisory = () => {
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
       <AppDevExpertise />
-      <ServiceDetailedContent 
-        title="Outcome-Driven Technology Strategy & Governance" 
+      <ServiceDetailedContent
+        title="Outcome-Driven Technology Strategy & Governance"
         subtitle="Strategic Advisory"
-        sections={consultingContent} 
+        sections={consultingContent}
       />
       <AppDevApproach />
       <AppDevBusinessImpact />

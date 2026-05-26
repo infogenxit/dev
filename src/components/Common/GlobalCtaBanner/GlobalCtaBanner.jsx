@@ -80,7 +80,7 @@ GlobalCtaBanner.propTypes = {
   primaryBtnText: PropTypes.string,
   secondaryBtnText: PropTypes.string,
   checklist: PropTypes.arrayOf(PropTypes.string),
-  contactText: PropTypes.node,
+  contactText: PropTypes.any,
 };
 
 GlobalCtaBanner.defaultProps = {

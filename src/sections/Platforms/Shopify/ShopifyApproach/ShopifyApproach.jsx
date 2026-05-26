@@ -38,9 +38,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">Our Approach</span>
           <h2>Built Around Real eCommerce Operations</h2>
         </div>
-        <div className="approach-grid">
-          <SolutionPath steps={steps} />
-        </div>
+        <SolutionPath steps={steps} />
       </div>
       <img
         src={AppcornerAssent}

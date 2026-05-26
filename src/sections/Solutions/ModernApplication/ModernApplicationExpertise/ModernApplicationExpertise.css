@@ -1,6 +1,6 @@
 .appdev-expertise-section {
     background: #fff6f0;
-    padding: 50px 0px 100px;
+    padding: 30px 0px 30px;
 }
 
 .appdev-expertise-container {
@@ -31,8 +31,8 @@
 .appdev-expertise-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
-    row-gap: 60px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 /* ---------- ITEM ---------- */
@@ -130,6 +130,3 @@
         font-size: 14px;
     }
 }
-
-
-

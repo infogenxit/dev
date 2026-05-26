@@ -11,12 +11,12 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Our Philosophy</span>
           <h2>The Real Value of Odoo in Brisbane: When It’s Implemented Properly</h2>
-          <p className="expertise-intro-text" style={{ maxWidth: "950px", margin: "20px auto 0", color: "#666", fontSize: "1.05rem", lineHeight: "1.7" }}>
+          <p className="expertise-intro-text" style={{ maxWidth: "950px", margin: "10px 0", lineHeight: "1.7", color: "#050505ff" }}>
             Odoo provides a single platform to deal with sales, operations, finances and internal operations. Rather than having to alternate between several tools, it all operates on the same system with common data. This is what makes it useful because of its flexibility. You are free to begin with a small number of modules and grow with your business.
             <br /><br />
             However, this is the aspect that most businesses fail to comprehend: Odoo does not address issues by default. When it is implemented improperly, it ends up being an additional system that people refuse to use. This is why it is important to have an experienced Odoo consultant in Brisbane. The configuration must be based on the way your business is conducted—not the way the software is programmed.
           </p>
-          <p style={{ marginTop: "20px", fontWeight: "600", color: "#00123c" }}>
+          <p style={{ marginTop: "10px", fontWeight: "600", color: "#00123c" }}>
             Our Role as an Odoo Consultant: Beyond Setup, Focused on Results. We consider it a component of a bigger system.
           </p>
         </div>

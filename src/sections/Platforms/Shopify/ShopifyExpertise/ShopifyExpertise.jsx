@@ -12,7 +12,7 @@ const AppDevExpertise = () => {
         <div className="appdev-expertise-header">
           <span className="section-label">Our Capabilities</span>
           <h2>Why Shopify in Brisbane Works Best When Set Up Properly?</h2>
-          <p className="expertise-intro-text" style={{ maxWidth: "950px", margin: "20px auto 0", color: "#666", fontSize: "1.05rem", lineHeight: "1.7" }}>
+          <p className="expertise-intro-text" style={{ maxWidth: "950px", margin: "20px 0", color: "#151515ff", fontSize: "1.05rem", lineHeight: "1.7" }}>
             One of the most trusted online store running platforms is Shopify. It is quick, scalable and provides the power to start and grow without extensive infrastructure. However, the platform is not the answer.
             <br /><br />
             The majority of problems begin when the stores expand, the number of manual processes increases, the systems do not interconnect, and reporting becomes vague. Unless it is properly configured, Shopify may soon be the next tool to add to the list of tools that your team will have to maintain. That is why it is important that you work with a knowledgeable Shopify professional in Brisbane. It is not only about constructing a store, but a system that helps your operations over the long term.

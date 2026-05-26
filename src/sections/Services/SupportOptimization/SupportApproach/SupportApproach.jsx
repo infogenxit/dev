@@ -23,14 +23,29 @@ const steps = [
     desc: "We ensure your platform is scalable and continuously improve to meet your evolving business needs.",
   },
 ];
+
+const businessOutcomes = [
+  {
+    title: "Increase Efficiency",
+    desc: "Eliminate manual processes and speed up operational cycle times, boosting overall efficiency.",
+  },
+  {
+    title: "Boost Accuracy",
+    desc: "Minimise human errors and improve consistency with automated processes and proactive optimisation.",
+  },
+  {
+    title: "Enhance Productivity",
+    desc: "Empower teams to focus on high-value tasks by automating repetitive workflows.",
+  },
+  {
+    title: "Drive Growth",
+    desc: "Free up resources to redirect them toward key business growth initiatives.",
+  },
+];
+
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
-      <img
-        src={AppcornerAssent}
-        alt="corner accent"
-        className="automation-corner-accent"
-      />
       <div className="approach-container">
         <div className="approach-header">
           <span className="app-section-label">How We Deliver</span>
@@ -38,39 +53,18 @@ const AppDevApproach = () => {
         </div>
         <SolutionPath steps={steps} />
 
+        <hr
+          style={{
+            margin: "50px 0px",
+            border: "1px solid  rgba(248, 138, 60, 0.792)",
+          }}
+        />
+
         <div className="business-outcome">
           <h1>Business Outcomes</h1>
-          <div className="outcome-container">
-            <div className="business-outcome-item">
-              <h3>Increase Efficiency</h3>
-              <p>
-                Eliminate manual processes and speed up operational cycle times,
-                boosting overall efficiency.
-              </p>
-            </div>
-            <div className="business-outcome-item border-left">
-              <h3>Boost Accuracy</h3>
-              <p>
-                Minimise human errors and improve consistency with automated
-                processes and proactive optimisation.
-              </p>
-            </div>
-            <div className="business-outcome-item border-left">
-              <h3>Enhance Productivity</h3>
-              <p>
-                Empower teams to focus on high-value tasks by automating
-                repetitive workflows.
-              </p>
-            </div>
-            <div className="business-outcome-item border-left">
-              <h3>Drive Growth</h3>
-              <p>
-                Free up resources to redirect them toward key business growth
-                initiatives.
-              </p>
-            </div>
-          </div>
+          <SolutionPath steps={businessOutcomes} />
         </div>
+        <img src={AppcornerAssent} alt="AppcornerAssent" className="approach-corner-accent" />
       </div>
     </section>
   );

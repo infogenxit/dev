@@ -42,9 +42,7 @@ const AppDevApproach = () => {
           <span className="app-section-label">Our Process</span>
           <h2>A Proven Approach to Microsoft Implementation and Optimisation</h2>
         </div>
-        <div className="approach-grid">
-          <SolutionPath steps={steps} />
-        </div>
+        <SolutionPath steps={steps} />
       </div>
       <img
         src={AppcornerAssent}
