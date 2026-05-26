@@ -48,13 +48,13 @@ class ErrorBoundary extends React.Component {
   }
 
   componentDidMount() {
-    if (true || this.state.hasError) {
+    if (this.state.hasError) {
       this.toggleBotVisibility(false);
     }
   }
 
   componentDidUpdate() {
-    if (true || this.state.hasError) {
+    if (this.state.hasError) {
       this.toggleBotVisibility(false);
     } else {
       this.toggleBotVisibility(true);
