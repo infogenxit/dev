@@ -81,82 +81,23 @@
     margin-top: 25px;
 }
 
-.global-cta-primary {
-    padding: 12px 28px;
-    /* Slightly reduced vertical padding */
-    border-radius: 50px;
-    border: 1.2px solid rgba(255, 255, 255, 0.25) !important;
-
-    font-family: "Manrope", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-
+.global-cta-buttons .secondary-btn {
     color: #ffffff !important;
-    background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
-    /* Brand Navy/Orange gradient */
-    cursor: pointer;
-    height: 48px !important;
-    /* Perfect height matching with secondary button, slightly reduced from 50px */
-
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.global-cta-primary,
-.global-cta-secondary {
-    text-transform: none !important;
-}
-
-.global-cta-primary:hover {
-    transform: translateY(-5px) !important;
-    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
-    /* Flip gradient on hover */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
-}
-
-.global-cta-secondary {
-    padding: 12px 28px;
-    border-radius: 50px;
-
-    font-family: "Manrope", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-
+    -webkit-text-fill-color: #ffffff !important;
+    border: 2px solid #ffffff !important;
     background: transparent !important;
-    color: #ffffff !important;
-    border: 2px solid transparent !important;
-    position: relative;
-    z-index: 1;
-
-    cursor: pointer;
-    transition: all 0.2s ease;
-    height: 48px !important;
 }
 
-.global-cta-secondary::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-    padding: 2px;
-    background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 40%, #ff7b39 60%, #ff5e14 100%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    z-index: -1;
-    pointer-events: none;
-    transition: all 0.2s ease;
+.global-cta-buttons .secondary-btn::before {
+    display: none !important;
 }
 
-.global-cta-secondary:hover {
-    transform: translateY(-5px) !important;
-    background: linear-gradient(90deg, var(--primary-color, #00123c), var(--secondary-color, #ff5e14)) !important;
+.global-cta-buttons .secondary-btn:hover {
+    background: linear-gradient(90deg, #ff5e14 0%, #00123c 100%) !important;
     color: #ffffff !important;
-    border: 2px solid transparent !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border-color: transparent !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
-}
-
-.global-cta-secondary:hover::before {
-    opacity: 0;
 }
 
 /* Responsive Design for tablet */

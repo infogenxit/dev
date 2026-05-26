@@ -36,22 +36,20 @@ const GlobalCtaBanner = ({
           <Typography variant="body1" className="global-cta-description">
             {description}
           </Typography>
-          <Stack direction="row" spacing={2} className="global-cta-buttons" sx={{ mt: 2 }}>
-            <Button
-              variant="contained"
-              className="global-cta-primary"
+          <div className="global-cta-buttons">
+            <button
+              className="primary-btn"
               onClick={() => navigate("/contact-us")}
             >
               {primaryBtnText}
-            </Button>
-            <Button
-              variant="outlined"
-              className="global-cta-secondary"
+            </button>
+            <button
+              className="secondary-btn"
               onClick={() => navigate("/contact-us")}
             >
               {secondaryBtnText}
-            </Button>
-          </Stack>
+            </button>
+          </div>
         </Box>
 
         <Box className="global-cta-r" sx={{ flex: '0 0 350px', mt: { xs: 4, sm: 0 } }}>
