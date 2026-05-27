@@ -102,6 +102,79 @@
     padding-left: 60px;
 }
 
+/* CONTACT US BUTTON — White fill, gradient border (navy→orange) */
+.about-hero .about-secondary-btn {
+    height: 50px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 30px !important;
+    border-radius: 50px !important;
+    font-family: "Manrope", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    line-height: 100% !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    cursor: pointer !important;
+    border: none !important;
+    background: transparent !important;
+    position: relative !important;
+    transition: all 0.2s ease !important;
+}
+
+.about-hero .about-secondary-btn::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    border-radius: 50px !important;
+    padding: 2.5px !important;
+    background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.about-hero .about-secondary-btn:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    /* Preserve label color via inherited var(#ffffff) */
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    /* Keep transparent background to retain border gradient */
+    background: transparent !important;
+}
+
+.about-hero .about-secondary-btn:hover::before {
+    opacity: 0 !important;
+}
+
+/* Ensure secondary buttons are visible on dark backgrounds */
+.about-hero .about-secondary-btn,
+[class$="-hero"] .about-secondary-btn {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.about-hero .about-secondary-btn:hover,
+[class$="-hero"] .about-secondary-btn:hover {
+    background: linear-gradient(#00123c, #00123c), linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Gradient border for hero secondary buttons using primary & secondary colors */
+.about-hero .about-secondary-btn::before,
+[class$="-hero"] .about-secondary-btn::before,
+[class*="hero"] .about-secondary-btn::before,
+.appdev-hero .about-secondary-btn::before,
+.about-secondary-btn::before {
+    background: linear-gradient(90deg, #00123c 0%, #ff5e14 100%) !important;
+}
+
 /*tablet responsive*/
 @media (max-width: 1199px) {
     .about-hero-container {
