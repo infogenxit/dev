@@ -1306,6 +1306,11 @@ a.secondary-btn:hover::before {
     [class*="hero-content"] {
         padding-left: 20px !important;
         padding-right: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
 }
 
