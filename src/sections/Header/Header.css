@@ -128,7 +128,7 @@
 @media (min-width: 1151px) and (max-width: 1350px) {
     .header-container {
         margin: 0 20px;
-        padding: 8px 10px 8px 20px;
+        padding: 8px 15px 8px 28px;
     }
 
     .logo img {
@@ -154,7 +154,7 @@
 @media (min-width: 1024px) and (max-width: 1150px) {
     .header-container {
         margin: 0 10px;
-        padding: 6px 8px 6px 15px;
+        padding: 6px 12px 6px 24px;
     }
 
     .logo img {
@@ -186,10 +186,14 @@
         margin: 0 20px;
         border-radius: 50px;
         border: none;
-        padding: 8px 10px 8px 20px;
+        padding: 8px 18px 8px 28px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         position: relative;
         z-index: 1;
+    }
+
+    .logo img {
+        height: 28px;
     }
 
     .header-container::before {
@@ -385,5 +389,21 @@
         inset: 0;
         background: rgba(0, 0, 0, 0.5);
         z-index: 1500;
+    }
+}
+
+/* MOBILE ONLY CUSTOMIZATIONS (under 768px) */
+@media (max-width: 767px) {
+    .header {
+        top: 12px;
+    }
+
+    .header-container {
+        margin: 0 12px;
+        padding: 6px 14px 6px 22px;
+    }
+
+    .logo img {
+        height: 22px;
     }
 }

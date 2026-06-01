@@ -920,7 +920,8 @@ a.secondary-btn:hover::before {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        /* Hide background decorative elements on tablet */
+    }
+    /* Hide background decorative elements on tablet */
     .bg {
         display: none !important;
     }
@@ -932,22 +933,21 @@ a.secondary-btn:hover::before {
     /* Tablet left/right spacing */
     .section,
     .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 24px !important;
+        padding-right: 24px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        }
+    }
     .section {
         margin-bottom: 20px !important;
     }
-}
 }
 
 /* ==========================================================================
    GLOBAL MOBILE ALIGNMENT OVERRIDES (MAX-WIDTH: 767PX)
    ========================================================================== */
 @media (max-width: 767px) {
-    /* Text alignment center globally on mobile except paragraphs */
+    /* Text alignment left globally on mobile except paragraphs */
     h1,
     h2,
     h3,
@@ -979,10 +979,10 @@ a.secondary-btn:hover::before {
     .cta-content,
     .impact-cta-content,
     .impact-card {
-        text-align: center !important;
+        text-align: left !important;
     }
 
-    /* Paragraphs and descriptions justified with centered last line */
+    /* Paragraphs and descriptions justified */
     p,
     .hero-description,
     .WebDev-hero-description,
@@ -993,17 +993,17 @@ a.secondary-btn:hover::before {
     .footer-bottom p,
     .footer-copyright {
         text-align: justify !important;
-        max-width: 650px !important;
+        max-width: 100% !important;
         width: 100% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .expertise-icon,
     .sol-expertise-icon,
     .modern-expertise-icon,
     .outcome-icon {
-        margin: 0 auto 10px auto !important;
+        margin: 0 0 10px 0 !important;
         display: block !important;
     }
 
@@ -1017,9 +1017,9 @@ a.secondary-btn:hover::before {
     .product-WebDev-hero-container {
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
     }
 
     .appdev-left,
@@ -1027,12 +1027,12 @@ a.secondary-btn:hover::before {
     .about-hero-left {
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
         width: 100% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        text-align: left !important;
     }
 
     .appdev-buttons,
@@ -1041,33 +1041,34 @@ a.secondary-btn:hover::before {
     .hero-buttons,
     .impact-buttons {
         flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
         width: 100% !important;
-        margin: 0 auto !important;
+        margin: 0 !important;
+        gap: 12px !important;
     }
 
-    /* Stack list items inside impact CTA in the center */
+    /* Stack list items inside impact CTA on the left */
     .impact-cta-right ul {
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
     }
 
     .impact-cta-right li {
-        justify-content: center !important;
-        text-align: center !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
     }
 
-    /* Stack card items in the center */
+    /* Stack card items on the left */
     .impact-card {
-        align-items: center !important;
-        text-align: center !important;
+        align-items: flex-start !important;
+        text-align: left !important;
     }
 
     .impact-card img {
-        margin: 0 auto !important;
+        margin: 0 0 10px 0 !important;
     }
 
     /* Scroll margin optimizations */
@@ -1256,4 +1257,63 @@ a.secondary-btn:hover::before {
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
     color: transparent !important;
+}
+
+/* Global Hero Styles */
+
+/* Hero Heading Gradient */
+[class*="hero-heading"],
+[class*="hero"] h1,
+.hero-heading,
+.WebDev-hero-heading,
+.about-hero-heading,
+.appdev-hero .appdev-left h1,
+.hero h1,
+.about-hero h1,
+.product-WebDev-hero h1,
+.igx-hero-container h1,
+[class*="-hero"] h1 {
+    background: linear-gradient(90deg, var(--primary-color) 15%, var(--secondary-color) 85%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    max-width: fit-content;
+}
+
+/* Tablet & Mobile Hero Container Padding */
+@media (max-width: 1024px) {
+    .hero,
+    .about-hero,
+    .appdev-hero,
+    .product-WebDev-hero,
+    .igx-hero-container,
+    [class*="hero-container"],
+    [class*="hero-content"] {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+}
+
+/* Mobile specific tighter padding */
+@media (max-width: 767px) {
+    .hero,
+    .about-hero,
+    .appdev-hero,
+    .product-WebDev-hero,
+    .igx-hero-container,
+    [class*="hero-container"],
+    [class*="hero-content"] {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* Ensure hero description text is justified */
+.hero-description,
+.WebDev-hero-description,
+.about-hero-description,
+[class*="description"],
+[class*="desc"] {
+    text-align: justify !important;
 }
