@@ -27,6 +27,9 @@ export const PATHS = {
   consultingAdvisory: "/services/consulting-advisory",
   supportOptimization: "/services/support-optimization",
   digitalMarketing: "/services/digital-marketing",
+  devopsServices: "/services/devops",
+  offshoreDevelopment: "/services/offshore-development",
+  staffAugmentation: "/services/staff-augmentation",
   
   // Platforms
   microsoft: "/platforms/microsoft",
@@ -40,6 +43,7 @@ export const PATHS = {
   digitalTransformation: "/solutions/digital-transformation",
   intelligentAutomation: "/solutions/intelligent-automation",
   modernApplications: "/solutions/modern-applications",
+  machineLearning: "/solutions/machine-learning",
   
   // Technologies
   webDevelopment: "/technologies/web-development",
@@ -67,6 +71,15 @@ export const PATHS = {
   webAppDevelopmentLegacy: "/web-app-development",
   websiteDevelopmentLegacy: "/website-development",
   
+  rpaServicesLegacy: "/rpa-services",
+  cloudNativeDevelopmentLegacy: "/cloud-native-development",
+  devopsServicesLegacy: "/devops-services",
+  offshoreDevelopmentLegacy: "/offshore-development",
+  staffAugmentationLegacy: "/staff-augmentation",
+  aiDevelopmentLegacy: "/ai-development",
+  machineLearningLegacy: "/machine-learning",
+  intelligentProcessAutomationLegacy: "/intelligent-process-automation",
+  
   // Redirects/Legacy (Sub-paths)
   microsoftLegacy: "/platforms/microsoft-solutions",
   zohoLegacy: "/platforms/zoho-solutions",
@@ -78,3 +91,4 @@ export const PATHS = {
   ecommerceLegacy: "/industries/e-commerce",
   financeLegacy: "/industries/finance",
 };
+

@@ -26,24 +26,24 @@ const ArtificialIntelligence = () => {
 
   const faqs = [
     {
-      question: "1. We're a mid-sized business — is AI even relevant for us?",
-      answer: "Very much so. Mid-sized businesses often see the fastest ROI from AI because there's enough volume to automate but processes are still flexible enough to change quickly."
+      question: "1. Do we need a lot of data to get started?",
+      answer: "Not always. It depends on the problem. We assess this upfront and recommend the right approach for what you actually have — not what an ideal scenario would look like."
     },
     {
-      question: "2. How do we know if our data is good enough to use?",
-      answer: "We assess this during scoping. Data quality issues are common and usually fixable — it's rarely a dealbreaker."
+      question: "2. How long does a build take?",
+      answer: "Proof of concept: six to ten weeks. Full production build: three to six months depending on complexity. We scope clearly from day one so you're never guessing."
     },
     {
-      question: "3. What's a realistic timeline for an AI project?",
-      answer: "A focused solution — like an AI automation or a predictive report — typically takes 3 to 6 weeks. More complex builds are scoped individually."
+      question: "3. Why not just use an off-the-shelf AI tool?",
+      answer: "Generic tools give generic results. A custom build is trained on your data, built around your workflows, and owned by you. It outperforms a subscription tool on your specific problem every time."
     },
     {
-      question: "4. Do you support the solution after it's live?",
-      answer: "Yes. We offer ongoing support and can continue iterating as your needs evolve."
+      question: "4. What if we don't know exactly what we need?",
+      answer: "That's fine — most clients don't when they first reach out. The discovery session is specifically designed to figure that out together."
     },
     {
-      question: "5. Can you work with our existing IT team or software vendors?",
-      answer: "Absolutely. We collaborate with internal teams and third-party vendors regularly — it's rarely a clean greenfield project and we're used to that."
+      question: "5. What happens after launch?",
+      answer: "We monitor, maintain, and improve. AI isn't a handover job. Models need tuning as your data evolves and we stay on top of that as part of the engagement."
     }
   ];
 
@@ -68,9 +68,9 @@ const ArtificialIntelligence = () => {
   return (
     <>
       <SEO
-        title="Artificial Intelligence Brisbane | AI Consulting & Automation Solutions"
-        description="Looking for artificial intelligence solutions in Brisbane? We provide AI consulting, automation, machine learning, and intelligent business solutions to improve efficiency and growth."
-        keywords="brisbane artificial intelligence, artificial intelligence brisbane, machine learning brisbane, ai consulting brisbane, ai developers brisbane"
+        title="Brisbane AI Development | Infogenx"
+        description="AI that actually does something for your business. Not just demos and buzzwords. Our Brisbane AI Development services build AI solutions that fit how your business works."
+        keywords="artificial intelligence, machine learning, AI solutions, cognitive computing, Infogenx, AI development Brisbane"
       />
       <Breadcrumbs items={breadcrumbItems} />
 
@@ -84,10 +84,10 @@ const ArtificialIntelligence = () => {
         <div className="ai-container">
           <div className="ai-hero-left">
             <span className="ai-badge">Artificial Intelligence</span>
-            <h1>Artificial Intelligence in Brisbane: Infogenx Digital Solutions</h1>
-            <p className="ai-hero-subtitle">Stop Running on Gut Feel. Start Running on Intelligence.</p>
+            <h1>Brisbane AI Development: Infogenx</h1>
+            <p className="ai-hero-subtitle">AI that actually does something for your business. Not just demos and buzzwords.</p>
             <p>
-              Every day, your business is generating data. From customer interactions to operational processes to financial transactions — it's all there. But if your team is still making decisions based on instinct, outdated reports, or whatever landed in the inbox this morning, you're leaving real value on the table. Artificial intelligence in Brisbane is no longer something only enterprise companies with massive IT budgets can access. At Infogenx Digital Solutions, we make it practical and accessible for businesses of all sizes — built around what you actually need, not what sounds impressive.
+              Most businesses are sitting on data they don't use, processes that take too long, and decisions made on gut feel instead of numbers. That's exactly where good AI development changes the game. At Infogenx, we provide Brisbane AI Development services that build AI solutions that fit how your business works, not how a vendor's product brochure says it should.
             </p>
             <div className="ai-hero-buttons">
               <button
@@ -160,8 +160,8 @@ const ArtificialIntelligence = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3>Document & Data Extraction</h3>
-              <p>Invoices, contracts, forms, emails — if your team is manually reading and entering data from any of these, that's time being spent on something AI can handle reliably. We set it up to read, classify and extract automatically, without anyone touching it.</p>
+              <h3>Custom Machine Learning Models</h3>
+              <p>Trained on your data. Built for your problem. Whether it's predicting customer churn, spotting demand shifts, or flagging risk — we build models that give you answers your off-the-shelf tools never could.</p>
             </div>
 
             {/* Card 2 */}
@@ -171,8 +171,8 @@ const ArtificialIntelligence = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
-              <h3>AI Chatbots & Assistants</h3>
-              <p>Customer queries at 11pm, internal helpdesk requests piling up, leads sitting unanswered over the weekend — an AI assistant handles all of it consistently, around the clock, without adding headcount.</p>
+              <h3>AI-Powered Applications</h3>
+              <p>Smart search, personalisation, recommendation engines, automated decisions — we embed AI directly into your web or mobile product so it works where your customers already are.</p>
             </div>
 
             {/* Card 3 */}
@@ -182,8 +182,8 @@ const ArtificialIntelligence = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
-              <h3>Predictive Modelling</h3>
-              <p>Most business problems don't appear overnight. We build models that spot the warning signs early — a deal that's unlikely to close, a customer showing churn behaviour, an operational issue quietly building — so you can act before it gets expensive.</p>
+              <h3>NLP & Document Intelligence</h3>
+              <p>Contracts, invoices, support tickets, customer feedback — we build systems that read and process text at scale, so your team isn't doing it manually.</p>
             </div>
 
             {/* Card 4 */}
@@ -193,8 +193,8 @@ const ArtificialIntelligence = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2" />
                 </svg>
               </div>
-              <h3>Process Intelligence</h3>
-              <p>If something in your workflow is slower than it should be, there's usually a reason — it's just not always obvious from the inside. We use AI-driven analysis to find where time and effort are actually being lost, and show you what's worth fixing first.</p>
+              <h3>Custom AI Chatbots</h3>
+              <p>Trained on your products, policies, and tone. Not a generic bot. One that handles real queries without your staff needing to step in every five minutes.</p>
             </div>
 
             {/* Card 5 */}
@@ -204,8 +204,19 @@ const ArtificialIntelligence = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M7 12l3-3 3 3 4-4M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3>AI-Enhanced Reporting</h3>
-              <p>Static monthly reports tell you what already happened. We move you to dynamic dashboards that surface what actually needs your attention right now — the things that matter, not just the things that are easy to measure.</p>
+              <h3>Predictive Analytics</h3>
+              <p>Sales forecasts, inventory planning, maintenance schedules — we turn your historical data into forward-looking intelligence that helps you make better calls faster.</p>
+            </div>
+
+            {/* Card 6 */}
+            <div className="ai-apply-card">
+              <div className="ai-apply-icon-wrapper">
+                <svg className="ai-apply-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+              </div>
+              <h3>AI Integrations</h3>
+              <p>Already have a CRM, ERP, or internal platform? We connect AI directly into your existing stack. No need to rebuild what's already working.</p>
             </div>
 
           </div>
@@ -226,26 +237,26 @@ const ArtificialIntelligence = () => {
           <div className="ai-steps-grid">
             <div className="ai-step-card">
               <div className="ai-step-num">01</div>
-              <h4>Define the problem clearly</h4>
-              <p>Before any technology decisions, we understand what's actually broken or inefficient in your business.</p>
+              <h4>Discovery</h4>
+              <p>We look at your data, your workflows, and your biggest pain points. We tell you honestly whether AI is the right answer — and if it is, exactly what to build first.</p>
             </div>
             
             <div className="ai-step-card">
               <div className="ai-step-num">02</div>
-              <h4>Match the right solution</h4>
-              <p>Not every problem needs a complex AI model. Sometimes a well-structured automation with smart logic is the better answer. We'll tell you honestly which applies.</p>
+              <h4>Proof of Concept</h4>
+              <p>Before full commitment, we build something small and real. You see it working in your environment. Typical turnaround: six to ten weeks.</p>
             </div>
 
             <div className="ai-step-card">
               <div className="ai-step-num">03</div>
-              <h4>Build lean and iterate</h4>
-              <p>We start with a focused scope, deliver something working, then build from there. No six-month waits before you see anything.</p>
+              <h4>Full Build & Deployment</h4>
+              <p>Once validated, we build production-ready. Tested hard. Integrated cleanly. No surprises at launch.</p>
             </div>
 
             <div className="ai-step-card">
               <div className="ai-step-num">04</div>
-              <h4>Make it usable</h4>
-              <p>The best artificial intelligence in Brisbane solution is one your team adopts. We design for real users, not just technical specs.</p>
+              <h4>Ongoing Support</h4>
+              <p>AI needs maintenance. Models drift, data changes, business needs shift. We stay involved after go-live — that's not optional for us, it's part of how we work.</p>
             </div>
           </div>
         </div>
@@ -279,11 +290,11 @@ const ArtificialIntelligence = () => {
                 </div>
                 <div className="ai-contact-item">
                   <span className="ai-contact-icon">📞</span>
-                  <a href="tel:+61403331910" className="ai-phone-link">+61 403 331 910</a>
+                  <a href="tel:+61403339424" className="ai-phone-link">+61 403 339 424</a>
                 </div>
                 <div className="ai-contact-item">
                   <span className="ai-contact-icon">✉️</span>
-                  <a href="mailto:contactus@infogenx.com" className="ai-email-link">contactus@infogenx.com</a>
+                  <a href="mailto:reachus@infogenx.com" className="ai-email-link">reachus@infogenx.com</a>
                 </div>
                 <div className="ai-contact-item">
                   <span className="ai-contact-icon">⏰</span>

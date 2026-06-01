@@ -45,7 +45,9 @@ const WebDevTech = () => {
             <div className="tech-stack-card">
               <h4>Cloud-Native Development</h4>
               <p>
-                Build applications that natively scale, utilizing auto-scaling features and serverless compute models.
+                A lot of businesses move old systems to AWS or Azure and expect everything to magically improve. Usually, it doesn’t. The same old problems stay there — slow performance, scaling issues, and infrastructure that becomes expensive to maintain.
+
+                At Infogenx, our Brisbane cloud‑native development approach focuses on building applications properly from the start. Systems that scale better, recover faster, and make deployments easier for your team as the business grows.
               </p>
               <span className="tech-label">Technologies:</span>
               <p>

@@ -50,6 +50,10 @@ export default function Router() {
     { path: PATHS.ecommerce, element: <Elements.ECommerce /> },
     { path: PATHS.manufacturing, element: <Elements.Manufacturing /> },
     { path: PATHS.transport, element: <Elements.Transport /> },
+    { path: PATHS.devopsServices, element: <Elements.DevOps /> },
+    { path: PATHS.offshoreDevelopment, element: <Elements.OffshoreDevelopment /> },
+    { path: PATHS.staffAugmentation, element: <Elements.StaffAugmentation /> },
+    { path: PATHS.machineLearning, element: <Elements.MachineLearning /> },
     // Redirects/Legacy
     { path: PATHS.implementationLegacy, element: <Navigate to={PATHS.implementationIntegration} replace /> },
     { path: PATHS.managedLegacy, element: <Navigate to={PATHS.managedServices} replace /> },
@@ -60,6 +64,15 @@ export default function Router() {
     { path: PATHS.cloudComputingLegacy, element: <Navigate to={PATHS.cloudComputing} replace /> },
     { path: PATHS.webAppDevelopmentLegacy, element: <Navigate to={PATHS.modernApplications} replace /> },
     { path: PATHS.websiteDevelopmentLegacy, element: <Navigate to={PATHS.webDevelopment} replace /> },
+    
+    { path: PATHS.rpaServicesLegacy, element: <Navigate to={PATHS.managedServices} replace /> },
+    { path: PATHS.cloudNativeDevelopmentLegacy, element: <Navigate to={PATHS.cloudComputing} replace /> },
+    { path: PATHS.devopsServicesLegacy, element: <Navigate to={PATHS.devopsServices} replace /> },
+    { path: PATHS.offshoreDevelopmentLegacy, element: <Navigate to={PATHS.offshoreDevelopment} replace /> },
+    { path: PATHS.staffAugmentationLegacy, element: <Navigate to={PATHS.staffAugmentation} replace /> },
+    { path: PATHS.aiDevelopmentLegacy, element: <Navigate to={PATHS.artificialIntelligenceNew} replace /> },
+    { path: PATHS.machineLearningLegacy, element: <Navigate to={PATHS.machineLearning} replace /> },
+    { path: PATHS.intelligentProcessAutomationLegacy, element: <Navigate to={PATHS.intelligentAutomation} replace /> },
     
     { path: PATHS.microsoftLegacy, element: <Elements.MicrosoftSolution /> },
     { path: PATHS.zohoLegacy, element: <Elements.ZohoSolution /> },
@@ -74,3 +87,4 @@ export default function Router() {
     { path: "*", element: <Navigate to={PATHS.home} replace /> },
   ]);
 }
+

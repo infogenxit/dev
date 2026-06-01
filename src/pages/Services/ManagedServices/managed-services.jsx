@@ -15,51 +15,30 @@ const ManagedServices = () => {
 
   const managedContent = [
     {
-      heading: "Operations Automation in Brisbane",
+      heading: "What RPA Actually Is",
       content: [
-        "Approvals sitting in inboxes. Status updates nobody can find. Reports that take half a day to compile. Our operations automation work maps where time is being lost and builds automated workflows that keep things moving — without someone having to chase it every time."
+        "RPA uses software to mimic what a person does when interacting with digital systems. It logs into applications, reads and enters data, moves files, fills forms, triggers actions, and hands off to the next step — all without human input. It doesn't replace your existing software; it works on top of it.",
+        "The result is a process that runs faster, makes fewer errors, and doesn't call in sick."
       ]
     },
     {
-      heading: "Process Automation",
+      heading: "What We Automate for Businesses With Our Brisbane RPA Services",
       content: [
-        "We use RPA tools like UiPath, Automation Anywhere, and Blue Prism to automate end-to-end business processes — from customer onboarding to supplier management to internal sign-off workflows. Our process automation in Brisbane service works around your existing systems. Nothing gets ripped out."
+        "Data Entry and Migration: Moving data between systems manually is slow, tedious, and error‑prone. RPA handles this at volume, accurately, without the fatigue that causes human mistakes halfway through a 400‑row spreadsheet.",
+        "Invoice and Document Processing: Extracting information from invoices, purchase orders, and contracts and pushing it into your accounting or ERP system. What takes an accounts team hours can run overnight without anyone touching it.",
+        "Report Generation and Distribution: Pulling data from multiple sources, compiling it into the right format, and sending it to the right people on schedule. No more Friday afternoons spent building the weekly report.",
+        "Customer Onboarding Workflows: New customer setup across your CRM, billing system, and project management tools — completed consistently and quickly, every time, without steps getting skipped because someone was busy.",
+        "Compliance and Audit Tasks: Regular checks, data validation, and record‑keeping that needs to happen consistently. RPA runs these on schedule and logs everything, which makes audits considerably less painful.",
+        "HR and Payroll Administration: Timesheet processing, leave calculations, employee record updates — repetitive HR admin that consumes time without adding any strategic value."
       ]
     },
     {
-      heading: "Sales Automation",
+      heading: "How We Work With Businesses",
       content: [
-        "Sales teams should be selling — not updating CRM fields or manually sending follow-ups. Our sales automation in Brisbane work automates lead capture, follow-up sequences, pipeline reporting, and task reminders so your team spends more time in front of customers and less time buried in admin."
-      ]
-    },
-    {
-      heading: "CRM Automation in Brisbane",
-      content: [
-        "A CRM that isn't automated is just an expensive contact list. Our CRM automation service gets it working properly — auto-capturing leads, routing enquiries, triggering follow-ups, and keeping records updated without anyone touching it manually."
-      ]
-    },
-    {
-      heading: "ERP Automation",
-      content: [
-        "Most businesses barely use half of what their ERP can do. Our ERP automation work connects your ERP to the rest of your systems, automates data entry, invoice processing, and procurement workflows, and removes the manual steps that slow everything down and introduce errors."
-      ]
-    },
-    {
-      heading: "Finance Automation",
-      content: [
-        "Invoice processing. Payment approvals. Month-end reporting. All of it is automatable. Our finance automation in Brisbane service handles high-volume finance workflows end-to-end — improving accuracy, cutting processing times, and freeing your finance team for work that actually needs human thinking."
-      ]
-    },
-    {
-      heading: "HR Automation Brisbane",
-      content: [
-        "Onboarding, leave requests, compliance documents, approval routing — HR carries a heavy admin load. Our HR automation Brisbane work removes the repetitive side of it so your people team can focus on your people, not paperwork."
-      ]
-    },
-    {
-      heading: "AI Automation Services",
-      content: [
-        "This is where it gets powerful. Our AI automation services in Brisbane go beyond basic rule-based bots. We combine RPA with AI, machine learning, and natural language processing to automate processes involving emails, documents, contracts, and unstructured data — things that used to need a human at every step."
+        "We start by understanding your current processes properly. Not a surface-level overview — we map out what actually happens, step by step, including the exceptions and edge cases that don't show up in the official process documentation.",
+        "From there we identify what's genuinely worth automating. Not everything is. Some processes are too variable, too judgment-heavy, or simply not high enough volume to justify the build. We're honest about that upfront.",
+        "For the processes that do make sense, we build, test, and deploy automation using tools like UiPath, Automation Anywhere, and Power Automate — depending on your existing tech environment and what fits best. We document everything so your team understands what's running and why.",
+        "After go-live we stay involved. Automations need maintenance when the systems they interact with change. We handle that so your processes keep running without becoming someone's side job."
       ]
     }
   ];
@@ -84,38 +63,39 @@ const ManagedServices = () => {
 
   const faqs = [
     {
-      question: "How do I know which processes are worth automating first?",
-      answer: "Look for anything high-volume, repetitive, and rule-based — data entry, invoice processing, approval workflows, scheduled reports. We run a process audit with every new client to find exactly where automation saves the most time."
+      question: "Do we need to replace our current software to implement RPA?",
+      answer: "No — that's one of the main reasons RPA is practical. It works with the systems you already have, including older platforms that don't have modern APIs. If your team can interact with it on screen, RPA can usually be built to do the same."
     },
     {
-      question: "Can you automate our CRM and ERP and connect them to each other?",
-      answer: "Yes — and that's often where the biggest wins are. Connecting CRM and ERP automation in Brisbane eliminates duplicate data entry and keeps both systems in sync without anyone manually updating either one."
+      question: "What kind of ROI should we expect?",
+      answer: "It varies by process, but most clients see significant time savings within the first few months. A process that takes a person two hours daily can often run unattended in minutes. The return compounds when you multiply that across multiple automations."
     },
     {
-      question: "How long until we see results?",
-      answer: "Simpler automations like approval flows or report generation can go live in 2–4 weeks. More complex multi-system process automation projects are typically 6–12 weeks. We always validate with a proof-of-concept before full build."
+      question: "What happens when something breaks or a process changes?",
+      answer: "Automations need maintenance when the underlying systems or business rules change — that's just the reality. We build with this in mind and provide ongoing support so your automations stay functional without becoming a burden on your internal team."
     },
     {
-      question: "Is AI automation only for large businesses?",
-      answer: "Not anymore. AI automation services in Brisbane are practical for mid-sized businesses — especially for processing emails, documents, and customer communications. We scope what makes commercial sense for your size."
+      question: "How long does it take to get an automation live?",
+      answer: "Straightforward automations can be live in a few weeks. More complex, multi-system processes take longer depending on the number of steps and exceptions involved. We scope each one properly before committing to a timeline."
     },
     {
-      question: "Will our team push back on automation?",
-      answer: "Rarely. In our experience the people who've been doing the manual work longest are the first to welcome it. When the repetitive admin disappears, people have more energy for the work that actually matters."
+      question: "Is Brisbane RPA services only suitable for large businesses?",
+      answer: "Not at all. Mid-sized Brisbane businesses often see the biggest impact because the time savings hit a proportionally larger share of their team's capacity. If a process happens regularly and follows consistent rules, it's worth assessing regardless of company size."
     }
   ];
 
+
   const breadcrumbItems = [
     { name: "Services", path: PATHS.home },
-    { name: "Workflow Automation", path: PATHS.managedServices }
+    { name: "RPA Services", path: PATHS.managedServices }
   ];
 
   return (
     <>
       <SEO
-        title="Workflow Automation Services in Brisbane | Infogenx"
-        description="Workflow Automation Services in Brisbane | Your team didn't sign up to copy-paste data between systems, chase approvals over email, or rebuild the same report every Monday. Our workflow automation services in Brisbane identify what’s slowing your business down and replace it with intelligent, automated processes."
-        keywords="workflow automation brisbane, business process automation, crm automation brisbane, erp automation brisbane, RPA services, UiPath brisbane, finance automation, Infogenx"
+        title="Brisbane RPA Services | Infogenx"
+        description="Every Brisbane business has tasks that happen the same way, every day, handled manually by someone who should be doing something more valuable with their time. These tasks aren't complex. They're just repetitive. And repetitive work is exactly what Robotic Process Automation was built for. Our Brisbane RPA services at Infogenx help businesses identify, automate, and maintain these processes — so your team stops burning hours on admin and starts spending time on work that actually moves things forward."
+        keywords="RPA Brisbane, robotic process automation, Infogenx, automation services, UiPath, Blue Prism, Power Automate, workflow automation"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />

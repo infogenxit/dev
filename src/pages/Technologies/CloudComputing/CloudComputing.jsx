@@ -24,9 +24,19 @@ const CloudComputing = () => {
       ]
     },
     {
-      heading: "Cloud-Native Application Development",
+      heading: "Brisbane Cloud-Native Development Services",
       content: [
-        "Some applications don't need to be migrated — they need to be rebuilt properly for the cloud. We design and build cloud-native applications that are scalable, resilient, and actually take advantage of what cloud environments offer — auto-scaling, distributed architecture, managed services — rather than just replicating what you had on-premise."
+        "A lot of businesses move old systems to AWS or Azure and expect everything to magically improve. Usually, it doesn’t. The same old problems stay there — slow performance, scaling issues, and infrastructure that becomes expensive to maintain.",
+        "Our Brisbane cloud-native development approach focuses on building applications properly from the start. Systems that scale better, recover faster, and make deployments easier for your team as the business grows.",
+        "Good architecture matters more than most businesses realise. Our approach builds applications that are easier to scale, manage, and improve over time.",
+        "Microservices Development: Splitting a system into services sounds straightforward. In practice, the hard part is knowing where the boundaries go. We avoid distributed monoliths and create clean, maintainable services.",
+        "Containerisation with Docker: Everything we build runs in containers. Same environment from developer laptop through to production. Consistent, reproducible builds every time.",
+        "Kubernetes Orchestration: Properly configured clusters with resource limits, health checks, and rollback strategies ensure reliability at scale.",
+        "Serverless and Function-Based Architecture: Use AWS Lambda, Azure Functions, Google Cloud Functions where they make sense for event‑driven workloads.",
+        "Cloud‑Native Database Design: Choose distributed SQL, document stores, or time‑series databases based on access patterns.",
+        "API Design and Integration: Build REST and GraphQL APIs with versioning, documentation, and resilience patterns.",
+        "Migration from Monolith to Cloud‑Native: Phase‑wise migration with minimal disruption, keeping operations running.",
+        "Why early decisions matter: Loose coupling, asynchronous processing, stateless layers, observability built‑in."
       ]
     },
     {
@@ -45,24 +55,24 @@ const CloudComputing = () => {
 
   const faqs = [
     {
-      question: "How do I know if my business is ready to move to the cloud?",
-      answer: "If you're paying to maintain ageing servers, struggling to scale, or spending IT budget on infrastructure management instead of actual business problems — you're ready. We run a cloud readiness assessment to confirm what moves first and what the realistic costs and benefits look like."
+      question: "Is cloud-native only relevant for large or complex applications?",
+      answer: "No — and this is probably the most common misconception we run into. Smaller applications benefit from these principles too. Automatic scaling means you pay for what you actually use. Containerisation means your developer environments match production. Serverless removes whole categories of infrastructure work. The advantages show up at any scale."
     },
     {
-      question: "How long does a cloud migration take?",
-      answer: "It depends on complexity. A straightforward cloud migration in Brisbane for a small business can be done in 4–8 weeks. Larger, multi-system migrations typically run 3–6 months. We phase it so your operations aren't disrupted while it happens."
+      question: "We're already running on AWS — doesn't that make us cloud-native?",
+      answer: "Not automatically. Running on AWS or Azure doesn't mean cloud-native. If your application deploys as one unit, scales manually, or needs careful sequencing to update without downtime — it's cloud-hosted, not cloud-native. We can assess where you sit and what would make the biggest practical difference."
     },
     {
-      question: "Will we experience downtime during migration?",
-      answer: "With proper planning, rarely. We sequence migrations carefully and test everything before cutover. Most businesses are surprised by how smooth it is when it's planned correctly."
+      question: "How do you handle data migration when modernising an existing system?",
+      answer: "Carefully and in stages. Data migration carries the most risk in any modernisation project. We plan it in phases with rollback options at each step, and we never cut over without first validating the new system against real production data patterns."
     },
     {
-      question: "Is cloud actually cheaper than what we have now?",
-      answer: "It can be — but only if it's managed properly. Unmanaged cloud environments often end up more expensive than on-premise because nobody's monitoring usage and rightsizing resources. We include ongoing optimisation as part of our Brisbane cloud computing service so your costs stay in check."
+      question: "What's the honest downside of cloud-native development?",
+      answer: "Distributed systems are more complex than monoliths. Microservices bring network latency, partial failure scenarios, and data consistency challenges that a single application simply doesn't have. These are solvable — but they're real, and anyone who doesn't mention them upfront isn't being straight with you. We design systems that handle this complexity without it landing on your team to figure out."
     },
     {
-      question: "Which cloud platform is right for us — AWS, Azure, or Google Cloud?",
-      answer: "It depends on your existing tools, applications, and team familiarity. Azure tends to suit businesses already in the Microsoft ecosystem. AWS has the broadest range of services. Google Cloud is strong for data and AI workloads. We'll assess your environment and tell you which fits best — or whether a multi-cloud approach makes more sense."
+      question: "How long does a typical project take?",
+      answer: "It genuinely depends on scope. A new cloud-native application built from scratch can reach a working foundation in weeks. A migration from an existing system is usually measured in months, run in phases. We scope based on your actual situation — not a standard package that may or may not fit."
     }
   ];
 
@@ -74,18 +84,18 @@ const CloudComputing = () => {
   return (
     <>
       <SEO
-        title="Cloud Computing Brisbane | Cloud Migration & Managed Services"
-        description="Reliable cloud computing in Brisbane. Lift-and-shift, rebuild, or manage cloud infrastructure across AWS, Azure, and Google Cloud with certified experts."
-        keywords="cloud computing brisbane, cloud migration brisbane, AWS brisbane, Azure brisbane, GCP brisbane, cloud managed services, Infogenx"
+        title="Brisbane Cloud-Native Development Services | Infogenx"
+        description="A lot of businesses move old systems to AWS or Azure and expect everything to magically improve. Usually, it doesn’t. Our Brisbane cloud-native development approach focuses on building applications properly from the start. Systems that scale better, recover faster, and make deployments easier for your team as the business grows."
+        keywords="cloud-native development, cloud computing, AWS, Azure, Google Cloud, Docker, Kubernetes, serverless, microservices"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <WebDevHero />
       <WebDevTech />
       <WebDevExpertise />
-      <ServiceDetailedContent 
-        title="Brisbane Cloud Computing Services Tailored to Your Business" 
+      <ServiceDetailedContent
+        title="Brisbane Cloud Computing Services Tailored to Your Business"
         subtitle="Scale Your Infrastructure"
-        sections={cloudContent} 
+        sections={cloudContent}
       />
       <WebDevOutcomes />
       <WebDevImpactCTA />

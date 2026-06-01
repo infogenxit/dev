@@ -55,3 +55,8 @@ export const CustomerRelation = Loadable(lazy(() => import("../pages/Products/Cu
 export const Careers = Loadable(lazy(() => import("../pages/Careers/Careers")));
 export const PrivacyPolicy = Loadable(lazy(() => import("../pages/PrivacyPolicy/PrivacyPolicy")));
 export const TermsConditions = Loadable(lazy(() => import("../pages/TermsConditions/TermsConditions")));
+export const DevOps = Loadable(lazy(() => import("../pages/Services/DevOps/DevOps")));
+export const OffshoreDevelopment = Loadable(lazy(() => import("../pages/Services/OffshoreDevelopment/OffshoreDevelopment")));
+export const StaffAugmentation = Loadable(lazy(() => import("../pages/Services/StaffAugmentation/StaffAugmentation")));
+export const MachineLearning = Loadable(lazy(() => import("../pages/Solutions/MachineLearning/MachineLearning")));
+

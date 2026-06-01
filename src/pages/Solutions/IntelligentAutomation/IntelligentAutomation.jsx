@@ -14,60 +14,53 @@ import { PATHS } from "../../../route/paths";
 const IntelligentAutomation = () => {
   const automationContent = [
     {
-      heading: "Orchestrating Business Success with Intelligent Automation",
+      heading: "What Actually Is IPA?",
       content: [
-        "In the modern business environment, efficiency is the currency of growth. Intelligent Automation (IA) is the catalyst that allows organizations to break free from the constraints of manual, repetitive tasks and focus their human capital on high-value, strategic initiatives. At Infogenx, we specialize in building the 'digital nervous system' for your business, connecting disparate applications and orchestrating complex workflows with AI-driven precision.",
-        "Whether you are looking to optimize logistics or streamline healthcare operations, our automation solutions are designed to reduce operational friction, eliminate human error, and provide the scalability needed to handle increasing volumes without increasing headcount."
+        "Most people have heard of basic automation, a script that runs the same task on repeat. Brisbane Intelligent Process Automation goes further. It brings together RPA (Robotic Process Automation), AI, and machine learning so your systems can handle tasks that involve real decisions, not just fixed rules.",
+        "It can read a document, pull the right data, check it against another system, flag anything unusual, and pass it along, without anyone touching it. That's the difference between automating a task and automating a workflow."
       ]
     },
     {
-      heading: "Beyond Basic RPA: The Infogenx Intelligence Layer",
+      heading: "Who Can Benefit From Our Brisbane Intelligent Process Automation",
       content: [
-        "While traditional Robotic Process Automation (RPA) handles simple 'if-this-then-that' scenarios, Infogenx introduces an intelligence layer that allows for cognitive decision-making within your workflows."
-      ],
-      list: [
-        { label: "Cognitive Document Processing", text: "Automatically extract, classify, and validate data from invoices, contracts, and IDs using AI-powered OCR, reducing processing times from days to seconds." },
-        { label: "Predictive Workflow Triggers", text: "Systems that don't just react to data but predict when intervention is needed, triggering alerts or automated actions before a problem becomes a crisis." },
-        { label: "Seamless Ecosystem Integration", text: "We bridge the gap between your CRM, ERP, and communication tools, ensuring data flows naturally across Microsoft 365, Zoho, Odoo, and custom platforms." }
+        "Every business has bottlenecks. The industries change, but the problems are often the same, repetitive tasks, disconnected systems, and teams wasting hours on manual work.",
+        "That’s where Brisbane Intelligent Process Automation helps.",
+        "We work with finance teams overwhelmed by invoices and reporting, HR departments stuck in onboarding admin, operations teams manually tracking workflows, healthcare providers managing disconnected systems, and e-commerce businesses struggling to scale processes efficiently.",
+        "If your team spends too much time on tasks that should already be automated, it’s probably time for a conversation."
       ]
     },
     {
-      heading: "High-Impact Automation Use Cases",
+      heading: "Why Work With Infogenx in Brisbane",
       content: [
-        "Every industry has unique challenges, and our automation experts are skilled at identifying the specific areas where IA can provide the greatest return on investment.",
-        "In Finance and Accounting, we automate end-to-end accounts payable processes, from invoice receipt to payment reconciliation, ensuring 100% audit accuracy. In Supply Chain and Logistics, we orchestrate real-time inventory updates and automated shipping notifications, improving customer satisfaction and reducing manual tracking.",
-        "For Customer Service departments, we deploy intelligent chatbots and automated ticketing systems that handle routine inquiries instantly, leaving your agents to solve complex problems that require empathy and advanced reasoning."
-      ]
-    },
-    {
-      heading: "Scaling with Confidence: Governance and Security",
-      content: [
-        "We understand that as you automate more of your business, security and governance become paramount. Our automation frameworks are built with 'security-by-design' principles, ensuring that every automated agent and workflow operates within your organization’s strict compliance and privacy boundaries.",
-        "We provide comprehensive dashboards that allow you to monitor the performance and impact of your automated ecosystem in real-time, giving you total visibility and control over your digital workforce."
+        "There are plenty of firms that will sell you automation software and leave you to figure out the rest. That's not what we do.",
+        "We're a practical team. We don't propose technology to tick a box, we recommend what will actually work for the size, budget, and complexity of your business. If something won't give you a return, we'll tell you.",
+        "We work with the platforms businesses actually use, UiPath, Automation Anywhere, Blue Prism, Power Automate, ABBYY, and we pick the right fit for your situation, not ours.",
+        "Most of our clients recover their investment within six to twelve months. Some much sooner, depending on the volume of work being automated.",
+        "A free consultation costs you nothing except an hour. We'll look at your current workflows, tell you honestly where Brisbane Intelligent Process Automation makes sense, and give you a clear idea of what to expect, timelines, costs, and results."
       ]
     }
   ];
 
   const faqData = [
     {
-      question: "What is Intelligent Automation?",
-      answer: "Intelligent Automation (IA) combines Robotic Process Automation (RPA) with advanced technologies like Artificial Intelligence (AI) and Machine Learning (ML) to automate complex business processes that require decision-making."
+      question: "1. We're not a big company, does IPA still make sense for us?",
+      answer: "Yes, and honestly mid-sized businesses often see faster results than large ones. There's less red tape, faster decisions, and the impact on a smaller team is immediately visible. We've built automation for businesses with teams of 10 and teams of 500. The right starting point just looks different."
     },
     {
-      question: "How is IA different from basic automation?",
-      answer: "While basic automation handles repetitive tasks with fixed rules, IA can handle unstructured data, learn from patterns, and make informed decisions during the workflow."
+      question: "2. How long before we see something actually working?",
+      answer: "A pilot process is usually live within four to six weeks. Full rollout across multiple workflows takes three to six months. You're not waiting a year to see value — we build that in from the start."
     },
     {
-      question: "Can IA integrate with my existing ERP and CRM?",
-      answer: "Yes, our IA solutions are designed to bridge the gaps between your existing platforms like Microsoft, Zoho, and Odoo, ensuring seamless data flow and process orchestration."
+      question: "3. Are we going to have to let staff go after this?",
+      answer: "That's a concern we hear often, and the honest answer is no, that's not how this works in practice. Automation handles the tasks people hate doing anyway. What we consistently see is that teams feel less stretched, less frustrated, and more focused on work that actually requires their judgment. Headcount decisions are yours to make, not driven by the bots."
     },
     {
-      question: "Is Intelligent Automation secure?",
-      answer: "Security is built into our automation frameworks from day one, including encrypted data transfers, secure API gateways, and strict access controls."
+      question: "4. Our processes are messy and not well documented. Is that a problem?",
+      answer: "It's actually the norm. Very few businesses have clean, documented workflows sitting ready to automate. Part of what we do in the discovery phase is map out how things really work — messy edges and all. That clarity alone is valuable, separate from any automation."
     },
     {
-      question: "How do we identify which processes to automate?",
-      answer: "We begin with a thorough audit of your current workflows to identify high-volume, repetitive, or error-prone tasks where automation will provide the highest ROI."
+      question: "5. What happens when our processes change?",
+      answer: "We update the automation. Bots aren't set-and-forget — they need to reflect how your business operates. As part of our ongoing support, we handle those changes so your automations stay accurate and your team doesn't inherit a maintenance headache."
     }
   ];
 
@@ -80,8 +73,8 @@ const IntelligentAutomation = () => {
     <>
       <SEO
         title="Brisbane Intelligent Process Automation | Experts"
-        description="Experience the best Brisbane Intelligent Process Automation has to offer. Our expert team focuses on Robotic Process Automation Brisbane to drive results. Reach out now!"
-        keywords="intelligent automation, AI workflow automation, business process automation, Infogenx"
+        description="Your team didn't sign up to copy-paste data all day. At Infogenx, we build Brisbane Intelligent Process Automation solutions so your systems can handle tasks that involve decisions."
+        keywords="intelligent process automation, AI workflow automation, business process automation, Infogenx"
       />
       <Breadcrumbs items={breadcrumbItems} />
       <AppDevHero />
