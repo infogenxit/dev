@@ -1,25 +1,14 @@
 .services-dropdown {
-    position: absolute;
-    top: 100%;
-    /* UNIFORM CENTERING for all sections as per 'Platforms' reference */
-    left: 50%;
-    transform: translateX(-50%);
-    
+    position: relative;
+    pointer-events: auto !important;
     width: 900px;
     background: #fff1e8;
     border-radius: 18px;
     padding: 35px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
     z-index: 10000;
+    margin-top: 10px;
 }
-
-/* SMART OFFSETTING FOR SCREEN EDGES */
-/* If the centered dropdown would go off-screen on the left */
-.nav-item:nth-child(1) .services-dropdown { left: 450px !important; }
-.nav-item:nth-child(2) .services-dropdown { left: 400px !important; }
-
-/* If the centered dropdown would go off-screen on the right */
-.nav-item:last-child .services-dropdown { left: auto !important; right: -400px !important; transform: none !important; }
 
 .services-grid {
     display: grid;
@@ -76,29 +65,6 @@
     line-height: 1.5;
 }
 
-@media (max-width: 1200px) {
-    .services-dropdown {
-        width: 95vw;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .services-dropdown {
-        position: fixed !important;
-        top: 70px !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 100% !important;
-        border-radius: 0;
-        max-height: 80vh;
-        overflow-y: auto;
-        transform: none !important;
-    }
-}
-
-
 /* Compact dropdown for 2-item menus (Insights, Contact) */
 .services-dropdown.compact {
     width: 600px !important;
@@ -108,30 +74,19 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-
-/* Further move Contact Us dropdown to the left for better visual balance */
-.nav-item:last-child .services-dropdown {
-    left: -500px !important;
-    transform: none !important;
-}
-
-
-/* Pull Contact Us dropdown significantly to the left for better visual balance */
-.nav-item:last-child .services-dropdown {
-    left: auto !important;
-    right: -20px !important; /* Safety margin from the right edge */
-    transform: none !important;
-}
-
-/* Adjust Insights too for balance */
-.nav-item:nth-last-child(2) .services-dropdown {
-    left: auto !important;
-    right: -100px !important;
-    transform: none !important;
+/* Responsive adjustment for desktop/laptop screen widths */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .services-dropdown {
+        width: 850px;
+        padding: 25px;
+    }
+    .services-grid {
+        gap: 15px;
+    }
 }
 
 /* MOBILE DRAWER OVERRIDES */
-@media (max-width: 1024px) {
+@media (max-width: 1023.98px) {
     .services-dropdown {
         position: relative !important;
         top: 0 !important;
@@ -197,6 +152,3 @@
         overflow: hidden !important;
     }
 }
-
-
-

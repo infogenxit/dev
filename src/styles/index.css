@@ -49,15 +49,13 @@ h6 {
     z-index: 1;
 }
 
-p {
-    color: var(--primary-color);
-    font-size: 15px;
-    font-family: 'Manrope', sans-serif;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 1;
-    text-align: justify;
+p,
+.hero-description,
+.WebDev-hero-description,
+.about-hero-description,
+[class*="description"],
+[class*="desc"] {
+    text-align: justify !important;
 }
 
 a {
@@ -864,7 +862,7 @@ a.secondary-btn:hover::before {
     [class*="desc"],
     .hero-proof,
     p {
-        text-align: center !important;
+        text-align: justify !important;
         max-width: 800px !important;
         width: 100% !important;
         margin-left: auto !important;
@@ -912,7 +910,6 @@ a.secondary-btn:hover::before {
     .testimonials-avatar img,
     .service-detailed-image img,
     .impact-card img,
-    .hero-brands img,
     .about-hero-right img,
     video:not(.hero-video),
     iframe {
@@ -923,7 +920,27 @@ a.secondary-btn:hover::before {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
+        /* Hide background decorative elements on tablet */
+    .bg {
+        display: none !important;
     }
+    /* Ensure hero video always visible */
+    .hero-video {
+        display: block !important;
+        opacity: 1 !important;
+    }
+    /* Tablet left/right spacing */
+    .section,
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        }
+    .section {
+        margin-bottom: 20px !important;
+    }
+}
 }
 
 /* ==========================================================================
@@ -976,7 +993,6 @@ a.secondary-btn:hover::before {
     .footer-bottom p,
     .footer-copyright {
         text-align: justify !important;
-        text-align-last: center !important;
         max-width: 650px !important;
         width: 100% !important;
         margin-left: auto !important;

@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   const handleNavClick = (item) => {
-    if (window.innerWidth <= 1024 && item.hasDropdown) {
+    if (window.innerWidth < 1024 && item.hasDropdown) {
       setActiveMenu(item.name);
     } else {
       closeAll();

@@ -1,0 +1,8 @@
+@media (max-width: 1199px) {
+  .pageWrapper :global(.section) {
+    margin-bottom: 20px !important;
+  }
+  .pageWrapper :global(.hero) {
+    margin-bottom: 20px !important;
+  }
+}

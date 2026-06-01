@@ -8,23 +8,21 @@ import heroVideo from "../../../assets/videos/herovideobg.mp4";
 import MicrosoftImg from "../../../assets/images/microsoft (2).webp";
 import ZohoImg from "../../../assets/images/zoho (2).webp";
 import OdooImg from "../../../assets/images/odoo (2).webp";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
     <section className="hero">
       <video
-        className={`hero-video ${videoLoaded ? "loaded" : ""}`}
+        className="hero-video"
         src={heroVideo}
         autoPlay
         muted
         loop
         playsInline
-        onPlay={() => setVideoLoaded(true)}
+        preload="auto"
       />
       <div className="hero-container">
         <h1 className="hero-heading">

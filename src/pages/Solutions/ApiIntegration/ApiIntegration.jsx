@@ -11,6 +11,7 @@ import RelatedServices from "../../../sections/Common/RelatedServices/RelatedSer
 import ServiceDetailedContent from "../../../sections/Common/ServiceDetailedContent/ServiceDetailedContent";
 import { PATHS } from "../../../route/paths";
 
+import styles from "./ApiIntegration.module.css";
 const ApiIntegration = () => {
   const apiContent = [
     {
@@ -126,7 +127,7 @@ const ApiIntegration = () => {
     }
   ];
   return (
-    <>
+    <div className={styles.pageWrapper}>
       <SEO
         title="Ai Automation Services Brisbane | Trusted Experts"
         description="Experience the best Ai Automation Services Brisbane has to offer. Our expert team focuses on Business Process Automation Brisbane to drive results. Reach out now!"
@@ -145,7 +146,7 @@ const ApiIntegration = () => {
       <AppDevImpactCTA />
       <ServiceFaq faqs={faqs} />
       <RelatedServices items={relatedItems} />
-    </>
+    </div>
   );
 };
 

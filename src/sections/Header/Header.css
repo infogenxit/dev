@@ -47,7 +47,6 @@
 }
 
 .nav-item-desktop {
-    position: relative;
     padding: 10px 0;
 }
 
@@ -82,13 +81,16 @@
 }
 
 /* DROPDOWN POSITIONING (DESKTOP) */
-@media (min-width: 1151px) {
+@media (min-width: 1024px) {
     .dropdown-container {
         position: absolute;
         top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         z-index: 2000;
+        pointer-events: none;
     }
 
     .mobile-drawer,
@@ -97,33 +99,85 @@
     }
 }
 
+/* Large Screens (Desktop) */
+@media (min-width: 1351px) {
+    .header-container {
+        margin: 0 40px;
+        padding: 8px 10px 8px 30px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .nav-desktop {
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .quote-btn {
+        padding: 10px 22px !important;
+        font-size: 14px;
+    }
+}
+
+/* Medium Screens (Laptops / Small Desktops) */
 @media (min-width: 1151px) and (max-width: 1350px) {
     .header-container {
-        margin: 0 15px;
+        margin: 0 20px;
         padding: 8px 10px 8px 20px;
     }
 
     .logo img {
-        height: 26px;
+        height: 29px;
     }
 
     .nav-desktop {
-        gap: 10px;
+        gap: 12px;
     }
 
     .nav-link {
-        font-size: 13px;
+        font-size: 14.5px;
         letter-spacing: -0.2px;
     }
 
     .quote-btn {
-        padding: 8px 16px !important;
-        font-size: 12px;
+        padding: 9px 18px !important;
+        font-size: 13.5px;
+    }
+}
+
+/* Small Screens / Ultraportable Laptops (e.g. iPad Pro Landscape, Small Laptops) */
+@media (min-width: 1024px) and (max-width: 1150px) {
+    .header-container {
+        margin: 0 10px;
+        padding: 6px 8px 6px 15px;
+    }
+
+    .logo img {
+        height: 24px;
+    }
+
+    .nav-desktop {
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        letter-spacing: -0.3px;
+    }
+
+    .quote-btn {
+        padding: 7px 14px !important;
+        font-size: 12.5px;
     }
 }
 
 /* MOBILE DRAWER SYSTEM */
-@media (max-width: 1150px) {
+@media (max-width: 1023.98px) {
     .header {
         top: 20px;
     }

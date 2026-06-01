@@ -39,7 +39,6 @@ const GlobalCtaBanner = ({
             </Typography>
             <div className="global-cta-buttons">
               <button
-
                 className="primary-btn"
                 onClick={() => navigate("/contact-us")}
               >
@@ -77,7 +76,7 @@ const GlobalCtaBanner = ({
 
 GlobalCtaBanner.propTypes = {
   title: PropTypes.node.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.node.isRequired,
   primaryBtnText: PropTypes.string,
   secondaryBtnText: PropTypes.string,
   checklist: PropTypes.arrayOf(PropTypes.string),

@@ -318,12 +318,12 @@
 .product-approach-card {
     position: relative;
     background: var(--primary-color);
-    gap: 3px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 16px;
-    padding: 10px 10px;
-    min-height: 180px;
+    padding: 24px;
+    min-height: 250px;
     border-left: 2px solid rgba(248, 138, 60, 0.792);
 }
 
@@ -333,7 +333,7 @@
     font-weight: 700;
     color: #ffffff;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
 }
 
 .product-approach-card p {
@@ -341,6 +341,7 @@
     font-weight: 500;
     line-height: 160%;
     color: #bbc1d1;
+    margin-bottom: 20px;
 }
 
 .product-approach-card:hover {
@@ -361,24 +362,23 @@
 
 .product-icon {
     position: absolute;
-    top: 45px;
+    top: 25px;
     right: 24px;
     font-size: 65px;
     font-weight: 800;
     color: var(--secondary-color);
+    opacity: 0.8;
 }
 
 .approach-card-button {
-    position: absolute;
-    bottom: 20px;
-    left: 28px;
     display: flex;
-    gap: 50px;
+    gap: 15px;
+    margin-top: auto;
 }
 
 .approach-card-content {
-    padding-bottom: 40px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .approach-card-button .demo-btn {
